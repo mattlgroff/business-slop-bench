@@ -1,5 +1,6 @@
 """Rank graded uncapped models with list prices and observed generation cost, one table per condition.
-Usage: python3 scripts/ranking.py <reviewDir> <runDirWithCatalog> [--json out.json] > <reviewDir>/RANKING.md
+Usage: python3 scripts/ranking.py <reviewDir> <runDirWithCatalog> [--json out.json] [--ignore-zdr] > <reviewDir>/RANKING.md
+--ignore-zdr ranks non-ZDR models alongside the rest (a what-if view; the bench rule still disqualifies them).
 Prices are the Gateway catalog base input/output rates per million tokens; cost is the sum of
 reported charges for the eight successful drafts in each condition. One generation per cell.
 """
@@ -9,6 +10,7 @@ root = Path(__file__).resolve().parents[1]
 args = [a for a in sys.argv[1:] if not a.startswith('--')]
 review, run = args[0], args[1]
 json_out = sys.argv[sys.argv.index('--json') + 1] if '--json' in sys.argv else None
+ignore_zdr = '--ignore-zdr' in sys.argv
 grades = json.loads((root / review / 'grades.json').read_text())
 summary = json.loads((root / review / 'summary.json').read_text())
 catalog = {m['id']: m for m in json.loads((root / run / 'catalog.json').read_text())['models']}
@@ -33,7 +35,7 @@ for model, conds in by.items():
 LABEL = {'plain': 'Plain brief, no house rules', 'house': 'Same brief plus the house anti-slop rules'}
 QUESTION = {'plain': 'Which models write the least slop unprompted?', 'house': 'Which models perform best once told exactly what slop means?'}
 def table(cond):
-    key = lambda m: (m['eligible'], m[cond]['pass'], m[cond]['readyWithoutEdits'], m[cond]['contentReady'], -m[cond]['fail'])
+    key = lambda m: (m['eligible'] or ignore_zdr, m[cond]['pass'], m[cond]['readyWithoutEdits'], m[cond]['contentReady'], -m[cond]['fail'])
     rows = sorted(models, key=key, reverse=True)
     out = [f'## {LABEL[cond]}', '', QUESTION[cond], '',
            '| Rank | Model | Checks passed (of 54) | Failed | Unresolved | Content ready (of 8) | Ready without edits (of 8) | Input $/M | Output $/M | Observed cost, 8 drafts |',
@@ -42,13 +44,14 @@ def table(cond):
     for m in rows:
         c = m[cond]
         label = '-'
-        if m['eligible']:
+        if m['eligible'] or ignore_zdr:
             rank += 1; label = str(rank)
-        name = m['model'] + ('' if m['eligible'] else ' (non-ZDR, disqualified)')
+        name = m['model'] + ('' if m['eligible'] else (' (non-ZDR)' if ignore_zdr else ' (non-ZDR, disqualified)'))
         cost = '$0 (launch promo)' if c['generationCostUsd'] == 0 else f"${c['generationCostUsd']:.4f}"
         out.append(f"| {label} | {name} | {c['pass']} | {c['fail']} | {c['review']} | {c['contentReady']} | {c['readyWithoutEdits']} | {m['inPerM']:.2f} | {m['outPerM']:.2f} | {cost} |")
     return out + ['']
-out = ['# Uncapped ranking with prices', '',
+out = ['# Uncapped ranking with prices' + (' (ZDR rule ignored)' if ignore_zdr else ''), '',
+       *(['This is a what-if view: models with no zero-data-retention route are ranked alongside the rest. The bench rule still disqualifies them; the committed ranking is RANKING.md.', ''] if ignore_zdr else []),
        f'Source: {review}/summary.json and {run}/catalog.json. Eight business briefs, one generation per brief and condition, graded by the assistant unblinded. Disqualified models have no zero-data-retention route on the Gateway; their scores are shown for information and never pooled.', '',
        '## What the columns mean', '',
        '- **Plain brief**: the model gets the task and the source facts only. This measures how much slop it writes unprompted.',
