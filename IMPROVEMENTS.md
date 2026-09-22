@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Review saved GPT-6 Sol
+
+Reviewed all 16 previously collected GPT-6 Sol drafts without new generation calls. Scores are 52/54 default and 53/54 house, with six and seven content-ready drafts and 3/8 and 7/8 ready without edits. Both readouts omit the explicit reduction but give correct endpoints. The default launch reassurance remains unresolved. Every draft fits the word limit; default has eight em dashes and two editorial findings, while house has neither. The assess-versus-promise contrasts are permitted factual scope boundaries.
+
+Sol 6 remains non-ZDR and disqualified regardless of writing quality. Stored billing reports zero for these calls, not a general free-price guarantee. All 352 prior rows remain identical. Hashes, exact quotes, generation identity, coverage and the independent writer-input audit pass. [Current report](reviews/assistant-v41/REPORT.md). There are now 368 reviewed drafts across 23 models. The existing Sonnet collector remains running with seven-minute pacing; it was monitored through the same live execution session and was not restarted.
+
 ## Review saved GPT-6 Luna; start paced Sonnet 5
 
 Reviewed the 16 already-generated GPT-6 Luna drafts without new Luna calls. Both conditions pass 53/54 content checks and have seven content-ready drafts; ready without edits is 3/8 default and 6/8 house. Default incorrectly implies the tentative launch date had been confirmed. House omits the explicit reduction while retaining correct endpoints. All drafts fit their word limits. Eight default em dashes become zero in house; remaining editorial issues are repetition. A factual assess-versus-promise contrast is permitted under the lens.

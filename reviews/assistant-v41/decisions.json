@@ -1,0 +1,147 @@
+[
+  {
+    "model": "Sol 6",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "28",
+        "That decision would allow us to move the pilot discussion forward.",
+        "Generic positive closing after the approval request adds no concrete next action."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 6",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "The team remains focused on moving forward while respecting the approval requirement.",
+        "Current team focus is not supplied. This may be general reassurance rather than a material factual status claim."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I wanted to update you on the October 8 launch plan.",
+        "Announces the update instead of stating the launch position."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 6",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The pilot\u2019s mean handling time was 12 minutes across 100 tickets, compared with 15 minutes across 200 baseline tickets.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time was 12 minutes across 100 pilot tickets, compared with 15 minutes across 200 baseline tickets.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 6",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  }
+]
