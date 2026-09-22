@@ -58,3 +58,20 @@ test('all source categories survive and task facts are identical across conditio
     assert.ok(!prompt(task, 'house', source).includes('Report every instance'));
   }
 });
+
+test('quarter correction invalidates only the affected writer prompts', () => {
+  const source = readFileSync(new URL('../sources/anti-slop-reviewer.md', import.meta.url), 'utf8');
+  const before: Task[] = JSON.parse(readFileSync(new URL('../data/tasks.json', import.meta.url), 'utf8'));
+  const after: Task[] = JSON.parse(readFileSync(new URL('../data/tasks-v2.json', import.meta.url), 'utf8'));
+  assert.deepEqual(after.map(t => t.id), before.map(t => t.id));
+  for (const task of after) {
+    const old = before.find(t => t.id === task.id)!;
+    for (const condition of ['default', 'house'] as const) {
+      assert.equal(prompt(task, condition, source) === prompt(old, condition, source), task.id !== 'ai-strategy-slides');
+    }
+    assert.deepEqual(task.checks, old.checks);
+  }
+  const corrected = after.find(t => t.id === 'ai-strategy-slides')!;
+  assert.match(corrected.brief, /next quarter/);
+  assert.match(corrected.facts.capacity as string, /next quarter/);
+});

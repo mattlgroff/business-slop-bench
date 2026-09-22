@@ -1,5 +1,19 @@
 # Grader improvement log
 
+## Corrected quarter wording and partial Opus expansion, v10
+
+Created `data/tasks-v2.json` with one fact correction: AI pilot capacity now refers to next quarter, matching the brief. All other task facts and every grading criterion are unchanged. A focused test verifies that only this task's two writer prompts change. Historical tasks, generations and reports remain intact.
+
+Collection now reuses exact matching inputs from prior runs and regenerates changed briefs. Qwen and Kimi each produced one replacement draft per condition for the corrected slide task. Opus produced one additional default launch email; the house-style call returned 429 with “No access to this model at this time” on the original attempt and two bounded retries. Retries stopped. No available header establishes the root cause. Missing Opus drafts are ungraded, not counted as poor output.
+
+[Updated assistant report](reviews/assistant-v2/REPORT.md) covers all 32 Qwen/Kimi drafts and the three available Opus drafts. Prior grades are carried forward only when both output bytes and task are unchanged. Newly reviewed passages are verified against the text. Qwen house content checks are now 41/54 and Kimi default 51/54; ready-without-edits counts remain 1/8 and 4/8 respectively. These are new samples under a corrected prompt, not evidence of a causal improvement from the wording change.
+
+All three available Opus emails exceed the 180-word limit. The two default emails contain unsupported factual assurances; the house email's staffing-pressure wording remains unresolved. This is an incomplete Opus sample, not an eight-brief ranking.
+
+Paid Jev commands now fail before API initialization, respecting the user's request for assistant grading. The audit recognizes assistant reviews only when path, text hash and writer input hash match. It reports 35 reviewed drafts, 30 imported and five new generations. Successful new generation charges total $0.038976. Conservative cumulative accounting is $4.5287 of $20 because each failed Opus request retains its full maximum reservation; that is not a claim of $4.53 billed spend.
+
+TypeScript checking and eleven tests pass. The collector exited and released its lock. Full Opus coverage and the remaining model comparison remain unfinished.
+
 ## Assistant replaces Jev for the current comparison
 
 At the user's request, stopped Jev retries and graded all 32 Qwen and Kimi drafts directly with the existing 54 task-content checks per model/condition. The last Jev process had exited; 26 of 32 Jev score records exist and six remain incomplete. They are preserved as diagnostics and are not used for the assistant's grades.

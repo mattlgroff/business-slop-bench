@@ -9,11 +9,12 @@ import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v9';
+const runName = 'pilot-v10';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
-const tasks: Task[] = read('data/tasks.json');
+const taskFile = 'data/tasks-v2.json';
+const tasks: Task[] = read(taskFile);
 const models: Model[] = read('data/models.json');
 const source = readFileSync(resolve(root, 'sources/anti-slop-reviewer.md'), 'utf8');
 const style = styleChecks(source);
@@ -24,7 +25,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.9.0', sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.10.0', taskFile, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -238,6 +239,7 @@ try {
   lock = openSync(resolve(root, 'runs/.lock'), 'wx');
   if (command === 'report') report();
   else {
+    if (!['collect', 'prepare'].includes(command)) throw new Error('Paid Jev grading is paused at user request. Use collect for writer outputs and assistant review for grades.');
     await init();
     if (command === 'prepare') console.log(JSON.stringify({ protocolHash, models: models.length, tasks: tasks.length, styleCategories: style.length }));
     else if (command === 'regrade-v4') {
@@ -279,16 +281,17 @@ try {
     else if (command === 'collect') {
       const model = models.find(m => m.id === arg);
       if (!model) throw new Error('Specify exact registered model ID');
-      // Collect diagnostic drafts before claiming that the grader is calibrated.
-      // Saved v7 outputs may be reused only when their writer input is identical.
+      // Reuse only exact writer inputs; changed briefs get new generations.
       for (const task of tasks) for (const condition of ['default', 'house'] as const) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
-        const priorPath = resolve(root, 'runs/pilot-v7', id + '.json');
-        if (!existsSync(file(id)) && existsSync(priorPath)) {
+        const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
+        for (const priorRun of ['pilot-v8', 'pilot-v7', 'pilot-v4']) {
+          if (existsSync(file(id))) break;
+          const priorPath = resolve(root, 'runs', priorRun, id + '.json');
+          if (!existsSync(priorPath)) continue;
           const old = JSON.parse(readFileSync(priorPath, 'utf8'));
-          const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
-          if (old.status !== 'ok' || old.inputHash !== hash(input)) throw new Error('Saved generation does not match current writer input');
-          atomic(file(id), { ...old, protocolHash, importedFrom: `pilot-v7/${id}.json`, originalProtocolHash: old.originalProtocolHash ?? old.protocolHash });
+          if (old.status !== 'ok' || old.inputHash !== hash(input)) continue;
+          atomic(file(id), { ...old, protocolHash, importedFrom: `${priorRun}/${id}.json`, originalProtocolHash: old.originalProtocolHash ?? old.protocolHash });
           writeFileSync(resolve(runDir, id + '.md'), old.text);
         }
         await generateOne(model, task, condition);

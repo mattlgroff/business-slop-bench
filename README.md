@@ -1,10 +1,10 @@
 # BusinessSlopBench
 
-A small TypeScript benchmark for single-call English business writing. It compares 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation and Jev evaluation.
+A small TypeScript benchmark for single-call English business writing. It targets 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
-Current results: [assistant grades of all 32 Qwen and Kimi drafts](reviews/assistant-v1/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+Current results: [updated assistant grades, including partial Opus results](reviews/assistant-v2/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Prior work: [v8 diagnostic collection](IMPROVEMENTS.md). The CLI targets v9; `grade-collected` records provisional Jev grades of saved v8 drafts. Do not resume those paid judge calls unless requested. `npm run bench -- collect alibaba/qwen3.8-flash` collects all eight briefs in both conditions without claiming calibrated grades. Matching v7 writer outputs are reused by input hash. `npx tsx src/draft-audit.ts pilot-v8` produces a read-only audit of saved outputs and mechanical checks. The full model comparison remains gated pending broader calibration. Historical v4 paths below refer to the original smoke evidence.
+Current collection uses `pilot-v10` and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v10` audits saved outputs and verifies their inputs against the frozen task version.
 
 ## Run
 
@@ -14,15 +14,15 @@ Requires Node 22+, a mounted writable external SSD for this checkout, and the ex
 npm ci
 npm run check
 npm test
-npm run bench -- calibrate
-npm run bench -- smoke alibaba/qwen3.8-flash
-npm run bench -- smoke anthropic/claude-opus-5
-npm run bench -- report
+npm run bench -- collect alibaba/qwen3.8-flash
+npm run bench -- collect moonshotai/kimi-k3
+npm run bench -- collect anthropic/claude-opus-5
+npx tsx src/draft-audit.ts pilot-v10
 ```
 
 The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. Default path: `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Set `BUSINESS_SLOP_ENV_FILE` to select another file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.
 
-`npm run bench -- pilot` attempts the full 336-output screen, cheapest output-token rates first. It is gated on control diagnostics: no opposite definitive validation judgments and at least 75% validation coverage. Validation labels are author-proposed; the first validation set was inspected during v2 development and is not a blind human gold set. Do not bypass the gate to obtain a leaderboard. Model and task lists are in `data/`; StepFun is excluded as requested. No agents, tools, browsing, exemplars, revision, or best-of selection are used by the writing models.
+The historical `pilot` command attempted the full 336-output screen, cheapest output-token rates first. It and the other paid Jev commands are now disabled. It is gated on control diagnostics: no opposite definitive validation judgments and at least 75% validation coverage. Validation labels are author-proposed; the first validation set was inspected during v2 development and is not a blind human gold set. Do not bypass the gate to obtain a leaderboard. Model and task lists are in `data/`; StepFun is excluded as requested. No agents, tools, browsing, exemplars, revision, or best-of selection are used by the writing models.
 
 ## What is frozen
 
