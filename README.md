@@ -6,7 +6,7 @@ Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/as
 
 Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Uncapped results: [Muse, Gemini Flash, Luna, Qwen Flash and GLM Flash, with MiniMax partial results](reviews/assistant-v18/REPORT.md). This cohort is not pooled with earlier capped scores.
+Uncapped results: [Muse, Gemini Flash, Luna, Qwen Flash, GLM Flash and DeepSeek Flash, with MiniMax partial results](reviews/assistant-v19/REPORT.md). This cohort is not pooled with earlier capped scores.
 
 [Rubric audit](reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
 
@@ -86,7 +86,7 @@ Local build only. No repository has been published and no remote has been config
 
 After inspecting a 429/502/503/504 result, `python3 scripts/retry-transient.py runs/pilot-v4/<failed-call>.json` archives that failed attempt, retains its entire budget reservation, and permits a new attempt when the original bench command is rerun. There are at most two manual retries per call. Successful generations and judge batches are reused. The retry helper never issues an inference call itself. An availability or permission failure still needs investigation; do not repeatedly retry it.
 
-Fable 5, Fable 5.1 and Muse Spark 1.3 use declared non-ZDR routes because the catalog and live API reject ZDR for these models. Muse also has no no-training guarantee in the observed catalog. All test packets are synthetic and the style lens is public. Other writer models retain the ZDR setting. See [Gateway ZDR routing](https://vercel.com/docs/ai-gateway/security-and-compliance/zdr). `python3 scripts/coverage.py` reports generated, failed and unattempted cases across the current task version without assigning quality scores.
+Fable 5, Fable 5.1 and Muse Spark 1.3 use declared non-ZDR routes because the catalog and live API reject ZDR for these models. Muse also has no no-training guarantee in the observed catalog. All test packets are synthetic and the style lens is public. Other writer models retain the ZDR setting. Since 2026-09-22 a model with no ZDR route fails the bench for business reasons: the failed request is retained and no further non-ZDR exception is added. MiMo failed on this rule. Whether to retire the earlier Fable and Muse exceptions is an open decision; their results are retained and marked. See [Gateway ZDR routing](https://vercel.com/docs/ai-gateway/security-and-compliance/zdr). `python3 scripts/coverage.py` reports generated, failed and unattempted cases across the current task version without assigning quality scores.
 
 Target one cell without touching failed cells elsewhere:
 

@@ -1,0 +1,18 @@
+{
+  "deepseek--deepseek-v4.1-flash--pilot-client-email--default": "49524048931f0442195f0cde63cbd53de405e5ab16446092408e275c517be5ed",
+  "deepseek--deepseek-v4.1-flash--pilot-client-email--house": "40348165b4ca9b3a88e78c2fdedf2419cdef62d8252568bd89dfb23f52f61fca",
+  "deepseek--deepseek-v4.1-flash--launch-delay-email--default": "f1dc913b6125e819418efd4adeba74b354a09490edbb8572f0de427c965890eb",
+  "deepseek--deepseek-v4.1-flash--launch-delay-email--house": "787f3afbd3cb6e3eb17d1bc18dd19da018dcbf121245e242d55a2163c4dd054c",
+  "deepseek--deepseek-v4.1-flash--vendor-decision-memo--default": "fdd46a8f9efaf46dbc490a22055a54c07f3f9f5f3379d2a62c35c223f08cd56d",
+  "deepseek--deepseek-v4.1-flash--vendor-decision-memo--house": "78d2b6f0ac777eb8507e7fe9bf2314c1451eb2019d14ad9fc3311df71f5369c7",
+  "deepseek--deepseek-v4.1-flash--pilot-results-memo--default": "350e752c4f6d12782b1df025a82e8db288e9fc82a28c119579dffd9732a3d3a0",
+  "deepseek--deepseek-v4.1-flash--pilot-results-memo--house": "5fc8af767bb161eaaf8125b315b4027c4f66f2dd9c5eabf7646dd775a6f563a2",
+  "deepseek--deepseek-v4.1-flash--discovery-proposal--default": "4aefd1097f56fc3537dcf73a6b60267672bd7aef5e9804d8a00868c8c728d8f0",
+  "deepseek--deepseek-v4.1-flash--discovery-proposal--house": "45b0a48a25aab92583b4c36496e0e8cba0efb3c9434db39d16a77ed2e0da48a0",
+  "deepseek--deepseek-v4.1-flash--change-order--default": "aeb54a163fee938ffe24bd5310a77a8863ae6bcab8f2c4159ceaab1330792263",
+  "deepseek--deepseek-v4.1-flash--change-order--house": "f6266752cbb37c7b218086e94fea03005f6fb039b21ae8cd428e3ed5b22a943d",
+  "deepseek--deepseek-v4.1-flash--ai-strategy-slides--default": "732109bcf76f3c06a44c397b46d143f3033399e797ea0729c0bf6bafcd4806eb",
+  "deepseek--deepseek-v4.1-flash--ai-strategy-slides--house": "a3bbcc4c0ddead004cb2fd05725346a5692ef82f2a5c702b36e8ead1dc012da8",
+  "deepseek--deepseek-v4.1-flash--handoff-slides--default": "d13b34e98ca8fe95f64cbdb7ef88e1e3d3c8c4ae68108822f242eb4ada9bc4d4",
+  "deepseek--deepseek-v4.1-flash--handoff-slides--house": "3ae566dc4f64513f826372a1a3a0d68c68f6eee3874daa7b975584ad66cac898"
+}
