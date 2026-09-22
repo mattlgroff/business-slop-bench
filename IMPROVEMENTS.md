@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Readout criterion audit
+
+Compared the frozen readout prompt with C01 and the supplied numbers-integrity rubric. C01 requires an explicit 3-minute or 20% reduction, but the brief does not directly request this calculation. All six primary uncapped Muse, Gemini Flash and Luna readouts give correct endpoints and pass every other content check. Their omission should not be presented as incorrect arithmetic or inability to calculate.
+
+Saved a six-case sensitivity analysis showing the effect of removing only this omission as a hard content gate. It is hypothetical, not a replacement leaderboard. Added an inactive proposed task-v3 file with one sentence explicitly asking for the change in minutes or percent and the distinction from causation. Every other brief, source fact, criterion, severity and word limit is unchanged. Fresh validation is needed before adoption. [Audit and evidence](reviews/rubric-audit-v1/REPORT.md).
+
+The audit builder verifies output hashes, quoted evidence, the identity of C01 as the only failed check, all six primary readout cases, the exact proposed change and the continued use of live tasks-v2. Official task and grade hashes remain unchanged. No model calls were made, and the $20 ceiling remains in place. Broad uncapped coverage and reviewer validation remain unfinished.
+
 ## Targeted repeatability diagnostic, v19
 
 Added a repeat command with separate immutable sample IDs, exact task/condition selection and no primary-output imports. It uses unchanged writer prompts and settings. Sample 1 remains the primary collection; explicit sample numbers start at 2. The v18 source snapshot is preserved, and v19 retains no harness output-token cap or generation deadline.

@@ -1,0 +1,50 @@
+[
+  {
+    "model": "Muse",
+    "condition": "default",
+    "officialContentReady": 7,
+    "hypotheticalContentReady": 8,
+    "officialReadyWithoutEdits": 4,
+    "hypotheticalReadyWithoutEdits": 5
+  },
+  {
+    "model": "Muse",
+    "condition": "house",
+    "officialContentReady": 7,
+    "hypotheticalContentReady": 8,
+    "officialReadyWithoutEdits": 5,
+    "hypotheticalReadyWithoutEdits": 6
+  },
+  {
+    "model": "Gemini Flash",
+    "condition": "default",
+    "officialContentReady": 5,
+    "hypotheticalContentReady": 6,
+    "officialReadyWithoutEdits": 0,
+    "hypotheticalReadyWithoutEdits": 1
+  },
+  {
+    "model": "Gemini Flash",
+    "condition": "house",
+    "officialContentReady": 4,
+    "hypotheticalContentReady": 5,
+    "officialReadyWithoutEdits": 3,
+    "hypotheticalReadyWithoutEdits": 4
+  },
+  {
+    "model": "Luna",
+    "condition": "default",
+    "officialContentReady": 5,
+    "hypotheticalContentReady": 6,
+    "officialReadyWithoutEdits": 2,
+    "hypotheticalReadyWithoutEdits": 3
+  },
+  {
+    "model": "Luna",
+    "condition": "house",
+    "officialContentReady": 6,
+    "hypotheticalContentReady": 7,
+    "officialReadyWithoutEdits": 4,
+    "hypotheticalReadyWithoutEdits": 4
+  }
+]
