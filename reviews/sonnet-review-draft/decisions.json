@@ -101,6 +101,22 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--vendor-decision-memo--default.md",
       "outputSha256": "1cbc243a446c2f0dfc6a26616315ff89a96e6d10912c74188482c282e3953e19"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "content": [
+        [
+          "grounding",
+          "review",
+          "Priya to issue the Alpha contract for CFO signature.",
+          "The source identifies CFO approval authority but not the signatory. The next-step wording may propose a signing role or assume it already exists; it is unresolved under the same boundary used for other vendor memos."
+        ]
+      ],
+      "style": [],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--vendor-decision-memo--house.md",
+      "outputSha256": "b60eb39ff36b206ff52f522d4d5a313cd0e51837f66793f3d5ad0c5f04819789"
     }
   ]
 }
