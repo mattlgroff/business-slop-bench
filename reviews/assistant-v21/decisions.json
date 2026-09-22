@@ -1,0 +1,222 @@
+[
+ {
+  "model": "DeepSeek Pro",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Following our discussions",
+    "Invents prior discussions absent from the source pack; the closing also invents a this-week reply deadline."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "21",
+    "The client is looking for 20% shorter handling time.",
+    "Third-person client reference in an email addressed directly to that client."
+   ],
+   [
+    "10",
+    "Your approval now would let us move from proposal to preparation without committing to a start date or data access.",
+    "Repeats the preceding paragraph, which already says approval starts preparation without a start date or data access."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "The delay is driven by the security review, not by a loss of execution quality.",
+    "The review timing is the supported cause of the delay, but the source says the review may require remediation, so the quality reassurance may be an unsupported claim or a general reassurance."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "I want to give you a clear picture of where the launch stands and what we need from you.",
+    "Announces the update instead of starting with the changed position."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "Nia is tracking the review closely",
+    "The source does not describe how Nia is handling the review; this may be general reassurance rather than a material status claim."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "**Date:** [Current Date]",
+    "Unfilled document-preparation date in the memo header."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "**Date:** [Date]",
+    "Unfilled document-preparation date in the memo header."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Start date agreed only after signature and named client contact.",
+    "The closing Start section repeats step 3 of How to proceed word for word."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Final acceptance triggers the remaining $8,000 payment.",
+    "Makes acceptance the trigger for the second payment; the source specifies payment on delivery."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "The proposed fixed change fee is $7,000.",
+    "Immediately repeats the total already stated in the one-row pricing table."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "No legal blocker.",
+    "Approved policy documents do not establish the absence of any legal blocker for the knowledge-search pilot; the inference may be reasonable but is not supplied."
+   ]
+  ],
+  "style": [
+   [
+    "15",
+    "Slide 1: Title",
+    "One of four slides carries only a title and no decision content."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Slide 2: Internal knowledge search is ready to run",
+    "Approved documents, an owner and a target do not establish readiness to run; the source gives no start conditions. Slide 1 likewise calls it the pilot that can start now."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "Blocked pilot would consume most of the budget ceiling.",
+    "Repeats the cost and blocked status already stated on slides 1 and 3; slide 4 then repeats the cost, target and reporting rule from slide 2."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "Current answer from source facts: Not ready.",
+    "Refers to the source facts inside the committee deck; prompt residue."
+   ]
+  ]
+ },
+ {
+  "model": "DeepSeek Pro",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "| Approved runbook | Done | Operations lead Jo |",
+    "Assigns runbook ownership to Jo, which the source does not state. Slide 4 also invents an exception path that Pat may approve; Pat can approve acceptance only once criteria are met."
+   ]
+  ],
+  "style": []
+ }
+]

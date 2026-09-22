@@ -1,0 +1,18 @@
+{
+  "deepseek--deepseek-v4-pro-0813--pilot-client-email--default": "eec3d9dd550f2159ad7ad6b3cf7c824af92744b5ca45c444872eb1366d0b00ce",
+  "deepseek--deepseek-v4-pro-0813--pilot-client-email--house": "29ef849dd2fd95595a47e3b11a43fb8febc39294d35e6248cb00433d3b66182c",
+  "deepseek--deepseek-v4-pro-0813--launch-delay-email--default": "f823ccc301f5988fe1a1cd04960a67f18aeb531e40bd6c91ee16d7834133025b",
+  "deepseek--deepseek-v4-pro-0813--launch-delay-email--house": "ccc368cd8f7e4aab4410463c861840dc369fe28534a672c3ee3118403b4bd4d0",
+  "deepseek--deepseek-v4-pro-0813--vendor-decision-memo--default": "00280a3b9f775bb9ab4530f8febcdf7cf1475ca2ab21ea6ea73344c9f3b929d2",
+  "deepseek--deepseek-v4-pro-0813--vendor-decision-memo--house": "ffb73b8010c7804b0eab98f3304976b16941782d8fdd665ecf71e7d2f24bf61d",
+  "deepseek--deepseek-v4-pro-0813--pilot-results-memo--default": "ef5da996bab2b918cafcd0f7dd453d752a6c4477a5b82f551fc4dab800790a2f",
+  "deepseek--deepseek-v4-pro-0813--pilot-results-memo--house": "820dcaa2e8312f7102a69a2476d9e2d06957014e141179e529fe87e1e1c2b9e2",
+  "deepseek--deepseek-v4-pro-0813--discovery-proposal--default": "0f1fbe802664259386efe712c01762d1be14c4d5f3f4071a5e6f99e1995e2f81",
+  "deepseek--deepseek-v4-pro-0813--discovery-proposal--house": "da5a67321d79848187e37e3f327171a0b755f3de981ddb44ccb8c1052b49348e",
+  "deepseek--deepseek-v4-pro-0813--change-order--default": "65abfd870d5479e9dee2fb81365e9616cfbc16a5c57bbb5a21929352cdd62248",
+  "deepseek--deepseek-v4-pro-0813--change-order--house": "c541faae39682d19d4aa8df8098beb2a1a8682b0259d1bbc1ad4db1f1be5c0f9",
+  "deepseek--deepseek-v4-pro-0813--ai-strategy-slides--default": "e17152d4c9f65935273345093aa5f2ac88a65517f63a722c2438772fa84781bd",
+  "deepseek--deepseek-v4-pro-0813--ai-strategy-slides--house": "deff47058b61510aea86322091601e8234b487f4deaa439a5d56b557b065cb84",
+  "deepseek--deepseek-v4-pro-0813--handoff-slides--default": "4c9c48c4bd093c9b2394b9d15e469eb534ddc01939bc8eb1e24ba21c98ba495d",
+  "deepseek--deepseek-v4-pro-0813--handoff-slides--house": "eb568693d590a2b559d3b90e4ff3b4c8d761fc7b0e646f404b23944ca7314643"
+}
