@@ -1,10 +1,10 @@
 # Sonnet review in progress
 
-Eleven completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
+Twelve completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
 
 `python3 reviews/sonnet-review-draft/verify.py` checks unique task/condition pairs, output hashes, successful complete responses and every quoted finding. The default pilot email is 198 words against the 180-word requirement. Semantic findings include a sender commitment to propose a date within five business days and unsupported performance/readiness claims. Requests for the recipient to take an action are distinguished from claims that an obligation already exists.
 
-When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these eleven cases or replace earlier complete model results with this partial review.
+When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these twelve cases or replace earlier complete model results with this partial review.
 
 The default vendor memo preserves the required costs, recommendation and approval condition, but repeats its rationale. Its word count is verified by the same whitespace rule as the other drafts.
 
@@ -19,3 +19,5 @@ The default discovery proposal preserves the fee, deliverables, exclusions and a
 The house discovery proposal preserves the payment sequence and core scope, but invents a two-business-day start-confirmation commitment. Its final request repeats the signature/contact steps. The statement that missing client inputs delays work is treated as an ordinary dependency implication, not an invented measured outcome.
 
 The default change order passes its six specific checks but invents contractual provenance with “Per the governing agreement.” Its signature/date fields are intentional approval fields, not preparation placeholders. Fixed-fee versus time-and-materials wording clarifies the billing basis and is a permitted factual contrast. No separate editorial finding is recorded.
+
+The house change order passes all content checks. The credential dependency is repeated in adjacent sentences. Its fee/billing and estimate/date contrasts are factual distinctions, and the approval fields are intentional. No additional delivery deadline is inferred from confirming the estimate once prerequisites are met.

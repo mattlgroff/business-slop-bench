@@ -207,6 +207,21 @@
       "style": [],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--change-order--default.md",
       "outputSha256": "2990e9936d0ca20059243277496962efa523723d40962b2f3c449f32b5191d45"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "change-order",
+      "condition": "house",
+      "content": [],
+      "style": [
+        [
+          "10",
+          "We need sandbox credentials from your team before work can start. Work cannot begin without them.",
+          "The second sentence repeats the dependency already stated in the first without adding a condition or consequence."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--change-order--house.md",
+      "outputSha256": "f554edd2808e648fc68a4a97f77c233f656fcef5321d9768fec2ba7c630bcac9"
     }
   ]
 }

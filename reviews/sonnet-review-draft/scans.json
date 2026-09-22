@@ -239,5 +239,28 @@
         "text": "rather than "
       }
     ]
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--change-order--house.md",
+    "words": 165,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 447,
+        "line": 12,
+        "text": "rather than "
+      }
+    ]
   }
 ]
