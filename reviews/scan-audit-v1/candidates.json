@@ -1,0 +1,282 @@
+{
+  "source": "reviews/assistant-v33/grades.json",
+  "sourceSha256": "6f28cf44ba12015f0a028be914a7aeb55e0eb6c1e3010a01059ae895210f5354",
+  "inspectedDrafts": 304,
+  "candidateCounts": {
+    "claudisms": 3,
+    "negative_parallelism": 20
+  },
+  "status": "Scanner evidence only. Matches require contextual review; no grades changed.",
+  "rows": [
+    {
+      "path": "runs/pilot-v19/alibaba--qwen3.8-flash--pilot-client-email--default.md",
+      "outputSha256": "d3390d12198684590b697e26f2fc3e59be8e58faa482843c62b4488997568b84",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 522,
+          "line": 12,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v19/zai--glm-5.3-flash--launch-delay-email--default.md",
+      "outputSha256": "40d91d9085e3c64c39929de3dffc8e1f9da5abe62cd0061f232a28f3e4314755",
+      "candidates": [
+        {
+          "family": "claudisms",
+          "offset": 322,
+          "line": 7,
+          "text": "worth noting"
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v19/deepseek--deepseek-v4.1-flash--pilot-results-memo--default.md",
+      "outputSha256": "350e752c4f6d12782b1df025a82e8db288e9fc82a28c119579dffd9732a3d3a0",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 639,
+          "line": 13,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/moonshotai--kimi-k3--pilot-client-email--house.md",
+      "outputSha256": "f1ec00a3eb173507fc1145c928b3cf78279c176eeb56c35ad3196655cac2b13f",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 659,
+          "line": 9,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/moonshotai--kimi-k3--vendor-decision-memo--house.md",
+      "outputSha256": "5ec42232c2c2a46717c6aa077d4b677637ab553e04de74afa64ce46851db857c",
+      "candidates": [
+        {
+          "family": "claudisms",
+          "offset": 1119,
+          "line": 26,
+          "text": "trade-off"
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/moonshotai--kimi-k3--pilot-results-memo--house.md",
+      "outputSha256": "acece02273a645a9cb10e6f29b9f58d97da9dc82c10b84e9d30dae1a48905064",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 801,
+          "line": 16,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/moonshotai--kimi-k3--ai-strategy-slides--default.md",
+      "outputSha256": "50b15d68877588785dd89016603f227f59d3ac7c1f58e78f6202dd05b2bb51ab",
+      "candidates": [
+        {
+          "family": "claudisms",
+          "offset": 458,
+          "line": 8,
+          "text": "friction"
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/minimax--minimax-m3--pilot-client-email--house.md",
+      "outputSha256": "b87cd59c46fbd180106f6c90e5885c4a66123ce9b5d452694a511689a632f5f6",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 425,
+          "line": 11,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/minimax--minimax-m3--pilot-results-memo--default.md",
+      "outputSha256": "858fd4a4146026fa6a53d1572ef50de005aa06faf7fb4337ec12f940e89ce9a9",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 656,
+          "line": 10,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v20/openai--gpt-6-astra--pilot-results-memo--default.md",
+      "outputSha256": "149fa10b7c0224b75acf4dacaa0e68fb0adb0cfdc41ec66b24ed2fece06385f3",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 1042,
+          "line": 12,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-opus-5--launch-delay-email--default.md",
+      "outputSha256": "aa366d11f6389186406b1dcd3675d5ffc7e6c619efbe0a5311a41620745f9d01",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 832,
+          "line": 11,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-opus-5--pilot-results-memo--default.md",
+      "outputSha256": "c7c63f599b65263134d1c401113dd5f80975b43c40c76b2897cd405bde2e5201",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 742,
+          "line": 19,
+          "text": "rather than "
+        },
+        {
+          "family": "negative_parallelism",
+          "offset": 1582,
+          "line": 31,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-opus-5--change-order--house.md",
+      "outputSha256": "d4c5f352fe2785f49c2bd5b1821e215ec07b6c2a6b04bfc0bf047df4f263f1ff",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 914,
+          "line": 26,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-opus-5--ai-strategy-slides--default.md",
+      "outputSha256": "f7d74e8d8f228ec1b06d43f55759596027b06d1c22c966c6a023f895c5a0fcf5",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 824,
+          "line": 18,
+          "text": "is not actionable this quarter. It is "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-opus-4.6--pilot-client-email--default.md",
+      "outputSha256": "92b7da252d8974989926e4a0339beb285d14254bb5946972e77822fddaa0a9a9",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 661,
+          "line": 16,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-fable-5.1--pilot-client-email--default.md",
+      "outputSha256": "aa2f32fe2798e05cb557064cc9a12e7108805726dd6ef5688c9db26c3d0fb4cc",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 601,
+          "line": 11,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-fable-5.1--pilot-results-memo--default.md",
+      "outputSha256": "aa49fd7285c816c62e66942ad09ff3fad2ed8e64d01480f5af0727bc5ae756a8",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 702,
+          "line": 17,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-fable-5.1--pilot-results-memo--house.md",
+      "outputSha256": "b6116c1628b484b032d97fcebe563c84696a78fa33ceeb55da494deb29191c1d",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 1319,
+          "line": 22,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-fable-5--pilot-client-email--default.md",
+      "outputSha256": "f3788a8f30745b842fc0fe88aaad1759583e14a428f46dac5ebfc434153985be",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 670,
+          "line": 11,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v21/anthropic--claude-fable-5--pilot-results-memo--default.md",
+      "outputSha256": "655bfce1ee7004497033bf3b375c4733d3ba6a93395eadb047a111944316a79e",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 790,
+          "line": 20,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v22/anthropic--claude-opus-5.5--pilot-client-email--default.md",
+      "outputSha256": "d9b8b074b58e5d513f7ccac72b201c26dbfe74ed44b930b7c33d8a551ceb6a3d",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 643,
+          "line": 15,
+          "text": "rather than "
+        }
+      ]
+    },
+    {
+      "path": "runs/pilot-v22/anthropic--claude-opus-5.5--pilot-results-memo--default.md",
+      "outputSha256": "96543ee6f289d7e9822f43931606747210cccc21774d6f36b7489fc4543cddb1",
+      "candidates": [
+        {
+          "family": "negative_parallelism",
+          "offset": 1138,
+          "line": 25,
+          "text": "rather than "
+        }
+      ]
+    }
+  ]
+}

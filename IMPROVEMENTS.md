@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Preserve all scanner candidates
+
+The review scanner spread the shared scan result, then overwrote its candidate list with a second phrase-only scan. That discarded negative-parallelism matches and removed candidate-family labels. Removed the duplicate scan so the saved artifact preserves the shared detector output. One focused CLI regression checks both candidate families, exact offsets, line numbers and word counts. It failed before the fix; all 19 tests and TypeScript checking now pass.
+
+A reproducible read-only rescan of the 304 current drafts is saved in [scan-audit-v1](reviews/scan-audit-v1/candidates.json). It verifies every output hash and leaves all grades unchanged. The artifact contains candidates for contextual review, not new confirmed defects. No writer settings, model calls or budget entries changed. The temporary test directory was removed and test processes exited.
+
 ## Terra uncapped, v22
 
 Collected 16 new Terra drafts with unchanged v2 briefs and pilot-v22 settings, no output-token cap or harness deadline, no retries and ZDR requested. All responses have matching requested, returned and canonical identities, normal stop reasons, no warnings and valid word counts.
