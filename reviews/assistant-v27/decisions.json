@@ -1,0 +1,15 @@
+[
+ {
+  "model": "Grok",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Lee remains responsible for defect fixes until Pat approves acceptance.",
+    "Repeats the defect-fix ownership boundary stated three lines earlier on the same slide."
+   ]
+  ]
+ }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "file": "spacexai--grok-4.7--handoff-slides--house.md",
+    "words": 200,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]
