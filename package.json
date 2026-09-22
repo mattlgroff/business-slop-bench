@@ -1,0 +1,22 @@
+{
+  "name": "businessslopbench",
+  "version": "0.1.0",
+  "description": "Single-call business writing benchmark with Zero Defect criteria and Jev evaluation",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "bench": "tsx src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "ai": "7.0.109"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  },
+  "private": true,
+  "type": "module"
+}

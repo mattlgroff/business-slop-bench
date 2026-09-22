@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/mattlgroff/zero-defect",
+  "commit": "0f2849b600afb9b46d7c27411b7cb96600ad7dde",
+  "path": "plugins/zero-defect/agents/anti-slop-reviewer.md",
+  "sha256": "0f9f01829e56e29a5a751e5f040d7a6407d1ccc3520a795863060bf94b3b3ab7",
+  "note": "Copied local source bytes. Content hash is authoritative if checkout differs from commit. Used as rubric data, not agent orchestration."
+}
