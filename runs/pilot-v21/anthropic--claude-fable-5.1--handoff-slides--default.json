@@ -1,0 +1,124 @@
+{
+  "id": "anthropic--claude-fable-5.1--handoff-slides--default",
+  "model": "anthropic/claude-fable-5.1",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:56:23.833Z",
+  "elapsedMs": 11813,
+  "text": "**Slide 1 — Decision Requested**\n- Question for the committee: Is the service ready for operational handoff?\n- Recommendation: Not yet. One acceptance criterion remains unmet.\n- Decision needed today: Assign an owner for the rollback rehearsal so acceptance can proceed.\n\n**Slide 2 — Acceptance Criteria Status**\n\n| Criterion | Status | Evidence |\n|---|---|---|\n| Approved runbook | Met | Runbook is approved |\n| Successful rollback rehearsal | Not met | Rehearsal has not happened |\n\n- Readiness verdict: Acceptance cannot be granted until the rehearsal is completed successfully.\n\n**Slide 3 — Ownership Gap and Risk**\n- Current responsibilities:\n  - Lee (Engineering lead) owns defect fixes until acceptance.\n  - Jo (Operations lead) owns incidents only after acceptance.\n  - Pat (Sponsor) can assign responsibility and approve acceptance once criteria are met.\n- Gap: No role has accepted responsibility for organizing the rollback rehearsal.\n- Risk: Without an assigned owner, the rehearsal will not be scheduled, acceptance stalls, and the handoff date remains undefined.\n\n**Slide 4 — Actions Required**\n\n| # | Action | Owner | Dependency |\n|---|---|---|---|\n| 1 | Assign responsibility for organizing the rollback rehearsal | Pat | Committee decision today |\n| 2 | Plan and conduct the rollback rehearsal | Assignee (per Action 1) | Action 1 |\n| 3 | Confirm rehearsal result against acceptance criterion | Assignee reports to Pat | Action 2 |\n| 4 | Approve acceptance; incident ownership transfers to Jo | Pat | Action 3 successful |\n\n- Until acceptance: Lee continues to own defect fixes.\n- Ask of the committee: Endorse Pat assigning the rehearsal owner now and reconvene once the rehearsal result is available.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 316,
+    "inputTokenDetails": {
+      "noCacheTokens": 316,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 693,
+    "outputTokenDetails": {
+      "textTokens": 693,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 1009
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 316,
+        "output_tokens": 693,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.1",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5.1",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.1",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790099772266,
+                "endTime": 1790099772714,
+                "providerRequestId": "5fab1bdf-b61c-4750-add4-008a050b2d5a",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790099772757,
+                "endTime": 1790099783836,
+                "providerRequestId": "req_011CfJufpjgnjSgrVnowt62o",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJufqrfMoekRb6Vzizys",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.03781",
+      "marketCost": "0.03781",
+      "surchargeCost": "0",
+      "gatewayCost": "0.03781",
+      "inferenceCost": "0.03781",
+      "inputInferenceCost": "0.00316",
+      "outputInferenceCost": "0.03465",
+      "generationId": "gen_01M3545MSFWSSXJAFHEM663B3V"
+    }
+  },
+  "response": {
+    "id": "aitxt-IR5slvrEVidm4WBrcKBIYms1",
+    "modelId": "anthropic/claude-fable-5.1",
+    "timestamp": "2026-09-22T17:56:23.832Z"
+  },
+  "billing": {
+    "totalCost": 0.03781,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.03781",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

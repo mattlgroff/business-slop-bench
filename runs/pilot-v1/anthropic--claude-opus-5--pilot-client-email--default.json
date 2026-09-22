@@ -1,0 +1,109 @@
+{
+  "id": "anthropic--claude-opus-5--pilot-client-email--default",
+  "model": "anthropic/claude-opus-5",
+  "protocolHash": "0ed33587f3b6a92b2e785b59a3bba5267075318d671ed77032fa49430d6853cc",
+  "status": "ok",
+  "at": "2026-09-22T11:15:12.863Z",
+  "elapsedMs": 7735,
+  "text": "**Subject: Proposal — Six-Week Invoice Handling Pilot ($30,000)**\n\nHi Morgan,\n\nI'd like to propose a six-week pilot to assess your invoice handling process, for a fixed fee of $30,000.\n\n**Why now:** You've set a goal of reducing handling time by 20%. Today there's no baseline and no measured savings to point to, so that target can't be confirmed or costed. The pilot's purpose is to close that gap — to establish what handling actually costs you and what improvement is realistically achievable — before any larger commitment is on the table.\n\n**Scope:** Assessment only. Production rollout is explicitly excluded, so your exposure is capped at the fixed fee with no obligation to proceed.\n\n**Conditions:** Security approval is required before we access any client data. No start date has been approved, so timing remains yours to set once clearance is in place.\n\n**Decision requested:** Please approve the pilot scope and the $30,000 fee, subject to security clearance. With your approval, we can begin the security review immediately and schedule a start date from there.\n\nHappy to walk through any part of this beforehand.\n\nBest regards",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 297,
+    "inputTokenDetails": {
+      "noCacheTokens": 297,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 373,
+    "outputTokenDetails": {
+      "textTokens": 373,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 670
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 297,
+        "output_tokens": 373,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        }
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5",
+        "resolvedProvider": "vertexAnthropic",
+        "fallbacksAvailable": [
+          "anthropic",
+          "claudeaws",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference vertexAnthropic. System credentials planned for: vertexAnthropic, anthropic, claudeaws, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → vertexAnthropic(system) → anthropic(system) → claudeaws(system) → bedrock(system). ZDR execution order: vertexAnthropic(system) → anthropic(system) → claudeaws(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5",
+        "finalProvider": "vertexAnthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertexAnthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790075705561,
+                "endTime": 1790075712655,
+                "providerRequestId": "req_vrtx_011CfJP5mGPXLxRmiDqPmMwo",
+                "statusCode": 200,
+                "providerResponseId": "msg_vrtx_011CfJP5mwpNY5KksUbFG3rv"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.01081",
+      "marketCost": "0.01081",
+      "surchargeCost": "0.000225",
+      "gatewayCost": "0.011035",
+      "inferenceCost": "0.01081",
+      "inputInferenceCost": "0.001485",
+      "outputInferenceCost": "0.009325",
+      "reportingTagWriteCost": "0.000225",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34D75ZEQAQ48A7A3M6F4DT6"
+    }
+  },
+  "response": {
+    "id": "aitxt-8L4lvIORSRURtAO4Ng13fINh",
+    "modelId": "anthropic/claude-opus-5",
+    "timestamp": "2026-09-22T11:15:12.695Z"
+  },
+  "inputHash": "f8f463cab83161ad0fa997c2d78df4734babf262ea189456f80a6f0202c75dab",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

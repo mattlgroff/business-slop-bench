@@ -1,0 +1,145 @@
+{
+  "id": "moonshotai--kimi-k3--handoff-slides--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:32:17.436Z",
+  "elapsedMs": 8612,
+  "text": "**Slide 1 — Decision requested: operational handoff readiness**  \n- Decision: approve handoff only if acceptance is complete.  \n- Readiness position: **not ready today**.  \n- Basis: runbook is approved, but rollback rehearsal has not happened.  \n- Ownership boundary: Lee owns defect fixes until acceptance; Jo owns incidents only after acceptance.\n\n**Slide 2 — Acceptance criteria status**  \n- Approved runbook: **met**.  \n- Successful rollback rehearsal: **not met**.  \n- Acceptance: **not complete** because both are required.  \n- Operational risk of early handoff: incident ownership would shift to Jo only after acceptance, while defect fixes remain with Lee before acceptance.\n\n**Slide 3 — Blocking gap and authority**  \n- Gap: no role has accepted responsibility for organizing the rehearsal.  \n- This is the immediate blocker to scheduling and proving rollback success.  \n- Authority path: Sponsor Pat can assign rehearsal responsibility.  \n- Pat can approve acceptance only after criteria are met.\n\n**Slide 4 — Actions required before handoff**  \n- Pat: assign an owner to organize the rollback rehearsal.  \n- Assigned owner: plan and run the rehearsal; evidence success.  \n- Lee: continue defect-fix ownership until acceptance.  \n- Jo: prepare to own incidents only after acceptance.  \n- Pat: approve acceptance once runbook approval plus successful rehearsal are both satisfied; then proceed to operational handoff.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 252,
+    "inputTokenDetails": {
+      "noCacheTokens": 252,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 597,
+    "outputTokenDetails": {
+      "textTokens": 303,
+      "reasoningTokens": 294
+    },
+    "totalTokens": 849
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_73gjhm2iz5b7u5sy3ns2e4t5c6e5soaehef4dbssoubcng7b5gtq",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "fireworks",
+          "alibaba",
+          "runware",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, fireworks, alibaba, runware, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → runware(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "bedrock",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790091130555,
+                "endTime": 1790091130607,
+                "providerRequestId": "54ca701a0c9bef6dc7b75bb76156f3ec18cbb",
+                "statusCode": 503,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "bedrock",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091130613,
+                "endTime": 1790091137440,
+                "providerRequestId": "2c9ce62f-7494-4a53-80af-fc5643fea780",
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.009711",
+      "marketCost": "0.009711",
+      "surchargeCost": "0",
+      "gatewayCost": "0.009711",
+      "inferenceCost": "0.009711",
+      "inputInferenceCost": "0.000756",
+      "outputInferenceCost": "0.008955",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34VXXEBVA4KZGRSTQ3V1ST7"
+    }
+  },
+  "response": {
+    "id": "aitxt-CRiAb1HmnqCfI6KEoFFqDQUP",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T15:32:17.435Z"
+  },
+  "billing": {
+    "totalCost": 0.009711,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.009711",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "spacexai--grok-4.7--launch-delay-email--default",
+  "model": "spacexai/grok-4.7",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:41:47.270Z",
+  "elapsedMs": 94724,
+  "text": "Subject: Launch position and decision needed\n\nAvery,\n\nThe October 8, 2026 production launch remains tentative and is no longer the working release date. Nia’s security review now completes October 12 at the earliest, and release requires completed approval. The review may require remediation, so no new production date is authorized.\n\nThe team can still deliver a staging demo on October 8 using synthetic data. That preserves the original demonstration date without treating the product as approved for production.\n\nPlease choose whether to accept the staging demo. Once you decide, we will align the schedule with Nia’s review and the required approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1420,
+    "inputTokenDetails": {
+      "noCacheTokens": 268,
+      "cacheReadTokens": 1152
+    },
+    "outputTokens": 292,
+    "outputTokenDetails": {
+      "textTokens": 125,
+      "reasoningTokens": 167
+    },
+    "totalTokens": 1712
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "xai": {
+      "costInUsdTicks": 17184000,
+      "serviceTier": "default"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "spacexai/grok-4.7",
+        "resolvedProvider": "xai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: xai. ZDR requested: all 1 attempts support ZDR. Execution order: xai(system)",
+        "canonicalSlug": "xai/grok-4.7",
+        "finalProvider": "xai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xai/grok-4.7",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "xai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091620257,
+                "endTime": 1790091707256,
+                "providerRequestId": "fdbd0fb4-46fb-979a-b6a6-1460a1a28adf",
+                "statusCode": 200,
+                "providerResponseId": "fdbd0fb4-46fb-979a-b6a6-1460a1a28adf"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.0017184",
+      "marketCost": "0.0017184",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0017184",
+      "inferenceCost": "0.0017184",
+      "inputInferenceCost": "0.0006672",
+      "outputInferenceCost": "0.0010512",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WCTZ8D9KVHQ3FFS7QXK1H"
+    }
+  },
+  "response": {
+    "id": "aitxt-RKO9kqQXsKTZoT4fXx9co6nk",
+    "modelId": "spacexai/grok-4.7",
+    "timestamp": "2026-09-22T15:41:47.270Z"
+  },
+  "billing": {
+    "totalCost": 0.0017184,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0017184",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "google--gemini-3.8-flash--handoff-slides--default",
+  "model": "google/gemini-3.8-flash",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:33:24.557Z",
+  "elapsedMs": 3160,
+  "text": "### Slide 1: Executive Summary & Handoff Decision\n* **Decision:** The service is not yet ready for operational handoff.\n* **Current Status:** \n  * Runbook is approved.\n  * Rollback rehearsal has not happened.\n* **Core Issue:** Acceptance criteria remain unmet because a required rehearsal is pending.\n\n---\n\n### Slide 2: Acceptance Criteria & Readiness Gap\n* **Handoff Requirements:** Acceptance requires an approved runbook and a successful rollback rehearsal.\n* **Criteria Checklist:**\n  * Approved Runbook: Complete.\n  * Successful Rollback Rehearsal: Incomplete.\n* **Identified Gap:** No role has accepted responsibility for organizing the rehearsal.\n\n---\n\n### Slide 3: Current Roles & Ownership\n* **Engineering:** Engineering lead Lee owns defect fixes until acceptance.\n* **Operations:** Operations lead Jo owns incidents only after acceptance.\n* **Impact of Delay:** Jo cannot assume ownership of incidents until Pat formally approves acceptance.\n\n---\n\n### Slide 4: Required Actions & Steering Committee Decisions\n* **Sponsor Actions (Pat):**\n  1. Assign responsibility for organizing the rollback rehearsal.\n  2. Approve acceptance once all criteria (approved runbook and successful rollback rehearsal) are met.\n* **Next Steps:** Conduct the rollback rehearsal under the newly assigned lead to achieve operational handoff.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 177,
+    "inputTokenDetails": {
+      "noCacheTokens": 177,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 285,
+    "outputTokenDetails": {
+      "textTokens": 285,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 462
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 177,
+        "candidatesTokenCount": 285,
+        "totalTokenCount": 462,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 177
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 285
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 177,
+        "candidatesTokenCount": 285,
+        "totalTokenCount": 462,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 177
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 285
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.8-flash",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.8-flash",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790084001528,
+                "endTime": 1790084004597,
+                "statusCode": 200,
+                "providerResponseId": "oYOyauXRI9X-sbwPxcW8iQ8"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0012015",
+      "marketCost": "0.0012015",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0012015",
+      "inferenceCost": "0.0012015",
+      "inputInferenceCost": "0.00013275",
+      "outputInferenceCost": "0.00106875",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34N4BPF2D371EWZ294PHKPT"
+    }
+  },
+  "response": {
+    "id": "aitxt-CO1wV5WTrcP8AokmseuU2Yqu",
+    "modelId": "google/gemini-3.8-flash",
+    "timestamp": "2026-09-22T13:33:24.557Z"
+  },
+  "billing": {
+    "totalCost": 0.0012015,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0012015",
+    "surchargeCost": "0"
+  },
+  "inputHash": "a7c03c25cb9c603cc0fe321151eb342113224084e00dda53a1a88da5b8186a52",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

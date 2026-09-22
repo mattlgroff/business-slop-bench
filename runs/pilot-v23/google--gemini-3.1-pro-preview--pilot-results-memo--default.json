@@ -1,0 +1,149 @@
+{
+  "id": "google--gemini-3.1-pro-preview--pilot-results-memo--default",
+  "model": "google/gemini-3.1-pro-preview",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:32:12.880Z",
+  "elapsedMs": 10873,
+  "text": "**Executive Readout: Pilot Scaling Recommendation**\n\n**Recommendation**\nDo not scale the pilot at this time. \n\n**What the Results Support**\nThe current pilot results do not support a rollout, as the data is inconclusive and fails to meet required performance thresholds:\n*   **Quality Failure:** The pilot achieved an 89% quality pass rate, which falls short of the minimum 92% threshold required for scaling. By comparison, the baseline pass rate was 94%.\n*   **Inconclusive Speed Gains:** Mean handling time dropped from a 15-minute baseline (across 200 tickets) to 12 minutes during the pilot (across 100 tickets). However, this improvement is unreliable because the ticket allocation was not randomized and the ticket mix differed between the two groups.\n*   **No Financial Impact:** No cash savings or staffing reductions have been measured from the pilot.\n\n**Next Decision**\nThe COO must decide whether to authorize Sam to run a matched-ticket follow-up to obtain accurate, comparable performance data.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 190,
+    "inputTokenDetails": {
+      "noCacheTokens": 190,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 938,
+    "outputTokenDetails": {
+      "textTokens": 222,
+      "reasoningTokens": 716
+    },
+    "totalTokens": 1128
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 716,
+        "promptTokenCount": 190,
+        "candidatesTokenCount": 222,
+        "totalTokenCount": 1128,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 190
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 222
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 716,
+        "promptTokenCount": 190,
+        "candidatesTokenCount": 222,
+        "totalTokenCount": 1128,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 190
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 222
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.1-pro-preview",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.1-pro-preview",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.1-pro-preview",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790109122367,
+                "endTime": 1790109132886,
+                "statusCode": 200,
+                "providerResponseId": "wuWyasjHHZWPlOoPhtSIuAU"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.011636",
+      "marketCost": "0.011636",
+      "surchargeCost": "0",
+      "gatewayCost": "0.011636",
+      "inferenceCost": "0.011636",
+      "inputInferenceCost": "0.00038",
+      "outputInferenceCost": "0.011256",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35D2ZGFMAVBS47K578V408B"
+    }
+  },
+  "response": {
+    "id": "aitxt-fcefyLBjwen2eYCjQEcSlt0E",
+    "modelId": "google/gemini-3.1-pro-preview",
+    "timestamp": "2026-09-22T20:32:12.880Z"
+  },
+  "billing": {
+    "totalCost": 0.011636,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.011636",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

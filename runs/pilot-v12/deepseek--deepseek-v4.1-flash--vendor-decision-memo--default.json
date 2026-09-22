@@ -1,0 +1,146 @@
+{
+  "id": "deepseek--deepseek-v4.1-flash--vendor-decision-memo--default",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "protocolHash": "f110ee0e70a4b329cdc3dd51f90d491b4de8805fc040d670721e201f253c6869",
+  "status": "ok",
+  "at": "2026-09-22T12:47:23.096Z",
+  "elapsedMs": 11709,
+  "text": "**Decision Memo: Year-One Vendor Selection**\n\n**To:** CFO  \n**From:** Procurement  \n**Re:** Vendor selection for year one  \n**Owner:** Priya\n\n**Recommendation:** Select Alpha.\n\n| Criterion | Alpha | Beta |\n|---|---|---|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| Year-one total | $92,000 | $70,000 |\n| Budget ceiling | $100,000 | $100,000 |\n| Within budget? | Yes | Yes |\n| Required SSO | Available | Unavailable, no committed delivery date |\n| Meets mandatory SSO? | Yes | No |\n| Other requirements | Met | Met |\n\n**Analysis**\n\nBoth vendors are within the $100,000 year-one budget ceiling, including setup. Alpha totals $92,000; Beta totals $70,000. Beta is cheaper by $22,000.\n\nHowever, SSO is mandatory before production. Alpha’s required SSO is available. Beta’s required SSO is unavailable and has no committed delivery date. Both vendors meet the other stated requirements.\n\nBecause SSO is a mandatory production constraint, Beta does not satisfy the requirements for year one. Its lower price cannot compensate for the missing mandatory capability, especially without a committed delivery date. Selecting Beta would create an unresolved production blocker and potentially require additional cost, delay, or a separate solution not established in the source pack.\n\nAlpha meets the mandatory SSO requirement and all other stated requirements. Its year-one total of $92,000 remains under the $100,000 ceiling, leaving $8,000 of budget headroom.\n\n**Recommendation**\n\nApprove Alpha for year one at $72,000 annual subscription plus $20,000 one-time setup, totaling $92,000. This satisfies the budget ceiling and the mandatory SSO requirement.\n\nBeta should not be selected for year one unless SSO becomes available with a committed delivery date and all requirements are revalidated.\n\n**Approval**\n\nCFO approval is needed before signing. Priya owns procurement.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 184,
+    "inputTokenDetails": {
+      "noCacheTokens": 184,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 432,
+    "outputTokenDetails": {
+      "textTokens": 432,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 616
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4.1-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "runware",
+          "relace",
+          "particle",
+          "novita",
+          "togetherai",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "gmicloud",
+          "modal",
+          "morph",
+          "deepseek",
+          "boundless"
+        ],
+        "planningReasoning": "System credentials planned for: baseten, fireworks, alibaba, runware, relace, particle, novita, togetherai, deepinfra, wafer, parasail, gmicloud, modal, morph, deepseek, boundless. ZDR requested: 17 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → runware(system) → relace(system) → particle(system) → novita(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → gmicloud(system) → modal(system) → morph(system) → deepseek(system) → boundless(system). ZDR execution order: baseten(system) → fireworks(system) → alibaba(system) → particle(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → modal(system) → morph(system)",
+        "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790081240108,
+                "endTime": 1790081240186,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081240193,
+                "endTime": 1790081243219,
+                "providerRequestId": "chatcmpl-0fcad84b035c4eeb9832c1857d37ccf2",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-0fcad84b035c4eeb9832c1857d37ccf2"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0003256",
+      "marketCost": "0.0003256",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0003256",
+      "inferenceCost": "0.0003256",
+      "inputInferenceCost": "0.00004048",
+      "outputInferenceCost": "0.00028512",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34JG26MM1V7MBYMN7SMKJYF"
+    }
+  },
+  "response": {
+    "id": "aitxt-2eX3UI1UybNyRqDEeLUyG02s",
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "timestamp": "2026-09-22T12:47:23.095Z"
+  },
+  "billing": {
+    "totalCost": 0.0003256,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0003256",
+    "surchargeCost": "0"
+  },
+  "inputHash": "ac9f211e316f4b3196ab069ee002cbbba284c7c19ca259801595efad7f737cd6",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none",
+    "maxOutputTokens": 4096
+  }
+}

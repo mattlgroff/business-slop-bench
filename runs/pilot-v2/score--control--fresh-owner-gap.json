@@ -1,0 +1,44 @@
+{
+  "id": "control--fresh-owner-gap",
+  "taskId": "handoff-slides",
+  "protocolHash": "7e6e252bccc030e33e670edb04cc9d190adaccfb9ed3a847d652b6c419bd39fc",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "decision",
+      "statement": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+      "severity": "critical",
+      "probability": 0.95,
+      "verdict": "pass"
+    },
+    {
+      "id": "C02",
+      "dimension": "accountability",
+      "statement": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+      "severity": "critical",
+      "probability": 0.76,
+      "verdict": "review"
+    },
+    {
+      "id": "C03",
+      "dimension": "accountability",
+      "statement": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+      "severity": "critical",
+      "probability": 0.73,
+      "verdict": "review"
+    }
+  ],
+  "deterministic": {
+    "words": 39,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": false,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 2
+}

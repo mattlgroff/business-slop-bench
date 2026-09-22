@@ -1,0 +1,159 @@
+{
+  "id": "zai--glm-5.3-flash--launch-delay-email--default",
+  "model": "zai/glm-5.3-flash",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:25:29.288Z",
+  "elapsedMs": 2597,
+  "text": "**Client Update: Launch Position**\n\nHi Avery,\n\nQuick update on the launch. The security review now completes October 12 at the earliest, and the release needs that approval completed — so October 8 production launch is no longer possible. The review may require remediation, and no new production date is authorized yet.\n\nThat said, a staging demo can still happen October 8 using synthetic data, which keeps us on track to show the work.\n\nI'm fully confident in the team — they've kept everything moving despite the security timeline, and the staging readiness reflects that.\n\n**Next step needed from you:** please decide whether you'd like to accept the staging demo on October 8. Nia owns the security review and will drive it to completion; your call on the demo is what we need to proceed.\n\nHappy to discuss either way.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 184,
+    "inputTokenDetails": {
+      "noCacheTokens": 184,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 177,
+    "outputTokenDetails": {
+      "textTokens": 177,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 361
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "runware",
+          "fireworks",
+          "wafer",
+          "particle",
+          "zai",
+          "togetherai",
+          "streamlake",
+          "parasail",
+          "digitalocean",
+          "friendli",
+          "novita",
+          "modal",
+          "morph",
+          "deepinfra",
+          "relace",
+          "boundless",
+          "inference-net",
+          "gmicloud"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 1 over runware. System credentials planned for: baseten, runware, fireworks, wafer, particle, zai, togetherai, streamlake, parasail, digitalocean, friendli, novita, modal, morph, deepinfra, relace, boundless, inference-net, gmicloud. ZDR requested: 19 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → runware(system) → fireworks(system) → wafer(system) → particle(system) → zai(system) → togetherai(system) → streamlake(system) → parasail(system) → digitalocean(system) → friendli(system) → novita(system) → modal(system) → morph(system) → deepinfra(system) → relace(system) → boundless(system) → inference-net(system) → gmicloud(system). ZDR execution order: baseten(system) → fireworks(system) → wafer(system) → particle(system) → togetherai(system) → parasail(system) → digitalocean(system) → modal(system) → morph(system) → deepinfra(system)",
+        "canonicalSlug": "zai/glm-5.3-flash",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3-flash",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790083527089,
+                "endTime": 1790083527174,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790083527188,
+                "endTime": 1790083529289,
+                "providerRequestId": "chatcmpl-53478fbda5ec401f96006bf9eaa57bea",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-53478fbda5ec401f96006bf9eaa57bea"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0001161",
+      "marketCost": "0.0001161",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0001161",
+      "inferenceCost": "0.0001161",
+      "inputInferenceCost": "0.0000276",
+      "outputInferenceCost": "0.0000885",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34MNW7STNJ4Q98D050E5JGV"
+    }
+  },
+  "response": {
+    "id": "aitxt-PAo60ZiKyXpYJ2jjh2v17L4C",
+    "modelId": "zai/glm-5.3-flash",
+    "timestamp": "2026-09-22T13:25:29.286Z"
+  },
+  "billing": {
+    "totalCost": 0.0001161,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0001161",
+    "surchargeCost": "0"
+  },
+  "inputHash": "d836b94ad74a2cf3b3a102f68ed3f55a1699c38698c58b277fa2971f5359efbd",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

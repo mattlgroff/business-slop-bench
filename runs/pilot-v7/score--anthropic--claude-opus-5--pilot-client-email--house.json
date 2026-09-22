@@ -1,0 +1,551 @@
+{
+  "id": "anthropic--claude-opus-5--pilot-client-email--house",
+  "taskId": "pilot-client-email",
+  "protocolHash": "93f2cb4689f4e9c75d47474e3831dbde21641df0f651f3aee6c097022cae472a",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+      "severity": "critical",
+      "probability": 0.97,
+      "verdict": "pass"
+    },
+    {
+      "id": "C02",
+      "dimension": "commitments",
+      "statement": "Production rollout remains explicitly excluded.",
+      "severity": "critical",
+      "probability": 0.84,
+      "verdict": "pass"
+    },
+    {
+      "id": "C03",
+      "dimension": "evidence",
+      "statement": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+      "severity": "critical",
+      "probability": 0.87,
+      "verdict": "pass"
+    },
+    {
+      "id": "C04",
+      "dimension": "decision",
+      "statement": "Security approval is explicitly a prerequisite to client data access.",
+      "severity": "critical",
+      "evaluation": "security-prerequisite",
+      "choice": "met",
+      "probabilities": {
+        "missing": 0.1,
+        "met": 0.9,
+        "contradicted": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "C05",
+      "dimension": "commitments",
+      "statement": "The email does not claim an approved start date or unconditional start commitment.",
+      "severity": "critical",
+      "probability": 0.94,
+      "verdict": "pass"
+    },
+    {
+      "id": "C06",
+      "dimension": "decision",
+      "statement": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+      "severity": "critical",
+      "probability": 0.98,
+      "verdict": "pass"
+    },
+    {
+      "id": "grounding",
+      "dimension": "evidence",
+      "severity": "critical",
+      "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "evaluation": "grounding",
+      "status": "grounded",
+      "evidence": {
+        "id": "P7",
+        "text": "Can you give me a decision this week? I'd rather hold the team's availability than release it and rebook later.",
+        "offset": 963,
+        "line": 13
+      },
+      "probabilities": {
+        "grounded": 0.62,
+        "unclear": 0,
+        "unsupported": 0.38
+      },
+      "verdict": "review"
+    },
+    {
+      "id": "negative_parallelism",
+      "dimension": "anti_slop",
+      "severity": "style_gate",
+      "polarity": "defect",
+      "statement": "Does the deliverable use formulaic negative parallelism solely for rhetorical emphasis, such as not X but Y, not just X but Y, This is not X. It is Y, less about X and more about Y, more than X it is Y, or X rather than Y? Do not flag a necessary factual correction, scope boundary, mutually exclusive condition or cumulative requirement. Judge all text, not only scanner candidates.",
+      "probability": 0.25,
+      "verdict": "pass"
+    },
+    {
+      "id": "style_1",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Stock AI vocabulary defect? Apply these rules: Watch for dense or unnatural use of words and phrases such as:\n\n`additionally`, `align with`, `boasts`, `bolstered`, `crucial`, `deep dive`, `delve`, `elevate`, `emphasize`, `enduring`, `enhance`, `ensure`, `ever-evolving`, `foster`, `garner`, `groundbreaking`, `harness`, `highlight`, `interplay`, `intricate`, `key`, `landscape`, `meticulous`, `navigate`, `pivotal`, `realm`, `robust`, `seamless`, `showcase`, `tapestry`, `testament`, `transformative`, `underscore`, `unlock`, `valuable`, and `vibrant`.\n\nExample defect: `Our robust platform unlocks transformative value across the evolving talent landscape.`\n\nRepair direction: replace abstractions with the product action, user, and measurable result. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_2",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Throat clearing defect? Apply these rules: Flag openings that delay the point, such as `It is important to note`, `It is worth considering`, `In today's environment`, `As organizations continue to`, and `When it comes to`.\n\nExample defect: `It is important to note that managers need accurate forecasts.`\n\nRepair direction: start with `Managers need accurate forecasts.` A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_3",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Canned transitions defect? Apply these rules: Flag mechanical sequencing and connective tissue such as repeated `Additionally`, `Moreover`, `Furthermore`, `However`, `Ultimately`, `Overall`, and `In conclusion` when the relationship is obvious or unsupported. An isolated transition is a finding only when its logical relationship is false, unnecessary, or clearer without it. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_4",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Generic significance defect? Apply these rules: Flag claims that something represents a milestone, broader shift, lasting legacy, pivotal moment, testament, or important trend without specific evidence.\n\nExample defect: `The launch marks a pivotal shift in how modern teams approach collaboration.`\n\nRepair direction: state what changed, for whom, and how it is measured. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_5",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Promotional puffery defect? Apply these rules: Flag breathtaking, revolutionary, world-class, best-in-class, cutting-edge, unmatched, unparalleled, game-changing, next-generation, and similar claims without a defined comparison and evidence. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_6",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Vague authority defect? Apply these rules: Flag `experts agree`, `research shows`, `industry reports indicate`, `many leaders believe`, `customers say`, and similar attributions without named, adequate support.\n\nExample defect: `Industry leaders increasingly recognize this as the future of recruiting.`\n\nRepair direction: name the evidence and its scope or remove the claim. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_7",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Superficial analysis defect? Apply these rules: Flag sentences that append an unsupported meaning or impact, often through `highlighting`, `underscoring`, `reflecting`, `showcasing`, `ensuring`, or `demonstrating`.\n\nExample defect: `The team completed the pilot, demonstrating its commitment to innovation.`\n\nRepair direction: report the pilot result. Do not invent what it symbolizes. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.98,
+        "defect": 0.02
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_8",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Vague relationships defect? Apply these rules: Flag indirect phrases such as `in connection with`, `associated with`, `related to`, and `in the context of` when the actual relationship can be named.\n\nRepair direction: use direct verbs such as owns, funds, approved, caused, supplies, or depends on. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_9",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Rule-of-three padding defect? Apply these rules: Flag artificial groups of three adjectives, benefits, clauses, or bullets used to sound complete when the items are overlapping, unsupported, or arbitrary.\n\nExample defect: `The process is faster, smarter, and more strategic.`\n\nRepair direction: retain distinct, supported outcomes only. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.97,
+        "defect": 0.03
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_10",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Repeated summaries defect? Apply these rules: Flag a conclusion that merely restates the introduction, a paragraph that repeats its first sentence, section-ending recaps with no new decision, and repeated `key takeaway` blocks. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_11",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Canned challenges and future outlook defect? Apply these rules: Flag formulaic endings that mention challenges, continued evolution, future prospects, or a promising path forward without decisions, owners, evidence, or dates. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_12",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Assistant residue defect? Apply these rules: Flag phrases addressed to the requester instead of the deliverable's audience, including `I hope this helps`, `Certainly`, `Of course`, `Here is`, `Let me know`, `Would you like`, and knowledge-cutoff disclaimers. Do not flag wording intentionally required by an email, form, proposal, playbook, or template. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_13",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Prompt and placeholder residue defect? Apply these rules: Flag leaked bracketed placeholders, template instructions, fake quotations, response preambles, prompt text, unfinished task markers, citation tokens, and markup copied from an assistant interface. Do not flag placeholders or instructions that are intentional features of a template or playbook.\n\nExamples include `[insert metric]`, `turn0search1`, `contentReference`, `oaicite`, and `as an AI language model`. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.86,
+        "defect": 0.14
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_14",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Excessive formatting defect? Apply these rules: Flag formatting that makes a simple point harder to read:\n\n- a title that repeats the document title\n- title case on every heading\n- headings that contain only more headings\n- bold text on routine terms\n- bullets with bold mini-headings for every sentence\n- thematic separators between every section\n- a table used for prose that would be clearer as two sentences\n- emojis used as structural markers in a professional deliverable A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.87,
+        "defect": 0.13
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_15",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Excessive structure defect? Apply these rules: Flag a short deliverable divided into too many sections, every idea forced into a numbered framework, nested bullets without hierarchy, and rigid symmetry that adds no decision value. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_16",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Verbosity defect? Apply these rules: Flag sentences, paragraphs, and sections that can lose substantial words without losing meaning. Look for doubled phrases, repeated qualifiers, long setup before the actor and action, and two sentences that make the same claim.\n\nExample defect: `At this point in time, the team is currently in the process of evaluating the available options.`\n\nRepair direction: `The team is evaluating the options.` A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "evidence": {
+        "id": "P4",
+        "text": "You've told us you're aiming for a 20% reduction in handling time. We have no baseline today, so the first task is measuring current handling time. That measurement gives you a defensible number either way: if the pilot reaches the target, you'll know what the rollout is worth; if it doesn't, you'll have spent a capped amount and still gained a baseline you don't currently have.",
+        "offset": 225,
+        "line": 7
+      },
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.83,
+        "defect": 0.17
+      },
+      "verdict": "review"
+    },
+    {
+      "id": "style_17",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Empty intensifiers and hedges defect? Apply these rules: Flag unnecessary `very`, `highly`, `deeply`, `significantly`, `incredibly`, `potentially`, `generally`, `typically`, `arguably`, and stacked qualifiers that weaken accountability or exaggerate impact. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_18",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Abstract nouns and nominalizations defect? Apply these rules: Flag writing centered on abstractions such as `enablement`, `optimization`, `transformation`, `alignment`, `operationalization`, and `value creation` when a concrete actor and verb would be clearer.\n\nExample defect: `The initiative enables the optimization of stakeholder alignment.`\n\nRepair direction: say who will agree on what and by when. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_19",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Hidden actors defect? Apply these rules: Flag passive or agentless claims such as `it was decided`, `changes will be implemented`, and `results are expected` when ownership matters. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_20",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Corporate and consultant jargon defect? Apply these rules: Flag `leverage`, `synergy`, `north star`, `value-add`, `circle back`, `move the needle`, `low-hanging fruit`, `best practice`, `strategic imperative`, and similar language when it replaces a specific action or result. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_21",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Mannered and unrelatable prose defect? Apply these rules: Flag mannered prose: metaphor, flourish, or conspicuously polished phrasing that replaces a clearer literal statement without adding meaning or precision. Also flag academic diction or formal language that the stated audience would not naturally use or immediately understand. Do not flag a metaphor that is the clearest accurate term for the audience or adds useful explanatory meaning.\n\nGroup recurring mannered devices that serve the same rhetorical function as one finding.\n\nExample defect: `The approval deadline casts a long shadow over the rollout.`\n\nRepair direction: state the actual effect of the deadline on the rollout. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.96,
+        "defect": 0.04
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_22",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Inflated substitutes for simple verbs defect? Apply these rules: Flag `serves as`, `stands as`, `functions as`, `operates as`, `features`, and `boasts` when `is` or `has` is accurate. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 1,
+        "defect": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_23",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Unsupported certainty through `ensure` defect? Apply these rules: Flag claims that a step `ensures`, `guarantees`, or `eliminates` an outcome when it only helps, reduces risk, or creates a condition. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.9,
+        "defect": 0.1
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_24",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Uniform cadence defect? Apply these rules: Flag repeated sentence length, repeated grammatical shapes, identical paragraph construction, and mechanical alternation between claim and explanation when the prose sounds generated or monotonous. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "unclear": 0,
+        "clean": 0.99,
+        "defect": 0.01
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_25",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Forced comprehensiveness defect? Apply these rules: Flag exhaustive-looking taxonomies, arbitrary frameworks, and long lists that imply completeness without explaining selection criteria or omissions. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "clean": 1,
+        "defect": 0,
+        "unclear": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_26",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Unnecessary caveat balance defect? Apply these rules: Flag reflexive `while` and `although` clauses that add a generic counterpoint merely to sound balanced.\n\nExample defect: `While the rollout presents challenges, it also creates meaningful opportunities.`\n\nRepair direction: identify the actual risk and opportunity, or delete the sentence. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "clean": 1,
+        "defect": 0,
+        "unclear": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_27",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Generic reader coaching defect? Apply these rules: Flag instructions such as `remember that`, `keep in mind`, `it is critical to understand`, and `one must consider` when the underlying fact can be stated directly. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "clean": 1,
+        "defect": 0,
+        "unclear": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_28",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Empty positive endings defect? Apply these rules: Flag endings that predict continued success, meaningful impact, future growth, or an exciting journey without evidence, ownership, or a decision. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "clean": 0.99,
+        "defect": 0.01,
+        "unclear": 0
+      },
+      "verdict": "pass"
+    },
+    {
+      "id": "style_29",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "evaluation": "style",
+      "statement": "Does the deliverable contain a supported Claude-associated rhetorical attractors defect? Apply these rules: Claudisms are recurring vocabulary and rhetorical shapes strongly associated with Claude-generated prose. Review the writing, never its alleged authorship. Report only instances that are formulaic, unnecessary, misleading, unnatural for the audience, or removable without information loss.\n\n#### Dramatic fragmentation\n\nFlag short fragments isolated to manufacture emphasis, suspense, or profundity, including constructions such as `Two. Things.`, `Not a detail. A design decision.`, `One problem.`, and a rhetorical question immediately answered by another fragment. Do not flag headings, labels, dialogue, intentional slogans, or concise fragments natural to the deliverable's format.\n\nRepair direction: combine the fragments into a complete sentence that states the claim without staged drama.\n\n#### Importance signaling and self-ranking\n\nFlag prefatory claims such as `worth stating plainly`, `here's why that matters`, `the deeper point`, `the real issue`, and `the most important thing` when the prose tells readers how significant a point is instead of demonstrating its consequence. This includes repeatedly crowning one observation as the decisive, surprising, or overlooked insight without evidence for that ranking.\n\nFlag cataphoric teasers that point forward to a withheld payload solely to manufacture suspense, such as `Here's the part that nobody tells you`, `Here's what most people get wrong`, and `Here's where it gets interesting`.\n\nRepair direction: remove the preamble and state the fact, consequence, or comparison directly.\n\n#### Candor, reassurance, and pushback scripts\n\nFlag canned conversational moves such as `honest take`, `one honest caveat`, `you're right to push back`, `I'd gently reset the framing`, and `that's on me` when they simulate candor, validation, or accountability without adding a substantive correction. A direct acknowledgment of an actual error or a necessary qualification is not a finding.\n\nRepair direction: state the correction, disagreement, or limitation without the social-performance preamble.\n\n#### Structural metaphor clusters\n\nFlag metaphorical uses of `load-bearing`, `heavy lifting`, `shape`, `spine`, `seam`, `chokepoint`, `backstop`, `blast radius`, `carry`, and similar systems language when the metaphor merely declares importance or complexity. Treat a dense cluster as stronger evidence than one precise term. Do not flag literal construction or engineering usage, established domain terminology, or a metaphor that clarifies a specific dependency.\n\nExample defect: `The kickoff memo is load-bearing because it carries the shape of the operating model.`\n\nRepair direction: name the dependency, failure consequence, owner, or required action.\n\n#### Aphoristic endings and mirrored cadence\n\nFlag paragraphs that end with compact, quotable declarations that add no information, especially when paired with mirrored clauses, artificial symmetry, or a contrast already covered by the style gate. Examples include `The process does not support the work. It is the work.` and `Clarity creates speed. Ambiguity creates drag.` Judge the passage as a whole and consolidate overlapping cadence, repetition, and negative-parallelism diagnoses.\n\nRepair direction: retain the supported claim and delete the manufactured landing. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "status": "clean",
+      "probabilities": {
+        "clean": 0.97,
+        "defect": 0.03,
+        "unclear": 0
+      },
+      "verdict": "pass"
+    }
+  ],
+  "deterministic": {
+    "words": 185,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": true,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 2
+}

@@ -1,0 +1,92 @@
+{
+  "id": "xiaomi--mimo-v2.6-pro--pilot-results-memo--default",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:50:18.742Z",
+  "elapsedMs": 26637,
+  "text": "# Executive Readout: Pilot Scale Decision\n\n**Recommendation: Do not scale the pilot now. Authorize the matched-ticket follow-up.**\n\n## Results\n\n| Measure | Baseline | Pilot | Threshold |\n|---|---|---|---|\n| Volume | 200 tickets | 100 tickets | — |\n| Mean handling time | 15 min | 12 min | — |\n| Quality pass rate | 94% | 89% | ≥92% |\n| Cash savings measured | — | None | — |\n\n## What the results support\n\n- **Speed:** The pilot showed a lower mean handling time (12 vs. 15 minutes). However, the ticket mix differed from baseline and allocation was not randomized, so this difference cannot be attributed to the pilot intervention with confidence.\n- **Quality:** The pilot does not support scaling. The 89% quality pass rate falls below the required 92% threshold, and is lower than the 94% baseline.\n- **Cost:** No conclusion is available. No staffing reductions or cash savings have been measured.\n\n## What the results do not support\n\n- The pilot does not demonstrate a quality-safe, causally credible handling-time gain.\n- The pilot does not demonstrate any measured financial benefit.\n- These gaps are the reason to hold scaling rather than proceed: scaling now would embed an unverified process change that currently fails a mandatory quality gate.\n\n## Next decision\n\n**For the COO: decide whether to authorize Sam's matched-ticket follow-up.**\n\nThat follow-up is the appropriate next step because matching tickets directly addresses the mix difference and non-random allocation that limit these results. It should also include quality measurement against the 92% threshold and capture any staffing or cash effects, so the next scale decision rests on complete, comparable evidence.\n\n**Approval requested: authorize the matched-ticket follow-up; defer scaling to that evidence.**",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 189,
+    "inputTokenDetails": {
+      "noCacheTokens": 189,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 466,
+    "outputTokenDetails": {
+      "textTokens": 397,
+      "reasoningTokens": 69
+    },
+    "totalTokens": 655
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "deepinfra": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "xiaomi/mimo-v2.6-pro",
+        "resolvedProvider": "xiaomi",
+        "fallbacksAvailable": [
+          "deepinfra"
+        ],
+        "planningReasoning": "System credentials planned for: xiaomi, deepinfra. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: xiaomi(system) → deepinfra(system). ZDR execution order: deepinfra(system)",
+        "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+        "finalProvider": "deepinfra",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "deepinfra",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110192233,
+                "endTime": 1790110218763,
+                "providerRequestId": "RRSDVqbrMjybUFYEeg2tSyQe",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-RRSDVqbrMjybUFYEeg2tSyQe"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "xiaomi",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.000487635",
+      "marketCost": "0.000487635",
+      "surchargeCost": "0",
+      "gatewayCost": "0.000487635",
+      "inferenceCost": "0.000487635",
+      "inputInferenceCost": "0.000082215",
+      "outputInferenceCost": "0.00040542",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35E3MHFEPCMP9DMR1EX4044"
+    }
+  },
+  "response": {
+    "id": "aitxt-cdima3VRDF0Wai1AZbtgPV9s",
+    "modelId": "xiaomi/mimo-v2.6-pro",
+    "timestamp": "2026-09-22T20:50:18.742Z"
+  },
+  "billing": {
+    "totalCost": 0.000487635,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.000487635",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

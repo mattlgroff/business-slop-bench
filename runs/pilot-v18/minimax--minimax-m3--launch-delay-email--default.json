@@ -1,0 +1,99 @@
+{
+  "id": "minimax--minimax-m3--launch-delay-email--default",
+  "model": "minimax/minimax-m3",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T13:59:53.536Z",
+  "elapsedMs": 20475,
+  "text": "**Client Update — Launch Position**\n\nHi Avery,\n\nQuick update on launch readiness as we close out the week.\n\n**Where things stand**\n\nThe October 8 production launch is no longer achievable. Nia's security review now completes October 12 at the earliest, and release approval cannot be granted until it closes. No new production date is authorized yet, and we will not set one until the review concludes — remediation, if required, will factor in.\n\n**What still moves forward on October 8**\n\nA staging demo can proceed as planned on October 8 using synthetic data. The security timeline does not affect that demonstration.\n\n**Recommended next step**\n\nThis decision is yours: do you want to proceed with the October 8 staging demo on synthetic data while Nia's review runs to completion? A yes/no from you lets us lock in demo logistics and keeps the team focused.\n\nThe team is steady and the delivery work is intact. The shift reflects the security process doing its job, not a slip on the build.\n\nThank you,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 294,
+    "inputTokenDetails": {
+      "noCacheTokens": 176,
+      "cacheReadTokens": 118
+    },
+    "outputTokens": 2093,
+    "outputTokenDetails": {
+      "textTokens": 211,
+      "reasoningTokens": 1882
+    },
+    "totalTokens": 2387
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "minimax/minimax-m3",
+        "resolvedProvider": "fireworks",
+        "fallbacksAvailable": [
+          "minimax",
+          "nebius",
+          "gmicloud"
+        ],
+        "planningReasoning": "System credentials planned for: fireworks, minimax, nebius, gmicloud. ZDR requested: 4 attempts → 2 ZDR attempts. Pre-ZDR order: fireworks(system) → minimax(system) → nebius(system) → gmicloud(system). ZDR execution order: fireworks(system) → nebius(system)",
+        "canonicalSlug": "minimax/minimax-m3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "minimax/minimax-m3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790085580086,
+                "endTime": 1790085593498,
+                "providerRequestId": "chatcmpl-ce7b9cc9ab4e4cbd99fa1e5de026cf6e",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-ce7b9cc9ab4e4cbd99fa1e5de026cf6e"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "minimax",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00257148",
+      "marketCost": "0.00257148",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00257148",
+      "inferenceCost": "0.00257148",
+      "inputInferenceCost": "0.00005988",
+      "outputInferenceCost": "0.0025116",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34PMGBHMX0B7DYY76VTG32V"
+    }
+  },
+  "response": {
+    "id": "aitxt-PbIZjM7iGiLKkaEQqsUDRpk5",
+    "modelId": "minimax/minimax-m3",
+    "timestamp": "2026-09-22T13:59:53.534Z"
+  },
+  "billing": {
+    "totalCost": 0.00257148,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00257148",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

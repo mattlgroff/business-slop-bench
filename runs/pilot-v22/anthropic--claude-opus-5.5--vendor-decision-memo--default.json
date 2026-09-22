@@ -1,0 +1,115 @@
+{
+  "id": "anthropic--claude-opus-5.5--vendor-decision-memo--default",
+  "model": "anthropic/claude-opus-5.5",
+  "protocolHash": "f510de81bb6764efdadceed2d4ba3e0e1c9443c53e6703db1ceffc6c3cb9e9ed",
+  "status": "ok",
+  "at": "2026-09-22T18:33:54.601Z",
+  "elapsedMs": 10181,
+  "text": "**DECISION MEMO**\n\n**To:** CFO\n**From:** Procurement (Owner: Priya)\n**Re:** Year-One Vendor Selection: Alpha vs. Beta\n**Action Requested:** Approval to sign with Alpha\n\n---\n\n**Recommendation**\n\nApprove **Alpha** at a year-one cost of **$92,000**. Alpha is the only vendor that meets every stated constraint.\n\n---\n\n**Evaluation Against Constraints**\n\n| Criterion | Alpha | Beta |\n|---|---|---|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| **Year-one total** | **$92,000** | **$70,000** |\n| Within $100,000 ceiling | Yes ($8,000 headroom) | Yes ($30,000 headroom) |\n| SSO (mandatory before production) | Available | Unavailable, no committed date |\n| Other stated requirements | Met | Met |\n| **Overall** | **Passes** | **Fails** |\n\n---\n\n**Rationale**\n\n1. **SSO is a hard gate.** SSO is mandatory before production. Beta does not offer it and has not committed to a delivery date. Beta therefore cannot reach production in year one on any date we can plan around.\n\n2. **Beta's savings cannot be realized.** Beta costs $22,000 less in year one. However, spending $70,000 on a vendor that cannot go to production buys no usable outcome. The lower price does not offset a failed mandatory requirement.\n\n3. **Alpha fits the budget.** Alpha's $92,000 year-one total, including setup, is within the $100,000 ceiling.\n\n4. **Otherwise equivalent.** Both vendors meet the other stated requirements, so SSO is the deciding factor.\n\n---\n\n**Risks and Considerations**\n\n- **Limited budget headroom.** Alpha leaves $8,000 under the ceiling. Any cost beyond the quoted subscription and setup would reduce this margin.\n- **Beta as a future option.** Beta could be reconsidered if it later commits to a firm SSO delivery date. This does not affect the year-one decision.\n\n---\n\n**Next Steps**\n\n1. CFO approves the Alpha selection.\n2. Priya finalizes the contract and proceeds to signing.\n\n---\n\n**Decision:** ☐ Approve Alpha ☐ Decline / Discuss\n\n**CFO Signature:** ____________ **Date:** ________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 306,
+    "inputTokenDetails": {
+      "noCacheTokens": 306,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 890,
+    "outputTokenDetails": {
+      "textTokens": 824,
+      "reasoningTokens": 66
+    },
+    "totalTokens": 1196
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 306,
+        "output_tokens": 890,
+        "output_tokens_details": {
+          "thinking_tokens": 66
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "claudeaws",
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, claudeaws, vertexAnthropic, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system). ZDR execution order: anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790102024892,
+                "endTime": 1790102034554,
+                "providerRequestId": "req_011CfJxXqc9qeCyzFp6Zvuse",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJxXqzirHYTgin6hQWHB"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.019024",
+      "marketCost": "0.019024",
+      "surchargeCost": "0",
+      "gatewayCost": "0.019024",
+      "inferenceCost": "0.019024",
+      "inputInferenceCost": "0.001224",
+      "outputInferenceCost": "0.0178",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M356ACBZMNYH8RVY1TQSPZ5E"
+    }
+  },
+  "response": {
+    "id": "aitxt-VtSf86KZ8hNjUTsP3Kbo7ERJ",
+    "modelId": "anthropic/claude-opus-5.5",
+    "timestamp": "2026-09-22T18:33:54.598Z"
+  },
+  "billing": {
+    "totalCost": 0.019024,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.019024",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

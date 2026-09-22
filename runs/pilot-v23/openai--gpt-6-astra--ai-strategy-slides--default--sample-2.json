@@ -1,0 +1,102 @@
+{
+  "id": "openai--gpt-6-astra--ai-strategy-slides--default--sample-2",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:58:20.302Z",
+  "elapsedMs": 14117,
+  "text": "### Slide 1 — Choose Internal Knowledge Search for Next Quarter\n- **Recommendation:** COO selects the $30,000 internal knowledge search pilot.\n- Focus the team’s one-pilot capacity on approved internal policy documents.\n- Make expansion contingent on reviewed results—not assumed performance.\n\n### Slide 2 — Knowledge Search Is the Stronger Near-Term Choice\n- **Knowledge search:** $30,000; uses approved internal policy documents; Dana is the IT owner.\n- **Automated customer credit decisions:** $45,000; legal approval is pending; production use is not authorized.\n- Both options fit the $50,000 ceiling, but the team can run only one pilot.\n- Favor knowledge search given its defined evaluation target and the credit option’s unresolved approval.\n\n### Slide 3 — Fund a Bounded Pilot; Measure Before Expanding\n- Allocate **$30,000** to knowledge search—$20,000 below the quarterly pilot budget ceiling.\n- Evaluate answer accuracy on **100 reviewed questions**.\n- Target **at least 90% accuracy**.\n- No current result exists: treat 90% as the success target, not demonstrated performance.\n\n### Slide 4 — Decision and Accountability\n- **COO decision requested:** Select internal knowledge search as next quarter’s sole pilot.\n- **IT owner:** Dana.\n- **Reporting requirement:** Dana reports results before any expansion.\n- **Recommended expansion gate:** Review measured accuracy against the target before deciding whether to scale.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 210,
+    "inputTokenDetails": {
+      "noCacheTokens": 210,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 301,
+    "outputTokenDetails": {
+      "textTokens": 301,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 511
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_06fdaec03a87195a016ab2ebe6c38481909e9ab6a7e107443f",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai, azure. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → openai(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110694533,
+                "endTime": 1790110700298,
+                "providerRequestId": "be86e6ff-d9fe-44c6-a065-fd1bd3fae99d",
+                "statusCode": 200,
+                "providerResponseId": "resp_06fdaec03a87195a016ab2ebe6c38481909e9ab6a7e107443f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.01715",
+      "marketCost": "0.01715",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01715",
+      "inferenceCost": "0.01715",
+      "inputInferenceCost": "0.0021",
+      "outputInferenceCost": "0.01505",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35EJYB1XY0JEE4CNQ9GCSP4"
+    }
+  },
+  "response": {
+    "id": "aitxt-zWjDc80K7QbBuypQVEXEiQH4",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-22T20:58:20.300Z"
+  },
+  "billing": {
+    "totalCost": 0.01715,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01715",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

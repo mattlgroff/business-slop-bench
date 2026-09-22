@@ -1,0 +1,159 @@
+{
+  "id": "zai--glm-5.3-flash--change-order--default",
+  "model": "zai/glm-5.3-flash",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:27:14.548Z",
+  "elapsedMs": 2985,
+  "text": "# Change-Order Proposal: Additional CRM Connector\n\n**To:** Client Sponsor\n**From:** Project Team\n**Subject:** Requested addition of a CRM connector (not in original scope)\n\n## 1. Requested Work\nThe existing signed scope covers the reporting dashboard. The client has requested an additional CRM connector. This item is not included in the original fee and requires sponsor approval in writing before any connector work begins.\n\n## 2. Price\n- Effort estimate: 40 hours at $175/hour\n- Proposed fixed change fee: **$7,000**\n\n## 3. Schedule Effect\nThe connector adds approximately two weeks after (a) written approval and (b) receipt of sandbox credentials. This is an estimate, not an approved calendar date.\n\n## 4. Client Dependency\nThe client must provide sandbox credentials before work can proceed.\n\n## 5. Approval\nPlease indicate one and return this document:\n\n☐ **Approve** — authorize the $7,000 fixed change fee and the estimated two-week addition upon written approval and credential receipt.\n☐ **Decline** — the CRM connector will be excluded from current scope.\n\nSignature: ______________________ Date: ____________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 190,
+    "inputTokenDetails": {
+      "noCacheTokens": 190,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 243,
+    "outputTokenDetails": {
+      "textTokens": 243,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 433
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "runware",
+          "fireworks",
+          "wafer",
+          "particle",
+          "zai",
+          "togetherai",
+          "streamlake",
+          "parasail",
+          "digitalocean",
+          "friendli",
+          "novita",
+          "modal",
+          "morph",
+          "deepinfra",
+          "relace",
+          "boundless",
+          "inference-net",
+          "gmicloud"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 1 over runware. System credentials planned for: baseten, runware, fireworks, wafer, particle, zai, togetherai, streamlake, parasail, digitalocean, friendli, novita, modal, morph, deepinfra, relace, boundless, inference-net, gmicloud. ZDR requested: 19 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → runware(system) → fireworks(system) → wafer(system) → particle(system) → zai(system) → togetherai(system) → streamlake(system) → parasail(system) → digitalocean(system) → friendli(system) → novita(system) → modal(system) → morph(system) → deepinfra(system) → relace(system) → boundless(system) → inference-net(system) → gmicloud(system). ZDR execution order: baseten(system) → fireworks(system) → wafer(system) → particle(system) → togetherai(system) → parasail(system) → digitalocean(system) → modal(system) → morph(system) → deepinfra(system)",
+        "canonicalSlug": "zai/glm-5.3-flash",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3-flash",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790083631685,
+                "endTime": 1790083631721,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790083631731,
+                "endTime": 1790083634577,
+                "providerRequestId": "chatcmpl-69314f1ec4aa473cbbddaa460e56b64e",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-69314f1ec4aa473cbbddaa460e56b64e"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00015",
+      "marketCost": "0.00015",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00015",
+      "inferenceCost": "0.00015",
+      "inputInferenceCost": "0.0000285",
+      "outputInferenceCost": "0.0001215",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34MS2GQWNZMCJ51NBQTF9GT"
+    }
+  },
+  "response": {
+    "id": "aitxt-8SNLPiHJPjg1DHUZaAx3mZAv",
+    "modelId": "zai/glm-5.3-flash",
+    "timestamp": "2026-09-22T13:27:14.548Z"
+  },
+  "billing": {
+    "totalCost": 0.00015,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00015",
+    "surchargeCost": "0"
+  },
+  "inputHash": "934edbf36f42d1c50f82b975a762a53f8ddb5af970c06f73ea1f0d39bf077735",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

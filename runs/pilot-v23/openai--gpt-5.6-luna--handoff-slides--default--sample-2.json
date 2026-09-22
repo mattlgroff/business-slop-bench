@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-luna--handoff-slides--default--sample-2",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T21:04:50.978Z",
+  "elapsedMs": 4771,
+  "text": "## Slide 1 — Readiness Decision\n- **Recommendation:** Do not approve operational handoff yet.\n- Acceptance requires:\n  - An approved runbook\n  - A successful rollback rehearsal\n- The runbook is approved.\n- The rollback rehearsal has not happened.\n- Therefore, acceptance criteria are not yet met.\n\n## Slide 2 — Current Ownership\n- Lee, Engineering lead, owns defect fixes until acceptance.\n- Jo, Operations lead, owns incidents only after acceptance.\n- No role has accepted responsibility for organizing the rollback rehearsal.\n- Operational ownership should not transfer to Jo before acceptance.\n\n## Slide 3 — Required Actions\n- Sponsor Pat assigns responsibility for organizing the rollback rehearsal.\n- The assigned responsibility holder organizes and completes the rehearsal.\n- The rollback rehearsal must be successful.\n- The approved runbook remains part of the acceptance criteria.\n\n## Slide 4 — Decision Gate\n- After a successful rollback rehearsal, acceptance criteria will be met.\n- Pat can approve acceptance once both criteria are met.\n- Following acceptance:\n  - Jo assumes incident ownership.\n  - Lee’s defect-fix ownership through acceptance ends.\n- **Steering committee decision:** Confirm that handoff is deferred until the rehearsal succeeds and Pat approves acceptance.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 323,
+    "outputTokenDetails": {
+      "textTokens": 252,
+      "reasoningTokens": 71
+    },
+    "totalTokens": 492
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_00b8bab445e39b92016ab2ed6e87308196a40a5f01d07a8b0b",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790111086484,
+                "endTime": 1790111090986,
+                "providerRequestId": "d55b9a69-4e70-4fc9-bcf7-1b2e03268729",
+                "statusCode": 200,
+                "providerResponseId": "resp_00b8bab445e39b92016ab2ed6e87308196a40a5f01d07a8b0b"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0004214",
+      "marketCost": "0.0004214",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0004214",
+      "inferenceCost": "0.0004214",
+      "inputInferenceCost": "0.0000338",
+      "outputInferenceCost": "0.0003876",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35EYXTPMBBY7VNH0A0G7AXP"
+    }
+  },
+  "response": {
+    "id": "aitxt-MktQyENHsyvJp3RXws9Z7dFg",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T21:04:50.976Z"
+  },
+  "billing": {
+    "totalCost": 0.0004214,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0004214",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

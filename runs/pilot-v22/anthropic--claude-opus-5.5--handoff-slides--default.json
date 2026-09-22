@@ -1,0 +1,115 @@
+{
+  "id": "anthropic--claude-opus-5.5--handoff-slides--default",
+  "model": "anthropic/claude-opus-5.5",
+  "protocolHash": "f510de81bb6764efdadceed2d4ba3e0e1c9443c53e6703db1ceffc6c3cb9e9ed",
+  "status": "ok",
+  "at": "2026-09-22T19:45:22.237Z",
+  "elapsedMs": 8364,
+  "text": "**Slide 1: Handoff Decision: Not Yet Ready**\n- **Decision requested:** Confirm the service is not ready for operational handoff, and approve the actions needed to get there.\n- **Status:** One of two acceptance criteria is met.\n- **Blocker:** The rollback rehearsal has not happened, and no role owns organizing it.\n- **Ask:** Sponsor Pat assigns responsibility for organizing the rehearsal.\n\n**Slide 2: Readiness Against Acceptance Criteria**\n\n| Criterion | Status |\n|---|---|\n| Approved runbook | Met |\n| Successful rollback rehearsal | Not met (not yet held) |\n\n- Acceptance requires both criteria.\n- **Conclusion:** Acceptance cannot be approved today.\n\n**Slide 3: Ownership Gap and Risk**\n\n| Responsibility | Owner | Condition |\n|---|---|---|\n| Defect fixes | Engineering lead Lee | Until acceptance |\n| Incidents | Operations lead Jo | Only after acceptance |\n| Organizing rollback rehearsal | **Unassigned** | None |\n| Assigning responsibility and approving acceptance | Sponsor Pat | Approval once criteria are met |\n\n- Without an organizer, the rehearsal cannot be scheduled, and acceptance stays blocked.\n- Until acceptance, Lee remains responsible for defect fixes, and Jo has not taken over incidents.\n\n**Slide 4: Actions Required**\n1. **Pat:** Assign a named owner to organize the rollback rehearsal.\n2. **Assigned owner:** Organize and run the rehearsal, then report the outcome to the steering committee.\n3. **Pat:** If the rehearsal succeeds, approve acceptance, since both criteria would then be met.\n4. **On acceptance:** Incident ownership transfers to Jo, and Lee's pre-acceptance defect-fix responsibility ends.\n\n- **Committee decision today:** Endorse \"not ready\" status and request that Pat make the rehearsal assignment.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 316,
+    "inputTokenDetails": {
+      "noCacheTokens": 316,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 810,
+    "outputTokenDetails": {
+      "textTokens": 698,
+      "reasoningTokens": 112
+    },
+    "totalTokens": 1126
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 316,
+        "output_tokens": 810,
+        "output_tokens_details": {
+          "thinking_tokens": 112
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "claudeaws",
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, claudeaws, vertexAnthropic, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system). ZDR execution order: anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790106314245,
+                "endTime": 1790106322178,
+                "providerRequestId": "req_011CfK3z2QMFF5tFGEwMMxue",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfK3z2x6GSGsfEXJ59CHi"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.017464",
+      "marketCost": "0.017464",
+      "surchargeCost": "0",
+      "gatewayCost": "0.017464",
+      "inferenceCost": "0.017464",
+      "inputInferenceCost": "0.001264",
+      "outputInferenceCost": "0.0162",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35AD99JWAY0P0X7CDC52SK7"
+    }
+  },
+  "response": {
+    "id": "aitxt-eHQlBYQ6snA3nOpzObo2kOgh",
+    "modelId": "anthropic/claude-opus-5.5",
+    "timestamp": "2026-09-22T19:45:22.237Z"
+  },
+  "billing": {
+    "totalCost": 0.017464,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.017464",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

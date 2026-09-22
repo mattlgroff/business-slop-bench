@@ -1,0 +1,99 @@
+{
+  "id": "minimax--minimax-m3--pilot-results-memo--default",
+  "model": "minimax/minimax-m3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:34:44.087Z",
+  "elapsedMs": 15624,
+  "text": "# Executive Readout: Pilot Scale Decision\n\n## Bottom Line\nDo not scale now. The pilot fails the required quality gate, and the handling-time gain is not yet causally credible.\n\n## What the Results Support\n- Pilot handled 100 tickets at a 12-minute mean handling time versus 15 minutes at baseline (200 tickets), a 20% directional reduction.\n- Quality pass rate dropped to 89% in the pilot, below the 92% scaling threshold and 5 points under the 94% baseline.\n- No staffing reductions or cash savings have been measured.\n- The efficiency signal is confounded: ticket mix differed and allocation was not randomized, so the MHT gap may reflect easier tickets rather than the intervention. Net: insufficient evidence to scale.\n\n## Key Risks\n- Selection bias undermines the MHT claim.\n- Quality regression below threshold signals customer-outcome risk if scaled.\n- Financial case is unproven.\n\n## Next Decision\nRecommend the COO authorize Sam's matched-ticket follow-up before any scale call. A matched design isolates the pilot's true effect on handling time and quality under like-for-like conditions.\n\n| Metric | Baseline | Pilot | Threshold | Status |\n|---|---|---|---|---|\n| Tickets | 200 | 100 | — | — |\n| Mean handling time (min) | 15 | 12 | — | Directional only |\n| Quality pass rate (%) | 94 | 89 | ≥92 | Fails |\n| Cash savings | — | None measured | — | Unproven |\n\n## Recommended Action\nHold scaling. Approve the matched-ticket follow-up. Re-decide after matched results land.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 294,
+    "inputTokenDetails": {
+      "noCacheTokens": 185,
+      "cacheReadTokens": 109
+    },
+    "outputTokens": 2507,
+    "outputTokenDetails": {
+      "textTokens": 334,
+      "reasoningTokens": 2173
+    },
+    "totalTokens": 2801
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "minimax/minimax-m3",
+        "resolvedProvider": "fireworks",
+        "fallbacksAvailable": [
+          "minimax",
+          "nebius",
+          "gmicloud"
+        ],
+        "planningReasoning": "System credentials planned for: fireworks, minimax, nebius, gmicloud. ZDR requested: 4 attempts → 2 ZDR attempts. Pre-ZDR order: fireworks(system) → minimax(system) → nebius(system) → gmicloud(system). ZDR execution order: fireworks(system) → nebius(system)",
+        "canonicalSlug": "minimax/minimax-m3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "minimax/minimax-m3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091268692,
+                "endTime": 1790091284091,
+                "providerRequestId": "chatcmpl-f8a156a2f9be44df8ff1ea3e69448f9f",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-f8a156a2f9be44df8ff1ea3e69448f9f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "minimax",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00307044",
+      "marketCost": "0.00307044",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00307044",
+      "inferenceCost": "0.00307044",
+      "inputInferenceCost": "0.00006204",
+      "outputInferenceCost": "0.0030084",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34W24D7MGZN06WFH851HV5R"
+    }
+  },
+  "response": {
+    "id": "aitxt-A9ksF0S1q0wIVufxdT9WxeVd",
+    "modelId": "minimax/minimax-m3",
+    "timestamp": "2026-09-22T15:34:44.086Z"
+  },
+  "billing": {
+    "totalCost": 0.00307044,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00307044",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

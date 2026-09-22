@@ -1,0 +1,36 @@
+{
+  "id": "control--omission",
+  "taskId": "pilot-client-email",
+  "protocolHash": "fad029a8fca4771f4f36af6a06978440b709ed5af9843c7479ef2f28f39e2bf5",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+      "severity": "critical",
+      "probability": 0.72,
+      "verdict": "review"
+    },
+    {
+      "id": "C04",
+      "dimension": "decision",
+      "statement": "Security approval is explicitly a prerequisite to client data access.",
+      "severity": "critical",
+      "probability": 0.27,
+      "verdict": "review"
+    }
+  ],
+  "deterministic": {
+    "words": 17,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": false,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 2
+}

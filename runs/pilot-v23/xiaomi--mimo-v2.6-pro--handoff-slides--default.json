@@ -1,0 +1,92 @@
+{
+  "id": "xiaomi--mimo-v2.6-pro--handoff-slides--default",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:52:43.403Z",
+  "elapsedMs": 10745,
+  "text": "Slide 1 — Purpose & Decision\nDecision required: accept service into operations or hold at engineering.\nReadiness rule: acceptance needs (a) approved runbook and (b) successful rollback rehearsal.\nOwner split: Lee owns defects until acceptance; Jo owns incidents only after acceptance (Source: delivery, operations, acceptance).\n\nSlide 2 — Readiness Status\n| Criterion | Status | Owner |\n|---|---|---|\n| Approved runbook | Met | — |\n| Rollback rehearsal — successful | Not met (not run) | Unassigned |\nFinding: 1 of 2 criteria met. Service is NOT ready for operational handoff (Source: current, acceptance).\n\nSlide 3 — Gap & Risk\nGap: no role has accepted responsibility for organizing the rollback rehearsal (Source: gap).\nConsequences if unresolved: acceptance cannot be approved; fix ownership stays with Lee indefinitely; incident duty never transfers to Jo, leaving day-to-day service ownership unestablished (Source: delivery, operations, acceptance).\n\nSlide 4 — Actions Required\n1. Sponsor Pat assigns accountability for organizing the rollback rehearsal today (Source: authority, gap).\n2. Assigned owner schedules and runs the rehearsal; success documented as evidence (Source: acceptance).\n3. On successful rehearsal, both criteria are met; Pat approves acceptance.\n4. On acceptance, Lee closes the fix-ownership role and Jo takes incident ownership (Source: delivery, operations, authority).\nAsk to the committee: endorse step 1 and confirm Pat's assignment and approval path.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 174,
+    "inputTokenDetails": {
+      "noCacheTokens": 174,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 341,
+    "outputTokenDetails": {
+      "textTokens": 311,
+      "reasoningTokens": 30
+    },
+    "totalTokens": 515
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "deepinfra": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "xiaomi/mimo-v2.6-pro",
+        "resolvedProvider": "xiaomi",
+        "fallbacksAvailable": [
+          "deepinfra"
+        ],
+        "planningReasoning": "System credentials planned for: xiaomi, deepinfra. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: xiaomi(system) → deepinfra(system). ZDR execution order: deepinfra(system)",
+        "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+        "finalProvider": "deepinfra",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "deepinfra",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110352760,
+                "endTime": 1790110363425,
+                "providerRequestId": "REhIjzpDB1ZeUPJxNS3pWbZl",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-REhIjzpDB1ZeUPJxNS3pWbZl"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "xiaomi",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00037236",
+      "marketCost": "0.00037236",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00037236",
+      "inferenceCost": "0.00037236",
+      "inputInferenceCost": "0.00007569",
+      "outputInferenceCost": "0.00029667",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35E8HANR6Y67JNFCB2YNSAZ"
+    }
+  },
+  "response": {
+    "id": "aitxt-zegfHKtO9qeBuRPdrVw4aWX4",
+    "modelId": "xiaomi/mimo-v2.6-pro",
+    "timestamp": "2026-09-22T20:52:43.403Z"
+  },
+  "billing": {
+    "totalCost": 0.00037236,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00037236",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

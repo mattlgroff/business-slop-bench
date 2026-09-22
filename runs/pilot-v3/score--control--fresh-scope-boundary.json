@@ -1,0 +1,44 @@
+{
+  "id": "control--fresh-scope-boundary",
+  "taskId": "pilot-client-email",
+  "protocolHash": "55118f5ec076d40106b344adc376d8f0ad390109d2f1aef2526354dfb1487417",
+  "grades": [
+    {
+      "id": "C02",
+      "dimension": "commitments",
+      "statement": "Production rollout remains explicitly excluded.",
+      "severity": "critical",
+      "probability": 0.54,
+      "verdict": "review"
+    },
+    {
+      "id": "negative_parallelism",
+      "dimension": "anti_slop",
+      "severity": "style_gate",
+      "polarity": "defect",
+      "statement": "Does the deliverable use formulaic negative parallelism solely for rhetorical emphasis, such as not X but Y, not just X but Y, This is not X. It is Y, less about X and more about Y, more than X it is Y, or X rather than Y? Do not flag a necessary factual correction, scope boundary, mutually exclusive condition or cumulative requirement. Judge all text, not only scanner candidates.",
+      "probability": 0.23,
+      "verdict": "review"
+    }
+  ],
+  "deterministic": {
+    "words": 13,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 30,
+        "line": 1,
+        "text": "rather than "
+      }
+    ]
+  },
+  "contentReady": false,
+  "contentBlocked": false,
+  "styleGatePass": false,
+  "editorialDefects": 0,
+  "unresolved": 2
+}

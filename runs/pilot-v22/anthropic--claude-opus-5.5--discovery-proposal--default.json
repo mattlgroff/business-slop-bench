@@ -1,0 +1,115 @@
+{
+  "id": "anthropic--claude-opus-5.5--discovery-proposal--default",
+  "model": "anthropic/claude-opus-5.5",
+  "protocolHash": "f510de81bb6764efdadceed2d4ba3e0e1c9443c53e6703db1ceffc6c3cb9e9ed",
+  "status": "ok",
+  "at": "2026-09-22T19:02:32.728Z",
+  "elapsedMs": 9012,
+  "text": "# Proposal: Discovery Engagement\n\n**Prepared for:** Client Sponsor\n**Purpose:** Request approval to begin a four-week discovery engagement\n\n## 1. Objective\n\nThis engagement will establish a clear view of your current state and a practical path forward. It is limited to discovery, so you can make an informed decision before committing to any implementation work.\n\n## 2. Scope and Deliverables\n\nOver four weeks, we will produce three artifacts:\n\n1. **Current-state process map:** a documented view of how the process operates today.\n2. **Prioritized backlog:** identified opportunities, ranked in order of priority.\n3. **Implementation recommendation:** our recommended approach for next steps.\n\n## 3. Exclusions\n\nThe following are outside the scope of this engagement:\n\n- Implementation\n- Integrations\n- Production support\n- Guaranteed savings\n\nAny follow-on work would require a separate agreement.\n\n## 4. Commercial Offer\n\n| Item | Detail |\n|---|---|\n| Effort | 80 hours |\n| Rate | $200 per hour |\n| **Total fee** | **$16,000** |\n| Payment 1 | 50% ($8,000) at kickoff |\n| Payment 2 | 50% ($8,000) on delivery |\n\n## 5. Client Responsibilities\n\nTo keep the engagement on schedule, the client will supply:\n\n- Access to interview participants\n- Relevant source documents\n\n## 6. Acceptance\n\nThe engagement is complete when the sponsor confirms delivery of the three listed artifacts: the current-state process map, the prioritized backlog, and the implementation recommendation. The second payment is due on delivery.\n\n## 7. How to Proceed\n\n1. **Approve and sign** this proposal.\n2. **Name a client contact** to coordinate interviews and document access.\n3. **Agree a start date.** We will confirm this only after we receive both the signature and the named contact.\n4. **Kickoff.** The first payment of $8,000 is due at kickoff, and the four-week discovery begins.\n\n## Approval\n\nBy signing below, the sponsor approves the discovery engagement as described above.\n\n**Sponsor name:** ______________________\n\n**Signature:** ______________________\n\n**Date:** ______________________\n\n**Named client contact:** ______________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 316,
+    "inputTokenDetails": {
+      "noCacheTokens": 316,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 796,
+    "outputTokenDetails": {
+      "textTokens": 739,
+      "reasoningTokens": 57
+    },
+    "totalTokens": 1112
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 316,
+        "output_tokens": 796,
+        "output_tokens_details": {
+          "thinking_tokens": 57
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "claudeaws",
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, claudeaws, vertexAnthropic, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system). ZDR execution order: anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790103745054,
+                "endTime": 1790103752690,
+                "providerRequestId": "req_011CfJzie59tYedJtcwdrDt6",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJzied9Cin43GrHgiacq"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.017184",
+      "marketCost": "0.017184",
+      "surchargeCost": "0",
+      "gatewayCost": "0.017184",
+      "inferenceCost": "0.017184",
+      "inputInferenceCost": "0.001264",
+      "outputInferenceCost": "0.01592",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M357YVCR2VTNV8FEXNAZHQMY"
+    }
+  },
+  "response": {
+    "id": "aitxt-uEyj6qYmUMSEyOxi1QTH8dQN",
+    "modelId": "anthropic/claude-opus-5.5",
+    "timestamp": "2026-09-22T19:02:32.727Z"
+  },
+  "billing": {
+    "totalCost": 0.017184,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.017184",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

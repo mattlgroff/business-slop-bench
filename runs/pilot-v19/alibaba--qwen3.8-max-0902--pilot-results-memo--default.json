@@ -1,0 +1,83 @@
+{
+  "id": "alibaba--qwen3.8-max-0902--pilot-results-memo--default",
+  "model": "alibaba/qwen3.8-max-0902",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T15:13:09.355Z",
+  "elapsedMs": 11069,
+  "text": "**Executive Readout: Pilot Scale Decision**\n\n**Recommendation: Do not scale now.**\n\n**What the results support**\n\nThe pilot showed a 20% reduction in mean handling time (12 min vs. 15 min baseline). However, three issues prevent a scale decision:\n\n1. **Quality below threshold.** Pilot pass rate was 89%, below the required 92% scaling threshold. Baseline was 94%.\n2. **Design limitations.** Allocation was not randomized and ticket mix differed between pilot and baseline, so the speed improvement cannot be reliably attributed to the intervention.\n3. **No cost impact measured.** No staffing reductions or cash savings have been demonstrated.\n\n**Next decision**\n\nSam can run a matched-ticket follow-up to address the design gap. The COO must decide whether to authorize that follow-up.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 240,
+    "inputTokenDetails": {
+      "noCacheTokens": 240,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 395,
+    "outputTokenDetails": {
+      "textTokens": 180,
+      "reasoningTokens": 215
+    },
+    "totalTokens": 635
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-max-0902",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-max-0902",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-max-0902",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790089978399,
+                "endTime": 1790089989342,
+                "providerRequestId": "611b994c-5ec1-909b-a1d4-e94841ec8bd2",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-611b994c-5ec1-909b-a1d4-e94841ec8bd2"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00285",
+      "marketCost": "0.00285",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00285",
+      "inferenceCost": "0.00285",
+      "inputInferenceCost": "0.00048",
+      "outputInferenceCost": "0.00237",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34TTRF111SWFZ91EGT4DXZB"
+    }
+  },
+  "response": {
+    "id": "aitxt-tDmZzs8pYr2UywUUYVUJLcMM",
+    "modelId": "alibaba/qwen3.8-max-0902",
+    "timestamp": "2026-09-22T15:13:09.355Z"
+  },
+  "billing": {
+    "totalCost": 0.00285,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00285",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

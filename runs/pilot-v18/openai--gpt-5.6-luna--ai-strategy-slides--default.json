@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-luna--ai-strategy-slides--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:20:48.663Z",
+  "elapsedMs": 9238,
+  "text": "## Slide 1 — Decision Required: Select One Q Next-Quarter AI Pilot\n- The team can run only one pilot next quarter.\n- Quarterly pilot budget ceiling: **$50,000**.\n- COO selects the pilot.\n- Dana reports results before any expansion.\n- **Decision requested:** approve the pilot that can proceed within current authorization and be evaluated clearly.\n\n## Slide 2 — Option A: Internal Knowledge Search Pilot\n- **Cost:** $30,000.\n- Uses approved internal policy documents.\n- IT owner: Dana.\n- Evaluation: review answers to **100 questions**.\n- Success target: at least **90% accuracy**.\n- Current result: **none yet**.\n- Fits within the quarterly budget ceiling.\n\n## Slide 3 — Option B: Automated Customer Credit Decisions\n- **Cost:** $45,000.\n- Legal approval is pending.\n- Production use is not authorized.\n- Fits within the quarterly budget ceiling financially.\n- Cannot proceed to authorized production use based on the current approval status.\n- Selecting this option would leave the quarter without an authorized production deployment.\n\n## Slide 4 — Recommendation: Approve Option A\n- Approve the **$30,000 internal knowledge search pilot** for next quarter.\n- It uses approved internal policy documents and has a defined evaluation method.\n- Dana owns IT delivery and will report results before any expansion.\n- Use the 100-question review to determine whether the pilot reaches the **90% accuracy target**.\n- Defer automated customer credit decisions until legal approval is obtained and production use is authorized.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 210,
+    "inputTokenDetails": {
+      "noCacheTokens": 210,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 363,
+    "outputTokenDetails": {
+      "textTokens": 323,
+      "reasoningTokens": 40
+    },
+    "totalTokens": 573
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0d8dfaf74e86030f016ab28eb80af88190ab6ecf3e5aefc55c",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086839485,
+                "endTime": 1790086848650,
+                "providerRequestId": "1c69546b-b5f2-46c8-91a5-1db46ac8074d",
+                "statusCode": 200,
+                "providerResponseId": "resp_0d8dfaf74e86030f016ab28eb80af88190ab6ecf3e5aefc55c"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0004776",
+      "marketCost": "0.0004776",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0004776",
+      "inferenceCost": "0.0004776",
+      "inputInferenceCost": "0.000042",
+      "outputInferenceCost": "0.0004356",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QTZ574M75M2Q685FPVS7N"
+    }
+  },
+  "response": {
+    "id": "aitxt-2uS8n5HTTyfTEslRlcGwzMdF",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T14:20:48.663Z"
+  },
+  "billing": {
+    "totalCost": 0.0004776,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0004776",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-luna--handoff-slides--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:21:05.240Z",
+  "elapsedMs": 10565,
+  "text": "## Slide 1 — Decision Required: Operational Handoff Readiness\n- **Recommendation:** Do not approve operational handoff yet.\n- Acceptance requires:\n  - An approved runbook.\n  - A successful rollback rehearsal.\n- The runbook is approved.\n- The rollback rehearsal has not happened.\n- Therefore, acceptance criteria are not yet met.\n\n## Slide 2 — Current Ownership and Readiness Gap\n- Lee, Engineering lead, owns defect fixes until acceptance.\n- Jo, Operations lead, owns incidents only after acceptance.\n- No role has accepted responsibility for organizing the rollback rehearsal.\n- This responsibility gap prevents completion of the remaining acceptance requirement.\n- Operations ownership should not begin before acceptance.\n\n## Slide 3 — Actions Required Before Handoff\n- Sponsor Pat assigns responsibility for organizing the rollback rehearsal.\n- Assigned responsibility leads the rehearsal.\n- The rehearsal must be successful.\n- The approved runbook remains in place.\n- Lee continues owning defect fixes until acceptance.\n- Jo does not assume incident ownership until acceptance.\n\n## Slide 4 — Acceptance Decision and Handoff Trigger\n- After a successful rollback rehearsal, the acceptance criteria will be met.\n- Pat can then approve acceptance.\n- Following acceptance:\n  - Jo owns incidents.\n  - Lee’s defect-fix ownership under the pre-acceptance arrangement ends.\n- **Steering committee decision:** Request Pat’s assignment now; defer handoff approval until the rehearsal succeeds and acceptance is approved.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 374,
+    "outputTokenDetails": {
+      "textTokens": 294,
+      "reasoningTokens": 80
+    },
+    "totalTokens": 543
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_08eae9479919604b016ab28ec6cf348194b3696c8aaa5b14e2",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086854759,
+                "endTime": 1790086865226,
+                "providerRequestId": "a03b62df-3386-4e92-8936-152bce2ec877",
+                "statusCode": 200,
+                "providerResponseId": "resp_08eae9479919604b016ab28ec6cf348194b3696c8aaa5b14e2"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0004826",
+      "marketCost": "0.0004826",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0004826",
+      "inferenceCost": "0.0004826",
+      "inputInferenceCost": "0.0000338",
+      "outputInferenceCost": "0.0004488",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QVE1QGK6NV7WX1W694YR3"
+    }
+  },
+  "response": {
+    "id": "aitxt-pdHUxXNG1B5BLDaqYbAOhbCF",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T14:21:05.240Z"
+  },
+  "billing": {
+    "totalCost": 0.0004826,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0004826",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

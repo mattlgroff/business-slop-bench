@@ -1,0 +1,86 @@
+{
+  "id": "alibaba--qwen3.8-flash--change-order--default",
+  "model": "alibaba/qwen3.8-flash",
+  "protocolHash": "b0e357508ee8b7836580dbc58d4c79b020290950949876ba9ae5c0065353df85",
+  "status": "ok",
+  "at": "2026-09-22T12:08:43.178Z",
+  "elapsedMs": 7338,
+  "text": "**Change-Order Proposal**\n\n**Date:** [Insert Date]\n**To:** Client Sponsor\n**From:** [Project Lead]\n**Re:** CRM Connector Addition\n\n---\n\n**1. Summary**\n\nYou have requested a CRM connector to extend the existing reporting dashboard scope. This work is not included in the original signed fee and requires a change order for your written approval before any work begins.\n\n**2. Scope of Requested Work**\n\nBuild and integrate a CRM connector into the existing reporting dashboard. This includes development, sandbox testing, and handover.\n\n**3. Pricing**\n\n| Item | Detail |\n|------|--------|\n| Estimate | 40 hours @ $175/hr |\n| Proposed Fixed Fee | $7,000 |\n\n**4. Schedule Effect**\n\nConnector work adds two weeks after written approval **and** credential receipt. This is an estimate, not an approved calendar date.\n\n**5. Dependencies**\n\nClient must provide sandbox credentials before connector development can begin. Timeline starts upon receipt of both approval and credentials.\n\n**6. Approval Authority**\n\nSponsor must approve this change order in writing before connector work begins. No work will be performed without that written approval.\n\n---\n\n**Decision:**\n\n☐ Approve — proceed with change order at $7,000 fixed fee.\n\n☐ Decline — original scope continues unchanged.\n\nSponsor Signature: _________________________ Date: __________\n\n---\n\n*This proposal is based solely on the facts above. Original dashboard scope and fee remain unaffected unless this change order is approved.*",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 244,
+    "inputTokenDetails": {
+      "noCacheTokens": 244,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 396,
+    "outputTokenDetails": {
+      "textTokens": 335,
+      "reasoningTokens": 61
+    },
+    "totalTokens": 640
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-flash",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-flash",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790078916048,
+                "endTime": 1790078923214,
+                "providerRequestId": "75775525-0bc5-9ba0-bb8e-9749ca07b445",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-75775525-0bc5-9ba0-bb8e-9749ca07b445"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00022272",
+      "marketCost": "0.00022272",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00022272",
+      "inferenceCost": "0.00022272",
+      "inputInferenceCost": "0.0000366",
+      "outputInferenceCost": "0.00018612",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34G95AYGQYZCKTK34XPBQC9"
+    }
+  },
+  "response": {
+    "id": "aitxt-JauJ0QTeCQx2zIjRwvteUuXz",
+    "modelId": "alibaba/qwen3.8-flash",
+    "timestamp": "2026-09-22T12:08:43.177Z"
+  },
+  "billing": {
+    "totalCost": 0.00022272,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00022272",
+    "surchargeCost": "0"
+  },
+  "inputHash": "934edbf36f42d1c50f82b975a762a53f8ddb5af970c06f73ea1f0d39bf077735",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v8/alibaba--qwen3.8-flash--change-order--default.json",
+  "originalProtocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5"
+}

@@ -1,0 +1,59 @@
+{
+  "state": "Subject: Approved Pilot Proposal: Invoice Handling Assessment\n\nMorgan,\n\nFollowing our recent discussion, I am pleased to propose the next step: a six-week pilot designed to rigorously assess invoice handling efficiency. This engagement is strictly limited to the pilot scope, ensuring focused evaluation without the immediate commitment of a production rollout.\n\nWe have structured the fee at a fixed $30,000 to maintain budget certainty. Our primary objective is to validate your hypothesis that handling times can be reduced by 20%. Since no baseline data currently exists, this pilot will provide the critical measurements needed to determine if those savings are achievable and sustainable.\n\nPlease note that security approval is required before we can access any client data. Consequently, while no start date has been formally approved, we are ready to move immediately upon sign-off.\n\nTo proceed, I request your approval of the pilot scope and fixed fee, subject to the necessary security clearance. This decision will allow us to define a concrete start date and begin collecting the vital data your team needs.\n\nBest regards,\n\nJordan\nEngagement Lead",
+  "questions": {
+    "check": {
+      "type": "boolean",
+      "instructions": "Does the email state that security approval is required before client data access?"
+    }
+  },
+  "answers": {
+    "check": {
+      "type": "boolean",
+      "probability": 0.99
+    }
+  },
+  "usage": {
+    "inputTokens": 503,
+    "outputTokens": 20,
+    "totalTokens": 523
+  },
+  "providerMetadata": {
+    "typesafe": {
+      "confidence": {}
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "typesafe-ai/jev",
+        "resolvedProvider": "typesafe-ai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: typesafe-ai. ZDR requested: all 1 attempts support ZDR. Execution order: typesafe-ai(system)",
+        "canonicalSlug": "typesafe-ai/jev",
+        "finalProvider": "typesafe-ai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "typesafe-ai/jev",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "typesafe-ai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790076191765,
+                "endTime": 1790076191958,
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.000021126",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M34DP0TQAABR7RRXFRTJJ0HE"
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "moonshotai--kimi-k3--pilot-results-memo--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5",
+  "status": "ok",
+  "at": "2026-09-22T12:12:38.448Z",
+  "elapsedMs": 12330,
+  "text": "**Executive Readout: Do Not Scale the Pilot Now**\n\n**Recommendation:** Do not scale. Authorize Sam’s matched-ticket follow-up instead.\n\n**What the results support:** The pilot handled 100 tickets at 12 minutes mean handling time versus a 200-ticket baseline at 15 minutes. However, ticket mix differed and allocation was not randomized, so the 3-minute improvement is not reliable evidence of a scalable effect.\n\nQuality moved the wrong way against the scaling gate: baseline pass rate was 94%, pilot pass rate was 89%, and the required scaling threshold is at least 92%. The pilot therefore fails the stated quality requirement.\n\nNo staffing reductions or cash savings have been measured, so there is no demonstrated financial basis to expand.\n\n**Decision supported:** The current evidence supports continued testing, not scale-up. The apparent speed gain is confounded; quality is below threshold; economics are unproven.\n\n**Next decision:** COO decides whether to authorize Sam’s matched-ticket follow-up. Recommend authorization, with scale reconsidered only if comparable tickets confirm handling-time improvement and quality meets or exceeds 92%.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 259,
+    "inputTokenDetails": {
+      "noCacheTokens": 227,
+      "cacheReadTokens": 32
+    },
+    "outputTokens": 577,
+    "outputTokenDetails": {
+      "textTokens": 239,
+      "reasoningTokens": 338
+    },
+    "totalTokens": 836
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 310,
+      "rejectedPredictionTokens": 228
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "fireworks",
+          "runware",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, fireworks, runware, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → fireworks(system) → runware(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790079152139,
+                "endTime": 1790079158480,
+                "providerRequestId": "54ca701a0c908303d7eb79c223420e69feff1",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-fb2605f1ed8b41f3a4966ed116ad6971",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0093456",
+      "marketCost": "0.0093456",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0093456",
+      "inferenceCost": "0.0093456",
+      "inputInferenceCost": "0.0006906",
+      "outputInferenceCost": "0.008655",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34GGB6PZF2Q18PBMWH8F1XZ"
+    }
+  },
+  "response": {
+    "id": "aitxt-zCiB3uVfmWiMCfa202ziz0uE",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T12:12:38.448Z"
+  },
+  "billing": {
+    "totalCost": 0.0093456,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0093456",
+    "surchargeCost": "0"
+  },
+  "inputHash": "d51015dda69be7545657d0e0160bde253b7095eda2515dc1dd4690de1e4cac00",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "protocolHash": "1737b5d275f915687f00ad1996fefcbec613dc0bf42536cbb155b194320dadce",
+  "summary": [
+    {
+      "method": "baseline",
+      "splits": [
+        {
+          "split": "category-controls",
+          "n": 116,
+          "matches": 114,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 2
+        },
+        {
+          "split": "transfer",
+          "n": 24,
+          "matches": 24,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "observed-draft",
+          "n": 32,
+          "matches": 0,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 3
+        }
+      ]
+    },
+    {
+      "method": "revised",
+      "splits": [
+        {
+          "split": "category-controls",
+          "n": 116,
+          "matches": 116,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "transfer",
+          "n": 24,
+          "matches": 24,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "observed-draft",
+          "n": 32,
+          "matches": 0,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 8
+        }
+      ]
+    }
+  ],
+  "budgetAccountedUsd": 1.9807681239999995
+}

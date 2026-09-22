@@ -1,0 +1,19 @@
+{
+  "id": "meta--muse-spark-1.3--pilot-client-email--default",
+  "model": "meta/muse-spark-1.3",
+  "status": "error",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "inputHash": "c5fd1dbf8903b30dd0099a29fd4f858211f622a4413c594b9fc7800ac9bb07b6",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "error": {
+    "name": "GatewayInternalServerError",
+    "statusCode": 400,
+    "message": "No ZDR (Zero Data Retention) providers or ZDR-attested BYOK credentials available for model: meta/muse-spark-1.3. Providers considered: meta",
+    "requestId": "iad1::iad1::mwfc7-1790084615438-082c3f94d0f9"
+  },
+  "elapsedMs": 279
+}

@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-sol--vendor-decision-memo--default",
+  "model": "openai/gpt-6-sol",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:25:40.476Z",
+  "elapsedMs": 3656,
+  "text": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO  \n**Recommendation:** Approve Vendor Alpha for year one, subject to procurement review before signing.\n\n| Vendor | Year-one cost, including setup | Budget ceiling | Mandatory SSO |\n|---|---:|---|---|\n| Alpha | $92,000 | $8,000 under | Available |\n| Beta | $70,000 | $30,000 under | Unavailable; no committed delivery date |\n\nBoth vendors meet the other stated requirements. Beta costs $22,000 less in year one, but SSO is mandatory before production, so it cannot currently meet a condition for production use. Alpha meets that condition and remains within the $100,000 year-one budget ceiling.\n\n**Decision requested:** Approve Alpha for year one. Priya owns procurement, and CFO approval is required before signing.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 180,
+    "inputTokenDetails": {
+      "noCacheTokens": 180,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 180,
+    "outputTokenDetails": {
+      "textTokens": 180,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 360
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0a228da316571ef3006ab2e441e02c87d292cdff3b940f7174",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108737603,
+                "endTime": 1790108740454,
+                "providerRequestId": "req_6bf3657a835f413f9d3e019afa965a81",
+                "statusCode": 200,
+                "providerResponseId": "resp_0a228da316571ef3006ab2e441e02c87d292cdff3b940f7174"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.00216",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CQ7ZC8QFNV31CDZ2J9M9J"
+    }
+  },
+  "response": {
+    "id": "aitxt-fMUhjefZXcdEe8CmSGfKssYC",
+    "modelId": "openai/gpt-6-sol",
+    "timestamp": "2026-09-22T20:25:40.475Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

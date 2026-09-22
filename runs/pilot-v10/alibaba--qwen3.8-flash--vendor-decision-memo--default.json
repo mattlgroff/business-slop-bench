@@ -1,0 +1,86 @@
+{
+  "id": "alibaba--qwen3.8-flash--vendor-decision-memo--default",
+  "model": "alibaba/qwen3.8-flash",
+  "protocolHash": "b0e357508ee8b7836580dbc58d4c79b020290950949876ba9ae5c0065353df85",
+  "status": "ok",
+  "at": "2026-09-22T12:07:08.750Z",
+  "elapsedMs": 10201,
+  "text": "# Decision Memo: Vendor Selection — Year One\n\n**To:** CFO\n**From:** Priya, Procurement\n**Re:** Vendor recommendation for platform procurement\n\n## Summary\n\nRecommend **Vendor Alpha**. Vendor Beta fails the mandatory SSO constraint and cannot go to production.\n\n## Evaluation Against Constraints\n\n| Constraint | Alpha | Beta |\n|---|---|---|\n| Year-one budget ≤ $100,000 | ✅ $92,000 | ✅ $70,000 |\n| SSO mandatory before production | ✅ Available | ❌ Unavailable; no committed date |\n| Other stated requirements | ✅ Met | ✅ Met |\n\n## Analysis\n\nBeta offers a $22,000 cost advantage, but this is irrelevant. SSO is mandatory before production. Beta has no committed delivery date for SSO, meaning the platform cannot reach production within year one under any planned timeline. Selecting Beta introduces unlimited project delay risk and likely wasted spend.\n\nAlpha is $8,000 under the budget ceiling, includes SSO, and meets all stated requirements.\n\n## Recommendation\n\nApprove Vendor Alpha at $92,000 total year-one cost. Beta is not viable given the SSO constraint.\n\nAwaiting your sign-off to proceed.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 250,
+    "inputTokenDetails": {
+      "noCacheTokens": 250,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 441,
+    "outputTokenDetails": {
+      "textTokens": 274,
+      "reasoningTokens": 167
+    },
+    "totalTokens": 691
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-flash",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-flash",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790078818703,
+                "endTime": 1790078828776,
+                "providerRequestId": "8c21fff6-90f1-9650-817e-e5b7dd70c477",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-8c21fff6-90f1-9650-817e-e5b7dd70c477"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00024477",
+      "marketCost": "0.00024477",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00024477",
+      "inferenceCost": "0.00024477",
+      "inputInferenceCost": "0.0000375",
+      "outputInferenceCost": "0.00020727",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34G66AA3281XS789C8YFMWT"
+    }
+  },
+  "response": {
+    "id": "aitxt-0fjdwBb7IiB5K3c1uKmaJMj7",
+    "modelId": "alibaba/qwen3.8-flash",
+    "timestamp": "2026-09-22T12:07:08.749Z"
+  },
+  "billing": {
+    "totalCost": 0.00024477,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00024477",
+    "surchargeCost": "0"
+  },
+  "inputHash": "5fc116f1d6aa5d04c02fe899af527554aef255edebc05cd1de550b4de7f0278c",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v8/alibaba--qwen3.8-flash--vendor-decision-memo--default.json",
+  "originalProtocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5"
+}

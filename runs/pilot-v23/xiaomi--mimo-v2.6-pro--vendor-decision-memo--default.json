@@ -1,0 +1,92 @@
+{
+  "id": "xiaomi--mimo-v2.6-pro--vendor-decision-memo--default",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:49:31.666Z",
+  "elapsedMs": 36146,
+  "text": "# DECISION MEMO: Year-One Vendor Selection\n\n**To:** CFO\n**From:** Procurement (Priya, owner)\n**Subject:** Vendor selection — recommendation for CFO approval before signing\n\n## Recommendation\n\n**Select Alpha.** It is the only vendor that satisfies the mandatory SSO constraint and stays within the year-one budget ceiling.\n\n## Year-One Cost\n\n| Vendor | Subscription | Setup | Year-One Total | Within $100,000 Ceiling? |\n|---|---|---|---|---|\n| Alpha | $72,000 | $20,000 | $92,000 | Yes |\n| Beta | $60,000 | $10,000 | $70,000 | Yes |\n\nBoth vendors fit the $100,000 budget ceiling including setup.\n\n## Constraint Evaluation\n\n**SSO is mandatory before production.** This is a gating requirement, not a preference.\n\n- **Alpha:** Required SSO is available. Constraint met.\n- **Beta:** Required SSO is unavailable, and there is no committed delivery date. Constraint not met.\n\nBoth vendors meet all other stated requirements, so SSO is the sole differentiator on compliance.\n\n## Analysis\n\nBeta is $22,000 cheaper in year one, but its inability to meet a mandatory pre-production requirement makes it non-compliant regardless of price. With no committed delivery date, there is no basis to treat Beta's SSO gap as a temporary shortfall that could be mitigated within year one. Selecting Beta would mean entering production without a mandatory capability, contrary to the stated constraints. The price advantage does not, and cannot, cure this failure.\n\nAlpha meets the mandatory SSO requirement and totals $92,000 in year one, leaving $8,000 of headroom under the $100,000 ceiling.\n\n## Requested Action\n\nCFO approval to sign with **Alpha** for year one. Priya will proceed with procurement execution upon approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 199,
+    "inputTokenDetails": {
+      "noCacheTokens": 199,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 494,
+    "outputTokenDetails": {
+      "textTokens": 430,
+      "reasoningTokens": 64
+    },
+    "totalTokens": 693
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "deepinfra": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "xiaomi/mimo-v2.6-pro",
+        "resolvedProvider": "xiaomi",
+        "fallbacksAvailable": [
+          "deepinfra"
+        ],
+        "planningReasoning": "System credentials planned for: xiaomi, deepinfra. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: xiaomi(system) → deepinfra(system). ZDR execution order: deepinfra(system)",
+        "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+        "finalProvider": "deepinfra",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "deepinfra",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110135718,
+                "endTime": 1790110171688,
+                "providerRequestId": "RXfwMtm2Y2NU1A3L4G1No2z0",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-RXfwMtm2Y2NU1A3L4G1No2z0"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "xiaomi",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.000516345",
+      "marketCost": "0.000516345",
+      "surchargeCost": "0",
+      "gatewayCost": "0.000516345",
+      "inferenceCost": "0.000516345",
+      "inputInferenceCost": "0.000086565",
+      "outputInferenceCost": "0.00042978",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35E1X98DHBQKJFFHDKZ4J10"
+    }
+  },
+  "response": {
+    "id": "aitxt-soZ8JfFgHohqJ6fPnqsjxf2b",
+    "modelId": "xiaomi/mimo-v2.6-pro",
+    "timestamp": "2026-09-22T20:49:31.666Z"
+  },
+  "billing": {
+    "totalCost": 0.000516345,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.000516345",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

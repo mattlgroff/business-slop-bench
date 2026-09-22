@@ -1,0 +1,127 @@
+{
+  "id": "anthropic--claude-fable-5.1--pilot-client-email--default",
+  "model": "anthropic/claude-fable-5.1",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T12:36:37.579Z",
+  "elapsedMs": 8953,
+  "text": "Subject: Invoice Handling Pilot – Approval Requested\n\nHi Morgan,\n\nThank you for the productive discussions so far. I'd like to propose we move forward with the pilot and ask for your decision on scope and fee.\n\n**Proposal**\n- Scope: Six-week pilot to assess invoice handling. Production rollout is excluded.\n- Fee: $30,000 fixed. No open-ended costs.\n- Objective: Test your team's target of a 20% reduction in handling time.\n\n**Why now**\nNo baseline currently exists, so savings can't yet be quantified. The pilot establishes that baseline and gives you measured evidence before any larger commitment. The fixed fee and defined scope keep your risk bounded.\n\n**Conditions**\n- Security approval is required before we access any client data; we will not proceed without it.\n- No start date is set. Once you approve, we'll align a schedule with your security timeline.\n\n**Requested decision**\nPlease approve the pilot scope and $30,000 fee, subject to security clearance.\n\nHappy to walk through any questions this week.\n\nBest regards,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 318,
+    "inputTokenDetails": {
+      "noCacheTokens": 318,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 370,
+    "outputTokenDetails": {
+      "textTokens": 370,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 688
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 318,
+        "output_tokens": 370,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.1",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5.1",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.1",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790080588787,
+                "endTime": 1790080589369,
+                "providerRequestId": "fc4f895e-c730-4515-a239-7cef82bbad14",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790080589425,
+                "endTime": 1790080597621,
+                "providerRequestId": "req_011CfJVHjbU5utqXVxdXnXmg",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJVHkGeWFkVvcs8hD9Aq",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.02168",
+      "marketCost": "0.02168",
+      "surchargeCost": "0",
+      "gatewayCost": "0.02168",
+      "inferenceCost": "0.02168",
+      "inputInferenceCost": "0.00318",
+      "outputInferenceCost": "0.0185",
+      "generationId": "gen_01M34HW6Y04BK0DB2G1139DVMW"
+    }
+  },
+  "response": {
+    "id": "aitxt-b075m2cr3Fm5WzPyLOe44IYa",
+    "modelId": "anthropic/claude-fable-5.1",
+    "timestamp": "2026-09-22T12:36:37.578Z"
+  },
+  "billing": {
+    "totalCost": 0.02168,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.02168",
+    "surchargeCost": "0"
+  },
+  "inputHash": "c5fd1dbf8903b30dd0099a29fd4f858211f622a4413c594b9fc7800ac9bb07b6",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v11/anthropic--claude-fable-5.1--pilot-client-email--default.json",
+  "originalProtocolHash": "d4767e5b5dcc6bea4b5cbaa7a1cfeb68a43c25f146752a46a50a4622d08f4eb2"
+}

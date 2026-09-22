@@ -1,0 +1,146 @@
+{
+  "id": "deepseek--deepseek-v4.1-flash--change-order--default",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "protocolHash": "bc04bb9681566600f5b6070b8d4ee99eac57b48c105446259da69193f2e8e644",
+  "status": "ok",
+  "at": "2026-09-22T12:50:32.100Z",
+  "elapsedMs": 2294,
+  "text": "**Change Order Proposal – CRM Connector**\n\n**To:** Client Sponsor\n**Requested By:** Client\n**Status:** For written approval or decline\n\n**Requested Work**\nThe existing signed scope covers the reporting dashboard only. The client has requested an additional CRM connector. This connector is not included in the original fee. Work will begin only after written approval and receipt of credentials.\n\n**Price**\nEstimated effort: 40 hours at $175/hour.\nProposed fixed change fee: **$7,000**.\n\n| Item | Amount |\n|---|---|\n| Estimated effort | 40 hours |\n| Rate | $175/hour |\n| Proposed fixed change fee | $7,000 |\n\n**Schedule Effect**\nThe connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\n\n**Client Dependency**\nClient must provide sandbox credentials.\n\n**Approval Requirement**\nSponsor must approve in writing before connector work begins.\n\n**Decision**\nPlease approve or decline this change order in writing.\n\n- [ ] Approved\n- [ ] Declined\n\nSponsor Name: ______________________\nSignature: ______________________\nDate: ______________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 190,
+    "inputTokenDetails": {
+      "noCacheTokens": 190,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 231,
+    "outputTokenDetails": {
+      "textTokens": 231,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 421
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4.1-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "runware",
+          "relace",
+          "particle",
+          "novita",
+          "togetherai",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "gmicloud",
+          "modal",
+          "morph",
+          "deepseek",
+          "boundless"
+        ],
+        "planningReasoning": "System credentials planned for: baseten, fireworks, alibaba, runware, relace, particle, novita, togetherai, deepinfra, wafer, parasail, gmicloud, modal, morph, deepseek, boundless. ZDR requested: 17 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → runware(system) → relace(system) → particle(system) → novita(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → gmicloud(system) → modal(system) → morph(system) → deepseek(system) → boundless(system). ZDR execution order: baseten(system) → fireworks(system) → alibaba(system) → particle(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → modal(system) → morph(system)",
+        "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790081430180,
+                "endTime": 1790081430225,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081430231,
+                "endTime": 1790081432227,
+                "providerRequestId": "chatcmpl-598f9e9a4fb4432cb1a49c70e837967d",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-598f9e9a4fb4432cb1a49c70e837967d"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00019426",
+      "marketCost": "0.00019426",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00019426",
+      "inferenceCost": "0.00019426",
+      "inputInferenceCost": "0.0000418",
+      "outputInferenceCost": "0.00015246",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34JNWKHYZQ8JGMQNRKAYDH0"
+    }
+  },
+  "response": {
+    "id": "aitxt-LoSw3BSi8l5m9PSkwsI9LFGN",
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "timestamp": "2026-09-22T12:50:32.098Z"
+  },
+  "billing": {
+    "totalCost": 0.00019426,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00019426",
+    "surchargeCost": "0"
+  },
+  "inputHash": "14c828bc11aa5933ee099c194173b3f619a1764506cdfddb4c0de864e871bf18",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none",
+    "maxOutputTokens": 4096
+  }
+}

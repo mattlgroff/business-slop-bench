@@ -1,0 +1,28 @@
+{
+  "id": "control--fresh-target-is-result",
+  "taskId": "ai-strategy-slides",
+  "protocolHash": "7e6e252bccc030e33e670edb04cc9d190adaccfb9ed3a847d652b6c419bd39fc",
+  "grades": [
+    {
+      "id": "C04",
+      "dimension": "evidence",
+      "statement": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+      "severity": "critical",
+      "probability": 0.2,
+      "verdict": "fail"
+    }
+  ],
+  "deterministic": {
+    "words": 13,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": true,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 0
+}

@@ -1,0 +1,114 @@
+{
+  "id": "openai--gpt-5.6-sol--launch-delay-email--default",
+  "model": "openai/gpt-5.6-sol",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:13:31.930Z",
+  "elapsedMs": 2788,
+  "text": "Subject: Launch Update and October 8 Staging Demo\n\nHi Avery,\n\nThe tentative October 8 production launch will not proceed as planned. Security review is now expected to complete October 12 at the earliest, and release requires completed approval. The review may also identify remediation needs, so no new production date is authorized yet.\n\nThe team remains focused on launch readiness while Nia completes the security review. We can still hold a staging demo on October 8 using synthetic data.\n\nPlease confirm whether you would like to proceed with the October 8 staging demo. We will provide a production launch update once the security review and any required remediation are complete.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 178,
+    "inputTokenDetails": {
+      "noCacheTokens": 178,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 141,
+    "outputTokenDetails": {
+      "textTokens": 141,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 319
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0b5efdb158b924d8016ab27ef957348193b2043505b4358ee7",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-sol",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790082809246,
+                "endTime": 1790082811933,
+                "providerRequestId": "41dc04de-e8e0-4326-89e5-bc7d512c268a",
+                "statusCode": 200,
+                "providerResponseId": "resp_0b5efdb158b924d8016ab27ef957348193b2043505b4358ee7"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.00512",
+      "marketCost": "0.00512",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00512",
+      "inferenceCost": "0.00512",
+      "inputInferenceCost": "0.00089",
+      "outputInferenceCost": "0.00423",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34KZZBJFANRBX5C3V3HNRVM"
+    }
+  },
+  "response": {
+    "id": "aitxt-fTghFmril8UmL7CUdanbfLbe",
+    "modelId": "openai/gpt-5.6-sol",
+    "timestamp": "2026-09-22T13:13:31.930Z"
+  },
+  "billing": {
+    "totalCost": 0.00512,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00512",
+    "surchargeCost": "0"
+  },
+  "inputHash": "d836b94ad74a2cf3b3a102f68ed3f55a1699c38698c58b277fa2971f5359efbd",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "google--gemini-3.8-flash--handoff-slides--default",
+  "model": "google/gemini-3.8-flash",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:13:08.265Z",
+  "elapsedMs": 20595,
+  "text": "### Slide 1: Executive Summary – Handoff Readiness Decision\n\n* **Decision Required:** Determine if the service is ready for operational handoff.\n* **Current Status:** Not ready for handoff.\n* **Key Blocker:** Formal acceptance criteria have not been completely fulfilled.\n* **Next Step:** Sponsor Pat must intervene to assign ownership of outstanding requirements.\n\n---\n\n### Slide 2: Acceptance Criteria vs. Current Status\n\n| Requirement for Acceptance | Current Status | Ready for Handoff? |\n| :--- | :--- | :--- |\n| Approved Runbook | Approved | Yes |\n| Successful Rollback Rehearsal | Has not happened | No |\n\n* **Readiness Evaluation:**\n  * Handoff cannot proceed because acceptance requires both an approved runbook and a successful rollback rehearsal.\n  * Only one of the two mandatory criteria is met.\n\n---\n\n### Slide 3: Operational Ownership & Current Gap\n\n* **Delivery Responsibility:**\n  * Engineering lead Lee owns defect fixes until acceptance occurs.\n* **Operations Responsibility:**\n  * Operations lead Jo owns incidents only after acceptance occurs.\n* **The Critical Gap:**\n  * No role has accepted responsibility for organizing the rollback rehearsal.\n  * Operational ownership remains in limbo until this rehearsal occurs and acceptance is granted.\n\n---\n\n### Slide 4: Required Actions to Achieve Acceptance\n\n* **Action 1 (Sponsor Pat):** \n  * Assign responsibility for organizing the rollback rehearsal to a specific role.\n* **Action 2 (Assigned Role):** \n  * Execute the rollback rehearsal successfully.\n* **Action 3 (Sponsor Pat):** \n  * Approve acceptance once both the approved runbook and successful rollback rehearsal criteria are met.\n* **Action 4 (Engineering & Operations Leads):** \n  * Formally transition incident ownership to Operations lead Jo and release Engineering lead Lee from pre-acceptance defect fix ownership.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 177,
+    "inputTokenDetails": {
+      "noCacheTokens": 177,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 406,
+    "outputTokenDetails": {
+      "textTokens": 406,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 583
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 177,
+        "candidatesTokenCount": 406,
+        "totalTokenCount": 583,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 177
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 406
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 177,
+        "candidatesTokenCount": 406,
+        "totalTokenCount": 583,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 177
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 406
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.8-flash",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.8-flash",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086367727,
+                "endTime": 1790086388223,
+                "statusCode": 200,
+                "providerResponseId": "34yyat_kL4D-sbwP4IrLuA8"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00165525",
+      "marketCost": "0.00165525",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00165525",
+      "inferenceCost": "0.00165525",
+      "inputInferenceCost": "0.00013275",
+      "outputInferenceCost": "0.0015225",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QCJEX2SVWA69AAYX1MGQZ"
+    }
+  },
+  "response": {
+    "id": "aitxt-nLBV8nyrNcsQguSxhAj0JR06",
+    "modelId": "google/gemini-3.8-flash",
+    "timestamp": "2026-09-22T14:13:08.265Z"
+  },
+  "billing": {
+    "totalCost": 0.00165525,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00165525",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

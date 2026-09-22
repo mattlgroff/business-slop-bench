@@ -1,0 +1,85 @@
+{
+  "id": "meta--muse-spark-1.3--ai-strategy-slides--default",
+  "model": "meta/muse-spark-1.3",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:10:40.538Z",
+  "elapsedMs": 8177,
+  "text": "Slide 1: Next Quarter AI Pilot Decision\n- COO selects the pilot\n- Team can run only one pilot next quarter\n- Quarterly pilot budget ceiling: $50,000\n\nSlide 2: Option A — Internal Knowledge Search Pilot\n- $30,000\n- Uses approved internal policy documents\n- IT owner is Dana\n\nSlide 3: Option B — Automated Customer Credit Decisions\n- $45,000\n- Legal approval is pending and production use is not authorized\n\nSlide 4: Recommendation — Select Option A\n- For knowledge search, evaluate answer accuracy on 100 reviewed questions\n- Target is at least 90%\n- No current result exists\n- Dana reports results before any expansion\n",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 210,
+    "inputTokenDetails": {
+      "noCacheTokens": 210,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1057,
+    "outputTokenDetails": {
+      "textTokens": 202,
+      "reasoningTokens": 855
+    },
+    "totalTokens": 1267
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6ab28c603ed06dc38a324f0f",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-spark-1.3",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. Total execution order: meta(system)",
+        "canonicalSlug": "meta/muse-spark-1.3",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-spark-1.3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086232435,
+                "endTime": 1790086240520,
+                "providerRequestId": "362d2e1f-8c4b-4e90-b8d3-d374623e0376",
+                "statusCode": 200,
+                "providerResponseId": "resp_6ab28c603ed06dc38a324f0f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00475475",
+      "marketCost": "0.00475475",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00475475",
+      "inferenceCost": "0.00475475",
+      "inputInferenceCost": "0.0002625",
+      "outputInferenceCost": "0.00449225",
+      "generationId": "gen_01M34Q8EADADTE7RN96Q3ZP9PE"
+    }
+  },
+  "response": {
+    "id": "aitxt-NrfkauXBHljZmPScekaRcySg",
+    "modelId": "meta/muse-spark-1.3",
+    "timestamp": "2026-09-22T14:10:40.538Z"
+  },
+  "billing": {
+    "totalCost": 0.00475475,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00475475",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

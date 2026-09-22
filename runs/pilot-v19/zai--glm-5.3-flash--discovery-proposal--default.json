@@ -1,0 +1,158 @@
+{
+  "id": "zai--glm-5.3-flash--discovery-proposal--default",
+  "model": "zai/glm-5.3-flash",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T14:54:15.635Z",
+  "elapsedMs": 12739,
+  "text": "# Proposal: Four-Week Discovery Engagement\n\n## Objective\nA four-week discovery engagement to establish a clear foundation for future decisions. The engagement delivers three artifacts only:\n\n1. Current-state process map\n2. Prioritized backlog\n3. Implementation recommendation\n\n## Commercial Offer\n- **Effort and rate:** 80 hours at $200/hour\n- **Total fee:** $16,000\n- **Payment terms:** 50% ($8,000) at kickoff; 50% ($8,000) on delivery\n\n## Exclusions\nThe following are explicitly excluded from this engagement:\n- Implementation\n- Integrations\n- Production support\n- Guaranteed savings\n\nNo outcomes beyond the three artifacts listed above are included.\n\n## Client Responsibilities\nTo enable the work, the client will provide:\n- Interview access to relevant staff\n- Source documents required for analysis\n\n## commencement\nA start date will be agreed only after both conditions are met: (1) this proposal is signed, and (2) the client names a dedicated contact.\n\n## Acceptance\nThe engagement is complete when the sponsor confirms delivery of the three listed artifacts (current-state process map, prioritized backlog, and implementation recommendation).\n\n## How to Proceed\n1. Review this proposal and confirm the scope, fee, and exclusions meet your expectations.\n2. Sign and return the approval to authorize the engagement.\n3. Nominate a named client contact so a start date can be agreed.\n4. Arrange interview access and provide source documents ahead of kickoff.\n\nUpon approval, we will schedule the kickoff, at which point the first payment of $8,000 falls due. The remaining $8,000 is invoiced on delivery and acceptance of the artifacts.\n\nWe look forward to your approval and to delivering a clear, actionable basis for your next steps.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 194,
+    "inputTokenDetails": {
+      "noCacheTokens": 194,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 368,
+    "outputTokenDetails": {
+      "textTokens": 368,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 562
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "runware",
+          "fireworks",
+          "wafer",
+          "particle",
+          "zai",
+          "togetherai",
+          "streamlake",
+          "parasail",
+          "digitalocean",
+          "friendli",
+          "novita",
+          "modal",
+          "morph",
+          "deepinfra",
+          "relace",
+          "boundless",
+          "inference-net",
+          "gmicloud"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 1 over runware. System credentials planned for: baseten, runware, fireworks, wafer, particle, zai, togetherai, streamlake, parasail, digitalocean, friendli, novita, modal, morph, deepinfra, relace, boundless, inference-net, gmicloud. ZDR requested: 19 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → runware(system) → fireworks(system) → wafer(system) → particle(system) → zai(system) → togetherai(system) → streamlake(system) → parasail(system) → digitalocean(system) → friendli(system) → novita(system) → modal(system) → morph(system) → deepinfra(system) → relace(system) → boundless(system) → inference-net(system) → gmicloud(system). ZDR execution order: baseten(system) → fireworks(system) → wafer(system) → particle(system) → togetherai(system) → parasail(system) → digitalocean(system) → modal(system) → morph(system) → deepinfra(system)",
+        "canonicalSlug": "zai/glm-5.3-flash",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3-flash",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790088851318,
+                "endTime": 1790088851409,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790088851417,
+                "endTime": 1790088855616,
+                "providerRequestId": "chatcmpl-fcf218193ac344f7a387dd81e0aa4f19",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-fcf218193ac344f7a387dd81e0aa4f19"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0002131",
+      "marketCost": "0.0002131",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0002131",
+      "inferenceCost": "0.0002131",
+      "inputInferenceCost": "0.0000291",
+      "outputInferenceCost": "0.000184",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34SRAW781FG2DMCBCM943KP"
+    }
+  },
+  "response": {
+    "id": "aitxt-PotRIrS8quERtphJy6V2XYGc",
+    "modelId": "zai/glm-5.3-flash",
+    "timestamp": "2026-09-22T14:54:15.634Z"
+  },
+  "billing": {
+    "totalCost": 0.0002131,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0002131",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

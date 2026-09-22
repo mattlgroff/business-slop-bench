@@ -1,0 +1,114 @@
+{
+  "id": "openai--gpt-5.6-terra--discovery-proposal--default",
+  "model": "openai/gpt-5.6-terra",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:15:21.004Z",
+  "elapsedMs": 4648,
+  "text": "# Discovery Engagement Proposal\n\n## Objective  \nConduct a four-week discovery engagement to establish a clear foundation for future implementation planning.\n\n## Scope and Deliverables  \nThe engagement will produce three artifacts:\n\n1. Current-state process map  \n2. Prioritized backlog  \n3. Implementation recommendation  \n\n## Commercial Offer  \n\n| Item | Commercial Terms |\n|---|---:|\n| Effort | 80 hours |\n| Rate | $200 per hour |\n| Total fee | $16,000 |\n| Payment | 50% at kickoff; 50% on delivery |\n| Duration | Four weeks |\n\n## Client Responsibilities  \nThe client will provide access to interview participants and relevant source documents. A named client contact is required before the start date is agreed.\n\n## Exclusions  \nThis engagement is limited to discovery. It excludes implementation, integrations, production support, and guaranteed savings.\n\n## Acceptance  \nThe sponsor will confirm delivery of the current-state process map, prioritized backlog, and implementation recommendation.\n\n## How to Proceed  \nTo approve and begin the engagement, the client sponsor should:\n\n1. Confirm approval of this proposal and the $16,000 fee.  \n2. Sign the engagement agreement.  \n3. Name the client contact and arrange interview access and source documents.  \n4. Agree the start date following signature and confirmation of the named contact.  \n\nUpon kickoff, the initial 50% payment is due. The remaining 50% is due on delivery of the three agreed discovery artifacts.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 183,
+    "inputTokenDetails": {
+      "noCacheTokens": 183,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 297,
+    "outputTokenDetails": {
+      "textTokens": 297,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 480
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0479402618c04702016ab27f64a80081949b1b2f691ed348aa",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-terra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-terra",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-terra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790082916480,
+                "endTime": 1790082921005,
+                "providerRequestId": "02c3189b-fce7-4e3b-b7df-b4634f8980f8",
+                "statusCode": 200,
+                "providerResponseId": "resp_0479402618c04702016ab27f64a80081949b1b2f691ed348aa"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.00393",
+      "marketCost": "0.00393",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00393",
+      "inferenceCost": "0.00393",
+      "inputInferenceCost": "0.000366",
+      "outputInferenceCost": "0.003564",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34M381THAAM8TD75C830MFZ"
+    }
+  },
+  "response": {
+    "id": "aitxt-0ypMrFh5CnFVx51rydRSSw4E",
+    "modelId": "openai/gpt-5.6-terra",
+    "timestamp": "2026-09-22T13:15:21.004Z"
+  },
+  "billing": {
+    "totalCost": 0.00393,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00393",
+    "surchargeCost": "0"
+  },
+  "inputHash": "e91baa3bf817b876dc655c999d290113d01f35895d714fa4f25b590206e2c0be",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

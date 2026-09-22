@@ -1,0 +1,62 @@
+{
+  "protocolHash": "7f5944259517b03fe7014db7ef316508a1fe6814e4679a92d6c890ffe6179a27",
+  "budgetAccountedUsd": 2.839560125999997,
+  "entries": [
+    {
+      "model": "alibaba/qwen3.8-flash",
+      "condition": "default",
+      "n": 7,
+      "contentReady": 1,
+      "contentBlocked": 2,
+      "contentUnresolved": 4,
+      "styleGatePass": 2,
+      "editorialDefects": 0,
+      "unresolved": 15,
+      "emDashes": 8,
+      "billedUsd": 0.00283736,
+      "generationMs": 98381
+    },
+    {
+      "model": "alibaba/qwen3.8-flash",
+      "condition": "house",
+      "n": 7,
+      "contentReady": 4,
+      "contentBlocked": 2,
+      "contentUnresolved": 1,
+      "styleGatePass": 7,
+      "editorialDefects": 0,
+      "unresolved": 5,
+      "emDashes": 0,
+      "billedUsd": 0.00713459,
+      "generationMs": 157874
+    },
+    {
+      "model": "moonshotai/kimi-k3",
+      "condition": "default",
+      "n": 5,
+      "contentReady": 4,
+      "contentBlocked": 0,
+      "contentUnresolved": 1,
+      "styleGatePass": 3,
+      "editorialDefects": 1,
+      "unresolved": 6,
+      "emDashes": 5,
+      "billedUsd": 0.039411,
+      "generationMs": 80297
+    },
+    {
+      "model": "moonshotai/kimi-k3",
+      "condition": "house",
+      "n": 7,
+      "contentReady": 4,
+      "contentBlocked": 2,
+      "contentUnresolved": 1,
+      "styleGatePass": 7,
+      "editorialDefects": 0,
+      "unresolved": 7,
+      "emDashes": 0,
+      "billedUsd": 0.09017520000000001,
+      "generationMs": 40446
+    }
+  ]
+}

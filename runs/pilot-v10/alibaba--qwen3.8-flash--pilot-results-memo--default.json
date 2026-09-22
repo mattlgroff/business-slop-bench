@@ -1,0 +1,86 @@
+{
+  "id": "alibaba--qwen3.8-flash--pilot-results-memo--default",
+  "model": "alibaba/qwen3.8-flash",
+  "protocolHash": "b0e357508ee8b7836580dbc58d4c79b020290950949876ba9ae5c0065353df85",
+  "status": "ok",
+  "at": "2026-09-22T12:07:42.227Z",
+  "elapsedMs": 11167,
+  "text": "## Recommendation: Do Not Scale Now\n\n### What the Results Support\n\n| Metric | Baseline | Pilot | Verdict |\n|--------|----------|-------|---------|\n| Mean handling time | 15 min | 12 min | Promising but unproven |\n| Quality pass rate | 94% | 89% | **Fails 92% threshold** |\n| Measured cost savings | — | None | Not yet demonstrated |\n\nThe pilot shows a 3-minute handling-time improvement, but this cannot be treated as a causal effect. Allocation was not randomized and the ticket mix differed from baseline, so the observed gap may reflect easier tickets rather than process gain.\n\nMore critically, quality dropped to 89%, breaching the 92% scaling threshold. This is a hard gate regardless of the time result.\n\nNo staffing reductions or cash savings have been measured, so no financial case for scaling exists today.\n\n### What the Results Do Not Support\n\n- Scaling the pilot as-is.\n- Claiming the time improvement is attributable to the intervention.\n- Asserting a positive ROI.\n\n### Next Decision\n\n**COO decision required:** authorize a matched-ticket follow-up (Sam's proposed design) to isolate whether the handling-time gain is real once ticket mix is controlled.\n\nIf quality cannot be held at or above 92% in a controlled follow-up, the scaling threshold fails on both speed and quality grounds, and the pilot should be closed without scale.\n\n### Summary\n\nOne metric improved but is confounded by design. A gating metric failed outright. No savings are measured. The correct move is a controlled follow-up, not a scale decision.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 240,
+    "inputTokenDetails": {
+      "noCacheTokens": 240,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 527,
+    "outputTokenDetails": {
+      "textTokens": 354,
+      "reasoningTokens": 173
+    },
+    "totalTokens": 767
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-flash",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-flash",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790078851214,
+                "endTime": 1790078862259,
+                "providerRequestId": "d7424b20-8c1f-9d7d-826d-f74837cb940d",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-d7424b20-8c1f-9d7d-826d-f74837cb940d"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00028369",
+      "marketCost": "0.00028369",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00028369",
+      "inferenceCost": "0.00028369",
+      "inputInferenceCost": "0.000036",
+      "outputInferenceCost": "0.00024769",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34G762EHV80762PNEK96N7D"
+    }
+  },
+  "response": {
+    "id": "aitxt-OmcEYNMzQqFZY9Aunp6UsOAi",
+    "modelId": "alibaba/qwen3.8-flash",
+    "timestamp": "2026-09-22T12:07:42.227Z"
+  },
+  "billing": {
+    "totalCost": 0.00028369,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00028369",
+    "surchargeCost": "0"
+  },
+  "inputHash": "d51015dda69be7545657d0e0160bde253b7095eda2515dc1dd4690de1e4cac00",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v8/alibaba--qwen3.8-flash--pilot-results-memo--default.json",
+  "originalProtocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5"
+}

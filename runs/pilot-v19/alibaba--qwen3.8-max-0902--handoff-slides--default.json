@@ -1,0 +1,83 @@
+{
+  "id": "alibaba--qwen3.8-max-0902--handoff-slides--default",
+  "model": "alibaba/qwen3.8-max-0902",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T15:15:12.159Z",
+  "elapsedMs": 9395,
+  "text": "**Slide 1 – Decision Required**\n\nPurpose: Determine whether the service is ready for operational handoff.\nDecision owner: Sponsor Pat.\nHandoff transfers incident ownership from Engineering Lead Lee to Operations Lead Jo.\n\n**Slide 2 – Readiness Criteria**\n\nAcceptance requires two conditions:\n\n| Criterion | Status |\n|---|---|\n| Approved runbook | Met |\n| Successful rollback rehearsal | Not met |\n\nBoth criteria must be satisfied before acceptance can be granted.\n\n**Slide 3 – Gap Analysis**\n\nThe rollback rehearsal has not happened. No role has accepted responsibility for organizing it. Until the rehearsal is completed successfully, the service cannot be accepted for operational handoff. Lee retains defect-fix ownership; Jo has not yet assumed incident ownership.\n\n**Slide 4 – Actions Required**\n\n1. Sponsor Pat assigns responsibility for organizing the rollback rehearsal.\n2. Assigned owner schedules and executes the rehearsal.\n3. Upon successful rehearsal, Sponsor Pat approves acceptance.\n4. Incident ownership transfers from Lee to Jo.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 226,
+    "inputTokenDetails": {
+      "noCacheTokens": 226,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 327,
+    "outputTokenDetails": {
+      "textTokens": 218,
+      "reasoningTokens": 109
+    },
+    "totalTokens": 553
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-max-0902",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-max-0902",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-max-0902",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790090102894,
+                "endTime": 1790090112144,
+                "providerRequestId": "e6a387bc-3880-910e-a663-33c7574610e1",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-e6a387bc-3880-910e-a663-33c7574610e1"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.002414",
+      "marketCost": "0.002414",
+      "surchargeCost": "0",
+      "gatewayCost": "0.002414",
+      "inferenceCost": "0.002414",
+      "inputInferenceCost": "0.000452",
+      "outputInferenceCost": "0.001962",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34TYJ0GDV8YC0RBNF59BYJQ"
+    }
+  },
+  "response": {
+    "id": "aitxt-qlPwh3n2Gib2DWh9BrMs4S73",
+    "modelId": "alibaba/qwen3.8-max-0902",
+    "timestamp": "2026-09-22T15:15:12.159Z"
+  },
+  "billing": {
+    "totalCost": 0.002414,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.002414",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

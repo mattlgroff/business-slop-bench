@@ -1,0 +1,99 @@
+{
+  "id": "minimax--minimax-m3--handoff-slides--default",
+  "model": "minimax/minimax-m3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:37:33.250Z",
+  "elapsedMs": 36316,
+  "text": "**Slide 1 — Decision Required**\nPurpose: Steering Committee to determine whether the service is ready for operational handoff today.\nQuestion on the table: accept from Engineering and transfer to Operations now, or wait?\nBasis: the two-part acceptance criteria defined for the service, not subjective quality judgment.\nHandoff changes who owns incidents, so the decision is structural, not cosmetic.\n\n**Slide 2 — Readiness Criteria and Current State**\nAcceptance requires both of the following:\n1. Approved runbook — current status: Approved. Criterion met.\n2. Successful rollback rehearsal — current status: Not yet performed. Criterion not met.\nConclusion: one of two required conditions remains open, so the service is not ready for handoff regardless of any other strengths.\n\n**Slide 3 — Ownership and the Open Gap**\nEngineering lead Lee: owns defect fixes until acceptance is complete.\nOperations lead Jo: owns incidents only after acceptance is complete.\nCurrently unassigned: organization and execution of the rollback rehearsal.\nSponsor Pat: holds the authority to assign the rehearsal owner and to approve acceptance once both criteria are met.\n\n**Slide 4 — Actions Required and Recommended Decision**\nActions required to reach readiness:\n1. Pat assigns a named owner responsible for organizing the rollback rehearsal.\n2. That owner schedules and delivers a successful rehearsal; the result is recorded.\n3. Pat verifies both criteria and formally approves acceptance.\n4. Operational handoff occurs; incident ownership transfers to Jo at that point.\nRisk if the committee proceeds now: the formal acceptance criteria are not yet met and no role is currently accountable for the outstanding activity.\nRecommended decision: approve the assignment immediately; defer formal acceptance and handoff until the rehearsal is successfully completed.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 287,
+    "inputTokenDetails": {
+      "noCacheTokens": 178,
+      "cacheReadTokens": 109
+    },
+    "outputTokens": 6555,
+    "outputTokenDetails": {
+      "textTokens": 341,
+      "reasoningTokens": 6214
+    },
+    "totalTokens": 6842
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "minimax/minimax-m3",
+        "resolvedProvider": "fireworks",
+        "fallbacksAvailable": [
+          "minimax",
+          "nebius",
+          "gmicloud"
+        ],
+        "planningReasoning": "System credentials planned for: fireworks, minimax, nebius, gmicloud. ZDR requested: 4 attempts → 2 ZDR attempts. Pre-ZDR order: fireworks(system) → minimax(system) → nebius(system) → gmicloud(system). ZDR execution order: fireworks(system) → nebius(system)",
+        "canonicalSlug": "minimax/minimax-m3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "minimax/minimax-m3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091417059,
+                "endTime": 1790091453257,
+                "providerRequestId": "chatcmpl-489c6f4935c94f4791ffa7d402a573f4",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-489c6f4935c94f4791ffa7d402a573f4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "minimax",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00792594",
+      "marketCost": "0.00792594",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00792594",
+      "inferenceCost": "0.00792594",
+      "inputInferenceCost": "0.00005994",
+      "outputInferenceCost": "0.007866",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34W6ND50ZAEWWG56BK923CH"
+    }
+  },
+  "response": {
+    "id": "aitxt-aFd51cWXNfz9lZpwZmuukqPi",
+    "modelId": "minimax/minimax-m3",
+    "timestamp": "2026-09-22T15:37:33.250Z"
+  },
+  "billing": {
+    "totalCost": 0.00792594,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00792594",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

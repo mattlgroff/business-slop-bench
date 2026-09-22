@@ -1,0 +1,114 @@
+{
+  "id": "anthropic--claude-opus-4.6--vendor-decision-memo--default",
+  "model": "anthropic/claude-opus-4.6",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T16:43:57.203Z",
+  "elapsedMs": 10245,
+  "text": "# Decision Memo: Vendor Selection\n\n**To:** CFO\n**From:** Priya, Procurement\n**Date:** [Current Date]\n**Re:** Year-One Vendor Recommendation\n\n## Summary\n\nRecommending **Vendor Alpha** for year-one engagement.\n\n## Cost Comparison\n\n| Item | Alpha | Beta |\n|---|---|---|\n| Annual Subscription | $72,000 | $60,000 |\n| One-Time Setup | $20,000 | $10,000 |\n| **Year-One Total** | **$92,000** | **$70,000** |\n| Within $100K Budget | ✅ Yes | ✅ Yes |\n| SSO Available | ✅ Yes | ❌ No |\n\n## Evaluation Against Constraints\n\n**Budget:** Both vendors fall within the $100,000 year-one ceiling. Alpha costs $22,000 more but remains $8,000 under budget.\n\n**SSO Requirement:** SSO is mandatory before production. Alpha includes SSO. Beta does not offer SSO and has no committed delivery date, meaning production launch is indefinitely blocked.\n\n**Other Requirements:** Both vendors meet all other stated requirements.\n\n## Risk Assessment\n\nSelecting Beta saves $22,000 but introduces unquantifiable schedule risk. Without SSO, the platform cannot enter production. There is no contractual guarantee Beta will deliver SSO on any timeline. Delays would stall the project, potentially eroding or exceeding the initial savings through lost productivity and extended parallel costs.\n\n## Recommendation\n\n**Select Vendor Alpha at $92,000 year-one total.** It is the only option that satisfies all mandatory requirements within budget. Beta's lower price is irrelevant given it cannot meet the SSO production gate.\n\nRequesting CFO approval to proceed with contract execution.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 207,
+    "inputTokenDetails": {
+      "noCacheTokens": 207,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 417,
+    "outputTokenDetails": {
+      "textTokens": 417,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 624
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 207,
+        "output_tokens": 417,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-4.6",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic. ZDR requested: 4 attempts → 3 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-opus-4.6",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-4.6",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790095427222,
+                "endTime": 1790095437183,
+                "providerRequestId": "req_011CfJp9VfZFNc3tV4bVb4VE",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJp9VzuFrgQHC4DRSy8K"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.01146",
+      "marketCost": "0.01146",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01146",
+      "inferenceCost": "0.01146",
+      "inputInferenceCost": "0.001035",
+      "outputInferenceCost": "0.010425",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35011J997XS1MR60Y0CB6T6"
+    }
+  },
+  "response": {
+    "id": "aitxt-UJtC25tIv1IzwqBopiPjjghq",
+    "modelId": "anthropic/claude-opus-4.6",
+    "timestamp": "2026-09-22T16:43:57.202Z"
+  },
+  "billing": {
+    "totalCost": 0.01146,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01146",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

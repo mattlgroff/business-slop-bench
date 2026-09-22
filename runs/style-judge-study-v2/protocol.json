@@ -1,0 +1,13 @@
+{
+  "sourceHash": "0f9f01829e56e29a5a751e5f040d7a6407d1ccc3520a795863060bf94b3b3ab7",
+  "runner": "61e51f1378f201e2948b5a042b4c3d54efd26470b006ed7558fb8eb7e74799ef",
+  "judge": "f92a37cfccb36f9f67a64a208c1c34b3aeda30b389d7b1a65806c5455bfad78b",
+  "fixtures": "0bd158bc573ff7371f32b036cc84a3efe413e336c765bef2b4baba82a7228709",
+  "repeats": 2,
+  "thresholds": {
+    "pass": 0.585,
+    "fail": 0.48499999999999993
+  },
+  "labelStatus": "author-proposed; not human gold",
+  "hash": "1737b5d275f915687f00ad1996fefcbec613dc0bf42536cbb155b194320dadce"
+}

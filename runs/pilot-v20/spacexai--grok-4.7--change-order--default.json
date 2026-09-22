@@ -1,0 +1,86 @@
+{
+  "id": "spacexai--grok-4.7--change-order--default",
+  "model": "spacexai/grok-4.7",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:44:36.866Z",
+  "elapsedMs": 20972,
+  "text": "**Change-Order Proposal: CRM Connector**\n\n**To:** Client sponsor  \n**Subject:** Written approval requested for work outside the signed scope\n\n**Requested work**  \nThe existing signed scope is the reporting dashboard. The client requests an additional CRM connector. That connector is not included in the original fee.\n\n**Price**  \nThe estimate is 40 hours at $175 per hour, for a proposed fixed change fee of $7,000. This fee is separate from the original fee.\n\n**Schedule effect**  \nThe connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\n\n**Dependency**  \nThe client must provide sandbox credentials. The two-week estimate starts only after both written approval and credential receipt.\n\n**Authority**  \nThe sponsor must approve in writing before connector work begins. Approval of this proposal authorizes the CRM connector at the proposed fixed change fee of $7,000 and accepts the estimated two-week schedule effect. Decline leaves the signed scope limited to the reporting dashboard, with no connector work and no change fee.\n\n**Decision**  \nApprove or decline in writing. Work will not begin without written sponsor approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1428,
+    "inputTokenDetails": {
+      "noCacheTokens": 276,
+      "cacheReadTokens": 1152
+    },
+    "outputTokens": 282,
+    "outputTokenDetails": {
+      "textTokens": 236,
+      "reasoningTokens": 46
+    },
+    "totalTokens": 1710
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "xai": {
+      "costInUsdTicks": 16920000,
+      "serviceTier": "default"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "spacexai/grok-4.7",
+        "resolvedProvider": "xai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: xai. ZDR requested: all 1 attempts support ZDR. Execution order: xai(system)",
+        "canonicalSlug": "xai/grok-4.7",
+        "finalProvider": "xai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xai/grok-4.7",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "xai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091856002,
+                "endTime": 1790091876874,
+                "providerRequestId": "142b99e2-e1ab-99dc-af33-a1992a52c5e4",
+                "statusCode": 200,
+                "providerResponseId": "142b99e2-e1ab-99dc-af33-a1992a52c5e4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.001692",
+      "marketCost": "0.001692",
+      "surchargeCost": "0",
+      "gatewayCost": "0.001692",
+      "inferenceCost": "0.001692",
+      "inputInferenceCost": "0.0006768",
+      "outputInferenceCost": "0.0010152",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WM22EE5CJNS5HZZHYQ4KB"
+    }
+  },
+  "response": {
+    "id": "aitxt-WbcsGvDfUEY9moMDkfDUWyX9",
+    "modelId": "spacexai/grok-4.7",
+    "timestamp": "2026-09-22T15:44:36.866Z"
+  },
+  "billing": {
+    "totalCost": 0.001692,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.001692",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

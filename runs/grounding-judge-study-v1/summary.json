@@ -1,0 +1,64 @@
+{
+  "protocolHash": "b7d8edf57154427911ca1be24b1fb4b4397785c46558e111b110da66a238a7fa",
+  "summary": [
+    {
+      "method": "baseline",
+      "splits": [
+        {
+          "split": "development",
+          "n": 16,
+          "matches": 12,
+          "falseAccepts": 2,
+          "falseRejects": 0,
+          "unresolved": 2
+        },
+        {
+          "split": "validation",
+          "n": 40,
+          "matches": 40,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "observed-draft",
+          "n": 8,
+          "matches": 4,
+          "falseAccepts": 2,
+          "falseRejects": 0,
+          "unresolved": 2
+        }
+      ]
+    },
+    {
+      "method": "revised",
+      "splits": [
+        {
+          "split": "development",
+          "n": 16,
+          "matches": 15,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 1
+        },
+        {
+          "split": "validation",
+          "n": 40,
+          "matches": 40,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "observed-draft",
+          "n": 8,
+          "matches": 6,
+          "falseAccepts": 0,
+          "falseRejects": 0,
+          "unresolved": 2
+        }
+      ]
+    }
+  ],
+  "budgetAccountedUsd": 1.9492353540000011
+}

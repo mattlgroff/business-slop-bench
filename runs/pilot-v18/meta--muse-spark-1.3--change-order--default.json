@@ -1,0 +1,85 @@
+{
+  "id": "meta--muse-spark-1.3--change-order--default",
+  "model": "meta/muse-spark-1.3",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:10:24.528Z",
+  "elapsedMs": 9290,
+  "text": "**Change-Order Proposal: Additional CRM Connector**\n\n**1. Background**\nThe existing signed scope is the reporting dashboard.\n\n**2. Requested Work**\nClient requests an additional CRM connector. It is not included in the original fee.\n\n**3. Price**\nEstimate: 40 hours at $175/hour.\nProposed fixed change fee: $7,000.\n\n**4. Schedule Effect**\nThe connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\n\n**5. Dependency**\nClient must provide sandbox credentials.\n\n**6. Approval Required**\nSponsor must approve in writing before connector work begins.\n\nPlease select one:\n\n[ ] **Approve** – Authorize the CRM connector for $7,000 with the schedule effect above.\n\n[ ] **Decline** – Do not authorize the CRM connector.\n\nSponsor Signature: ____________________ Date: __________\n",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 184,
+    "inputTokenDetails": {
+      "noCacheTokens": 184,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 830,
+    "outputTokenDetails": {
+      "textTokens": 261,
+      "reasoningTokens": 569
+    },
+    "totalTokens": 1014
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6ab28c5005908fd9e64543b8",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-spark-1.3",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. Total execution order: meta(system)",
+        "canonicalSlug": "meta/muse-spark-1.3",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-spark-1.3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086215352,
+                "endTime": 1790086224513,
+                "providerRequestId": "5d177bb2-e886-4b49-ba7a-62317b9f56e1",
+                "statusCode": 200,
+                "providerResponseId": "resp_6ab28c5005908fd9e64543b8"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.0037575",
+      "marketCost": "0.0037575",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0037575",
+      "inferenceCost": "0.0037575",
+      "inputInferenceCost": "0.00023",
+      "outputInferenceCost": "0.0035275",
+      "generationId": "gen_01M34Q7XKPV4DHSW1JWWGZXM50"
+    }
+  },
+  "response": {
+    "id": "aitxt-1jQvFqvTXT5fdEeJE52MnkVi",
+    "modelId": "meta/muse-spark-1.3",
+    "timestamp": "2026-09-22T14:10:24.528Z"
+  },
+  "billing": {
+    "totalCost": 0.0037575,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0037575",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

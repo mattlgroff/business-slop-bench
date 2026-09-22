@@ -1,0 +1,632 @@
+[
+  {
+    "id": "category-1-defect",
+    "split": "category-controls",
+    "category": "style_1",
+    "context": "The clean example is a statistical-method recommendation to analysts.",
+    "draft": "Our robust, transformative solution unlocks seamless synergies across the ever-evolving operational landscape.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-1-clean",
+    "split": "category-controls",
+    "category": "style_1",
+    "context": "The clean example is a statistical-method recommendation to analysts.",
+    "draft": "Use robust regression because the sample contains outliers.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-2-defect",
+    "split": "category-controls",
+    "category": "style_2",
+    "context": "Short executive memo.",
+    "draft": "It is important to note that, when it comes to the pilot, managers need the results.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-2-clean",
+    "split": "category-controls",
+    "category": "style_2",
+    "context": "Short executive memo.",
+    "draft": "Managers need the pilot results before approving a rollout.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-3-defect",
+    "split": "category-controls",
+    "category": "style_3",
+    "context": "Short executive memo; unnecessary mechanical sequencing is the defect.",
+    "draft": "The fee is $30,000. Moreover, the pilot takes six weeks. Furthermore, Morgan is the sponsor. Additionally, a decision is needed. Ultimately, please approve.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-3-clean",
+    "split": "category-controls",
+    "category": "style_3",
+    "context": "Short executive memo; unnecessary mechanical sequencing is the defect.",
+    "draft": "Handling time fell. However, quality fell below the required threshold, so expansion should wait.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-4-defect",
+    "split": "category-controls",
+    "category": "style_4",
+    "context": "The measured values are supplied facts; no broader industry significance is supported.",
+    "draft": "This pilot marks a pivotal milestone in the evolution of modern business.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-4-clean",
+    "split": "category-controls",
+    "category": "style_4",
+    "context": "The measured values are supplied facts; no broader industry significance is supported.",
+    "draft": "The pilot reduced the observed mean from 15 minutes to 12 minutes.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-5-defect",
+    "split": "category-controls",
+    "category": "style_5",
+    "context": "No comparative evidence is supplied.",
+    "draft": "Our unparalleled, world-class process sets the industry standard for excellence.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-5-clean",
+    "split": "category-controls",
+    "category": "style_5",
+    "context": "No comparative evidence is supplied.",
+    "draft": "The process routes approved invoices to Finance.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-6-defect",
+    "split": "category-controls",
+    "category": "style_6",
+    "context": "No external research or expert testimony is supplied.",
+    "draft": "Industry experts agree that this is the future of operations.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-6-clean",
+    "split": "category-controls",
+    "category": "style_6",
+    "context": "No external research or expert testimony is supplied.",
+    "draft": "We have no external evidence for an industry-wide trend.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-7-defect",
+    "split": "category-controls",
+    "category": "style_7",
+    "context": "Five interviews and the recorded steps are supplied facts.",
+    "draft": "We completed five interviews, demonstrating our unwavering commitment to visionary leadership.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-7-clean",
+    "split": "category-controls",
+    "category": "style_7",
+    "context": "Five interviews and the recorded steps are supplied facts.",
+    "draft": "We completed five interviews and recorded the three approval steps each participant described.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-8-defect",
+    "split": "category-controls",
+    "category": "style_8",
+    "context": "The supplied role assignment is that Finance approves the fee.",
+    "draft": "Finance is associated with matters related to the approval process in connection with the fee.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-8-clean",
+    "split": "category-controls",
+    "category": "style_8",
+    "context": "The supplied role assignment is that Finance approves the fee.",
+    "draft": "Finance approves the fee.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-9-defect",
+    "split": "category-controls",
+    "category": "style_9",
+    "context": "These are three distinct approved deliverables; no improvement results exist.",
+    "draft": "The pilot makes operations smarter, faster, and more strategic.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-9-clean",
+    "split": "category-controls",
+    "category": "style_9",
+    "context": "These are three distinct approved deliverables; no improvement results exist.",
+    "draft": "The pilot delivers a process map, a prioritized backlog, and an implementation recommendation.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-10-defect",
+    "split": "category-controls",
+    "category": "style_10",
+    "context": "A short email needs the approval and prerequisite once each.",
+    "draft": "Please approve the pilot fee. The requested decision is approval of the pilot fee. In conclusion, we need you to approve the pilot fee.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-10-clean",
+    "split": "category-controls",
+    "category": "style_10",
+    "context": "A short email needs the approval and prerequisite once each.",
+    "draft": "Please approve the pilot fee. Security clearance is also required before data access.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-11-defect",
+    "split": "category-controls",
+    "category": "style_11",
+    "context": "A project update requesting a decision; Dana and COO roles are supplied.",
+    "draft": "Challenges remain, but continued evolution will open promising future possibilities.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-11-clean",
+    "split": "category-controls",
+    "category": "style_11",
+    "context": "A project update requesting a decision; Dana and COO roles are supplied.",
+    "draft": "Dana will present the accuracy results before the COO decides whether to expand.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-12-defect",
+    "split": "category-controls",
+    "category": "style_12",
+    "context": "The output itself is an email to the client, not a response to the drafting assistant user.",
+    "draft": "Certainly! Here is the polished executive email you requested. I hope this helps.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-12-clean",
+    "split": "category-controls",
+    "category": "style_12",
+    "context": "The output itself is an email to the client, not a response to the drafting assistant user.",
+    "draft": "Please let me know whether you approve the proposed fee.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-13-defect",
+    "split": "category-controls",
+    "category": "style_13",
+    "context": "Defect example is a final client email. Clean example is explicitly a reusable form template with intentional placeholders.",
+    "draft": "The approved fee is [insert amount] and the sponsor is [Your Name].",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-13-clean",
+    "split": "category-controls",
+    "category": "style_13",
+    "context": "Defect example is a final client email. Clean example is explicitly a reusable form template with intentional placeholders.",
+    "draft": "Client: [client name]. Approved fee: [amount].",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-14-defect",
+    "split": "category-controls",
+    "category": "style_14",
+    "context": "A short decision memo. A two-option numeric comparison benefits from a table; bolding routine words does not.",
+    "draft": "**Please** **approve** **the** **pilot** **fee** **today**.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-14-clean",
+    "split": "category-controls",
+    "category": "style_14",
+    "context": "A short decision memo. A two-option numeric comparison benefits from a table; bolding routine words does not.",
+    "draft": "| Option | Year-one cost |\n|---|---:|\n| Alpha | $92,000 |\n| Beta | $70,000 |",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-15-defect",
+    "split": "category-controls",
+    "category": "style_15",
+    "context": "A one-decision email, not a long report.",
+    "draft": "# Decision Framework\n## Approval Architecture\n### Fee Approval Pillar\n#### Approval Action\nPlease approve the fee.\n## Closing Framework\n### Decision Summary\nApprove the fee.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-15-clean",
+    "split": "category-controls",
+    "category": "style_15",
+    "context": "A one-decision email, not a long report.",
+    "draft": "Please approve the $30,000 pilot fee.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-16-defect",
+    "split": "category-controls",
+    "category": "style_16",
+    "context": "Status update.",
+    "draft": "At this current point in time, we are presently in the ongoing process of conducting an evaluation of the available options.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-16-clean",
+    "split": "category-controls",
+    "category": "style_16",
+    "context": "Status update.",
+    "draft": "We are evaluating the options.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-17-defect",
+    "split": "category-controls",
+    "category": "style_17",
+    "context": "A short analysis; the sample is known to be small, so that qualification is necessary.",
+    "draft": "This is very highly crucial and incredibly significant; it could potentially perhaps generally lead to meaningful value.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-17-clean",
+    "split": "category-controls",
+    "category": "style_17",
+    "context": "A short analysis; the sample is known to be small, so that qualification is necessary.",
+    "draft": "The estimate is provisional because the sample is small.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-18-defect",
+    "split": "category-controls",
+    "category": "style_18",
+    "context": "Dana and Finance must agree scope before implementation.",
+    "draft": "The operationalization of alignment enables the optimization of implementation readiness.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-18-clean",
+    "split": "category-controls",
+    "category": "style_18",
+    "context": "Dana and Finance must agree scope before implementation.",
+    "draft": "Dana will confirm the scope with Finance before implementation.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-19-defect",
+    "split": "category-controls",
+    "category": "style_19",
+    "context": "The decision memo must identify the approving and implementing roles.",
+    "draft": "It was decided that approval would be granted and implementation would be undertaken.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-19-clean",
+    "split": "category-controls",
+    "category": "style_19",
+    "context": "The decision memo must identify the approving and implementing roles.",
+    "draft": "Finance approved the fee. Dana will implement the change.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-20-defect",
+    "split": "category-controls",
+    "category": "style_20",
+    "context": "Planning email.",
+    "draft": "We will circle back to leverage synergies, move the needle, and align on our north star.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-20-clean",
+    "split": "category-controls",
+    "category": "style_20",
+    "context": "Planning email.",
+    "draft": "We will meet Friday to choose the pilot and its owner.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-21-defect",
+    "split": "category-controls",
+    "category": "style_21",
+    "context": "An executive approval email; no explanatory value comes from the maritime metaphor.",
+    "draft": "This proposal is the lighthouse guiding your organization through a sea of limitless possibilities.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-21-clean",
+    "split": "category-controls",
+    "category": "style_21",
+    "context": "An executive approval email; no explanatory value comes from the maritime metaphor.",
+    "draft": "This proposal asks you to approve a six-week pilot.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-22-defect",
+    "split": "category-controls",
+    "category": "style_22",
+    "context": "Operational instructions.",
+    "draft": "The worksheet serves as a document that functions as the place where the fee is recorded.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-22-clean",
+    "split": "category-controls",
+    "category": "style_22",
+    "context": "Operational instructions.",
+    "draft": "The worksheet records the fee.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-23-defect",
+    "split": "category-controls",
+    "category": "style_23",
+    "context": "A single draft review cannot guarantee perfect accuracy. The clean example accurately states an explicitly authorized contractual refund guarantee.",
+    "draft": "Reviewing the draft once ensures that every factual error is eliminated.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-23-clean",
+    "split": "category-controls",
+    "category": "style_23",
+    "context": "A single draft review cannot guarantee perfect accuracy. The clean example accurately states an explicitly authorized contractual refund guarantee.",
+    "draft": "The signed agreement guarantees a $5,000 refund if the specified acceptance condition is not met.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-24-defect",
+    "split": "category-controls",
+    "category": "style_24",
+    "context": "Executive email. The repeated mirrored sentences add no concrete decision information.",
+    "draft": "The pilot matters. It creates clarity. The fee matters. It creates focus. The deadline matters. It creates momentum. The owner matters. It creates accountability.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-24-clean",
+    "split": "category-controls",
+    "category": "style_24",
+    "context": "Executive email. The repeated mirrored sentences add no concrete decision information.",
+    "draft": "The pilot will test the handling-time target. Morgan must approve the fee before scheduling begins; security clearance is a separate prerequisite.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-25-defect",
+    "split": "category-controls",
+    "category": "style_25",
+    "context": "The source does not establish a complete universal taxonomy.",
+    "draft": "Our complete strategy covers every possible consideration through three universal pillars: people, process, and technology.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-25-clean",
+    "split": "category-controls",
+    "category": "style_25",
+    "context": "The source does not establish a complete universal taxonomy.",
+    "draft": "The approved scope covers invoice intake and approval. Payment execution is excluded.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-26-defect",
+    "split": "category-controls",
+    "category": "style_26",
+    "context": "Quality and handling-time results are supplied and both affect the scale decision.",
+    "draft": "While the initiative presents challenges, it also offers exciting opportunities.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-26-clean",
+    "split": "category-controls",
+    "category": "style_26",
+    "context": "Quality and handling-time results are supplied and both affect the scale decision.",
+    "draft": "Although handling time improved, quality fell below the scaling threshold.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-27-defect",
+    "split": "category-controls",
+    "category": "style_27",
+    "context": "Client email.",
+    "draft": "Remember that it is critical to understand that you must keep in mind the need for security approval.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-27-clean",
+    "split": "category-controls",
+    "category": "style_27",
+    "context": "Client email.",
+    "draft": "Security approval is required before client data access.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-28-defect",
+    "split": "category-controls",
+    "category": "style_28",
+    "context": "Closing paragraph of a pilot approval email; future success has not been established.",
+    "draft": "Together, we look forward to an exciting journey of continued success and meaningful impact.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-28-clean",
+    "split": "category-controls",
+    "category": "style_28",
+    "context": "Closing paragraph of a pilot approval email; future success has not been established.",
+    "draft": "Please approve the scope and fee so we can request security clearance.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-29-defect",
+    "split": "category-controls",
+    "category": "style_29",
+    "context": "Defect example is a business memo. Clean example is a construction planning memo using literal engineering terminology.",
+    "draft": "The kickoff memo is the spine of the transformation, carrying the shape of our operating model. One thing. Momentum. Clarity creates speed. Ambiguity creates drag.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "category-29-clean",
+    "split": "category-controls",
+    "category": "style_29",
+    "context": "Defect example is a business memo. Clean example is a construction planning memo using literal engineering terminology.",
+    "draft": "A structural engineer must inspect the load-bearing wall before the renovation begins.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed category control, not human gold"
+  },
+  {
+    "id": "literal-blast",
+    "split": "transfer",
+    "category": "style_29",
+    "context": "A demolition safety briefing with a supplied 200-meter blast radius.",
+    "draft": "The blast radius is 200 meters; evacuate buildings within that distance.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "metaphor-cluster",
+    "split": "transfer",
+    "category": "style_29",
+    "context": "An internal business strategy memo; the metaphors identify no actual dependency.",
+    "draft": "The deck is load-bearing, a backstop carrying the shape of alignment through every seam of the organization.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "real-correction",
+    "split": "transfer",
+    "category": "style_29",
+    "context": "The earlier fee was wrong and this email explicitly corrects it.",
+    "draft": "I gave the wrong fee earlier. The approved fee is $30,000, not $35,000.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "candor-performance",
+    "split": "transfer",
+    "category": "style_29",
+    "context": "A business readout with no substantive statement after the preambles.",
+    "draft": "One honest caveat. Here's the thing nobody tells you. This is where it gets interesting. That's not nothing.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "literal-heavy-lift",
+    "split": "transfer",
+    "category": "style_29",
+    "context": "A construction work instruction using supplied equipment and load facts.",
+    "draft": "Use the crane for heavy lifting; the beam exceeds the manual handling limit.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "preserved-qualification",
+    "split": "transfer",
+    "category": "style_17",
+    "context": "The sample excludes weekends. The qualification affects interpretation.",
+    "draft": "This result may not generalize because the sample excludes weekend tickets.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "generic-caveat",
+    "split": "transfer",
+    "category": "style_26",
+    "context": "A board decision memo needing actual risks and actions.",
+    "draft": "While there are risks to consider, the future remains full of opportunity.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "useful-format",
+    "split": "transfer",
+    "category": "style_14",
+    "context": "A responsibility matrix requested by the sponsor.",
+    "draft": "| Owner | Responsibility |\n|---|---|\n| Dana | Security approval |\n| Morgan | Fee approval |",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "repetitive-close",
+    "split": "transfer",
+    "category": "style_10",
+    "context": "A 100-word maximum client email.",
+    "draft": "Approve the pilot.\n\nThe next step is to approve the pilot.\n\nTo recap, please approve the pilot.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "ordinary-transition",
+    "split": "transfer",
+    "category": "style_3",
+    "context": "A vendor decision memo; the contrast changes eligibility.",
+    "draft": "The fee fits the budget. However, the vendor lacks the mandatory SSO feature.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "manufactured-insight",
+    "split": "transfer",
+    "category": "style_7",
+    "context": "Only the report delivery date is supported.",
+    "draft": "The team sent the report on Tuesday, underscoring its dedication to reshaping the future of work.",
+    "expected": "fail",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  },
+  {
+    "id": "concise-opening",
+    "split": "transfer",
+    "category": "style_2",
+    "context": "A decision memo with supplied eligibility and budget facts.",
+    "draft": "Approve Alpha: it meets the SSO requirement and fits the budget.",
+    "expected": "pass",
+    "labelStatus": "Author-proposed transfer control, not human gold"
+  }
+]

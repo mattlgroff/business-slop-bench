@@ -1,0 +1,124 @@
+{
+  "id": "anthropic--claude-fable-5.1--launch-delay-email--default",
+  "model": "anthropic/claude-fable-5.1",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T16:29:52.924Z",
+  "elapsedMs": 8417,
+  "text": "Subject: Launch Update – October 8 Production Date Not Confirmed\n\nHi Avery,\n\nA quick update on where the launch stands.\n\n**Current position**\nLaunch was tentatively scheduled for October 8, 2026. The security review, owned by Nia, now completes October 12 at the earliest, and release requires completed approval. As a result, October 8 is no longer viable as a production launch date.\n\n**What is still possible**\nThe team can still deliver a staging demo on October 8 using synthetic data. This keeps momentum and gives your stakeholders a working view of the product while the review finishes.\n\n**What remains uncertain**\nThe review may surface remediation items. Until it closes, no new production date is authorized, and I don't want to commit to one prematurely.\n\n**Action needed from you**\nPlease confirm whether you'd like to proceed with the October 8 staging demo. Once Nia's review completes, I'll return with a proposed production date.\n\nThe team is in good shape and ready either way. Happy to discuss on a call if useful.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 288,
+    "inputTokenDetails": {
+      "noCacheTokens": 288,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 346,
+    "outputTokenDetails": {
+      "textTokens": 346,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 634
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 288,
+        "output_tokens": 346,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.1",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5.1",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.1",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790094584772,
+                "endTime": 1790094585126,
+                "providerRequestId": "591ff144-9913-4f75-9e40-acb56b9dedf7",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790094585193,
+                "endTime": 1790094592929,
+                "providerRequestId": "req_011CfJo5RhhnLHEVomVHz6VJ",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJo5SSMvLjmV7xVHMjjB",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.02018",
+      "marketCost": "0.02018",
+      "surchargeCost": "0",
+      "gatewayCost": "0.02018",
+      "inferenceCost": "0.02018",
+      "inputInferenceCost": "0.00288",
+      "outputInferenceCost": "0.0173",
+      "generationId": "gen_01M34Z7AVXFE1C1FS7PDPKW60H"
+    }
+  },
+  "response": {
+    "id": "aitxt-YYzFT6X5bGdiB7j4OYibRAW9",
+    "modelId": "anthropic/claude-fable-5.1",
+    "timestamp": "2026-09-22T16:29:52.921Z"
+  },
+  "billing": {
+    "totalCost": 0.02018,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.02018",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

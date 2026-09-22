@@ -1,0 +1,132 @@
+{
+  "limitUsd": 20,
+  "accountedUsd": 0.12798797599999998,
+  "entries": [
+    {
+      "id": "judge--control--clean",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000681492,
+      "charged": 0.000082488,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--promise",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000413658,
+      "charged": 0.000027132,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--scope",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000409332,
+      "charged": 0.000025872,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--date",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000397488,
+      "charged": 0.000023477999999999998,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--omission",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000406644,
+      "charged": 0.000025662,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--padded",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000614712,
+      "charged": 0.000069174,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--precise-contrast",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000588,
+      "charged": 0.000061866,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--rhetorical-contrast",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.00041181,
+      "charged": 0.000026711999999999998,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--instruction-in-output",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000433692,
+      "charged": 0.000031206,
+      "status": "settled"
+    },
+    {
+      "id": "judge--control--empty",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.000402402,
+      "charged": 0.00002457,
+      "status": "settled"
+    },
+    {
+      "id": "alibaba--qwen3.8-flash--pilot-client-email--default",
+      "model": "alibaba/qwen3.8-flash",
+      "reserve": 0.00374992,
+      "charged": 0.00063423,
+      "status": "settled"
+    },
+    {
+      "id": "judge--alibaba--qwen3.8-flash--pilot-client-email--default",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.001593984,
+      "charged": 0.00026271,
+      "status": "settled"
+    },
+    {
+      "id": "alibaba--qwen3.8-flash--pilot-client-email--house",
+      "model": "alibaba/qwen3.8-flash",
+      "reserve": 0.00704312,
+      "charged": 0.00131734,
+      "status": "settled"
+    },
+    {
+      "id": "judge--alibaba--qwen3.8-flash--pilot-client-email--house",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.0015753359999999999,
+      "charged": 0.000259896,
+      "status": "settled"
+    },
+    {
+      "id": "anthropic--claude-opus-5--pilot-client-email--default",
+      "model": "anthropic/claude-opus-5",
+      "reserve": 0.350735,
+      "charged": 0.024598750000000003,
+      "status": "settled"
+    },
+    {
+      "id": "judge--anthropic--claude-opus-5--pilot-client-email--default",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.001595202,
+      "charged": 0.000263844,
+      "status": "settled"
+    },
+    {
+      "id": "anthropic--claude-opus-5--pilot-client-email--house",
+      "model": "anthropic/claude-opus-5",
+      "reserve": 0.5771425,
+      "charged": 0.09999,
+      "status": "settled"
+    },
+    {
+      "id": "judge--anthropic--claude-opus-5--pilot-client-email--house",
+      "model": "typesafe-ai/jev",
+      "reserve": 0.00158844,
+      "charged": 0.000263046,
+      "status": "settled"
+    }
+  ]
+}

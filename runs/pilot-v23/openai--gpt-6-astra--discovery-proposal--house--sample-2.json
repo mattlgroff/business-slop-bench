@@ -1,0 +1,102 @@
+{
+  "id": "openai--gpt-6-astra--discovery-proposal--house--sample-2",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:57:54.183Z",
+  "elapsedMs": 4276,
+  "text": "# Proposal for discovery engagement\n\nPlease approve a four-week discovery engagement for $16,000.\n\nThe engagement will deliver:\n- A current-state process map\n- A prioritized backlog\n- An implementation recommendation\n\nThe scope covers discovery only. Implementation, integrations, production support and guaranteed savings are excluded.\n\n## Commercial terms and client responsibilities\n\nThe fee covers 80 hours at $200 per hour, totaling $16,000. Payment is 50% ($8,000) at kickoff and 50% ($8,000) on delivery.\n\nThe client supplies interview access and source documents. Acceptance consists of the sponsor confirming delivery of the three listed artifacts.\n\n## How to proceed\n\nTo proceed, sign the proposal and name a client contact. We will agree the start date with the client only after signature and receipt of the named contact.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 2858,
+    "inputTokenDetails": {
+      "noCacheTokens": 3,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 2855
+    },
+    "outputTokens": 170,
+    "outputTokenDetails": {
+      "textTokens": 170,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 3028
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_066b33cea9baf476016ab2ebce547c81909063679dd001def3",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai, azure. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → openai(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110670210,
+                "endTime": 1790110674186,
+                "providerRequestId": "96b981ad-1013-4e8d-8e4b-b6d034481d8d",
+                "statusCode": 200,
+                "providerResponseId": "resp_066b33cea9baf476016ab2ebce547c81909063679dd001def3"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0442175",
+      "marketCost": "0.0442175",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0442175",
+      "inferenceCost": "0.0442175",
+      "inputInferenceCost": "0.0357175",
+      "outputInferenceCost": "0.0085",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35EJ79JSTY8DVB6ACWWSP3S"
+    }
+  },
+  "response": {
+    "id": "aitxt-lPUa01K88bPY2Rbrs4GrSC1S",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-22T20:57:54.182Z"
+  },
+  "billing": {
+    "totalCost": 0.0442175,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0442175",
+    "surchargeCost": "0"
+  },
+  "inputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.\n\nHOUSE STYLE: Apply the following Zero Defect anti-slop rules to your writing. The references to scans describe the evaluation rules; write the deliverable, not a review report.\nWrite only the requested deliverable, without an audit, scores, scan counts or process notes.\nNever use the em dash character (U+2014).\nAvoid formulaic negative parallelism used only for rhetorical emphasis, including not X but Y, not just X but Y, This is not X. It is Y, less about X and more about Y, more than X it is Y, and X rather than Y. Necessary factual corrections, scope boundaries, mutually exclusive conditions and cumulative requirements are allowed.\nThe following categories and examples describe writing to avoid. Apply their contextual exceptions: a precise ordinary term is allowed; a keyword match alone is not a defect.\n\n### 1. Stock AI vocabulary\n\nWatch for dense or unnatural use of words and phrases such as:\n\n`additionally`, `align with`, `boasts`, `bolstered`, `crucial`, `deep dive`, `delve`, `elevate`, `emphasize`, `enduring`, `enhance`, `ensure`, `ever-evolving`, `foster`, `garner`, `groundbreaking`, `harness`, `highlight`, `interplay`, `intricate`, `key`, `landscape`, `meticulous`, `navigate`, `pivotal`, `realm`, `robust`, `seamless`, `showcase`, `tapestry`, `testament`, `transformative`, `underscore`, `unlock`, `valuable`, and `vibrant`.\n\nExample defect: `Our robust platform unlocks transformative value across the evolving talent landscape.`\n\nWrite instead: replace abstractions with the product action, user, and measurable result.\n\n### 2. Throat clearing\n\nAvoid openings that delay the point, such as `It is important to note`, `It is worth considering`, `In today's environment`, `As organizations continue to`, and `When it comes to`.\n\nExample defect: `It is important to note that managers need accurate forecasts.`\n\nWrite instead: start with `Managers need accurate forecasts.`\n\n### 3. Canned transitions\n\nAvoid mechanical sequencing and connective tissue such as repeated `Additionally`, `Moreover`, `Furthermore`, `However`, `Ultimately`, `Overall`, and `In conclusion` when the relationship is obvious or unsupported. An isolated transition is a finding only when its logical relationship is false, unnecessary, or clearer without it.\n\n### 4. Generic significance\n\nAvoid claims that something represents a milestone, broader shift, lasting legacy, pivotal moment, testament, or important trend without specific evidence.\n\nExample defect: `The launch marks a pivotal shift in how modern teams approach collaboration.`\n\nWrite instead: state what changed, for whom, and how it is measured.\n\n### 5. Promotional puffery\n\nAvoid breathtaking, revolutionary, world-class, best-in-class, cutting-edge, unmatched, unparalleled, game-changing, next-generation, and similar claims without a defined comparison and evidence.\n\n### 6. Vague authority\n\nAvoid `experts agree`, `research shows`, `industry reports indicate`, `many leaders believe`, `customers say`, and similar attributions without named, adequate support.\n\nExample defect: `Industry leaders increasingly recognize this as the future of recruiting.`\n\nWrite instead: name the evidence and its scope or remove the claim.\n\n### 7. Superficial analysis\n\nAvoid sentences that append an unsupported meaning or impact, often through `highlighting`, `underscoring`, `reflecting`, `showcasing`, `ensuring`, or `demonstrating`.\n\nExample defect: `The team completed the pilot, demonstrating its commitment to innovation.`\n\nWrite instead: report the pilot result. Do not invent what it symbolizes.\n\n### 8. Vague relationships\n\nAvoid indirect phrases such as `in connection with`, `associated with`, `related to`, and `in the context of` when the actual relationship can be named.\n\nWrite instead: use direct verbs such as owns, funds, approved, caused, supplies, or depends on.\n\n### 9. Rule-of-three padding\n\nAvoid artificial groups of three adjectives, benefits, clauses, or bullets used to sound complete when the items are overlapping, unsupported, or arbitrary.\n\nExample defect: `The process is faster, smarter, and more strategic.`\n\nWrite instead: retain distinct, supported outcomes only.\n\n### 10. Repeated summaries\n\nAvoid a conclusion that merely restates the introduction, a paragraph that repeats its first sentence, section-ending recaps with no new decision, and repeated `key takeaway` blocks.\n\n### 11. Canned challenges and future outlook\n\nAvoid formulaic endings that mention challenges, continued evolution, future prospects, or a promising path forward without decisions, owners, evidence, or dates.\n\n### 12. Assistant residue\n\nAvoid phrases addressed to the requester instead of the deliverable's audience, including `I hope this helps`, `Certainly`, `Of course`, `Here is`, `Let me know`, `Would you like`, and knowledge-cutoff disclaimers. Do not penalize wording intentionally required by an email, form, proposal, playbook, or template.\n\n### 13. Prompt and placeholder residue\n\nAvoid leaked bracketed placeholders, template instructions, fake quotations, response preambles, prompt text, unfinished task markers, citation tokens, and markup copied from an assistant interface. Do not penalize placeholders or instructions that are intentional features of a template or playbook.\n\nExamples include `[insert metric]`, `turn0search1`, `contentReference`, `oaicite`, and `as an AI language model`.\n\n### 14. Excessive formatting\n\nAvoid formatting that makes a simple point harder to read:\n\n- a title that repeats the document title\n- title case on every heading\n- headings that contain only more headings\n- bold text on routine terms\n- bullets with bold mini-headings for every sentence\n- thematic separators between every section\n- a table used for prose that would be clearer as two sentences\n- emojis used as structural markers in a professional deliverable\n\n### 15. Excessive structure\n\nAvoid a short deliverable divided into too many sections, every idea forced into a numbered framework, nested bullets without hierarchy, and rigid symmetry that adds no decision value.\n\n### 16. Verbosity\n\nAvoid sentences, paragraphs, and sections that can lose substantial words without losing meaning. Look for doubled phrases, repeated qualifiers, long setup before the actor and action, and two sentences that make the same claim.\n\nExample defect: `At this point in time, the team is currently in the process of evaluating the available options.`\n\nWrite instead: `The team is evaluating the options.`\n\n### 17. Empty intensifiers and hedges\n\nAvoid unnecessary `very`, `highly`, `deeply`, `significantly`, `incredibly`, `potentially`, `generally`, `typically`, `arguably`, and stacked qualifiers that weaken accountability or exaggerate impact.\n\n### 18. Abstract nouns and nominalizations\n\nAvoid writing centered on abstractions such as `enablement`, `optimization`, `transformation`, `alignment`, `operationalization`, and `value creation` when a concrete actor and verb would be clearer.\n\nExample defect: `The initiative enables the optimization of stakeholder alignment.`\n\nWrite instead: say who will agree on what and by when.\n\n### 19. Hidden actors\n\nAvoid passive or agentless claims such as `it was decided`, `changes will be implemented`, and `results are expected` when ownership matters.\n\n### 20. Corporate and consultant jargon\n\nAvoid `leverage`, `synergy`, `north star`, `value-add`, `circle back`, `move the needle`, `low-hanging fruit`, `best practice`, `strategic imperative`, and similar language when it replaces a specific action or result.\n\n### 21. Mannered and unrelatable prose\n\nAvoid mannered prose: metaphor, flourish, or conspicuously polished phrasing that replaces a clearer literal statement without adding meaning or precision. Also penalize academic diction or formal language that the stated audience would not naturally use or immediately understand. Do not penalize a metaphor that is the clearest accurate term for the audience or adds useful explanatory meaning.\n\nGroup recurring mannered devices that serve the same rhetorical function as one finding.\n\nExample defect: `The approval deadline casts a long shadow over the rollout.`\n\nWrite instead: state the actual effect of the deadline on the rollout.\n\n### 22. Inflated substitutes for simple verbs\n\nAvoid `serves as`, `stands as`, `functions as`, `operates as`, `features`, and `boasts` when `is` or `has` is accurate.\n\n### 23. Unsupported certainty through `ensure`\n\nAvoid claims that a step `ensures`, `guarantees`, or `eliminates` an outcome when it only helps, reduces risk, or creates a condition.\n\n### 24. Uniform cadence\n\nAvoid repeated sentence length, repeated grammatical shapes, identical paragraph construction, and mechanical alternation between claim and explanation when the prose sounds generated or monotonous.\n\n### 25. Forced comprehensiveness\n\nAvoid exhaustive-looking taxonomies, arbitrary frameworks, and long lists that imply completeness without explaining selection criteria or omissions.\n\n### 26. Unnecessary caveat balance\n\nAvoid reflexive `while` and `although` clauses that add a generic counterpoint merely to sound balanced.\n\nExample defect: `While the rollout presents challenges, it also creates meaningful opportunities.`\n\nWrite instead: identify the actual risk and opportunity, or delete the sentence.\n\n### 27. Generic reader coaching\n\nAvoid instructions such as `remember that`, `keep in mind`, `it is critical to understand`, and `one must consider` when the underlying fact can be stated directly.\n\n### 28. Empty positive endings\n\nAvoid endings that predict continued success, meaningful impact, future growth, or an exciting journey without evidence, ownership, or a decision.\n\n### 29. Claude-associated rhetorical attractors\n\nClaudisms are recurring vocabulary and rhetorical shapes strongly associated with Claude-generated prose. Review the writing, never its alleged authorship. Avoid instances that are formulaic, unnecessary, misleading, unnatural for the audience, or removable without information loss.\n\n#### Dramatic fragmentation\n\nAvoid short fragments isolated to manufacture emphasis, suspense, or profundity, including constructions such as `Two. Things.`, `Not a detail. A design decision.`, `One problem.`, and a rhetorical question immediately answered by another fragment. Do not penalize headings, labels, dialogue, intentional slogans, or concise fragments natural to the deliverable's format.\n\nWrite instead: combine the fragments into a complete sentence that states the claim without staged drama.\n\n#### Importance signaling and self-ranking\n\nAvoid prefatory claims such as `worth stating plainly`, `here's why that matters`, `the deeper point`, `the real issue`, and `the most important thing` when the prose tells readers how significant a point is instead of demonstrating its consequence. This includes repeatedly crowning one observation as the decisive, surprising, or overlooked insight without evidence for that ranking.\n\nAvoid cataphoric teasers that point forward to a withheld payload solely to manufacture suspense, such as `Here's the part that nobody tells you`, `Here's what most people get wrong`, and `Here's where it gets interesting`.\n\nWrite instead: remove the preamble and state the fact, consequence, or comparison directly.\n\n#### Candor, reassurance, and pushback scripts\n\nAvoid canned conversational moves such as `honest take`, `one honest caveat`, `you're right to push back`, `I'd gently reset the framing`, and `that's on me` when they simulate candor, validation, or accountability without adding a substantive correction. A direct acknowledgment of an actual error or a necessary qualification is not a finding.\n\nWrite instead: state the correction, disagreement, or limitation without the social-performance preamble.\n\n#### Structural metaphor clusters\n\nAvoid metaphorical uses of `load-bearing`, `heavy lifting`, `shape`, `spine`, `seam`, `chokepoint`, `backstop`, `blast radius`, `carry`, and similar systems language when the metaphor merely declares importance or complexity. Treat a dense cluster as stronger evidence than one precise term. Do not penalize literal construction or engineering usage, established domain terminology, or a metaphor that clarifies a specific dependency.\n\nExample defect: `The kickoff memo is load-bearing because it carries the shape of the operating model.`\n\nWrite instead: name the dependency, failure consequence, owner, or required action.\n\n#### Aphoristic endings and mirrored cadence\n\nAvoid paragraphs that end with compact, quotable declarations that add no information, especially when paired with mirrored clauses, artificial symmetry, or a contrast already covered by the style gate. Examples include `The process does not support the work. It is the work.` and `Clarity creates speed. Ambiguity creates drag.` Judge the passage as a whole and consolidate overlapping cadence, repetition, and negative-parallelism diagnoses.\n\nWrite instead: retain the supported claim and delete the manufactured landing.\n\n",
+    "reasoning": "low"
+  }
+}

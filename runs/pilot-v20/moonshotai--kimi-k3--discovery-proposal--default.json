@@ -1,0 +1,145 @@
+{
+  "id": "moonshotai--kimi-k3--discovery-proposal--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:31:29.485Z",
+  "elapsedMs": 3338,
+  "text": "# Discovery Engagement Proposal\n\n**Prepared for: Client Sponsor**\n\n## Purpose\n\nWe propose a four-week discovery engagement to assess your current-state processes and define a clear path forward. This proposal outlines the scope, commercial terms, and next steps for your approval.\n\n## Scope of Work\n\nOver four weeks, we will deliver three artifacts:\n\n1. **Current-state process map** — documentation of existing processes based on interviews and source materials.\n2. **Prioritized backlog** — a ranked list of improvement opportunities.\n3. **Implementation recommendation** — our advised approach for execution.\n\n## Exclusions\n\nThis engagement covers discovery only. The following are explicitly excluded:\n\n- Implementation\n- Integrations\n- Production support\n- Guaranteed savings\n\n## Commercial Offer\n\n| Item | Detail |\n|---|---|\n| Effort | 80 hours at $200/hour |\n| Total fee | $16,000 |\n| Payment | 50% at kickoff; 50% on delivery |\n\n## Client Responsibilities\n\nTo enable delivery, the client will provide:\n\n- Access to staff for interviews\n- Relevant source documents\n- A named client contact (required before a start date is agreed)\n\n## Acceptance\n\nThe engagement is complete when the sponsor confirms delivery of the three listed artifacts: the process map, the prioritized backlog, and the implementation recommendation.\n\n## How to Proceed\n\n1. **Review and sign** this proposal to authorize the engagement.\n2. **Nominate a named client contact** — the start date will be agreed only after signature and contact nomination.\n3. **Pay the kickoff invoice** (50%, $8,000) to begin.\n4. **Facilitate access** to interviewees and documents during the four-week period.\n5. **Confirm acceptance** upon delivery of the three artifacts, triggering the final payment (50%, $8,000).\n\nWe look forward to your approval and to beginning discovery.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 267,
+    "inputTokenDetails": {
+      "noCacheTokens": 7,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 260
+    },
+    "outputTokens": 409,
+    "outputTokenDetails": {
+      "textTokens": 399,
+      "reasoningTokens": 10
+    },
+    "totalTokens": 676
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_7uriekdhkdox22licgkckvgwldlv2rckoze6ost75txmwv3zom6a",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "fireworks",
+          "runware",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, fireworks, runware, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → fireworks(system) → runware(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "bedrock",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790091086295,
+                "endTime": 1790091086331,
+                "providerRequestId": "54ca701a0c9be49ec725baaa2a7bafdd76b12",
+                "statusCode": 503,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "bedrock",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091086336,
+                "endTime": 1790091089489,
+                "providerRequestId": "ebc2a5a9-8ebb-4331-ba80-58a9d3545601",
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.007131",
+      "marketCost": "0.007131",
+      "surchargeCost": "0",
+      "gatewayCost": "0.007131",
+      "inferenceCost": "0.007131",
+      "inputInferenceCost": "0.000996",
+      "outputInferenceCost": "0.006135",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34VWJC076VEYNG7MNNAQ0NZ"
+    }
+  },
+  "response": {
+    "id": "aitxt-1yIZ9cFsshAA6hpcVr9vwwgx",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T15:31:29.485Z"
+  },
+  "billing": {
+    "totalCost": 0.007131,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.007131",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

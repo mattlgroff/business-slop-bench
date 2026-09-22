@@ -1,0 +1,36 @@
+{
+  "id": "control--empty",
+  "taskId": "pilot-client-email",
+  "protocolHash": "fad029a8fca4771f4f36af6a06978440b709ed5af9843c7479ef2f28f39e2bf5",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+      "severity": "critical",
+      "probability": 0.51,
+      "verdict": "review"
+    },
+    {
+      "id": "C06",
+      "dimension": "decision",
+      "statement": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+      "severity": "critical",
+      "probability": 0.46,
+      "verdict": "review"
+    }
+  ],
+  "deterministic": {
+    "words": 0,
+    "withinWordLimit": true,
+    "nonempty": false,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": true,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 2
+}

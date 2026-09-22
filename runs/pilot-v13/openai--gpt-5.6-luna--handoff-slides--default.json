@@ -1,0 +1,114 @@
+{
+  "id": "openai--gpt-5.6-luna--handoff-slides--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "bc04bb9681566600f5b6070b8d4ee99eac57b48c105446259da69193f2e8e644",
+  "status": "ok",
+  "at": "2026-09-22T12:56:15.457Z",
+  "elapsedMs": 5805,
+  "text": "## Slide 1 — Decision Required: Operational Handoff Readiness\n- **Recommendation:** Do not approve operational handoff yet.\n- Acceptance requires:\n  - An approved runbook\n  - A successful rollback rehearsal\n- The runbook is approved.\n- The rollback rehearsal has not happened.\n- Therefore, acceptance criteria are not yet met.\n\n## Slide 2 — Current Ownership and Readiness Position\n| Area | Current position |\n|---|---|\n| Defect fixes | Engineering lead Lee owns defect fixes until acceptance. |\n| Incidents | Operations lead Jo owns incidents only after acceptance. |\n| Runbook | Approved. |\n| Rollback rehearsal | Not completed. |\n| Rehearsal organization | No role has accepted responsibility. |\n- Operations should not assume incident ownership before acceptance.\n\n## Slide 3 — Required Actions Before Handoff\n1. Sponsor Pat assigns responsibility for organizing the rollback rehearsal.\n2. The assigned responsibility holder organizes and completes the rehearsal.\n3. Confirm the rehearsal is successful.\n4. Verify that both acceptance criteria are satisfied:\n   - Approved runbook\n   - Successful rollback rehearsal\n5. Keep Lee responsible for defect fixes until acceptance.\n6. Keep Jo’s incident ownership beginning only after acceptance.\n\n## Slide 4 — Steering Committee Decision and Handoff Gate\n- **Decision now:** Defer operational handoff.\n- **Pat’s action:** Assign responsibility for organizing the rollback rehearsal.\n- **Acceptance gate:** After a successful rehearsal, Pat may approve acceptance because the runbook is already approved.\n- **If acceptance is approved:** Operations lead Jo assumes incident ownership; Engineering lead Lee’s “until acceptance” ownership ends.\n- **Until then:** The service is not ready for operational handoff.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 400,
+    "outputTokenDetails": {
+      "textTokens": 355,
+      "reasoningTokens": 45
+    },
+    "totalTokens": 569
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0b3e1c5c29e97e69016ab27aea2124819685520bc8e7c3598f",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081770010,
+                "endTime": 1790081775617,
+                "providerRequestId": "4461a201-893f-421e-bfe9-15c8c978ab04",
+                "statusCode": 200,
+                "providerResponseId": "resp_0b3e1c5c29e97e69016ab27aea2124819685520bc8e7c3598f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0005138",
+      "marketCost": "0.0005138",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0005138",
+      "inferenceCost": "0.0005138",
+      "inputInferenceCost": "0.0000338",
+      "outputInferenceCost": "0.00048",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34K08C6M7BD12RHQXY311FR"
+    }
+  },
+  "response": {
+    "id": "aitxt-yGCsvYC5dIE10YI9o5kaLBg6",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T12:56:15.457Z"
+  },
+  "billing": {
+    "totalCost": 0.0005138,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0005138",
+    "surchargeCost": "0"
+  },
+  "inputHash": "a7c03c25cb9c603cc0fe321151eb342113224084e00dda53a1a88da5b8186a52",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

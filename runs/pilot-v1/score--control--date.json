@@ -1,0 +1,26 @@
+{
+  "id": "control--date",
+  "taskId": "pilot-client-email",
+  "protocolHash": "0ed33587f3b6a92b2e785b59a3bba5267075318d671ed77032fa49430d6853cc",
+  "grades": [
+    {
+      "id": "C05",
+      "dimension": "commitments",
+      "statement": "The email does not claim an approved start date or unconditional start commitment.",
+      "severity": "critical",
+      "probability": 0.12,
+      "verdict": "fail"
+    }
+  ],
+  "deterministic": {
+    "words": 35,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 0
+}

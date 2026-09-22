@@ -1,0 +1,147 @@
+{
+  "id": "google--gemini-3.8-flash--change-order--default",
+  "model": "google/gemini-3.8-flash",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:12:37.783Z",
+  "elapsedMs": 2663,
+  "text": "# Change-Order Proposal: CRM Connector\n\n**Original Scope:**  \nExisting signed scope is the reporting dashboard.\n\n**Requested Work:**  \nClient requests an additional CRM connector. This work is not included in the original fee.\n\n**Price:**  \nThe estimate for this work is 40 hours at $175/hour, resulting in a proposed fixed change fee of $7,000.\n\n**Schedule Effect:**  \nThe connector adds two weeks after written approval and credential receipt. Please note that this is an estimate, not an approved calendar date.\n\n**Dependencies & Requirements:**  \n* Client must provide sandbox credentials.\n* The sponsor must approve in writing before connector work begins.\n\n***\n\n### Sponsor Decision\n\nPlease indicate your decision to approve or decline this change order below:\n\n[  ] **APPROVE**  \n[  ] **DECLINE**  \n\n**Sponsor Signature:** ___________________________  \n**Date:** ___________________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 197,
+    "inputTokenDetails": {
+      "noCacheTokens": 197,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 202,
+    "outputTokenDetails": {
+      "textTokens": 202,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 399
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 197,
+        "candidatesTokenCount": 202,
+        "totalTokenCount": 399,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 197
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 202
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 197,
+        "candidatesTokenCount": 202,
+        "totalTokenCount": 399,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 197
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 202
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.8-flash",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.8-flash",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086355190,
+                "endTime": 1790086357770,
+                "statusCode": 200,
+                "providerResponseId": "04yyao6JD-XcsbwP8IflsQk"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00090525",
+      "marketCost": "0.00090525",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00090525",
+      "inferenceCost": "0.00090525",
+      "inputInferenceCost": "0.00014775",
+      "outputInferenceCost": "0.0007575",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QC66P52HF43XNS1T4N3XR"
+    }
+  },
+  "response": {
+    "id": "aitxt-yEXIeVDXodTjge5hk2soQj3d",
+    "modelId": "google/gemini-3.8-flash",
+    "timestamp": "2026-09-22T14:12:37.782Z"
+  },
+  "billing": {
+    "totalCost": 0.00090525,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00090525",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

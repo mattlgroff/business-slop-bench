@@ -1,0 +1,149 @@
+{
+  "id": "google--gemini-3.1-pro-preview--change-order--default",
+  "model": "google/gemini-3.1-pro-preview",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:32:54.703Z",
+  "elapsedMs": 9705,
+  "text": "**Change Order Proposal: CRM Connector**\n\n**Background and Requested Work**\nThe existing signed scope of work covers the reporting dashboard. Recently, the client requested the addition of a CRM connector. Because this was not included in the original fee, we are submitting this change-order proposal for your review.\n\n**Pricing**\nThe effort required to build the CRM connector is estimated at 40 hours at a rate of $175/hour. Therefore, we are proposing a fixed change fee of $7,000 to complete this additional work. \n\n**Schedule Effect and Dependencies**\nAdding the connector to the project will extend the timeline by two weeks. Please note that this is an estimate, not an approved calendar date. The two-week timeframe will commence only after the following conditions are met:\n1. Written approval of this change order is received.\n2. The client provides the necessary sandbox credentials. \n\n**Approval**\nAs the project sponsor, you must approve this change in writing before any work on the CRM connector begins. \n\nPlease review the proposed scope, fee, and schedule impact above. Reply to this document with your written approval to proceed, or let us know if you choose to decline this additional work.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 197,
+    "inputTokenDetails": {
+      "noCacheTokens": 197,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 782,
+    "outputTokenDetails": {
+      "textTokens": 255,
+      "reasoningTokens": 527
+    },
+    "totalTokens": 979
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 527,
+        "promptTokenCount": 197,
+        "candidatesTokenCount": 255,
+        "totalTokenCount": 979,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 197
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 255
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 527,
+        "promptTokenCount": 197,
+        "candidatesTokenCount": 255,
+        "totalTokenCount": 979,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 197
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 255
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.1-pro-preview",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.1-pro-preview",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.1-pro-preview",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790109165122,
+                "endTime": 1790109174701,
+                "statusCode": 200,
+                "providerResponseId": "7eWyaqvPC6qSl7oPnfOG8Qo"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.009778",
+      "marketCost": "0.009778",
+      "surchargeCost": "0",
+      "gatewayCost": "0.009778",
+      "inferenceCost": "0.009778",
+      "inputInferenceCost": "0.000394",
+      "outputInferenceCost": "0.009384",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35D49FTQWJTZ4VPRZGXJZ25"
+    }
+  },
+  "response": {
+    "id": "aitxt-2OxfXrgGZdQjl1M0VmDjR1yK",
+    "modelId": "google/gemini-3.1-pro-preview",
+    "timestamp": "2026-09-22T20:32:54.703Z"
+  },
+  "billing": {
+    "totalCost": 0.009778,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.009778",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

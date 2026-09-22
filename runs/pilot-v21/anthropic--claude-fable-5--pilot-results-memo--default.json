@@ -1,0 +1,124 @@
+{
+  "id": "anthropic--claude-fable-5--pilot-results-memo--default",
+  "model": "anthropic/claude-fable-5",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T16:59:01.407Z",
+  "elapsedMs": 10951,
+  "text": "# Executive Readout: Pilot Scaling Decision\n\n## Recommendation\n**Do not scale now.** Authorize Sam's matched-ticket follow-up instead.\n\n## What the Results Show\n\n| Metric | Baseline | Pilot | Assessment |\n|---|---|---|---|\n| Tickets | 200 | 100 | Adequate for a pilot |\n| Mean handling time | 15 min | 12 min | Directionally favorable |\n| Quality pass rate | 94% | 89% | **Below 92% scaling threshold** |\n| Measured cash savings | — | None | Unproven |\n\n## What the Results Support\n- A **promising signal**: a 3-minute (20%) reduction in mean handling time.\n- Justification for **further, more rigorous testing**.\n\n## What the Results Do Not Support\n- **Attribution of the time savings.** Ticket mix differed and allocation was not randomized, so the improvement may reflect easier tickets rather than the intervention.\n- **Meeting the quality bar.** Pilot quality (89%) fell below the required 92% threshold — a hard blocker on scaling regardless of speed gains.\n- **A financial case.** No staffing reductions or cash savings have been measured.\n\n## Risks of Scaling Now\n- Locking in a quality decline below the required threshold.\n- Investing in a change whose benefit may disappear under a comparable ticket mix.\n\n## Next Decision\nThe decision before the COO is **not** whether to scale — the quality shortfall and confounded design rule that out today. The decision is **whether to authorize Sam's matched-ticket follow-up**, which would:\n1. Control for ticket mix, isolating the true handling-time effect.\n2. Test whether quality can meet or exceed 92% under the new approach.\n\n**Recommended action:** Approve the matched-ticket follow-up. Revisit the scaling decision when it delivers (a) a mix-controlled handling-time result and (b) quality at or above threshold, alongside a plan to measure actual cash savings.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 290,
+    "inputTokenDetails": {
+      "noCacheTokens": 290,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 667,
+    "outputTokenDetails": {
+      "textTokens": 667,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 957
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 290,
+        "output_tokens": 667,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790096330670,
+                "endTime": 1790096331036,
+                "providerRequestId": "7c641b70-1e82-4447-bcf7-b85512912fd8",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790096331070,
+                "endTime": 1790096341383,
+                "providerRequestId": "req_011CfJqJ7vU42u34g9PTbRQd",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJqJ8KXm6PyvagwRmrXQ",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.03625",
+      "marketCost": "0.03625",
+      "surchargeCost": "0",
+      "gatewayCost": "0.03625",
+      "inferenceCost": "0.03625",
+      "inputInferenceCost": "0.0029",
+      "outputInferenceCost": "0.03335",
+      "generationId": "gen_01M350WKVJBVXPM3PRJB37KMPF"
+    }
+  },
+  "response": {
+    "id": "aitxt-AtQ9i9bUe3wpl35ohPiNdWfE",
+    "modelId": "anthropic/claude-fable-5",
+    "timestamp": "2026-09-22T16:59:01.405Z"
+  },
+  "billing": {
+    "totalCost": 0.03625,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.03625",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

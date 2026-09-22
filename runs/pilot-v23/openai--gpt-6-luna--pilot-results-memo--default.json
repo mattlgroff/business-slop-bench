@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-luna--pilot-results-memo--default",
+  "model": "openai/gpt-6-luna",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:26:34.229Z",
+  "elapsedMs": 5172,
+  "text": "## Executive readout: Do not scale the pilot now\n\n**What the results support:** Mean handling time was 12 minutes in the pilot versus 15 minutes at baseline, a 3-minute difference. This is a directional efficiency signal, not evidence that the pilot caused the improvement: ticket mix differed and allocation was not randomized.\n\n**Why not scale:** Quality pass rate fell from 94% at baseline to 89% in the pilot, below the required 92% scaling threshold. No staffing reductions or cash savings have been measured.\n\n**Next decision:** The COO should decide whether to authorize Sam to run a matched-ticket follow-up. Use that follow-up to assess handling time and quality on comparable tickets before reconsidering scale.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 175,
+    "inputTokenDetails": {
+      "noCacheTokens": 175,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 239,
+    "outputTokenDetails": {
+      "textTokens": 152,
+      "reasoningTokens": 87
+    },
+    "totalTokens": 414
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_080202aa8af7e950006ab2e4755d9c87d28893a31a15210f61",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-luna",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108789278,
+                "endTime": 1790108794207,
+                "providerRequestId": "req_2e2f84a4487545ed8969ea52178ade9c",
+                "statusCode": 200,
+                "providerResponseId": "resp_080202aa8af7e950006ab2e4755d9c87d28893a31a15210f61"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.000137",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CRTFXPK2FKAA46HRM6MED"
+    }
+  },
+  "response": {
+    "id": "aitxt-Z0R4vrFpFLofWsQa6dSvRXlT",
+    "modelId": "openai/gpt-6-luna",
+    "timestamp": "2026-09-22T20:26:34.228Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

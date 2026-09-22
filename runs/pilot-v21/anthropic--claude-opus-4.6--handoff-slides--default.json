@@ -1,0 +1,114 @@
+{
+  "id": "anthropic--claude-opus-4.6--handoff-slides--default",
+  "model": "anthropic/claude-opus-4.6",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:55:39.474Z",
+  "elapsedMs": 10724,
+  "text": "# Steering Committee: Operational Handoff Readiness\n\n---\n\n## Slide 1: Acceptance Criteria Status\n\n| Criterion | Status |\n|---|---|\n| Approved runbook | ✅ Complete |\n| Successful rollback rehearsal | ❌ Not conducted |\n\n**Summary:** The service is **not ready** for operational handoff. One of two required acceptance criteria remains unmet.\n\n---\n\n## Slide 2: Current Ownership Model\n\n- **Pre-acceptance (now):** Engineering lead Lee owns defect fixes and service responsibility.\n- **Post-acceptance:** Operations lead Jo assumes incident ownership.\n- Handoff transfers accountability — it cannot occur until both criteria are satisfied.\n- Lee currently carries operational risk with no defined end date due to the rehearsal gap.\n\n---\n\n## Slide 3: Gap — Rehearsal Ownership Unassigned\n\n- No role has accepted responsibility for organizing the rollback rehearsal.\n- Without an owner, the rehearsal will not be scheduled, and acceptance will stall indefinitely.\n- This is a **governance gap**, not a technical gap — the blocker is assignment of responsibility, not capability.\n- Sponsor Pat holds the authority to assign this responsibility.\n\n---\n\n## Slide 4: Recommended Actions\n\n| # | Action | Owner | Dependency |\n|---|---|---|---|\n| 1 | Assign rollback rehearsal organizer | Pat (sponsor) | None — can decide today |\n| 2 | Schedule and execute rehearsal | Assigned organizer + Lee + Jo | Action 1 |\n| 3 | Confirm criteria met and approve acceptance | Pat (sponsor) | Action 2 successful |\n| 4 | Transfer incident ownership to Operations | Jo | Action 3 |\n\n**Ask of the committee:** Direct Pat to assign rehearsal ownership today so the handoff can proceed.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 197,
+    "inputTokenDetails": {
+      "noCacheTokens": 197,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 423,
+    "outputTokenDetails": {
+      "textTokens": 423,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 620
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 197,
+        "output_tokens": 423,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-4.6",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic. ZDR requested: 4 attempts → 3 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-opus-4.6",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-4.6",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790099729071,
+                "endTime": 1790099739481,
+                "providerRequestId": "req_011CfJuccAosnK94GeDf3q9q",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJuccZd6TLo4cv9y28kp"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.01156",
+      "marketCost": "0.01156",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01156",
+      "inferenceCost": "0.01156",
+      "inputInferenceCost": "0.000985",
+      "outputInferenceCost": "0.010575",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3544AJJ5B01458J4PXSH2HE"
+    }
+  },
+  "response": {
+    "id": "aitxt-eSloGZnoi9gS4dnigtjXjl98",
+    "modelId": "anthropic/claude-opus-4.6",
+    "timestamp": "2026-09-22T17:55:39.472Z"
+  },
+  "billing": {
+    "totalCost": 0.01156,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01156",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

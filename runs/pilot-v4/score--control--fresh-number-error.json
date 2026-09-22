@@ -1,0 +1,28 @@
+{
+  "id": "control--fresh-number-error",
+  "taskId": "vendor-decision-memo",
+  "protocolHash": "fad029a8fca4771f4f36af6a06978440b709ed5af9843c7479ef2f28f39e2bf5",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+      "severity": "critical",
+      "probability": 0.21,
+      "verdict": "review"
+    }
+  ],
+  "deterministic": {
+    "words": 12,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": false,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 1
+}

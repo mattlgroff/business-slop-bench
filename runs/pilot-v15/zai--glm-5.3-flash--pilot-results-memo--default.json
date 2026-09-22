@@ -1,0 +1,153 @@
+{
+  "id": "zai--glm-5.3-flash--pilot-results-memo--default",
+  "model": "zai/glm-5.3-flash",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:26:32.937Z",
+  "elapsedMs": 7733,
+  "text": "**Executive Readout: Handle-Time Pilot — Scale Decision**\n\n**Recommendation:** Do not scale now. Authorize the matched-ticket follow-up before any scaling decision.\n\n**What the results support:**\n- The pilot showed a faster mean handling time: 12 minutes on 100 pilot tickets versus 15 minutes at baseline (200 tickets).\n- The efficiency signal is credible enough to justify one more, better-controlled test.\n\n**What the results do not support:**\n- **No causal claim.** Ticket mix differed between pilot and baseline, and allocation was not randomized. The 3-minute improvement may reflect easier tickets rather than the intervention.\n- **Quality regression.** Pass rate fell from 94% (baseline) to 89% (pilot), below the required 92% scaling threshold. On current data, the pilot fails the quality gate.\n- **No financial case.** No staffing reductions or cash savings have been measured, so there is no basis for a return-on-investment claim.\n\n**Next decision:**\n- **COO decision required:** whether to authorize Sam's proposed matched-ticket follow-up.\n- The follow-up should match ticket mix across groups (or randomize allocation) so the handling-time effect can be attributed to the intervention, and quality should be re-measured against the 92% threshold.\n\n**Decision summary:** Results support continuing evaluation via the matched-ticket follow-up. They do not support scaling now, given non-randomized allocation, a quality pass rate below threshold, and unmeasured savings. Scaling should be revisited only if the follow-up confirms the time savings and restores quality above 92%.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 184,
+    "inputTokenDetails": {
+      "noCacheTokens": 184,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 331,
+    "outputTokenDetails": {
+      "textTokens": 331,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 515
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 0,
+      "rejectedPredictionTokens": 0
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "runware",
+          "wafer",
+          "particle",
+          "zai",
+          "togetherai",
+          "streamlake",
+          "parasail",
+          "digitalocean",
+          "friendli",
+          "novita",
+          "modal",
+          "morph",
+          "deepinfra",
+          "relace",
+          "boundless",
+          "inference-net",
+          "gmicloud"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 1 over runware. System credentials planned for: baseten, fireworks, runware, wafer, particle, zai, togetherai, streamlake, parasail, digitalocean, friendli, novita, modal, morph, deepinfra, relace, boundless, inference-net, gmicloud. ZDR requested: 19 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → runware(system) → wafer(system) → particle(system) → zai(system) → togetherai(system) → streamlake(system) → parasail(system) → digitalocean(system) → friendli(system) → novita(system) → modal(system) → morph(system) → deepinfra(system) → relace(system) → boundless(system) → inference-net(system) → gmicloud(system). ZDR execution order: baseten(system) → fireworks(system) → wafer(system) → particle(system) → togetherai(system) → parasail(system) → digitalocean(system) → modal(system) → morph(system) → deepinfra(system)",
+        "canonicalSlug": "zai/glm-5.3-flash",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790083585386,
+                "endTime": 1790083592966,
+                "providerRequestId": "54ca701a0c94bd57e7c6b89f5075d2a195fa9",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-d6b65b0d0414451b8b5550a3b9bd1280"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0001931",
+      "marketCost": "0.0001931",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0001931",
+      "inferenceCost": "0.0001931",
+      "inputInferenceCost": "0.0000276",
+      "outputInferenceCost": "0.0001655",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34MQN83X4DSTHADCGGB8XBW"
+    }
+  },
+  "response": {
+    "id": "aitxt-vT30NWsW9XEd60tuqWKoeTPg",
+    "modelId": "zai/glm-5.3-flash",
+    "timestamp": "2026-09-22T13:26:32.937Z"
+  },
+  "billing": {
+    "totalCost": 0.0001931,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0001931",
+    "surchargeCost": "0"
+  },
+  "inputHash": "d51015dda69be7545657d0e0160bde253b7095eda2515dc1dd4690de1e4cac00",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

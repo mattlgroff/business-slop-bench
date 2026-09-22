@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-luna--pilot-client-email--default",
+  "model": "openai/gpt-6-luna",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:24:08.676Z",
+  "elapsedMs": 2564,
+  "text": "Subject: Decision requested: Six-week invoice-handling pilot\n\nHi Morgan,\n\nI recommend moving forward with the approved six-week pilot to assess invoice handling. The fixed fee is $30,000, and production rollout is excluded.\n\nYour team’s hope is to reduce handling time by 20%. Because no baseline or measured savings exists, the pilot can assess progress toward that target without treating it as a guaranteed result.\n\nThe next decision is whether you approve the pilot scope and fee, subject to security clearance. Security approval is required before access to client data. No start date has been approved.\n\nPlease confirm whether you approve the scope and fee subject to security clearance.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 187,
+    "inputTokenDetails": {
+      "noCacheTokens": 187,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 143,
+    "outputTokenDetails": {
+      "textTokens": 143,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 330
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0abf826fb61bac5b006ab2e3e6639887d29f893fc90886f94f",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-luna",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108646320,
+                "endTime": 1790108648652,
+                "providerRequestId": "req_7e13832edd8442d8b2994ae5acada99f",
+                "statusCode": 200,
+                "providerResponseId": "resp_0abf826fb61bac5b006ab2e3e6639887d29f893fc90886f94f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.0000902",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CMEW7D0FBJ3722X5QVD7E"
+    }
+  },
+  "response": {
+    "id": "aitxt-tJVK5WKxsPKIAOEoKNN7qryt",
+    "modelId": "openai/gpt-6-luna",
+    "timestamp": "2026-09-22T20:24:08.674Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

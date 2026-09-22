@@ -1,0 +1,86 @@
+{
+  "id": "spacexai--grok-4.7--vendor-decision-memo--default",
+  "model": "spacexai/grok-4.7",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:42:57.742Z",
+  "elapsedMs": 6764,
+  "text": "**Decision memo: Year-one vendor selection**\n\n**To:** CFO  \n**From:** Procurement (owner: Priya)  \n**Re:** Alpha vs. Beta — approval before signing  \n**Recommendation:** Approve Alpha. Do not select Beta for year one.\n\n**Constraints**\n- Year-one ceiling is $100,000, including setup.\n- SSO is mandatory before production.\n- Both vendors meet the other stated requirements.\n- CFO approval is required before signing. Priya owns procurement.\n\n**Cost (year one, subscription plus setup)**\n\n| Vendor | Subscription | Setup | Total | vs. ceiling |\n| --- | ---: | ---: | ---: | --- |\n| Alpha | $72,000 | $20,000 | $92,000 | $8,000 under |\n| Beta | $60,000 | $10,000 | $70,000 | $30,000 under |\n\n**Evaluation**\nAlpha is inside the ceiling and has required SSO available, so it can go to production under the stated rules.\n\nBeta is cheaper and also inside the ceiling, but required SSO is unavailable and has no committed delivery date. SSO is mandatory before production, so Beta cannot be used in production in year one on the facts given. Meeting the other stated requirements does not cure that gap.\n\n**Decision**\nSelect Alpha. Year-one commitment is $92,000, within the $100,000 ceiling. Withhold approval for Beta until SSO is available with a committed delivery date that supports production. Signing still requires CFO approval; Priya remains procurement owner.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1422,
+    "inputTokenDetails": {
+      "noCacheTokens": 1422,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 490,
+    "outputTokenDetails": {
+      "textTokens": 317,
+      "reasoningTokens": 173
+    },
+    "totalTokens": 1912
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "xai": {
+      "costInUsdTicks": 34704000,
+      "serviceTier": "default"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "spacexai/grok-4.7",
+        "resolvedProvider": "xai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: xai. ZDR requested: all 1 attempts support ZDR. Execution order: xai(system)",
+        "canonicalSlug": "xai/grok-4.7",
+        "finalProvider": "xai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xai/grok-4.7",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "xai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091771128,
+                "endTime": 1790091777746,
+                "providerRequestId": "9bc949f7-e8b3-9174-84f8-88ab87a9bcb7",
+                "statusCode": 200,
+                "providerResponseId": "9bc949f7-e8b3-9174-84f8-88ab87a9bcb7"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.0034704",
+      "marketCost": "0.0034704",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0034704",
+      "inferenceCost": "0.0034704",
+      "inputInferenceCost": "0.0017064",
+      "outputInferenceCost": "0.001764",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WHF4YYHN0RNJSF8FF9DXN"
+    }
+  },
+  "response": {
+    "id": "aitxt-KbnJWAqMBezvprIHUdhmEtRo",
+    "modelId": "spacexai/grok-4.7",
+    "timestamp": "2026-09-22T15:42:57.742Z"
+  },
+  "billing": {
+    "totalCost": 0.0034704,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0034704",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

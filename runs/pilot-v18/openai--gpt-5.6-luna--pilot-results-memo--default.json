@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-luna--pilot-results-memo--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:20:10.878Z",
+  "elapsedMs": 6316,
+  "text": "# Executive Readout: Pilot Scaling Recommendation\n\n## Recommendation\n\n**Do not scale the pilot now.** Authorize Sam to run the matched-ticket follow-up before making a scale decision.\n\n## What the Results Support\n\n- Mean handling time fell from **15 minutes across 200 baseline tickets** to **12 minutes across 100 pilot tickets**.\n- However, the **ticket mix differed** and allocation **was not randomized**, so the pilot does not establish that the intervention caused the improvement.\n- Quality declined from a **94% baseline pass rate** to **89% in the pilot**.\n- The pilot therefore **missed the required scaling threshold of at least 92%**.\n- No staffing reductions or cash savings have been measured, so the pilot has not yet demonstrated realized cost savings.\n\n## Next Decision\n\n**COO decision requested: authorize the matched-ticket follow-up.**\n\nThe follow-up should provide a more comparable test of handling time and quality before approving scale. A scale decision should be revisited after those results are available, with quality meeting or exceeding **92%** and evidence clarifying whether the handling-time improvement is attributable to the pilot.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 175,
+    "inputTokenDetails": {
+      "noCacheTokens": 175,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 284,
+    "outputTokenDetails": {
+      "textTokens": 239,
+      "reasoningTokens": 45
+    },
+    "totalTokens": 459
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_03d5a05c3a117d74016ab28e95a6a08196973a45b26bca3cb5",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086805563,
+                "endTime": 1790086810863,
+                "providerRequestId": "7421a767-d7d2-47ec-bfb2-142e3e1836f5",
+                "statusCode": 200,
+                "providerResponseId": "resp_03d5a05c3a117d74016ab28e95a6a08196973a45b26bca3cb5"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0003758",
+      "marketCost": "0.0003758",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0003758",
+      "inferenceCost": "0.0003758",
+      "inputInferenceCost": "0.000035",
+      "outputInferenceCost": "0.0003408",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QSY02FGAD4TJY5QT3RN2Q"
+    }
+  },
+  "response": {
+    "id": "aitxt-TkUTGlIsRYbJK2kN7oHvGVLu",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T14:20:10.878Z"
+  },
+  "billing": {
+    "totalCost": 0.0003758,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0003758",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

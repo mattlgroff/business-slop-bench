@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-luna--pilot-client-email--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:19:23.733Z",
+  "elapsedMs": 10466,
+  "text": "Subject: Decision Requested: Invoice Handling Pilot\n\nHi Morgan,\n\nI’m proposing the approved six-week pilot to assess invoice handling and establish whether it can support the client’s goal of reducing handling time by 20%. Because no baseline or measured savings currently exists, the pilot will provide a structured basis for evaluating that target.\n\n**Proposed scope**\n- Six-week assessment of invoice handling\n- Fixed fee: $30,000\n- Production rollout excluded\n- Security approval required before any access to client data\n\nTo move forward, please approve the pilot scope and fixed fee, subject to security clearance. No start date has been approved yet; following your decision and security approval, we can align on timing.\n\nPlease confirm whether you approve the proposal on that basis.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 187,
+    "inputTokenDetails": {
+      "noCacheTokens": 187,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 163,
+    "outputTokenDetails": {
+      "textTokens": 163,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 350
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0cd5b035c22d04ed016ab28e687e948196973df8a5c600dc07",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086760276,
+                "endTime": 1790086763682,
+                "providerRequestId": "b12cdd48-e845-42be-9cdd-d46fb3b7b879",
+                "statusCode": 200,
+                "providerResponseId": "resp_0cd5b035c22d04ed016ab28e687e948196973df8a5c600dc07"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.000233",
+      "marketCost": "0.000233",
+      "surchargeCost": "0",
+      "gatewayCost": "0.000233",
+      "inferenceCost": "0.000233",
+      "inputInferenceCost": "0.0000374",
+      "outputInferenceCost": "0.0001956",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QRGV5M7Y3JMRWE3Q0XHV7"
+    }
+  },
+  "response": {
+    "id": "aitxt-LDH07pkfR7LWHLxgHOGcGO2n",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T14:19:23.731Z"
+  },
+  "billing": {
+    "totalCost": 0.000233,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.000233",
+    "surchargeCost": "0"
+  },
+  "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

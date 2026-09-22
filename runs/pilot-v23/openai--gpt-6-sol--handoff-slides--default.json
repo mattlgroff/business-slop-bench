@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-sol--handoff-slides--default",
+  "model": "openai/gpt-6-sol",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:29:55.915Z",
+  "elapsedMs": 3944,
+  "text": "### Slide 1 — Handoff decision\n- **Not ready for operational handoff.** The runbook is approved, but the required rollback rehearsal has not happened.\n- Acceptance requires both an approved runbook and a successful rollback rehearsal.\n\n### Slide 2 — Responsibility gap\n- No role has accepted responsibility for organizing the rehearsal.\n- Sponsor Pat can assign that responsibility.\n\n### Slide 3 — Actions to reach acceptance\n1. Pat assigns responsibility for organizing the rollback rehearsal.\n2. The assigned owner organizes the rehearsal; it must be completed successfully.\n3. Once both acceptance criteria are met, Pat approves acceptance.\n\n### Slide 4 — Ownership through handoff\n- Until acceptance, engineering lead Lee owns defect fixes.\n- Only after acceptance does operations lead Jo own incidents.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 206,
+    "outputTokenDetails": {
+      "textTokens": 162,
+      "reasoningTokens": 44
+    },
+    "totalTokens": 375
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0702bacd1f17da0c006ab2e540bd0087d2a84f03ef2c5adabf",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108992617,
+                "endTime": 1790108995894,
+                "providerRequestId": "req_edce9a4e59964abe9282cf5086691185",
+                "statusCode": 200,
+                "providerResponseId": "resp_0702bacd1f17da0c006ab2e540bd0087d2a84f03ef2c5adabf"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.002398",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CZ0M99RHFEV1DP78D3C0N"
+    }
+  },
+  "response": {
+    "id": "aitxt-Tyh1eWvpTgbkOSSgeuvK4p7z",
+    "modelId": "openai/gpt-6-sol",
+    "timestamp": "2026-09-22T20:29:55.914Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

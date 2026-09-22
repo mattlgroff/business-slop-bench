@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-sol--pilot-results-memo--default",
+  "model": "openai/gpt-6-sol",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:26:28.517Z",
+  "elapsedMs": 4141,
+  "text": "## Executive readout: Do not scale yet\n\nThe pilot’s mean handling time was 12 minutes across 100 tickets, compared with 15 minutes across 200 baseline tickets. This supports further testing of a possible handling-time improvement, **not a conclusion that the pilot caused it**: ticket mix differed and allocation was not randomized.\n\nQuality pass rate fell from 94% at baseline to 89% in the pilot, below the 92% threshold required for scaling. No staffing reductions or cash savings have been measured.\n\n**Recommendation:** Do not authorize scaling now. The COO should decide whether to authorize Sam’s matched-ticket follow-up. Use that follow-up to assess whether the handling-time difference holds with comparable tickets and whether quality meets the scaling threshold.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 175,
+    "inputTokenDetails": {
+      "noCacheTokens": 175,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 155,
+    "outputTokenDetails": {
+      "textTokens": 155,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 330
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0917fac111befc75006ab2e470f07887d292064f13c4bc8006",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108784803,
+                "endTime": 1790108788496,
+                "providerRequestId": "req_92be79e5929b4128ac21708baa1b9df6",
+                "statusCode": 200,
+                "providerResponseId": "resp_0917fac111befc75006ab2e470f07887d292064f13c4bc8006"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.0019",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CRNWTWHJKA25NP2HCMRJW"
+    }
+  },
+  "response": {
+    "id": "aitxt-NRxEvr3GpatenjtlOA4fybQY",
+    "modelId": "openai/gpt-6-sol",
+    "timestamp": "2026-09-22T20:26:28.516Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

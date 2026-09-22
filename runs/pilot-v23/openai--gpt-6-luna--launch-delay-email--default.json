@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-luna--launch-delay-email--default",
+  "model": "openai/gpt-6-luna",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:24:55.298Z",
+  "elapsedMs": 2055,
+  "text": "**Subject: Launch update**\n\nHi Avery,\n\nThe October 8 launch is no longer a confirmed production date. Security review is now expected to complete October 12 at the earliest, and release requires completed approval. The review may also require remediation, so we don’t yet have an authorized production date.\n\nWe can still hold a staging demo on October 8 using synthetic data. The team is focused on the review and keeping the next steps clear.\n\nWould you like to proceed with the October 8 staging demo? Nia owns the security review; we’ll confirm the production position once approval is complete.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 178,
+    "inputTokenDetails": {
+      "noCacheTokens": 178,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 132,
+    "outputTokenDetails": {
+      "textTokens": 132,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 310
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0b96b83e48fe0189006ab2e415879487d2bcd5a3fe4b9e9306",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-luna",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108693463,
+                "endTime": 1790108695277,
+                "providerRequestId": "req_7bbce039d38147a9ab3aa18e3f6ca24c",
+                "statusCode": 200,
+                "providerResponseId": "resp_0b96b83e48fe0189006ab2e415879487d2bcd5a3fe4b9e9306"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.0000838",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CNWWVXDRJC6EDX9PN7SG1"
+    }
+  },
+  "response": {
+    "id": "aitxt-7V7IjUIiXCBeDRgEaZMTdloG",
+    "modelId": "openai/gpt-6-luna",
+    "timestamp": "2026-09-22T20:24:55.296Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

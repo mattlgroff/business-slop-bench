@@ -1,0 +1,114 @@
+{
+  "id": "anthropic--claude-opus-4.6--change-order--default",
+  "model": "anthropic/claude-opus-4.6",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:26:49.717Z",
+  "elapsedMs": 9580,
+  "text": "# Change-Order Proposal\n\n**Project:** Reporting Dashboard\n**Change-Order #:** CO-001\n**Date:** *(to be filled)*\n**Prepared for:** Client Sponsor\n\n---\n\n## Requested Change\n\nThe client has requested the addition of a **CRM connector** to the reporting dashboard. This work falls outside the original signed scope and fee.\n\n## Scope of Additional Work\n\nDesign, develop, and integrate a CRM connector with the existing reporting dashboard.\n\n## Pricing\n\n| Item | Detail |\n|---|---|\n| Estimated effort | 40 hours |\n| Hourly rate | $175/hour |\n| **Fixed change fee** | **$7,000** |\n\n## Schedule Impact\n\nThe CRM connector will add an estimated **two weeks** to the project timeline. This timeline begins only after **both** conditions are met:\n\n1. Written sponsor approval of this change order\n2. Receipt of sandbox credentials from the client\n\n*Note: The two-week estimate is not an approved calendar date and may be refined once work begins.*\n\n## Client Dependency\n\nThe client **must provide sandbox credentials** before connector work can start. Any delay in providing credentials will delay the timeline accordingly.\n\n## Approval\n\nNo work on the CRM connector will begin until the sponsor provides **written approval**. By signing below, the sponsor authorizes the additional scope, fee, and estimated schedule impact described above.\n\n---\n\n**☐ Approved** / **☐ Declined**\n\nSponsor Name: ___________________________\n\nSignature: ___________________________\n\nDate: ___________________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 207,
+    "inputTokenDetails": {
+      "noCacheTokens": 207,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 349,
+    "outputTokenDetails": {
+      "textTokens": 349,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 556
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 207,
+        "output_tokens": 349,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-4.6",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic. ZDR requested: 4 attempts → 3 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-opus-4.6",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-4.6",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790098000503,
+                "endTime": 1790098009712,
+                "providerRequestId": "req_011CfJsRBiMYxzAmibfzBh9w",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJsRC7uuwxpJWsQAM25o"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.00976",
+      "marketCost": "0.00976",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00976",
+      "inferenceCost": "0.00976",
+      "inputInferenceCost": "0.001035",
+      "outputInferenceCost": "0.008725",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M352FJF3280B84HDTFDRQRR0"
+    }
+  },
+  "response": {
+    "id": "aitxt-9FhRZqHvylrtyytuyPnNyGYT",
+    "modelId": "anthropic/claude-opus-4.6",
+    "timestamp": "2026-09-22T17:26:49.716Z"
+  },
+  "billing": {
+    "totalCost": 0.00976,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00976",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

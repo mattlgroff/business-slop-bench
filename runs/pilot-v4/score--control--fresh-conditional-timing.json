@@ -1,0 +1,52 @@
+{
+  "id": "control--fresh-conditional-timing",
+  "taskId": "change-order",
+  "protocolHash": "fad029a8fca4771f4f36af6a06978440b709ed5af9843c7479ef2f28f39e2bf5",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "Change fee is $7,000 with no conflicting hours or rate.",
+      "severity": "critical",
+      "probability": 0.85,
+      "verdict": "pass"
+    },
+    {
+      "id": "C03",
+      "dimension": "decision",
+      "statement": "Written sponsor approval is required before work begins.",
+      "severity": "critical",
+      "probability": 0.85,
+      "verdict": "pass"
+    },
+    {
+      "id": "C04",
+      "dimension": "decision",
+      "statement": "Sandbox credential receipt is a dependency.",
+      "severity": "critical",
+      "probability": 0.73,
+      "verdict": "review"
+    },
+    {
+      "id": "C05",
+      "dimension": "commitments",
+      "statement": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+      "severity": "critical",
+      "probability": 0.94,
+      "verdict": "pass"
+    }
+  ],
+  "deterministic": {
+    "words": 31,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": false,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 1
+}

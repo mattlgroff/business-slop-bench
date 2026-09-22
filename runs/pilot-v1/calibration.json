@@ -1,0 +1,216 @@
+{
+  "protocolHash": "0ed33587f3b6a92b2e785b59a3bba5267075318d671ed77032fa49430d6853cc",
+  "labelStatus": "Author-proposed diagnostic labels, not human gold",
+  "matched": 18,
+  "total": 26,
+  "rows": [
+    {
+      "control": "clean",
+      "check": "C01",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.95,
+      "match": true
+    },
+    {
+      "control": "clean",
+      "check": "C02",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.8,
+      "match": true
+    },
+    {
+      "control": "clean",
+      "check": "C03",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.84,
+      "match": true
+    },
+    {
+      "control": "clean",
+      "check": "C04",
+      "expected": "pass",
+      "observed": "review",
+      "probability": 0.79,
+      "match": false
+    },
+    {
+      "control": "clean",
+      "check": "C05",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.9,
+      "match": true
+    },
+    {
+      "control": "clean",
+      "check": "C06",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.96,
+      "match": true
+    },
+    {
+      "control": "clean",
+      "check": "style_1",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.03,
+      "match": true
+    },
+    {
+      "control": "clean",
+      "check": "style_29",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.06,
+      "match": true
+    },
+    {
+      "control": "promise",
+      "check": "C01",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.83,
+      "match": true
+    },
+    {
+      "control": "promise",
+      "check": "C03",
+      "expected": "fail",
+      "observed": "fail",
+      "probability": 0.2,
+      "match": true
+    },
+    {
+      "control": "scope",
+      "check": "C01",
+      "expected": "pass",
+      "observed": "review",
+      "probability": 0.76,
+      "match": false
+    },
+    {
+      "control": "scope",
+      "check": "C02",
+      "expected": "fail",
+      "observed": "fail",
+      "probability": 0.06,
+      "match": true
+    },
+    {
+      "control": "date",
+      "check": "C05",
+      "expected": "fail",
+      "observed": "fail",
+      "probability": 0.12,
+      "match": true
+    },
+    {
+      "control": "omission",
+      "check": "C01",
+      "expected": "pass",
+      "observed": "review",
+      "probability": 0.67,
+      "match": false
+    },
+    {
+      "control": "omission",
+      "check": "C04",
+      "expected": "fail",
+      "observed": "review",
+      "probability": 0.27,
+      "match": false
+    },
+    {
+      "control": "padded",
+      "check": "C01",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.93,
+      "match": true
+    },
+    {
+      "control": "padded",
+      "check": "style_1",
+      "expected": "fail",
+      "observed": "fail",
+      "probability": 0.97,
+      "match": true
+    },
+    {
+      "control": "padded",
+      "check": "style_29",
+      "expected": "fail",
+      "observed": "fail",
+      "probability": 0.93,
+      "match": true
+    },
+    {
+      "control": "precise-contrast",
+      "check": "C01",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.91,
+      "match": true
+    },
+    {
+      "control": "precise-contrast",
+      "check": "negative_parallelism",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.16,
+      "match": true
+    },
+    {
+      "control": "precise-contrast",
+      "check": "style_29",
+      "expected": "pass",
+      "observed": "pass",
+      "probability": 0.06,
+      "match": true
+    },
+    {
+      "control": "rhetorical-contrast",
+      "check": "negative_parallelism",
+      "expected": "fail",
+      "observed": "review",
+      "probability": 0.75,
+      "match": false
+    },
+    {
+      "control": "instruction-in-output",
+      "check": "C03",
+      "expected": "fail",
+      "observed": "fail",
+      "probability": 0.09,
+      "match": true
+    },
+    {
+      "control": "instruction-in-output",
+      "check": "style_13",
+      "expected": "fail",
+      "observed": "review",
+      "probability": 0.61,
+      "match": false
+    },
+    {
+      "control": "empty",
+      "check": "C01",
+      "expected": "fail",
+      "observed": "review",
+      "probability": 0.51,
+      "match": false
+    },
+    {
+      "control": "empty",
+      "check": "C06",
+      "expected": "fail",
+      "observed": "review",
+      "probability": 0.43,
+      "match": false
+    }
+  ]
+}

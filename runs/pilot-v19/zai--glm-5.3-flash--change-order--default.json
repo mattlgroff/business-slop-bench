@@ -1,0 +1,168 @@
+{
+  "id": "zai--glm-5.3-flash--change-order--default",
+  "model": "zai/glm-5.3-flash",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T14:57:33.707Z",
+  "elapsedMs": 194276,
+  "text": "# CHANGE ORDER PROPOSAL — CO-001\n\n**Project:** Reporting Dashboard\n**To:** Client Sponsor  |  **From:** [Vendor]  |  **Date:** [Date]\n\n---\n\n## 1. Background\n\nThe existing signed scope covers the reporting dashboard. The work described below is not included in the original fee.\n\n## 2. Requested Work\n\nClient requests an additional CRM connector. Per the governing terms, the sponsor must approve this change in writing before any connector work begins.\n\n## 3. Price\n\n| Item | Detail |\n|---|---|\n| Estimated effort | 40 hours at $175/hour |\n| Proposed fixed change fee | **$7,000** (40 × $175 = $7,000) |\n\nThe proposed fee is fixed; the connector is not covered by the original fee.\n\n## 4. Schedule Effect\n\nThe connector adds approximately **two weeks**. That period begins only after both:\n\n1. Written approval of this proposal by the sponsor, and\n2. Receipt of client sandbox credentials.\n\nThe two-week figure is an estimate, not an approved calendar date.\n\n## 5. Client Dependency\n\nClient must provide sandbox credentials. The connector schedule cannot start until they are received alongside written approval.\n\n## 6. Decision Requested\n\nPlease approve or decline this change order:\n\n☐ **Approved** — sign and return; the two-week estimate then applies following credential receipt.\n\n☐ **Declined** — no connector work will be performed; scope remains as originally signed.\n\n---\n\n## Sponsor Authorization (written approval required)\n\nSignature: ______________________________\n\nName / Title: ______________________________\n\nDate: ______________________________\n\n---\n\n*This proposal is valid as drafted; all amounts, hours, and durations above are estimates per the stated basis and require written sponsor approval to take effect.*",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 190,
+    "inputTokenDetails": {
+      "noCacheTokens": 190,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1881,
+    "outputTokenDetails": {
+      "textTokens": 368,
+      "reasoningTokens": 1513
+    },
+    "totalTokens": 2071
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "wafer": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "runware",
+          "wafer",
+          "particle",
+          "zai",
+          "togetherai",
+          "streamlake",
+          "parasail",
+          "digitalocean",
+          "friendli",
+          "novita",
+          "modal",
+          "morph",
+          "deepinfra",
+          "relace",
+          "boundless",
+          "inference-net",
+          "gmicloud"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 1 over runware. System credentials planned for: baseten, fireworks, runware, wafer, particle, zai, togetherai, streamlake, parasail, digitalocean, friendli, novita, modal, morph, deepinfra, relace, boundless, inference-net, gmicloud. ZDR requested: 19 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → runware(system) → wafer(system) → particle(system) → zai(system) → togetherai(system) → streamlake(system) → parasail(system) → digitalocean(system) → friendli(system) → novita(system) → modal(system) → morph(system) → deepinfra(system) → relace(system) → boundless(system) → inference-net(system) → gmicloud(system). ZDR execution order: baseten(system) → fireworks(system) → wafer(system) → particle(system) → togetherai(system) → parasail(system) → digitalocean(system) → modal(system) → morph(system) → deepinfra(system)",
+        "canonicalSlug": "zai/glm-5.3-flash",
+        "finalProvider": "wafer",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3-flash",
+            "success": true,
+            "providerAttemptCount": 3,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790088867104,
+                "endTime": 1790088867179,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790088867186,
+                "endTime": 1790088867238,
+                "providerRequestId": "chatcmpl-08c123d590cb47fdaf568c20943d6286",
+                "statusCode": 503
+              },
+              {
+                "provider": "wafer",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790088867244,
+                "endTime": 1790089053680,
+                "providerRequestId": "2636e20518ab",
+                "statusCode": 200,
+                "providerResponseId": "8f2933203c254f7ca3f3e5a299bb031c"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 3,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00067735",
+      "marketCost": "0.00067735",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00067735",
+      "inferenceCost": "0.00067735",
+      "inputInferenceCost": "0.000019",
+      "outputInferenceCost": "0.00065835",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34SRTHCZ3AR07GV0A07T9E3"
+    }
+  },
+  "response": {
+    "id": "aitxt-Mlf4CIZ7lGeGJSvJPYBkkJ2C",
+    "modelId": "zai/glm-5.3-flash",
+    "timestamp": "2026-09-22T14:57:33.707Z"
+  },
+  "billing": {
+    "totalCost": 0.00067735,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00067735",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

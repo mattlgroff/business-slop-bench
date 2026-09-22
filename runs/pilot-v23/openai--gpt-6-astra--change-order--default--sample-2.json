@@ -1,0 +1,102 @@
+{
+  "id": "openai--gpt-6-astra--change-order--default--sample-2",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:58:00.386Z",
+  "elapsedMs": 5732,
+  "text": "# Change-Order Proposal: Additional CRM Connector\n\n**For:** Client Sponsor  \n**Decision requested:** Approve or decline the proposed scope addition, fee, and schedule effect below.\n\n## Requested Work\nAdd a CRM connector to the engagement. The existing signed scope covers the reporting dashboard; the requested connector is outside that scope and is not included in the original fee.\n\n## Proposed Price\n**Fixed change fee: $7,000**, based on an estimate of 40 hours at $175 per hour. This fee is additional to the original fee.\n\n## Dependency and Schedule Effect\nThe client must provide sandbox credentials.\n\nThe connector adds an estimated **two weeks after both written approval and receipt of sandbox credentials**. This is a schedule estimate, not an approved calendar date.\n\n## Authorization\nSponsor approval in writing is required before connector work begins.\n\nPlease indicate your decision:\n\n- ☐ **Approve** the additional CRM connector for a fixed change fee of $7,000, with the dependency and estimated schedule effect stated above.\n- ☐ **Decline** this change-order proposal.\n\n**Sponsor name:** ____________________  \n**Signature / written approval:** ____________________  \n**Date:** ____________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 182,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 241,
+    "outputTokenDetails": {
+      "textTokens": 241,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 423
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_071134a9002dc7b6016ab2ebd2f9b08197840e4feed62f6cbc",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai, azure. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → openai(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110674885,
+                "endTime": 1790110680387,
+                "providerRequestId": "1a64f209-8f61-4b79-a32d-d00f912877df",
+                "statusCode": 200,
+                "providerResponseId": "resp_071134a9002dc7b6016ab2ebd2f9b08197840e4feed62f6cbc"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.01387",
+      "marketCost": "0.01387",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01387",
+      "inferenceCost": "0.01387",
+      "inputInferenceCost": "0.00182",
+      "outputInferenceCost": "0.01205",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35EJBWRPBWCRC86162DKK11"
+    }
+  },
+  "response": {
+    "id": "aitxt-2qLLM2xP2iJYzB0Gzn0TEqZM",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-22T20:58:00.384Z"
+  },
+  "billing": {
+    "totalCost": 0.01387,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01387",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

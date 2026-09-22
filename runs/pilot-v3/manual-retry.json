@@ -1,0 +1,6 @@
+{
+  "reason": "Single manual retry after HTTP 503; no writer regeneration",
+  "failedRecord": "judge--alibaba--qwen3.8-flash--pilot-client-email--default--failed-attempt-1",
+  "retryRecord": "judge--alibaba--qwen3.8-flash--pilot-client-email--default",
+  "priorReservationRetained": true
+}

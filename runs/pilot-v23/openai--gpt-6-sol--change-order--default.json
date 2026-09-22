@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-sol--change-order--default",
+  "model": "openai/gpt-6-sol",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:28:10.439Z",
+  "elapsedMs": 3731,
+  "text": "# Change-Order Proposal: CRM Connector\n\nThe signed scope covers the reporting dashboard. The client has requested an additional CRM connector, which is not included in the original fee.\n\n| Item | Proposed change |\n|---|---|\n| Work | Add the requested CRM connector |\n| Price | Fixed change fee of **$7,000**, based on 40 hours at $175/hour |\n| Client dependency | Provide sandbox credentials |\n| Schedule effect | Estimated additional two weeks after written approval and receipt of sandbox credentials; this is not an approved calendar date |\n\n**Decision requested:** Please approve or decline the $7,000 change fee in writing. Connector work will not begin without the sponsor’s written approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 182,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 145,
+    "outputTokenDetails": {
+      "textTokens": 145,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 327
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0d8ed0ab257815ad006ab2e4d7479087d291b127968b90c382",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108886917,
+                "endTime": 1790108890419,
+                "providerRequestId": "req_5fa4c36b59b54f719632d62ebc5bf42b",
+                "statusCode": 200,
+                "providerResponseId": "resp_0d8ed0ab257815ad006ab2e4d7479087d291b127968b90c382"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.001814",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CVSTRC40GHE3400M411SN"
+    }
+  },
+  "response": {
+    "id": "aitxt-0WREpyu4Fw7iZv77RXAsgkAW",
+    "modelId": "openai/gpt-6-sol",
+    "timestamp": "2026-09-22T20:28:10.437Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

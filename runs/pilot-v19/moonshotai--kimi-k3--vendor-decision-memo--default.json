@@ -1,0 +1,134 @@
+{
+  "id": "moonshotai--kimi-k3--vendor-decision-memo--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T15:24:41.812Z",
+  "elapsedMs": 3863,
+  "text": "# Decision Memo: Vendor Selection for Year One\n\n**To:** CFO\n**From:** Priya, Procurement Owner\n**Re:** Recommendation for year-one vendor selection\n\n## Summary\n\nI recommend **Vendor Alpha** for year one. Alpha is the only option that satisfies all stated constraints while remaining within the budget ceiling.\n\n## Evaluation Against Constraints\n\n**1. Budget ceiling: $100,000 year-one total, including setup**\n\n| Vendor | Subscription | Setup | Year-One Total | Within Budget? |\n|---|---|---|---|---|\n| Alpha | $72,000 | $20,000 | $92,000 | Yes ($8,000 headroom) |\n| Beta | $60,000 | $10,000 | $70,000 | Yes ($30,000 headroom) |\n\nBoth vendors fit within the $100,000 ceiling.\n\n**2. Mandatory SSO before production**\n\n- Alpha: Required SSO is available.\n- Beta: Required SSO is unavailable with no committed delivery date.\n\nSSO is mandatory before production, so Beta cannot be deployed to production in year one (or on any known timeline). Committing to Beta means paying $70,000 for a product that cannot go live.\n\n**3. Other requirements**\n\nBoth vendors meet all other stated requirements, so these do not differentiate the decision.\n\n## Recommendation\n\n**Select Vendor Alpha at a year-one cost of $92,000** ($72,000 subscription + $20,000 setup). Although Beta is $22,000 cheaper, it fails the mandatory SSO constraint and offers no committed delivery date, making the lower price irrelevant — a contract signed with Beta yields no production capability.\n\n## Requested Approval\n\nCFO approval is required before signing. I request approval to proceed with Vendor Alpha for year one at $92,000 total.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 258,
+    "inputTokenDetails": {
+      "noCacheTokens": 226,
+      "cacheReadTokens": 32
+    },
+    "outputTokens": 382,
+    "outputTokenDetails": {
+      "textTokens": 374,
+      "reasoningTokens": 8
+    },
+    "totalTokens": 640
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 226,
+      "rejectedPredictionTokens": 90
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "runware",
+          "fireworks",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, runware, fireworks, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → runware(system) → fireworks(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790090678045,
+                "endTime": 1790090681813,
+                "providerRequestId": "54ca701a0c9b80f32792e8d7c6bc474847088",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-dd6dd8ccee574b16b9fd6c631117b777",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0064176",
+      "marketCost": "0.0064176",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0064176",
+      "inferenceCost": "0.0064176",
+      "inputInferenceCost": "0.0006876",
+      "outputInferenceCost": "0.00573",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34VG3QH7TXCJTP1QRBPQ4V1"
+    }
+  },
+  "response": {
+    "id": "aitxt-2283FBYG4FaJOpPJD3rEa5EL",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T15:24:41.811Z"
+  },
+  "billing": {
+    "totalCost": 0.0064176,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0064176",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

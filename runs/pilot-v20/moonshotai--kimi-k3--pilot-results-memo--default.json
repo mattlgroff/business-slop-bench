@@ -1,0 +1,145 @@
+{
+  "id": "moonshotai--kimi-k3--pilot-results-memo--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:31:13.148Z",
+  "elapsedMs": 89128,
+  "text": "# Executive Readout: Pilot Scaling Decision\n\n**Recommendation: Do not scale now.** Authorize Sam’s matched-ticket follow-up instead.\n\n## What the results support\n- The pilot shows **lower mean handling time**: 12 minutes on 100 tickets versus 15 minutes on 200 baseline tickets.\n- The result **does not establish a causal or scalable effect**: ticket mix differed and allocation was not randomized.\n- Quality moved in the wrong direction: pass rate fell from **94% at baseline to 89% in pilot**, below the **92% required scaling threshold**.\n- No staffing reductions or cash savings have been measured, so efficiency gains are not yet tied to financial benefit.\n\n## Decision rationale\nScaling now would accept below-threshold quality and unvalidated operational impact. The apparent handling-time improvement is promising but confounded by mix and non-random assignment.\n\n## Next decision\n**COO decision:** authorize Sam to run the matched-ticket follow-up. Revisit scaling only after the follow-up confirms handling-time gains on comparable tickets, restores quality to at least **92%**, and identifies measurable staffing or cash impact.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 259,
+    "inputTokenDetails": {
+      "noCacheTokens": 259,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 582,
+    "outputTokenDetails": {
+      "textTokens": 243,
+      "reasoningTokens": 339
+    },
+    "totalTokens": 841
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6b64kzzjngixmudjmhkrd5sqlok2nmvk4yuouxpmgyt2nt2tzeoq",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "runware",
+          "fireworks",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, runware, fireworks, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → runware(system) → fireworks(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "bedrock",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790090984158,
+                "endTime": 1790090984219,
+                "providerRequestId": "54ca701a0c9bcbb0975f8bdc89898f87774f1",
+                "statusCode": 503,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "bedrock",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790090984226,
+                "endTime": 1790091073132,
+                "providerRequestId": "862ea1dc-b568-43c3-8bf0-e34bb1707360",
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.009507",
+      "marketCost": "0.009507",
+      "surchargeCost": "0",
+      "gatewayCost": "0.009507",
+      "inferenceCost": "0.009507",
+      "inputInferenceCost": "0.000777",
+      "outputInferenceCost": "0.00873",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34VSEMP40F362BS8N6Z8W8P"
+    }
+  },
+  "response": {
+    "id": "aitxt-8Z3XU9PZyfNHJYiWmO4MQV51",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T15:31:13.146Z"
+  },
+  "billing": {
+    "totalCost": 0.009507,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.009507",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

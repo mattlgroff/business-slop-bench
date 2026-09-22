@@ -1,0 +1,114 @@
+{
+  "id": "openai--gpt-5.6-luna--discovery-proposal--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "bc04bb9681566600f5b6070b8d4ee99eac57b48c105446259da69193f2e8e644",
+  "status": "ok",
+  "at": "2026-09-22T12:55:31.069Z",
+  "elapsedMs": 9559,
+  "text": "# Discovery Engagement Proposal\n\n## Objective\n\nConduct a four-week discovery engagement to establish a clear basis for implementation decisions.\n\n## Deliverables\n\nThe engagement will produce:\n\n1. A current-state process map  \n2. A prioritized backlog  \n3. An implementation recommendation  \n\n## Commercial Offer\n\n| Item | Terms |\n|---|---|\n| Duration | Four weeks |\n| Effort | 80 hours |\n| Rate | $200 per hour |\n| Total fee | $16,000 |\n| Payment | 50% at kickoff ($8,000); 50% on delivery ($8,000) |\n\n## Client Responsibilities\n\nThe client will provide:\n\n- Access to relevant interview participants\n- Required source documents\n- A named client contact\n\n## Scope Exclusions\n\nThe engagement excludes:\n\n- Implementation\n- Integrations\n- Production support\n- Guaranteed savings\n\n## Acceptance\n\nThe sponsor will confirm delivery of the three listed artifacts: the current-state process map, prioritized backlog, and implementation recommendation.\n\n## How to Proceed\n\nTo authorize the engagement:\n\n1. Approve and sign this proposal.\n2. Name the client contact.\n3. Agree the start date.\n4. Pay the 50% kickoff fee of $8,000.\n\nThe start date will be agreed only after signature and confirmation of the named client contact.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 183,
+    "inputTokenDetails": {
+      "noCacheTokens": 183,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 302,
+    "outputTokenDetails": {
+      "textTokens": 270,
+      "reasoningTokens": 32
+    },
+    "totalTokens": 485
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_023efc64db78853c016ab27abd41548194aed69ac59a17c98f",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081725134,
+                "endTime": 1790081731227,
+                "providerRequestId": "66f1d50e-caa6-4037-89af-b05758b26bb6",
+                "statusCode": 200,
+                "providerResponseId": "resp_023efc64db78853c016ab27abd41548194aed69ac59a17c98f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.000399",
+      "marketCost": "0.000399",
+      "surchargeCost": "0",
+      "gatewayCost": "0.000399",
+      "inferenceCost": "0.000399",
+      "inputInferenceCost": "0.0000366",
+      "outputInferenceCost": "0.0003624",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34JYWD7DRFK7V79VBD73M8A"
+    }
+  },
+  "response": {
+    "id": "aitxt-lkmHhU6yhyAj5WXZpr7p9OPK",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T12:55:31.069Z"
+  },
+  "billing": {
+    "totalCost": 0.000399,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.000399",
+    "surchargeCost": "0"
+  },
+  "inputHash": "e91baa3bf817b876dc655c999d290113d01f35895d714fa4f25b590206e2c0be",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

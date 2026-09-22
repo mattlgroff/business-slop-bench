@@ -1,0 +1,104 @@
+# Draft collection audit
+
+96 complete drafts; 0 incomplete generations; 0 have Jev score records; 96 have matching assistant reviews (including identical imported copies); 0 reused from earlier runs. Writer input hashes verified against current briefs and settings. New API-success charges (including incomplete generations): $0.675025. This excludes judge calls and failed-call reservations; the shared ledger remains authoritative for the spending cap.
+
+Ungraded means no completed Jev score or matching assistant review record. It is different from an unresolved judge decision. Word counts and em dashes are mechanical observations, not overall writing scores.
+
+| Model | Brief | Condition | Grading | Words/limit | Em dashes | Origin |
+|---|---|---|---|---:|---:|---|
+| anthropic/claude-sonnet-5 | [pilot-client-email](anthropic--claude-sonnet-5--pilot-client-email--default.md) | default | Assistant reviewed | 198/180 FAIL | 2 | New |
+| anthropic/claude-sonnet-5 | [pilot-client-email](anthropic--claude-sonnet-5--pilot-client-email--house.md) | house | Assistant reviewed | 167/180 | 0 | New |
+| anthropic/claude-sonnet-5 | [launch-delay-email](anthropic--claude-sonnet-5--launch-delay-email--default.md) | default | Assistant reviewed | 172/180 | 1 | New |
+| anthropic/claude-sonnet-5 | [launch-delay-email](anthropic--claude-sonnet-5--launch-delay-email--house.md) | house | Assistant reviewed | 133/180 | 0 | New |
+| anthropic/claude-sonnet-5 | [vendor-decision-memo](anthropic--claude-sonnet-5--vendor-decision-memo--default.md) | default | Assistant reviewed | 300/300 | 1 | New |
+| anthropic/claude-sonnet-5 | [vendor-decision-memo](anthropic--claude-sonnet-5--vendor-decision-memo--house.md) | house | Assistant reviewed | 189/300 | 0 | New |
+| anthropic/claude-sonnet-5 | [pilot-results-memo](anthropic--claude-sonnet-5--pilot-results-memo--default.md) | default | Assistant reviewed | 285/300 | 4 | New |
+| anthropic/claude-sonnet-5 | [pilot-results-memo](anthropic--claude-sonnet-5--pilot-results-memo--house.md) | house | Assistant reviewed | 199/300 | 0 | New |
+| anthropic/claude-sonnet-5 | [discovery-proposal](anthropic--claude-sonnet-5--discovery-proposal--default.md) | default | Assistant reviewed | 295/350 | 0 | New |
+| anthropic/claude-sonnet-5 | [discovery-proposal](anthropic--claude-sonnet-5--discovery-proposal--house.md) | house | Assistant reviewed | 215/350 | 0 | New |
+| anthropic/claude-sonnet-5 | [change-order](anthropic--claude-sonnet-5--change-order--default.md) | default | Assistant reviewed | 269/300 | 0 | New |
+| anthropic/claude-sonnet-5 | [change-order](anthropic--claude-sonnet-5--change-order--house.md) | house | Assistant reviewed | 165/300 | 0 | New |
+| anthropic/claude-sonnet-5 | [ai-strategy-slides](anthropic--claude-sonnet-5--ai-strategy-slides--default.md) | default | Assistant reviewed | 222/350 | 6 | New |
+| anthropic/claude-sonnet-5 | [ai-strategy-slides](anthropic--claude-sonnet-5--ai-strategy-slides--house.md) | house | Assistant reviewed | 178/350 | 0 | New |
+| anthropic/claude-sonnet-5 | [handoff-slides](anthropic--claude-sonnet-5--handoff-slides--default.md) | default | Assistant reviewed | 234/350 | 2 | New |
+| anthropic/claude-sonnet-5 | [handoff-slides](anthropic--claude-sonnet-5--handoff-slides--house.md) | house | Assistant reviewed | 205/350 | 0 | New |
+| openai/gpt-6-sol | [pilot-client-email](openai--gpt-6-sol--pilot-client-email--default.md) | default | Assistant reviewed | 114/180 | 0 | New |
+| openai/gpt-6-sol | [pilot-client-email](openai--gpt-6-sol--pilot-client-email--house.md) | house | Assistant reviewed | 109/180 | 0 | New |
+| openai/gpt-6-sol | [launch-delay-email](openai--gpt-6-sol--launch-delay-email--default.md) | default | Assistant reviewed | 108/180 | 0 | New |
+| openai/gpt-6-sol | [launch-delay-email](openai--gpt-6-sol--launch-delay-email--house.md) | house | Assistant reviewed | 103/180 | 0 | New |
+| openai/gpt-6-sol | [vendor-decision-memo](openai--gpt-6-sol--vendor-decision-memo--default.md) | default | Assistant reviewed | 119/300 | 0 | New |
+| openai/gpt-6-sol | [vendor-decision-memo](openai--gpt-6-sol--vendor-decision-memo--house.md) | house | Assistant reviewed | 82/300 | 0 | New |
+| openai/gpt-6-sol | [pilot-results-memo](openai--gpt-6-sol--pilot-results-memo--default.md) | default | Assistant reviewed | 116/300 | 0 | New |
+| openai/gpt-6-sol | [pilot-results-memo](openai--gpt-6-sol--pilot-results-memo--house.md) | house | Assistant reviewed | 107/300 | 0 | New |
+| openai/gpt-6-sol | [discovery-proposal](openai--gpt-6-sol--discovery-proposal--default.md) | default | Assistant reviewed | 98/350 | 0 | New |
+| openai/gpt-6-sol | [discovery-proposal](openai--gpt-6-sol--discovery-proposal--house.md) | house | Assistant reviewed | 100/350 | 0 | New |
+| openai/gpt-6-sol | [change-order](openai--gpt-6-sol--change-order--default.md) | default | Assistant reviewed | 113/300 | 0 | New |
+| openai/gpt-6-sol | [change-order](openai--gpt-6-sol--change-order--house.md) | house | Assistant reviewed | 94/300 | 0 | New |
+| openai/gpt-6-sol | [ai-strategy-slides](openai--gpt-6-sol--ai-strategy-slides--default.md) | default | Assistant reviewed | 128/350 | 4 | New |
+| openai/gpt-6-sol | [ai-strategy-slides](openai--gpt-6-sol--ai-strategy-slides--house.md) | house | Assistant reviewed | 146/350 | 0 | New |
+| openai/gpt-6-sol | [handoff-slides](openai--gpt-6-sol--handoff-slides--default.md) | default | Assistant reviewed | 124/350 | 4 | New |
+| openai/gpt-6-sol | [handoff-slides](openai--gpt-6-sol--handoff-slides--house.md) | house | Assistant reviewed | 119/350 | 0 | New |
+| openai/gpt-6-luna | [pilot-client-email](openai--gpt-6-luna--pilot-client-email--default.md) | default | Assistant reviewed | 111/180 | 0 | New |
+| openai/gpt-6-luna | [pilot-client-email](openai--gpt-6-luna--pilot-client-email--house.md) | house | Assistant reviewed | 108/180 | 0 | New |
+| openai/gpt-6-luna | [launch-delay-email](openai--gpt-6-luna--launch-delay-email--default.md) | default | Assistant reviewed | 103/180 | 0 | New |
+| openai/gpt-6-luna | [launch-delay-email](openai--gpt-6-luna--launch-delay-email--house.md) | house | Assistant reviewed | 86/180 | 0 | New |
+| openai/gpt-6-luna | [vendor-decision-memo](openai--gpt-6-luna--vendor-decision-memo--default.md) | default | Assistant reviewed | 142/300 | 0 | New |
+| openai/gpt-6-luna | [vendor-decision-memo](openai--gpt-6-luna--vendor-decision-memo--house.md) | house | Assistant reviewed | 80/300 | 0 | New |
+| openai/gpt-6-luna | [pilot-results-memo](openai--gpt-6-luna--pilot-results-memo--default.md) | default | Assistant reviewed | 113/300 | 0 | New |
+| openai/gpt-6-luna | [pilot-results-memo](openai--gpt-6-luna--pilot-results-memo--house.md) | house | Assistant reviewed | 103/300 | 0 | New |
+| openai/gpt-6-luna | [discovery-proposal](openai--gpt-6-luna--discovery-proposal--default.md) | default | Assistant reviewed | 131/350 | 0 | New |
+| openai/gpt-6-luna | [discovery-proposal](openai--gpt-6-luna--discovery-proposal--house.md) | house | Assistant reviewed | 104/350 | 0 | New |
+| openai/gpt-6-luna | [change-order](openai--gpt-6-luna--change-order--default.md) | default | Assistant reviewed | 118/300 | 0 | New |
+| openai/gpt-6-luna | [change-order](openai--gpt-6-luna--change-order--house.md) | house | Assistant reviewed | 103/300 | 0 | New |
+| openai/gpt-6-luna | [ai-strategy-slides](openai--gpt-6-luna--ai-strategy-slides--default.md) | default | Assistant reviewed | 150/350 | 4 | New |
+| openai/gpt-6-luna | [ai-strategy-slides](openai--gpt-6-luna--ai-strategy-slides--house.md) | house | Assistant reviewed | 124/350 | 0 | New |
+| openai/gpt-6-luna | [handoff-slides](openai--gpt-6-luna--handoff-slides--default.md) | default | Assistant reviewed | 166/350 | 4 | New |
+| openai/gpt-6-luna | [handoff-slides](openai--gpt-6-luna--handoff-slides--house.md) | house | Assistant reviewed | 149/350 | 0 | New |
+| openai/gpt-5.6-sol | [pilot-client-email](openai--gpt-5.6-sol--pilot-client-email--default.md) | default | Assistant reviewed | 112/180 | 2 | New |
+| openai/gpt-5.6-sol | [pilot-client-email](openai--gpt-5.6-sol--pilot-client-email--house.md) | house | Assistant reviewed | 96/180 | 0 | New |
+| openai/gpt-5.6-sol | [launch-delay-email](openai--gpt-5.6-sol--launch-delay-email--default.md) | default | Assistant reviewed | 99/180 | 0 | New |
+| openai/gpt-5.6-sol | [launch-delay-email](openai--gpt-5.6-sol--launch-delay-email--house.md) | house | Assistant reviewed | 87/180 | 0 | New |
+| openai/gpt-5.6-sol | [vendor-decision-memo](openai--gpt-5.6-sol--vendor-decision-memo--default.md) | default | Assistant reviewed | 198/300 | 0 | New |
+| openai/gpt-5.6-sol | [vendor-decision-memo](openai--gpt-5.6-sol--vendor-decision-memo--house.md) | house | Assistant reviewed | 94/300 | 0 | New |
+| openai/gpt-5.6-sol | [pilot-results-memo](openai--gpt-5.6-sol--pilot-results-memo--default.md) | default | Assistant reviewed | 156/300 | 0 | New |
+| openai/gpt-5.6-sol | [pilot-results-memo](openai--gpt-5.6-sol--pilot-results-memo--house.md) | house | Assistant reviewed | 118/300 | 0 | New |
+| openai/gpt-5.6-sol | [discovery-proposal](openai--gpt-5.6-sol--discovery-proposal--default.md) | default | Assistant reviewed | 144/350 | 0 | New |
+| openai/gpt-5.6-sol | [discovery-proposal](openai--gpt-5.6-sol--discovery-proposal--house.md) | house | Assistant reviewed | 123/350 | 0 | New |
+| openai/gpt-5.6-sol | [change-order](openai--gpt-5.6-sol--change-order--default.md) | default | Assistant reviewed | 174/300 | 0 | New |
+| openai/gpt-5.6-sol | [change-order](openai--gpt-5.6-sol--change-order--house.md) | house | Assistant reviewed | 171/300 | 0 | New |
+| openai/gpt-5.6-sol | [ai-strategy-slides](openai--gpt-5.6-sol--ai-strategy-slides--default.md) | default | Assistant reviewed | 173/350 | 4 | New |
+| openai/gpt-5.6-sol | [ai-strategy-slides](openai--gpt-5.6-sol--ai-strategy-slides--house.md) | house | Assistant reviewed | 173/350 | 0 | New |
+| openai/gpt-5.6-sol | [handoff-slides](openai--gpt-5.6-sol--handoff-slides--default.md) | default | Assistant reviewed | 169/350 | 6 | New |
+| openai/gpt-5.6-sol | [handoff-slides](openai--gpt-5.6-sol--handoff-slides--house.md) | house | Assistant reviewed | 177/350 | 0 | New |
+| google/gemini-3.1-pro-preview | [pilot-client-email](google--gemini-3.1-pro-preview--pilot-client-email--default.md) | default | Assistant reviewed | 155/180 | 0 | New |
+| google/gemini-3.1-pro-preview | [pilot-client-email](google--gemini-3.1-pro-preview--pilot-client-email--house.md) | house | Assistant reviewed | 111/180 | 0 | New |
+| google/gemini-3.1-pro-preview | [launch-delay-email](google--gemini-3.1-pro-preview--launch-delay-email--default.md) | default | Assistant reviewed | 132/180 | 0 | New |
+| google/gemini-3.1-pro-preview | [launch-delay-email](google--gemini-3.1-pro-preview--launch-delay-email--house.md) | house | Assistant reviewed | 97/180 | 0 | New |
+| google/gemini-3.1-pro-preview | [vendor-decision-memo](google--gemini-3.1-pro-preview--vendor-decision-memo--default.md) | default | Assistant reviewed | 209/300 | 0 | New |
+| google/gemini-3.1-pro-preview | [vendor-decision-memo](google--gemini-3.1-pro-preview--vendor-decision-memo--house.md) | house | Assistant reviewed | 104/300 | 0 | New |
+| google/gemini-3.1-pro-preview | [pilot-results-memo](google--gemini-3.1-pro-preview--pilot-results-memo--default.md) | default | Assistant reviewed | 151/300 | 0 | New |
+| google/gemini-3.1-pro-preview | [pilot-results-memo](google--gemini-3.1-pro-preview--pilot-results-memo--house.md) | house | Assistant reviewed | 82/300 | 0 | New |
+| google/gemini-3.1-pro-preview | [discovery-proposal](google--gemini-3.1-pro-preview--discovery-proposal--default.md) | default | Assistant reviewed | 158/350 | 0 | New |
+| google/gemini-3.1-pro-preview | [discovery-proposal](google--gemini-3.1-pro-preview--discovery-proposal--house.md) | house | Assistant reviewed | 107/350 | 0 | New |
+| google/gemini-3.1-pro-preview | [change-order](google--gemini-3.1-pro-preview--change-order--default.md) | default | Assistant reviewed | 191/300 | 0 | New |
+| google/gemini-3.1-pro-preview | [change-order](google--gemini-3.1-pro-preview--change-order--house.md) | house | Assistant reviewed | 119/300 | 0 | New |
+| google/gemini-3.1-pro-preview | [ai-strategy-slides](google--gemini-3.1-pro-preview--ai-strategy-slides--default.md) | default | Assistant reviewed | 171/350 | 0 | New |
+| google/gemini-3.1-pro-preview | [ai-strategy-slides](google--gemini-3.1-pro-preview--ai-strategy-slides--house.md) | house | Assistant reviewed | 108/350 | 0 | New |
+| google/gemini-3.1-pro-preview | [handoff-slides](google--gemini-3.1-pro-preview--handoff-slides--default.md) | default | Assistant reviewed | 158/350 | 0 | New |
+| google/gemini-3.1-pro-preview | [handoff-slides](google--gemini-3.1-pro-preview--handoff-slides--house.md) | house | Assistant reviewed | 92/350 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [pilot-client-email](xiaomi--mimo-v2.6-pro--pilot-client-email--default.md) | default | Assistant reviewed | 170/180 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [pilot-client-email](xiaomi--mimo-v2.6-pro--pilot-client-email--house.md) | house | Assistant reviewed | 112/180 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [launch-delay-email](xiaomi--mimo-v2.6-pro--launch-delay-email--default.md) | default | Assistant reviewed | 184/180 FAIL | 2 | New |
+| xiaomi/mimo-v2.6-pro | [launch-delay-email](xiaomi--mimo-v2.6-pro--launch-delay-email--house.md) | house | Assistant reviewed | 91/180 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [vendor-decision-memo](xiaomi--mimo-v2.6-pro--vendor-decision-memo--default.md) | default | Assistant reviewed | 262/300 | 1 | New |
+| xiaomi/mimo-v2.6-pro | [vendor-decision-memo](xiaomi--mimo-v2.6-pro--vendor-decision-memo--house.md) | house | Assistant reviewed | 151/300 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [pilot-results-memo](xiaomi--mimo-v2.6-pro--pilot-results-memo--default.md) | default | Assistant reviewed | 288/300 | 4 | New |
+| xiaomi/mimo-v2.6-pro | [pilot-results-memo](xiaomi--mimo-v2.6-pro--pilot-results-memo--house.md) | house | Assistant reviewed | 239/300 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [discovery-proposal](xiaomi--mimo-v2.6-pro--discovery-proposal--default.md) | default | Assistant reviewed | 233/350 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [discovery-proposal](xiaomi--mimo-v2.6-pro--discovery-proposal--house.md) | house | Assistant reviewed | 234/350 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [change-order](xiaomi--mimo-v2.6-pro--change-order--default.md) | default | Assistant reviewed | 266/300 | 4 | New |
+| xiaomi/mimo-v2.6-pro | [change-order](xiaomi--mimo-v2.6-pro--change-order--house.md) | house | Assistant reviewed | 132/300 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [ai-strategy-slides](xiaomi--mimo-v2.6-pro--ai-strategy-slides--default.md) | default | Assistant reviewed | 270/350 | 6 | New |
+| xiaomi/mimo-v2.6-pro | [ai-strategy-slides](xiaomi--mimo-v2.6-pro--ai-strategy-slides--house.md) | house | Assistant reviewed | 154/350 | 0 | New |
+| xiaomi/mimo-v2.6-pro | [handoff-slides](xiaomi--mimo-v2.6-pro--handoff-slides--default.md) | default | Assistant reviewed | 217/350 | 6 | New |
+| xiaomi/mimo-v2.6-pro | [handoff-slides](xiaomi--mimo-v2.6-pro--handoff-slides--house.md) | house | Assistant reviewed | 160/350 | 0 | New |

@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-sol--vendor-decision-memo--default",
+  "model": "openai/gpt-5.6-sol",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:36:29.740Z",
+  "elapsedMs": 4536,
+  "text": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO  \n**Subject:** Approval to select Alpha for year one\n\n## Recommendation\n\nApprove **Alpha** for year one and authorize Priya, procurement owner, to proceed toward signing.\n\n## Evaluation\n\n| Criterion | Alpha | Beta |\n|---|---:|---:|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| Year-one total | **$92,000** | **$70,000** |\n| Within $100,000 ceiling | Yes | Yes |\n| Required SSO available | Yes | No |\n| Eligible for production | Yes | No |\n\nBoth vendors meet the other stated requirements and fall within the year-one budget ceiling, including setup. Alpha leaves **$8,000** under the ceiling. Beta is **$22,000** less expensive than Alpha but cannot satisfy the mandatory requirement that SSO be available before production. Beta also has no committed SSO delivery date.\n\n## Decision Rationale\n\nAlpha is the only vendor that meets all stated constraints in year one. Beta’s lower cost does not offset its failure to provide mandatory SSO; selecting it would prevent production under the stated requirements.\n\n## Approval Requested\n\nCFO approval to select **Alpha at a year-one cost of $92,000** before Priya proceeds with signing.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 180,
+    "inputTokenDetails": {
+      "noCacheTokens": 180,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 290,
+    "outputTokenDetails": {
+      "textTokens": 290,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 470
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_075fa528b0ebf7f8016ab2e6c958e0819491df3daf981e3071",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-sol",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790109385292,
+                "endTime": 1790109389546,
+                "providerRequestId": "cb4c9ca4-adf8-487f-b82e-e7cb4a29ba8b",
+                "statusCode": 200,
+                "providerResponseId": "resp_075fa528b0ebf7f8016ab2e6c958e0819491df3daf981e3071"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0096",
+      "marketCost": "0.0096",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0096",
+      "inferenceCost": "0.0096",
+      "inputInferenceCost": "0.0009",
+      "outputInferenceCost": "0.0087",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35DB0HBMWRKWRBRTFK4R98M"
+    }
+  },
+  "response": {
+    "id": "aitxt-q54hgjWd7dhklFN8w9bx8POq",
+    "modelId": "openai/gpt-5.6-sol",
+    "timestamp": "2026-09-22T20:36:29.739Z"
+  },
+  "billing": {
+    "totalCost": 0.0096,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0096",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

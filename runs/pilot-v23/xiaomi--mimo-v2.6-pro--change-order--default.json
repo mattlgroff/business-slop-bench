@@ -1,0 +1,92 @@
+{
+  "id": "xiaomi--mimo-v2.6-pro--change-order--default",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:51:55.283Z",
+  "elapsedMs": 14199,
+  "text": "# Change-Order Proposal — CRM Connector\n\n**To:** Client Sponsor\n**From:** Project Lead\n**Re:** Contract change request CO-01 — CRM Connector\n**Date:** [Date]\n\n## Overview\n\nThe existing signed scope covers the reporting dashboard only. You have requested an additional CRM connector. This work is not included in the original fee and requires a signed change order before it can begin.\n\n## Requested Work\n\nBuild and integrate a CRM connector as a new deliverable outside the current signed agreement.\n\n## Price\n\n| Item | Detail |\n|---|---|\n| Estimated effort | 40 hours |\n| Rate | $175/hour |\n| Proposed fixed change fee | $7,000 |\n\nThe fee is proposed as a fixed change fee of $7,000 for the requested connector work.\n\n## Schedule Effect\n\nIf written approval is received and the required sandbox credentials are provided, the connector is estimated to add **two weeks** to the schedule. This is an estimate, not an approved calendar date. The two-week period begins only after both written approval and credential receipt.\n\n## Dependencies\n\nTo deliver the connector, the client must provide **sandbox credentials**. Work cannot begin without them.\n\n## Approval Required\n\nPer our governance terms, the sponsor must approve this change order **in writing** before any connector work begins.\n\n---\n\n**Sponsor Decision**\n\n☐ **Approved** — CRM connector added at a fixed change fee of $7,000; two-week estimated schedule addition.\n\n☐ **Declined** — No change to scope, price, or schedule.\n\n**Sponsor Name:** ________________________\n**Signature:** ________________________\n**Date:** ________________________\n\n*Please return this signed document to authorize or decline the change. Upon written approval and credential receipt, we will begin the connector work.*",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 192,
+    "inputTokenDetails": {
+      "noCacheTokens": 192,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 386,
+    "outputTokenDetails": {
+      "textTokens": 375,
+      "reasoningTokens": 11
+    },
+    "totalTokens": 578
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "deepinfra": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "xiaomi/mimo-v2.6-pro",
+        "resolvedProvider": "xiaomi",
+        "fallbacksAvailable": [
+          "deepinfra"
+        ],
+        "planningReasoning": "System credentials planned for: xiaomi, deepinfra. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: xiaomi(system) → deepinfra(system). ZDR execution order: deepinfra(system)",
+        "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+        "finalProvider": "deepinfra",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xiaomi/mimo-v2.6-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "deepinfra",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790110307209,
+                "endTime": 1790110315303,
+                "providerRequestId": "REiL3hIAiNuXjQyLHLmsrXA4",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-REiL3hIAiNuXjQyLHLmsrXA4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "xiaomi",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00041934",
+      "marketCost": "0.00041934",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00041934",
+      "inferenceCost": "0.00041934",
+      "inputInferenceCost": "0.00008352",
+      "outputInferenceCost": "0.00033582",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35E742P2D0QM2Y0MV1QQY4V"
+    }
+  },
+  "response": {
+    "id": "aitxt-GqRme6VJDWsz9MUTazbtERhe",
+    "modelId": "xiaomi/mimo-v2.6-pro",
+    "timestamp": "2026-09-22T20:51:55.283Z"
+  },
+  "billing": {
+    "totalCost": 0.00041934,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00041934",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

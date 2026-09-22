@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-luna--handoff-slides--default",
+  "model": "openai/gpt-6-luna",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:30:03.808Z",
+  "elapsedMs": 5361,
+  "text": "### Slide 1 — Decision: Not Ready for Handoff\n- Acceptance requires an approved runbook and a successful rollback rehearsal.\n- The runbook is approved; the rehearsal has not happened.\n- Therefore, acceptance criteria are not yet met.\n\n### Slide 2 — Current Ownership\n- Lee, Engineering lead, owns defect fixes until acceptance.\n- Jo, Operations lead, owns incidents only after acceptance.\n- Operations incident ownership has not begun.\n\n### Slide 3 — Readiness Gap\n- No role has accepted responsibility for organizing the rollback rehearsal.\n- Without a successful rehearsal, acceptance cannot be approved.\n- Pat, the sponsor, can assign rehearsal responsibility and approve acceptance once criteria are met.\n\n### Slide 4 — Actions and Handoff Gate\n- Pat: assign responsibility for organizing the rollback rehearsal.\n- Assigned organizer: conduct the rehearsal; confirm it is successful.\n- Once the approved runbook and successful rehearsal criteria are met, Pat can approve acceptance.\n- After acceptance, incident ownership moves to Jo; Lee owns defect fixes until then.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 294,
+    "outputTokenDetails": {
+      "textTokens": 215,
+      "reasoningTokens": 79
+    },
+    "totalTokens": 463
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0508b58fcbff5a57006ab2e547044087d2bac291f043c46e46",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-luna",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108998656,
+                "endTime": 1790109003777,
+                "providerRequestId": "req_ddec7361c64d407d98323bfc4653fff0",
+                "statusCode": 200,
+                "providerResponseId": "resp_0508b58fcbff5a57006ab2e547044087d2bac291f043c46e46"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.0001639",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CZ6Z3Y2BSDC6F9EJ5KDG9"
+    }
+  },
+  "response": {
+    "id": "aitxt-e0xDVjBdGXilmHoTeMSWUyBl",
+    "modelId": "openai/gpt-6-luna",
+    "timestamp": "2026-09-22T20:30:03.794Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

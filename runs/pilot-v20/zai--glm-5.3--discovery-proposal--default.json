@@ -1,0 +1,155 @@
+{
+  "id": "zai--glm-5.3--discovery-proposal--default",
+  "model": "zai/glm-5.3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:38:54.115Z",
+  "elapsedMs": 7688,
+  "text": "# Discovery Engagement Proposal\n\n**For approval by the Client Sponsor**\n\n## Purpose\n\nThis proposal seeks your approval for a four-week discovery engagement. The engagement will produce three deliverables:\n\n1. **Current-state process map**\n2. **Prioritized backlog**\n3. **Implementation recommendation**\n\n## Scope\n\nThe engagement covers discovery only, over four weeks. It does **not** include:\n\n- Implementation\n- Integrations\n- Production support\n- Guaranteed savings\n\n## Commercial Offer\n\n| Item | Detail |\n|---|---|\n| Effort | 80 hours |\n| Rate | $200/hour |\n| **Total fee** | **$16,000** |\n| Payment terms | 50% ($8,000) at kickoff; 50% ($8,000) on delivery |\n\n## Client Responsibilities\n\nTo keep the engagement on schedule, the client will supply:\n\n- Access to interviews with relevant personnel\n- Source documents\n\n## Acceptance Criteria\n\nThe engagement is accepted when the sponsor confirms delivery of the three listed artifacts: the current-state process map, the prioritized backlog, and the implementation recommendation.\n\n## How to Proceed\n\n1. **Sign the engagement agreement.** Work begins only after signature.\n2. **Name a client contact.** A named client contact is required before the start date is agreed.\n3. **Confirm the start date.** The start date will be agreed jointly once both conditions above are met.\n4. **Pay the kickoff invoice.** The first 50% of the fee ($8,000) is due at kickoff.\n5. **Provide access.** Arrange interview access and share source documents so discovery can begin.\n\nOn delivery of the three artifacts and your confirmation, the final 50% ($8,000) becomes payable.\n\n## Approval\n\nPlease confirm your approval of this proposal so we can finalize the agreement, name the client contact, and agree a start date.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 194,
+    "inputTokenDetails": {
+      "noCacheTokens": 184,
+      "cacheReadTokens": 10
+    },
+    "outputTokens": 389,
+    "outputTokenDetails": {
+      "textTokens": 389,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 583
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3",
+        "resolvedProvider": "digitalocean",
+        "fallbacksAvailable": [
+          "fireworks",
+          "baseten",
+          "runware",
+          "alibaba",
+          "blackbox",
+          "zai",
+          "streamlake",
+          "novita",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "crusoe",
+          "morph",
+          "friendli",
+          "inceptron",
+          "gmicloud",
+          "modal",
+          "inference-net",
+          "togetherai"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 0 over baseten, digitalocean. System credentials planned for: digitalocean, fireworks, baseten, runware, alibaba, blackbox, zai, streamlake, novita, deepinfra, wafer, parasail, crusoe, morph, friendli, inceptron, gmicloud, modal, inference-net, togetherai. ZDR requested: 20 attempts → 10 ZDR attempts. Pre-ZDR order: digitalocean(system) → fireworks(system) → baseten(system) → runware(system) → alibaba(system) → blackbox(system) → zai(system) → streamlake(system) → novita(system) → deepinfra(system) → wafer(system) → parasail(system) → crusoe(system) → morph(system) → friendli(system) → inceptron(system) → gmicloud(system) → modal(system) → inference-net(system) → togetherai(system). ZDR execution order: fireworks(system) → digitalocean(system) → baseten(system) → alibaba(system) → deepinfra(system) → wafer(system) → parasail(system) → morph(system) → modal(system) → togetherai(system)",
+        "canonicalSlug": "zai/glm-5.3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091526681,
+                "endTime": 1790091534119,
+                "providerRequestId": "chatcmpl-a0f601ca032d4d0590565d18478e19c3",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-a0f601ca032d4d0590565d18478e19c3"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "crusoe",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inceptron",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0019718",
+      "marketCost": "0.0019718",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0019718",
+      "inferenceCost": "0.0019718",
+      "inputInferenceCost": "0.0002602",
+      "outputInferenceCost": "0.0017116",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WA0ANXA4W89W3VWDZ4NR2"
+    }
+  },
+  "response": {
+    "id": "aitxt-wQkdLHYvDTwHIfeclYUc3XrP",
+    "modelId": "zai/glm-5.3",
+    "timestamp": "2026-09-22T15:38:54.114Z"
+  },
+  "billing": {
+    "totalCost": 0.0019718,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0019718",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

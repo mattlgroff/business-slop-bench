@@ -1,0 +1,149 @@
+{
+  "id": "google--gemini-3.1-pro-preview--launch-delay-email--default",
+  "model": "google/gemini-3.1-pro-preview",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:31:17.173Z",
+  "elapsedMs": 16354,
+  "text": "Hi Avery,\n\nI am writing to provide an update on our launch position. While our launch was tentatively scheduled for October 8, 2026, Nia, who owns the security review, has informed us that the review will now complete on October 12 at the earliest. Because the release needs completed approval, and the review may require remediation, no new production date is authorized at this time. \n\nDespite this shift, I maintain complete confidence in our team to navigate this review process and deliver a secure, high-quality release. \n\nIn the interim, a staging demo can still happen on October 8 using synthetic data. Since you choose whether to accept this workaround, please let me know if you would like us to proceed with the staging demo on that date.\n\nBest regards,\n\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 187,
+    "inputTokenDetails": {
+      "noCacheTokens": 187,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 869,
+    "outputTokenDetails": {
+      "textTokens": 168,
+      "reasoningTokens": 701
+    },
+    "totalTokens": 1056
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 701,
+        "promptTokenCount": 187,
+        "candidatesTokenCount": 168,
+        "totalTokenCount": 1056,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 187
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 168
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 701,
+        "promptTokenCount": 187,
+        "candidatesTokenCount": 168,
+        "totalTokenCount": 1056,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 187
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 168
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.1-pro-preview",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.1-pro-preview",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.1-pro-preview",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790109067976,
+                "endTime": 1790109077176,
+                "statusCode": 200,
+                "providerResponseId": "jOWyaoznCtjasbwP1YPyyQs"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.010802",
+      "marketCost": "0.010802",
+      "surchargeCost": "0",
+      "gatewayCost": "0.010802",
+      "inferenceCost": "0.010802",
+      "inputInferenceCost": "0.000374",
+      "outputInferenceCost": "0.010428",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35D19TG76418222921K81V7"
+    }
+  },
+  "response": {
+    "id": "aitxt-kRWIwnaotkCmfO2Hd3upSdGf",
+    "modelId": "google/gemini-3.1-pro-preview",
+    "timestamp": "2026-09-22T20:31:17.172Z"
+  },
+  "billing": {
+    "totalCost": 0.010802,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.010802",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

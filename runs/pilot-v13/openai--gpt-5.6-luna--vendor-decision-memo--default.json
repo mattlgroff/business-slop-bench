@@ -1,0 +1,114 @@
+{
+  "id": "openai--gpt-5.6-luna--vendor-decision-memo--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "bc04bb9681566600f5b6070b8d4ee99eac57b48c105446259da69193f2e8e644",
+  "status": "ok",
+  "at": "2026-09-22T12:54:59.351Z",
+  "elapsedMs": 5427,
+  "text": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO  \n**From:** Priya, Procurement Owner  \n**Subject:** Vendor recommendation for year one\n\n## Recommendation\n\nApprove **Alpha** for year one and authorize Priya to proceed with procurement, subject to CFO approval before signing.\n\n## Evaluation\n\n| Criterion | Alpha | Beta |\n|---|---:|---:|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| **Year-one total** | **$92,000** | **$70,000** |\n| Budget ceiling | Within $100,000 | Within $100,000 |\n| Required SSO | Available | Unavailable; no committed delivery date |\n| Other stated requirements | Meets | Meets |\n\nBoth vendors are within the $100,000 year-one budget ceiling and meet the other stated requirements. Alpha’s year-one cost is $92,000, leaving $8,000 of budget capacity. Beta’s year-one cost is $70,000, leaving $30,000.\n\nHowever, **SSO is mandatory before production**. Alpha has SSO available and therefore satisfies the stated production constraint. Beta does not have SSO available and has no committed delivery date, so it cannot currently satisfy the mandatory requirement.\n\n## Decision\n\nSelect **Alpha**. Although Beta is $22,000 less expensive in year one, its lack of available SSO prevents production under the stated constraints. Alpha is the only vendor in the source pack that satisfies all requirements while remaining within budget. CFO approval is required before signing.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 180,
+    "inputTokenDetails": {
+      "noCacheTokens": 180,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 399,
+    "outputTokenDetails": {
+      "textTokens": 336,
+      "reasoningTokens": 63
+    },
+    "totalTokens": 579
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0f31660036206a2b016ab27a9e38d8819682d4af5b11b1306d",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081694155,
+                "endTime": 1790081699510,
+                "providerRequestId": "213aca61-b9bd-45ba-8359-71e62c12f119",
+                "statusCode": 200,
+                "providerResponseId": "resp_0f31660036206a2b016ab27a9e38d8819682d4af5b11b1306d"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0005148",
+      "marketCost": "0.0005148",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0005148",
+      "inferenceCost": "0.0005148",
+      "inputInferenceCost": "0.000036",
+      "outputInferenceCost": "0.0004788",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34JXYDKFAZSVY7R8F71FPRE"
+    }
+  },
+  "response": {
+    "id": "aitxt-ZUZ81fZUToU4x5lZTqfYCHWD",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T12:54:59.351Z"
+  },
+  "billing": {
+    "totalCost": 0.0005148,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0005148",
+    "surchargeCost": "0"
+  },
+  "inputHash": "5fc116f1d6aa5d04c02fe899af527554aef255edebc05cd1de550b4de7f0278c",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

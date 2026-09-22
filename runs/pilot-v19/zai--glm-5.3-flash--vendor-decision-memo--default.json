@@ -1,0 +1,152 @@
+{
+  "id": "zai--glm-5.3-flash--vendor-decision-memo--default",
+  "model": "zai/glm-5.3-flash",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T14:53:40.888Z",
+  "elapsedMs": 10546,
+  "text": "# Decision Memo: Vendor Selection — Year One\n\n**To:** CFO\n**From:** Procurement\n**Re:** Vendor A vs. Vendor B, Year One\n**Decision required:** Approve vendor selection before Priya signs.\n\n## Options\n\n| Item | Vendor A | Vendor B |\n|---|---|---|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| **Year-one total** | **$92,000** | **$70,000** |\n| Required SSO | Available | Unavailable; no committed delivery date |\n\n## Constraints\n- Year-one budget ceiling: $100,000, including setup.\n- SSO is mandatory before production.\n- Both vendors meet all other stated requirements.\n\n## Analysis\n**Budget:** Both vendors fit within the $100,000 ceiling. Vendor A totals $92,000; Vendor B totals $70,000, leaving $30,000 vs. $8,000 of headroom respectively.\n\n**SSO (gating constraint):** Vendor A's required SSO is available. Vendor B's SSO is unavailable with no committed delivery date, meaning production readiness cannot be achieved within a predictable timeline. Because SSO is mandatory before production, Vendor B presents an unbounded schedule risk regardless of price.\n\n**Other requirements:** No differentiation; both vendors satisfy them.\n\n## Recommendation\nSelect **Vendor A**.\n\nVendor B is cheaper by $22,000 in year one and is within budget, but the mandatory SSO requirement is a hard gate, and Vendor B offers no delivery date. Choosing Vendor B risks an indefinite delay in production with no committed remedy. Vendor A is SSO-ready, fits the budget with $8,000 of margin, and is the only vendor that can satisfy the gating constraint in year one.\n\n**Requested action:** Approve Vendor A; Priya may proceed to signature upon CFO approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 187,
+    "inputTokenDetails": {
+      "noCacheTokens": 187,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 401,
+    "outputTokenDetails": {
+      "textTokens": 401,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 588
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 0,
+      "rejectedPredictionTokens": 0
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "runware",
+          "wafer",
+          "particle",
+          "zai",
+          "togetherai",
+          "streamlake",
+          "parasail",
+          "digitalocean",
+          "friendli",
+          "novita",
+          "modal",
+          "morph",
+          "deepinfra",
+          "relace",
+          "boundless",
+          "inference-net",
+          "gmicloud"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 1 over runware. System credentials planned for: baseten, fireworks, runware, wafer, particle, zai, togetherai, streamlake, parasail, digitalocean, friendli, novita, modal, morph, deepinfra, relace, boundless, inference-net, gmicloud. ZDR requested: 19 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → runware(system) → wafer(system) → particle(system) → zai(system) → togetherai(system) → streamlake(system) → parasail(system) → digitalocean(system) → friendli(system) → novita(system) → modal(system) → morph(system) → deepinfra(system) → relace(system) → boundless(system) → inference-net(system) → gmicloud(system). ZDR execution order: baseten(system) → fireworks(system) → wafer(system) → particle(system) → togetherai(system) → parasail(system) → digitalocean(system) → modal(system) → morph(system) → deepinfra(system)",
+        "canonicalSlug": "zai/glm-5.3-flash",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790088810428,
+                "endTime": 1790088820873,
+                "providerRequestId": "54ca701a0c99b8fd07dbf838609489b32f784",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-25cdff4c5e8e4c59ba68d469a7ece013"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00022855",
+      "marketCost": "0.00022855",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00022855",
+      "inferenceCost": "0.00022855",
+      "inputInferenceCost": "0.00002805",
+      "outputInferenceCost": "0.0002005",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34SQ3W4Y2R2W5F3BMWZ9ASF"
+    }
+  },
+  "response": {
+    "id": "aitxt-2vOKd4tFg2JrAGDmpH2CZ8Fx",
+    "modelId": "zai/glm-5.3-flash",
+    "timestamp": "2026-09-22T14:53:40.888Z"
+  },
+  "billing": {
+    "totalCost": 0.00022855,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00022855",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

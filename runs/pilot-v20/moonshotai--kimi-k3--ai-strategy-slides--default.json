@@ -1,0 +1,134 @@
+{
+  "id": "moonshotai--kimi-k3--ai-strategy-slides--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:32:02.751Z",
+  "elapsedMs": 6207,
+  "text": "**Slide 1 — Decision: Fund the Authorized Pilot**\n- Recommend **Option A: Internal knowledge search** for next quarter.\n- Cost: **$30,000**, within the **$50,000** quarterly pilot ceiling.\n- Constraint: team can run **only one pilot**; choose the pilot that can start and finish cleanly.\n- Decision owner: **COO selects**; execution owner: **Dana**.\n\n**Slide 2 — Why Knowledge Search Wins**\n- Uses **approved internal policy documents**, reducing compliance friction.\n- Has a named IT owner: **Dana**.\n- Leaves **$20,000** budget headroom under the ceiling.\n- Success is measurable before expansion: accuracy on **100 reviewed questions**, target **≥90%**.\n- Current baseline: **no result exists**, so pilot creates the first evidence point.\n\n**Slide 3 — Why Not Automated Credit Decisions Now**\n- Option B costs **$45,000**, consuming nearly the full **$50,000** ceiling.\n- **Legal approval is pending**.\n- **Production use is not authorized**.\n- Selecting it now would spend most of the budget on a pilot that cannot be productionized.\n- Revisit only after legal authorization and a separate decision cycle.\n\n**Slide 4 — Approval Ask and Expansion Gate**\n- COO approves **Option A only** for next quarter: **$30,000**, owner **Dana**.\n- Scope: internal knowledge search over approved policy documents.\n- Evaluate: **100 reviewed questions**; pass threshold: **at least 90% accuracy**.\n- Dana reports results **before any expansion**.\n- Expansion, additional spend, or Option B requires a new COO decision after reported results.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 290,
+    "inputTokenDetails": {
+      "noCacheTokens": 258,
+      "cacheReadTokens": 32
+    },
+    "outputTokens": 594,
+    "outputTokenDetails": {
+      "textTokens": 360,
+      "reasoningTokens": 234
+    },
+    "totalTokens": 884
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 340,
+      "rejectedPredictionTokens": 168
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "runware",
+          "fireworks",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, runware, fireworks, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → runware(system) → fireworks(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091116650,
+                "endTime": 1790091122752,
+                "providerRequestId": "54ca701a0c9bec08f75639b20734acc6050e2",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-23fa57ad5eb5460da970f2b4812ac0ee",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0096936",
+      "marketCost": "0.0096936",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0096936",
+      "inferenceCost": "0.0096936",
+      "inputInferenceCost": "0.0007836",
+      "outputInferenceCost": "0.00891",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34VXG20XZ70JQKXXRMJ5198"
+    }
+  },
+  "response": {
+    "id": "aitxt-TX404GoWpVgZeYxPUuWYj7IO",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T15:32:02.751Z"
+  },
+  "billing": {
+    "totalCost": 0.0096936,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0096936",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

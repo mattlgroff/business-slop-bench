@@ -1,0 +1,137 @@
+{
+  "id": "moonshotai--kimi-k3--discovery-proposal--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "b0e357508ee8b7836580dbc58d4c79b020290950949876ba9ae5c0065353df85",
+  "status": "ok",
+  "at": "2026-09-22T12:12:48.158Z",
+  "elapsedMs": 5851,
+  "text": "# Proposal: Discovery Engagement Approval\n\n**Requested decision:** Sponsor approval for a four-week discovery engagement only.\n\n**Scope and deliverables**\n- Current-state process map\n- Prioritized backlog\n- Implementation recommendation\n\n**Commercial offer**\n- Effort: 80 hours at $200/hour\n- Total fee: $16,000\n- Payment: 50% ($8,000) at kickoff; 50% ($8,000) on delivery\n\n**Excluded from this offer**\nImplementation, integrations, production support, and guaranteed savings are excluded.\n\n**Client responsibilities**\nClient supplies interview access and source documents. A named client contact is required before start.\n\n**Start and acceptance**\nStart date will be agreed only after signature and designation of the named client contact. Acceptance occurs when the sponsor confirms delivery of the three listed artifacts.\n\n**How to proceed**\n1. Approve and sign this discovery engagement.\n2. Name the client contact.\n3. Agree the start date and schedule kickoff.\n4. Provide interview access and source documents.\n5. Pay the kickoff invoice.\n6. Confirm delivery of the process map, backlog, and recommendation to close acceptance.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 267,
+    "inputTokenDetails": {
+      "noCacheTokens": 235,
+      "cacheReadTokens": 32
+    },
+    "outputTokens": 589,
+    "outputTokenDetails": {
+      "textTokens": 248,
+      "reasoningTokens": 341
+    },
+    "totalTokens": 856
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 345,
+      "rejectedPredictionTokens": 145
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "runware",
+          "fireworks",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, runware, fireworks, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → runware(system) → fireworks(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790079162463,
+                "endTime": 1790079168197,
+                "providerRequestId": "54ca701a0c90858727a579b142445e75752d6",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-9cf9eedf706d43f99a7a11aff96d8604",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0095496",
+      "marketCost": "0.0095496",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0095496",
+      "inferenceCost": "0.0095496",
+      "inputInferenceCost": "0.0007146",
+      "outputInferenceCost": "0.008835",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34GGP1BRK59Y10MK6N9N5NJ"
+    }
+  },
+  "response": {
+    "id": "aitxt-BDKYUX5gazt87wdGFSBDfCs7",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T12:12:48.158Z"
+  },
+  "billing": {
+    "totalCost": 0.0095496,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0095496",
+    "surchargeCost": "0"
+  },
+  "inputHash": "e91baa3bf817b876dc655c999d290113d01f35895d714fa4f25b590206e2c0be",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v8/moonshotai--kimi-k3--discovery-proposal--default.json",
+  "originalProtocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "anthropic--claude-opus-4.6--discovery-proposal--default",
+  "model": "anthropic/claude-opus-4.6",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:12:32.884Z",
+  "elapsedMs": 7950,
+  "text": "# Discovery Engagement Proposal\n\n## Overview\n\nWe propose a four-week discovery engagement to assess your current-state operations and deliver a clear path forward for implementation.\n\n## Scope & Deliverables\n\nThe engagement will produce three artifacts:\n\n1. **Current-state process map**\n2. **Prioritized backlog**\n3. **Implementation recommendation**\n\nDelivery of these three artifacts constitutes completion, confirmed by the client sponsor.\n\n## Commercial Terms\n\n| Item | Detail |\n|------|--------|\n| Duration | 4 weeks |\n| Effort | 80 hours |\n| Rate | $200/hour |\n| **Total Fee** | **$16,000** |\n| Payment | 50% at kickoff ($8,000), 50% on delivery ($8,000) |\n\n## Exclusions\n\nImplementation, integrations, production support, and guaranteed savings are **not included** in this engagement.\n\n## Client Responsibilities\n\nThe client will provide timely access to interviewees and relevant source documents needed to complete the discovery work.\n\n## How to Proceed\n\n1. **Sign** this proposal.\n2. **Name a client contact** who will serve as our primary point of coordination.\n3. We will jointly confirm a **start date** once both conditions above are met.\n4. Kickoff payment of $8,000 is due at that time.\n\nWe look forward to working with you. Please reach out with any questions.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 209,
+    "inputTokenDetails": {
+      "noCacheTokens": 209,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 324,
+    "outputTokenDetails": {
+      "textTokens": 324,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 533
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 209,
+        "output_tokens": 324,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-4.6",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic. ZDR requested: 4 attempts → 3 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-opus-4.6",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-4.6",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790097145203,
+                "endTime": 1790097152870,
+                "providerRequestId": "req_011CfJrL8pDh7XYypRGMYWuK",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJrL9AoEnFtrcR4r7MNT"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.009145",
+      "marketCost": "0.009145",
+      "surchargeCost": "0",
+      "gatewayCost": "0.009145",
+      "inferenceCost": "0.009145",
+      "inputInferenceCost": "0.001045",
+      "outputInferenceCost": "0.0081",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M351NF9EA62392R2BTWAKCS1"
+    }
+  },
+  "response": {
+    "id": "aitxt-LiSZxeLY1qWfMNvYMptlnbdT",
+    "modelId": "anthropic/claude-opus-4.6",
+    "timestamp": "2026-09-22T17:12:32.883Z"
+  },
+  "billing": {
+    "totalCost": 0.009145,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.009145",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

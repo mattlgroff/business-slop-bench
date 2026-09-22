@@ -1,0 +1,137 @@
+{
+  "id": "moonshotai--kimi-k3--ai-strategy-slides--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "7f5944259517b03fe7014db7ef316508a1fe6814e4679a92d6c890ffe6179a27",
+  "status": "ok",
+  "at": "2026-09-22T12:13:59.552Z",
+  "elapsedMs": 5053,
+  "text": "**Slide 1 — Decision Required: Pick One Quarter Pilot**\n- Quarterly ceiling: **$50,000**\n- Capacity allows **only one pilot** this quarter\n- **COO selects** the pilot\n- Expansion requires results reported by **Dana** first\n\n**Slide 2 — Option A: Internal Knowledge Search**\n- Cost: **$30,000**, within ceiling\n- Uses **approved internal policy documents**\n- IT owner: **Dana**\n- Clear evaluation: accuracy on **100 reviewed questions**\n- Target: **at least 90%**\n- Current result: **none yet**\n\n**Slide 3 — Option B: Automated Customer Credit Decisions**\n- Cost: **$45,000**, within ceiling but near cap\n- **Legal approval pending**\n- **Production use is not authorized**\n- Higher execution risk this quarter due to unresolved approval\n- Cannot be the compliant near-term pilot\n\n**Slide 4 — Recommendation: Fund Knowledge Search**\n- Approve **Option A** as the single quarter pilot\n- Rationale: approved data, named owner, defined success bar\n- Preserve **$20,000** budget headroom under ceiling\n- Gate expansion on Dana’s report: **90%+ accuracy** on 100 reviewed questions\n- Revisit credit automation only after legal authorization",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 290,
+    "inputTokenDetails": {
+      "noCacheTokens": 258,
+      "cacheReadTokens": 32
+    },
+    "outputTokens": 492,
+    "outputTokenDetails": {
+      "textTokens": 278,
+      "reasoningTokens": 214
+    },
+    "totalTokens": 782
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 278,
+      "rejectedPredictionTokens": 150
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "fireworks",
+          "runware",
+          "alibaba",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, fireworks, runware, alibaba, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → fireworks(system) → runware(system) → alibaba(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790079234689,
+                "endTime": 1790079239591,
+                "providerRequestId": "54ca701a0c90972947665840dc738fa5be703",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-98de28eb0af747f49891ad890e5943cb",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0081636",
+      "marketCost": "0.0081636",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0081636",
+      "inferenceCost": "0.0081636",
+      "inputInferenceCost": "0.0007836",
+      "outputInferenceCost": "0.00738",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34GJWH0CHNK05XSP8J4BAP1"
+    }
+  },
+  "response": {
+    "id": "aitxt-CmbBVcmXkI3cpaqDbpyECcmd",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T12:13:59.552Z"
+  },
+  "billing": {
+    "totalCost": 0.0081636,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0081636",
+    "surchargeCost": "0"
+  },
+  "inputHash": "2e6745d2ae5979f4388b81f5ef7435de3dcb83b37dec353a4760aa844f905730",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot this quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v8/moonshotai--kimi-k3--ai-strategy-slides--default.json",
+  "originalProtocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5"
+}

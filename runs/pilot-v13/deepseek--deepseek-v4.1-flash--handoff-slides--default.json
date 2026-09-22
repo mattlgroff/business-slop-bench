@@ -1,0 +1,140 @@
+{
+  "id": "deepseek--deepseek-v4.1-flash--handoff-slides--default",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "protocolHash": "bc04bb9681566600f5b6070b8d4ee99eac57b48c105446259da69193f2e8e644",
+  "status": "ok",
+  "at": "2026-09-22T12:50:42.472Z",
+  "elapsedMs": 3757,
+  "text": "**Slide 1: Decision Requested**\nSteering committee must decide whether to approve operational handoff. Acceptance requires two criteria: an approved runbook and a successful rollback rehearsal. Current status: runbook approved; rollback rehearsal not performed. Therefore the service is not ready for operational handoff. Decision: do not accept until rehearsal succeeds.\n\n**Slide 2: Readiness Assessment**\n| Criterion | Status | Evidence |\n|---|---|---|\n| Approved runbook | Met | Runbook is approved. |\n| Successful rollback rehearsal | Not met | Rehearsal has not happened. |\n| Ownership clarity | Gap | No role has accepted responsibility for organizing the rehearsal. |\n\nReadiness fails on the rehearsal criterion. Engineering lead Lee owns defect fixes until acceptance. Operations lead Jo owns incidents only after acceptance. Neither owns organizing the rehearsal.\n\n**Slide 3: Required Actions**\n1. Sponsor Pat assigns responsibility for organizing the rollback rehearsal.\n2. Assigned role organizes and conducts the rehearsal.\n3. Rehearsal must succeed.\n4. Pat approves acceptance once criteria are met.\n5. Lee retains defect-fix ownership until acceptance.\n6. Jo assumes incident ownership only after acceptance.\n\nAction owner: Pat for assignment and approval. Rehearsal organizer: to be assigned. No other role currently owns this.\n\n**Slide 4: Decision Options and Recommendation**\nOption A: Accept now. Rejected—rehearsal criterion unmet; Jo would not own incidents.\nOption B: Defer acceptance, assign rehearsal responsibility, rehearse, then decide. Recommended.\nOption C: Reject handoff permanently. Not supported—gap is addressable by Pat.\n\nRecommendation: Defer acceptance. Pat assigns rehearsal responsibility. Once rehearsal succeeds and runbook remains approved, Pat may approve acceptance. Then Lee hands off defect fixes; Jo assumes incidents.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 177,
+    "inputTokenDetails": {
+      "noCacheTokens": 177,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 376,
+    "outputTokenDetails": {
+      "textTokens": 376,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 553
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 247,
+      "rejectedPredictionTokens": 398
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4.1-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "runware",
+          "relace",
+          "particle",
+          "novita",
+          "togetherai",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "gmicloud",
+          "modal",
+          "morph",
+          "deepseek",
+          "boundless"
+        ],
+        "planningReasoning": "System credentials planned for: baseten, fireworks, alibaba, runware, relace, particle, novita, togetherai, deepinfra, wafer, parasail, gmicloud, modal, morph, deepseek, boundless. ZDR requested: 17 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → runware(system) → relace(system) → particle(system) → novita(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → gmicloud(system) → modal(system) → morph(system) → deepseek(system) → boundless(system). ZDR execution order: baseten(system) → fireworks(system) → alibaba(system) → particle(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → modal(system) → morph(system)",
+        "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081439137,
+                "endTime": 1790081442601,
+                "providerRequestId": "54ca701a0c92b15c9748f84d0cdb9532521b3",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-fd28a8dc947e412da683e0ad7e40ff87"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0005043",
+      "marketCost": "0.0005043",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0005043",
+      "inferenceCost": "0.0005043",
+      "inputInferenceCost": "0.0000531",
+      "outputInferenceCost": "0.0004512",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34JP5A6KRTCKZ4S36FJTR7Q"
+    }
+  },
+  "response": {
+    "id": "aitxt-pno6hhCcFGGGNBamhFCF5TCJ",
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "timestamp": "2026-09-22T12:50:42.470Z"
+  },
+  "billing": {
+    "totalCost": 0.0005043,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0005043",
+    "surchargeCost": "0"
+  },
+  "inputHash": "7ba6f18ae9543ae8049d893bb01bdd4cc3c99a04a99b248e3b146259ddce3369",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "none",
+    "maxOutputTokens": 4096
+  }
+}

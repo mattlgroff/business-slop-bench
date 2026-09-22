@@ -1,0 +1,124 @@
+{
+  "id": "anthropic--claude-fable-5--handoff-slides--default",
+  "model": "anthropic/claude-fable-5",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:56:33.351Z",
+  "elapsedMs": 8961,
+  "text": "**Slide 1: Handoff Readiness — Current Status**\n- Purpose: Decide if the service is ready for operational handoff\n- Acceptance criteria: (1) approved runbook, (2) successful rollback rehearsal\n- Runbook: ✅ Approved\n- Rollback rehearsal: ❌ Not yet performed\n- Conclusion: Service is **not yet ready** for acceptance\n\n**Slide 2: Roles and Responsibilities**\n- Engineering lead Lee: owns defect fixes until acceptance\n- Operations lead Jo: owns incidents only after acceptance\n- Sponsor Pat: can assign responsibility and approve acceptance once criteria are met\n- Key issue: neither Lee nor Jo currently owns the rehearsal task\n\n**Slide 3: The Blocking Gap**\n- One acceptance criterion outstanding: rollback rehearsal\n- Root cause: no role has accepted responsibility for organizing the rehearsal\n- Impact: acceptance cannot proceed; ownership of incidents cannot transfer to Jo\n- Until acceptance, defect responsibility remains with Lee\n\n**Slide 4: Decision and Actions Required**\n- Decision requested: Sponsor Pat to assign responsibility for organizing the rollback rehearsal\n- Action 1: Assigned owner schedules and conducts the rollback rehearsal\n- Action 2: On successful rehearsal, Pat approves acceptance\n- Action 3: On acceptance, incident ownership transfers to Jo\n- Recommendation: Do not approve handoff today; approve once rehearsal succeeds",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 314,
+    "inputTokenDetails": {
+      "noCacheTokens": 314,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 546,
+    "outputTokenDetails": {
+      "textTokens": 546,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 860
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 314,
+        "output_tokens": 546,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790099784885,
+                "endTime": 1790099785378,
+                "providerRequestId": "f2534250-7457-4c21-ab45-3620e775fbc6",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790099785427,
+                "endTime": 1790099793353,
+                "providerRequestId": "req_011CfJugm4CzV4rRmb7YBSGb",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJugn1GdXN82jqJ6kzDo",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.03044",
+      "marketCost": "0.03044",
+      "surchargeCost": "0",
+      "gatewayCost": "0.03044",
+      "inferenceCost": "0.03044",
+      "inputInferenceCost": "0.00314",
+      "outputInferenceCost": "0.0273",
+      "generationId": "gen_01M35460WTA3947SWNHADXX7FG"
+    }
+  },
+  "response": {
+    "id": "aitxt-twPD68EZQ3UhwgirJUEB0lvk",
+    "modelId": "anthropic/claude-fable-5",
+    "timestamp": "2026-09-22T17:56:33.349Z"
+  },
+  "billing": {
+    "totalCost": 0.03044,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.03044",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

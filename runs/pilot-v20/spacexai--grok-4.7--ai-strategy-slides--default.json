@@ -1,0 +1,86 @@
+{
+  "id": "spacexai--grok-4.7--ai-strategy-slides--default",
+  "model": "spacexai/grok-4.7",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:45:05.567Z",
+  "elapsedMs": 17522,
+  "text": "**Slide 1 — Decision for next quarter**\n- Select one AI pilot; the team can run only one.\n- Quarterly pilot budget ceiling: $50,000.\n- The COO selects the pilot.\n- Dana reports results before any expansion.\n\n**Slide 2 — The two options**\n- Internal knowledge search: $30,000; uses approved internal policy documents; IT owner is Dana.\n- Automated customer credit decisions: $45,000; legal approval is pending; production use is not authorized.\n- Both are within the $50,000 ceiling, but only one can proceed.\n\n**Slide 3 — Recommend knowledge search**\n- It is the only option ready to run under current approvals.\n- Cost is $30,000, leaving $20,000 under the ceiling.\n- Success test: answer accuracy on 100 reviewed questions; target is at least 90%.\n- No current result exists, so the pilot must establish that baseline before expansion.\n- Credit decisions should not be selected while legal approval is pending and production use is not authorized.\n\n**Slide 4 — Decision and guardrails**\n- Ask the COO to select the internal knowledge search pilot.\n- Dana owns delivery and reports results before any expansion.\n- Do not expand unless the 90% accuracy target is evaluated on 100 reviewed questions.\n- Do not start the credit-decision pilot, and do not authorize its production use, while legal approval remains pending.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1454,
+    "inputTokenDetails": {
+      "noCacheTokens": 302,
+      "cacheReadTokens": 1152
+    },
+    "outputTokens": 809,
+    "outputTokenDetails": {
+      "textTokens": 292,
+      "reasoningTokens": 517
+    },
+    "totalTokens": 2263
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "xai": {
+      "costInUsdTicks": 36204000,
+      "serviceTier": "default"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "spacexai/grok-4.7",
+        "resolvedProvider": "xai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: xai. ZDR requested: all 1 attempts support ZDR. Execution order: xai(system)",
+        "canonicalSlug": "xai/grok-4.7",
+        "finalProvider": "xai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xai/grok-4.7",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "xai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091893814,
+                "endTime": 1790091905574,
+                "providerRequestId": "1b1056dd-f7fd-9fde-a41c-419ef823d7cd",
+                "statusCode": 200,
+                "providerResponseId": "1b1056dd-f7fd-9fde-a41c-419ef823d7cd"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.0036204",
+      "marketCost": "0.0036204",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0036204",
+      "inferenceCost": "0.0036204",
+      "inputInferenceCost": "0.000708",
+      "outputInferenceCost": "0.0029124",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WN68624CBS84PA7FYPCJ6"
+    }
+  },
+  "response": {
+    "id": "aitxt-qOJfzhhdn5wMMUaVG7A5RaKr",
+    "modelId": "spacexai/grok-4.7",
+    "timestamp": "2026-09-22T15:45:05.566Z"
+  },
+  "billing": {
+    "totalCost": 0.0036204,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0036204",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

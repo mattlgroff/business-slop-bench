@@ -1,0 +1,149 @@
+{
+  "id": "google--gemini-3.1-pro-preview--pilot-client-email--default",
+  "model": "google/gemini-3.1-pro-preview",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:30:44.759Z",
+  "elapsedMs": 10648,
+  "text": "Subject: Proposal for Six-Week Invoice Handling Pilot\n\nHi Morgan,\n\nI am writing to propose our six-week pilot to assess your invoice handling process. We understand you are hoping for a 20% shorter handling time. Because no baseline or measured savings currently exists, this pilot is the ideal way to evaluate potential results in a controlled environment. Please note that a full production rollout is excluded from this initial scope. \n\nWe are proposing a $30,000 fixed fee for the pilot. Currently, no start date has been approved, as security approval is required before our team can access your client data. \n\nTo keep our momentum going and get closer to achieving your efficiency targets, could you please confirm if you approve the pilot scope and the $30,000 fee, subject to the required security clearance? \n\nOnce we have your approval, we can begin the security clearance process and determine an official start date. \n\nBest regards,\n\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 200,
+    "inputTokenDetails": {
+      "noCacheTokens": 200,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 861,
+    "outputTokenDetails": {
+      "textTokens": 203,
+      "reasoningTokens": 658
+    },
+    "totalTokens": 1061
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 658,
+        "promptTokenCount": 200,
+        "candidatesTokenCount": 203,
+        "totalTokenCount": 1061,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 200
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 203
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 658,
+        "promptTokenCount": 200,
+        "candidatesTokenCount": 203,
+        "totalTokenCount": 1061,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 200
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 203
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.1-pro-preview",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.1-pro-preview",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.1-pro-preview",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790109034355,
+                "endTime": 1790109044745,
+                "statusCode": 200,
+                "providerResponseId": "auWyasjDGtiUotQP-NP1sAM"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.010732",
+      "marketCost": "0.010732",
+      "surchargeCost": "0",
+      "gatewayCost": "0.010732",
+      "inferenceCost": "0.010732",
+      "inputInferenceCost": "0.0004",
+      "outputInferenceCost": "0.010332",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35D09SJAN3MEAFM0Y37DY2G"
+    }
+  },
+  "response": {
+    "id": "aitxt-DcTJ8HAPc9DWvO7aO5mAMTzt",
+    "modelId": "google/gemini-3.1-pro-preview",
+    "timestamp": "2026-09-22T20:30:44.757Z"
+  },
+  "billing": {
+    "totalCost": 0.010732,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.010732",
+    "surchargeCost": "0"
+  },
+  "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

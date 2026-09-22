@@ -1,0 +1,86 @@
+{
+  "id": "meta--muse-spark-1.3--pilot-client-email--default",
+  "model": "meta/muse-spark-1.3",
+  "protocolHash": "670de97c3d98593e807863a6944d6ffa0af2b75b35b1d5a8bbe5f8f9e3a16701",
+  "status": "ok",
+  "at": "2026-09-22T13:45:04.221Z",
+  "elapsedMs": 12354,
+  "text": "Subject: Six-Week Pilot Proposal\n\nDear Morgan,\n\nI propose a six-week pilot to assess invoice handling for a $30,000 fixed fee. Production rollout is excluded.\n\nThe client hopes for 20% shorter handling time. No baseline or measured savings exists.\n\nSecurity approval is required before access to client data. No start date has been approved.\n\nPlease approve the pilot scope and fee, subject to security clearance.\n\nBest regards,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 188,
+    "inputTokenDetails": {
+      "noCacheTokens": 188,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1315,
+    "outputTokenDetails": {
+      "textTokens": 143,
+      "reasoningTokens": 1172
+    },
+    "totalTokens": 1503
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6ab286601c2c84e1038146e6",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-spark-1.3",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. Total execution order: meta(system)",
+        "canonicalSlug": "meta/muse-spark-1.3",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-spark-1.3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790084692223,
+                "endTime": 1790084704180,
+                "providerRequestId": "7444483b-9bb9-4cd1-a20b-daf4ff1b29af",
+                "statusCode": 200,
+                "providerResponseId": "resp_6ab286601c2c84e1038146e6"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00582375",
+      "marketCost": "0.00582375",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00582375",
+      "inferenceCost": "0.00582375",
+      "inputInferenceCost": "0.000235",
+      "outputInferenceCost": "0.00558875",
+      "generationId": "gen_01M34NSDYA849KVNW4YSN7DQCP"
+    }
+  },
+  "response": {
+    "id": "aitxt-7QTqBMMduUnXx6oZ39JLrp9w",
+    "modelId": "meta/muse-spark-1.3",
+    "timestamp": "2026-09-22T13:45:04.220Z"
+  },
+  "billing": {
+    "totalCost": 0.00582375,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00582375",
+    "surchargeCost": "0"
+  },
+  "inputHash": "c5fd1dbf8903b30dd0099a29fd4f858211f622a4413c594b9fc7800ac9bb07b6",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

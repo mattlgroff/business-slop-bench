@@ -1,0 +1,36 @@
+{
+  "id": "control--rhetorical-contrast",
+  "taskId": "pilot-client-email",
+  "protocolHash": "7e6e252bccc030e33e670edb04cc9d190adaccfb9ed3a847d652b6c419bd39fc",
+  "grades": [
+    {
+      "id": "negative_parallelism",
+      "dimension": "anti_slop",
+      "severity": "style_gate",
+      "polarity": "defect",
+      "statement": "Does the deliverable use formulaic negative parallelism solely for rhetorical emphasis, such as not X but Y, not just X but Y, This is not X. It is Y, less about X and more about Y, more than X it is Y, or X rather than Y? Do not flag a necessary factual correction, scope boundary, mutually exclusive condition or cumulative requirement. Judge all text, not only scanner candidates.",
+      "probability": 0.7,
+      "verdict": "review"
+    }
+  ],
+  "deterministic": {
+    "words": 37,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 8,
+        "line": 1,
+        "text": "not a pilot, but "
+      }
+    ]
+  },
+  "contentReady": true,
+  "contentBlocked": false,
+  "styleGatePass": false,
+  "editorialDefects": 0,
+  "unresolved": 1
+}

@@ -1,0 +1,18 @@
+{
+  "drafts": 78,
+  "changed": [
+    {
+      "path": "runs/pilot-v13/openai--gpt-5.6-luna--ai-strategy-slides--default.md",
+      "before": [],
+      "after": [
+        {
+          "offset": 43,
+          "line": 1,
+          "text": "Q[next]"
+        }
+      ]
+    }
+  ],
+  "beforeDetectorHash": "0d135096d5d60546c83d476a21d766515d7e53f87e9660630a5f000e7905f9b8",
+  "afterDetectorHash": "4f666fa2c077c0283cf295fa5d3e479405afc86a85c50271816875f4b847715e"
+}

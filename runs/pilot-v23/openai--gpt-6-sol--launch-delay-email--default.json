@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-sol--launch-delay-email--default",
+  "model": "openai/gpt-6-sol",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:24:52.682Z",
+  "elapsedMs": 2323,
+  "text": "Hi Avery,\n\nI wanted to update you on the October 8 launch plan. The security review is now expected to complete no earlier than October 12, and we need its approval before a production release. Because the review may require remediation, we cannot confirm a new production date yet.\n\nWe can still hold a staging demo on October 8 using synthetic data. The team remains focused on moving forward while respecting the approval requirement.\n\nPlease let me know whether you’d like to proceed with the October 8 staging demo. Nia owns the security review, and I’ll share the production position once its outcome is known.\n\nJordan  \nEngagement lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 178,
+    "inputTokenDetails": {
+      "noCacheTokens": 178,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 132,
+    "outputTokenDetails": {
+      "textTokens": 132,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 310
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0c2991e7c124f6af006ab2e412b4cc87d2bf853b995b226a37",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108690628,
+                "endTime": 1790108692662,
+                "providerRequestId": "req_fbf37d892c9548439c66966b0fb231d7",
+                "statusCode": 200,
+                "providerResponseId": "resp_0c2991e7c124f6af006ab2e412b4cc87d2bf853b995b226a37"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.001676",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CNT4B93WNX1ZG5QG15V9G"
+    }
+  },
+  "response": {
+    "id": "aitxt-hlZ4dFBItpvcjtrAZV7uPkUI",
+    "modelId": "openai/gpt-6-sol",
+    "timestamp": "2026-09-22T20:24:52.680Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

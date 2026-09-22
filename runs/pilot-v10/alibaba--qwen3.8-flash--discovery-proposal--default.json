@@ -1,0 +1,86 @@
+{
+  "id": "alibaba--qwen3.8-flash--discovery-proposal--default",
+  "model": "alibaba/qwen3.8-flash",
+  "protocolHash": "b0e357508ee8b7836580dbc58d4c79b020290950949876ba9ae5c0065353df85",
+  "status": "ok",
+  "at": "2026-09-22T12:08:15.326Z",
+  "elapsedMs": 11048,
+  "text": "# Discovery Engagement Proposal\n\n**Prepared for:** Client Sponsor\n**Engagement type:** Discovery (non-implementation)\n\n---\n\n## What You Get\n\nA focused four-week discovery that produces three deliverables:\n\n1. A current-state process map\n2. A prioritized backlog\n3. An implementation recommendation\n\nThese artifacts give you the evidence base to make informed decisions before committing to any build.\n\n## Commercial Offer\n\n| Item | Detail |\n|------|--------|\n| Effort | 80 hours |\n| Rate | $200/hour |\n| Total fee | $16,000 |\n| Payment | 50% at kickoff, 50% on delivery |\n| Duration | Four weeks |\n\n## What Is Not Included\n\nThis engagement covers discovery only. Implementation, integrations, production support, and guaranteed savings are explicitly excluded.\n\n## What We Need From You\n\nClient-side interview access and source documents. A named point of contact is required to begin scheduling.\n\n## How to Proceed\n\n1. **Sign** this proposal (or reply confirming approval via email).\n2. **Name** your primary contact and interview participants.\n3. **Kick off** — a start date is agreed only after signature and contact confirmation.\n4. **Accept** — sponsor confirms delivery of the three listed artifacts.\n\n---\n\nThe engagement is deliberately narrow in scope and bounded in cost, designed to de-risk a larger investment by separating discovery from delivery.\n\n**To approve, reply with your named contact and preferred start date.**",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 251,
+    "inputTokenDetails": {
+      "noCacheTokens": 251,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 422,
+    "outputTokenDetails": {
+      "textTokens": 328,
+      "reasoningTokens": 94
+    },
+    "totalTokens": 673
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-flash",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-flash",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790078887190,
+                "endTime": 1790078895358,
+                "providerRequestId": "04f0b94d-04a0-94c1-a966-7d6baa33ebd5",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-04f0b94d-04a0-94c1-a966-7d6baa33ebd5"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00023599",
+      "marketCost": "0.00023599",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00023599",
+      "inferenceCost": "0.00023599",
+      "inputInferenceCost": "0.00003765",
+      "outputInferenceCost": "0.00019834",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34G8968KJCBKQ75QX8RXY9J"
+    }
+  },
+  "response": {
+    "id": "aitxt-sG9vx5H36nM1Ip3aAvqEuNSX",
+    "modelId": "alibaba/qwen3.8-flash",
+    "timestamp": "2026-09-22T12:08:15.326Z"
+  },
+  "billing": {
+    "totalCost": 0.00023599,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00023599",
+    "surchargeCost": "0"
+  },
+  "inputHash": "e91baa3bf817b876dc655c999d290113d01f35895d714fa4f25b590206e2c0be",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "importedFrom": "pilot-v8/alibaba--qwen3.8-flash--discovery-proposal--default.json",
+  "originalProtocolHash": "65173d8bbb8a211255a1deebece1501ca7ca123c4368bae281b75e92511789a5"
+}

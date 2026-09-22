@@ -1,0 +1,115 @@
+{
+  "id": "anthropic--claude-opus-5.5--change-order--default",
+  "model": "anthropic/claude-opus-5.5",
+  "protocolHash": "f510de81bb6764efdadceed2d4ba3e0e1c9443c53e6703db1ceffc6c3cb9e9ed",
+  "status": "ok",
+  "at": "2026-09-22T19:16:48.260Z",
+  "elapsedMs": 7509,
+  "text": "# Change-Order Proposal: CRM Connector\n\n**To:** Client Sponsor\n**Purpose:** Request a written approve or decline decision on added scope\n\n## 1. Background\n\nThe existing signed scope covers the reporting dashboard. You have requested an additional CRM connector. This work is not part of the original scope or fee.\n\n## 2. Requested Work\n\n- Build an additional CRM connector.\n- This work will be handled as a change to the signed scope.\n\n## 3. Price\n\n| Item | Detail |\n|---|---|\n| Estimated effort | 40 hours |\n| Rate | $175/hour |\n| **Proposed fixed change fee** | **$7,000** |\n\nThe $7,000 fee is added to the original fee. It does not replace or reduce it.\n\n## 4. Schedule Effect\n\n- The connector adds an estimated **two weeks**.\n- The two weeks start only after **both** of these:\n  1. We receive your written approval.\n  2. We receive sandbox credentials from you.\n- This is an estimate, not an approved calendar date. A delay in either item will move the start of connector work.\n\n## 5. Client Dependency\n\nYou must provide **sandbox credentials** for the CRM. Connector work cannot proceed without them.\n\n## 6. Authorization\n\nConnector work will not begin until you approve in writing. If you decline, the project continues under the existing signed scope for the reporting dashboard.\n\n## 7. Sponsor Decision\n\nPlease mark one option and sign:\n\n☐ **Approve.** I authorize the CRM connector at a fixed change fee of $7,000. I understand the estimated two-week schedule addition begins after written approval and receipt of sandbox credentials.\n\n☐ **Decline.** Proceed under the existing signed scope only.\n\n**Sponsor name:** ______________________\n\n**Signature:** ______________________\n\n**Date:** ______________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 309,
+    "inputTokenDetails": {
+      "noCacheTokens": 309,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 665,
+    "outputTokenDetails": {
+      "textTokens": 603,
+      "reasoningTokens": 62
+    },
+    "totalTokens": 974
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 309,
+        "output_tokens": 665,
+        "output_tokens_details": {
+          "thinking_tokens": 62
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "claudeaws",
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, claudeaws, vertexAnthropic, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system). ZDR execution order: anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790104601165,
+                "endTime": 1790104608223,
+                "providerRequestId": "req_011CfK1okKCpNQBtNrUaJVZQ",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfK1okhnEoWVTNgw4CiPD"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.014536",
+      "marketCost": "0.014536",
+      "surchargeCost": "0",
+      "gatewayCost": "0.014536",
+      "inferenceCost": "0.014536",
+      "inputInferenceCost": "0.001236",
+      "outputInferenceCost": "0.0133",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M358S0AM71FDSDX06BDK580E"
+    }
+  },
+  "response": {
+    "id": "aitxt-PfPeOGc5SDqGZJToLaTH2xa8",
+    "modelId": "anthropic/claude-opus-5.5",
+    "timestamp": "2026-09-22T19:16:48.259Z"
+  },
+  "billing": {
+    "totalCost": 0.014536,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.014536",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

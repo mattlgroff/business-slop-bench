@@ -1,0 +1,84 @@
+{
+  "id": "openai--gpt-6-luna--vendor-decision-memo--default",
+  "model": "openai/gpt-6-luna",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:25:44.736Z",
+  "elapsedMs": 3715,
+  "text": "**Decision Memo: Year-One Vendor Selection**\n\n**To:** CFO  \n**Subject:** Alpha vs. Beta\n\n**Recommendation:** Approve Alpha for year one, subject to CFO approval before signing.\n\n| Vendor | Year-one cost | Mandatory SSO | Assessment |\n|---|---:|---|---|\n| Alpha | $92,000 | Available | Meets stated constraints |\n| Beta | $70,000 | Unavailable; no committed delivery date | Does not meet production constraint |\n\nThe year-one budget ceiling is $100,000, including setup. Alpha’s $72,000 subscription plus $20,000 setup totals $92,000, leaving $8,000 under the ceiling. Its required SSO is available.\n\nBeta costs less, at $60,000 for the subscription plus $10,000 setup, totaling $70,000. However, SSO is mandatory before production, and Beta does not provide it or have a committed delivery date. It therefore cannot be selected while meeting the stated production constraint.\n\n**Decision requested:** CFO approval to proceed with Alpha. Priya owns procurement.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 180,
+    "inputTokenDetails": {
+      "noCacheTokens": 180,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 291,
+    "outputTokenDetails": {
+      "textTokens": 228,
+      "reasoningTokens": 63
+    },
+    "totalTokens": 471
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0cf8aaa7844a3f2f006ab2e4458c8887d29d902461d6379cff",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. Total execution order: openai(BYOK) → openai(system)",
+        "canonicalSlug": "openai/gpt-6-luna",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1790108741227,
+                "endTime": 1790108744718,
+                "providerRequestId": "req_a9e93915b8074bff9587f9f466f599ce",
+                "statusCode": 200,
+                "providerResponseId": "resp_0cf8aaa7844a3f2f006ab2e4458c8887d29d902461d6379cff"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0",
+      "marketCost": "0.0001635",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M35CQBJGR04PV5CHMDJ523GN"
+    }
+  },
+  "response": {
+    "id": "aitxt-pKUYLYSfsRS9FHBmnOzQon7U",
+    "modelId": "openai/gpt-6-luna",
+    "timestamp": "2026-09-22T20:25:44.735Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

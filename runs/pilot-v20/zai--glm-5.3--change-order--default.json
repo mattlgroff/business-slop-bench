@@ -1,0 +1,155 @@
+{
+  "id": "zai--glm-5.3--change-order--default",
+  "model": "zai/glm-5.3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:39:04.365Z",
+  "elapsedMs": 5338,
+  "text": "# Change-Order Proposal: CRM Connector\n\n**To:** Client Sponsor\n**Re:** Addition of CRM Connector to Reporting Dashboard Project\n\n## Requested Work\n\nYou have requested an additional CRM connector for the reporting dashboard. The existing signed scope covers the reporting dashboard only; the CRM connector is not included in the original fee. This change order covers the design, build, and integration of the requested connector.\n\n## Price\n\n- Estimated effort: 40 hours at $175/hour\n- **Proposed fixed change fee: $7,000**\n\nThis fee is specific to the CRM connector work and is separate from the original agreed fee for the reporting dashboard.\n\n## Schedule Effect\n\nThe connector adds approximately **two weeks** to the project timeline, counted from two triggering events:\n\n1. Written approval of this change order by the sponsor\n2. Receipt of sandbox credentials from the client\n\nPlease note this two-week figure is an estimate, not an approved calendar date. A firm date can be confirmed once both approval and credentials are in hand.\n\n## Dependencies\n\nThe connector work depends on the client providing **sandbox credentials**. Work cannot begin, and the schedule clock does not start, until these credentials are received.\n\n## Approval Requirement\n\nSponsor approval in writing is required **before any connector work begins**. No work on the CRM connector will commence without your written sign-off.\n\n## Decision Requested\n\nPlease choose one:\n\n- **Approve** — sign below; we will begin once credentials are also received\n- **Decline** — the project continues per the original signed scope (reporting dashboard only) with no change to fee or schedule\n\n---\n\n**Sponsor Approval (write \"Approved\" or \"Declined\"):** ______________________\n\n**Signature:** ______________________ **Date:** ______________\n\n**Credentials Received (vendor use):** ______________ **Work Start Confirmed:** ______________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 190,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 8
+    },
+    "outputTokens": 380,
+    "outputTokenDetails": {
+      "textTokens": 380,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 570
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3",
+        "resolvedProvider": "fireworks",
+        "fallbacksAvailable": [
+          "baseten",
+          "digitalocean",
+          "runware",
+          "alibaba",
+          "blackbox",
+          "zai",
+          "streamlake",
+          "novita",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "crusoe",
+          "morph",
+          "friendli",
+          "inceptron",
+          "gmicloud",
+          "modal",
+          "inference-net",
+          "togetherai"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 0 over baseten, digitalocean. System credentials planned for: fireworks, baseten, digitalocean, runware, alibaba, blackbox, zai, streamlake, novita, deepinfra, wafer, parasail, crusoe, morph, friendli, inceptron, gmicloud, modal, inference-net, togetherai. ZDR requested: 20 attempts → 10 ZDR attempts. Pre-ZDR order: fireworks(system) → baseten(system) → digitalocean(system) → runware(system) → alibaba(system) → blackbox(system) → zai(system) → streamlake(system) → novita(system) → deepinfra(system) → wafer(system) → parasail(system) → crusoe(system) → morph(system) → friendli(system) → inceptron(system) → gmicloud(system) → modal(system) → inference-net(system) → togetherai(system). ZDR execution order: fireworks(system) → digitalocean(system) → baseten(system) → alibaba(system) → deepinfra(system) → wafer(system) → parasail(system) → morph(system) → modal(system) → togetherai(system)",
+        "canonicalSlug": "zai/glm-5.3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091539155,
+                "endTime": 1790091544374,
+                "providerRequestId": "chatcmpl-5dc33e7d1ad34a5cb79733e0febe39d4",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-5dc33e7d1ad34a5cb79733e0febe39d4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "crusoe",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inceptron",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00192888",
+      "marketCost": "0.00192888",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00192888",
+      "inferenceCost": "0.00192888",
+      "inputInferenceCost": "0.00025688",
+      "outputInferenceCost": "0.001672",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WACM89Y55Z3JGE7PP0136"
+    }
+  },
+  "response": {
+    "id": "aitxt-rBwep5uBQNT2JapF6DJz7w6a",
+    "modelId": "zai/glm-5.3",
+    "timestamp": "2026-09-22T15:39:04.365Z"
+  },
+  "billing": {
+    "totalCost": 0.00192888,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00192888",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

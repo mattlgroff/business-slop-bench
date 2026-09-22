@@ -1,0 +1,85 @@
+{
+  "protocolHash": "8cd7b632291807c472a9f2a41644db829720b53a3236bead11d66ee4608629c1",
+  "labelStatus": "Author-proposed labels, not human gold; repeated decisions are not independent cases",
+  "summary": [
+    {
+      "method": "baseline",
+      "splits": [
+        {
+          "split": "development",
+          "n": 16,
+          "matched": 14,
+          "falseAccepts": 2,
+          "unresolved": 0
+        },
+        {
+          "split": "validation",
+          "n": 32,
+          "matched": 27,
+          "falseAccepts": 2,
+          "unresolved": 3
+        },
+        {
+          "split": "observed-draft",
+          "n": 8,
+          "matched": 6,
+          "falseAccepts": 2,
+          "unresolved": 0
+        }
+      ]
+    },
+    {
+      "method": "draft-only",
+      "splits": [
+        {
+          "split": "development",
+          "n": 16,
+          "matched": 14,
+          "falseAccepts": 0,
+          "unresolved": 2
+        },
+        {
+          "split": "validation",
+          "n": 32,
+          "matched": 32,
+          "falseAccepts": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "observed-draft",
+          "n": 8,
+          "matched": 8,
+          "falseAccepts": 0,
+          "unresolved": 0
+        }
+      ]
+    },
+    {
+      "method": "explicit-choice",
+      "splits": [
+        {
+          "split": "development",
+          "n": 16,
+          "matched": 16,
+          "falseAccepts": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "validation",
+          "n": 32,
+          "matched": 31,
+          "falseAccepts": 0,
+          "unresolved": 0
+        },
+        {
+          "split": "observed-draft",
+          "n": 8,
+          "matched": 8,
+          "falseAccepts": 0,
+          "unresolved": 0
+        }
+      ]
+    }
+  ],
+  "budgetAccountedUsd": 1.9449133020000005
+}

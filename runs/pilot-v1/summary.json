@@ -1,0 +1,54 @@
+{
+  "protocolHash": "0ed33587f3b6a92b2e785b59a3bba5267075318d671ed77032fa49430d6853cc",
+  "budgetAccountedUsd": 0.12798797599999998,
+  "entries": [
+    {
+      "model": "anthropic/claude-opus-5",
+      "condition": "default",
+      "n": 1,
+      "contentReady": 0,
+      "styleGatePass": 0,
+      "editorialDefects": 0,
+      "unresolved": 3,
+      "emDashes": 3,
+      "billedUsd": null,
+      "generationMs": 7735
+    },
+    {
+      "model": "anthropic/claude-opus-5",
+      "condition": "house",
+      "n": 1,
+      "contentReady": 1,
+      "styleGatePass": 0,
+      "editorialDefects": 0,
+      "unresolved": 3,
+      "emDashes": 1,
+      "billedUsd": null,
+      "generationMs": 7430
+    },
+    {
+      "model": "alibaba/qwen3.8-flash",
+      "condition": "default",
+      "n": 1,
+      "contentReady": 1,
+      "styleGatePass": 1,
+      "editorialDefects": 0,
+      "unresolved": 9,
+      "emDashes": 0,
+      "billedUsd": null,
+      "generationMs": 20575
+    },
+    {
+      "model": "alibaba/qwen3.8-flash",
+      "condition": "house",
+      "n": 1,
+      "contentReady": 0,
+      "styleGatePass": 1,
+      "editorialDefects": 0,
+      "unresolved": 13,
+      "emDashes": 0,
+      "billedUsd": null,
+      "generationMs": 16237
+    }
+  ]
+}

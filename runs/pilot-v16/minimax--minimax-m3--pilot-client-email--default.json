@@ -1,0 +1,100 @@
+{
+  "id": "minimax--minimax-m3--pilot-client-email--default",
+  "model": "minimax/minimax-m3",
+  "protocolHash": "670de97c3d98593e807863a6944d6ffa0af2b75b35b1d5a8bbe5f8f9e3a16701",
+  "status": "ok",
+  "at": "2026-09-22T13:51:27.724Z",
+  "elapsedMs": 25137,
+  "text": "",
+  "finishReason": "length",
+  "usage": {
+    "inputTokens": 305,
+    "inputTokenDetails": {
+      "noCacheTokens": 196,
+      "cacheReadTokens": 109
+    },
+    "outputTokens": 4096,
+    "outputTokenDetails": {
+      "textTokens": 0,
+      "reasoningTokens": 4096
+    },
+    "totalTokens": 4401
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "minimax/minimax-m3",
+        "resolvedProvider": "fireworks",
+        "fallbacksAvailable": [
+          "minimax",
+          "nebius",
+          "gmicloud"
+        ],
+        "planningReasoning": "System credentials planned for: fireworks, minimax, nebius, gmicloud. ZDR requested: 4 attempts → 2 ZDR attempts. Pre-ZDR order: fireworks(system) → minimax(system) → nebius(system) → gmicloud(system). ZDR execution order: fireworks(system) → nebius(system)",
+        "canonicalSlug": "minimax/minimax-m3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "minimax/minimax-m3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790085062818,
+                "endTime": 1790085087688,
+                "providerRequestId": "chatcmpl-fc06f3048efe48c889b9b2e98e2e83bd",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-fc06f3048efe48c889b9b2e98e2e83bd"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "minimax",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00498054",
+      "marketCost": "0.00498054",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00498054",
+      "inferenceCost": "0.00498054",
+      "inputInferenceCost": "0.00006534",
+      "outputInferenceCost": "0.0049152",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34P4R3FS6D0Y10B2WYB9WGS"
+    }
+  },
+  "response": {
+    "id": "aitxt-FNVbQ3zdXlXOfVeuSpCo5Lc3",
+    "modelId": "minimax/minimax-m3",
+    "timestamp": "2026-09-22T13:51:27.722Z"
+  },
+  "billing": {
+    "totalCost": 0.00498054,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00498054",
+    "surchargeCost": "0"
+  },
+  "inputHash": "c5fd1dbf8903b30dd0099a29fd4f858211f622a4413c594b9fc7800ac9bb07b6",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

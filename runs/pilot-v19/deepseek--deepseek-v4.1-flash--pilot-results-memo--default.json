@@ -1,0 +1,139 @@
+{
+  "id": "deepseek--deepseek-v4.1-flash--pilot-results-memo--default",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T15:04:30.522Z",
+  "elapsedMs": 1896,
+  "text": "**Executive Readout: Do Not Scale the Pilot Yet**\n\n**Recommendation:** Do not scale now. The pilot shows a promising speed signal but fails the required quality threshold and cannot support a scaling decision.\n\n**What the results support**\n\n| Measure | Baseline | Pilot |\n|---|---|---|\n| Tickets | 200 | 100 |\n| Mean handling time | 15 min | 12 min |\n| Quality pass rate | 94% | 89% |\n\nThe pilot’s mean handling time was 3 minutes lower (12 vs. 15), a directional efficiency signal. However, this result is not decision-grade. Ticket mix differed and allocation was not randomized, so the difference may reflect which tickets were handled rather than a real effect.\n\nQuality is a harder stop. The pilot’s 89% pass rate is below the required scaling threshold of at least 92% and below the 94% baseline. Scaling would therefore violate the stated threshold.\n\nCosts do not compensate. No staffing reductions or cash savings have been measured, so there is no verified financial case for scaling.\n\n**What the results do not support**\n\nThey do not support scaling, a full rollout, or claims of savings. They also do not prove the pilot caused slower quality or faster handling.\n\n**Next decision**\n\nThe COO should decide whether to authorize Sam’s matched-ticket follow-up. That follow-up should test handling time and quality on comparable tickets with a valid comparison. Authorize it only if the COO wants stronger evidence before any scaling decision.\n\n**Decision rule for the follow-up**\n\nProceed toward scaling only if quality meets or exceeds 92% and handling-time gains hold on matched tickets. Otherwise, stop or redesign.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 182,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 346,
+    "outputTokenDetails": {
+      "textTokens": 346,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 528
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 225,
+      "rejectedPredictionTokens": 380
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4.1-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "runware",
+          "relace",
+          "particle",
+          "novita",
+          "togetherai",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "gmicloud",
+          "modal",
+          "morph",
+          "deepseek",
+          "boundless"
+        ],
+        "planningReasoning": "System credentials planned for: baseten, fireworks, alibaba, runware, relace, particle, novita, togetherai, deepinfra, wafer, parasail, gmicloud, modal, morph, deepseek, boundless. ZDR requested: 17 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → runware(system) → relace(system) → particle(system) → novita(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → gmicloud(system) → modal(system) → morph(system) → deepseek(system) → boundless(system). ZDR execution order: baseten(system) → fireworks(system) → alibaba(system) → particle(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → modal(system) → morph(system)",
+        "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790089468717,
+                "endTime": 1790089470507,
+                "providerRequestId": "54ca701a0c9a59b4374c7afea9bd493864d6a",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-262fbd94aa2147328b7f6918f61e3e9f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0004698",
+      "marketCost": "0.0004698",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0004698",
+      "inferenceCost": "0.0004698",
+      "inputInferenceCost": "0.0000546",
+      "outputInferenceCost": "0.0004152",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34TB6R8QM2EF0XMS3BF4G6H"
+    }
+  },
+  "response": {
+    "id": "aitxt-IGzgwzXkxoVhOQzbnoHFMmpt",
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "timestamp": "2026-09-22T15:04:30.522Z"
+  },
+  "billing": {
+    "totalCost": 0.0004698,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0004698",
+    "surchargeCost": "0"
+  },
+  "inputHash": "15a9278f13a56894b15c13e1ef5f1325fff404854807d213c1180beb3b57ceb4",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

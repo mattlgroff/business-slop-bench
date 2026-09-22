@@ -1,0 +1,120 @@
+{
+  "id": "deepseek--deepseek-v4-pro-0813--pilot-results-memo--default",
+  "model": "deepseek/deepseek-v4-pro-0813",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T15:19:57.914Z",
+  "elapsedMs": 5563,
+  "text": "**EXECUTIVE READOUT**\n\n**Subject:** Pilot scaling decision — ticket handling time vs. quality threshold\n\n**Recommendation:** Do not scale now. Authorize a matched-ticket follow-up.\n\n**What results support**\n\n| Measure | Baseline | Pilot | Required |\n|---|---:|---:|---:|\n| Tickets | 200 | 100 | — |\n| Mean handling time | 15 min | 12 min | — |\n| Quality pass rate | 94% | 89% | ≥92% |\n\nThe pilot shows a 3-minute reduction in mean handling time (15→12 minutes). However, the quality pass rate fell from 94% to 89%, missing the required ≥92% scaling threshold by 3 points.\n\n**Key limitations**\n\n- Ticket mix differed between baseline and pilot.\n- Allocation was not randomized.\n- No staffing reductions or cash savings have been measured.\n\nThese limitations mean the handling-time gain cannot yet be attributed cleanly to the intervention, and the quality decline is a blocking risk.\n\n**Next decision**\n\nThe COO should decide whether to authorize Sam to run a matched-ticket follow-up. This follow-up would control for ticket mix and allocation, allowing a valid comparison on handling time and quality before any scaling decision.\n\nIf the COO authorizes the follow-up, the next readout should require: quality ≥92%, handling-time gain sustained, and measured cost or staffing impact. If the COO does not authorize it, the pilot remains non-scalable under current evidence.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 181,
+    "inputTokenDetails": {
+      "noCacheTokens": 181,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 308,
+    "outputTokenDetails": {
+      "textTokens": 308,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 489
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4-pro-0813",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "novita",
+          "deepinfra",
+          "gmicloud",
+          "streamlake",
+          "digitalocean",
+          "parasail",
+          "deepseek"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 0 over alibaba, baseten. System credentials planned for: baseten, fireworks, alibaba, novita, deepinfra, gmicloud, streamlake, digitalocean, parasail, deepseek. ZDR requested: 11 attempts → 6 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → novita(system) → deepinfra(system) → gmicloud(system) → streamlake(system) → digitalocean(system) → parasail(system) → deepseek(system). ZDR execution order: fireworks(system) → alibaba(system) → baseten(system) → deepinfra(system) → digitalocean(system) → parasail(system)",
+        "canonicalSlug": "deepseek/deepseek-v4-pro-0813",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4-pro-0813",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790090392461,
+                "endTime": 1790090397907,
+                "providerRequestId": "chatcmpl-64dcd267325b499fb3f064f7fcdd1847",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-64dcd267325b499fb3f064f7fcdd1847"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0014586",
+      "marketCost": "0.0014586",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0014586",
+      "inferenceCost": "0.0014586",
+      "inputInferenceCost": "0.00023892",
+      "outputInferenceCost": "0.00121968",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34V7CTK2CCHMABBTMRQ2TYR"
+    }
+  },
+  "response": {
+    "id": "aitxt-MF3yZt531LJtfXgD9BuqiaoB",
+    "modelId": "deepseek/deepseek-v4-pro-0813",
+    "timestamp": "2026-09-22T15:19:57.914Z"
+  },
+  "billing": {
+    "totalCost": 0.0014586,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0014586",
+    "surchargeCost": "0"
+  },
+  "inputHash": "15a9278f13a56894b15c13e1ef5f1325fff404854807d213c1180beb3b57ceb4",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

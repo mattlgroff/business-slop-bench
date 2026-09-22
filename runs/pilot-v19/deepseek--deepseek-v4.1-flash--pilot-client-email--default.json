@@ -1,0 +1,139 @@
+{
+  "id": "deepseek--deepseek-v4.1-flash--pilot-client-email--default",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T15:04:17.468Z",
+  "elapsedMs": 5311,
+  "text": "**Subject: Pilot Approval – Next Step**\n\nHi Morgan,\n\nFollowing our discussions, I propose we move forward with a six-week pilot to assess invoice handling. The pilot has a fixed fee of $30,000, with production rollout explicitly excluded.\n\nThe pilot is designed to test whether we can reduce handling time, with a target of 20% shorter handling. To be clear, no baseline or measured savings exists yet—the pilot is intended to establish that evidence before any broader commitment.\n\nSecurity approval is required before we access client data. No start date has been approved, so timing remains open pending your decision and security clearance.\n\nI’m asking you to approve the pilot scope and fee, subject to security clearance. This approval lets us begin the security process and schedule the six weeks. Without it, the discussion remains stalled and no assessment can begin.\n\nCan you confirm your approval by return email? I’ll then initiate security clearance and propose start dates.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 191,
+    "inputTokenDetails": {
+      "noCacheTokens": 191,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 199,
+    "outputTokenDetails": {
+      "textTokens": 199,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 390
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 116,
+      "rejectedPredictionTokens": 299
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4.1-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "runware",
+          "relace",
+          "particle",
+          "novita",
+          "togetherai",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "gmicloud",
+          "modal",
+          "morph",
+          "deepseek",
+          "boundless"
+        ],
+        "planningReasoning": "System credentials planned for: baseten, fireworks, alibaba, runware, relace, particle, novita, togetherai, deepinfra, wafer, parasail, gmicloud, modal, morph, deepseek, boundless. ZDR requested: 17 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → runware(system) → relace(system) → particle(system) → novita(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → gmicloud(system) → modal(system) → morph(system) → deepseek(system) → boundless(system). ZDR execution order: baseten(system) → fireworks(system) → alibaba(system) → particle(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → modal(system) → morph(system)",
+        "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790089455287,
+                "endTime": 1790089457429,
+                "providerRequestId": "54ca701a0c9a566fe72f2861f8fb879bfefde",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-b53f8182b5224bf8b6443e4ac74ebdc8"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0002961",
+      "marketCost": "0.0002961",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0002961",
+      "inferenceCost": "0.0002961",
+      "inputInferenceCost": "0.0000573",
+      "outputInferenceCost": "0.0002388",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34TASFCWKGC0AD2XZRDF0WM"
+    }
+  },
+  "response": {
+    "id": "aitxt-buHHUWJe1lfbGy4YArY7AyPJ",
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "timestamp": "2026-09-22T15:04:17.467Z"
+  },
+  "billing": {
+    "totalCost": 0.0002961,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0002961",
+    "surchargeCost": "0"
+  },
+  "inputHash": "8f7bdc840b3282cc15ee87854a238c077d895c1ec78a9ce1519ff5abb72b0e3e",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

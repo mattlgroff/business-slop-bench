@@ -1,0 +1,155 @@
+{
+  "id": "zai--glm-5.3--handoff-slides--default",
+  "model": "zai/glm-5.3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:39:31.631Z",
+  "elapsedMs": 9263,
+  "text": "# Slide 1: Readiness Verdict — Not Yet Ready\n\n- **Status:** The service is NOT ready for operational handoff.\n- **Criteria met:** Runbook is approved. ✅\n- **Criteria not met:** Rollback rehearsal has not happened. ❌\n- **Ownership boundary:** Engineering lead Lee owns defect fixes until acceptance; Operations lead Jo owns incidents only after acceptance.\n- **Consequence of proceeding now:** Acceptance criteria would be unmet, so the handoff boundary between Lee and Jo cannot take effect.\n\n# Slide 2: The Blocking Gap\n\n- **Acceptance requires two things:** an approved runbook AND a successful rollback rehearsal.\n- **One of two criteria is complete:** the runbook is approved.\n- **The blocker:** the rollback rehearsal has not occurred.\n- **Root cause:** no role has accepted responsibility for organizing the rehearsal.\n- **Risk:** without an owner, the rehearsal cannot be scheduled or completed, leaving the second acceptance criterion permanently open.\n\n# Slide 3: Actions Required to Reach Readiness\n\n| # | Action | Owner / Actor |\n|---|--------|---------------|\n| 1 | Assign responsibility for organizing the rollback rehearsal | Sponsor Pat |\n| 2 | Organize and conduct the rehearsal; confirm it is successful | Assigned role (per Pat's assignment) |\n| 3 | Verify both acceptance criteria are met: approved runbook + successful rehearsal | Sponsor Pat |\n| 4 | Approve acceptance once criteria are met | Sponsor Pat |\n| 5 | Complete handoff: Lee's defect-fix ownership ends; Jo's incident ownership begins | Per acceptance approval |\n\n# Slide 4: Decision Requested from the Steering Committee\n\n- **Decide today:** whether to direct Sponsor Pat to assign rehearsal responsibility now.\n- **Why Pat:** Pat can assign that responsibility AND approve acceptance once criteria are met — the authority needed to close the gap.\n- **Recommended path:**\n  1. Direct Pat to assign the rehearsal organizer.\n  2. Require the rehearsal to be completed successfully.\n  3. Require Pat to confirm criteria and approve acceptance before handoff.\n- **Readiness restated:** the service becomes ready only when the rollback rehearsal succeeds and Pat approves acceptance — not before.\n- **Upon approval:** handoff takes effect, transferring incident ownership to Jo.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 177,
+    "inputTokenDetails": {
+      "noCacheTokens": 166,
+      "cacheReadTokens": 11
+    },
+    "outputTokens": 476,
+    "outputTokenDetails": {
+      "textTokens": 476,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 653
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "zai/glm-5.3",
+        "resolvedProvider": "fireworks",
+        "fallbacksAvailable": [
+          "digitalocean",
+          "baseten",
+          "runware",
+          "alibaba",
+          "blackbox",
+          "zai",
+          "streamlake",
+          "novita",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "crusoe",
+          "morph",
+          "friendli",
+          "inceptron",
+          "gmicloud",
+          "modal",
+          "inference-net",
+          "togetherai"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 0 over baseten, digitalocean. System credentials planned for: fireworks, digitalocean, baseten, runware, alibaba, blackbox, zai, streamlake, novita, deepinfra, wafer, parasail, crusoe, morph, friendli, inceptron, gmicloud, modal, inference-net, togetherai. ZDR requested: 20 attempts → 10 ZDR attempts. Pre-ZDR order: fireworks(system) → digitalocean(system) → baseten(system) → runware(system) → alibaba(system) → blackbox(system) → zai(system) → streamlake(system) → novita(system) → deepinfra(system) → wafer(system) → parasail(system) → crusoe(system) → morph(system) → friendli(system) → inceptron(system) → gmicloud(system) → modal(system) → inference-net(system) → togetherai(system). ZDR execution order: fireworks(system) → digitalocean(system) → baseten(system) → alibaba(system) → deepinfra(system) → wafer(system) → parasail(system) → morph(system) → modal(system) → togetherai(system)",
+        "canonicalSlug": "zai/glm-5.3",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "zai/glm-5.3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091562475,
+                "endTime": 1790091571639,
+                "providerRequestId": "chatcmpl-8a0cbbb823c64e5cad62ed0c32193b7d",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-8a0cbbb823c64e5cad62ed0c32193b7d"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "zai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "streamlake",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "crusoe",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "friendli",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inceptron",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00232966",
+      "marketCost": "0.00232966",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00232966",
+      "inferenceCost": "0.00232966",
+      "inputInferenceCost": "0.00023526",
+      "outputInferenceCost": "0.0020944",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WB3DM1TYJH5SE6N71GBV6"
+    }
+  },
+  "response": {
+    "id": "aitxt-ZhPPFA7YDYvE6cXVA64erVmt",
+    "modelId": "zai/glm-5.3",
+    "timestamp": "2026-09-22T15:39:31.631Z"
+  },
+  "billing": {
+    "totalCost": 0.00232966,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00232966",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

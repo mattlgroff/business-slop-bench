@@ -1,0 +1,102 @@
+{
+  "id": "openai--gpt-6-astra--pilot-results-memo--default",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:53:04.754Z",
+  "elapsedMs": 5339,
+  "text": "## Executive Readout: Do Not Scale Now\n\n**Recommendation:** Do not scale the pilot now. Authorize a matched-ticket follow-up to assess whether the handling-time improvement holds for comparable tickets and quality meets the required threshold.\n\n### What the results support\n- **Observed handling time improved:** Mean handling time was 12 minutes across 100 pilot tickets versus 15 minutes across 200 baseline tickets—a 3-minute, or 20%, reduction.\n- **The pilot does not establish causation:** Ticket mix differed and allocation was not randomized, so the observed reduction cannot confidently be attributed to the pilot.\n- **Quality did not meet the scaling requirement:** The pilot’s 89% pass rate was below the required 92% threshold and 5 percentage points below baseline’s 94%.\n- **Financial benefits remain unproven:** No staffing reductions or cash savings have been measured. Lower handling time should not be presented as realized cash savings.\n\n### Next decision\n**The COO should authorize Sam to run the matched-ticket follow-up, rather than authorize scaling.** Use that follow-up to assess handling time on comparable tickets and whether quality reaches at least 92%. Revisit the scaling decision with those results; the current evidence does not support scaling now.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 175,
+    "inputTokenDetails": {
+      "noCacheTokens": 175,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 255,
+    "outputTokenDetails": {
+      "textTokens": 255,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 430
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_02ceae0510566aa8016ab2a45b9f0881959a5d4d4098e1ec02",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai, azure. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → openai(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790092379556,
+                "endTime": 1790092384767,
+                "providerRequestId": "7bfe4185-69a6-4b13-a6eb-ccdd46b37097",
+                "statusCode": 200,
+                "providerResponseId": "resp_02ceae0510566aa8016ab2a45b9f0881959a5d4d4098e1ec02"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0145",
+      "marketCost": "0.0145",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0145",
+      "inferenceCost": "0.0145",
+      "inputInferenceCost": "0.00175",
+      "outputInferenceCost": "0.01275",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34X41AJX469QY7NK65PN506"
+    }
+  },
+  "response": {
+    "id": "aitxt-b31UACnv6BjRoEmZIbbhJLWD",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-22T15:53:04.754Z"
+  },
+  "billing": {
+    "totalCost": 0.0145,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0145",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,1906 @@
+[
+  {
+    "id": "explicit-before",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.87,
+    "match": true
+  },
+  {
+    "id": "explicit-before",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.85,
+    "match": true
+  },
+  {
+    "id": "explicit-before",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "review",
+    "probability": 0.54,
+    "match": false
+  },
+  {
+    "id": "explicit-before",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "review",
+    "probability": 0.52,
+    "match": false
+  },
+  {
+    "id": "explicit-before",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 0.65,
+      "contradicted": 0,
+      "missing": 0.35
+    },
+    "match": true
+  },
+  {
+    "id": "explicit-before",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 0.63,
+      "missing": 0.37,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "after-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.81,
+    "match": true
+  },
+  {
+    "id": "after-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.78,
+    "match": true
+  },
+  {
+    "id": "after-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "after-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "after-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 1,
+      "missing": 0,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "after-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "contradicted": 0,
+      "met": 1,
+      "missing": 0
+    },
+    "match": true
+  },
+  {
+    "id": "request-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "pass",
+    "probability": 0.59,
+    "match": false
+  },
+  {
+    "id": "request-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "pass",
+    "probability": 0.61,
+    "match": false
+  },
+  {
+    "id": "request-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.07,
+    "match": true
+  },
+  {
+    "id": "request-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.06,
+    "match": true
+  },
+  {
+    "id": "request-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "contradicted": 0,
+      "missing": 1
+    },
+    "match": true
+  },
+  {
+    "id": "request-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 1,
+      "met": 0
+    },
+    "match": true
+  },
+  {
+    "id": "planning-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.38,
+    "match": true
+  },
+  {
+    "id": "planning-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.37,
+    "match": true
+  },
+  {
+    "id": "planning-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.05,
+    "match": true
+  },
+  {
+    "id": "planning-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.05,
+    "match": true
+  },
+  {
+    "id": "planning-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "missing": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "planning-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 1,
+      "met": 0
+    },
+    "match": true
+  },
+  {
+    "id": "reversed",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.08,
+    "match": true
+  },
+  {
+    "id": "reversed",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.08,
+    "match": true
+  },
+  {
+    "id": "reversed",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.01,
+    "match": true
+  },
+  {
+    "id": "reversed",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.01,
+    "match": true
+  },
+  {
+    "id": "reversed",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 1,
+      "met": 0,
+      "missing": 0
+    },
+    "match": true
+  },
+  {
+    "id": "reversed",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "missing": 0,
+      "contradicted": 1,
+      "met": 0
+    },
+    "match": true
+  },
+  {
+    "id": "source-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.25,
+    "match": true
+  },
+  {
+    "id": "source-only",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.25,
+    "match": true
+  },
+  {
+    "id": "source-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.01,
+    "match": true
+  },
+  {
+    "id": "source-only",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.01,
+    "match": true
+  },
+  {
+    "id": "source-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "contradicted": 0.03,
+      "missing": 0.97
+    },
+    "match": true
+  },
+  {
+    "id": "source-only",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "missing": 0.98,
+      "contradicted": 0.02
+    },
+    "match": true
+  },
+  {
+    "id": "negative-until",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.84,
+    "match": true
+  },
+  {
+    "id": "negative-until",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.85,
+    "match": true
+  },
+  {
+    "id": "negative-until",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "negative-until",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "negative-until",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "met": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "negative-until",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 1,
+      "missing": 0,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "waiver",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.14,
+    "match": true
+  },
+  {
+    "id": "waiver",
+    "split": "development",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.14,
+    "match": true
+  },
+  {
+    "id": "waiver",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.02,
+    "match": true
+  },
+  {
+    "id": "waiver",
+    "split": "development",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.02,
+    "match": true
+  },
+  {
+    "id": "waiver",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 1,
+      "missing": 0,
+      "met": 0
+    },
+    "match": true
+  },
+  {
+    "id": "waiver",
+    "split": "development",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "missing": 0,
+      "contradicted": 1,
+      "met": 0
+    },
+    "match": true
+  },
+  {
+    "id": "access-request-distinction",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.39,
+    "match": true
+  },
+  {
+    "id": "access-request-distinction",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.42,
+    "match": true
+  },
+  {
+    "id": "access-request-distinction",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.05,
+    "match": true
+  },
+  {
+    "id": "access-request-distinction",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.05,
+    "match": true
+  },
+  {
+    "id": "access-request-distinction",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 1,
+      "met": 0,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "access-request-distinction",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "missing": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "nominalized-gate",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.76,
+    "match": true
+  },
+  {
+    "id": "nominalized-gate",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.79,
+    "match": true
+  },
+  {
+    "id": "nominalized-gate",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.95,
+    "match": true
+  },
+  {
+    "id": "nominalized-gate",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "nominalized-gate",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "met": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "nominalized-gate",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 0,
+      "met": 1
+    },
+    "match": true
+  },
+  {
+    "id": "no-access-pending",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.69,
+    "match": true
+  },
+  {
+    "id": "no-access-pending",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.72,
+    "match": true
+  },
+  {
+    "id": "no-access-pending",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "no-access-pending",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "no-access-pending",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "met": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "no-access-pending",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "met": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "approval-vs-submission",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.19,
+    "match": true
+  },
+  {
+    "id": "approval-vs-submission",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.17,
+    "match": true
+  },
+  {
+    "id": "approval-vs-submission",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.19,
+    "match": true
+  },
+  {
+    "id": "approval-vs-submission",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.23,
+    "match": true
+  },
+  {
+    "id": "approval-vs-submission",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "missing": 0.04,
+      "met": 0.08,
+      "contradicted": 0.88
+    },
+    "match": true
+  },
+  {
+    "id": "approval-vs-submission",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 0.92,
+      "missing": 0.03,
+      "met": 0.05
+    },
+    "match": true
+  },
+  {
+    "id": "approval-unrelated",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.32,
+    "match": true
+  },
+  {
+    "id": "approval-unrelated",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.3,
+    "match": true
+  },
+  {
+    "id": "approval-unrelated",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.09,
+    "match": true
+  },
+  {
+    "id": "approval-unrelated",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.11,
+    "match": true
+  },
+  {
+    "id": "approval-unrelated",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.99,
+      "contradicted": 0,
+      "met": 0.01
+    },
+    "match": true
+  },
+  {
+    "id": "approval-unrelated",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0.01,
+      "missing": 0.99,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "client-approval-only",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.3,
+    "match": true
+  },
+  {
+    "id": "client-approval-only",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.3,
+    "match": true
+  },
+  {
+    "id": "client-approval-only",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.14,
+    "match": true
+  },
+  {
+    "id": "client-approval-only",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.12,
+    "match": true
+  },
+  {
+    "id": "client-approval-only",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "missing": 0.44,
+      "met": 0.06,
+      "contradicted": 0.5
+    },
+    "match": true
+  },
+  {
+    "id": "client-approval-only",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.46,
+      "contradicted": 0.44,
+      "met": 0.1
+    },
+    "match": false
+  },
+  {
+    "id": "proper-noun-synonym",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.77,
+    "match": true
+  },
+  {
+    "id": "proper-noun-synonym",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.77,
+    "match": true
+  },
+  {
+    "id": "proper-noun-synonym",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.81,
+    "match": true
+  },
+  {
+    "id": "proper-noun-synonym",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.82,
+    "match": true
+  },
+  {
+    "id": "proper-noun-synonym",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0.06,
+      "contradicted": 0,
+      "met": 0.94
+    },
+    "match": true
+  },
+  {
+    "id": "proper-noun-synonym",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 0.06,
+      "met": 0.94
+    },
+    "match": true
+  },
+  {
+    "id": "hedged",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.46,
+    "match": true
+  },
+  {
+    "id": "hedged",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.46,
+    "match": true
+  },
+  {
+    "id": "hedged",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.26,
+    "match": true
+  },
+  {
+    "id": "hedged",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.3,
+    "match": true
+  },
+  {
+    "id": "hedged",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0.06,
+      "missing": 0.86,
+      "contradicted": 0.08
+    },
+    "match": true
+  },
+  {
+    "id": "hedged",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.88,
+      "met": 0.05,
+      "contradicted": 0.07
+    },
+    "match": true
+  },
+  {
+    "id": "identity-confusion",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.37,
+    "match": true
+  },
+  {
+    "id": "identity-confusion",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.34,
+    "match": true
+  },
+  {
+    "id": "identity-confusion",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.3,
+    "match": true
+  },
+  {
+    "id": "identity-confusion",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.3,
+    "match": true
+  },
+  {
+    "id": "identity-confusion",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.62,
+      "met": 0.1,
+      "contradicted": 0.28
+    },
+    "match": true
+  },
+  {
+    "id": "identity-confusion",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.6900000000000001,
+      "contradicted": 0.24,
+      "met": 0.07
+    },
+    "match": true
+  },
+  {
+    "id": "injection",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.13,
+    "match": true
+  },
+  {
+    "id": "injection",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.11,
+    "match": true
+  },
+  {
+    "id": "injection",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.02,
+    "match": true
+  },
+  {
+    "id": "injection",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.02,
+    "match": true
+  },
+  {
+    "id": "injection",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 1,
+      "missing": 0,
+      "met": 0
+    },
+    "match": true
+  },
+  {
+    "id": "injection",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 1,
+      "met": 0,
+      "missing": 0
+    },
+    "match": true
+  },
+  {
+    "id": "negation",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.23,
+    "match": true
+  },
+  {
+    "id": "negation",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.26,
+    "match": true
+  },
+  {
+    "id": "negation",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.01,
+    "match": true
+  },
+  {
+    "id": "negation",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.01,
+    "match": true
+  },
+  {
+    "id": "negation",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "met": 0,
+      "missing": 0,
+      "contradicted": 1
+    },
+    "match": true
+  },
+  {
+    "id": "negation",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 1,
+      "met": 0,
+      "missing": 0
+    },
+    "match": true
+  },
+  {
+    "id": "no-exact-phrase",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.61,
+    "match": true
+  },
+  {
+    "id": "no-exact-phrase",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.62,
+    "match": true
+  },
+  {
+    "id": "no-exact-phrase",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.96,
+    "match": true
+  },
+  {
+    "id": "no-exact-phrase",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.96,
+    "match": true
+  },
+  {
+    "id": "no-exact-phrase",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 1,
+      "missing": 0,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "no-exact-phrase",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "met": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "split-sentences",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "review",
+    "probability": 0.51,
+    "match": false
+  },
+  {
+    "id": "split-sentences",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "review",
+    "probability": 0.51,
+    "match": false
+  },
+  {
+    "id": "split-sentences",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "split-sentences",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.94,
+    "match": true
+  },
+  {
+    "id": "split-sentences",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 1,
+      "missing": 0,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "split-sentences",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "contradicted": 0,
+      "met": 1
+    },
+    "match": true
+  },
+  {
+    "id": "generic-security",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "pass",
+    "probability": 0.61,
+    "match": false
+  },
+  {
+    "id": "generic-security",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "pass",
+    "probability": 0.6,
+    "match": false
+  },
+  {
+    "id": "generic-security",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.02,
+    "match": true
+  },
+  {
+    "id": "generic-security",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.03,
+    "match": true
+  },
+  {
+    "id": "generic-security",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "missing": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "generic-security",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "met": 0,
+      "missing": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "contradiction-with-correct-sentence",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.11,
+    "match": true
+  },
+  {
+    "id": "contradiction-with-correct-sentence",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.11,
+    "match": true
+  },
+  {
+    "id": "contradiction-with-correct-sentence",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.03,
+    "match": true
+  },
+  {
+    "id": "contradiction-with-correct-sentence",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.03,
+    "match": true
+  },
+  {
+    "id": "contradiction-with-correct-sentence",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "contradicted": 1,
+      "met": 0,
+      "missing": 0
+    },
+    "match": true
+  },
+  {
+    "id": "contradiction-with-correct-sentence",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "contradicted",
+    "observed": "contradicted",
+    "probabilities": {
+      "met": 0,
+      "contradicted": 1,
+      "missing": 0
+    },
+    "match": true
+  },
+  {
+    "id": "conditional-approval",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.61,
+    "match": true
+  },
+  {
+    "id": "conditional-approval",
+    "split": "validation",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "review",
+    "probability": 0.57,
+    "match": false
+  },
+  {
+    "id": "conditional-approval",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.9,
+    "match": true
+  },
+  {
+    "id": "conditional-approval",
+    "split": "validation",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.92,
+    "match": true
+  },
+  {
+    "id": "conditional-approval",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 0,
+      "met": 1
+    },
+    "match": true
+  },
+  {
+    "id": "conditional-approval",
+    "split": "validation",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0,
+      "met": 1,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.78,
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.81,
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.84,
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.82,
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "missing": 0.09,
+      "met": 0.91,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 0.92,
+      "missing": 0.08,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "pass",
+    "probability": 0.69,
+    "match": false
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "pass",
+    "probability": 0.68,
+    "match": false
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.21,
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "fail",
+    "observed": "fail",
+    "probability": 0.2,
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.99,
+      "contradicted": 0,
+      "met": 0.01
+    },
+    "match": true
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "missing",
+    "observed": "missing",
+    "probabilities": {
+      "missing": 0.99,
+      "met": 0.01,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--default",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.87,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--default",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.85,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--default",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.93,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--default",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.95,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--default",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 1,
+      "missing": 0,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--default",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 0,
+      "met": 1
+    },
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--house",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.82,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--house",
+    "split": "observed-draft",
+    "method": "baseline",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.82,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--house",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 0,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.74,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--house",
+    "split": "observed-draft",
+    "method": "draft-only",
+    "repeat": 1,
+    "expected": "pass",
+    "observed": "pass",
+    "probability": 0.76,
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--house",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 0,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "met": 0.89,
+      "missing": 0.11,
+      "contradicted": 0
+    },
+    "match": true
+  },
+  {
+    "id": "anthropic--claude-opus-5--house",
+    "split": "observed-draft",
+    "method": "explicit-choice",
+    "repeat": 1,
+    "expected": "met",
+    "observed": "met",
+    "probabilities": {
+      "contradicted": 0,
+      "missing": 0.13,
+      "met": 0.87
+    },
+    "match": true
+  }
+]

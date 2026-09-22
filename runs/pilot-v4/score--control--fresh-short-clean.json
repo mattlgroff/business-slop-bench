@@ -1,0 +1,68 @@
+{
+  "id": "control--fresh-short-clean",
+  "taskId": "pilot-client-email",
+  "protocolHash": "fad029a8fca4771f4f36af6a06978440b709ed5af9843c7479ef2f28f39e2bf5",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+      "severity": "critical",
+      "probability": 0.96,
+      "verdict": "pass"
+    },
+    {
+      "id": "C02",
+      "dimension": "commitments",
+      "statement": "Production rollout remains explicitly excluded.",
+      "severity": "critical",
+      "probability": 0.58,
+      "verdict": "review"
+    },
+    {
+      "id": "C03",
+      "dimension": "evidence",
+      "statement": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+      "severity": "critical",
+      "probability": 0.62,
+      "verdict": "review"
+    },
+    {
+      "id": "C04",
+      "dimension": "decision",
+      "statement": "Security approval is explicitly a prerequisite to client data access.",
+      "severity": "critical",
+      "probability": 0.58,
+      "verdict": "review"
+    },
+    {
+      "id": "C05",
+      "dimension": "commitments",
+      "statement": "The email does not claim an approved start date or unconditional start commitment.",
+      "severity": "critical",
+      "probability": 0.87,
+      "verdict": "pass"
+    },
+    {
+      "id": "C06",
+      "dimension": "decision",
+      "statement": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+      "severity": "critical",
+      "probability": 0.96,
+      "verdict": "pass"
+    }
+  ],
+  "deterministic": {
+    "words": 40,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": false,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 3
+}

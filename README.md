@@ -1,5 +1,16 @@
 # BusinessSlopBench
 
+**Status: a one-person pilot, published as is, looking for someone to turn it into a real benchmark.**
+
+This repository holds everything: the eight briefs, the anti-slop rubric, the frozen runner, every saved draft from every model, every grading decision with a quoted anchor into the draft, and the spending ledger. It is enough to reproduce or dispute any number in the tables. It is not enough to call the tables a scientific result, for the reasons in the disclaimers at the bottom of this file.
+
+I am asking for someone with the time and the standing to take the concept and do it properly: more briefs, blind grading by people who do not work for a model vendor, repeated generations, published inter-rater agreement. Business writing is where most people meet these models, and there is no benchmark that pressures the labs on it. If you build that, take whatever is useful here. The rubric is CC BY-SA; the rest is MIT.
+
+- [Current ranking, with and without the house rules, with list prices](reviews/assistant-v44/RANKING.md)
+- [Same ranking with the zero-data-retention rule switched off](reviews/assistant-v44/RANKING-ignoring-zdr.md)
+- [Cumulative grades and evidence](reviews/assistant-v44/REPORT.md)
+- [Grader improvement log](IMPROVEMENTS.md), the running record of every rubric decision and correction
+
 A small TypeScript benchmark for single-call English business writing. It targets 25 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
 ## Why a business slop bench
@@ -36,7 +47,7 @@ zsh scripts/paced-collect.sh anthropic/claude-opus-5
 npx tsx src/draft-audit.ts pilot-v23
 ```
 
-The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. Default path: `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Set `BUSINESS_SLOP_ENV_FILE` to select another file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.
+The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. The compiled-in default path points at the author's machine and is part of the frozen runner hash, so it was left in place; set `BUSINESS_SLOP_ENV_FILE` to your own dotenv file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.
 
 The historical `pilot` command attempted the full 352-output screen, cheapest output-token rates first. It and the other paid Jev commands are now disabled. It is gated on control diagnostics: no opposite definitive validation judgments and at least 75% validation coverage. Validation labels are author-proposed; the first validation set was inspected during v2 development and is not a blind human gold set. Do not bypass the gate to obtain a leaderboard. Model and task lists are in `data/`; StepFun is excluded as requested. No agents, tools, browsing, exemplars, revision, or best-of selection are used by the writing models.
 
@@ -102,7 +113,7 @@ The anti-slop rubric is copied from [mattlgroff/zero-defect](https://github.com/
 - [LangChain's narrow Jev judge experiment](https://www.langchain.com/blog/jev-agent-evals-langsmith)
 - [SlopCodeBench](https://arxiv.org/abs/2603.24755), inspiration for measuring quality independently from apparent task completion. This pilot does not test iterative degradation.
 
-Local build only. No repository has been published and no remote has been configured.
+Published at [github.com/mattlgroff/business-slop-bench](https://github.com/mattlgroff/business-slop-bench). Run output under `runs/` is committed as evidence; the Gateway credit snapshot and collector logs are not.
 
 ## Transient failures
 
@@ -139,3 +150,18 @@ npm run bench -- repeat meta/muse-spark-1.3 pilot-results-memo house 2
 ```
 
 `repeat` requires an exact model, task, condition and integer sample number of at least 2. It uses the same writer input with a separate saved response ID. It never imports a primary output. Replaying an already-saved sample reuses that response without another charge. Primary coverage and draft audits exclude repeat IDs; the study report accounts for them separately.
+
+## Disclaimers
+
+Read these before quoting a number.
+
+- **One generation per cell.** Each model wrote each brief once per condition. Two full-panel repeats (Astra, Luna) kept the content scores but moved the ready-without-edits counts by one or two drafts. A gap of one or two checks between models is within that variation.
+- **The grader is an AI assistant, not a person, and it could see the model names.** Grades were written by whichever coding assistant was driving the session at the time. Every verdict quotes the exact line it rests on, so it can be audited, but it has not been audited by an independent human.
+- **The rubric and the house rules were written by the same person who ran the bench.** The house condition measures compliance with one author's style rules, not writing quality in general.
+- **The briefs are synthetic and short.** Eight briefs, six or seven checks each. They test source fidelity and invented commitments in short business documents, not long-form writing, research, or anything requiring outside knowledge.
+- **Reasoning effort was set to `low` for every model** (`none` for DeepSeek). This is a cheap-configuration comparison, not a best-effort one.
+- **Prices are Gateway list rates on the day of the run.** GPT-6 Sol and GPT-6 Luna were billed nothing during launch pricing.
+- **The zero-data-retention rule is a business filter, not a quality judgment.** Models without a ZDR route on the Gateway are marked disqualified; the second ranking file shows them ranked with everyone else.
+- **Provider routing varies.** The same model can be served by different providers behind the Gateway; the saved metadata records which one answered.
+
+None of this means the drafts are wrong about what they show. Open a draft, open its grade, and check the quote. That is the whole method.

@@ -1,0 +1,86 @@
+{
+  "id": "spacexai--grok-4.7--pilot-results-memo--default",
+  "model": "spacexai/grok-4.7",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:43:50.742Z",
+  "elapsedMs": 15322,
+  "text": "**Executive readout: do not scale the pilot now**\n\n**Recommendation:** Do not scale. Authorize a decision on a matched follow-up instead of expansion.\n\n**What the results support**\n- Mean handling time was 12 minutes on 100 pilot tickets versus 15 minutes on 200 baseline tickets.\n- That time gap is not a reliable scale signal. Ticket mix differed, and allocation was not randomized.\n- Quality pass rate was 89% in the pilot versus 94% at baseline. The required scaling threshold is at least 92%. The pilot misses it.\n- No staffing reductions or cash savings have been measured, so cost benefit is unsupported.\n\n**What the results do not support**\n- They do not support scaling now on speed, quality, or savings.\n- They do not show that the shorter handling time would hold on a comparable ticket mix.\n\n**Next decision**\nThe COO should decide whether to authorize Sam to run a matched-ticket follow-up. Scaling should wait until that comparison exists and quality meets the 92% threshold, with savings still unproven until measured.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 1418,
+    "inputTokenDetails": {
+      "noCacheTokens": 266,
+      "cacheReadTokens": 1152
+    },
+    "outputTokens": 410,
+    "outputTokenDetails": {
+      "textTokens": 222,
+      "reasoningTokens": 188
+    },
+    "totalTokens": 1828
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "xai": {
+      "costInUsdTicks": 21408000,
+      "serviceTier": "default"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "spacexai/grok-4.7",
+        "resolvedProvider": "xai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: xai. ZDR requested: all 1 attempts support ZDR. Execution order: xai(system)",
+        "canonicalSlug": "xai/grok-4.7",
+        "finalProvider": "xai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "xai/grok-4.7",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "xai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091824118,
+                "endTime": 1790091830738,
+                "providerRequestId": "eee2c435-3148-973b-b484-9ffc5ec7ed56",
+                "statusCode": 200,
+                "providerResponseId": "eee2c435-3148-973b-b484-9ffc5ec7ed56"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.0021408",
+      "marketCost": "0.0021408",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0021408",
+      "inferenceCost": "0.0021408",
+      "inputInferenceCost": "0.0006648",
+      "outputInferenceCost": "0.001476",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34WK210KB2A0K48DXNXF4J7"
+    }
+  },
+  "response": {
+    "id": "aitxt-uNM1jPm5oPbc9MW8xgLX3ZQA",
+    "modelId": "spacexai/grok-4.7",
+    "timestamp": "2026-09-22T15:43:50.742Z"
+  },
+  "billing": {
+    "totalCost": 0.0021408,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0021408",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

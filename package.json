@@ -1,14 +1,20 @@
 {
-  "name": "businessslopbench",
+  "name": "business-slop-bench",
   "version": "0.1.0",
-  "description": "Single-call business writing benchmark with Zero Defect criteria and Jev evaluation",
+  "description": "Single-call business writing benchmark: eight briefs, an anti-slop rubric, frozen runner, every draft and grade kept as evidence",
   "scripts": {
     "check": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "bench": "tsx src/cli.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "benchmark",
+    "llm",
+    "business-writing",
+    "slop",
+    "ai-gateway"
+  ],
+  "author": "Matthew Groff",
   "dependencies": {
     "ai": "7.0.109"
   },
@@ -18,5 +24,10 @@
     "typescript": "7.0.2"
   },
   "private": true,
-  "type": "module"
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattlgroff/business-slop-bench"
+  }
 }

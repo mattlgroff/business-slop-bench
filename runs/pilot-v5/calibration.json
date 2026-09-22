@@ -1,0 +1,10 @@
+{
+  "protocolHash": "c39b3372556a1610dbca07fadd316c248d4c1ac7d121012c7f0095bf6c0f41c7",
+  "thresholds": {
+    "pass": 0.585,
+    "fail": 0.48499999999999993
+  },
+  "inheritedFrom": "pilot-v4",
+  "gatePass": false,
+  "reason": "Regrading study only; full v5 calibration not yet performed"
+}

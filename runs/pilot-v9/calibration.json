@@ -1,0 +1,10 @@
+{
+  "protocolHash": "7f5944259517b03fe7014db7ef316508a1fe6814e4679a92d6c890ffe6179a27",
+  "thresholds": {
+    "pass": 0.585,
+    "fail": 0.48499999999999993
+  },
+  "inheritedFrom": "pilot-v4",
+  "gatePass": false,
+  "reason": "Diagnostic grading of collected drafts; broader calibration pending"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "moonshotai--kimi-k3--change-order--default",
+  "model": "moonshotai/kimi-k3",
+  "protocolHash": "797031d2c0358e1d7204bfbc2d8a900b60fb892f18fa4418f0fb28feb90fce00",
+  "status": "ok",
+  "at": "2026-09-22T15:31:52.837Z",
+  "elapsedMs": 10070,
+  "text": "# Change-Order Proposal — CRM Connector\n\n**To:** Client Sponsor\n**Re:** Proposed addition to signed scope\n\n## Requested Work\n\nThe existing signed scope is the reporting dashboard. The client has requested an additional CRM connector. This connector is not included in the original fee and constitutes a change to the signed scope.\n\n## Price\n\n- Estimated effort: 40 hours at $175/hour\n- Proposed fixed change fee: **$7,000**\n\n## Schedule Effect\n\nThe connector adds **two weeks** to the schedule, measured from the later of (a) written approval of this change order and (b) receipt of sandbox credentials. This is an estimate, not an approved calendar date.\n\n## Dependency\n\nThe client must provide sandbox credentials before connector work can proceed. Delays in credential delivery will shift the estimated timeline accordingly.\n\n## Approval Required\n\nThe sponsor must approve this change order **in writing** before connector work begins. No connector work will start without written approval.\n\n## Decision Requested\n\nPlease approve or decline:\n\n- ☐ **Approve** — authorize the CRM connector at the fixed change fee of $7,000, with a two-week schedule addition following approval and credential receipt.\n- ☐ **Decline** — scope remains the reporting dashboard as originally signed.\n\nSponsor signature: ____________________  Date: __________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 264,
+    "inputTokenDetails": {
+      "noCacheTokens": 232,
+      "cacheReadTokens": 32
+    },
+    "outputTokens": 294,
+    "outputTokenDetails": {
+      "textTokens": 285,
+      "reasoningTokens": 9
+    },
+    "totalTokens": 558
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "baseten": {
+      "acceptedPredictionTokens": 177,
+      "rejectedPredictionTokens": 57
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "bedrock",
+          "alibaba",
+          "runware",
+          "fireworks",
+          "digitalocean",
+          "blackbox",
+          "modal",
+          "deepinfra",
+          "parasail",
+          "moonshotai",
+          "togetherai",
+          "wafer",
+          "nebius",
+          "morph",
+          "inference-net",
+          "boundless"
+        ],
+        "planningReasoning": "Weighted tie pick: fireworks won tier 2 over alibaba, runware. BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference baseten. System credentials planned for: baseten, bedrock, alibaba, runware, fireworks, digitalocean, blackbox, modal, deepinfra, parasail, moonshotai, togetherai, wafer, nebius, morph, inference-net, boundless. ZDR requested: 18 attempts → 13 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → baseten(system) → bedrock(system) → alibaba(system) → runware(system) → fireworks(system) → digitalocean(system) → blackbox(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system) → inference-net(system) → boundless(system). ZDR execution order: baseten(system) → bedrock(system) → fireworks(system) → alibaba(system) → digitalocean(system) → modal(system) → deepinfra(system) → parasail(system) → moonshotai(system) → togetherai(system) → wafer(system) → nebius(system) → morph(system)",
+        "canonicalSlug": "moonshotai/kimi-k3",
+        "finalProvider": "baseten",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790091102875,
+                "endTime": 1790091112841,
+                "providerRequestId": "54ca701a0c9be8ac6782e9cbc3a992488eec5",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-3eb0796373994b84ae5a5556c57b7199",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "blackbox",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "inference-net",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.0051156",
+      "marketCost": "0.0051156",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0051156",
+      "inferenceCost": "0.0051156",
+      "inputInferenceCost": "0.0007056",
+      "outputInferenceCost": "0.00441",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34VX2K5NGPHRJ0PDM5XW17Y"
+    }
+  },
+  "response": {
+    "id": "aitxt-DSDZRqbqc3lr4maugj0coM5x",
+    "modelId": "moonshotai/kimi-k3",
+    "timestamp": "2026-09-22T15:31:52.837Z"
+  },
+  "billing": {
+    "totalCost": 0.0051156,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0051156",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

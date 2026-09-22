@@ -1,0 +1,124 @@
+{
+  "id": "anthropic--claude-fable-5--vendor-decision-memo--default",
+  "model": "anthropic/claude-fable-5",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T16:44:31.969Z",
+  "elapsedMs": 9684,
+  "text": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO\n**From:** Priya, Procurement Owner\n**Re:** Vendor recommendation — Alpha vs. Beta\n\n## Recommendation\n\n**Select Vendor Alpha.** Request CFO approval to proceed to signature.\n\n## Cost Comparison (Year One)\n\n| Item | Alpha | Beta |\n|---|---|---|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| **Total year one** | **$92,000** | **$70,000** |\n| Budget ceiling | $100,000 | $100,000 |\n| Within budget? | Yes ($8,000 headroom) | Yes ($30,000 headroom) |\n\n## Constraint Evaluation\n\n**Budget:** Both vendors fit under the $100,000 year-one ceiling, including setup.\n\n**SSO (mandatory before production):**\n- **Alpha:** Required SSO is available. **Pass.**\n- **Beta:** Required SSO is unavailable with no committed delivery date. **Fail.**\n\n**Other requirements:** Both vendors meet all other stated requirements.\n\n## Analysis\n\nBeta is $22,000 cheaper in year one, but the savings are moot: SSO is a hard gate for production, and Beta cannot provide it or commit to a delivery date. Selecting Beta would mean paying $70,000 for a solution we cannot deploy to production on any known timeline — an unacceptable risk with no mitigation available in the record.\n\nAlpha satisfies every stated constraint today, comes in $8,000 under the ceiling, and carries no deployment blocker.\n\n## Decision Requested\n\nApprove Vendor Alpha at $92,000 total year-one cost ($72,000 subscription + $20,000 setup). Upon CFO approval, procurement (Priya) will proceed with contract signature.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 304,
+    "inputTokenDetails": {
+      "noCacheTokens": 304,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 642,
+    "outputTokenDetails": {
+      "textTokens": 642,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 946
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 304,
+        "output_tokens": 642,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790095462507,
+                "endTime": 1790095462891,
+                "providerRequestId": "aa60c8ee-3821-48e2-805e-a9bdbd2be3f3",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790095462915,
+                "endTime": 1790095471949,
+                "providerRequestId": "req_011CfJpC89q84ny2bHBRWr3a",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJpC8gq2p6T1rN7YMUww",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.03514",
+      "marketCost": "0.03514",
+      "surchargeCost": "0",
+      "gatewayCost": "0.03514",
+      "inferenceCost": "0.03514",
+      "inputInferenceCost": "0.00304",
+      "outputInferenceCost": "0.0321",
+      "generationId": "gen_01M350241DVADW7A7T8CYJNY1X"
+    }
+  },
+  "response": {
+    "id": "aitxt-b5HUAXB74jAOqc5BtHiwh7fv",
+    "modelId": "anthropic/claude-fable-5",
+    "timestamp": "2026-09-22T16:44:31.967Z"
+  },
+  "billing": {
+    "totalCost": 0.03514,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.03514",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

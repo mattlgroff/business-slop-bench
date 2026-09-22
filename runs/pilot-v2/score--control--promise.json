@@ -1,0 +1,36 @@
+{
+  "id": "control--promise",
+  "taskId": "pilot-client-email",
+  "protocolHash": "7e6e252bccc030e33e670edb04cc9d190adaccfb9ed3a847d652b6c419bd39fc",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "numbers",
+      "statement": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+      "severity": "critical",
+      "probability": 0.83,
+      "verdict": "pass"
+    },
+    {
+      "id": "C03",
+      "dimension": "evidence",
+      "statement": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+      "severity": "critical",
+      "probability": 0.19,
+      "verdict": "fail"
+    }
+  ],
+  "deterministic": {
+    "words": 36,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": true,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 0
+}

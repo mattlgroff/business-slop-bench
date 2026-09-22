@@ -1,0 +1,3038 @@
+[
+  {
+    "id": "category-1-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_1",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Our robust, transformative solution unlocks seamless synergies across the ever-evolving operational landscape.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.99,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-1-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_1",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Our robust, transformative solution unlocks seamless synergies across the ever-evolving operational landscape.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.99,
+      "unclear": 0,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-1-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_1",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.99,
+      "defect": 0.01
+    }
+  },
+  {
+    "id": "category-1-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_1",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-2-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_2",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "It is important to note that, when it comes to the pilot, managers need the results.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0,
+      "defect": 1
+    }
+  },
+  {
+    "id": "category-2-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_2",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "It is important to note that, when it comes to the pilot, managers need the results.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 1,
+      "clean": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-2-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_2",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.88,
+      "defect": 0,
+      "unclear": 0.12
+    }
+  },
+  {
+    "id": "category-2-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_2",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "unclear": 0.17,
+      "clean": 0.83
+    }
+  },
+  {
+    "id": "category-3-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_3",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The fee is $30,000. Moreover, the pilot takes six weeks. Furthermore, Morgan is the sponsor. Additionally, a decision is needed. Ultimately, please approve.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.99,
+      "unclear": 0,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-3-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_3",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The fee is $30,000. Moreover, the pilot takes six weeks. Furthermore, Morgan is the sponsor. Additionally, a decision is needed. Ultimately, please approve.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 1,
+      "unclear": 0,
+      "clean": 0
+    }
+  },
+  {
+    "id": "category-3-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_3",
+    "expected": "pass",
+    "baseline": "fail",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P1",
+      "text": "Handling time fell. However, quality fell below the required threshold, so expansion should wait.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.38,
+      "unclear": 0,
+      "clean": 0.62
+    }
+  },
+  {
+    "id": "category-3-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_3",
+    "expected": "pass",
+    "baseline": "fail",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P1",
+      "text": "Handling time fell. However, quality fell below the required threshold, so expansion should wait.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.42,
+      "clean": 0.57,
+      "unclear": 0.01
+    }
+  },
+  {
+    "id": "category-4-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_4",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "This pilot marks a pivotal milestone in the evolution of modern business.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.01,
+      "defect": 0.99
+    }
+  },
+  {
+    "id": "category-4-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_4",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "This pilot marks a pivotal milestone in the evolution of modern business.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.01,
+      "defect": 0.99
+    }
+  },
+  {
+    "id": "category-4-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_4",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-4-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_4",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-5-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_5",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Our unparalleled, world-class process sets the industry standard for excellence.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.01,
+      "unclear": 0,
+      "defect": 0.99
+    }
+  },
+  {
+    "id": "category-5-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_5",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Our unparalleled, world-class process sets the industry standard for excellence.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.01,
+      "defect": 0.99,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-5-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_5",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "category-5-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_5",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-6-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_6",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Industry experts agree that this is the future of operations.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.98,
+      "clean": 0.02,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-6-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_6",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Industry experts agree that this is the future of operations.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.98,
+      "clean": 0.02,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-6-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_6",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.99,
+      "defect": 0.01
+    }
+  },
+  {
+    "id": "category-6-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_6",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.01,
+      "clean": 0.99,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-7-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_7",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "We completed five interviews, demonstrating our unwavering commitment to visionary leadership.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 1,
+      "clean": 0
+    }
+  },
+  {
+    "id": "category-7-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_7",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "We completed five interviews, demonstrating our unwavering commitment to visionary leadership.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 1,
+      "clean": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-7-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_7",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "category-7-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_7",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-8-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_8",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Finance is associated with matters related to the approval process in connection with the fee.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.99,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-8-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_8",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Finance is associated with matters related to the approval process in connection with the fee.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.99,
+      "unclear": 0,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-8-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_8",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-8-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_8",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-9-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_9",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The pilot makes operations smarter, faster, and more strategic.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0.01,
+      "clean": 0.1,
+      "defect": 0.89
+    }
+  },
+  {
+    "id": "category-9-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_9",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The pilot makes operations smarter, faster, and more strategic.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0.01,
+      "clean": 0.1,
+      "defect": 0.89
+    }
+  },
+  {
+    "id": "category-9-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_9",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.02,
+      "clean": 0.98,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-9-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_9",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.02,
+      "clean": 0.98,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-10-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_10",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Please approve the pilot fee. The requested decision is approval of the pilot fee. In conclusion, we need you to approve the pilot fee.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.96,
+      "unclear": 0,
+      "clean": 0.04
+    }
+  },
+  {
+    "id": "category-10-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_10",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Please approve the pilot fee. The requested decision is approval of the pilot fee. In conclusion, we need you to approve the pilot fee.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.04,
+      "defect": 0.96
+    }
+  },
+  {
+    "id": "category-10-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_10",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-10-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_10",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-11-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_11",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Challenges remain, but continued evolution will open promising future possibilities.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.02,
+      "defect": 0.98
+    }
+  },
+  {
+    "id": "category-11-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_11",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Challenges remain, but continued evolution will open promising future possibilities.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.02,
+      "defect": 0.98
+    }
+  },
+  {
+    "id": "category-11-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_11",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-11-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_11",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "category-12-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_12",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Certainly! Here is the polished executive email you requested. I hope this helps.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.05,
+      "defect": 0.95,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-12-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_12",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Certainly! Here is the polished executive email you requested. I hope this helps.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.95,
+      "clean": 0.05,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-12-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_12",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.9400000000000001,
+      "defect": 0.06
+    }
+  },
+  {
+    "id": "category-12-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_12",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.94,
+      "defect": 0.06,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-13-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_13",
+    "expected": "fail",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.9,
+      "unclear": 0,
+      "defect": 0.1
+    }
+  },
+  {
+    "id": "category-13-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_13",
+    "expected": "fail",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.14,
+      "unclear": 0,
+      "clean": 0.86
+    }
+  },
+  {
+    "id": "category-13-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_13",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.09,
+      "unclear": 0,
+      "clean": 0.91
+    }
+  },
+  {
+    "id": "category-13-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_13",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.91,
+      "unclear": 0,
+      "defect": 0.09
+    }
+  },
+  {
+    "id": "category-14-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "**Please** **approve** **the** **pilot** **fee** **today**.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.97,
+      "clean": 0.03
+    }
+  },
+  {
+    "id": "category-14-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "**Please** **approve** **the** **pilot** **fee** **today**.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.02,
+      "defect": 0.98
+    }
+  },
+  {
+    "id": "category-14-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-14-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "unclear": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "category-15-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_15",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "# Decision Framework\n## Approval Architecture\n### Fee Approval Pillar\n#### Approval Action\nPlease approve the fee.\n## Closing Framework\n### Decision Summary\nApprove the fee.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.8,
+      "clean": 0.2,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-15-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_15",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "# Decision Framework\n## Approval Architecture\n### Fee Approval Pillar\n#### Approval Action\nPlease approve the fee.\n## Closing Framework\n### Decision Summary\nApprove the fee.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.22,
+      "unclear": 0,
+      "defect": 0.78
+    }
+  },
+  {
+    "id": "category-15-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_15",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-15-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_15",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "unclear": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "category-16-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_16",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "At this current point in time, we are presently in the ongoing process of conducting an evaluation of the available options.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0,
+      "defect": 1
+    }
+  },
+  {
+    "id": "category-16-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_16",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "At this current point in time, we are presently in the ongoing process of conducting an evaluation of the available options.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0,
+      "defect": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-16-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_16",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.96,
+      "unclear": 0,
+      "defect": 0.04
+    }
+  },
+  {
+    "id": "category-16-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_16",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.96,
+      "defect": 0.04
+    }
+  },
+  {
+    "id": "category-17-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_17",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "This is very highly crucial and incredibly significant; it could potentially perhaps generally lead to meaningful value.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.01,
+      "defect": 0.99
+    }
+  },
+  {
+    "id": "category-17-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_17",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "This is very highly crucial and incredibly significant; it could potentially perhaps generally lead to meaningful value.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.99,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-17-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_17",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-17-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_17",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-18-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_18",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The operationalization of alignment enables the optimization of implementation readiness.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 1,
+      "clean": 0
+    }
+  },
+  {
+    "id": "category-18-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_18",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The operationalization of alignment enables the optimization of implementation readiness.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0,
+      "defect": 1
+    }
+  },
+  {
+    "id": "category-18-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_18",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-18-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_18",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-19-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_19",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "It was decided that approval would be granted and implementation would be undertaken.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0,
+      "defect": 1
+    }
+  },
+  {
+    "id": "category-19-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_19",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "It was decided that approval would be granted and implementation would be undertaken.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 1,
+      "clean": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-19-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_19",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.99,
+      "defect": 0.01
+    }
+  },
+  {
+    "id": "category-19-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_19",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.05,
+      "clean": 0.95,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-20-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_20",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "We will circle back to leverage synergies, move the needle, and align on our north star.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.99,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-20-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_20",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "We will circle back to leverage synergies, move the needle, and align on our north star.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.99,
+      "clean": 0.01
+    }
+  },
+  {
+    "id": "category-20-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_20",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-20-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_20",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-21-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_21",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "This proposal is the lighthouse guiding your organization through a sea of limitless possibilities.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 1,
+      "clean": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-21-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_21",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "This proposal is the lighthouse guiding your organization through a sea of limitless possibilities.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 1,
+      "unclear": 0,
+      "clean": 0
+    }
+  },
+  {
+    "id": "category-21-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_21",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.22,
+      "unclear": 0.02,
+      "clean": 0.76
+    }
+  },
+  {
+    "id": "category-21-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_21",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.25,
+      "unclear": 0.02,
+      "clean": 0.73
+    }
+  },
+  {
+    "id": "category-22-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_22",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The worksheet serves as a document that functions as the place where the fee is recorded.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.93,
+      "clean": 0.07,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-22-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_22",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The worksheet serves as a document that functions as the place where the fee is recorded.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.06,
+      "defect": 0.94
+    }
+  },
+  {
+    "id": "category-22-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_22",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-22-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_22",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-23-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_23",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Reviewing the draft once ensures that every factual error is eliminated.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.04,
+      "unclear": 0,
+      "defect": 0.96
+    }
+  },
+  {
+    "id": "category-23-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_23",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Reviewing the draft once ensures that every factual error is eliminated.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.96,
+      "clean": 0.04
+    }
+  },
+  {
+    "id": "category-23-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_23",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.06,
+      "unclear": 0,
+      "clean": 0.9400000000000001
+    }
+  },
+  {
+    "id": "category-23-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_23",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.04,
+      "clean": 0.96
+    }
+  },
+  {
+    "id": "category-24-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_24",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The pilot matters. It creates clarity. The fee matters. It creates focus. The deadline matters. It creates momentum. The owner matters. It creates accountability.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.04,
+      "unclear": 0,
+      "defect": 0.96
+    }
+  },
+  {
+    "id": "category-24-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_24",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The pilot matters. It creates clarity. The fee matters. It creates focus. The deadline matters. It creates momentum. The owner matters. It creates accountability.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.03,
+      "defect": 0.97
+    }
+  },
+  {
+    "id": "category-24-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_24",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0.01,
+      "clean": 0.85,
+      "defect": 0.14
+    }
+  },
+  {
+    "id": "category-24-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_24",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.14,
+      "unclear": 0.01,
+      "clean": 0.85
+    }
+  },
+  {
+    "id": "category-25-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_25",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Our complete strategy covers every possible consideration through three universal pillars: people, process, and technology.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.95,
+      "clean": 0.05,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-25-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_25",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Our complete strategy covers every possible consideration through three universal pillars: people, process, and technology.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.96,
+      "clean": 0.04,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-25-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_25",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.01,
+      "clean": 0.99,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-25-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_25",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0.01,
+      "clean": 0.98,
+      "defect": 0.01
+    }
+  },
+  {
+    "id": "category-26-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_26",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "While the initiative presents challenges, it also offers exciting opportunities.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.08,
+      "unclear": 0.01,
+      "defect": 0.91
+    }
+  },
+  {
+    "id": "category-26-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_26",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "While the initiative presents challenges, it also offers exciting opportunities.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0.01,
+      "clean": 0.07,
+      "defect": 0.92
+    }
+  },
+  {
+    "id": "category-26-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_26",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.08,
+      "unclear": 0,
+      "clean": 0.92
+    }
+  },
+  {
+    "id": "category-26-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_26",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.09,
+      "unclear": 0,
+      "clean": 0.91
+    }
+  },
+  {
+    "id": "category-27-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_27",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Remember that it is critical to understand that you must keep in mind the need for security approval.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.04,
+      "defect": 0.96
+    }
+  },
+  {
+    "id": "category-27-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_27",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Remember that it is critical to understand that you must keep in mind the need for security approval.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.02,
+      "defect": 0.98,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-27-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_27",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0.01,
+      "clean": 0.99,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-27-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_27",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.99,
+      "unclear": 0.01,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-28-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_28",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Together, we look forward to an exciting journey of continued success and meaningful impact.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.01,
+      "defect": 0.99
+    }
+  },
+  {
+    "id": "category-28-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_28",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "Together, we look forward to an exciting journey of continued success and meaningful impact.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.99,
+      "clean": 0.01,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-28-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_28",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-28-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_28",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "category-29-defect",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The kickoff memo is the spine of the transformation, carrying the shape of our operating model. One thing. Momentum. Clarity creates speed. Ambiguity creates drag.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.95,
+      "clean": 0.05,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-29-defect",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The kickoff memo is the spine of the transformation, carrying the shape of our operating model. One thing. Momentum. Clarity creates speed. Ambiguity creates drag.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.06,
+      "defect": 0.94,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-29-clean",
+    "split": "category-controls",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "category-29-clean",
+    "split": "category-controls",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "literal-blast",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "literal-blast",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "metaphor-cluster",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The deck is load-bearing, a backstop carrying the shape of alignment through every seam of the organization.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.02,
+      "defect": 0.98
+    }
+  },
+  {
+    "id": "metaphor-cluster",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The deck is load-bearing, a backstop carrying the shape of alignment through every seam of the organization.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.98,
+      "clean": 0.02,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "real-correction",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "unclear": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "real-correction",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "unclear": 0,
+      "defect": 0
+    }
+  },
+  {
+    "id": "candor-performance",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "One honest caveat. Here's the thing nobody tells you. This is where it gets interesting. That's not nothing.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.95,
+      "clean": 0.05
+    }
+  },
+  {
+    "id": "candor-performance",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "One honest caveat. Here's the thing nobody tells you. This is where it gets interesting. That's not nothing.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.96,
+      "clean": 0.04
+    }
+  },
+  {
+    "id": "literal-heavy-lift",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.01,
+      "clean": 0.99
+    }
+  },
+  {
+    "id": "literal-heavy-lift",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.02,
+      "clean": 0.98,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "preserved-qualification",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_17",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.97,
+      "defect": 0.03,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "preserved-qualification",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_17",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.98,
+      "defect": 0.02
+    }
+  },
+  {
+    "id": "generic-caveat",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_26",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "While there are risks to consider, the future remains full of opportunity.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.01,
+      "defect": 0.99,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "generic-caveat",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_26",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "While there are risks to consider, the future remains full of opportunity.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.99,
+      "clean": 0.01,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "useful-format",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "useful-format",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 1,
+      "defect": 0
+    }
+  },
+  {
+    "id": "repetitive-close",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_10",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P3",
+      "text": "To recap, please approve the pilot.",
+      "offset": 60,
+      "line": 5
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.94,
+      "unclear": 0,
+      "clean": 0.06
+    }
+  },
+  {
+    "id": "repetitive-close",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_10",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P3",
+      "text": "To recap, please approve the pilot.",
+      "offset": 60,
+      "line": 5
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.9400000000000001,
+      "unclear": 0,
+      "clean": 0.06
+    }
+  },
+  {
+    "id": "ordinary-transition",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_3",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.04,
+      "clean": 0.96,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "ordinary-transition",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_3",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.04,
+      "clean": 0.96
+    }
+  },
+  {
+    "id": "manufactured-insight",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_7",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The team sent the report on Tuesday, underscoring its dedication to reshaping the future of work.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0,
+      "defect": 1
+    }
+  },
+  {
+    "id": "manufactured-insight",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_7",
+    "expected": "fail",
+    "baseline": "fail",
+    "revised": "fail",
+    "status": "defect",
+    "evidence": {
+      "id": "P1",
+      "text": "The team sent the report on Tuesday, underscoring its dedication to reshaping the future of work.",
+      "offset": 0,
+      "line": 1
+    },
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0,
+      "defect": 1
+    }
+  },
+  {
+    "id": "concise-opening",
+    "split": "transfer",
+    "repeat": 0,
+    "category": "style_2",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "concise-opening",
+    "split": "transfer",
+    "repeat": 1,
+    "category": "style_2",
+    "expected": "pass",
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_1",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P5",
+      "text": "This pilot offers a low-risk opportunity to validate efficiency gains before committing to broader implementation. Given the fixed fee and limited scope, it aligns well with our initial risk mitigation strategy.",
+      "offset": 566,
+      "line": 13
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.14,
+      "clean": 0.86,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_1",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P5",
+      "text": "This pilot offers a low-risk opportunity to validate efficiency gains before committing to broader implementation. Given the fixed fee and limited scope, it aligns well with our initial risk mitigation strategy.",
+      "offset": 566,
+      "line": 13
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.87,
+      "defect": 0.13,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_14",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.87,
+      "unclear": 0,
+      "defect": 0.13
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_14",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P4",
+      "text": "**Proposal Summary**\n*   **Scope:** Six-week assessment of current invoice handling processes.\n*   **Fee:** $30,000 fixed fee for the pilot.\n*   **Goal:** Evaluate potential for 20% shorter handling time (note: no baseline exists yet).\n*   **Prerequisite:** Access to client data requires security approval.",
+      "offset": 257,
+      "line": 7
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.16,
+      "clean": 0.84,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_16",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "fail",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P5",
+      "text": "This pilot offers a low-risk opportunity to validate efficiency gains before committing to broader implementation. Given the fixed fee and limited scope, it aligns well with our initial risk mitigation strategy.",
+      "offset": 566,
+      "line": 13
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.46,
+      "clean": 0.54,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_16",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "fail",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P5",
+      "text": "This pilot offers a low-risk opportunity to validate efficiency gains before committing to broader implementation. Given the fixed fee and limited scope, it aligns well with our initial risk mitigation strategy.",
+      "offset": 566,
+      "line": 13
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.44,
+      "unclear": 0,
+      "clean": 0.56
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_29",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.95,
+      "defect": 0.05
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--default--style_29",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.06,
+      "unclear": 0,
+      "clean": 0.94
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_1",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_1",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_14",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "review",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.3,
+      "clean": 0.7,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_14",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "review",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.26,
+      "unclear": 0,
+      "clean": 0.74
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_16",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.18,
+      "clean": 0.82
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_16",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0.19,
+      "clean": 0.81
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_29",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "clean": 0.99,
+      "defect": 0.01
+    }
+  },
+  {
+    "id": "alibaba--qwen3.8-flash--house--style_29",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.99,
+      "defect": 0.01,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_1",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_1",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0,
+      "clean": 1,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_14",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.84,
+      "unclear": 0,
+      "defect": 0.16
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_14",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.19,
+      "unclear": 0,
+      "clean": 0.81
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_16",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P4",
+      "text": "**Why now:** You've set a target of 20% shorter handling time. Today there's no baseline and no measured savings, so any wider investment would be a judgement call rather than an evidence-based one. This pilot exists to produce that evidence — a measured baseline and a clear read on whether the 20% target is achievable — before you commit to anything larger.",
+      "offset": 310,
+      "line": 7
+    },
+    "rawStatusProbabilities": {
+      "clean": 0.77,
+      "unclear": 0,
+      "defect": 0.23
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_16",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "review",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.23,
+      "unclear": 0,
+      "clean": 0.77
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_29",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.01,
+      "clean": 0.99,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--default--style_29",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.02,
+      "clean": 0.98,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_1",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "unclear": 0,
+      "defect": 0,
+      "clean": 1
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_1",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_1",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 1,
+      "defect": 0,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_14",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.15,
+      "clean": 0.85,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_14",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_14",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.83,
+      "defect": 0.17,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_16",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P4",
+      "text": "You've told us you're aiming for a 20% reduction in handling time. We have no baseline today, so the first task is measuring current handling time. That measurement gives you a defensible number either way: if the pilot reaches the target, you'll know what the rollout is worth; if it doesn't, you'll have spent a capped amount and still gained a baseline you don't currently have.",
+      "offset": 225,
+      "line": 7
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.23,
+      "clean": 0.77,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_16",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_16",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "review",
+    "status": "clean",
+    "evidence": {
+      "id": "P4",
+      "text": "You've told us you're aiming for a 20% reduction in handling time. We have no baseline today, so the first task is measuring current handling time. That measurement gives you a defensible number either way: if the pilot reaches the target, you'll know what the rollout is worth; if it doesn't, you'll have spent a capped amount and still gained a baseline you don't currently have.",
+      "offset": 225,
+      "line": 7
+    },
+    "rawStatusProbabilities": {
+      "defect": 0.22,
+      "unclear": 0,
+      "clean": 0.78
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_29",
+    "split": "observed-draft",
+    "repeat": 0,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "defect": 0.03,
+      "clean": 0.97,
+      "unclear": 0
+    }
+  },
+  {
+    "id": "anthropic--claude-opus-5--house--style_29",
+    "split": "observed-draft",
+    "repeat": 1,
+    "category": "style_29",
+    "expected": null,
+    "baseline": "pass",
+    "revised": "pass",
+    "status": "clean",
+    "rawStatusProbabilities": {
+      "clean": 0.97,
+      "defect": 0.03,
+      "unclear": 0
+    }
+  }
+]

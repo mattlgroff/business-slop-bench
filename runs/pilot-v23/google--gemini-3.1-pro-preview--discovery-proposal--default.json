@@ -1,0 +1,149 @@
+{
+  "id": "google--gemini-3.1-pro-preview--discovery-proposal--default",
+  "model": "google/gemini-3.1-pro-preview",
+  "protocolHash": "76632855066a4dec0a3b1acf2016b9f49f4227baeb4f0f63daa71f77d3634faa",
+  "status": "ok",
+  "at": "2026-09-22T20:32:32.409Z",
+  "elapsedMs": 10366,
+  "text": "**Discovery Engagement Proposal**\n\n**Scope of Work**\nThis engagement is limited to a four-week discovery phase. At the conclusion of this phase, we will deliver the following three artifacts:\n* Current-state process map\n* Prioritized backlog\n* Implementation recommendation\n\n**Exclusions**\nPlease note that implementation, integrations, production support, and guaranteed savings are explicitly excluded from this scope.\n\n**Client Responsibilities & Acceptance**\nTo ensure a successful discovery, the client must supply interview access and necessary source documents. Engagement acceptance is achieved when the Sponsor confirms the delivery of the three listed artifacts.\n\n**Commercial Offer**\n* **Estimated Effort:** 80 hours \n* **Hourly Rate:** $200/hour\n* **Total Fee:** $16,000\n* **Payment Terms:** 50% due at project kickoff and 50% due on delivery.\n\n**How to Proceed**\nTo formally approve and initiate this discovery engagement, please:\n1. Sign this proposal.\n2. Provide a named client contact.\n\nThe project start date will be agreed upon only after the signature and the named client contact are received.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 200,
+    "inputTokenDetails": {
+      "noCacheTokens": 200,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1115,
+    "outputTokenDetails": {
+      "textTokens": 242,
+      "reasoningTokens": 873
+    },
+    "totalTokens": 1315
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 873,
+        "promptTokenCount": 200,
+        "candidatesTokenCount": 242,
+        "totalTokenCount": 1315,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 200
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 242
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 873,
+        "promptTokenCount": 200,
+        "candidatesTokenCount": 242,
+        "totalTokenCount": 1315,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 200
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 242
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-3.1-pro-preview",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-3.1-pro-preview",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-3.1-pro-preview",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790109142193,
+                "endTime": 1790109152416,
+                "statusCode": 200,
+                "providerResponseId": "1uWyasTcEeXXsbwPxdbNuQw"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.01378",
+      "marketCost": "0.01378",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01378",
+      "inferenceCost": "0.01378",
+      "inputInferenceCost": "0.0004",
+      "outputInferenceCost": "0.01338",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35D3K2J996M18SPYDSV7F7D"
+    }
+  },
+  "response": {
+    "id": "aitxt-XwqS1iU7PoDN6XuvkILgh4EU",
+    "modelId": "google/gemini-3.1-pro-preview",
+    "timestamp": "2026-09-22T20:32:32.409Z"
+  },
+  "billing": {
+    "totalCost": 0.01378,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01378",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

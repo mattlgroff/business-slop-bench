@@ -1,0 +1,36 @@
+{
+  "id": "control--fresh-invented-owner",
+  "taskId": "handoff-slides",
+  "protocolHash": "7e6e252bccc030e33e670edb04cc9d190adaccfb9ed3a847d652b6c419bd39fc",
+  "grades": [
+    {
+      "id": "C01",
+      "dimension": "decision",
+      "statement": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+      "severity": "critical",
+      "probability": 0.04,
+      "verdict": "fail"
+    },
+    {
+      "id": "C02",
+      "dimension": "accountability",
+      "statement": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+      "severity": "critical",
+      "probability": 0.06,
+      "verdict": "fail"
+    }
+  ],
+  "deterministic": {
+    "words": 29,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": []
+  },
+  "contentReady": false,
+  "contentBlocked": true,
+  "styleGatePass": true,
+  "editorialDefects": 0,
+  "unresolved": 0
+}

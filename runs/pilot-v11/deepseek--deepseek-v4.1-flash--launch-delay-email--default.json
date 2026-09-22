@@ -1,0 +1,146 @@
+{
+  "id": "deepseek--deepseek-v4.1-flash--launch-delay-email--default",
+  "model": "deepseek/deepseek-v4.1-flash",
+  "protocolHash": "d4767e5b5dcc6bea4b5cbaa7a1cfeb68a43c25f146752a46a50a4622d08f4eb2",
+  "status": "ok",
+  "at": "2026-09-22T12:37:35.628Z",
+  "elapsedMs": 1580,
+  "text": "**Subject: October 8 Launch Position and Next Action**\n\nHi Avery,\n\nI want to give you a clear update on our launch position.\n\nThe October 8 launch was tentative. The latest schedule shows the security review completing October 12 at the earliest, and release requires completed approval. No new production date is authorized yet, and the review may still require remediation.\n\nThe team has responded well. We can still hold a staging demo on October 8 using synthetic data. That gives us a useful checkpoint while the security review continues.\n\nNia owns the security review. You, Avery, choose whether to accept the staging demo.\n\n**Action needed:** Please confirm whether you accept the October 8 staging demo. Once you decide, we will align the team and keep the production path moving.\n\nWe remain confident in the team and the plan.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 182,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 175,
+    "outputTokenDetails": {
+      "textTokens": 175,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 357
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "fireworks": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "deepseek/deepseek-v4.1-flash",
+        "resolvedProvider": "baseten",
+        "fallbacksAvailable": [
+          "fireworks",
+          "alibaba",
+          "runware",
+          "relace",
+          "particle",
+          "novita",
+          "togetherai",
+          "deepinfra",
+          "wafer",
+          "parasail",
+          "gmicloud",
+          "modal",
+          "morph",
+          "deepseek",
+          "boundless"
+        ],
+        "planningReasoning": "System credentials planned for: baseten, fireworks, alibaba, runware, relace, particle, novita, togetherai, deepinfra, wafer, parasail, gmicloud, modal, morph, deepseek, boundless. ZDR requested: 17 attempts → 10 ZDR attempts. Pre-ZDR order: baseten(system) → fireworks(system) → alibaba(system) → runware(system) → relace(system) → particle(system) → novita(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → gmicloud(system) → modal(system) → morph(system) → deepseek(system) → boundless(system). ZDR execution order: baseten(system) → fireworks(system) → alibaba(system) → particle(system) → togetherai(system) → deepinfra(system) → wafer(system) → parasail(system) → modal(system) → morph(system)",
+        "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+        "finalProvider": "fireworks",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "deepseek/deepseek-v4.1-flash",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "baseten",
+                "credentialType": "system",
+                "success": false,
+                "error": "Service temporarily unavailable",
+                "startTime": 1790080654229,
+                "endTime": 1790080654347,
+                "statusCode": 503
+              },
+              {
+                "provider": "fireworks",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790080654359,
+                "endTime": 1790080655682,
+                "providerRequestId": "chatcmpl-e0bc0bd40d8a44f182a3f49c69f48923",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-e0bc0bd40d8a44f182a3f49c69f48923"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "system",
+            "provider": "runware",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "relace",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "novita",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "gmicloud",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "deepseek",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "boundless",
+            "reason": "zdr_not_supported"
+          }
+        ]
+      },
+      "cost": "0.00015554",
+      "marketCost": "0.00015554",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00015554",
+      "inferenceCost": "0.00015554",
+      "inputInferenceCost": "0.00004004",
+      "outputInferenceCost": "0.0001155",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34HY6V1FP5XHWQEPM9ATGWJ"
+    }
+  },
+  "response": {
+    "id": "aitxt-HfMDhIZWjrd0HSmrzm7v15Tv",
+    "modelId": "deepseek/deepseek-v4.1-flash",
+    "timestamp": "2026-09-22T12:37:35.627Z"
+  },
+  "billing": {
+    "totalCost": 0.00015554,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00015554",
+    "surchargeCost": "0"
+  },
+  "inputHash": "28006b71ea8af3538173726fbaf7a166d4af11fbe6f531e304eb253d515c0d29",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "none",
+    "maxOutputTokens": 4096
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-terra--change-order--default",
+  "model": "openai/gpt-5.6-terra",
+  "protocolHash": "f510de81bb6764efdadceed2d4ba3e0e1c9443c53e6703db1ceffc6c3cb9e9ed",
+  "status": "ok",
+  "at": "2026-09-22T20:18:46.478Z",
+  "elapsedMs": 9867,
+  "text": "# Change-Order Proposal: CRM Connector\n\n**To:** Client Sponsor  \n**Subject:** Approval Request for Additional CRM Connector\n\n## Requested Change\nThe existing signed scope covers the reporting dashboard. Client has requested an additional CRM connector, which is not included in the original fee.\n\nThe proposed change includes delivery of the CRM connector as an addition to the reporting dashboard scope.\n\n## Price\n| Item | Estimate | Proposed Change Fee |\n|---|---:|---:|\n| CRM connector | 40 hours at $175/hour | **$7,000 fixed fee** |\n\n## Schedule Effect\nThe CRM connector is estimated to add **two weeks** to the schedule following:\n\n1. Written approval of this change order; and  \n2. Client receipt of sandbox credentials.\n\nThis timing is an estimate and is not an approved calendar date.\n\n## Dependency\nClient must provide sandbox credentials before connector work can proceed.\n\n## Approval\nSponsor written approval is required before work on the CRM connector begins.\n\n**Decision:**  \n- [ ] Approve the CRM connector change for a fixed fee of $7,000.  \n- [ ] Decline the CRM connector change.\n\n**Sponsor Name:** __________________________  \n\n**Signature:** ______________________________  \n\n**Date:** __________________________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 182,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 252,
+    "outputTokenDetails": {
+      "textTokens": 252,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 434
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_03f2fa01d102810d016ab2e2a33d1c8193bc9a68ae7b96d7c9",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-terra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-terra",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-terra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790108323120,
+                "endTime": 1790108326479,
+                "providerRequestId": "9db9a851-84f8-4152-bd1e-789e4ebf1367",
+                "statusCode": 200,
+                "providerResponseId": "resp_03f2fa01d102810d016ab2e2a33d1c8193bc9a68ae7b96d7c9"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.003388",
+      "marketCost": "0.003388",
+      "surchargeCost": "0",
+      "gatewayCost": "0.003388",
+      "inferenceCost": "0.003388",
+      "inputInferenceCost": "0.000364",
+      "outputInferenceCost": "0.003024",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M35CAJECAS6A726W7FC2B7YF"
+    }
+  },
+  "response": {
+    "id": "aitxt-tGyadNWEHTbKMhbyAPrhhaDH",
+    "modelId": "openai/gpt-5.6-terra",
+    "timestamp": "2026-09-22T20:18:46.477Z"
+  },
+  "billing": {
+    "totalCost": 0.003388,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.003388",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

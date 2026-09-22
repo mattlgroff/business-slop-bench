@@ -1,0 +1,114 @@
+{
+  "id": "anthropic--claude-opus-4.6--launch-delay-email--default",
+  "model": "anthropic/claude-opus-4.6",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T16:29:37.967Z",
+  "elapsedMs": 7875,
+  "text": "**Client Update – Launch Timeline**\n\nHi Avery,\n\nI wanted to give you a clear picture of where we stand on the launch.\n\n**Current Position**\n\nOur security review, led by Nia, will complete October 12 at the earliest. Since release requires completed approval, the original October 8 production launch is no longer viable on that date. There is also a possibility that remediation work may follow the review, so we do not yet have an authorized new production date.\n\n**What We Can Still Deliver October 8**\n\nWe can run a full staging demo using synthetic data on the original date, giving your stakeholders a concrete look at the product.\n\n**Team Confidence**\n\nThe delay is a function of due diligence, not capability. The team is executing well, and the review process is the right gate to clear before going live.\n\n**Action Needed From You**\n\nPlease confirm whether you'd like us to proceed with the October 8 staging demo while the security review completes.\n\nHappy to jump on a call to discuss. Thanks for your continued partnership.\n\nBest,\nJordan, Engagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 204,
+    "inputTokenDetails": {
+      "noCacheTokens": 204,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 245,
+    "outputTokenDetails": {
+      "textTokens": 245,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 449
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 204,
+        "output_tokens": 245,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-4.6",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic. ZDR requested: 4 attempts → 3 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-opus-4.6",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-4.6",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790094570424,
+                "endTime": 1790094577975,
+                "providerRequestId": "req_011CfJo4LZrXrq4oyjuH3mQk",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJo4LwgUPuxGdgeW1Qxc"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.007145",
+      "marketCost": "0.007145",
+      "surchargeCost": "0",
+      "gatewayCost": "0.007145",
+      "inferenceCost": "0.007145",
+      "inputInferenceCost": "0.00102",
+      "outputInferenceCost": "0.006125",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34Z6WTCKBCT0HFHRY0VMRRQ"
+    }
+  },
+  "response": {
+    "id": "aitxt-62QaG6TjNVsNEex6w0ti7MBD",
+    "modelId": "anthropic/claude-opus-4.6",
+    "timestamp": "2026-09-22T16:29:37.966Z"
+  },
+  "billing": {
+    "totalCost": 0.007145,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.007145",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

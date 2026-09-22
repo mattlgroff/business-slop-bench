@@ -1,0 +1,124 @@
+{
+  "id": "anthropic--claude-fable-5--ai-strategy-slides--house",
+  "model": "anthropic/claude-fable-5",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:49:19.955Z",
+  "elapsedMs": 7997,
+  "text": "# Slide 1: Decision Requested\n- Approve one AI pilot for next quarter; team capacity limits us to a single pilot.\n- Budget ceiling is $50,000.\n- COO selects the pilot; Dana reports results before any expansion.\n\n# Slide 2: The Options\n- Option A: Internal knowledge search pilot, $30,000. Uses approved internal policy documents. IT owner is Dana.\n- Option B: Automated customer credit decisions, $45,000. Legal approval is pending; production use is not authorized.\n\n# Slide 3: Recommendation, Option A\n- It is fully authorized today; Option B cannot go to production until Legal approves.\n- $30,000 cost leaves $20,000 under the ceiling as contingency.\n- Clear success test: answer accuracy on 100 reviewed questions, target at least 90%. No current result exists, so the pilot produces the first measured baseline.\n- Named owner: Dana runs the pilot and reports results.\n\n# Slide 4: Next Steps\n- COO approves Option A this quarter.\n- Dana runs the pilot within the $30,000 budget and the 100-question accuracy evaluation.\n- Dana reports accuracy against the 90% target before any expansion decision.\n- Revisit Option B only after Legal approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 4859,
+    "inputTokenDetails": {
+      "noCacheTokens": 4859,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 428,
+    "outputTokenDetails": {
+      "textTokens": 428,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 5287
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 4859,
+        "output_tokens": 428,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, vertexAnthropic, bedrock. Total execution order: bedrock(BYOK) → anthropic(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-fable-5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5",
+            "success": true,
+            "providerAttemptCount": 2,
+            "providerAttempts": [
+              {
+                "provider": "bedrock",
+                "credentialType": "byok",
+                "success": false,
+                "error": "data retention mode 'default' is not available for this model",
+                "startTime": 1790099352225,
+                "endTime": 1790099352659,
+                "providerRequestId": "9203b0fd-522b-4936-a683-cd6278b8f44e",
+                "statusCode": 400,
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              },
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790099352694,
+                "endTime": 1790099359939,
+                "providerRequestId": "req_011CfJu8rrKW3sySVEVxAaa7",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJu8sLqc4kzHZj84UHVZ",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 2
+      },
+      "cost": "0.06999",
+      "marketCost": "0.06999",
+      "surchargeCost": "0",
+      "gatewayCost": "0.06999",
+      "inferenceCost": "0.06999",
+      "inputInferenceCost": "0.04859",
+      "outputInferenceCost": "0.0214",
+      "generationId": "gen_01M353RTJJP5EDYF286CVMEYYM"
+    }
+  },
+  "response": {
+    "id": "aitxt-n4s532r5Q9Th2g9JRhwvLWaL",
+    "modelId": "anthropic/claude-fable-5",
+    "timestamp": "2026-09-22T17:49:19.954Z"
+  },
+  "billing": {
+    "totalCost": 0.06999,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.06999",
+    "surchargeCost": "0"
+  },
+  "inputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.\n\nHOUSE STYLE: Apply the following Zero Defect anti-slop rules to your writing. The references to scans describe the evaluation rules; write the deliverable, not a review report.\nWrite only the requested deliverable, without an audit, scores, scan counts or process notes.\nNever use the em dash character (U+2014).\nAvoid formulaic negative parallelism used only for rhetorical emphasis, including not X but Y, not just X but Y, This is not X. It is Y, less about X and more about Y, more than X it is Y, and X rather than Y. Necessary factual corrections, scope boundaries, mutually exclusive conditions and cumulative requirements are allowed.\nThe following categories and examples describe writing to avoid. Apply their contextual exceptions: a precise ordinary term is allowed; a keyword match alone is not a defect.\n\n### 1. Stock AI vocabulary\n\nWatch for dense or unnatural use of words and phrases such as:\n\n`additionally`, `align with`, `boasts`, `bolstered`, `crucial`, `deep dive`, `delve`, `elevate`, `emphasize`, `enduring`, `enhance`, `ensure`, `ever-evolving`, `foster`, `garner`, `groundbreaking`, `harness`, `highlight`, `interplay`, `intricate`, `key`, `landscape`, `meticulous`, `navigate`, `pivotal`, `realm`, `robust`, `seamless`, `showcase`, `tapestry`, `testament`, `transformative`, `underscore`, `unlock`, `valuable`, and `vibrant`.\n\nExample defect: `Our robust platform unlocks transformative value across the evolving talent landscape.`\n\nWrite instead: replace abstractions with the product action, user, and measurable result.\n\n### 2. Throat clearing\n\nAvoid openings that delay the point, such as `It is important to note`, `It is worth considering`, `In today's environment`, `As organizations continue to`, and `When it comes to`.\n\nExample defect: `It is important to note that managers need accurate forecasts.`\n\nWrite instead: start with `Managers need accurate forecasts.`\n\n### 3. Canned transitions\n\nAvoid mechanical sequencing and connective tissue such as repeated `Additionally`, `Moreover`, `Furthermore`, `However`, `Ultimately`, `Overall`, and `In conclusion` when the relationship is obvious or unsupported. An isolated transition is a finding only when its logical relationship is false, unnecessary, or clearer without it.\n\n### 4. Generic significance\n\nAvoid claims that something represents a milestone, broader shift, lasting legacy, pivotal moment, testament, or important trend without specific evidence.\n\nExample defect: `The launch marks a pivotal shift in how modern teams approach collaboration.`\n\nWrite instead: state what changed, for whom, and how it is measured.\n\n### 5. Promotional puffery\n\nAvoid breathtaking, revolutionary, world-class, best-in-class, cutting-edge, unmatched, unparalleled, game-changing, next-generation, and similar claims without a defined comparison and evidence.\n\n### 6. Vague authority\n\nAvoid `experts agree`, `research shows`, `industry reports indicate`, `many leaders believe`, `customers say`, and similar attributions without named, adequate support.\n\nExample defect: `Industry leaders increasingly recognize this as the future of recruiting.`\n\nWrite instead: name the evidence and its scope or remove the claim.\n\n### 7. Superficial analysis\n\nAvoid sentences that append an unsupported meaning or impact, often through `highlighting`, `underscoring`, `reflecting`, `showcasing`, `ensuring`, or `demonstrating`.\n\nExample defect: `The team completed the pilot, demonstrating its commitment to innovation.`\n\nWrite instead: report the pilot result. Do not invent what it symbolizes.\n\n### 8. Vague relationships\n\nAvoid indirect phrases such as `in connection with`, `associated with`, `related to`, and `in the context of` when the actual relationship can be named.\n\nWrite instead: use direct verbs such as owns, funds, approved, caused, supplies, or depends on.\n\n### 9. Rule-of-three padding\n\nAvoid artificial groups of three adjectives, benefits, clauses, or bullets used to sound complete when the items are overlapping, unsupported, or arbitrary.\n\nExample defect: `The process is faster, smarter, and more strategic.`\n\nWrite instead: retain distinct, supported outcomes only.\n\n### 10. Repeated summaries\n\nAvoid a conclusion that merely restates the introduction, a paragraph that repeats its first sentence, section-ending recaps with no new decision, and repeated `key takeaway` blocks.\n\n### 11. Canned challenges and future outlook\n\nAvoid formulaic endings that mention challenges, continued evolution, future prospects, or a promising path forward without decisions, owners, evidence, or dates.\n\n### 12. Assistant residue\n\nAvoid phrases addressed to the requester instead of the deliverable's audience, including `I hope this helps`, `Certainly`, `Of course`, `Here is`, `Let me know`, `Would you like`, and knowledge-cutoff disclaimers. Do not penalize wording intentionally required by an email, form, proposal, playbook, or template.\n\n### 13. Prompt and placeholder residue\n\nAvoid leaked bracketed placeholders, template instructions, fake quotations, response preambles, prompt text, unfinished task markers, citation tokens, and markup copied from an assistant interface. Do not penalize placeholders or instructions that are intentional features of a template or playbook.\n\nExamples include `[insert metric]`, `turn0search1`, `contentReference`, `oaicite`, and `as an AI language model`.\n\n### 14. Excessive formatting\n\nAvoid formatting that makes a simple point harder to read:\n\n- a title that repeats the document title\n- title case on every heading\n- headings that contain only more headings\n- bold text on routine terms\n- bullets with bold mini-headings for every sentence\n- thematic separators between every section\n- a table used for prose that would be clearer as two sentences\n- emojis used as structural markers in a professional deliverable\n\n### 15. Excessive structure\n\nAvoid a short deliverable divided into too many sections, every idea forced into a numbered framework, nested bullets without hierarchy, and rigid symmetry that adds no decision value.\n\n### 16. Verbosity\n\nAvoid sentences, paragraphs, and sections that can lose substantial words without losing meaning. Look for doubled phrases, repeated qualifiers, long setup before the actor and action, and two sentences that make the same claim.\n\nExample defect: `At this point in time, the team is currently in the process of evaluating the available options.`\n\nWrite instead: `The team is evaluating the options.`\n\n### 17. Empty intensifiers and hedges\n\nAvoid unnecessary `very`, `highly`, `deeply`, `significantly`, `incredibly`, `potentially`, `generally`, `typically`, `arguably`, and stacked qualifiers that weaken accountability or exaggerate impact.\n\n### 18. Abstract nouns and nominalizations\n\nAvoid writing centered on abstractions such as `enablement`, `optimization`, `transformation`, `alignment`, `operationalization`, and `value creation` when a concrete actor and verb would be clearer.\n\nExample defect: `The initiative enables the optimization of stakeholder alignment.`\n\nWrite instead: say who will agree on what and by when.\n\n### 19. Hidden actors\n\nAvoid passive or agentless claims such as `it was decided`, `changes will be implemented`, and `results are expected` when ownership matters.\n\n### 20. Corporate and consultant jargon\n\nAvoid `leverage`, `synergy`, `north star`, `value-add`, `circle back`, `move the needle`, `low-hanging fruit`, `best practice`, `strategic imperative`, and similar language when it replaces a specific action or result.\n\n### 21. Mannered and unrelatable prose\n\nAvoid mannered prose: metaphor, flourish, or conspicuously polished phrasing that replaces a clearer literal statement without adding meaning or precision. Also penalize academic diction or formal language that the stated audience would not naturally use or immediately understand. Do not penalize a metaphor that is the clearest accurate term for the audience or adds useful explanatory meaning.\n\nGroup recurring mannered devices that serve the same rhetorical function as one finding.\n\nExample defect: `The approval deadline casts a long shadow over the rollout.`\n\nWrite instead: state the actual effect of the deadline on the rollout.\n\n### 22. Inflated substitutes for simple verbs\n\nAvoid `serves as`, `stands as`, `functions as`, `operates as`, `features`, and `boasts` when `is` or `has` is accurate.\n\n### 23. Unsupported certainty through `ensure`\n\nAvoid claims that a step `ensures`, `guarantees`, or `eliminates` an outcome when it only helps, reduces risk, or creates a condition.\n\n### 24. Uniform cadence\n\nAvoid repeated sentence length, repeated grammatical shapes, identical paragraph construction, and mechanical alternation between claim and explanation when the prose sounds generated or monotonous.\n\n### 25. Forced comprehensiveness\n\nAvoid exhaustive-looking taxonomies, arbitrary frameworks, and long lists that imply completeness without explaining selection criteria or omissions.\n\n### 26. Unnecessary caveat balance\n\nAvoid reflexive `while` and `although` clauses that add a generic counterpoint merely to sound balanced.\n\nExample defect: `While the rollout presents challenges, it also creates meaningful opportunities.`\n\nWrite instead: identify the actual risk and opportunity, or delete the sentence.\n\n### 27. Generic reader coaching\n\nAvoid instructions such as `remember that`, `keep in mind`, `it is critical to understand`, and `one must consider` when the underlying fact can be stated directly.\n\n### 28. Empty positive endings\n\nAvoid endings that predict continued success, meaningful impact, future growth, or an exciting journey without evidence, ownership, or a decision.\n\n### 29. Claude-associated rhetorical attractors\n\nClaudisms are recurring vocabulary and rhetorical shapes strongly associated with Claude-generated prose. Review the writing, never its alleged authorship. Avoid instances that are formulaic, unnecessary, misleading, unnatural for the audience, or removable without information loss.\n\n#### Dramatic fragmentation\n\nAvoid short fragments isolated to manufacture emphasis, suspense, or profundity, including constructions such as `Two. Things.`, `Not a detail. A design decision.`, `One problem.`, and a rhetorical question immediately answered by another fragment. Do not penalize headings, labels, dialogue, intentional slogans, or concise fragments natural to the deliverable's format.\n\nWrite instead: combine the fragments into a complete sentence that states the claim without staged drama.\n\n#### Importance signaling and self-ranking\n\nAvoid prefatory claims such as `worth stating plainly`, `here's why that matters`, `the deeper point`, `the real issue`, and `the most important thing` when the prose tells readers how significant a point is instead of demonstrating its consequence. This includes repeatedly crowning one observation as the decisive, surprising, or overlooked insight without evidence for that ranking.\n\nAvoid cataphoric teasers that point forward to a withheld payload solely to manufacture suspense, such as `Here's the part that nobody tells you`, `Here's what most people get wrong`, and `Here's where it gets interesting`.\n\nWrite instead: remove the preamble and state the fact, consequence, or comparison directly.\n\n#### Candor, reassurance, and pushback scripts\n\nAvoid canned conversational moves such as `honest take`, `one honest caveat`, `you're right to push back`, `I'd gently reset the framing`, and `that's on me` when they simulate candor, validation, or accountability without adding a substantive correction. A direct acknowledgment of an actual error or a necessary qualification is not a finding.\n\nWrite instead: state the correction, disagreement, or limitation without the social-performance preamble.\n\n#### Structural metaphor clusters\n\nAvoid metaphorical uses of `load-bearing`, `heavy lifting`, `shape`, `spine`, `seam`, `chokepoint`, `backstop`, `blast radius`, `carry`, and similar systems language when the metaphor merely declares importance or complexity. Treat a dense cluster as stronger evidence than one precise term. Do not penalize literal construction or engineering usage, established domain terminology, or a metaphor that clarifies a specific dependency.\n\nExample defect: `The kickoff memo is load-bearing because it carries the shape of the operating model.`\n\nWrite instead: name the dependency, failure consequence, owner, or required action.\n\n#### Aphoristic endings and mirrored cadence\n\nAvoid paragraphs that end with compact, quotable declarations that add no information, especially when paired with mirrored clauses, artificial symmetry, or a contrast already covered by the style gate. Examples include `The process does not support the work. It is the work.` and `Clarity creates speed. Ambiguity creates drag.` Judge the passage as a whole and consolidate overlapping cadence, repetition, and negative-parallelism diagnoses.\n\nWrite instead: retain the supported claim and delete the manufactured landing.\n\n",
+    "reasoning": "low"
+  }
+}

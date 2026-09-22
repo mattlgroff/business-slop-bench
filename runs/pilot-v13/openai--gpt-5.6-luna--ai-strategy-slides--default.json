@@ -1,0 +1,114 @@
+{
+  "id": "openai--gpt-5.6-luna--ai-strategy-slides--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "bc04bb9681566600f5b6070b8d4ee99eac57b48c105446259da69193f2e8e644",
+  "status": "ok",
+  "at": "2026-09-22T12:56:04.958Z",
+  "elapsedMs": 5112,
+  "text": "## Slide 1 — Decision Required: Select One Q[next] AI Pilot\n- Quarterly pilot budget ceiling: **$50,000**\n- Team capacity: **one pilot next quarter**\n- **COO selects the pilot**\n- Dana reports results before any expansion\n\n## Slide 2 — Recommendation: Approve Internal Knowledge Search\n- **Cost:** $30,000\n- Uses approved internal policy documents\n- IT owner: **Dana**\n- Evaluation: **100 reviewed questions**\n- Success target: **at least 90% answer accuracy**\n- No current result exists; the pilot will establish the baseline\n\n## Slide 3 — Why Not Customer Credit Decisions Now?\n- **Cost:** $45,000\n- Legal approval is pending\n- Production use is not authorized\n- Selecting this option would commit the quarter’s single pilot slot\n- It does not currently have authorization for production use\n\n## Slide 4 — Executive Decision and Next-Quarter Gate\n- **Decision requested:** COO selects the internal knowledge search pilot\n- Budget commitment: **$30,000**, within the **$50,000** ceiling\n- Dana owns IT execution and reports results\n- Expansion decision follows the 100-question evaluation\n- Advance only if answer accuracy reaches **at least 90%**",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 210,
+    "inputTokenDetails": {
+      "noCacheTokens": 210,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 338,
+    "outputTokenDetails": {
+      "textTokens": 267,
+      "reasoningTokens": 71
+    },
+    "totalTokens": 548
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0c61615aef10e191016ab27ae024b08193a6fb8e5fd870bb12",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790081760094,
+                "endTime": 1790081765110,
+                "providerRequestId": "7b391eaf-ca31-4bfc-9959-9205a1e5890a",
+                "statusCode": 200,
+                "providerResponseId": "resp_0c61615aef10e191016ab27ae024b08193a6fb8e5fd870bb12"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0004476",
+      "marketCost": "0.0004476",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0004476",
+      "inferenceCost": "0.0004476",
+      "inputInferenceCost": "0.000042",
+      "outputInferenceCost": "0.0004056",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34JZYSWMG01A1W9P5DSPMS9"
+    }
+  },
+  "response": {
+    "id": "aitxt-hHsowtteI6DBSwjwEoJljcaT",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T12:56:04.957Z"
+  },
+  "billing": {
+    "totalCost": 0.0004476,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0004476",
+    "surchargeCost": "0"
+  },
+  "inputHash": "6fad2cde66a95c1e8dc999c0fc8ff2531fcd66497af46aac56bb5083bfabbb2f",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "anthropic--claude-opus-5.5--pilot-results-memo--default",
+  "model": "anthropic/claude-opus-5.5",
+  "protocolHash": "f510de81bb6764efdadceed2d4ba3e0e1c9443c53e6703db1ceffc6c3cb9e9ed",
+  "status": "ok",
+  "at": "2026-09-22T18:48:14.824Z",
+  "elapsedMs": 9102,
+  "text": "# Executive Readout: Pilot Scaling Decision\n\n**Recommendation: Do not scale the pilot now.** Authorize a matched-ticket follow-up before reconsidering.\n\n## Bottom Line\n\nThe pilot tickets were handled faster on average. However, quality fell below the required scaling threshold, and the study design does not show that the pilot caused the speed difference.\n\n## Results at a Glance\n\n| Measure | Baseline | Pilot | Scaling Threshold |\n|---|---|---|---|\n| Tickets | 200 | 100 | — |\n| Mean handling time | 15 min | 12 min | — |\n| Quality pass rate | 94% | 89% | ≥ 92% |\n| Staffing reductions / cash savings | — | Not measured | — |\n\n## What the Results Support\n\n- **A lower observed handling time.** Pilot tickets averaged 3 minutes less (20% lower) than baseline tickets.\n- **A failed quality gate.** At 89%, the pilot is 3 points below the 92% threshold and 5 points below baseline. On this criterion alone, the pilot does not qualify for scaling.\n\n## What the Results Do Not Support\n\n- **A causal time-savings claim.** The ticket mix differed between groups, and allocation was not randomized. The 3-minute gap may reflect easier tickets rather than the pilot itself.\n- **A financial case.** No staffing reductions or cash savings have been measured, so there is no evidence of cost benefit.\n\n## Next Decision\n\n**Owner:** COO\n**Decision:** Whether to authorize a matched-ticket follow-up run by Sam.\n\n**Why it matters:** Matching tickets would address the mix problem and give a fairer test of whether the pilot reduces handling time. The follow-up should also check whether quality can meet the 92% threshold.\n\n**Suggested criteria for revisiting scale-up:**\n\n1. The quality pass rate is at or above 92%.\n2. The handling-time reduction holds on matched tickets.\n3. A plan exists to measure staffing or cash impact.\n\n**Requested action:** The COO approves or declines Sam's matched-ticket follow-up.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 292,
+    "inputTokenDetails": {
+      "noCacheTokens": 292,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 808,
+    "outputTokenDetails": {
+      "textTokens": 710,
+      "reasoningTokens": 98
+    },
+    "totalTokens": 1100
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 292,
+        "output_tokens": 808,
+        "output_tokens_details": {
+          "thinking_tokens": 98
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "claudeaws",
+          "vertexAnthropic",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, claudeaws, vertexAnthropic, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system). ZDR execution order: anthropic(system) → claudeaws(system) → vertexAnthropic(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790102886317,
+                "endTime": 1790102894759,
+                "providerRequestId": "req_011CfJydLVESwF6qQBsJyPYh",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfJydLq4pibu74DePHFZf"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.017328",
+      "marketCost": "0.017328",
+      "surchargeCost": "0",
+      "gatewayCost": "0.017328",
+      "inferenceCost": "0.017328",
+      "inputInferenceCost": "0.001168",
+      "outputInferenceCost": "0.01616",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3574NGR6ZZJGHA30DTG85GX"
+    }
+  },
+  "response": {
+    "id": "aitxt-a0WQ0LcXw2ovWHqFF1JcWTGx",
+    "modelId": "anthropic/claude-opus-5.5",
+    "timestamp": "2026-09-22T18:48:14.822Z"
+  },
+  "billing": {
+    "totalCost": 0.017328,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.017328",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

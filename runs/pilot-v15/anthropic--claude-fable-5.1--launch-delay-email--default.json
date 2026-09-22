@@ -1,0 +1,19 @@
+{
+  "id": "anthropic--claude-fable-5.1--launch-delay-email--default",
+  "model": "anthropic/claude-fable-5.1",
+  "status": "error",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "inputHash": "d836b94ad74a2cf3b3a102f68ed3f55a1699c38698c58b277fa2971f5359efbd",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  },
+  "error": {
+    "name": "GatewayRateLimitError",
+    "statusCode": 429,
+    "message": "No access to this model at this time.",
+    "requestId": "iad1::iad1::mwfc7-1790084499551-c1c66dfca453"
+  },
+  "elapsedMs": 1416
+}

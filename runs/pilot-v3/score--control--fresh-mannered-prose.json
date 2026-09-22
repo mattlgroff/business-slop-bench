@@ -1,0 +1,42 @@
+{
+  "id": "control--fresh-mannered-prose",
+  "taskId": "pilot-client-email",
+  "protocolHash": "55118f5ec076d40106b344adc376d8f0ad390109d2f1aef2526354dfb1487417",
+  "grades": [
+    {
+      "id": "style_29",
+      "dimension": "anti_slop",
+      "severity": "editorial",
+      "polarity": "defect",
+      "statement": "Does the deliverable contain a supported Claude-associated rhetorical attractors defect? Apply these rules: Claudisms are recurring vocabulary and rhetorical shapes strongly associated with Claude-generated prose. Review the writing, never its alleged authorship. Report only instances that are formulaic, unnecessary, misleading, unnatural for the audience, or removable without information loss.\n\n#### Dramatic fragmentation\n\nFlag short fragments isolated to manufacture emphasis, suspense, or profundity, including constructions such as `Two. Things.`, `Not a detail. A design decision.`, `One problem.`, and a rhetorical question immediately answered by another fragment. Do not flag headings, labels, dialogue, intentional slogans, or concise fragments natural to the deliverable's format.\n\nRepair direction: combine the fragments into a complete sentence that states the claim without staged drama.\n\n#### Importance signaling and self-ranking\n\nFlag prefatory claims such as `worth stating plainly`, `here's why that matters`, `the deeper point`, `the real issue`, and `the most important thing` when the prose tells readers how significant a point is instead of demonstrating its consequence. This includes repeatedly crowning one observation as the decisive, surprising, or overlooked insight without evidence for that ranking.\n\nFlag cataphoric teasers that point forward to a withheld payload solely to manufacture suspense, such as `Here's the part that nobody tells you`, `Here's what most people get wrong`, and `Here's where it gets interesting`.\n\nRepair direction: remove the preamble and state the fact, consequence, or comparison directly.\n\n#### Candor, reassurance, and pushback scripts\n\nFlag canned conversational moves such as `honest take`, `one honest caveat`, `you're right to push back`, `I'd gently reset the framing`, and `that's on me` when they simulate candor, validation, or accountability without adding a substantive correction. A direct acknowledgment of an actual error or a necessary qualification is not a finding.\n\nRepair direction: state the correction, disagreement, or limitation without the social-performance preamble.\n\n#### Structural metaphor clusters\n\nFlag metaphorical uses of `load-bearing`, `heavy lifting`, `shape`, `spine`, `seam`, `chokepoint`, `backstop`, `blast radius`, `carry`, and similar systems language when the metaphor merely declares importance or complexity. Treat a dense cluster as stronger evidence than one precise term. Do not flag literal construction or engineering usage, established domain terminology, or a metaphor that clarifies a specific dependency.\n\nExample defect: `The kickoff memo is load-bearing because it carries the shape of the operating model.`\n\nRepair direction: name the dependency, failure consequence, owner, or required action.\n\n#### Aphoristic endings and mirrored cadence\n\nFlag paragraphs that end with compact, quotable declarations that add no information, especially when paired with mirrored clauses, artificial symmetry, or a contrast already covered by the style gate. Examples include `The process does not support the work. It is the work.` and `Clarity creates speed. Ambiguity creates drag.` Judge the passage as a whole and consolidate overlapping cadence, repetition, and negative-parallelism diagnoses.\n\nRepair direction: retain the supported claim and delete the manufactured landing. A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.",
+      "probability": 0.94,
+      "verdict": "fail"
+    }
+  ],
+  "deterministic": {
+    "words": 24,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "residue": [],
+    "candidates": [
+      {
+        "family": "claudisms",
+        "offset": 56,
+        "line": 1,
+        "text": "the shape of"
+      },
+      {
+        "family": "claudisms",
+        "offset": 79,
+        "line": 1,
+        "text": "The real issue"
+      }
+    ]
+  },
+  "contentReady": true,
+  "contentBlocked": false,
+  "styleGatePass": true,
+  "editorialDefects": 1,
+  "unresolved": 0
+}

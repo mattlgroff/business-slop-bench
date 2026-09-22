@@ -1,0 +1,12 @@
+{
+  "id": "judge--alibaba--qwen3.8-flash--pilot-client-email--default",
+  "model": "typesafe-ai/jev",
+  "status": "error",
+  "protocolHash": "55118f5ec076d40106b344adc376d8f0ad390109d2f1aef2526354dfb1487417",
+  "error": {
+    "name": "GatewayInternalServerError",
+    "statusCode": 503,
+    "message": "Service temporarily unavailable. Please try again shortly."
+  },
+  "elapsedMs": 251
+}

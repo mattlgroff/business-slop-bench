@@ -1,0 +1,462 @@
+[
+  {
+    "id": "pilot-client-email",
+    "family": "email",
+    "brief": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.",
+    "facts": {
+      "scope": "Six-week pilot to assess invoice handling. Production rollout is excluded.",
+      "fee": "$30,000 fixed fee for the pilot.",
+      "target": "Client hopes for 20% shorter handling time. No baseline or measured savings exists.",
+      "security": "Security approval is required before access to client data.",
+      "schedule": "No start date has been approved.",
+      "decision": "Ask Morgan to approve the pilot scope and fee, subject to security clearance.",
+      "sender": "Jordan, engagement lead."
+    },
+    "maxWords": 180,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "numbers",
+        "statement": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "commitments",
+        "statement": "Production rollout remains explicitly excluded.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "evidence",
+        "statement": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "decision",
+        "statement": "Security approval is explicitly a prerequisite to client data access.",
+        "severity": "critical",
+        "evaluation": "security-prerequisite"
+      },
+      {
+        "id": "C05",
+        "dimension": "commitments",
+        "statement": "The email does not claim an approved start date or unconditional start commitment.",
+        "severity": "critical"
+      },
+      {
+        "id": "C06",
+        "dimension": "decision",
+        "statement": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "launch-delay-email",
+    "family": "email",
+    "brief": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.",
+    "facts": {
+      "old_plan": "Launch was tentatively scheduled for October 8, 2026.",
+      "latest": "Security review now completes October 12 at the earliest; release needs completed approval.",
+      "impact": "A staging demo can still happen October 8 using synthetic data.",
+      "authority": "Nia owns the security review. Avery chooses whether to accept the staging demo.",
+      "uncertainty": "The review may require remediation; no new production date is authorized.",
+      "sender": "Jordan, engagement lead."
+    },
+    "maxWords": 180,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "consistency",
+        "statement": "October 8 is not represented as an approved production launch.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "decision",
+        "statement": "The update clearly explains that production release depends on security approval and may require remediation.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "commitments",
+        "statement": "No replacement production launch date is promised.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "decision",
+        "statement": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "accountability",
+        "statement": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "vendor-decision-memo",
+    "family": "memo",
+    "brief": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.",
+    "facts": {
+      "budget": "Year-one budget ceiling is $100,000, including setup.",
+      "alpha": "$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.",
+      "beta": "$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.",
+      "constraints": "SSO is mandatory before production. Both vendors meet the other stated requirements.",
+      "owner": "Priya owns procurement. CFO approval is needed before signing."
+    },
+    "maxWords": 300,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "numbers",
+        "statement": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "decision",
+        "statement": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "numbers",
+        "statement": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "evidence",
+        "statement": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "accountability",
+        "statement": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "pilot-results-memo",
+    "family": "memo",
+    "brief": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.",
+    "facts": {
+      "baseline": "200 tickets, 15 minutes mean handling time.",
+      "pilot": "100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.",
+      "quality": "Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.",
+      "costs": "No staffing reductions or cash savings have been measured.",
+      "next": "Sam can run a matched-ticket follow-up. COO decides whether to authorize it."
+    },
+    "maxWords": 300,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "numbers",
+        "statement": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "numbers",
+        "statement": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "decision",
+        "statement": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "evidence",
+        "statement": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "evidence",
+        "statement": "Does not present cash savings or staffing reductions as measured outcomes.",
+        "severity": "critical"
+      },
+      {
+        "id": "C06",
+        "dimension": "accountability",
+        "statement": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "discovery-proposal",
+    "family": "proposal",
+    "brief": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.",
+    "facts": {
+      "scope": "Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.",
+      "fee": "80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.",
+      "excluded": "Implementation, integrations, production support and guaranteed savings are excluded.",
+      "client": "Client supplies interview access and source documents.",
+      "start": "Start date agreed only after signature and named client contact.",
+      "acceptance": "Sponsor confirms delivery of the three listed artifacts."
+    },
+    "maxWords": 350,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "numbers",
+        "statement": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "decision",
+        "statement": "Includes all three discovery deliverables.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "commitments",
+        "statement": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "decision",
+        "statement": "Client interview access and source documents are identified as dependencies.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "commitments",
+        "statement": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+        "severity": "critical"
+      },
+      {
+        "id": "C06",
+        "dimension": "decision",
+        "statement": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "change-order",
+    "family": "proposal",
+    "brief": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.",
+    "facts": {
+      "original": "Existing signed scope is the reporting dashboard.",
+      "request": "Client requests an additional CRM connector. It is not included in the original fee.",
+      "estimate": "40 hours at $175/hour, a proposed fixed change fee of $7,000.",
+      "dependency": "Client must provide sandbox credentials.",
+      "schedule": "Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.",
+      "authority": "Sponsor must approve in writing before connector work begins."
+    },
+    "maxWords": 300,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "numbers",
+        "statement": "Change fee is $7,000 with no conflicting hours or rate.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "commitments",
+        "statement": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "decision",
+        "statement": "Written sponsor approval is required before work begins.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "decision",
+        "statement": "Sandbox credential receipt is a dependency.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "commitments",
+        "statement": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+        "severity": "critical"
+      },
+      {
+        "id": "C06",
+        "dimension": "evidence",
+        "statement": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "ai-strategy-slides",
+    "family": "slides",
+    "brief": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.",
+    "facts": {
+      "budget": "Quarterly pilot budget ceiling: $50,000.",
+      "option_a": "Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.",
+      "option_b": "Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.",
+      "capacity": "Team can run only one pilot next quarter.",
+      "success": "For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.",
+      "approval": "COO selects the pilot; Dana reports results before any expansion."
+    },
+    "maxWords": 350,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "decision",
+        "statement": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "commitments",
+        "statement": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "numbers",
+        "statement": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "evidence",
+        "statement": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "accountability",
+        "statement": "COO selection and Dana ownership/reporting before expansion are clear.",
+        "severity": "critical"
+      },
+      {
+        "id": "C06",
+        "dimension": "format",
+        "statement": "Contains exactly four identifiable slides.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  },
+  {
+    "id": "handoff-slides",
+    "family": "slides",
+    "brief": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.",
+    "facts": {
+      "delivery": "Engineering lead Lee owns defect fixes until acceptance.",
+      "operations": "Operations lead Jo owns incidents only after acceptance.",
+      "acceptance": "Acceptance requires an approved runbook and a successful rollback rehearsal.",
+      "current": "Runbook is approved. Rollback rehearsal has not happened.",
+      "gap": "No role has accepted responsibility for organizing the rehearsal.",
+      "authority": "Sponsor Pat can assign that responsibility and approve acceptance once criteria are met."
+    },
+    "maxWords": 350,
+    "checks": [
+      {
+        "id": "C01",
+        "dimension": "decision",
+        "statement": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+        "severity": "critical"
+      },
+      {
+        "id": "C02",
+        "dimension": "accountability",
+        "statement": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+        "severity": "critical"
+      },
+      {
+        "id": "C03",
+        "dimension": "accountability",
+        "statement": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+        "severity": "critical"
+      },
+      {
+        "id": "C04",
+        "dimension": "consistency",
+        "statement": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+        "severity": "critical"
+      },
+      {
+        "id": "C05",
+        "dimension": "decision",
+        "statement": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+        "severity": "critical"
+      },
+      {
+        "id": "C06",
+        "dimension": "format",
+        "statement": "Contains exactly four identifiable slides.",
+        "severity": "critical"
+      },
+      {
+        "id": "grounding",
+        "dimension": "evidence",
+        "severity": "critical",
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
+      }
+    ]
+  }
+]

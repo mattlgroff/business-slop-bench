@@ -1,0 +1,84 @@
+{
+  "id": "alibaba--qwen3.8-max-0902--pilot-results-memo--default",
+  "model": "alibaba/qwen3.8-max-0902",
+  "protocolHash": "1ac2910a96a2133661067f144f2fe8c048b4163ef170ac39eb5141b5c875ba88",
+  "status": "ok",
+  "at": "2026-09-22T13:37:01.407Z",
+  "elapsedMs": 11720,
+  "text": "# Executive Readout: Pilot Scale Decision\n\n## Recommendation: Do Not Scale Now\n\nThe pilot does not meet the criteria to proceed to scale.\n\n## Key Findings\n\n| Metric | Baseline | Pilot | Threshold | Status |\n|--------|----------|-------|-----------|--------|\n| Mean handling time | 15 min | 12 min | — | Improved but unreliable |\n| Quality pass rate | 94% | 89% | ≥ 92% | **Below threshold** |\n| Cost savings | — | None measured | — | Not demonstrated |\n\n## What the Results Support\n\nThe pilot shows a directional improvement in handling time. However, three issues prevent a scale decision:\n\n1. **Quality gate failed.** Pass rate fell to 89%, below the required 92% threshold.\n2. **Comparison is confounded.** Ticket mix differed between baseline and pilot, and allocation was not randomized. The 3-minute improvement cannot be attributed to the intervention with confidence.\n3. **No cost benefit measured.** No staffing reductions or cash savings have been identified.\n\n## Next Decision\n\nSam can run a matched-ticket follow-up to isolate the intervention's effect on comparable work. This requires COO authorization.\n\n**Decision required:** Does the COO authorize the matched-ticket follow-up?",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 240,
+    "inputTokenDetails": {
+      "noCacheTokens": 240,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 462,
+    "outputTokenDetails": {
+      "textTokens": 278,
+      "reasoningTokens": 184
+    },
+    "totalTokens": 702
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-max-0902",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-max-0902",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-max-0902",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790084209774,
+                "endTime": 1790084221394,
+                "providerRequestId": "ddddbeb7-c146-9ec9-b01e-75a0ba13b8f2",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-ddddbeb7-c146-9ec9-b01e-75a0ba13b8f2"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.003252",
+      "marketCost": "0.003252",
+      "surchargeCost": "0",
+      "gatewayCost": "0.003252",
+      "inferenceCost": "0.003252",
+      "inputInferenceCost": "0.00048",
+      "outputInferenceCost": "0.002772",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34NAQ20QXCQW7Z7QMNTCRVT"
+    }
+  },
+  "response": {
+    "id": "aitxt-5QgG8ghN2v6BojM1iyhCROGJ",
+    "modelId": "alibaba/qwen3.8-max-0902",
+    "timestamp": "2026-09-22T13:37:01.407Z"
+  },
+  "billing": {
+    "totalCost": 0.003252,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.003252",
+    "surchargeCost": "0"
+  },
+  "inputHash": "d51015dda69be7545657d0e0160bde253b7095eda2515dc1dd4690de1e4cac00",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low",
+    "maxOutputTokens": 4096
+  }
+}

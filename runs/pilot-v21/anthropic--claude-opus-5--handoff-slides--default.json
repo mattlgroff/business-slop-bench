@@ -1,0 +1,113 @@
+{
+  "id": "anthropic--claude-opus-5--handoff-slides--default",
+  "model": "anthropic/claude-opus-5",
+  "protocolHash": "9095789be76c7043696e6e4c92337f0e8c5eaa14ee7fc1a6afe632618a50401b",
+  "status": "ok",
+  "at": "2026-09-22T17:49:42.161Z",
+  "elapsedMs": 21634,
+  "text": "# Slide 1 — Decision Required\n\n**Question for the committee:** Is the service ready for operational handoff today?\n\n**Answer: No.** Acceptance requires two criteria: an approved runbook and a successful rollback rehearsal. Only one is met.\n\n| Criterion | Status |\n|---|---|\n| Approved runbook | Met |\n| Successful rollback rehearsal | Not met — rehearsal has not happened |\n\n**Ask of the committee:** Do not approve acceptance at this meeting. Instead, close the ownership gap described on Slide 3 so acceptance can be reconsidered.\n\n---\n\n# Slide 2 — Current Readiness Position\n\n**What is in place**\n- The runbook is approved.\n\n**What is outstanding**\n- The rollback rehearsal has not happened, so its outcome is unknown. Readiness cannot be confirmed until a rehearsal is run and succeeds.\n\n**Accountability today**\n- Engineering lead Lee owns defect fixes until acceptance.\n- Operations lead Jo owns incidents only after acceptance.\n\n**Implication:** Until acceptance occurs, defect ownership sits with Lee and Jo does not yet own incidents. Delaying acceptance therefore keeps responsibilities where they currently sit; it does not create an unowned period for defects.\n\n---\n\n# Slide 3 — The Blocking Gap: Unassigned Rehearsal Ownership\n\n**The gap:** No role has accepted responsibility for organizing the rollback rehearsal.\n\n**Why this blocks progress:** The rehearsal is a mandatory acceptance criterion, but neither the delivery nor the operations accountability described in the source pack covers organizing it. Without an assigned owner, the outstanding criterion cannot be scheduled or completed, and acceptance remains unreachable indefinitely.\n\n**Who can resolve it:** Sponsor Pat has the authority to assign that responsibility.\n\n**Note on limits:** This pack does not state a rehearsal date, duration, or cost. Those should be established by the owner once assigned.\n\n---\n\n# Slide 4 — Actions Required\n\n| # | Action | Owner |\n|---|---|---|\n| 1 | Assign responsibility for organizing the rollback rehearsal | Sponsor Pat |\n| 2 | Organize and run the rollback rehearsal | Person assigned in Action 1 |\n| 3 | Continue defect fixes through to acceptance | Engineering lead Lee |\n| 4 | Confirm both acceptance criteria are met, then approve acceptance | Sponsor Pat |\n| 5 | Assume incident ownership on acceptance | Operations lead Jo |\n\n**Sequence:** Action 1 unblocks Action 2; Action 2 is the only outstanding acceptance criterion. Action 4 can only follow a *successful* rehearsal. Action 5 is triggered by acceptance.\n\n**Return to committee:** Reconsider handoff readiness once the rehearsal outcome is known.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 314,
+    "inputTokenDetails": {
+      "noCacheTokens": 314,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 991,
+    "outputTokenDetails": {
+      "textTokens": 991,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 1305
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 314,
+        "output_tokens": 991,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        }
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-opus-5",
+        "resolvedProvider": "vertexAnthropic",
+        "fallbacksAvailable": [
+          "anthropic",
+          "claudeaws",
+          "bedrock"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference vertexAnthropic. System credentials planned for: vertexAnthropic, anthropic, claudeaws, bedrock. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → vertexAnthropic(system) → anthropic(system) → claudeaws(system) → bedrock(system). ZDR execution order: vertexAnthropic(system) → anthropic(system) → claudeaws(system) → bedrock(system)",
+        "canonicalSlug": "anthropic/claude-opus-5",
+        "finalProvider": "vertexAnthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-opus-5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertexAnthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790099369657,
+                "endTime": 1790099382154,
+                "providerRequestId": "req_vrtx_011CfJuA8HHp6EviCHBboG3m",
+                "statusCode": 200,
+                "providerResponseId": "msg_vrtx_011CfJuA8PzFXrjxezbdqy1x"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ]
+      },
+      "cost": "0.026345",
+      "marketCost": "0.026345",
+      "surchargeCost": "0",
+      "gatewayCost": "0.026345",
+      "inferenceCost": "0.026345",
+      "inputInferenceCost": "0.00157",
+      "outputInferenceCost": "0.024775",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M353SASQV0424PP1Q029P529"
+    }
+  },
+  "response": {
+    "id": "aitxt-o63FzLkAvKBwrCaS1FigVRuv",
+    "modelId": "anthropic/claude-opus-5",
+    "timestamp": "2026-09-22T17:49:42.159Z"
+  },
+  "billing": {
+    "totalCost": 0.026345,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.026345",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

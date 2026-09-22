@@ -1,0 +1,83 @@
+{
+  "id": "alibaba--qwen3.8-flash--pilot-results-memo--default",
+  "model": "alibaba/qwen3.8-flash",
+  "protocolHash": "52f541d42cecc3b626531e28145c3affffdb01c7e32474dc0d28edc507fb11be",
+  "status": "ok",
+  "at": "2026-09-22T14:43:49.214Z",
+  "elapsedMs": 6688,
+  "text": "# Executive Readout: Scale Decision\n\n## Recommendation: Do NOT Scale Now\n\nThe pilot does not meet the conditions required for a scaling decision. Two of three evaluation criteria are unmet or unreliable.\n\n## What the Results Support\n\n| Criterion | Pilot Result | Verdict |\n|-----------|-------------|---------|\n| Quality | 89% vs. 92% required threshold | **Fails** |\n| Handling time | 12 min vs. 15 min baseline | **Not credible** |\n| Cost savings | None measured | **Unknown** |\n\n**Quality:** The pilot produced an 89% pass rate, below the 92% scaling threshold and a 5-point drop from the 94% baseline.\n\n**Handling time:** Although the pilot shows a 3-minute improvement, the comparison is confounded. Ticket mix differed between groups, and allocation was not randomized. We cannot attribute the time reduction to the intervention.\n\n**Cost:** No staffing reductions or cash savings have been measured. The financial case is absent.\n\n## Next Decision\n\n**COO should authorize a matched-ticket follow-up.** Sam is prepared to run a randomized comparison with identical ticket mixes, which will yield a valid handling-time signal and clarify whether quality regression is caused by the intervention or by ticket-mix differences. Until that result arrives, the quality threshold is unmet and the scaling case is unsupported.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 240,
+    "inputTokenDetails": {
+      "noCacheTokens": 240,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 513,
+    "outputTokenDetails": {
+      "textTokens": 295,
+      "reasoningTokens": 218
+    },
+    "totalTokens": 753
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "alibaba/qwen3.8-flash",
+        "resolvedProvider": "alibaba",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: alibaba. ZDR requested: all 1 attempts support ZDR. Execution order: alibaba(system)",
+        "canonicalSlug": "alibaba/qwen3.8-flash",
+        "finalProvider": "alibaba",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "alibaba/qwen3.8-flash",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "alibaba",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790088222651,
+                "endTime": 1790088229185,
+                "providerRequestId": "434b1107-838f-91b4-a4eb-555496d3b4de",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-434b1107-838f-91b4-a4eb-555496d3b4de"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1
+      },
+      "cost": "0.00027711",
+      "marketCost": "0.00027711",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00027711",
+      "inferenceCost": "0.00027711",
+      "inputInferenceCost": "0.000036",
+      "outputInferenceCost": "0.00024111",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34S55VPNP05HF5Z505FGJE3"
+    }
+  },
+  "response": {
+    "id": "aitxt-pvp5VvjUtJmSiR64dQFkDHIj",
+    "modelId": "alibaba/qwen3.8-flash",
+    "timestamp": "2026-09-22T14:43:49.214Z"
+  },
+  "billing": {
+    "totalCost": 0.00027711,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00027711",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

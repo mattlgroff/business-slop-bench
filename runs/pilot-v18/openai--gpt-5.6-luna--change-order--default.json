@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-5.6-luna--change-order--default",
+  "model": "openai/gpt-5.6-luna",
+  "protocolHash": "ab0eb2028961d9648a381b8b5d885b02db76ade62fc3949c9e076eb7b91d3994",
+  "status": "ok",
+  "at": "2026-09-22T14:20:34.895Z",
+  "elapsedMs": 6287,
+  "text": "# Change-Order Proposal: Additional CRM Connector\n\n## Requested Work\nThe client requests adding a CRM connector to the existing reporting-dashboard scope. This connector is not included in the original fee.\n\n## Price\n- Estimated effort: 40 hours  \n- Rate: $175 per hour  \n- Proposed fixed change fee: **$7,000**\n\n## Schedule Effect\nThe connector is estimated to add **two weeks** to the schedule after both of the following occur:\n\n1. Written sponsor approval is received.\n2. Client provides sandbox credentials.\n\nThis is a schedule estimate, not an approved calendar date.\n\n## Approval Requirement\nThe sponsor must approve this change in writing before connector work begins.\n\n## Sponsor Decision\n\n☐ **Approve** the additional CRM connector for the proposed fixed change fee of **$7,000**, with an estimated two-week schedule addition following written approval and receipt of sandbox credentials.\n\n☐ **Decline** the requested change. The existing signed scope remains limited to the reporting dashboard.\n\n**Sponsor approval/signature:** __________________________\n\n**Date:** __________________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 182,
+    "inputTokenDetails": {
+      "noCacheTokens": 182,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 245,
+    "outputTokenDetails": {
+      "textTokens": 220,
+      "reasoningTokens": 25
+    },
+    "totalTokens": 427
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "azure": {
+      "responseId": "resp_0389cc453213bc20016ab28eacde608197bab96ff100f2c5ff",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-5.6-luna",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: azure(system)",
+        "canonicalSlug": "openai/gpt-5.6-luna",
+        "finalProvider": "azure",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-5.6-luna",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "azure",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790086828721,
+                "endTime": 1790086834878,
+                "providerRequestId": "ea3e90ad-5c6d-45bc-b685-ff76a271955a",
+                "statusCode": 200,
+                "providerResponseId": "resp_0389cc453213bc20016ab28eacde608197bab96ff100f2c5ff"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "openai",
+            "reason": "zdr_not_supported"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ]
+      },
+      "cost": "0.0003304",
+      "marketCost": "0.0003304",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0003304",
+      "inferenceCost": "0.0003304",
+      "inputInferenceCost": "0.0000364",
+      "outputInferenceCost": "0.000294",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M34QTMK78XQBZ5C7X8S434TP"
+    }
+  },
+  "response": {
+    "id": "aitxt-NuAzBNZzKUCKmOwTBCNlDj0Z",
+    "modelId": "openai/gpt-5.6-luna",
+    "timestamp": "2026-09-22T14:20:34.895Z"
+  },
+  "billing": {
+    "totalCost": 0.0003304,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0003304",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}
