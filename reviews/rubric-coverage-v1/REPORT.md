@@ -30,3 +30,5 @@ The current pilot tests source fidelity, specified decisions and house-style fit
 4. Validate the inactive explicit-calculation brief before adopting it; do not silently relabel omissions as arithmetic errors.
 
 These are identified gaps and proposed future tests, not completed validation or permission to pool new tasks with existing scores. [Machine-readable mapping and source hashes](coverage.json), [calibration packet](../grader-calibration-v1/README.md), and [calculation-gate audit](../rubric-audit-v1/REPORT.md).
+
+An [inactive citation-support exercise](../citation-task-design-v1/README.md) now specifies a closed fictional source packet, writer-visible requirements and proposed boundary examples. It has not been run or independently validated and does not close the coverage gap yet.
