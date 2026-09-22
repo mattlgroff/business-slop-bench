@@ -36,7 +36,8 @@
         "id": "C04",
         "dimension": "decision",
         "statement": "Security approval is explicitly a prerequisite to client data access.",
-        "severity": "critical"
+        "severity": "critical",
+        "evaluation": "security-prerequisite"
       },
       {
         "id": "C05",

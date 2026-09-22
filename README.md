@@ -2,6 +2,8 @@
 
 A small TypeScript benchmark for single-call English business writing. It compares 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation and Jev evaluation.
 
+Current work: [v5 grader improvements](IMPROVEMENTS.md). The original smoke comparison is preserved in v4. The CLI now targets v5, where the security prerequisite uses a draft-only choice judge. `npm run bench -- regrade-v4` reuses saved writer outputs; the full v5 run remains gated pending broader calibration. The historical v4 paths below refer to the original evidence.
+
 ## Run
 
 Requires Node 22+, a mounted writable external SSD for this checkout, and the existing Gateway credential. Dependencies and disposable output stay on the SSD.
