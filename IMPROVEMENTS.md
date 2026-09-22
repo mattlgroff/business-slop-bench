@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Sol 5.6 uncapped, v23
+
+Collected all 16 GPT-5.6 Sol drafts with unchanged v23 settings, v2 briefs, no output-token cap or harness deadline and ZDR requested. Requested, returned and canonical identities match; every response stops normally, has no warning and fits the word limit.
+
+Sol scores 52/54 default checks and 53/54 house checks, with 6/8 and 7/8 content-ready drafts and 0/8 and 4/8 ready without edits. Default invents preparedness for any remediation. Both readouts omit the explicit reduction while preserving correct endpoints; this is the only house content blocker. Twelve default em dashes become zero with the house rules, but third-person client references and repetition remain. Explicit requests to authorize Priya to sign are proposals and pass grounding. [Scores and evidence](reviews/assistant-v39/REPORT.md).
+
+The calls cost $0.25036 versus Luna at $0.011212. Both have four house drafts ready without edits; Sol has one more house draft content ready. This small sample does not establish a value advantage. All 320 previous rows are unchanged. Output hashes, exact evidence, model identities and the independent writer-input audit pass. Processes exited and the lock is absent. Conservative accounting is $28.961737096 of $100; 368 primary drafts are collected and 336 reviewed here. The separate GPT-6 Sol/Luna drafts still await review, and Sonnet 5 and MiMo lack completed uncapped drafts.
+
 ## Gemini Pro uncapped, v23
 
 After the separately started GPT-6 Sol/Luna collector exited, collected all 16 Gemini 3.1 Pro Preview drafts under unchanged v23 settings, v2 briefs, no output-token cap and ZDR requested. Every response has the expected requested, returned and canonical identity, a normal stop, no warnings and a valid word count. Both conditions have zero em dashes.

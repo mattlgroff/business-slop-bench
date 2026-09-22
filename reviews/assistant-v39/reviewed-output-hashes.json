@@ -1,0 +1,18 @@
+{
+  "openai--gpt-5.6-sol--pilot-client-email--default": "ce66470192323c35b2f2a54fa5862eb1ee785590b77c9573b0d945a6ab11473b",
+  "openai--gpt-5.6-sol--pilot-client-email--house": "6e3cde11a77c2c02c627867b6595e6441d5a95dcd156ec05fc004da9200fe58f",
+  "openai--gpt-5.6-sol--launch-delay-email--default": "354f2fc0ad253840a8a03ab07f3594fbd6fba85f6cd24550bc5cded748c3af21",
+  "openai--gpt-5.6-sol--launch-delay-email--house": "fddbf75725e80be202b1b51b491b0649fc96c70687140268308f3780cc5c3901",
+  "openai--gpt-5.6-sol--vendor-decision-memo--default": "8fe6e143146482791f9bca337ac4c73976c5340cfe545aa0d7ecf9ef1f0edbb3",
+  "openai--gpt-5.6-sol--vendor-decision-memo--house": "c7ddeec601b40c761aff9d940aed2c8e628fd49179ec5864befa16cb89038d38",
+  "openai--gpt-5.6-sol--pilot-results-memo--default": "7e02e7940930225f3a0109ff9f4c0b5bfc6b30745be2885fe82a565c96f983a6",
+  "openai--gpt-5.6-sol--pilot-results-memo--house": "45825c4dba9b84a240bfc8d089dbcc98c4403a1e81fc599b12d06d0b45ab1224",
+  "openai--gpt-5.6-sol--discovery-proposal--default": "8b248307777b8f4bc0df9bfe829639314535706ec1a6b90ece5cc48687a9fbf0",
+  "openai--gpt-5.6-sol--discovery-proposal--house": "80f09d921b5a7236e432537a833ea6a3d6332372c8a2618ba2e8814e2c3e598c",
+  "openai--gpt-5.6-sol--change-order--default": "db0ccd07cf0ccad52521748e362f94b833ef7fe346a5cfd19e1d2b7327b635bf",
+  "openai--gpt-5.6-sol--change-order--house": "9a0a51ebd50c6c9bdda6ce6cbd4fabbb78eb0e75681cab92b0d1305913e7c4b0",
+  "openai--gpt-5.6-sol--ai-strategy-slides--default": "a78e1f1d94bc38d0908218af081328656affeb51e2f5de6255c60f820a0d8536",
+  "openai--gpt-5.6-sol--ai-strategy-slides--house": "411b16c25bc4df3623a2627e63efc692c80540ed4969ef7737561a3ffc925c6d",
+  "openai--gpt-5.6-sol--handoff-slides--default": "c00f142b9a78fb9bc4aeb0c798932203627d45cf89692d1db5dac3b6222f3e8b",
+  "openai--gpt-5.6-sol--handoff-slides--house": "6e6771151f166baa554f907f1f0ce9bc07e845053c16e866c9929c02d7ee05ef"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "model": "Sol 5.6",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "the client\u2019s goal",
+        "Uses a third-person reference to the client in an email addressed directly to Morgan."
+      ],
+      [
+        "28",
+        "Once approved, we can move the discussion forward.",
+        "Generic positive closing after the approval request adds no next action or information."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "the client\u2019s goal",
+        "Uses a third-person reference to the client in an email addressed directly to Morgan."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "the team is prepared to address any remediation it may require.",
+        "The source warns that remediation may be required but does not establish the team is prepared for any resulting work."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Alpha is the only vendor that meets all stated constraints in year one. Beta\u2019s lower cost does not offset its failure to provide mandatory SSO; selecting it would prevent production under the stated requirements.",
+        "The separate rationale section repeats the conclusion and SSO reasoning already stated immediately above."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The pilot\u2019s mean handling time was 12 minutes across 100 tickets, compared with 15 minutes across 200 baseline tickets.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The pilot\u2019s mean handling time was 12 minutes across 100 tickets, compared with 15 minutes across 200 baseline tickets.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The engagement will be accepted when the sponsor confirms delivery of the three agreed artifacts:\n\n- Current-state process map  \n- Prioritized backlog  \n- Implementation recommendation",
+        "The acceptance section repeats the complete deliverables list already given under scope; referring to those three artifacts retains the acceptance requirement."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "## Dependency\nThe client must provide sandbox credentials.",
+        "The entire dependency section repeats the credential condition immediately above."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Require Dana\u2019s results before considering any expansion.",
+        "Repeats the Dana reporting prerequisite already given on the first and third slides."
+      ]
+    ]
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Sol 5.6",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Acceptance sets the point when incident ownership moves to Jo.",
+        "Immediately restates the preceding bullet assigning incidents to Jo after acceptance, then the same ownership condition returns in the final action."
+      ]
+    ]
+  }
+]
