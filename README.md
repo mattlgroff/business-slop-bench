@@ -14,6 +14,8 @@ Earlier results with a 4,096-token cap: [Muse compared with the other completed 
 
 Uncapped results: [Sonnet 5, MiMo, Astra, Sol 6, Luna 6, Sol 5.6, Terra, Gemini Pro, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v43/REPORT.md). Muse, Fable 5, Fable 5.1, Luna 6 and Sol 6 appear in the same report marked non-ZDR and disqualified; their writing scores are shown for information only. Eligibility follows the saved catalog and request policy, not a separate audit of provider retention practices. This cohort is not pooled with earlier capped scores.
 
+[Current corrected ranking](reviews/assistant-v44/RANKING.md): Grok’s explicit request to authorize a signatory now receives the same passing judgment as Sol’s equivalent request. [Correction and evidence](reviews/assistant-v44/REPORT.md). All other 399 draft judgments are unchanged.
+
 [Rubric audit](reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
 
 Current collection uses `pilot-v23` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v23` audits saved outputs and verifies their inputs against the frozen task version.
@@ -56,9 +58,9 @@ Default and house conditions share the same source pack and task wording. Only t
 
 [Astra full-panel repeat](reviews/repeatability-v2/REPORT.md): all 108 content checks pass again, but house readiness without edits changes from 8/8 to 6/8. The 16 repeats are separate from the primary leaderboard. Two attempts do not establish population reliability.
 
-[Grounding correction](reviews/assistant-v35/REPORT.md): Fable 5 default loses one check for an unsupported sample-adequacy claim, changing to 49/54 checks and 3/8 content-ready drafts. All other scores are unchanged. The correction is retained in the current assistant-v43 cumulative grades.
+[Grounding correction](reviews/assistant-v35/REPORT.md): Fable 5 default loses one check for an unsupported sample-adequacy claim, changing to 49/54 checks and 3/8 content-ready drafts. All other scores are unchanged. The correction is retained in the current assistant-v44 cumulative grades.
 
-[Latest grading correction](reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; The correction is retained in the current assistant-v43 cumulative grades.
+[Latest grading correction](reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; The correction is retained in the current assistant-v44 cumulative grades.
 
 The assistant reads each complete draft against its source packet, task-specific checks and the full anti-slop lens. Every check is marked pass, fail or unresolved. Unresolved earns no credit and is reported separately from confirmed failure. API errors are ungraded. Findings include exact quotations with verified offsets and line numbers.
 

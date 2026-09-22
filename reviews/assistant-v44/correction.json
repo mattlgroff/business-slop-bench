@@ -1,0 +1,13 @@
+{
+  "path": "runs/pilot-v20/spacexai--grok-4.7--vendor-decision-memo--house.md",
+  "outputSha256": "6a3e98d133b79c2061b016aaa7b643b45ac29c9db7bccf99b4c93a4440854861",
+  "check": "grounding",
+  "previousVerdict": "review",
+  "verdict": "pass",
+  "reason": "Explicitly requests authorization for Priya to sign; it does not assert that signing authority already exists. Apply the same proposed-authorization exception used for Sol 5.6.",
+  "evidence": {
+    "quote": "Approve Alpha and authorize Priya to sign within the $100,000 year-one ceiling.",
+    "offset": 719,
+    "line": 15
+  }
+}
