@@ -1,0 +1,134 @@
+[
+  {
+    "model": "Qwen Flash",
+    "condition": "default",
+    "completed": 8,
+    "expected": 8,
+    "pass": 47,
+    "fail": 7,
+    "review": 0,
+    "total": 54,
+    "readyWithoutEdits": 0
+  },
+  {
+    "model": "Qwen Flash",
+    "condition": "house",
+    "completed": 8,
+    "expected": 8,
+    "pass": 41,
+    "fail": 12,
+    "review": 1,
+    "total": 54,
+    "readyWithoutEdits": 1
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "default",
+    "completed": 8,
+    "expected": 8,
+    "pass": 51,
+    "fail": 2,
+    "review": 1,
+    "total": 54,
+    "readyWithoutEdits": 4
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "house",
+    "completed": 8,
+    "expected": 8,
+    "pass": 48,
+    "fail": 6,
+    "review": 0,
+    "total": 54,
+    "readyWithoutEdits": 1
+  },
+  {
+    "model": "Astra",
+    "condition": "default",
+    "completed": 8,
+    "expected": 8,
+    "pass": 54,
+    "fail": 0,
+    "review": 0,
+    "total": 54,
+    "readyWithoutEdits": 4
+  },
+  {
+    "model": "Astra",
+    "condition": "house",
+    "completed": 8,
+    "expected": 8,
+    "pass": 54,
+    "fail": 0,
+    "review": 0,
+    "total": 54,
+    "readyWithoutEdits": 7
+  },
+  {
+    "model": "Opus 5",
+    "condition": "default",
+    "completed": 2,
+    "expected": 8,
+    "pass": 11,
+    "fail": 2,
+    "review": 0,
+    "total": 13,
+    "readyWithoutEdits": 0
+  },
+  {
+    "model": "Opus 5",
+    "condition": "house",
+    "completed": 1,
+    "expected": 8,
+    "pass": 6,
+    "fail": 0,
+    "review": 1,
+    "total": 7,
+    "readyWithoutEdits": 0
+  },
+  {
+    "model": "Fable 5.1",
+    "condition": "default",
+    "completed": 1,
+    "expected": 8,
+    "pass": 6,
+    "fail": 1,
+    "review": 0,
+    "total": 7,
+    "readyWithoutEdits": 0
+  },
+  {
+    "model": "Fable 5.1",
+    "condition": "house",
+    "completed": 1,
+    "expected": 8,
+    "pass": 7,
+    "fail": 0,
+    "review": 0,
+    "total": 7,
+    "readyWithoutEdits": 1
+  },
+  {
+    "model": "DeepSeek Flash",
+    "condition": "default",
+    "completed": 2,
+    "expected": 8,
+    "pass": 11,
+    "fail": 2,
+    "review": 0,
+    "total": 13,
+    "readyWithoutEdits": 0
+  },
+  {
+    "model": "DeepSeek Flash",
+    "condition": "house",
+    "completed": 1,
+    "expected": 8,
+    "pass": 6,
+    "fail": 0,
+    "review": 1,
+    "total": 7,
+    "readyWithoutEdits": 0
+  }
+]

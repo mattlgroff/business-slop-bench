@@ -1,0 +1,7 @@
+{
+  "anthropic--claude-fable-5.1--pilot-client-email--default": "abc5b318a8b0611beb2a1b639cb177464f1d7c284543e8c142a5469a6535d6f6",
+  "anthropic--claude-fable-5.1--pilot-client-email--house": "2e6b65f4c0f9538b828bb1d701945f68af67d49f718f59e2071235ad768397ac",
+  "deepseek--deepseek-v4.1-flash--pilot-client-email--default": "b3f3100ec7ab7e0bba67a752b520a7eff58fd703c7a3ce60dd74c880dacffc2e",
+  "deepseek--deepseek-v4.1-flash--pilot-client-email--house": "82d6c16828b0b3433c1397bfacf1c134a2add66816a112774b9783d82cb163f5",
+  "deepseek--deepseek-v4.1-flash--launch-delay-email--default": "721a304228a3cef541b6694ea37f2cd8dfa1db64b4548d20d60581903af4452b"
+}

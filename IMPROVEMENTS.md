@@ -1,5 +1,17 @@
 # Grader improvement log
 
+## Fable 5.1 and DeepSeek partial samples, v11
+
+Fable 5.1 rejected the initial ZDR request with a 400 eligibility error. The catalog reports no ZDR support for Fable 5 and 5.1. The new frozen protocol declares a non-ZDR exception for those explicitly requested models and these synthetic test packets. Other writer routes remain unchanged; no private repo content or credential was added to the prompts.
+
+Fable completed the default pilot email. Its house request returned 429, then succeeded after a cooldown and one bounded retry. The next default launch email returned 429. DeepSeek Flash completed both pilot emails and the default launch update; the house launch update timed out at 90 seconds twice. Further retries stopped. The retry helper now recognizes this specific inspected Gateway timeout signature while retaining the full failed reservation; arbitrary 500 errors remain ineligible.
+
+[Assistant review v4](reviews/assistant-v4/REPORT.md) adds five reviewed outputs, giving a matched first-email comparison across six models. Fable house passes all seven content checks and needs no supported edits in this review. Its default email invents prior discussions. DeepSeek default also invents discussions; its house approval promise remains unresolved. Partial models are not included as complete eight-brief totals.
+
+The coverage audit validates the frozen task hash, rejects competing successful samples for one cell, and separates generated, failed and unattempted cases. Current six attempted models have 56 saved and reviewed outputs; 40 cases across those models remain ungraded, and other planned models have not been attempted. The full target remains 336 drafts across 21 models.
+
+Successful v11 generation charges total $0.087805. Conservative cumulative accounting is $7.8505 of $20, including previous failed reservations. No Jev calls occurred. All collection sessions exited and released their locks.
+
 ## Astra reference sample and assistant grading
 
 Collected all sixteen Astra drafts under the same corrected task set and existing economical settings. Every call completed without retries or warnings. Successful generation cost was $0.47158. No Jev calls occurred.

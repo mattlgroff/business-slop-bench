@@ -9,7 +9,7 @@ import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v10';
+const runName = 'pilot-v11';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -25,7 +25,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.10.0', taskFile, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.11.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -205,7 +205,7 @@ async function generateOne(model: Model, task: Task, condition: Condition) {
   const result = await paid(id, model.id, { prompt: input, reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS }, MAX_OUTPUT_TOKENS, () => generateText({
     model: model.id, prompt: input, reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS,
     maxRetries: 0, abortSignal: AbortSignal.timeout(90000),
-    providerOptions: { gateway: { zeroDataRetention: true } },
+    providerOptions: { gateway: { zeroDataRetention: !protocol.writerGatewayPolicy.nonZdrModels.includes(model.id) } },
   }));
   if (result.status !== 'ok') throw new Error('Stored generation error requires inspection');
   if (!result.text?.trim() || result.finishReason === 'length') throw new Error('GENERATION_INCOMPLETE: inspect saved output before expanding');
@@ -285,7 +285,7 @@ try {
       for (const task of tasks) for (const condition of ['default', 'house'] as const) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
         const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
-        for (const priorRun of ['pilot-v8', 'pilot-v7', 'pilot-v4']) {
+        for (const priorRun of ['pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
           if (existsSync(file(id))) break;
           const priorPath = resolve(root, 'runs', priorRun, id + '.json');
           if (!existsSync(priorPath)) continue;

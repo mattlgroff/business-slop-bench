@@ -11,7 +11,9 @@ lock = runs / '.lock'
 with lock.open('x'):
     try:
         failure = json.loads(path.read_text())
-        assert failure.get('status') == 'error' and failure.get('error', {}).get('statusCode') in (429, 502, 503, 504), 'Only inspected transient errors are eligible'
+        error = failure.get('error', {})
+        gateway_timeout = error.get('statusCode') == 500 and error.get('name') == 'GatewayResponseError' and 'operation was aborted due to timeout' in error.get('message', '')
+        assert failure.get('status') == 'error' and (error.get('statusCode') in (429, 502, 503, 504) or gateway_timeout), 'Only inspected transient errors are eligible'
         name = path.stem
         attempts = list(path.parent.glob(name + '--failed-attempt-*.json'))
         assert len(attempts) < 2, 'Two manual retries already used; diagnose before more spending'
