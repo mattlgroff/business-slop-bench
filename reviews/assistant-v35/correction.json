@@ -1,0 +1,13 @@
+{
+  "path": "runs/pilot-v21/anthropic--claude-fable-5--pilot-results-memo--default.md",
+  "outputSha256": "655bfce1ee7004497033bf3b375c4733d3ba6a93395eadb047a111944316a79e",
+  "check": "grounding",
+  "previousVerdict": "pass",
+  "verdict": "fail",
+  "reason": "The source reports 200 baseline tickets and 100 pilot tickets, but supplies no sample-adequacy criterion, precision estimate or support for declaring the sample adequate. The model presents an unsupported assessment as fact.",
+  "evidence": {
+    "quote": "Adequate for a pilot",
+    "offset": 247,
+    "line": 10
+  }
+}

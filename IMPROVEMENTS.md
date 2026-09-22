@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Sample-adequacy grounding correction
+
+The Gemini Pro collection attempt exited at the existing lock without making a paid call. A separately started paced collector was running GPT-6 Sol and Luna; it was left untouched. Used the turn to inspect sample-adequacy and follow-up-study claims in the existing readouts.
+
+Fable 5 default calls the sample adequate without a supporting criterion or evidence in the source pack. Corrected its grounding check from pass to fail: default content checks become 49/54 and content readiness 3/8. Ready without edits remains 0/8, and the model remains disqualified on ZDR. All 303 other rows, including the prior factual-contrast corrections, remain unchanged. The builder verifies exact output hashes, quote offsets and the allowed field changes. [Correction and cumulative comparison](reviews/assistant-v35/REPORT.md).
+
+Prospective language about isolating effects remains a calibration concern, not an automatic keyword failure. The report distinguishes study objectives and conditional decision rules from guaranteed findings. No paid request or budget change was made by this audit.
+
 ## Apply the negative-parallelism exceptions
 
 Audited all four confirmed negative-parallelism findings in the current 304-draft cohort. Each contrasts substantive facts or decisions, so the old rationale that the affirmative clause could stand alone was insufficient under the frozen lens. Removed the findings in Opus 5 default strategy, Opus 5 house handoff, Opus 4.6 default handoff and Fable 5 default readout. The unsupported technical-capability assertion remains a content concern rather than proof of empty rhetoric.
