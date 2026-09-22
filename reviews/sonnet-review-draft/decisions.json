@@ -222,6 +222,28 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--change-order--house.md",
       "outputSha256": "f554edd2808e648fc68a4a97f77c233f656fcef5321d9768fec2ba7c630bcac9"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "Only Option A is currently authorized and executable.",
+          "Invents existing authorization and execution readiness. The draft also claims immediate launch readiness and low organizational risk; approved source documents alone do not establish those claims. COO selection remains required."
+        ]
+      ],
+      "style": [
+        [
+          "21",
+          "Select Q Next AI Pilot",
+          "The Q Next construction is an unnatural, unclear title for the next-quarter decision. It is awkward wording, not evidence that a specific calendar quarter was required."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--ai-strategy-slides--default.md",
+      "outputSha256": "517886332fdf94b9267e356844757e1928c80bdb356729809960df4394ec36d4"
     }
   ]
 }

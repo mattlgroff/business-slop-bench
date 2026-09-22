@@ -262,5 +262,52 @@
         "text": "rather than "
       }
     ]
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--ai-strategy-slides--default.md",
+    "words": 222,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 27,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 342,
+        "line": 8,
+        "text": "—"
+      },
+      {
+        "offset": 536,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 634,
+        "line": 15,
+        "text": "—"
+      },
+      {
+        "offset": 738,
+        "line": 18,
+        "text": "—"
+      },
+      {
+        "offset": 977,
+        "line": 22,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
   }
 ]
