@@ -2,7 +2,9 @@
 
 A small TypeScript benchmark for single-call English business writing. It compares 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation and Jev evaluation.
 
-Current work: [v8 diagnostic collection](IMPROVEMENTS.md). The CLI targets v8. `npm run bench -- collect alibaba/qwen3.8-flash` collects all eight briefs in both conditions without claiming calibrated grades. Matching v7 writer outputs are reused by input hash. `npx tsx src/draft-audit.ts pilot-v8` produces a read-only audit of saved outputs and mechanical checks. The full model comparison remains gated pending broader calibration. Historical v4 paths below refer to the original smoke evidence.
+Current results: [assistant grades of all 32 Qwen and Kimi drafts](reviews/assistant-v1/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+
+Prior work: [v8 diagnostic collection](IMPROVEMENTS.md). The CLI targets v9; `grade-collected` records provisional Jev grades of saved v8 drafts. Do not resume those paid judge calls unless requested. `npm run bench -- collect alibaba/qwen3.8-flash` collects all eight briefs in both conditions without claiming calibrated grades. Matching v7 writer outputs are reused by input hash. `npx tsx src/draft-audit.ts pilot-v8` produces a read-only audit of saved outputs and mechanical checks. The full model comparison remains gated pending broader calibration. Historical v4 paths below refer to the original smoke evidence.
 
 ## Run
 

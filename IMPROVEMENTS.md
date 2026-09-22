@@ -1,5 +1,22 @@
 # Grader improvement log
 
+## Assistant replaces Jev for the current comparison
+
+At the user's request, stopped Jev retries and graded all 32 Qwen and Kimi drafts directly with the existing 54 task-content checks per model/condition. The last Jev process had exited; 26 of 32 Jev score records exist and six remain incomplete. They are preserved as diagnostics and are not used for the assistant's grades.
+
+[Assistant report](reviews/assistant-v1/REPORT.md), [all decisions and exact evidence](reviews/assistant-v1/grades.json), and [reproducible report builder](reviews/assistant-v1/build.py). The builder validates passages and assembles explicit assistant-authored decisions; it is not an automated semantic grader. Model identities were visible, and this is not human gold or independent validation.
+
+| Model | Condition | Content checks passed | Ready without edits |
+|---|---|---:|---:|
+| Qwen Flash | Default | 47/54 | 0/8 |
+| Qwen Flash | House | 40/54 | 1/8 |
+| Kimi K3 | Default | 50/54 | 4/8 |
+| Kimi K3 | House | 48/54 | 1/8 |
+
+Readiness requires all critical content checks, word-limit compliance, no placeholders, a clean style gate and no supported editorial findings. Three unresolved judgments remain separate and earn no point. Source ambiguity about this/next quarter is not penalized. The report explicitly revises the earlier tentative concern about Qwen's statement that no further acceptance criteria exist: in this closed source pack it reasonably refers to the two supplied criteria.
+
+No new writer calls or paid calls were needed for the assistant review. Cumulative conservative accounting after the earlier Jev attempts is $2.8396 of $20. SDK tests and type checking passed before v9 grading began. The global run lock is absent and there are no task-owned live processes.
+
 ## Kimi K3 added to the v8 screen
 
 Completed the user-requested Kimi K3 run: sixteen successful generations, the same eight briefs and two conditions, no retries or agent loop. Actual generation cost was $0.168232. Conservative cumulative budget accounting is $2.3122 of $20. The collection process exited successfully and released its lock.

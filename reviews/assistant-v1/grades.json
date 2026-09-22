@@ -1,0 +1,2700 @@
+{
+  "method": {
+    "reviewer": "Assistant in this thread; model identities visible",
+    "status": "Provisional assistant-authored grades, not human gold or independent benchmark validation",
+    "scoring": "Existing per-task content checks, with pass/fail/review kept separate. No credit for review. Every task check has equal weight in the displayed content-check fraction; checks overlap and are not independent. Word limit, placeholders, style gate and editorial polish remain separate.",
+    "styleScope": "Full frozen anti-slop catalog reviewed; supported editorial findings recorded, not one point per category. Necessary factual contrasts are allowed.",
+    "readiness": "Content ready requires all content checks pass, word limit compliance and no placeholders. Ready without edits also requires the style gate and no recorded editorial findings.",
+    "exceptions": [
+      "Do not score this/next-quarter inconsistency introduced by the AI strategy brief itself.",
+      "Handoff default Qwen: No further criteria exist is accepted as referring to the two supplied acceptance criteria, not unknown external policy. This revises the earlier tentative editorial concern.",
+      "Matched-ticket randomization is treated as a new delivery commitment when asserted as what the test will do, rather than labelled as a proposed design.",
+      "C01 for results requires the stated delta (3 minutes or 20%), not just endpoints from which a reader could calculate it."
+    ],
+    "tasksSha256": "854e3223ac0c0b891f1c98b547c8bce1eaf0648e0875f3431ec17bd2d2cbdd55",
+    "lensSha256": "0f9f01829e56e29a5a751e5f040d7a6407d1ccc3520a795863060bf94b3b3ab7"
+  },
+  "rows": [
+    {
+      "model": "Qwen Flash",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--pilot-client-email--default.md",
+      "outputSha256": "65cd4bf1550d1e568bb7d703876882affaf133ca13db8508cccff15618bc3616",
+      "writerInputHash": "c5fd1dbf8903b30dd0099a29fd4f858211f622a4413c594b9fc7800ac9bb07b6",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents prior discussions and an initial risk mitigation strategy absent from the source.",
+          "evidence": {
+            "quote": "Following recent discussions",
+            "offset": 64,
+            "line": 5
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 148,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "16",
+          "reason": "Generic reassurance repeats the bounded-pilot rationale without adding decision information.",
+          "evidence": {
+            "quote": "This pilot offers a low-risk opportunity to validate efficiency gains before committing to broader implementation.",
+            "offset": 566,
+            "line": 13
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00061985
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--pilot-client-email--house.md",
+      "outputSha256": "ece481fbae0408091d4c663f60a630804f2dafbb68ef008b8775395608cf0fb3",
+      "writerInputHash": "cc9f9a1497319fbc6b4df4944233ffe192703ac4c6610b01f3607d22f4dee7ef",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "fail",
+          "reason": "Submitting an access request does not explicitly require granted approval before data access.",
+          "evidence": {
+            "quote": "I will submit the access request for security clearance once you reply.",
+            "offset": 705,
+            "line": 17
+          }
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "fail",
+          "reason": "The requested approval is not explicitly conditional on security clearance.",
+          "evidence": {
+            "quote": "Please confirm acceptance of the scope and fee.",
+            "offset": 657,
+            "line": 17
+          }
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "review",
+          "reason": "Unclear whether specific dates means rollout dates or all scheduling; the latter adds an unsupported dependency.",
+          "evidence": {
+            "quote": "production rollout and specific dates remain out of scope until we review the pilot's results.",
+            "offset": 561,
+            "line": 15
+          }
+        }
+      ],
+      "counts": {
+        "pass": 4,
+        "fail": 2,
+        "review": 1
+      },
+      "words": 107,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00100747
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--launch-delay-email--default.md",
+      "outputSha256": "1bb63eb2730346b538c535f7e4257eab916b48882a2c57523fe766c1a83e460f",
+      "writerInputHash": "d836b94ad74a2cf3b3a102f68ed3f55a1699c38698c58b277fa2971f5359efbd",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents team performance, review quality and present readiness.",
+          "evidence": {
+            "quote": "The team is moving efficiently. Nia's review is thorough, and the demo path is ready now.",
+            "offset": 435,
+            "line": 13
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 109,
+      "maxWords": 180,
+      "emDashes": [
+        {
+          "offset": 16,
+          "line": 1
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00054911
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--launch-delay-email--house.md",
+      "outputSha256": "f16a93257419ce095841e7baec4299a1f858501b29301cfad27f182a5ea11908",
+      "writerInputHash": "ef3d86ab23ef474fae3f7e8302944c22825160b40369a3a5f5028710b60704ae",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Readiness and confidence are asserted without evidence in the source.",
+          "evidence": {
+            "quote": "The team is fully prepared and remains confident in the quality of the release.",
+            "offset": 208,
+            "line": 3
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 101,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00099031
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--vendor-decision-memo--default.md",
+      "outputSha256": "27f489212d639bec56344073d7f91dbc1ef4f1fcf9abbdc3c0151a1f2bd058c9",
+      "writerInputHash": "5fc116f1d6aa5d04c02fe899af527554aef255edebc05cd1de550b4de7f0278c",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "An uncommitted SSO date does not prove impossibility throughout year one.",
+          "evidence": {
+            "quote": "the platform cannot reach production within year one under any planned timeline.",
+            "offset": 690,
+            "line": 21
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 172,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 34,
+          "line": 1
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "14",
+          "reason": "Emojis used as professional decision-table structural markers.",
+          "evidence": {
+            "quote": "\u2705",
+            "offset": 370,
+            "line": 15
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00024477
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--vendor-decision-memo--house.md",
+      "outputSha256": "e16577a5bdbadd50ef594c6e4dcfa36e9ac5bf1709c72e0a6c76f61be0be3dc4",
+      "writerInputHash": "d36b7bea6d10b6f0f2af456abb740099b8b10fcc735f7ee506af1b4a168fa6fc",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "fail",
+          "reason": "Names Priya in the sender line but does not explicitly preserve CFO approval before signing.",
+          "evidence": {
+            "quote": "Sign with Alpha.",
+            "offset": 886,
+            "line": 22
+          }
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 158,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "16",
+          "reason": "Repeats both vendor totals immediately after a table already displaying them.",
+          "evidence": {
+            "quote": "Beta offers a $70,000 first-year cost",
+            "offset": 538,
+            "line": 16
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00106761
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--pilot-results-memo--default.md",
+      "outputSha256": "f78d413b0f9e1ec68f8efaed1372364437f58088efc775209789c347b417e6c9",
+      "writerInputHash": "d51015dda69be7545657d0e0160bde253b7095eda2515dc1dd4690de1e4cac00",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Failure of a quality threshold does not establish a failure of speed; also attributes a proposed design to Sam without source support.",
+          "evidence": {
+            "quote": "the scaling threshold fails on both speed and quality grounds",
+            "offset": 1239,
+            "line": 27
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 253,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 299,
+          "line": 9
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Final summary repeats the recommendation, caveat, quality gate and savings status already stated.",
+          "evidence": {
+            "quote": "### Summary",
+            "offset": 1349,
+            "line": 29
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00028369
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--pilot-results-memo--house.md",
+      "outputSha256": "2ea4ad9f7989eaa00fbf2830ca11b7e4dd2848d7a0813dec1b85f841b58d894c",
+      "writerInputHash": "d20a29adced8f5655f7c22fec9e859562420b8f272caa4c629324de6e4d5de69",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "fail",
+          "reason": "Reports endpoints but not the requested reduction of 3 minutes or 20%.",
+          "evidence": {
+            "quote": "from 15 to 12 minutes",
+            "offset": 70,
+            "line": 3
+          }
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "fail",
+          "reason": "Omits the required 94% baseline quality rate.",
+          "evidence": {
+            "quote": "The pass rate fell to 89%, below the required 92%.",
+            "offset": 167,
+            "line": 5
+          }
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Adds a definite randomization commitment to a source that only authorizes a matched-ticket follow-up.",
+          "evidence": {
+            "quote": "This test will control for ticket mix and randomize allocation",
+            "offset": 547,
+            "line": 9
+          }
+        }
+      ],
+      "counts": {
+        "pass": 4,
+        "fail": 3,
+        "review": 0
+      },
+      "words": 114,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00100971
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--discovery-proposal--default.md",
+      "outputSha256": "ef2506566d862c7a626a8526fb433a2a29fae625c621ac00effb979148722e4f",
+      "writerInputHash": "e91baa3bf817b876dc655c999d290113d01f35895d714fa4f25b590206e2c0be",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "fail",
+          "reason": "Offers email confirmation as an alternative to signature, conflicting with the signature prerequisite later in the draft.",
+          "evidence": {
+            "quote": "Sign** this proposal (or reply confirming approval via email).",
+            "offset": 922,
+            "line": 38
+          }
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Adds an unsupported approval alternative.",
+          "evidence": {
+            "quote": "or reply confirming approval via email",
+            "offset": 944,
+            "line": 38
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 2,
+        "review": 0
+      },
+      "words": 220,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 1062,
+          "line": 40
+        },
+        {
+          "offset": 1148,
+          "line": 41
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "20",
+          "reason": "Generic consulting close repeats the discovery-only scope.",
+          "evidence": {
+            "quote": "designed to de-risk a larger investment by separating discovery from delivery.",
+            "offset": 1281,
+            "line": 45
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00023599
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--discovery-proposal--house.md",
+      "outputSha256": "01072d25069e6a443ea3788aaa510e5ff8466662ddd2f7623915a5d8be76482d",
+      "writerInputHash": "b6994184fb4cc4b7ea538e2ba31f211fab421dcc8da75e8d0d1c3d1767a8ac72",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "fail",
+          "reason": "Confuses approval to engage with acceptance of completed deliverables.",
+          "evidence": {
+            "quote": "You approve the engagement by confirming delivery of the three listed artifacts.",
+            "offset": 793,
+            "line": 23
+          }
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Changes the meaning and timing of the approval step.",
+          "evidence": {
+            "quote": "You approve the engagement by confirming delivery",
+            "offset": 793,
+            "line": 23
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 2,
+        "review": 0
+      },
+      "words": 127,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00102828
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "change-order",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--change-order--default.md",
+      "outputSha256": "e4a279486784677c20018e852579765f864978fa735deb5493daf8a60384db12",
+      "writerInputHash": "934edbf36f42d1c50f82b975a762a53f8ddb5af970c06f73ea1f0d39bf077735",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 216,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 1172,
+          "line": 41
+        },
+        {
+          "offset": 1232,
+          "line": 43
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [
+        {
+          "quote": "[Insert Date]",
+          "offset": 37,
+          "line": 3
+        },
+        {
+          "quote": "[Project Lead]",
+          "offset": 84,
+          "line": 5
+        }
+      ],
+      "editorialFindings": [
+        {
+          "category": "13",
+          "reason": "Unfilled template placeholders in a requested finished proposal; [Project Lead] is also unfilled.",
+          "evidence": {
+            "quote": "[Insert Date]",
+            "offset": 37,
+            "line": 3
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00022272
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "change-order",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--change-order--house.md",
+      "outputSha256": "b6738ab95a44fcc672d46961e9feff68a1ef450c921005793508920eafc41f79",
+      "writerInputHash": "1a8ca2198d400302123655ac0b1225e304e9f3e95095dd2b89fc4040c04bd647",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 107,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00100749
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--ai-strategy-slides--default.md",
+      "outputSha256": "54cb363bf0a376e929960249bbaee31fa551ce8a84b5496a1aa9d21a2e008e9b",
+      "writerInputHash": "2e6745d2ae5979f4388b81f5ef7435de3dcb83b37dec353a4760aa844f905730",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "review",
+          "reason": "Low risk and ready go beyond the given facts, but may be read as recommendation rationale rather than a verified status.",
+          "evidence": {
+            "quote": "Option A is ready: approved source documents, defined IT owner, low risk",
+            "offset": 609,
+            "line": 17
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 1
+      },
+      "words": 187,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 263,
+          "line": 10
+        },
+        {
+          "offset": 381,
+          "line": 11
+        },
+        {
+          "offset": 1000,
+          "line": 25
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00027373
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--ai-strategy-slides--house.md",
+      "outputSha256": "86641fad0797232a5a207f6cdee37707ba5e477e46fa47006d92e30b5392642a",
+      "writerInputHash": "26cf4246932da501d7025bd9407aac74901038d3947b4e2d1e51c8475f7e9642",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "fail",
+          "reason": "Lists options and a metric but never recommends choosing knowledge search.",
+          "evidence": {
+            "quote": "Slide 4: Evaluation Criteria and Success Threshold",
+            "offset": 476,
+            "line": 18
+          }
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "fail",
+          "reason": "Source assigns selection to COO and reporting to Dana.",
+          "evidence": {
+            "quote": "COO selects the pilot and reports results before expansion.",
+            "offset": 88,
+            "line": 4
+          }
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Misassigns reporting responsibility.",
+          "evidence": {
+            "quote": "COO selects the pilot and reports results before expansion.",
+            "offset": 88,
+            "line": 4
+          }
+        }
+      ],
+      "counts": {
+        "pass": 4,
+        "fail": 3,
+        "review": 0
+      },
+      "words": 99,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00102372
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "handoff-slides",
+      "condition": "default",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--handoff-slides--default.md",
+      "outputSha256": "3ffb175ab674169c79c49ffa79db76f73d74b48e44d82203c3ed07c103e510bd",
+      "writerInputHash": "a7c03c25cb9c603cc0fe321151eb342113224084e00dda53a1a88da5b8186a52",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 196,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "29",
+          "reason": "Abstract restatement adds no information beyond the explicit unassigned rehearsal organizer.",
+          "evidence": {
+            "quote": "The gap is structural: the handoff boundary creates a zone of unowned work.",
+            "offset": 549,
+            "line": 21
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00064349
+    },
+    {
+      "model": "Qwen Flash",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v8/alibaba--qwen3.8-flash--handoff-slides--house.md",
+      "outputSha256": "82b3870d7ffd1840db814eb7e8f66675c547a103f0d0ca9ee9e0f008fb89b5e1",
+      "writerInputHash": "69d5870ac2f9772ef72d0502b49be4b153b24612f6d4a829399fd3a2c9604ed9",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Source assigns Lee defect fixes, not ownership of the approved runbook.",
+          "evidence": {
+            "quote": "| Runbook approved | Lee | Done |",
+            "offset": 857,
+            "line": 41
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 153,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00104897
+    },
+    {
+      "model": "Kimi K3",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--pilot-client-email--default.md",
+      "outputSha256": "ec18eadc887ad70fcdc24615b5ebf10e45144cf841da0232cb53611d3677aa14",
+      "writerInputHash": "c5fd1dbf8903b30dd0099a29fd4f858211f622a4413c594b9fc7800ac9bb07b6",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 123,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0097926
+    },
+    {
+      "model": "Kimi K3",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--pilot-client-email--house.md",
+      "outputSha256": "12162c765ec1fe116b85c4be55c8b2a578d16a00e5dae54b715c972055b163ce",
+      "writerInputHash": "cc9f9a1497319fbc6b4df4944233ffe192703ac4c6610b01f3607d22f4dee7ef",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Adds a definite delivery sequence not supplied or labelled as a proposed plan.",
+          "evidence": {
+            "quote": "begin baseline measurement in week one",
+            "offset": 988,
+            "line": 13
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 196,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "16",
+          "reason": "Overlong email repeats the pilot rationale and approval request across several paragraphs; exceeds the explicit limit.",
+          "evidence": {
+            "quote": "Over the six weeks we will establish a handling-time baseline",
+            "offset": 311,
+            "line": 7
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0127206
+    },
+    {
+      "model": "Kimi K3",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--launch-delay-email--default.md",
+      "outputSha256": "19cca80e726373369e6a80328003d19056a07e0dea04064e83d6e71fe04a5116",
+      "writerInputHash": "d836b94ad74a2cf3b3a102f68ed3f55a1699c38698c58b277fa2971f5359efbd",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Rules out delivery concerns and asserts team performance without evidence.",
+          "evidence": {
+            "quote": "not a delivery concern",
+            "offset": 782,
+            "line": 11
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 178,
+      "maxWords": 180,
+      "emDashes": [
+        {
+          "offset": 740,
+          "line": 11
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "2",
+          "reason": "Throat clearing before the actual launch update.",
+          "evidence": {
+            "quote": "A quick update on where we stand with the launch.",
+            "offset": 45,
+            "line": 5
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0051846
+    },
+    {
+      "model": "Kimi K3",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--launch-delay-email--house.md",
+      "outputSha256": "428c73ee56abdbf8be98607c30345207f7257d53c18e6f8eab67d540614674b0",
+      "writerInputHash": "ef3d86ab23ef474fae3f7e8302944c22825160b40369a3a5f5028710b60704ae",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents delivery status and separately promises preparation this week.",
+          "evidence": {
+            "quote": "Work continues on schedule against the original scope",
+            "offset": 656,
+            "line": 9
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 176,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the staging-demo decision already requested earlier in the email.",
+          "evidence": {
+            "quote": "Action needed from you:",
+            "offset": 860,
+            "line": 11
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0117642
+    },
+    {
+      "model": "Kimi K3",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--vendor-decision-memo--default.md",
+      "outputSha256": "9738ec1c7cd8dac1a7d232a032bf29948f41bea03bcb0bbec99df2d43aa4d8c4",
+      "writerInputHash": "5fc116f1d6aa5d04c02fe899af527554aef255edebc05cd1de550b4de7f0278c",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "review",
+          "reason": "The brief blocks production without SSO, but does not establish that every capability is unusable. The sentence may be intended to refer only to production value.",
+          "evidence": {
+            "quote": "the savings purchase zero usable capability.",
+            "offset": 1560,
+            "line": 32
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 0,
+        "review": 1
+      },
+      "words": 279,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 110,
+          "line": 5
+        },
+        {
+          "offset": 1558,
+          "line": 32
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "16",
+          "reason": "Repeats the table values, then repeats Alpha cost and headroom again in the recommendation.",
+          "evidence": {
+            "quote": "Alpha totals $92,000; Beta totals $70,000.",
+            "offset": 765,
+            "line": 24
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0069876
+    },
+    {
+      "model": "Kimi K3",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--vendor-decision-memo--house.md",
+      "outputSha256": "0ce8db304f51d9cdc5e3b1aa4875010365662e54f14fda38ab012b5ef68d5c15",
+      "writerInputHash": "d36b7bea6d10b6f0f2af456abb740099b8b10fcc735f7ee506af1b4a168fa6fc",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 230,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Third request for Alpha approval after Recommendation and Decision sections.",
+          "evidence": {
+            "quote": "## Requested action",
+            "offset": 1284,
+            "line": 32
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0136422
+    },
+    {
+      "model": "Kimi K3",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--pilot-results-memo--default.md",
+      "outputSha256": "6b50eb7637dd1832a9b5aef98538fc4ea44113de4b0df7eb377eb2f80c6b042f",
+      "writerInputHash": "d51015dda69be7545657d0e0160bde253b7095eda2515dc1dd4690de1e4cac00",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 165,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0093456
+    },
+    {
+      "model": "Kimi K3",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--pilot-results-memo--house.md",
+      "outputSha256": "5352af13a6e8e6af0536ce039c288abe01d8d0d9c8727af017b60692d8a7c99a",
+      "writerInputHash": "d20a29adced8f5655f7c22fec9e859562420b8f272caa4c629324de6e4d5de69",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 213,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "29",
+          "reason": "Manufactured phrasing repeats the already explicit 89% versus 92% result.",
+          "evidence": {
+            "quote": "a clear bar it did not clear",
+            "offset": 710,
+            "line": 16
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0134286
+    },
+    {
+      "model": "Kimi K3",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--discovery-proposal--default.md",
+      "outputSha256": "cdb36d3cdb8e13b23a0cbb2edd7de43871784604086131899149dfe291aa5f6d",
+      "writerInputHash": "e91baa3bf817b876dc655c999d290113d01f35895d714fa4f25b590206e2c0be",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 158,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0095496
+    },
+    {
+      "model": "Kimi K3",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--discovery-proposal--house.md",
+      "outputSha256": "83f3ff0a9b3edbaf9c8a25879fa159230b950a643e3ba2c02585efcb63a500ab",
+      "writerInputHash": "b6994184fb4cc4b7ea538e2ba31f211fab421dcc8da75e8d0d1c3d1767a8ac72",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "fail",
+          "reason": "A later statement treats delivery itself as closing acceptance rather than preserving sponsor confirmation.",
+          "evidence": {
+            "quote": "delivery of the artifacts closes the engagement",
+            "offset": 1241,
+            "line": 44
+          }
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Adds an unauthorized acceptance limitation; also claims an attached agreement and scheduling availability not provided.",
+          "evidence": {
+            "quote": "There is no extended acceptance process",
+            "offset": 1200,
+            "line": 44
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 2,
+        "review": 0
+      },
+      "words": 285,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the deliverables and payment sequence after describing both in prior sections.",
+          "evidence": {
+            "quote": "Discovery ends with delivery of the process map, backlog, and recommendation",
+            "offset": 1577,
+            "line": 56
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0148326
+    },
+    {
+      "model": "Kimi K3",
+      "task": "change-order",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--change-order--default.md",
+      "outputSha256": "acbef4f098449833ced7c43fa449c3a100c6010ab8210d9c49588ae474258250",
+      "writerInputHash": "934edbf36f42d1c50f82b975a762a53f8ddb5af970c06f73ea1f0d39bf077735",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 172,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0067206
+    },
+    {
+      "model": "Kimi K3",
+      "task": "change-order",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--change-order--house.md",
+      "outputSha256": "90c03dd29919482d0842d62b11c97807e31a158df42f429e4c91515c624b8f35",
+      "writerInputHash": "1a8ca2198d400302123655ac0b1225e304e9f3e95095dd2b89fc4040c04bd647",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 216,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0130836
+    },
+    {
+      "model": "Kimi K3",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--ai-strategy-slides--default.md",
+      "outputSha256": "39681e6e0399a3a0480c3e428fa01c93a0bc2bcf658b63957712fbf57598d5a1",
+      "writerInputHash": "2e6745d2ae5979f4388b81f5ef7435de3dcb83b37dec353a4760aa844f905730",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Pending production authorization does not establish that every pilot is impermissible.",
+          "evidence": {
+            "quote": "Cannot be the compliant near-term pilot",
+            "offset": 738,
+            "line": 20
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 171,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 10,
+          "line": 1
+        },
+        {
+          "offset": 234,
+          "line": 7
+        },
+        {
+          "offset": 505,
+          "line": 15
+        },
+        {
+          "offset": 789,
+          "line": 22
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0081636
+    },
+    {
+      "model": "Kimi K3",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--ai-strategy-slides--house.md",
+      "outputSha256": "84aa5c3ebf6ee92226a8c71d1dd99c82bc0ee6626066ea1a1dd96ca56ea391ee",
+      "writerInputHash": "26cf4246932da501d7025bd9407aac74901038d3947b4e2d1e51c8475f7e9642",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "No approval date is known. A current authorization gap does not establish impossibility for the whole quarter. This is not a penalty for the brief's next/this-quarter ambiguity.",
+          "evidence": {
+            "quote": "Option B cannot enter production this quarter.",
+            "offset": 690,
+            "line": 13
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 199,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0128718
+    },
+    {
+      "model": "Kimi K3",
+      "task": "handoff-slides",
+      "condition": "default",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--handoff-slides--default.md",
+      "outputSha256": "3fb2a2f812b90d6e555dc81147e1675a419691d0521f76367a11d399bbbd3fbd",
+      "writerInputHash": "a7c03c25cb9c603cc0fe321151eb342113224084e00dda53a1a88da5b8186a52",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents Lee as pre-acceptance incident owner. Source only assigns Lee defect fixes.",
+          "evidence": {
+            "quote": "incident ownership moves from Lee to Jo",
+            "offset": 1282,
+            "line": 34
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 312,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 19,
+          "line": 1
+        },
+        {
+          "offset": 906,
+          "line": 25
+        },
+        {
+          "offset": 1433,
+          "line": 36
+        },
+        {
+          "offset": 1863,
+          "line": 46
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0074796
+    },
+    {
+      "model": "Kimi K3",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v8/moonshotai--kimi-k3--handoff-slides--house.md",
+      "outputSha256": "5fb05bebc2517172784bcb142594d0b95f262ed9088197adbd0d95bafc58c192",
+      "writerInputHash": "69d5870ac2f9772ef72d0502b49be4b153b24612f6d4a829399fd3a2c9604ed9",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents Lee as pre-acceptance incident owner. Source only assigns Lee defect fixes.",
+          "evidence": {
+            "quote": "Incident ownership transfers from Lee to Jo",
+            "offset": 1251,
+            "line": 15
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 215,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0126642
+    }
+  ]
+}

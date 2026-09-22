@@ -9,7 +9,7 @@ import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v8';
+const runName = 'pilot-v9';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -24,7 +24,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.8.0', sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.9.0', sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -256,6 +256,25 @@ try {
         await grade(id, tasks[0], old.text);
       }
       report();
+    }
+    else if (command === 'grade-collected') {
+      const previous = read('runs/pilot-v4/calibration.json');
+      atomic(file('calibration'), { protocolHash, thresholds: previous.thresholds, inheritedFrom: 'pilot-v4', gatePass: false, reason: 'Diagnostic grading of collected drafts; broader calibration pending' });
+      const selected = models.filter(m => ['alibaba/qwen3.8-flash', 'moonshotai/kimi-k3'].includes(m.id) && (!arg || m.id === arg));
+      if (!selected.length) throw new Error('No collected model selected');
+      const failures: string[] = [];
+      for (const model of selected) for (const task of tasks) for (const condition of ['default', 'house'] as const) {
+        const id = `${safeId(model.id)}--${task.id}--${condition}`;
+        const old = read(`runs/pilot-v8/${id}.json`);
+        const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
+        if (old.status !== 'ok' || old.inputHash !== hash(input)) throw new Error('Saved generation does not match current writer input');
+        atomic(file(id), { ...old, protocolHash, importedFrom: `pilot-v8/${id}.json`, originalProtocolHash: old.originalProtocolHash ?? old.protocolHash });
+        writeFileSync(resolve(runDir, id + '.md'), old.text);
+        try { await grade(id, task, old.text); }
+        catch (e) { failures.push(id); console.error(JSON.stringify({ id, grading: 'incomplete', error: errorInfo(e) })); }
+      }
+      report();
+      if (failures.length) throw new Error(`Incomplete grading for ${failures.length} drafts; inspect saved errors before retrying`);
     }
     else if (command === 'collect') {
       const model = models.find(m => m.id === arg);

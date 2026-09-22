@@ -1,0 +1,58 @@
+[
+  {
+    "model": "Qwen Flash",
+    "condition": "default",
+    "pass": 47,
+    "fail": 6,
+    "review": 1,
+    "total": 54,
+    "contentReady": 1,
+    "readyWithoutEdits": 0,
+    "styleGatePass": 2,
+    "editorialFindings": 6,
+    "wordLimitFailures": 0,
+    "generationCost": 0.0030733500000000003
+  },
+  {
+    "model": "Qwen Flash",
+    "condition": "house",
+    "pass": 40,
+    "fail": 13,
+    "review": 1,
+    "total": 54,
+    "contentReady": 1,
+    "readyWithoutEdits": 1,
+    "styleGatePass": 8,
+    "editorialFindings": 1,
+    "wordLimitFailures": 0,
+    "generationCost": 0.00818356
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "default",
+    "pass": 50,
+    "fail": 3,
+    "review": 1,
+    "total": 54,
+    "contentReady": 4,
+    "readyWithoutEdits": 4,
+    "styleGatePass": 4,
+    "editorialFindings": 2,
+    "wordLimitFailures": 0,
+    "generationCost": 0.0632238
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "house",
+    "pass": 48,
+    "fail": 6,
+    "review": 0,
+    "total": 54,
+    "contentReady": 3,
+    "readyWithoutEdits": 1,
+    "styleGatePass": 8,
+    "editorialFindings": 5,
+    "wordLimitFailures": 1,
+    "generationCost": 0.1050078
+  }
+]
