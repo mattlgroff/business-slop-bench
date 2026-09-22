@@ -117,6 +117,21 @@
       "style": [],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--vendor-decision-memo--house.md",
       "outputSha256": "b60eb39ff36b206ff52f522d4d5a313cd0e51837f66793f3d5ad0c5f04819789"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "content": [],
+      "style": [
+        [
+          "10",
+          "## Why Scaling Now Is Not Justified",
+          "This section repeats the performance, quality and financial limitations already explained in the preceding results section."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--pilot-results-memo--default.md",
+      "outputSha256": "53c37ad82df8f479a37cc8bc20d7b6f58bc0f434f25e026ca8a35381ae5e3ad5"
     }
   ]
 }
