@@ -1,0 +1,285 @@
+{
+  "status": "Author assessment of test coverage, not model scores or a percentage of rubric completeness.",
+  "sourceRubricSha256": "4dbb445be6a861b6b3b4b6d57f722e867dfd3e226c32d47e8f14d96753f8253d",
+  "taskFileSha256": "3a5f7bd878da02841e5aafbc246b8d6c2a5567ddad7e3d646b8ecb105d209dfe",
+  "dimensions": [
+    {
+      "dimension": "promise_fidelity",
+      "label": "Promise / commitment fidelity",
+      "assessment": "Focused coverage",
+      "directTaggedChecks": [
+        {
+          "task": "pilot-client-email",
+          "check": "C02"
+        },
+        {
+          "task": "pilot-client-email",
+          "check": "C05"
+        },
+        {
+          "task": "launch-delay-email",
+          "check": "C03"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "C03"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "C05"
+        },
+        {
+          "task": "change-order",
+          "check": "C02"
+        },
+        {
+          "task": "change-order",
+          "check": "C05"
+        },
+        {
+          "task": "ai-strategy-slides",
+          "check": "C02"
+        }
+      ],
+      "evidence": "Explicit scope, start, approval and delivery conditions appear in the briefs; grounding checks also catch invented commitments.",
+      "limitation": "No long SOW with interacting payment, liability, staffing and service-level clauses."
+    },
+    {
+      "dimension": "evidence_grounding",
+      "label": "Evidence grounding",
+      "assessment": "Source-pack coverage; citation gap",
+      "directTaggedChecks": [
+        {
+          "task": "pilot-client-email",
+          "check": "C03"
+        },
+        {
+          "task": "pilot-client-email",
+          "check": "grounding"
+        },
+        {
+          "task": "launch-delay-email",
+          "check": "grounding"
+        },
+        {
+          "task": "vendor-decision-memo",
+          "check": "C04"
+        },
+        {
+          "task": "vendor-decision-memo",
+          "check": "grounding"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "C04"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "C05"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "grounding"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "grounding"
+        },
+        {
+          "task": "change-order",
+          "check": "C06"
+        },
+        {
+          "task": "change-order",
+          "check": "grounding"
+        },
+        {
+          "task": "ai-strategy-slides",
+          "check": "C04"
+        },
+        {
+          "task": "ai-strategy-slides",
+          "check": "grounding"
+        },
+        {
+          "task": "handoff-slides",
+          "check": "grounding"
+        }
+      ],
+      "evidence": "Every brief includes the grounding criterion; target-versus-result and causality checks add task-specific coverage.",
+      "limitation": "No supplied citation excerpts or real-link support traps. URL hygiene and citation entailment are untested."
+    },
+    {
+      "dimension": "numbers_integrity",
+      "label": "Numbers integrity",
+      "assessment": "Focused calculations; manual grading",
+      "directTaggedChecks": [
+        {
+          "task": "pilot-client-email",
+          "check": "C01"
+        },
+        {
+          "task": "vendor-decision-memo",
+          "check": "C01"
+        },
+        {
+          "task": "vendor-decision-memo",
+          "check": "C03"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "C01"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "C02"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "C01"
+        },
+        {
+          "task": "change-order",
+          "check": "C01"
+        },
+        {
+          "task": "ai-strategy-slides",
+          "check": "C03"
+        }
+      ],
+      "evidence": "Vendor totals, fee/rate arithmetic, thresholds, observed reductions and target-versus-actual distinctions are specified.",
+      "limitation": "No independent output-arithmetic recomputation. Schedule arithmetic and complex prose/table reconciliation are not systematically tested. The readout calculation-omission gate has a documented prompt mismatch."
+    },
+    {
+      "dimension": "consistency",
+      "label": "Internal consistency",
+      "assessment": "Focused coverage",
+      "directTaggedChecks": [
+        {
+          "task": "launch-delay-email",
+          "check": "C01"
+        },
+        {
+          "task": "handoff-slides",
+          "check": "C04"
+        }
+      ],
+      "evidence": "Launch timing and pre/post-acceptance ownership have explicit checks; grounding review can catch other contradictions.",
+      "limitation": "No deliberately conflicting source packets or long-document cross-section stress test."
+    },
+    {
+      "dimension": "decision_completeness",
+      "label": "Decision readiness",
+      "assessment": "Strong within these fixed briefs",
+      "directTaggedChecks": [
+        {
+          "task": "pilot-client-email",
+          "check": "C04"
+        },
+        {
+          "task": "pilot-client-email",
+          "check": "C06"
+        },
+        {
+          "task": "launch-delay-email",
+          "check": "C02"
+        },
+        {
+          "task": "launch-delay-email",
+          "check": "C04"
+        },
+        {
+          "task": "vendor-decision-memo",
+          "check": "C02"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "C03"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "C02"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "C04"
+        },
+        {
+          "task": "discovery-proposal",
+          "check": "C06"
+        },
+        {
+          "task": "change-order",
+          "check": "C03"
+        },
+        {
+          "task": "change-order",
+          "check": "C04"
+        },
+        {
+          "task": "ai-strategy-slides",
+          "check": "C01"
+        },
+        {
+          "task": "handoff-slides",
+          "check": "C01"
+        },
+        {
+          "task": "handoff-slides",
+          "check": "C05"
+        }
+      ],
+      "evidence": "Briefs require recommendations, decisions, prerequisites and follow-up actions under stated constraints.",
+      "limitation": "Most decisions are constrained by a clear mandatory gate. Complex strategic tradeoffs and recommendation quality beyond those gates are not separately measured."
+    },
+    {
+      "dimension": "language_precision",
+      "label": "Language precision",
+      "assessment": "Indirect coverage",
+      "directTaggedChecks": [],
+      "evidence": "Commitment, owner and dependency checks plus the style lens assess some material ambiguity. Ambiguous signatory and reassurance cases remain unresolved.",
+      "limitation": "No separately scored precision dimension or independent calibration of will/should/may and implied obligations."
+    },
+    {
+      "dimension": "anti_slop_claudespeak",
+      "label": "Anti-slop / Claudespeak",
+      "assessment": "Full lens applied; narrow task distribution",
+      "directTaggedChecks": [],
+      "evidence": "The frozen 29-category lens is reviewed, and character/candidate scans are saved. Factual-contrast exceptions are applied.",
+      "limitation": "Keyword matches alone are not defects. Short synthetic briefs do not prove coverage of every rhetorical pattern or writing genre; judgment remains unblinded."
+    },
+    {
+      "dimension": "mece_accountability",
+      "label": "MECE accountability (when applicable)",
+      "assessment": "Focused handoff coverage",
+      "directTaggedChecks": [
+        {
+          "task": "launch-delay-email",
+          "check": "C05"
+        },
+        {
+          "task": "vendor-decision-memo",
+          "check": "C05"
+        },
+        {
+          "task": "pilot-results-memo",
+          "check": "C06"
+        },
+        {
+          "task": "ai-strategy-slides",
+          "check": "C05"
+        },
+        {
+          "task": "handoff-slides",
+          "check": "C02"
+        },
+        {
+          "task": "handoff-slides",
+          "check": "C03"
+        }
+      ],
+      "evidence": "The handoff brief separates defect fixes from incident ownership and exposes an unassigned rehearsal organizer.",
+      "limitation": "No broad responsibility matrix with overlapping roles and multiple transitions. Applicability/N/A behavior is not independently tested."
+    }
+  ]
+}

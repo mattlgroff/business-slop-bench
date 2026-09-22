@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Coverage audit against the original rubric
+
+Mapped all eight dimensions in the supplied strategy-consulting rubric to the current tests, with source hashes and existing task/check references. The pilot has focused source, decision, numeric and handoff coverage, but no citation-entailment trap, independent output-arithmetic recomputation, broad overlapping-role case or independent human gold. Language precision is assessed indirectly through the task checks and lens. The audit also distinguishes short Markdown outlines from presentation design and one-shot tests from iterative quality erosion.
+
+[Coverage report](reviews/rubric-coverage-v1/REPORT.md) records these as limitations and future validation priorities. It does not change the rubric, scores, writer prompts, model roster or live collection. All referenced checks were verified against the task file, and both source hashes are saved. Sonnet continues in its existing paced session.
+
 ## Keep ranking descriptions within the evidence
 
 Corrected the new ranking renderer and both rendered views. Zero reported charges no longer automatically become a launch-promotion claim. Content-ready and ready-without-edits labels describe this provisional review rather than certify that a draft can be sent. The check-count explanation now says six or seven total checks including grounding. The ZDR-ignored view correctly describes its actual ordering and does not claim disqualified rows are excluded from that what-if table.

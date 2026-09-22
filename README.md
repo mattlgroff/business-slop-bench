@@ -48,6 +48,8 @@ Default and house conditions share the same source pack and task wording. Only t
 
 ## Current assistant scoring
 
+[Coverage against the supplied rubric](reviews/rubric-coverage-v1/REPORT.md): the pilot measures short-brief source fidelity, required decisions and style fit. Citation entailment, complex reconciliation, broader responsibility structures and independent judge calibration remain validation gaps.
+
 [Grader calibration packet](reviews/grader-calibration-v1/README.md): ten full-context diagnostic cases with model metadata removed and a separate proposed answer key. Independent labels are still pending; this is not a held-out accuracy test.
 
 [Luna full-panel repeat](reviews/repeatability-v3/REPORT.md): house content checks stay at 52/54, but the failing criterion changes and drafts ready without edits drop from 4/8 to 3/8. All 16 calls are fresh; older targeted repeats were not reused.
