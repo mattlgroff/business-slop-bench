@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Gemini Pro uncapped, v23
+
+After the separately started GPT-6 Sol/Luna collector exited, collected all 16 Gemini 3.1 Pro Preview drafts under unchanged v23 settings, v2 briefs, no output-token cap and ZDR requested. Every response has the expected requested, returned and canonical identity, a normal stop, no warnings and a valid word count. Both conditions have zero em dashes.
+
+Direct review gives 49/54 default and 51/54 house checks, with content readiness of 3/8 and 5/8 and ready-without-edits counts of 1/8 and 5/8. Default adds unsupported controlled-environment, prior-communication and deployment-readiness claims. House is cleaner but omits the strategy recommendation. Both readouts omit the derived reduction; neither reports wrong endpoint arithmetic. Two statements remain unresolved. The house vendor memo requests signing authorization explicitly and is treated as a proposal, not a claim of existing authority. [Scores and evidence](reviews/assistant-v38/REPORT.md).
+
+The 16 calls cost $0.245184, versus Gemini Flash at $0.0428445. Pro improves house readiness but has fewer content-ready default drafts in this small sample. All 304 previous rows, including both recent grading corrections, are preserved exactly. Hashes, quote offsets, model identity and input audit pass. Collection and audit processes exited; the lock is absent. Conservative ledger accounting is $28.254803096 of $100. There are 352 completed primary drafts, 320 reviewed here, with the 32 GPT-6 Sol/Luna drafts awaiting review.
+
 ## Discover coverage runs automatically
 
 Coverage previously required a code edit for each new pilot version. It now discovers numbered run directories, includes only frozen protocols with the current task hash and selected capped/uncapped policy, and orders versions numerically. Different brief versions, backup folders and not-yet-frozen runs are excluded. Existing duplicate-output protection and incomplete-generation classification remain in place.

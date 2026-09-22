@@ -1,0 +1,216 @@
+[
+  {
+    "model": "Gemini Pro",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "evaluate potential results in a controlled environment.",
+        "The source defines an assessment pilot but does not establish a controlled environment or study design."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I am writing to propose",
+        "Announces the proposal instead of starting with its scope and fee."
+      ],
+      [
+        "5",
+        "this pilot is the ideal way",
+        "Unqualified superiority claim without a comparison or basis."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "has informed us that the review will now complete on October 12 at the earliest.",
+        "Invents a communication from Nia; the source gives the timing and ownership but does not describe a prior update from her."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I am writing to provide an update on our launch position.",
+        "Announces the update instead of stating the launch position."
+      ],
+      [
+        "21",
+        "Since you choose whether to accept this workaround,",
+        "Awkwardly narrates the recipient authority immediately before asking for the decision; the request alone communicates the action."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "The team is actively managing the review process.",
+        "Current team activity is not explicitly supplied. This may be general reassurance about the ongoing review rather than a material unsupported status claim."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "As the procurement owner, I require your approval before signing.",
+        "May imply that Priya signs the contract; the source assigns procurement ownership and CFO approval, but not the signatory."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Although Vendor Beta is $22,000 cheaper in year one ($70,000 vs. $92,000), their lack of SSO makes them unviable for production. Vendor Alpha fully satisfies the mandatory SSO requirement, and their total year-one cost of $92,000 falls safely below the $100,000 budget ceiling.",
+        "The conclusion repeats the already-stated recommendation and both cost/SSO evaluations; the new approval request can follow the evaluation directly."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time dropped from a 15-minute baseline (across 200 tickets) to 12 minutes during the pilot (across 100 tickets).",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Handling time dropped from 15 minutes at the 200-ticket baseline to 12 minutes in the 100-ticket pilot.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "Please note that",
+        "Unnecessary sentence-opening preface; state the exclusion or timing qualification directly."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "Please note that",
+        "Unnecessary sentence-opening preface; state the exclusion or timing qualification directly."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Ready for immediate deployment without regulatory roadblocks.",
+        "The source does not establish deployment readiness or absence of regulatory blockers for knowledge search. Approved documents also do not establish full compliance."
+      ]
+    ],
+    "style": [
+      [
+        "23",
+        "ensuring compliance.",
+        "Using approved documents does not guarantee compliance of the overall pilot."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "COO selects the pilot.",
+        "Lists both options and a selection owner but never recommends the knowledge-search pilot."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Pro",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  }
+]
