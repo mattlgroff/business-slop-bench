@@ -1,0 +1,18 @@
+{
+  "alibaba--qwen3.8-max-0902--pilot-client-email--default": "c9e77e87551832451fae70aa9c9f23f4e91d62d95324639baf0a90db85a77e50",
+  "alibaba--qwen3.8-max-0902--pilot-client-email--house": "a4e54f5b9f18f8679693e787aba3a1d0005624e2bb4a9f0740d9341edd70c415",
+  "alibaba--qwen3.8-max-0902--launch-delay-email--default": "8101cad0df3e7f8eddd7d33bcae0c76a5bb4e0047bcd6708a713a031e22fc258",
+  "alibaba--qwen3.8-max-0902--launch-delay-email--house": "7f77dfb9dfde350160cc8a8e91fa2f0f0dcf50c55732a2f39a7391843891bef5",
+  "alibaba--qwen3.8-max-0902--vendor-decision-memo--default": "58b733c8bd8c6b8c8737660e87bfc6d9473c2b76973f189dab6c6c49acd786dc",
+  "alibaba--qwen3.8-max-0902--vendor-decision-memo--house": "5e3688d097b40108cbd10fe1632f61340bb9a62d7b9be1c79a333369ed71231c",
+  "alibaba--qwen3.8-max-0902--pilot-results-memo--default": "ac6672fc4671d83ed0a9053118296ee19352ff577104f3929773f5e49729f845",
+  "alibaba--qwen3.8-max-0902--pilot-results-memo--house": "b73e2c796b7d37c66e49ba9fc8c871eeb197c8c6558dec966b5cb7d99410db68",
+  "alibaba--qwen3.8-max-0902--discovery-proposal--default": "dd9dea31037feb71c4d76053d9845a664f300f843c17331df18e46229fd041dc",
+  "alibaba--qwen3.8-max-0902--discovery-proposal--house": "dd3b2ec075d34929896694213f7c8ae04cb736ed7d68cd2f390e735161e4c712",
+  "alibaba--qwen3.8-max-0902--change-order--default": "c63719fee3888371af02e0efa919c48b86aad833eae32db037c1ee20f7653797",
+  "alibaba--qwen3.8-max-0902--change-order--house": "9fa0a7331d8234f62f15110a6390b08d3eb3c637d83227007cb907fbe0c7651a",
+  "alibaba--qwen3.8-max-0902--ai-strategy-slides--default": "59a4a69506bc1d20df367f49802799ce0af5e20e44f93dc871b25c4ef535661c",
+  "alibaba--qwen3.8-max-0902--ai-strategy-slides--house": "f2b49961f3a8828a4a8975bafd9cf0f50b25e4161fbe580ca2da9bc76c9edec9",
+  "alibaba--qwen3.8-max-0902--handoff-slides--default": "cdcad1cfdb9badf9b1add39f068e3fe8236cd9a051ed9c7cdb634160cd5efa48",
+  "alibaba--qwen3.8-max-0902--handoff-slides--house": "0ef2decc2b49347a00bd02b38cac47d76155e658b90a66710fa8be9483f629b5"
+}

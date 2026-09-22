@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Qwen Max compared with Qwen Flash, v15
+
+Collected and directly reviewed all 16 drafts for `alibaba/qwen3.8-max-0902` using the unchanged eight briefs and settings. Requested, returned and canonical model identities match. All calls stopped normally with no warnings or retries, and all drafts meet the word limits. There are now 161 reviewed drafts across 13 attempted models.
+
+Default passes 47/54 checks, with six failures and one unresolved team-condition claim. House passes 51/54, with three failures and none unresolved. Content-ready counts are 3/8 in each condition; ready-without-edits counts are 0/8 default and 1/8 house. Compared with Qwen Flash, Max improves the house content score from 41/54 to 51/54 and content readiness from 1/8 to 3/8, but both have only 1/8 house drafts ready without edits. This is a single paired task sample, not proof of model superiority.
+
+Concrete failures include promises to prove savings, an invented schedule turnaround and reporting deadline, unsupported readiness reassurance, a 30-day offer expiry, an incorrect quarter, and invented pre-acceptance incident ownership. Both results memos include the required reduction calculation. Default has ten em dashes; house has one. Three unfilled document-preparation date fields block readiness, while intentional sponsor-signature date blanks remain allowed. The review builder now records these explicit placeholder decisions as anchored findings rather than assuming none exist. Existing outputs and earlier grades are unchanged.
+
+Successful charges total $0.11085. Conservative cumulative accounting is $9.561514 of $20. [Report and exact evidence](reviews/assistant-v11/REPORT.md). Hash, identity, quote and review-coverage assertions pass, and coverage and draft audits were refreshed. The collection session exited successfully, the lock is absent and no task-owned processes remain. Broader model coverage and repeatability validation remain unfinished.
+
 ## Gemini Flash complete comparison, v15
 
 Collected and directly reviewed all 16 drafts for `google/gemini-3.8-flash` under the unchanged task set and settings. Requested model, returned model and canonical Gateway identity match. Every call finished normally, with no warnings or retries, and every draft fits the requested word limit. The cumulative assistant review now covers 145 drafts across 12 attempted models.

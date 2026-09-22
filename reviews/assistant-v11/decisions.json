@@ -1,0 +1,252 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "C03",
+        "fail",
+        "prove the savings case with real data",
+        "The draft labels 20% as a target but then promises to prove savings and convert that target into evidence, rather than assessing whether savings exist."
+      ],
+      [
+        "grounding",
+        "fail",
+        "This pilot converts it into evidence",
+        "Promises to establish the hoped-for reduction as evidence without a baseline or existing measured savings."
+      ]
+    ],
+    "style": [
+      [
+        "16",
+        "Ready to move when you are.",
+        "Repeats the opening readiness claim and adds no decision or next action beyond the explicit approval request."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "propose a start date within the week",
+        "Invents a turnaround commitment absent from the source."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "the team is in strong shape",
+        "Source does not establish team condition. This may be general reassurance rather than a specific readiness assertion, so it remains unresolved."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "A quick update on our launch position.",
+        "Announces the update rather than starting with the changed security timeline."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "this delay reflects a process dependency, not a readiness gap on our side",
+        "Asserts no readiness gap despite a security review that may still require remediation. The preceding claim of strong work throughout the engagement is also unsupported."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Both vendors fit within the budget ceiling.",
+        "Immediately repeats the table's Within $100K Ceiling results without additional analysis."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [
+      [
+        "[Current date]",
+        "Unfilled authoring placeholder in a finished memo; this is not an intentional signature field in an approval form."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The pilot does not meet the criteria to proceed to scale.",
+        "Repeats the Do Not Scale Now heading without adding a reason."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The pilot does not meet the conditions required for a scale decision.",
+        "Repeats the preceding do-not-scale recommendation without adding information."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The start date is confirmed only after signature and a named client contact are in place.",
+        "Repeats the immediately preceding fourth next step without adding a condition."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Over four weeks we will produce three artifacts:\n\n1. Current-state process map\n2. Prioritized backlog\n3. Implementation recommendation",
+        "Repeats the full duration and deliverable list already given in the opening sentence, without adding scope detail."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "This proposal is valid for 30 days from the date above.",
+        "Invents an offer-expiration term not provided in the source."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "No work will commence without that written approval.",
+        "Repeats the immediately preceding requirement for written approval before connector work begins."
+      ]
+    ],
+    "placeholders": [
+      [
+        "[Insert Date]",
+        "Unfilled document-preparation date in the proposal header; the separate sponsor-signature date is an intentional form field."
+      ]
+    ]
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "| Item | Detail |",
+        "The table repeats the scope, fee, duration and dependencies already stated in the preceding sections."
+      ]
+    ],
+    "placeholders": [
+      [
+        "[Date]",
+        "Unfilled authoring date in the prepared-for header, distinct from the intentional sponsor-signature date field."
+      ]
+    ]
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Option A is the only pilot ready to execute this quarter",
+        "Changes the planning period to this quarter, contrary to the corrected next-quarter brief."
+      ]
+    ],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Dana delivers accuracy results to COO before the next planning cycle.",
+        "Invents a reporting deadline. The source requires reporting before expansion, not before the next planning cycle."
+      ]
+    ],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [
+      [
+        "C04",
+        "fail",
+        "Acceptance transfers incident ownership from Engineering (Lee) to Operations (Jo)",
+        "Assigns pre-acceptance incident ownership to Lee, whose stated responsibility is defect fixes only."
+      ],
+      [
+        "grounding",
+        "fail",
+        "Acceptance transfers incident ownership from Engineering (Lee) to Operations (Jo)",
+        "Invents incident ownership before acceptance."
+      ]
+    ],
+    "style": [
+      [
+        "14",
+        "\u2705 Met",
+        "Emojis decorate a professional status table; plain met and not met labels convey the same information."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  }
+]
