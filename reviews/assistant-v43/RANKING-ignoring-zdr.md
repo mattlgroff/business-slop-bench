@@ -15,6 +15,10 @@ Source: reviews/assistant-v43/summary.json and runs/pilot-v23/catalog.json. Eigh
 
 Ordering within each table: checks passed, ready without edits, content ready, fewer failures. A difference of one or two checks is within what a second generation could change.
 
+## Repeat-run evidence
+
+The tables show the primary attempt, not a reliability rate. In the separate [Astra full-panel repeat](../repeatability-v2/REPORT.md), all content checks passed again, while house drafts ready without edits changed from 8/8 to 6/8. In the [GPT-5.6 Luna full-panel repeat](../repeatability-v3/REPORT.md), house content checks remained 52/54 but ready-without-edits changed from 4/8 to 3/8. These fixed-panel studies used the same unblinded reviewer. They do not establish general judge accuracy or failure rates, and repeats do not replace primary results.
+
 ## Plain brief, no house rules
 
 Which models write the least slop unprompted?

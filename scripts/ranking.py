@@ -69,6 +69,8 @@ out = ['# Uncapped ranking with prices' + (' (ZDR rule ignored)' if ignore_zdr e
        '- **Ready without edits**: content ready, plus zero em dashes, no negative-parallelism rhetoric, and no supported slop finding (throat clearing, puffery, empty closers, repeated summaries). No edit was identified by this provisional review; this is not independent validation.',
        '- **Prices**: Gateway list rates per million tokens, base tier; regional and fast tiers cost more. Observed cost is the reported charge for the eight drafts in that condition; $0 means the stored response reported zero charge; the reason is not inferred from that number.', '',
        ('Ordering within each table: ' + ('' if ignore_zdr else 'eligible models first, then ') + 'checks passed, ready without edits, content ready, fewer failures. A difference of one or two checks is within what a second generation could change.'), '']
+out += ['## Repeat-run evidence', '',
+        'The tables show the primary attempt, not a reliability rate. In the separate [Astra full-panel repeat](../repeatability-v2/REPORT.md), all content checks passed again, while house drafts ready without edits changed from 8/8 to 6/8. In the [GPT-5.6 Luna full-panel repeat](../repeatability-v3/REPORT.md), house content checks remained 52/54 but ready-without-edits changed from 4/8 to 3/8. These fixed-panel studies used the same unblinded reviewer. They do not establish general judge accuracy or failure rates, and repeats do not replace primary results.', '']
 out += table('plain') + table('house')
 print('\n'.join(out))
 if json_out:
