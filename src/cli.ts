@@ -9,7 +9,7 @@ import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v20';
+const runName = 'pilot-v21';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -25,12 +25,12 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.20.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.21.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
   threshold: { fit: 'midpoint between min positive and max negative development score; exclude empty controls', abstentionHalfWidth: 0.05, between: 'review' },
-  limits: { totalUsd: 50, maxOutputTokens: null, outputReservation: 'catalog maximum, not sent to provider', maxRetries: 0, timeoutMs: null },
+  limits: { totalUsd: 100, maxOutputTokens: null, outputReservation: 'catalog maximum, not sent to provider', maxRetries: 0, timeoutMs: null },
   conditions: ['default', 'house'], judge: 'typesafe-ai/jev', labelStatus: 'author-proposed controls; human validation pending',
 };
 const protocolHash = hash(protocol);
@@ -299,7 +299,7 @@ try {
       for (const task of selectedTasks) for (const condition of selectedConditions) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
         const input = writerInput(task, condition, source, model.reasoning);
-        for (const priorRun of ['pilot-v19', 'pilot-v18', 'pilot-v17', 'pilot-v16', 'pilot-v15', 'pilot-v14', 'pilot-v13', 'pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
+        for (const priorRun of ['pilot-v20', 'pilot-v19', 'pilot-v18', 'pilot-v17', 'pilot-v16', 'pilot-v15', 'pilot-v14', 'pilot-v13', 'pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
           if (existsSync(file(id))) break;
           const priorPath = resolve(root, 'runs', priorRun, id + '.json');
           if (!existsSync(priorPath)) continue;

@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 
-export const LIMIT_USD = 50;
+export const LIMIT_USD = 100;
 export type Condition = 'default' | 'house';
 export function selectConditions(condition?: string): Condition[] {
   if (condition === undefined) return ['default', 'house'];
@@ -84,7 +84,7 @@ export function fitThreshold(rows: { passProbability: number; expected: string }
   return { pass: midpoint + 0.05, fail: midpoint - 0.05 };
 }
 
-export type Entry = { id: string; model: string; reserve: number; charged: number; status: 'reserved' | 'settled' | 'unknown'; actualUsd?: number };
+export type Entry = { id: string; model: string; reserve: number; charged: number; status: 'reserved' | 'settled' | 'unknown' | 'released'; actualUsd?: number; releasedCharge?: number };
 export class Budget {
   entries: Entry[];
   constructor(readonly path: string) {

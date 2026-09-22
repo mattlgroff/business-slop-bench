@@ -28,7 +28,7 @@ def main():
     tasks = json.loads((root / 'data/tasks-v2.json').read_text())
     task_hash = hashlib.sha256(json.dumps(tasks, separators=(',', ':'), ensure_ascii=False).encode()).hexdigest()
     runs = []
-    for name in ['pilot-v10', 'pilot-v11', 'pilot-v12', 'pilot-v13', 'pilot-v14', 'pilot-v15', 'pilot-v16', 'pilot-v17', 'pilot-v18', 'pilot-v19', 'pilot-v20']:
+    for name in ['pilot-v10', 'pilot-v11', 'pilot-v12', 'pilot-v13', 'pilot-v14', 'pilot-v15', 'pilot-v16', 'pilot-v17', 'pilot-v18', 'pilot-v19', 'pilot-v20', 'pilot-v21']:
         path = root / 'runs' / name
         if (path / 'protocol.json').exists():
             protocol = json.loads((path / 'protocol.json').read_text())
