@@ -169,6 +169,28 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--discovery-proposal--default.md",
       "outputSha256": "d91c749fbff54abf105eb3e408a72cbf5c3bfeca2fc8a3340e151d481e085b45"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "We will confirm the start date within two business days of receiving both.",
+          "Adds a two-business-day commitment for confirming the start date. The source specifies prerequisites but no deadline for that confirmation."
+        ]
+      ],
+      "style": [
+        [
+          "10",
+          "Sign and return the agreement, and provide the name of your point of contact.",
+          "Repeats the signature and contact actions already specified in the numbered How to Proceed section."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--discovery-proposal--house.md",
+      "outputSha256": "2a6c48868bd104f593cda5b3cb742b9819fe99cb33a44f77b4b9e0f116f0b61a"
     }
   ]
 }
