@@ -1,0 +1,192 @@
+[
+ {
+  "model": "Fable 5.1",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Following our discussions",
+    "Invents prior discussions absent from the source pack."
+   ]
+  ],
+  "style": [
+   [
+    "5",
+    "No variable costs or surprises.",
+    "Promotional assurance without a defined comparison; the fixed fee already states the commercial terms."
+   ],
+   [
+    "17",
+    "We fully recognize",
+    "Empty intensifier before a stated prerequisite."
+   ]
+  ]
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Can you confirm approval of the scope and fee by Friday",
+    "Invents a Friday reply deadline; the draft also promises a start-date proposal the same week and states that approving costs nothing until clearance, a payment term the source does not contain."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team is in good shape and ready either way.",
+    "Invents a team readiness and condition claim the source does not record."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "A quick update on where the launch stands.",
+    "Announces the update instead of stating the launch position."
+   ]
+  ]
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Please let me know by end of day Thursday",
+    "Invents a Thursday reply deadline; the draft also asserts the demo environment is ready, which the source does not record."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "Priya signs after CFO approval.",
+    "Implies Priya signs; the source says CFO approval precedes signing but does not say who signs."
+   ]
+  ],
+  "style": [],
+  "placeholders": [
+   [
+    "The source pack lists no other year-one costs",
+    "Refers to the source pack inside the client-facing memo; authoring residue."
+   ]
+  ]
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "28",
+    "We look forward to your approval and to beginning discovery.",
+    "Empty positive ending that adds no decision, owner or condition."
+   ]
+  ]
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "authorized, affordable, owned, and measurable",
+    "Labels the knowledge-search pilot authorized before the COO selects it; the deck also invents the absence of external data risk."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "this is the one that can start on day one",
+    "Invents day-one readiness; the deck also asserts that no new data or legal approval is needed to start."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Fable 5.1",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [],
+  "style": []
+ }
+]

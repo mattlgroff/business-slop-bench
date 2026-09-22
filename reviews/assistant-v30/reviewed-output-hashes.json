@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-fable-5.1--pilot-client-email--default": "aa2f32fe2798e05cb557064cc9a12e7108805726dd6ef5688c9db26c3d0fb4cc",
+  "anthropic--claude-fable-5.1--pilot-client-email--house": "67751bbfedd4dade9f9014bf93c3b1b04fe3ea6c842a03a75d1877801d13ef5e",
+  "anthropic--claude-fable-5.1--launch-delay-email--default": "7f64a653d92a7b4dd7892c058f7b752936dc8b11a2826367c131e67883bc9fcc",
+  "anthropic--claude-fable-5.1--launch-delay-email--house": "5a9a585487c851a95220a0e864313198da8ca896b15b5df495e710272f13e1bd",
+  "anthropic--claude-fable-5.1--vendor-decision-memo--default": "51c4d26aa0f7ee4cc9840f1bb11b7b09835173e512f198fd3bd25136aa552373",
+  "anthropic--claude-fable-5.1--vendor-decision-memo--house": "dda051204211da016a0392efe43b1c692d03db085f2253a8a2c2c7d42d836d1d",
+  "anthropic--claude-fable-5.1--pilot-results-memo--default": "aa49fd7285c816c62e66942ad09ff3fad2ed8e64d01480f5af0727bc5ae756a8",
+  "anthropic--claude-fable-5.1--pilot-results-memo--house": "b6116c1628b484b032d97fcebe563c84696a78fa33ceeb55da494deb29191c1d",
+  "anthropic--claude-fable-5.1--discovery-proposal--default": "c940ad625dfba50589dab145268e85255cf7668a4597560be6fa5af425fdd23f",
+  "anthropic--claude-fable-5.1--discovery-proposal--house": "56ef9ebe34db17e22443ed7ae04fc5a8d5209b85b2f73680e872696eec2a9f9f",
+  "anthropic--claude-fable-5.1--change-order--default": "6877b7b0047ec50c17b6c38bca136a8183049293c8508b7e3b0ca97764c5f670",
+  "anthropic--claude-fable-5.1--change-order--house": "2e0c0d172ebdae14f78bcf8c3a800a75be9dd8021e557df97d2accd94c8e9a4e",
+  "anthropic--claude-fable-5.1--ai-strategy-slides--default": "0dfa1981f7810e55e9b70a73cad5aadfc9d07dfdd836e799676e7548850af37b",
+  "anthropic--claude-fable-5.1--ai-strategy-slides--house": "84914bccec2a98d30fc7ea071973c273070a56febc973e2033e9184ddac56cef",
+  "anthropic--claude-fable-5.1--handoff-slides--default": "1ff8224f8a15b3220da3aa28f3a511acc60e35f84e551069809a9a29823f3046",
+  "anthropic--claude-fable-5.1--handoff-slides--house": "ba906b8122579f2c789d8552f695e97b1a31b09113910554a7299faf810d6ff6"
+}
