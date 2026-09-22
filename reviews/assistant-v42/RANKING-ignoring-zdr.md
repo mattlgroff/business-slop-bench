@@ -2,18 +2,18 @@
 
 This is a what-if view: models with no zero-data-retention route are ranked alongside the rest. The bench rule still disqualifies them; the committed ranking is RANKING.md.
 
-Source: reviews/assistant-v42/summary.json and runs/pilot-v23/catalog.json. Eight business briefs, one generation per brief and condition, graded by the assistant unblinded. Disqualified models have no zero-data-retention route on the Gateway; their scores are shown for information and never pooled.
+Source: reviews/assistant-v42/summary.json and runs/pilot-v23/catalog.json. Eight business briefs, one generation per brief and condition, graded by the assistant unblinded. This what-if table includes models disqualified by the recorded ZDR policy; it does not change their bench eligibility.
 
 ## What the columns mean
 
 - **Plain brief**: the model gets the task and the source facts only. This measures how much slop it writes unprompted.
 - **With house rules**: the same brief plus Matthew Groff's Zero Defect anti-slop rules. This measures how well it performs once told exactly what slop means.
-- **Checks passed**: each brief has six or seven factual checks (right fee, no invented deadline, correct owner, and so on) plus a grounding check that every material claim traces to the source. 54 per condition. Unresolved means the reviewer could not settle it from the source; it earns no credit.
-- **Content ready**: the draft passes every check, stays within the word limit and has no authoring residue such as a `[Date]` placeholder or a reference to the source pack. You could send it after a proofread.
-- **Ready without edits**: content ready, plus zero em dashes, no negative-parallelism rhetoric, and no supported slop finding (throat clearing, puffery, empty closers, repeated summaries). You could send it as is.
-- **Prices**: Gateway list rates per million tokens, base tier; regional and fast tiers cost more. Observed cost is the reported charge for the eight drafts in that condition; $0 means the Gateway charged nothing at launch.
+- **Checks passed**: each brief has six or seven total content checks, including a grounding check that every material claim traces to the source. 54 per condition. Unresolved means the reviewer could not settle it from the source; it earns no credit.
+- **Content ready**: the draft passes every check, stays within the word limit and has no authoring residue such as a `[Date]` placeholder or a reference to the source pack. Editorial findings may still require revision.
+- **Ready without edits**: content ready, plus zero em dashes, no negative-parallelism rhetoric, and no supported slop finding (throat clearing, puffery, empty closers, repeated summaries). No edit was identified by this provisional review; this is not independent validation.
+- **Prices**: Gateway list rates per million tokens, base tier; regional and fast tiers cost more. Observed cost is the reported charge for the eight drafts in that condition; $0 means the stored response reported zero charge; the reason is not inferred from that number.
 
-Ordering within each table: eligible models first, then checks passed, ready without edits, content ready, fewer failures. A difference of one or two checks is within what a second generation could change.
+Ordering within each table: checks passed, ready without edits, content ready, fewer failures. A difference of one or two checks is within what a second generation could change.
 
 ## Plain brief, no house rules
 
@@ -23,9 +23,9 @@ Which models write the least slop unprompted?
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | GPT-6 Astra | 54 | 0 | 0 | 8 | 4 | 10.00 | 50.00 | $0.1120 |
 | 2 | Muse Spark 1.3 (non-ZDR) | 53 | 1 | 0 | 7 | 4 | 1.25 | 4.25 | $0.0382 |
-| 3 | GPT-6 Luna (non-ZDR) | 53 | 1 | 0 | 7 | 3 | 0.10 | 0.50 | $0 (launch promo) |
+| 3 | GPT-6 Luna (non-ZDR) | 53 | 1 | 0 | 7 | 3 | 0.10 | 0.50 | $0 (reported) |
 | 4 | GPT-5.6 Terra | 52 | 1 | 1 | 6 | 3 | 2.00 | 12.00 | $0.0278 |
-| 5 | GPT-6 Sol (non-ZDR) | 52 | 1 | 1 | 6 | 3 | 2.00 | 10.00 | $0 (launch promo) |
+| 5 | GPT-6 Sol (non-ZDR) | 52 | 1 | 1 | 6 | 3 | 2.00 | 10.00 | $0 (reported) |
 | 6 | Grok 4.7 | 52 | 2 | 0 | 6 | 3 | 1.20 | 3.60 | $0.0182 |
 | 7 | Claude Opus 5.5 | 52 | 1 | 1 | 4 | 2 | 4.00 | 20.00 | $0.1171 |
 | 8 | GLM 5.3 | 52 | 2 | 0 | 4 | 1 | 1.40 | 4.40 | $0.0149 |
@@ -53,8 +53,8 @@ Which models perform best once told exactly what slop means?
 | Rank | Model | Checks passed (of 54) | Failed | Unresolved | Content ready (of 8) | Ready without edits (of 8) | Input $/M | Output $/M | Observed cost, 8 drafts |
 |---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | 1 | GPT-6 Astra | 54 | 0 | 0 | 8 | 8 | 10.00 | 50.00 | $0.3581 |
-| 2 | GPT-6 Sol (non-ZDR) | 53 | 1 | 0 | 7 | 7 | 2.00 | 10.00 | $0 (launch promo) |
-| 3 | GPT-6 Luna (non-ZDR) | 53 | 1 | 0 | 7 | 6 | 0.10 | 0.50 | $0 (launch promo) |
+| 2 | GPT-6 Sol (non-ZDR) | 53 | 1 | 0 | 7 | 7 | 2.00 | 10.00 | $0 (reported) |
+| 3 | GPT-6 Luna (non-ZDR) | 53 | 1 | 0 | 7 | 6 | 0.10 | 0.50 | $0 (reported) |
 | 4 | Muse Spark 1.3 (non-ZDR) | 53 | 1 | 0 | 7 | 5 | 1.25 | 4.25 | $0.0572 |
 | 5 | GPT-5.6 Sol | 53 | 1 | 0 | 7 | 4 | 4.00 | 20.00 | $0.1903 |
 | 6 | GPT-5.6 Luna | 52 | 1 | 1 | 6 | 4 | 0.20 | 1.20 | $0.0081 |

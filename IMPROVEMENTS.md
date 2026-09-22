@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Keep ranking descriptions within the evidence
+
+Corrected the new ranking renderer and both rendered views. Zero reported charges no longer automatically become a launch-promotion claim. Content-ready and ready-without-edits labels describe this provisional review rather than certify that a draft can be sent. The check-count explanation now says six or seven total checks including grounding. The ZDR-ignored view correctly describes its actual ordering and does not claim disqualified rows are excluded from that what-if table.
+
+Verified every table row against the previous committed output: scores, prices and ordering are identical after normalizing only the zero-charge label. Both views render successfully and whitespace checks pass. No model calls or grade changes were made for this correction. Sonnet continues through the same live collector.
+
 ## Sonnet partial review during paced collection
 
 Reviewed the four completed Sonnet emails while the existing collector waits between calls. Saved explicit provisional decisions with immutable output hashes and verified quotes, separate from the cumulative full-model report. The default pilot email is 198/180 words. Findings include a new five-business-day sender commitment and unsupported team-performance/readiness claims. Recipient action requests are distinguished from asserted existing obligations. [Working review](reviews/sonnet-review-draft/README.md).
