@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 
-export const LIMIT_USD = 20;
+export const LIMIT_USD = 50;
 export type Condition = 'default' | 'house';
 export function selectConditions(condition?: string): Condition[] {
   if (condition === undefined) return ['default', 'house'];
@@ -97,7 +97,7 @@ export class Budget {
     if (this.entries.some(e => e.charged > e.reserve)) throw new Error('Prior cost bound violation requires inspection');
     if (!Number.isFinite(amount) || amount <= 0) throw new Error('Invalid reservation');
     if (this.entries.some(e => e.id === id)) throw new Error(`Call already reserved: ${id}`);
-    if (this.total + amount > LIMIT_USD) throw new Error(`BUDGET_STOP: $${this.total.toFixed(4)} + $${amount.toFixed(4)} exceeds $20`);
+    if (this.total + amount > LIMIT_USD) throw new Error(`BUDGET_STOP: $${this.total.toFixed(4)} + $${amount.toFixed(4)} exceeds $${LIMIT_USD}`);
     this.entries.push({ id, model, reserve: amount, charged: amount, status: 'reserved' }); this.save();
   }
   settle(id: string, conservativeUsageCost?: number, actualUsd?: number) {

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, rmSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { Budget, scan, verdict, rates, selectTasks, selectConditions, styleChecks, prompt, fitThreshold, type Task } from '../src/core.js';
+import { Budget, LIMIT_USD, scan, verdict, rates, selectTasks, selectConditions, styleChecks, prompt, fitThreshold, type Task } from '../src/core.js';
 
 test('style detector retains exact locations and does not equate candidates with defects', () => {
   const s = scan('Hello.\nA load-bearing wall\u2014inspect it.', 20);
@@ -31,12 +31,12 @@ test('spending cap survives restart and preserves uncertain charges', () => {
   const d = mkdtempSync(join(tmpdir(), 'businessslop-budget-'));
   try {
     let b = new Budget(join(d, 'ledger.json'));
-    b.reserve('first', 'a', 19); b.settle('first');
+    b.reserve('first', 'a', LIMIT_USD - 1); b.settle('first');
     b = new Budget(join(d, 'ledger.json'));
-    assert.equal(b.total, 19); assert.throws(() => b.reserve('second', 'a', 1.01));
+    assert.equal(b.total, LIMIT_USD - 1); assert.throws(() => b.reserve('second', 'a', 1.01));
     assert.throws(() => b.reserve('first', 'a', 0.1));
     b.reserve('second', 'a', 1); b.settle('second', 0.2, 0.1);
-    assert.equal(b.total, 19.2);
+    assert.equal(b.total, LIMIT_USD - 0.8);
     assert.throws(() => b.settle('second', 1.1));
     const restarted = new Budget(join(d, 'ledger.json'));
     assert.throws(() => restarted.reserve('third', 'a', 0.001));
