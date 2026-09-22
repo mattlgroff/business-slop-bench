@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-opus-4.6--pilot-client-email--default": "92b7da252d8974989926e4a0339beb285d14254bb5946972e77822fddaa0a9a9",
+  "anthropic--claude-opus-4.6--pilot-client-email--house": "101756bf84c6f7a6b713ee82c427224397320273e8c091c7d1de39248731e7e1",
+  "anthropic--claude-opus-4.6--launch-delay-email--default": "afbda17d7df13fe6be363c40cce630a4b95a380e1f49d417bd67143948fde433",
+  "anthropic--claude-opus-4.6--launch-delay-email--house": "10325c927a0cfa1fcc469ed948737051a8cd1e4e88ba20a7d8cb9434e5e29ba0",
+  "anthropic--claude-opus-4.6--vendor-decision-memo--default": "3383db95e6af06c4bfa27bae840d777e0fd08a185af76c9a258241a06389043c",
+  "anthropic--claude-opus-4.6--vendor-decision-memo--house": "00fe16b72762c5f11067bbd0689b94582ed792f4a34f0f9646a61d1daee9c682",
+  "anthropic--claude-opus-4.6--pilot-results-memo--default": "ef713180871b88c347aa2fc35c1f1c1c510379c8ef2c31df6c9cdcbb09080870",
+  "anthropic--claude-opus-4.6--pilot-results-memo--house": "876f3a336a74335529238e3b524838fa8696014ae6b757e3609d7ba18b5f8f4a",
+  "anthropic--claude-opus-4.6--discovery-proposal--default": "3f0060bf6e0ffa7764b55367171a1c496fa002e786d5d6d5c5aeb88f7bbdf955",
+  "anthropic--claude-opus-4.6--discovery-proposal--house": "8258ea702791264dcf12ebb0452336d32cbf3bfc19960843a47cb97e2e60fcb7",
+  "anthropic--claude-opus-4.6--change-order--default": "427ca37598a9e3bebf988cdf081a9d8612f6c683afa7c4ab95ce7fd6be83f58e",
+  "anthropic--claude-opus-4.6--change-order--house": "6903ec5310395dd6c51af66eb6a8e9f03bf21615a67676514ddac7a8a628bf44",
+  "anthropic--claude-opus-4.6--ai-strategy-slides--default": "39af28be928eb64069b25a74be5fb5da739e5ee35aa46246497e9c0fbdf3c022",
+  "anthropic--claude-opus-4.6--ai-strategy-slides--house": "15d5423dc4921955af30f93393e0dbc1f215dab580169c824217583bdabf70ec",
+  "anthropic--claude-opus-4.6--handoff-slides--default": "8a61f346a1545db04d9299d02aa34b69c0741a576de4858a3f4af4f304c03e64",
+  "anthropic--claude-opus-4.6--handoff-slides--house": "7d733d46d38aa12354eeb1d6b5d9cb78fa8c3983293f3cf0b4df28375e1ed568"
+}

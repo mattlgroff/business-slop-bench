@@ -1,0 +1,264 @@
+[
+ {
+  "model": "Opus 4.6",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "2",
+    "I'm writing to propose",
+    "Announces the proposal instead of starting with the scope and fee."
+   ],
+   [
+    "5",
+    "without disrupting operations",
+    "Assures no operational disruption without a defined basis; the source records no delivery terms."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team is executing well",
+    "Invents a favorable delivery-performance claim the source does not record."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "I wanted to give you a clear picture of where we stand on the launch.",
+    "Announces the update instead of stating the launch position."
+   ],
+   [
+    "28",
+    "Thanks for your continued partnership.",
+    "Empty positive ending that adds no decision, owner or condition."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team is executing well and the work is on track",
+    "Invents favorable performance and on-track claims the source does not record."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "lost productivity and extended parallel costs",
+    "Invents cost consequences and a contractual-guarantee framing the source does not contain; the source records only that Beta has no committed SSO delivery date."
+   ]
+  ],
+  "style": [
+   [
+    "14",
+    "\u2705 Yes",
+    "Decorative check and cross marks in the comparison table add no information to the Yes and No entries."
+   ]
+  ],
+  "placeholders": [
+   [
+    "[Current Date]",
+    "Unfilled date placeholder in the memo header."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "[Date]",
+    "Unfilled date placeholder in the memo header."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [
+   [
+    "C01",
+    "fail",
+    "(15 min to 12 min)",
+    "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Kickoff payment of $8,000 is due at that time.",
+    "Places the kickoff payment at start-date confirmation rather than at kickoff, reordering the source payment sequence."
+   ]
+  ],
+  "style": [
+   [
+    "28",
+    "We look forward to working with you.",
+    "Empty positive ending that adds no decision, owner or condition."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "We are ready to begin as soon as the agreement is signed.",
+    "Invents a readiness claim and drops the named-contact condition the source sets before any start date."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "*(to be filled)*",
+    "Unfilled date placeholder in the change-order header."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "[Date]",
+    "Unfilled date placeholder in the change-order header."
+   ],
+   [
+    "&nbsp;",
+    "Raw HTML entity left in the document body; authoring residue."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "No legal blockers",
+    "Approved policy documents do not establish the absence of legal blockers; the deck also invents low and high risk ratings and regulatory exposure the source does not record."
+   ]
+  ],
+  "style": [
+   [
+    "23",
+    "Named owner (Dana) ensures accountability and timely reporting",
+    "A named owner does not ensure timely reporting."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "no outstanding legal blockers",
+    "Approved policy documents do not establish the absence of legal blockers; the deck also invents a quarter-start work date for Dana."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Lee currently carries operational risk with no defined end date",
+    "Invents operational and service responsibility for Lee; the source gives Lee defect fixes only and leaves pre-acceptance incident ownership unstated."
+   ]
+  ],
+  "style": [
+   [
+    "14",
+    "\u2705 Complete",
+    "Decorative check and cross marks in the status table add no information to the status words."
+   ]
+  ],
+  "negative": [
+   [
+    "This is a **governance gap**, not a technical gap",
+    "Negated framing followed by the affirmative point; the affirmative clause alone carries it and the capability claim is unsupported."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 4.6",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Lee retains ownership of all service issues",
+    "Extends Lee's ownership beyond defect fixes; the source gives Lee defect fixes only and leaves pre-acceptance incident ownership unstated."
+   ]
+  ],
+  "style": []
+ }
+]

@@ -1,0 +1,347 @@
+[
+  {
+    "file": "anthropic--claude-opus-4.6--pilot-client-email--default.md",
+    "words": 174,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 560,
+        "line": 16,
+        "text": "—"
+      },
+      {
+        "offset": 595,
+        "line": 16,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 1,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--pilot-client-email--house.md",
+    "words": 161,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--launch-delay-email--default.md",
+    "words": 178,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 1,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--launch-delay-email--house.md",
+    "words": 164,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--vendor-decision-memo--default.md",
+    "words": 231,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--vendor-decision-memo--house.md",
+    "words": 154,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--pilot-results-memo--default.md",
+    "words": 213,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 233,
+        "line": 11,
+        "text": "—"
+      },
+      {
+        "offset": 278,
+        "line": 12,
+        "text": "—"
+      },
+      {
+        "offset": 341,
+        "line": 14,
+        "text": "—"
+      },
+      {
+        "offset": 361,
+        "line": 14,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--pilot-results-memo--house.md",
+    "words": 175,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--discovery-proposal--default.md",
+    "words": 196,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--discovery-proposal--house.md",
+    "words": 171,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--change-order--default.md",
+    "words": 217,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--change-order--house.md",
+    "words": 180,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--ai-strategy-slides--default.md",
+    "words": 216,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 80,
+        "line": 3,
+        "text": "—"
+      },
+      {
+        "offset": 383,
+        "line": 14,
+        "text": "—"
+      },
+      {
+        "offset": 462,
+        "line": 16,
+        "text": "—"
+      },
+      {
+        "offset": 489,
+        "line": 16,
+        "text": "—"
+      },
+      {
+        "offset": 545,
+        "line": 20,
+        "text": "—"
+      },
+      {
+        "offset": 637,
+        "line": 24,
+        "text": "—"
+      },
+      {
+        "offset": 689,
+        "line": 25,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--ai-strategy-slides--house.md",
+    "words": 176,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--handoff-slides--default.md",
+    "words": 270,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 583,
+        "line": 20,
+        "text": "—"
+      },
+      {
+        "offset": 750,
+        "line": 25,
+        "text": "—"
+      },
+      {
+        "offset": 1010,
+        "line": 29,
+        "text": "—"
+      },
+      {
+        "offset": 1296,
+        "line": 38,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-opus-4.6--handoff-slides--house.md",
+    "words": 177,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]
