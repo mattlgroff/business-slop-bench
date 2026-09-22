@@ -48,6 +48,8 @@ Default and house conditions share the same source pack and task wording. Only t
 
 ## Current assistant scoring
 
+[Latest grading correction](reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; corrected cumulative grades are in assistant-v34.
+
 The assistant reads each complete draft against its source packet, task-specific checks and the full anti-slop lens. Every check is marked pass, fail or unresolved. Unresolved earns no credit and is reported separately from confirmed failure. API errors are ungraded. Findings include exact quotations with verified offsets and line numbers.
 
 `contentReady` requires all critical content checks to pass, the word limit to be met, and no unintended authoring placeholders. `readyWithoutEdits` additionally requires no style-gate violations or supported editorial findings. Mechanical character matches are counted directly; phrase matches are candidates requiring contextual judgment, including the lens's exceptions.

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "runs/pilot-v21/anthropic--claude-opus-5--ai-strategy-slides--default.md",
+    "previousStyleGatePass": false,
+    "styleGatePass": false
+  },
+  {
+    "path": "runs/pilot-v21/anthropic--claude-opus-5--handoff-slides--house.md",
+    "previousStyleGatePass": false,
+    "styleGatePass": true
+  },
+  {
+    "path": "runs/pilot-v21/anthropic--claude-opus-4.6--handoff-slides--default.md",
+    "previousStyleGatePass": false,
+    "styleGatePass": false
+  },
+  {
+    "path": "runs/pilot-v21/anthropic--claude-fable-5--pilot-results-memo--default.md",
+    "previousStyleGatePass": false,
+    "styleGatePass": false
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "model": "Opus 5",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "path": "runs/pilot-v21/anthropic--claude-opus-5--ai-strategy-slides--default.md",
+    "outputSha256": "f7d74e8d8f228ec1b06d43f55759596027b06d1c22c966c6a023f895c5a0fcf5",
+    "previousFindings": [
+      {
+        "quote": "It is not rejected on merit \u2014 it is blocked on authorization.",
+        "offset": 856,
+        "line": 18,
+        "reason": "Negated framing followed by the affirmative reason; the affirmative clause alone carries the point."
+      }
+    ],
+    "reason": "Distinguishes authorization from substantive merit as reasons for rejection. This conveys a decision boundary, not empty rhetorical emphasis. Separate unsupported readiness and authorization claims remain graded under grounding."
+  },
+  {
+    "model": "Opus 5",
+    "task": "handoff-slides",
+    "condition": "house",
+    "path": "runs/pilot-v21/anthropic--claude-opus-5--handoff-slides--house.md",
+    "outputSha256": "9c4f6cef7ac66238c924e37ab3c07c73d7aaef7adeb3e89d5ed6effe330e7a4f",
+    "previousFindings": [
+      {
+        "quote": "That absence, not a failed test, is why the service sits short of acceptance.",
+        "offset": 658,
+        "line": 17,
+        "reason": "Negated contrast where the affirmative cause alone carries the point."
+      }
+    ],
+    "reason": "Corrects a factual misconception: an unrun rehearsal is different from a failed rehearsal. The source explicitly says the rehearsal has not happened. This is a permitted factual contrast."
+  },
+  {
+    "model": "Opus 4.6",
+    "task": "handoff-slides",
+    "condition": "default",
+    "path": "runs/pilot-v21/anthropic--claude-opus-4.6--handoff-slides--default.md",
+    "outputSha256": "8a61f346a1545db04d9299d02aa34b69c0741a576de4858a3f4af4f304c03e64",
+    "previousFindings": [
+      {
+        "quote": "This is a **governance gap**, not a technical gap",
+        "offset": 960,
+        "line": 29,
+        "reason": "Negated framing followed by the affirmative point; the affirmative clause alone carries it and the capability claim is unsupported."
+      }
+    ],
+    "reason": "Distinguishes organizational assignment from technical capability. The capability assertion is unsupported, but it is a substantive claim, not an empty contrast. The separate grounding failure remains; removing this style finding does not endorse that claim."
+  },
+  {
+    "model": "Fable 5",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "path": "runs/pilot-v21/anthropic--claude-fable-5--pilot-results-memo--default.md",
+    "outputSha256": "655bfce1ee7004497033bf3b375c4733d3ba6a93395eadb047a111944316a79e",
+    "previousFindings": [
+      {
+        "quote": "The decision before the COO is **not** whether to scale",
+        "offset": 1234,
+        "line": 29,
+        "reason": "Negated framing followed by the affirmative decision; the affirmative sentence alone carries the point."
+      }
+    ],
+    "reason": "Distinguishes two decisions, authorization of further testing and authorization of scaling. The source supports deferring scaling while quality is below threshold. This is a permitted decision boundary, even if the paragraph could be shortened."
+  }
+]

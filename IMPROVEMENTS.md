@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Apply the negative-parallelism exceptions
+
+Audited all four confirmed negative-parallelism findings in the current 304-draft cohort. Each contrasts substantive facts or decisions, so the old rationale that the affirmative clause could stand alone was insufficient under the frozen lens. Removed the findings in Opus 5 default strategy, Opus 5 house handoff, Opus 4.6 default handoff and Fable 5 default readout. The unsupported technical-capability assertion remains a content concern rather than proof of empty rhetoric.
+
+Only Opus 5 house handoff changes its style-gate result; the other three retain em dashes. All content verdicts, other editorial findings, eligibility and ready-without-edits counts remain unchanged. The correction builder checks exact hashes and anchors, applies explicit recorded decisions and asserts that unrelated fields remain identical. [Correction and evidence](reviews/assistant-v34/REPORT.md). No paid calls were made. These are still unblinded assistant judgments; independent calibration remains unfinished.
+
 ## Preserve all scanner candidates
 
 The review scanner spread the shared scan result, then overwrote its candidate list with a second phrase-only scan. That discarded negative-parallelism matches and removed candidate-family labels. Removed the duplicate scan so the saved artifact preserves the shared detector output. One focused CLI regression checks both candidate families, exact offsets, line numbers and word counts. It failed before the fix; all 19 tests and TypeScript checking now pass.
