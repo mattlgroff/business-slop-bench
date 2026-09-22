@@ -4,7 +4,7 @@ A small TypeScript benchmark for single-call English business writing. It target
 
 Latest addition: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
 
-Current results: [complete Luna comparison alongside Astra, Kimi and Qwen](reviews/assistant-v6/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+Current results: [Sol and Terra compared with Astra, Luna, Kimi and Qwen](reviews/assistant-v8/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
 Current collection uses `pilot-v15` and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v15` audits saved outputs and verifies their inputs against the frozen task version.
 

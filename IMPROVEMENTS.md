@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Sol and Terra complete comparisons, v15
+
+Collected and directly reviewed all eight briefs in both conditions for Sol and Terra, adding 32 drafts and bringing the reviewed total to 113. All calls succeeded with the requested model IDs, normal stop reasons, and no retries. No Jev calls were made.
+
+Sol passes 52/54 default and 53/54 house content checks; 2/8 default and 6/8 house drafts are ready without edits. Both results memos omit the explicit time-reduction calculation required by the frozen rubric. Terra passes 52/54 in each condition; 1/8 default and 5/8 house drafts are ready without edits. Its strategy slides introduce a conflicting quarter in default and an unsupported pilot authorization in house. Ambiguous reassurance and approval wording remain unresolved rather than forced failures.
+
+Successful generation charges total $0.24955 for Sol and $0.105076 for Terra. Conservative cumulative accounting is $9.34762 of $20, including retained failure reservations. These are provisional, unblinded assistant judgments on one generation per cell. [Full report and anchored findings](reviews/assistant-v8/REPORT.md).
+
+The review builder verifies output hashes, exact evidence quotes, returned model IDs and saved text consistency. Coverage and draft audits were refreshed. Collection exited successfully; broader model coverage and repeatability validation remain unfinished.
+
 ## Explicit Opus 5 retry and separate Opus 4.6 addition, v14-v15
 
 The user-requested retry of `anthropic/claude-opus-5` succeeded for the previously failed house-style launch email. Requested ID, returned model ID and Gateway canonical slug all match Opus 5; the successful provider was vertexAnthropic. The output has 197 words against the 180-word limit and invents a history of early warnings from Nia's team. Its successful generation charge was $0.032225.
