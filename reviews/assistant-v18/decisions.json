@@ -1,0 +1,270 @@
+[
+ {
+  "model": "GLM Flash",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "I'll send the security review package and proposed schedule the same week.",
+    "Invents a security review package deliverable and a same-week delivery deadline; the source authorizes neither. The draft is also 182 words against the 180-word limit."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "this is a standard gate, not a setback in quality or readiness.",
+    "Asserts no readiness setback while the source says the review may require remediation and no production date is authorized."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "Two things worth noting:",
+    "Prefatory importance pointer that can be removed without information loss."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team's execution has been solid",
+    "Asserts favorable past team performance that the source pack does not supply; confidence in the team can be expressed without an unsupported performance claim."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [
+   [
+    "C03",
+    "fail",
+    "leaving $30,000 vs. $8,000 of headroom respectively",
+    "Reverses the headroom figures: Vendor A leaves $8,000 and Vendor B $30,000. The recommendation later states $8,000 correctly, so the memo contains conflicting calculations."
+   ],
+   [
+    "grounding",
+    "review",
+    "**Re:** Vendor A vs. Vendor B, Year One",
+    "Renames Alpha and Beta as Vendor A and Vendor B throughout. The mapping is inferable from the figures but never stated, so whether the CFO can identify the recommended vendor is unresolved. The statement that Priya signs may also imply an unsupported signatory role."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "Vendor B is cheaper by $22,000 in year one and is within budget, but the mandatory SSO requirement is a hard gate, and Vendor B offers no delivery date.",
+    "Restates the SSO gate and budget analysis already given in the Analysis section."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "**Bottom line:** Results support continued investigation, not scaling. Next decision gate: COO authorization of the matched-ticket follow-up.",
+    "Repeats the recommendation and next decision already stated at the top and in the preceding paragraph."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The remaining $8,000 is invoiced on delivery and acceptance of the artifacts.",
+    "Adds acceptance as a condition of the second payment; the source specifies payment on delivery."
+   ]
+  ],
+  "style": [
+   [
+    "21",
+    "## commencement",
+    "A lowercase heading among title-case headings reads as an unfinished draft."
+   ],
+   [
+    "10",
+    "(current-state process map, prioritized backlog, and implementation recommendation)",
+    "Repeats the three artifacts already listed in the Objective section."
+   ],
+   [
+    "28",
+    "We look forward to your approval and to delivering a clear, actionable basis for your next steps.",
+    "Closing promises a clear, actionable basis without adding a decision, owner or condition."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "C05",
+    "fail",
+    "we can begin within two weeks of receipt",
+    "Commits to a start within two weeks of signature; the source agrees a start date only after signature and a named contact."
+   ],
+   [
+    "grounding",
+    "fail",
+    "we can begin within two weeks of receipt",
+    "Invents a two-week start commitment. The purpose statement also promises a costed recommendation, which the source does not include."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "change-order",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "all amounts, hours, and durations above are estimates per the stated basis",
+    "The footer calls every amount an estimate while the fee is presented as fixed, so whether the $7,000 fee is fixed is left ambiguous. The reference to governing terms is also unsupported."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "The connector schedule cannot start until they are received alongside written approval.",
+    "Repeats the schedule condition stated in the preceding section."
+   ]
+  ],
+  "placeholders": [
+   [
+    "**From:** [Vendor]",
+    "Unfilled sender placeholder in the document header."
+   ],
+   [
+    "**Date:** [Date]",
+    "Unfilled document-preparation date; the sponsor signature block fields are intentional form fields."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "| Change | Additional CRM connector |",
+    "The closing table repeats every item already stated in the preceding prose."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "No legal blockers; ready to launch immediately",
+    "Approved policy documents do not establish immediate launch readiness. The deck also invents present urgency to secure resources and a stranded-investment outcome for the alternative."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "**One pilot. One choice. Next quarter.**",
+    "Dramatic fragmentation manufactures emphasis for a fact stated in the next bullet."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The pilot cannot move to production even if it performs well this quarter",
+    "Pending legal approval does not establish that authorization cannot arrive this quarter. The deck also calls both options funded and says Option A starts immediately, neither of which the source supports."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "Decision requested: COO approves Option A, with Dana reporting results before any expansion",
+    "Repeats the selection and reporting rules already stated on slide 1 and the cost and target already stated on slide 2."
+   ]
+  ]
+ },
+ {
+  "model": "GLM Flash",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM Flash",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "| Approved runbook | Sponsor Pat approves | Met |",
+    "Assigns runbook approval to Pat; the source says only that the runbook is approved and that Pat approves acceptance."
+   ]
+  ],
+  "style": [
+   [
+    "21",
+    "Today, no defect-free handoff path exists for incidents.",
+    "The sentence has no clear literal meaning; the source states only that Jo owns incidents after acceptance."
+   ]
+  ]
+ }
+]
