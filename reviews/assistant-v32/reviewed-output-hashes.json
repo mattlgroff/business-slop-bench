@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-opus-5.5--pilot-client-email--default": "d9b8b074b58e5d513f7ccac72b201c26dbfe74ed44b930b7c33d8a551ceb6a3d",
+  "anthropic--claude-opus-5.5--pilot-client-email--house": "b7aaeb886ca252fbac94a527b5f5c73bc81ce7338dc1e3919cb815e02877b506",
+  "anthropic--claude-opus-5.5--launch-delay-email--default": "0e069801cbe1fc35e9879f7f68f4476049b0c575c27786aac6081cb241a40712",
+  "anthropic--claude-opus-5.5--launch-delay-email--house": "9044a64cce2632a4e40bf75510a887fb6e9de76fb2899151c315624164c3f3b0",
+  "anthropic--claude-opus-5.5--vendor-decision-memo--default": "058e2441060bbac216a8747ccfa16155291c53ef25161d7becad8e1167aab58a",
+  "anthropic--claude-opus-5.5--vendor-decision-memo--house": "914c5e533bf310cd4167995f988917920fcf287e1e9d1ed13c7eeed7ebf46d46",
+  "anthropic--claude-opus-5.5--pilot-results-memo--default": "96543ee6f289d7e9822f43931606747210cccc21774d6f36b7489fc4543cddb1",
+  "anthropic--claude-opus-5.5--pilot-results-memo--house": "d0f9f375ebcc1c42511ca5cd5b5b7df4c67068edb84ec6a1ec4084f03db75d47",
+  "anthropic--claude-opus-5.5--discovery-proposal--default": "9b6f1a2f48c281f3c31da40a10747b72cf21fc0075a2eca63d18c7dde6150e95",
+  "anthropic--claude-opus-5.5--discovery-proposal--house": "026503de33f0e77260a5f8d5bd42ab5cd844b48163253aa7d6501aa34a26b109",
+  "anthropic--claude-opus-5.5--change-order--default": "440908b6d5059fbc0a1454051fefb2531a5faf2aee91a6ab8b1abc1311feaec5",
+  "anthropic--claude-opus-5.5--change-order--house": "c3b780ce8c61360172816195df5dc3a7896ef6edfa8ed1f42144c2e4c864a5f3",
+  "anthropic--claude-opus-5.5--ai-strategy-slides--default": "f4cf9afce9173b52a8fb3ff6ecbf2c7218599225f0b40b7647965d15ef4329f7",
+  "anthropic--claude-opus-5.5--ai-strategy-slides--house": "3446962d4fcabde1bc4b3ada85adc1f24fff5e7bef1443b045902e4646a42c1e",
+  "anthropic--claude-opus-5.5--handoff-slides--default": "e5c73c30261fe69ca7aca6b952561110d8b0324aa688d94409f24e4708bc40a6",
+  "anthropic--claude-opus-5.5--handoff-slides--house": "89078f711c805a30eb838a41da6ae5d5388ccd985026a10b999eee8601967f39"
+}
