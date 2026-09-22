@@ -1,0 +1,105 @@
+{
+  "labelStatus": "Prior unblinded assistant decisions, open to correction; not gold.",
+  "cases": [
+    {
+      "id": "case-01",
+      "model": "Luna",
+      "path": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--house.md",
+      "outputSha256": "4967d0ce0c6b4104357c42c58da1e6c5838435a340329fb8bb9eb8f15bba1cd4",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "C01",
+      "expected": "fail",
+      "rationale": "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+    },
+    {
+      "id": "case-02",
+      "model": "Sol 5.6",
+      "path": "runs/pilot-v23/openai--gpt-5.6-sol--vendor-decision-memo--house.md",
+      "outputSha256": "c7ddeec601b40c761aff9d940aed2c8e628fd49179ec5864befa16cb89038d38",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "grounding",
+      "expected": "pass",
+      "rationale": "Criterion satisfied on full-draft review against the supplied source pack."
+    },
+    {
+      "id": "case-03",
+      "model": "Fable 5",
+      "path": "runs/pilot-v21/anthropic--claude-fable-5--pilot-results-memo--default.md",
+      "outputSha256": "655bfce1ee7004497033bf3b375c4733d3ba6a93395eadb047a111944316a79e",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "grounding",
+      "expected": "fail",
+      "rationale": "The source reports 200 baseline tickets and 100 pilot tickets, but supplies no sample-adequacy criterion, precision estimate or support for declaring the sample adequate. The model presents an unsupported assessment as fact."
+    },
+    {
+      "id": "case-04",
+      "model": "Opus 5",
+      "path": "runs/pilot-v21/anthropic--claude-opus-5--handoff-slides--house.md",
+      "outputSha256": "9c4f6cef7ac66238c924e37ab3c07c73d7aaef7adeb3e89d5ed6effe330e7a4f",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "negative_parallelism",
+      "expected": "pass",
+      "rationale": "Apply the existing factual-contrast exception. Other content or punctuation issues are outside this target."
+    },
+    {
+      "id": "case-05",
+      "model": "Astra",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--pilot-results-memo--house.md",
+      "outputSha256": "22c1db575ee88eabd328b5762d083b899accd7831c4d1c908b6723fdfc6ced57",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "C01",
+      "expected": "pass",
+      "rationale": "Criterion satisfied on full-draft review against the supplied source pack."
+    },
+    {
+      "id": "case-06",
+      "model": "Astra",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--handoff-slides--default--sample-2.md",
+      "outputSha256": "64ca174262c3b599ad9abe7f282873a9939c140d1948ad304258806cef017d49",
+      "sourceGrades": "reviews/repeatability-v2/grades.json",
+      "criterionId": "authoring_residue",
+      "expected": "fail",
+      "rationale": "The saved review flags an internal source-pack reference in a finished committee deck."
+    },
+    {
+      "id": "case-07",
+      "model": "Luna",
+      "path": "runs/pilot-v18/openai--gpt-5.6-luna--launch-delay-email--default.md",
+      "outputSha256": "20bc862958a177586a3788c0cccf321c3d97693f562753450c1b35922dbd4389",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "grounding",
+      "expected": "review",
+      "rationale": "Current team focus is not supplied; this may be general reassurance rather than a material factual status claim."
+    },
+    {
+      "id": "case-08",
+      "model": "MiMo",
+      "path": "runs/pilot-v23/xiaomi--mimo-v2.6-pro--vendor-decision-memo--house.md",
+      "outputSha256": "728296e770e15aa39aaee22f774db2ec0eca0d44aa1bfc4ce0a81690cb372b44",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "grounding",
+      "expected": "fail",
+      "rationale": "The source supplies no procurement schedule or evidence that signing now meets it. The claim that Beta cannot meet the requirement anywhere within year one also overstates an uncommitted delivery date."
+    },
+    {
+      "id": "case-09",
+      "model": "MiMo",
+      "path": "runs/pilot-v23/xiaomi--mimo-v2.6-pro--pilot-results-memo--house.md",
+      "outputSha256": "3c82f7db5fc9a731dc1be4230eaf7afe32fb428c9254af40768f76581db748f8",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "grounding",
+      "expected": "fail",
+      "rationale": "Directly contradicts the source and itself about randomization. The causal conclusion remains appropriately cautious, but the factual statement is wrong."
+    },
+    {
+      "id": "case-10",
+      "model": "Terra",
+      "path": "runs/pilot-v22/openai--gpt-5.6-terra--vendor-decision-memo--default.md",
+      "outputSha256": "b13c2026622d8f2551b92aca14a311d46f7620d94c81a92d7dd431b88b87828a",
+      "sourceGrades": "reviews/assistant-v42/grades.json",
+      "criterionId": "grounding",
+      "expected": "review",
+      "rationale": "The source requires CFO approval but does not specify the contract signatory. The memo may assign an unsupported signing role."
+    }
+  ]
+}

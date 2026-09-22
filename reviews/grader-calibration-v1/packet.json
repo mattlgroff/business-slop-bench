@@ -1,0 +1,170 @@
+{
+  "status": "Selected diagnostic examples from already reviewed outputs. Model names withheld, but writing may reveal identity. Not held-out or independently validated gold.",
+  "instructions": "Grade only the displayed criterion using the full brief, source and deliverable. Return pass, fail or review with a reason and exact evidence. Review means materially ambiguous, not an automatic failure. Do not open answer-key.json before submitting judgments.",
+  "styleGuide": "../../sources/anti-slop-reviewer.md",
+  "cases": [
+    {
+      "id": "case-01",
+      "task": "pilot-results-memo",
+      "brief": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.",
+      "sourcePack": {
+        "baseline": "200 tickets, 15 minutes mean handling time.",
+        "pilot": "100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.",
+        "quality": "Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.",
+        "costs": "No staffing reductions or cash savings have been measured.",
+        "next": "Sam can run a matched-ticket follow-up. COO decides whether to authorize it."
+      },
+      "wordLimit": 300,
+      "condition": "house",
+      "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+      "deliverable": "# Pilot readout: do not scale now\n\nThe pilot reduced mean handling time from 15 minutes at baseline to 12 minutes across 100 tickets. This result supports a possible efficiency improvement, but ticket mix differed and allocation was not randomized, so the pilot cannot establish that the change caused the reduction.\n\nQuality declined from a 94% pass rate at baseline to 89% in the pilot. The required scaling threshold is at least 92%, so the pilot does not meet the quality requirement. No staffing reductions or cash savings have been measured.\n\n## Recommendation\n\nDo not authorize broader scaling at this stage. The pilot provides an efficiency signal, but the quality result is below threshold and the evidence is not causal.\n\n## Next decision\n\nThe COO should decide whether to authorize Sam to run a matched-ticket follow-up. That study should test handling time and quality on comparable tickets before any scale decision."
+    },
+    {
+      "id": "case-02",
+      "task": "vendor-decision-memo",
+      "brief": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.",
+      "sourcePack": {
+        "budget": "Year-one budget ceiling is $100,000, including setup.",
+        "alpha": "$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.",
+        "beta": "$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.",
+        "constraints": "SSO is mandatory before production. Both vendors meet the other stated requirements.",
+        "owner": "Priya owns procurement. CFO approval is needed before signing."
+      },
+      "wordLimit": 300,
+      "condition": "house",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "deliverable": "# Decision memo: Year-one vendor selection\n\n**To:** CFO  \n**Recommendation:** Approve Alpha for year one.\n\nAlpha costs $92,000 in year one: $72,000 for the annual subscription and $20,000 for setup. This is $8,000 below the $100,000 budget ceiling. Alpha provides the required SSO and meets all other stated requirements.\n\nBeta costs $70,000 in year one, saving $22,000 compared with Alpha. Beta cannot meet the mandatory production condition because SSO is unavailable and has no committed delivery date. Selecting Beta would prevent production deployment.\n\nApprove Alpha and authorize Priya, the procurement owner, to proceed with signing."
+    },
+    {
+      "id": "case-03",
+      "task": "pilot-results-memo",
+      "brief": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.",
+      "sourcePack": {
+        "baseline": "200 tickets, 15 minutes mean handling time.",
+        "pilot": "100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.",
+        "quality": "Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.",
+        "costs": "No staffing reductions or cash savings have been measured.",
+        "next": "Sam can run a matched-ticket follow-up. COO decides whether to authorize it."
+      },
+      "wordLimit": 300,
+      "condition": "default",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "deliverable": "# Executive Readout: Pilot Scaling Decision\n\n## Recommendation\n**Do not scale now.** Authorize Sam's matched-ticket follow-up instead.\n\n## What the Results Show\n\n| Metric | Baseline | Pilot | Assessment |\n|---|---|---|---|\n| Tickets | 200 | 100 | Adequate for a pilot |\n| Mean handling time | 15 min | 12 min | Directionally favorable |\n| Quality pass rate | 94% | 89% | **Below 92% scaling threshold** |\n| Measured cash savings | \u2014 | None | Unproven |\n\n## What the Results Support\n- A **promising signal**: a 3-minute (20%) reduction in mean handling time.\n- Justification for **further, more rigorous testing**.\n\n## What the Results Do Not Support\n- **Attribution of the time savings.** Ticket mix differed and allocation was not randomized, so the improvement may reflect easier tickets rather than the intervention.\n- **Meeting the quality bar.** Pilot quality (89%) fell below the required 92% threshold \u2014 a hard blocker on scaling regardless of speed gains.\n- **A financial case.** No staffing reductions or cash savings have been measured.\n\n## Risks of Scaling Now\n- Locking in a quality decline below the required threshold.\n- Investing in a change whose benefit may disappear under a comparable ticket mix.\n\n## Next Decision\nThe decision before the COO is **not** whether to scale \u2014 the quality shortfall and confounded design rule that out today. The decision is **whether to authorize Sam's matched-ticket follow-up**, which would:\n1. Control for ticket mix, isolating the true handling-time effect.\n2. Test whether quality can meet or exceed 92% under the new approach.\n\n**Recommended action:** Approve the matched-ticket follow-up. Revisit the scaling decision when it delivers (a) a mix-controlled handling-time result and (b) quality at or above threshold, alongside a plan to measure actual cash savings."
+    },
+    {
+      "id": "case-04",
+      "task": "handoff-slides",
+      "brief": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.",
+      "sourcePack": {
+        "delivery": "Engineering lead Lee owns defect fixes until acceptance.",
+        "operations": "Operations lead Jo owns incidents only after acceptance.",
+        "acceptance": "Acceptance requires an approved runbook and a successful rollback rehearsal.",
+        "current": "Runbook is approved. Rollback rehearsal has not happened.",
+        "gap": "No role has accepted responsibility for organizing the rehearsal.",
+        "authority": "Sponsor Pat can assign that responsibility and approve acceptance once criteria are met."
+      },
+      "wordLimit": 350,
+      "condition": "house",
+      "criterion": "Does the draft avoid empty rhetorical negative parallelism? Necessary factual corrections, scope boundaries, mutually exclusive conditions and cumulative requirements are permitted. A not/rather-than keyword match alone is not a failure.",
+      "deliverable": "## Slide 1: Decision requested\n\nPat decides today whether to approve operational handoff. Recommendation: do not approve yet. One acceptance criterion is unmet.\n\n- Acceptance requires two things: an approved runbook and a successful rollback rehearsal.\n- The runbook is approved.\n- The rollback rehearsal has not happened.\n- Pat holds authority to approve acceptance once both criteria are met.\n\n## Slide 2: Current readiness against criteria\n\n| Criterion | Status | Owner |\n|---|---|---|\n| Runbook approved | Met | Lee |\n| Rollback rehearsal completed successfully | Not met | Unassigned |\n\nNo role has accepted responsibility for organizing the rehearsal. That absence, not a failed test, is why the service sits short of acceptance.\n\n## Slide 3: Who owns what before and after acceptance\n\n- Lee, engineering lead, owns defect fixes until acceptance.\n- Jo, operations lead, owns incidents only after acceptance.\n- Between now and acceptance, incidents fall outside Jo's remit. Approving handoff without the rehearsal would move incident ownership to Jo while the rollback path remains untested.\n- Pat can assign rehearsal responsibility to a named person.\n\n## Slide 4: Actions required\n\n1. Pat assigns rehearsal ownership to a named individual at this meeting. Without that assignment the gap persists, since neither Lee's nor Jo's current remit covers it.\n2. The assigned owner schedules and runs the rollback rehearsal and reports the result to Pat.\n3. Lee continues defect fixes until acceptance.\n4. Pat approves acceptance once the rehearsal succeeds, at which point Jo takes incident ownership.\n\nBring the rehearsal result back to this committee for the acceptance decision."
+    },
+    {
+      "id": "case-05",
+      "task": "pilot-results-memo",
+      "brief": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.",
+      "sourcePack": {
+        "baseline": "200 tickets, 15 minutes mean handling time.",
+        "pilot": "100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.",
+        "quality": "Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.",
+        "costs": "No staffing reductions or cash savings have been measured.",
+        "next": "Sam can run a matched-ticket follow-up. COO decides whether to authorize it."
+      },
+      "wordLimit": 300,
+      "condition": "house",
+      "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+      "deliverable": "## Recommendation: do not scale now\n\nThe pilot\u2019s quality pass rate was 89%, below the required 92% scaling threshold and down 5 percentage points from the 94% baseline.\n\nMean handling time was 12 minutes across 100 pilot tickets, compared with 15 minutes across 200 baseline tickets: an observed reduction of 3 minutes, or 20%. Ticket mix differed and allocation was not randomized, so the comparison does not establish that the pilot caused the reduction. No staffing reductions or cash savings have been measured.\n\nThe results support further testing of the handling-time improvement. They do not support scaling or a claim of realized savings.\n\n## Next decision\n\nThe COO should authorize Sam to run a matched-ticket follow-up. It should assess whether the handling-time improvement persists with comparable tickets and whether quality reaches at least 92%. Use those results to reconsider scaling; any claim of cash savings will require separate measurement."
+    },
+    {
+      "id": "case-06",
+      "task": "handoff-slides",
+      "brief": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.",
+      "sourcePack": {
+        "delivery": "Engineering lead Lee owns defect fixes until acceptance.",
+        "operations": "Operations lead Jo owns incidents only after acceptance.",
+        "acceptance": "Acceptance requires an approved runbook and a successful rollback rehearsal.",
+        "current": "Runbook is approved. Rollback rehearsal has not happened.",
+        "gap": "No role has accepted responsibility for organizing the rehearsal.",
+        "authority": "Sponsor Pat can assign that responsibility and approve acceptance once criteria are met."
+      },
+      "wordLimit": 350,
+      "condition": "default",
+      "criterion": "Does the finished deliverable avoid unintentional authoring residue, such as references to the internal source pack? Intentional signature/date form fields are permitted.",
+      "deliverable": "## Slide 1 \u2014 Decision: Not Ready for Operational Handoff\n- **Acceptance requires:** an approved runbook and a successful rollback rehearsal.\n- **Current status:** the runbook is approved; the rollback rehearsal has not happened.\n- **Readiness conclusion:** acceptance criteria are not yet met.\n- **Recommended decision:** defer operational handoff until the rehearsal succeeds and Sponsor Pat approves acceptance.\n\n## Slide 2 \u2014 Readiness Evidence and Open Gap\n| Requirement | Status | Required action |\n|---|---|---|\n| Approved runbook | Met | No further action identified in the source pack |\n| Successful rollback rehearsal | Not met: rehearsal has not happened | Organize and successfully complete the rehearsal |\n| Rehearsal organizer | Unassigned: no role has accepted responsibility | Sponsor Pat assigns responsibility |\n\n- **Key blocker:** the required rehearsal remains outstanding, with no accepted organizer.\n\n## Slide 3 \u2014 Accountability Before and After Acceptance\n- **Engineering lead Lee:** owns defect fixes until acceptance.\n- **Operations lead Jo:** owns incidents only after acceptance.\n- **Sponsor Pat:** can assign responsibility for organizing the rehearsal and approve acceptance once criteria are met.\n- **Required clarification:** explicitly assign rehearsal organization; neither Lee\u2019s defect ownership nor Jo\u2019s post-acceptance incident ownership establishes that responsibility.\n\n## Slide 4 \u2014 Actions and Acceptance Gate\n1. **Assign:** Sponsor Pat assigns responsibility for organizing the rollback rehearsal.\n2. **Rehearse:** the assigned organizer arranges the rehearsal; it must complete successfully.\n3. **Confirm criteria:** verify that the runbook is approved and the rollback rehearsal was successful.\n4. **Approve:** Sponsor Pat approves acceptance once both criteria are met.\n5. **Handoff:** Jo\u2019s incident ownership begins after acceptance; Lee\u2019s defect-fix ownership applies until acceptance.\n\n**Steering committee decision requested:** defer handoff now and request Pat\u2019s assignment of rehearsal responsibility."
+    },
+    {
+      "id": "case-07",
+      "task": "launch-delay-email",
+      "brief": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.",
+      "sourcePack": {
+        "old_plan": "Launch was tentatively scheduled for October 8, 2026.",
+        "latest": "Security review now completes October 12 at the earliest; release needs completed approval.",
+        "impact": "A staging demo can still happen October 8 using synthetic data.",
+        "authority": "Nia owns the security review. Avery chooses whether to accept the staging demo.",
+        "uncertainty": "The review may require remediation; no new production date is authorized.",
+        "sender": "Jordan, engagement lead."
+      },
+      "wordLimit": 180,
+      "condition": "default",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "deliverable": "**Subject: Launch Position and October 8 Staging Demo**\n\nHi Avery,\n\nI\u2019m writing with the latest launch position. The October 8, 2026 production launch is no longer the current position: the security review now completes October 12 at the earliest, and release requires completed approval. The review may also require remediation, and no new production date is authorized yet.\n\nThe team remains focused on completing the required work and moving forward with care. In the meantime, we can still hold a staging demo on October 8 using synthetic data.\n\nCould you please confirm whether you accept the October 8 staging demo? Nia owns the security review, and we will use its outcome to determine the appropriate next step for production.\n\nBest,  \nJordan  \nEngagement Lead"
+    },
+    {
+      "id": "case-08",
+      "task": "vendor-decision-memo",
+      "brief": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.",
+      "sourcePack": {
+        "budget": "Year-one budget ceiling is $100,000, including setup.",
+        "alpha": "$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.",
+        "beta": "$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.",
+        "constraints": "SSO is mandatory before production. Both vendors meet the other stated requirements.",
+        "owner": "Priya owns procurement. CFO approval is needed before signing."
+      },
+      "wordLimit": 300,
+      "condition": "house",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "deliverable": "**Decision memo: Year-one vendor selection**\nTo: CFO\nFrom: Priya, Procurement\nSubject: Vendor approval for year-one contract\n\nRecommendation: sign with Alpha.\n\nSSO is mandatory before production. Alpha includes required SSO. Beta does not, and has no committed delivery date, so Beta cannot meet the production requirement in year one. Alpha is the only vendor that satisfies all stated requirements.\n\n| Vendor | Subscription | Setup | Year-one total | SSO |\n|---|---|---|---|---|\n| Alpha | $72,000 | $20,000 | $92,000 | Available |\n| Beta | $60,000 | $10,000 | $70,000 | Unavailable |\n\nBoth vendors stay within the $100,000 year-one ceiling, so budget does not decide this. Beta's $22,000 lower cost buys a product that blocks production until an uncommitted SSO feature arrives.\n\nSigning Alpha costs $92,000 in year one and closes procurement on schedule.\n\nRequested action: CFO approves the Alpha contract so Priya can sign before the year-one start date."
+    },
+    {
+      "id": "case-09",
+      "task": "pilot-results-memo",
+      "brief": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.",
+      "sourcePack": {
+        "baseline": "200 tickets, 15 minutes mean handling time.",
+        "pilot": "100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.",
+        "quality": "Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.",
+        "costs": "No staffing reductions or cash savings have been measured.",
+        "next": "Sam can run a matched-ticket follow-up. COO decides whether to authorize it."
+      },
+      "wordLimit": 300,
+      "condition": "house",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "deliverable": "# Pilot scaling readout\n\n**Recommendation: hold scaling.** The pilot does not meet the required quality threshold, so the evidence does not support a scale-up decision now.\n\n## What the results show\n\nHandling time fell from a 15-minute mean at baseline (200 tickets) to 12 minutes in the pilot (100 tickets). The pilot covered a different ticket mix and allocation was randomized. Ticket mix differed and allocation was not randomized, so we cannot attribute the 3-minute difference to the change under test.\n\nQuality sets the gate. Pass rate dropped from 94% at baseline to 89% in the pilot. The scaling threshold is at least 92%, and the pilot misses it by 3 points. Quality below the gate blocks scaling regardless of handling-time gains.\n\nNo staffing reductions or cash savings have been measured. A scale-up decision would rest on handling-time change we cannot attribute and quality that fails the gate, with no validated cost case.\n\n## Next decision\n\nThe COO decides whether to authorize Sam's matched-ticket follow-up. That study pairs comparable tickets across conditions and answers the open question: does the change produce the handling-time gain once ticket mix is held steady, and does quality hold at or above 92%?\n\nIf authorized, the follow-up returns the evidence needed for a scaling decision. If declined, the record stands as is, and scaling is unsupported because quality is below threshold and the handling-time result is confounded by unrandomized allocation across differing ticket mixes."
+    },
+    {
+      "id": "case-10",
+      "task": "vendor-decision-memo",
+      "brief": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.",
+      "sourcePack": {
+        "budget": "Year-one budget ceiling is $100,000, including setup.",
+        "alpha": "$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.",
+        "beta": "$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.",
+        "constraints": "SSO is mandatory before production. Both vendors meet the other stated requirements.",
+        "owner": "Priya owns procurement. CFO approval is needed before signing."
+      },
+      "wordLimit": 300,
+      "condition": "default",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "deliverable": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO  \n**From:** Procurement  \n**Decision Required:** Approve vendor selection before contract signing.\n\n## Recommendation\n\nApprove **Alpha** for year one, subject to Priya completing procurement and presenting the agreement for CFO signature.\n\n## Evaluation Against Constraints\n\n| Criterion | Alpha | Beta |\n|---|---:|---:|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| Year-one total | $92,000 | $70,000 |\n| Within $100,000 ceiling | Yes | Yes |\n| Required SSO before production | Available | Unavailable; no committed delivery date |\n| Other stated requirements | Meets | Meets |\n\n## Rationale\n\nBoth vendors fit within the $100,000 year-one budget ceiling, including setup. Beta is lower cost by $22,000 in year one. However, SSO is mandatory before production. Alpha has required SSO available, while Beta does not and has no committed delivery date.\n\nAccordingly, Beta cannot satisfy the production requirement on the available facts, despite its lower price. Alpha is the only vendor that meets all stated constraints and remains $8,000 below the year-one budget ceiling.\n\n## Requested Approval\n\nApprove Alpha at a year-one cost of **$92,000** ($72,000 annual subscription plus $20,000 one-time setup). Priya should proceed with procurement; CFO approval is required before signing."
+    }
+  ]
+}

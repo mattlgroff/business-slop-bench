@@ -48,6 +48,8 @@ Default and house conditions share the same source pack and task wording. Only t
 
 ## Current assistant scoring
 
+[Grader calibration packet](reviews/grader-calibration-v1/README.md): ten full-context diagnostic cases with model metadata removed and a separate proposed answer key. Independent labels are still pending; this is not a held-out accuracy test.
+
 [Luna full-panel repeat](reviews/repeatability-v3/REPORT.md): house content checks stay at 52/54, but the failing criterion changes and drafts ready without edits drop from 4/8 to 3/8. All 16 calls are fresh; older targeted repeats were not reused.
 
 [Astra full-panel repeat](reviews/repeatability-v2/REPORT.md): all 108 content checks pass again, but house readiness without edits changes from 8/8 to 6/8. The 16 repeats are separate from the primary leaderboard. Two attempts do not establish population reliability.

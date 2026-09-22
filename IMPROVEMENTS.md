@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Model-name-hidden grader calibration packet
+
+Created ten diagnostic cases from the current primary grades and Astra repeat, spanning proposed passes, failures and unresolved claims. The participant packet includes full briefs, facts and drafts but omits model metadata, expected verdicts and prior review explanations. A separate answer key retains source paths, output hashes and proposed labels. Cases exercise the grading boundaries that have caused corrections, rather than claiming to be randomly held out.
+
+The builder verifies source hashes, unique membership and label coverage, and refuses to overwrite changed frozen artifacts. Rebuilding twice produced identical packet, key and response-template files. No model calls or score changes were made. [Reviewer instructions and artifacts](reviews/grader-calibration-v1/README.md). Independent reviewer responses remain pending; prior assistant labels are not treated as gold. Sonnet continues through its existing paced execution session.
+
 ## Luna full-panel repeat
 
 Froze repeatability-v3 before dispatch: one fresh call for every v2 brief/condition. The two house briefs previously sampled use sample ID 4; the other fourteen use ID 2. All sixteen are new calls, not imports or best-of selections. The report uses full-panel round numbers to avoid implying equal numbers of prior attempts per cell.
