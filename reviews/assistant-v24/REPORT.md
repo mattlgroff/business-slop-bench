@@ -16,15 +16,15 @@ Provisional assistant-authored grades, not human gold or independent benchmark v
 | Qwen Flash | house | 8/8 | 41/54 | 11 | 2 | 0/8 | 0/8 | $0.00774 |
 | Qwen Max | default | 8/8 | 49/54 | 5 | 0 | 3/8 | 1/8 | $0.02687 |
 | Qwen Max | house | 8/8 | 52/54 | 2 | 0 | 4/8 | 3/8 | $0.08665 |
-| GLM Flash | default | 8/8 | 48/54 | 4 | 2 | 3/8 | 1/8 | $0.00187 |
+| GLM Flash | default | 8/8 | 49/54 | 3 | 2 | 4/8 | 1/8 | $0.00187 |
 | GLM Flash | house | 8/8 | 48/54 | 6 | 0 | 3/8 | 2/8 | $0.00459 |
-| GLM 5.3 | default | 8/8 | 51/54 | 3 | 0 | 3/8 | 1/8 | $0.01492 |
+| GLM 5.3 | default | 8/8 | 52/54 | 2 | 0 | 4/8 | 1/8 | $0.01492 |
 | GLM 5.3 | house | 8/8 | 49/54 | 5 | 0 | 3/8 | 2/8 | $0.04255 |
 | DeepSeek Flash | default | 8/8 | 52/54 | 2 | 0 | 5/8 | 0/8 | $0.00286 |
 | DeepSeek Flash | house | 8/8 | 50/54 | 4 | 0 | 3/8 | 0/8 | $0.00837 |
 | DeepSeek Pro | default | 8/8 | 51/54 | 1 | 2 | 3/8 | 1/8 | $0.00903 |
-| DeepSeek Pro | house | 8/8 | 50/54 | 3 | 1 | 3/8 | 1/8 | $0.03741 |
-| Kimi K3 | default | 8/8 | 50/54 | 4 | 0 | 3/8 | 0/8 | $0.05660 |
+| DeepSeek Pro | house | 8/8 | 51/54 | 2 | 1 | 4/8 | 2/8 | $0.03741 |
+| Kimi K3 | default | 8/8 | 51/54 | 3 | 0 | 4/8 | 0/8 | $0.05660 |
 | Kimi K3 | house | 8/8 | 50/54 | 3 | 1 | 3/8 | 2/8 | $0.11798 |
 | MiniMax | default | 8/8 | 50/54 | 4 | 0 | 3/8 | 0/8 | $0.03275 |
 | MiniMax | house | 8/8 | 44/54 | 9 | 1 | 0/8 | 0/8 | $0.03217 |
@@ -89,16 +89,15 @@ No supported content or editorial finding in this review; any em dash violations
 
 ### GLM 5.3 / discovery-proposal / default
 
-[Draft](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--default.md): 6/7 content checks, 270/350 words, 0 em dashes.
+[Draft](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--default.md): 7/7 content checks, 270/350 words, 0 em dashes.
 
-- **grounding fail:** [On delivery of the three artifacts and your confirmation, the final 50% ($8,000) becomes payable.](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--default.md:50). Makes sponsor confirmation a condition of the second payment; the source specifies payment on delivery.
 - **Style 10:** [the three listed artifacts: the current-state process map, the prioritized backlog, and the implementation recommendation.](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--default.md:40). Repeats the three artifacts already listed under Purpose.
 
 ### GLM 5.3 / discovery-proposal / house
 
 [Draft](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--house.md): 6/7 content checks, 240/350 words, 0 em dashes.
 
-- **grounding fail:** [Once we receive the signature, the named contact, and the kickoff payment, we will agree a start date](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--house.md:41). Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, after the start date. The final payment is also conditioned on confirmation rather than delivery.
+- **grounding fail:** [Once we receive the signature, the named contact, and the kickoff payment, we will agree a start date](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--house.md:41). Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, which follows the agreed start.
 - **Style 10:** [the three listed artifacts: the current-state process map, the prioritized backlog, and the implementation recommendation.](../../runs/pilot-v20/zai--glm-5.3--discovery-proposal--house.md:31). Repeats the three artifacts already listed under Scope.
 
 ### GLM 5.3 / change-order / default
@@ -142,9 +141,9 @@ No supported content or editorial finding in this review; any em dash violations
 
 ## Adjudication boundaries
 
-GLM 5.3 passes 51/54 default and 49/54 house content checks with no unresolved checks. Content-ready counts are 3/8 in each condition; ready-without-edits counts are 1/8 default and 2/8 house. Five drafts exceed their word limits: both pilot emails, both launch emails and the default handoff deck. Default drafts contain 20 em dashes; house drafts contain none.
+GLM 5.3 passes 52/54 default and 49/54 house content checks with no unresolved checks. Content-ready counts are 4/8 default and 3/8 house; ready-without-edits counts are 1/8 default and 2/8 house. Five drafts exceed their word limits: both pilot emails, both launch emails and the default handoff deck. Default drafts contain 20 em dashes; house drafts contain none.
 
-Confirmed failures are an invented internal review and approval, favorable team-performance reassurance, an end-of-week reply deadline, an end-of-quarter signing deadline with Priya as signatory, sponsor confirmation or kickoff payment added as payment and start preconditions, immediate execution readiness, and legal clearance invented for the knowledge-search pilot. Candor scripts such as wanting to be transparent, upfront or straightforward recur across the emails and are recorded as editorial findings, not content failures.
+Confirmed failures are an invented internal review and approval, favorable team-performance reassurance, an end-of-week reply deadline, an end-of-quarter signing deadline with Priya as signatory, the kickoff payment added as a precondition for agreeing the start date, immediate execution readiness, and legal clearance invented for the knowledge-search pilot. Candor scripts such as wanting to be transparent, upfront or straightforward recur across the emails and are recorded as editorial findings, not content failures.
 
 The default vendor memo, the house readout and the house handoff deck are ready without edits. Both readouts state the 3-minute reduction explicitly.
 

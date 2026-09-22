@@ -1,0 +1,179 @@
+[
+ {
+  "model": "Grok",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "21",
+    "The client hopes for 20% shorter handling time.",
+    "Third-person client reference in an email addressed directly to that client."
+   ]
+  ]
+ },
+ {
+  "model": "Grok",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Signing still requires CFO approval; Priya remains procurement owner.",
+    "Repeats the approval and ownership constraints already listed under Constraints."
+   ]
+  ]
+ },
+ {
+  "model": "Grok",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "authorize Priya to sign",
+    "The source grants the CFO approval authority before signing but does not identify the signatory; Priya signing may be an unsupported role assignment."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [
+   [
+    "C01",
+    "fail",
+    "Mean handling time was 12 minutes on 100 pilot tickets versus 15 minutes on 200 baseline tickets.",
+    "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is an omission, not incorrect arithmetic."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "They do not support scaling now on speed, quality, or savings.",
+    "Repeats the no-scaling conclusion already stated in the recommendation and the preceding section."
+   ]
+  ]
+ },
+ {
+  "model": "Grok",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [
+   [
+    "C01",
+    "fail",
+    "Mean handling time was 12 minutes on 100 pilot tickets, compared with 15 minutes on 200 baseline tickets.",
+    "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is an omission, not incorrect arithmetic."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Sign this proposal, name the client contact, and pay 50% of the fee. The start date is then agreed.",
+    "Places the kickoff payment before the agreed start date; the source ties the payment to kickoff, which follows the agreed start."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Work will not begin without written sponsor approval.",
+    "Repeats the written-approval requirement stated under Authority."
+   ]
+  ]
+ },
+ {
+  "model": "Grok",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "It is the only option ready to run under current approvals.",
+    "Approved policy documents do not establish readiness to run; the source gives no start conditions."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "the quarter should go to the authorized option",
+    "Calls the knowledge-search pilot authorized; the source says only that its policy documents are approved."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Grok",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Defect-fix ownership stays with Lee until acceptance.",
+    "Repeats the ownership boundary already stated on slide 1."
+   ]
+  ]
+ }
+]

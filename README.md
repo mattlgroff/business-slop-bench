@@ -6,7 +6,7 @@ Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/as
 
 Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Uncapped results: [Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3 and MiniMax](reviews/assistant-v24/REPORT.md). This cohort is not pooled with earlier capped scores.
+Uncapped results: [Astra, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v26/REPORT.md). This cohort is not pooled with earlier capped scores.
 
 [Rubric audit](reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
 

@@ -109,14 +109,7 @@
   "model": "Kimi K3",
   "task": "discovery-proposal",
   "condition": "default",
-  "content": [
-   [
-    "grounding",
-    "fail",
-    "triggering the final payment (50%, $8,000)",
-    "Makes acceptance confirmation the trigger for the second payment; the source specifies payment on delivery."
-   ]
-  ],
+  "content": [],
   "style": [
    [
     "10",

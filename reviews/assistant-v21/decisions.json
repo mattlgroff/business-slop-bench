@@ -122,14 +122,7 @@
   "model": "DeepSeek Pro",
   "task": "discovery-proposal",
   "condition": "house",
-  "content": [
-   [
-    "grounding",
-    "fail",
-    "Final acceptance triggers the remaining $8,000 payment.",
-    "Makes acceptance the trigger for the second payment; the source specifies payment on delivery."
-   ]
-  ],
+  "content": [],
   "style": []
  },
  {

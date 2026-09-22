@@ -16,12 +16,12 @@ Provisional assistant-authored grades, not human gold or independent benchmark v
 | Qwen Flash | house | 8/8 | 41/54 | 11 | 2 | 0/8 | 0/8 | $0.00774 |
 | Qwen Max | default | 8/8 | 49/54 | 5 | 0 | 3/8 | 1/8 | $0.02687 |
 | Qwen Max | house | 8/8 | 52/54 | 2 | 0 | 4/8 | 3/8 | $0.08665 |
-| GLM Flash | default | 8/8 | 48/54 | 4 | 2 | 3/8 | 1/8 | $0.00187 |
+| GLM Flash | default | 8/8 | 49/54 | 3 | 2 | 4/8 | 1/8 | $0.00187 |
 | GLM Flash | house | 8/8 | 48/54 | 6 | 0 | 3/8 | 2/8 | $0.00459 |
 | DeepSeek Flash | default | 8/8 | 52/54 | 2 | 0 | 5/8 | 0/8 | $0.00286 |
 | DeepSeek Flash | house | 8/8 | 50/54 | 4 | 0 | 3/8 | 0/8 | $0.00837 |
 | DeepSeek Pro | default | 8/8 | 51/54 | 1 | 2 | 3/8 | 1/8 | $0.00903 |
-| DeepSeek Pro | house | 8/8 | 50/54 | 3 | 1 | 3/8 | 1/8 | $0.03741 |
+| DeepSeek Pro | house | 8/8 | 51/54 | 2 | 1 | 4/8 | 2/8 | $0.03741 |
 | MiniMax | default | 3/8 | 16/19 | 3 | 0 | 0/3 | 0/3 | $0.01102 |
 | MiniMax | house | 2/8 | 11/13 | 2 | 0 | 0/2 | 0/2 | $0.00580 |
 
@@ -89,9 +89,9 @@ No supported content or editorial finding in this review; any em dash violations
 
 ### DeepSeek Pro / discovery-proposal / house
 
-[Draft](../../runs/pilot-v19/deepseek--deepseek-v4-pro-0813--discovery-proposal--house.md): 6/7 content checks, 185/350 words, 0 em dashes.
+[Draft](../../runs/pilot-v19/deepseek--deepseek-v4-pro-0813--discovery-proposal--house.md): 7/7 content checks, 185/350 words, 0 em dashes.
 
-- **grounding fail:** [Final acceptance triggers the remaining $8,000 payment.](../../runs/pilot-v19/deepseek--deepseek-v4-pro-0813--discovery-proposal--house.md:31). Makes acceptance the trigger for the second payment; the source specifies payment on delivery.
+No supported content or editorial finding in this review; any em dash violations remain separate.
 
 ### DeepSeek Pro / change-order / default
 
@@ -133,11 +133,11 @@ No supported content or editorial finding in this review; any em dash violations
 
 ## Adjudication boundaries
 
-DeepSeek Pro passes 51/54 default and 50/54 house content checks. Default has one failure and two unresolved checks; house has three failures and one unresolved check. Content-ready counts are 3/8 in each condition; ready-without-edits counts are 1/8 in each. Two memos are blocked by unfilled header dates and the default handoff deck by a sentence that refers to the source facts. Default drafts contain seven em dashes, three of them table cell fillers; house drafts contain none.
+DeepSeek Pro passes 51/54 default and 51/54 house content checks. Default has one failure and two unresolved checks; house has two failures and one unresolved check. Content-ready counts are 3/8 default and 4/8 house; ready-without-edits counts are 1/8 and 2/8. Two memos are blocked by unfilled header dates and the default handoff deck by a sentence that refers to the source facts. Default drafts contain seven em dashes, three of them table cell fillers; house drafts contain none.
 
 Three checks are unresolved rather than failed. The default launch email attributes the delay to the review, which the source supports, while denying any loss of execution quality; the house launch email says Nia is tracking the review closely; the default strategy deck asserts no legal blocker for the knowledge-search pilot. Each may be a reasonable inference or general reassurance, so none is recorded as a confirmed defect. Invented review progress or staging readiness, as in other models, remains a confirmed failure.
 
-Confirmed failures are invented prior discussions, acceptance made the trigger for the second discovery payment, a readiness-to-run claim for the knowledge-search pilot, and runbook ownership assigned to Jo together with an invented exception path. Both readouts state the 3-minute reduction and the 3-point quality shortfall correctly.
+Confirmed failures are invented prior discussions, a readiness-to-run claim for the knowledge-search pilot, and runbook ownership assigned to Jo together with an invented exception path. Both readouts state the 3-minute reduction and the 3-point quality shortfall correctly.
 
 - Provider-native limits still apply; catalog capacity is used only to reserve spending.
 - Prior capped outcomes and canceled requests are retained as execution evidence and excluded from this writing comparison.

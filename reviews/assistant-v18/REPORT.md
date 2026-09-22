@@ -14,7 +14,7 @@ Provisional assistant-authored grades, not human gold or independent benchmark v
 | Luna | house | 8/8 | 52/54 | 1 | 1 | 6/8 | 4/8 | $0.00809 |
 | Qwen Flash | default | 8/8 | 46/54 | 8 | 0 | 0/8 | 0/8 | $0.00376 |
 | Qwen Flash | house | 8/8 | 41/54 | 11 | 2 | 0/8 | 0/8 | $0.00774 |
-| GLM Flash | default | 8/8 | 48/54 | 4 | 2 | 3/8 | 1/8 | $0.00187 |
+| GLM Flash | default | 8/8 | 49/54 | 3 | 2 | 4/8 | 1/8 | $0.00187 |
 | GLM Flash | house | 8/8 | 48/54 | 6 | 0 | 3/8 | 2/8 | $0.00459 |
 | MiniMax | default | 3/8 | 16/19 | 3 | 0 | 0/3 | 0/3 | $0.01102 |
 | MiniMax | house | 2/8 | 11/13 | 2 | 0 | 0/2 | 0/2 | $0.00580 |
@@ -78,9 +78,8 @@ No supported content or editorial finding in this review; any em dash violations
 
 ### GLM Flash / discovery-proposal / default
 
-[Draft](../../runs/pilot-v19/zai--glm-5.3-flash--discovery-proposal--default.md): 6/7 content checks, 263/350 words, 0 em dashes.
+[Draft](../../runs/pilot-v19/zai--glm-5.3-flash--discovery-proposal--default.md): 7/7 content checks, 263/350 words, 0 em dashes.
 
-- **grounding fail:** [The remaining $8,000 is invoiced on delivery and acceptance of the artifacts.](../../runs/pilot-v19/zai--glm-5.3-flash--discovery-proposal--default.md:41). Adds acceptance as a condition of the second payment; the source specifies payment on delivery.
 - **Style 21:** [## commencement](../../runs/pilot-v19/zai--glm-5.3-flash--discovery-proposal--default.md:29). A lowercase heading among title-case headings reads as an unfinished draft.
 - **Style 10:** [(current-state process map, prioritized backlog, and implementation recommendation)](../../runs/pilot-v19/zai--glm-5.3-flash--discovery-proposal--default.md:33). Repeats the three artifacts already listed in the Objective section.
 - **Style 28:** [We look forward to your approval and to delivering a clear, actionable basis for your next steps.](../../runs/pilot-v19/zai--glm-5.3-flash--discovery-proposal--default.md:43). Closing promises a clear, actionable basis without adding a decision, owner or condition.
@@ -136,7 +135,7 @@ No supported content or editorial finding in this review; any em dash violations
 
 ## Adjudication boundaries
 
-GLM Flash has three content-ready default drafts and three house drafts, but only one default and two house drafts are ready without edits. Default drafts contain 14 em dashes across six briefs; house drafts contain none. The house pilot email also exceeds the word limit by two words, which would block readiness even without its grounding failure.
+GLM Flash has four content-ready default drafts and three house drafts, but only one default and two house drafts are ready without edits. Default drafts contain 14 em dashes across six briefs; house drafts contain none. The house pilot email also exceeds the word limit by two words, which would block readiness even without its grounding failure.
 
 Two default checks are unresolved rather than failed. The vendor memo names the vendors only as Vendor A and Vendor B; the figures identify them, but the memo never says so. The change-order footer calls every amount an estimate while presenting the fee as fixed. Neither is treated as a confirmed false claim.
 

@@ -111,14 +111,7 @@
   "model": "GLM Flash",
   "task": "discovery-proposal",
   "condition": "default",
-  "content": [
-   [
-    "grounding",
-    "fail",
-    "The remaining $8,000 is invoiced on delivery and acceptance of the artifacts.",
-    "Adds acceptance as a condition of the second payment; the source specifies payment on delivery."
-   ]
-  ],
+  "content": [],
   "style": [
    [
     "21",

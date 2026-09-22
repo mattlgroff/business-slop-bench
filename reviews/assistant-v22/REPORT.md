@@ -16,13 +16,13 @@ Provisional assistant-authored grades, not human gold or independent benchmark v
 | Qwen Flash | house | 8/8 | 41/54 | 11 | 2 | 0/8 | 0/8 | $0.00774 |
 | Qwen Max | default | 8/8 | 49/54 | 5 | 0 | 3/8 | 1/8 | $0.02687 |
 | Qwen Max | house | 8/8 | 52/54 | 2 | 0 | 4/8 | 3/8 | $0.08665 |
-| GLM Flash | default | 8/8 | 48/54 | 4 | 2 | 3/8 | 1/8 | $0.00187 |
+| GLM Flash | default | 8/8 | 49/54 | 3 | 2 | 4/8 | 1/8 | $0.00187 |
 | GLM Flash | house | 8/8 | 48/54 | 6 | 0 | 3/8 | 2/8 | $0.00459 |
 | DeepSeek Flash | default | 8/8 | 52/54 | 2 | 0 | 5/8 | 0/8 | $0.00286 |
 | DeepSeek Flash | house | 8/8 | 50/54 | 4 | 0 | 3/8 | 0/8 | $0.00837 |
 | DeepSeek Pro | default | 8/8 | 51/54 | 1 | 2 | 3/8 | 1/8 | $0.00903 |
-| DeepSeek Pro | house | 8/8 | 50/54 | 3 | 1 | 3/8 | 1/8 | $0.03741 |
-| Kimi K3 | default | 8/8 | 50/54 | 4 | 0 | 3/8 | 0/8 | $0.05660 |
+| DeepSeek Pro | house | 8/8 | 51/54 | 2 | 1 | 4/8 | 2/8 | $0.03741 |
+| Kimi K3 | default | 8/8 | 51/54 | 3 | 0 | 4/8 | 0/8 | $0.05660 |
 | Kimi K3 | house | 8/8 | 50/54 | 3 | 1 | 3/8 | 2/8 | $0.11798 |
 | MiniMax | default | 3/8 | 16/19 | 3 | 0 | 0/3 | 0/3 | $0.01102 |
 | MiniMax | house | 2/8 | 11/13 | 2 | 0 | 0/2 | 0/2 | $0.00580 |
@@ -84,9 +84,8 @@ No supported content or editorial finding in this review; any em dash violations
 
 ### Kimi K3 / discovery-proposal / default
 
-[Draft](../../runs/pilot-v20/moonshotai--kimi-k3--discovery-proposal--default.md): 6/7 content checks, 277/350 words, 4 em dashes.
+[Draft](../../runs/pilot-v20/moonshotai--kimi-k3--discovery-proposal--default.md): 7/7 content checks, 277/350 words, 4 em dashes.
 
-- **grounding fail:** [triggering the final payment (50%, $8,000)](../../runs/pilot-v20/moonshotai--kimi-k3--discovery-proposal--default.md:52). Makes acceptance confirmation the trigger for the second payment; the source specifies payment on delivery.
 - **Style 10:** [the three listed artifacts: the process map, the prioritized backlog, and the implementation recommendation.](../../runs/pilot-v20/moonshotai--kimi-k3--discovery-proposal--default.md:44). Repeats the three artifacts already listed in the scope section.
 - **Style 28:** [We look forward to your approval and to beginning discovery.](../../runs/pilot-v20/moonshotai--kimi-k3--discovery-proposal--default.md:54). Closing pleasantry adds no decision, owner or condition.
 
@@ -139,9 +138,9 @@ No supported content or editorial finding in this review; any em dash violations
 
 ## Adjudication boundaries
 
-Kimi K3 passes 50/54 content checks in both conditions. Default has four failures; house has three failures and one unresolved check. Content-ready counts are 3/8 in each condition; ready-without-edits counts are 0/8 default and 2/8 house. Three drafts exceed their word limits: both pilot emails and the house readout. Default drafts contain 22 em dashes; house drafts contain none.
+Kimi K3 passes 51/54 default and 50/54 house content checks. Default has three failures; house has three failures and one unresolved check. Content-ready counts are 4/8 default and 3/8 house; ready-without-edits counts are 0/8 default and 2/8 house. Three drafts exceed their word limits: both pilot emails and the house readout. Default drafts contain 22 em dashes; house drafts contain none.
 
-Confirmed failures are favorable work-progress reassurance, a readout with correct endpoints but no explicit reduction, acceptance confirmation made the trigger for the second discovery payment, the knowledge-search pilot called authorized, an unsupported claim that only one option can start and finish within the quarter, and incident ownership moved from Lee before acceptance. Priya signing the contract is unresolved because the source names no signatory.
+Confirmed failures are favorable work-progress reassurance, a readout with correct endpoints but no explicit reduction, the knowledge-search pilot called authorized, an unsupported claim that only one option can start and finish within the quarter, and incident ownership moved from Lee before acceptance. Priya signing the contract is unresolved because the source names no signatory.
 
 Six Kimi K3 outputs were generated in pilot-v19 before that collection was interrupted; pilot-v20 imports them as exact-input copies with their original generation identities and charges, so they are neither re-spent nor counted twice. The interrupted seventh request retains its canceled reservation in the ledger and is not represented here.
 

@@ -116,14 +116,7 @@
   "model": "GLM 5.3",
   "task": "discovery-proposal",
   "condition": "default",
-  "content": [
-   [
-    "grounding",
-    "fail",
-    "On delivery of the three artifacts and your confirmation, the final 50% ($8,000) becomes payable.",
-    "Makes sponsor confirmation a condition of the second payment; the source specifies payment on delivery."
-   ]
-  ],
+  "content": [],
   "style": [
    [
     "10",
@@ -141,7 +134,7 @@
     "grounding",
     "fail",
     "Once we receive the signature, the named contact, and the kickoff payment, we will agree a start date",
-    "Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, after the start date. The final payment is also conditioned on confirmation rather than delivery."
+    "Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, which follows the agreed start."
    ]
   ],
   "style": [

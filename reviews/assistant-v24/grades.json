@@ -5943,18 +5943,14 @@
         {
           "id": "grounding",
           "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
-          "verdict": "fail",
-          "reason": "Adds acceptance as a condition of the second payment; the source specifies payment on delivery.",
-          "evidence": {
-            "quote": "The remaining $8,000 is invoiced on delivery and acceptance of the artifacts.",
-            "offset": 1565,
-            "line": 41
-          }
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
         }
       ],
       "counts": {
-        "pass": 6,
-        "fail": 1,
+        "pass": 7,
+        "fail": 0,
         "review": 0
       },
       "words": 263,
@@ -5991,7 +5987,7 @@
           }
         }
       ],
-      "contentReady": false,
+      "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
       "originalGenerationCostUsd": 0.0002131
@@ -10158,18 +10154,14 @@
         {
           "id": "grounding",
           "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
-          "verdict": "fail",
-          "reason": "Makes acceptance the trigger for the second payment; the source specifies payment on delivery.",
-          "evidence": {
-            "quote": "Final acceptance triggers the remaining $8,000 payment.",
-            "offset": 1248,
-            "line": 31
-          }
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
         }
       ],
       "counts": {
-        "pass": 6,
-        "fail": 1,
+        "pass": 7,
+        "fail": 0,
         "review": 0
       },
       "words": 185,
@@ -10178,9 +10170,9 @@
       "negativeParallelismFindings": [],
       "placeholderFindings": [],
       "editorialFindings": [],
-      "contentReady": false,
+      "contentReady": true,
       "styleGatePass": true,
-      "readyWithoutEdits": false,
+      "readyWithoutEdits": true,
       "originalGenerationCostUsd": 0.00480612
     },
     {
@@ -11405,18 +11397,14 @@
         {
           "id": "grounding",
           "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
-          "verdict": "fail",
-          "reason": "Makes acceptance confirmation the trigger for the second payment; the source specifies payment on delivery.",
-          "evidence": {
-            "quote": "triggering the final payment (50%, $8,000)",
-            "offset": 1733,
-            "line": 52
-          }
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
         }
       ],
       "counts": {
-        "pass": 6,
-        "fail": 1,
+        "pass": 7,
+        "fail": 0,
         "review": 0
       },
       "words": 277,
@@ -11461,7 +11449,7 @@
           }
         }
       ],
-      "contentReady": false,
+      "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
       "originalGenerationCostUsd": 0.007131
@@ -14321,18 +14309,14 @@
         {
           "id": "grounding",
           "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
-          "verdict": "fail",
-          "reason": "Makes sponsor confirmation a condition of the second payment; the source specifies payment on delivery.",
-          "evidence": {
-            "quote": "On delivery of the three artifacts and your confirmation, the final 50% ($8,000) becomes payable.",
-            "offset": 1513,
-            "line": 50
-          }
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
         }
       ],
       "counts": {
-        "pass": 6,
-        "fail": 1,
+        "pass": 7,
+        "fail": 0,
         "review": 0
       },
       "words": 270,
@@ -14351,7 +14335,7 @@
           }
         }
       ],
-      "contentReady": false,
+      "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
       "originalGenerationCostUsd": 0.0019718
@@ -14411,7 +14395,7 @@
           "id": "grounding",
           "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
           "verdict": "fail",
-          "reason": "Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, after the start date. The final payment is also conditioned on confirmation rather than delivery.",
+          "reason": "Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, which follows the agreed start.",
           "evidence": {
             "quote": "Once we receive the signature, the named contact, and the kickoff payment, we will agree a start date",
             "offset": 1166,

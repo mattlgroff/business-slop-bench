@@ -6371,18 +6371,14 @@
         {
           "id": "grounding",
           "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
-          "verdict": "fail",
-          "reason": "Adds acceptance as a condition of the second payment; the source specifies payment on delivery.",
-          "evidence": {
-            "quote": "The remaining $8,000 is invoiced on delivery and acceptance of the artifacts.",
-            "offset": 1565,
-            "line": 41
-          }
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
         }
       ],
       "counts": {
-        "pass": 6,
-        "fail": 1,
+        "pass": 7,
+        "fail": 0,
         "review": 0
       },
       "words": 263,
@@ -6419,7 +6415,7 @@
           }
         }
       ],
-      "contentReady": false,
+      "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
       "originalGenerationCostUsd": 0.0002131

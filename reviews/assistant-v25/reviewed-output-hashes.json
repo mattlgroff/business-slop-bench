@@ -1,0 +1,17 @@
+{
+  "spacexai--grok-4.7--pilot-client-email--default": "ed85a37855a9e7587ef7914c751254ef517304199e7e596426715ab477140b2f",
+  "spacexai--grok-4.7--pilot-client-email--house": "2658a4b17d8b5c7996198a543113f7b065d3baa26979bef09a207e05c883d24a",
+  "spacexai--grok-4.7--launch-delay-email--default": "6ceb97e2685a2b7611023e3aab4bf3e5053f8bfa4fee3b15f1bc459e549c731f",
+  "spacexai--grok-4.7--launch-delay-email--house": "7efeb44d163ef4c62d17f218ccc9818460ff65b7c0c4bd86b5459dcc67af5ed4",
+  "spacexai--grok-4.7--vendor-decision-memo--default": "ea66aa1a7715c8c8ca30d61ee674fca030a98667a14f740810702ad2738d84cf",
+  "spacexai--grok-4.7--vendor-decision-memo--house": "6a3e98d133b79c2061b016aaa7b643b45ac29c9db7bccf99b4c93a4440854861",
+  "spacexai--grok-4.7--pilot-results-memo--default": "9d9fb406c7b67e034804262e87589794f3b1b701012eade92c0ae43784459bd4",
+  "spacexai--grok-4.7--pilot-results-memo--house": "cad01e7a37774ad0ef018134b2610f29a30fa1e8a06382d27fc1778de01494c8",
+  "spacexai--grok-4.7--discovery-proposal--default": "7c2e9c1da463ce9f1977b2888aa34e55d6abc751e225b0312a2bd5fa9a8542ff",
+  "spacexai--grok-4.7--discovery-proposal--house": "1dd026a6ed878cf3fb8c6db54db55060b918d93a2ead71776fdfab6df647acca",
+  "spacexai--grok-4.7--change-order--default": "59d767c4e273a5b384a88bf8b1dec8f41e4ba4b30bd986a38c8bc4e46d924a97",
+  "spacexai--grok-4.7--change-order--house": "e263c17f610baf7a994f5ffe040caca147766b8b9069d5deecf2e2ddda8f48a9",
+  "spacexai--grok-4.7--ai-strategy-slides--default": "f546f76fa93da3a4c448d83d265745e47dac83cb7cde8f07bfbe742bb8f9b705",
+  "spacexai--grok-4.7--ai-strategy-slides--house": "b6ee5570c60f3f6f69c3c554b36eb8b2311fa98b60ba4312dd2441f7e0bf198c",
+  "spacexai--grok-4.7--handoff-slides--default": "f0e421a1937e482cc337ae8abdc3485091988b96bbc15e6f73ff26f432bbb616"
+}
