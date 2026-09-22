@@ -1,0 +1,18 @@
+{
+  "google--gemini-3.8-flash--pilot-client-email--default": "c35a7e7150235b6799769fccc785db51cb91b850ae76ef7571b14a357d61fb7d",
+  "google--gemini-3.8-flash--pilot-client-email--house": "6d2a3c0f44c54c5056f6e2ce05e0038075a6a9f798496c5d681ec5fc8d994e49",
+  "google--gemini-3.8-flash--launch-delay-email--default": "f26bd192ba594f7d0765ee9af27a6b0d0d3dfad9354725158b7d512cd9ae44d7",
+  "google--gemini-3.8-flash--launch-delay-email--house": "f9fa6356c30444daf10ca8b364a0988efeab3458ee66e82013e73f08982a7c62",
+  "google--gemini-3.8-flash--vendor-decision-memo--default": "f879f56419fd26f17b85387ddd3ae72825411fc091a477dd8966c25abd9acaa9",
+  "google--gemini-3.8-flash--vendor-decision-memo--house": "817d877927e5ee75c2e52f35aba97279de830f38949581d34f67b58b516554a9",
+  "google--gemini-3.8-flash--pilot-results-memo--default": "10a2dbaa9c539d6840d941440662b38277fcb7ab7d94700799bba00574b5ee90",
+  "google--gemini-3.8-flash--pilot-results-memo--house": "478a19db15a65734eb61b9dc9050af6bce1d19e1cd8b0ae414f753a2cec6ff95",
+  "google--gemini-3.8-flash--discovery-proposal--default": "ed9d534085a6257e50af5a1130f42b651ff9298ac4d51ef8139f57a34abf6735",
+  "google--gemini-3.8-flash--discovery-proposal--house": "bf90656fb61d9948ed21ea74c248e6635d675a302dfc9bd68a835cb90bb7c0b9",
+  "google--gemini-3.8-flash--change-order--default": "e8e0a12a0b950dfcb75459d7e9de1000cee97b4bde74fc076ad8f6d2dc311166",
+  "google--gemini-3.8-flash--change-order--house": "facc802e0658e4481738c27a4f90c2a0db7e98c97ad0a4150c2d3f700d177ac0",
+  "google--gemini-3.8-flash--ai-strategy-slides--default": "14be5bb7f2047769c69be4ed28be811b35e0fb1c7b332a608e43b671e06e46df",
+  "google--gemini-3.8-flash--ai-strategy-slides--house": "050cfc3cb38d5d395d22a1b26907fdd1263c1b6f02dda97c57c0b2edf2c883c8",
+  "google--gemini-3.8-flash--handoff-slides--default": "1b65be9542298717576908e3c754b2f1fd96ecb87502e9cac94ba6aa3ddf7bd8",
+  "google--gemini-3.8-flash--handoff-slides--house": "451556ed303697905712cb790d49818041d7ff3e50f7100dbc6b59dc724e8b71"
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I am writing to propose",
+        "Unnecessary announcement delays the proposal."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I am writing to propose",
+        "Unnecessary announcement remains despite the house instruction."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "Our team remains completely focused on delivering a secure, high-quality release",
+        "Current team focus is not supplied. This may be ordinary reassurance, so it remains unresolved consistently with earlier model reviews."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "We have an update on our launch schedule.",
+        "Announces the update instead of starting with the changed timeline."
+      ]
+    ]
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This memo evaluates Vendor Alpha and Vendor Beta against our year-one constraints to obtain CFO approval before signing.",
+        "The purpose preamble delays the recommendation and repeats the subject; the signing gate is stated again in the closing request."
+      ]
+    ]
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "October 24, 2023",
+        "Invents a memo date absent from the source pack."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time decreased from 15 minutes (across 200 baseline tickets) to 12 minutes (across 100 pilot tickets).",
+        "Gives endpoints but omits the explicit 3-minute or 20% reduction required by the frozen criterion."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "We recommend against scaling the pilot at this time.",
+        "Repeats the immediately preceding Do Not Scale Now recommendation heading without adding information."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time was 12 minutes across 100 pilot tickets, compared to 15 minutes across 200 baseline tickets.",
+        "Gives endpoints but omits the explicit 3-minute or 20% reduction required by the frozen criterion."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "27",
+        "Please note that",
+        "Unnecessary reader coaching; state the start-date prerequisites directly."
+      ]
+    ]
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Fully Authorized",
+        "Approval of the input documents does not establish full authorization of the pilot, which still requires COO selection."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "* **Criteria Checklist:**\n  * Approved Runbook: Complete.\n  * Successful Rollback Rehearsal: Incomplete.",
+        "Repeats both statuses from the previous slide; the acceptance requirements and missing owner provide the new information on this slide."
+      ]
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Jo does not own pre-acceptance operations tasks.",
+        "Broadens the incident-ownership boundary into a blanket exclusion from all pre-acceptance operations tasks. The source does not establish that."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Organizing the rehearsal currently lacks an assigned owner.",
+        "Repeats the same slide's first bullet about no accepted rehearsal organizer."
+      ]
+    ]
+  }
+]

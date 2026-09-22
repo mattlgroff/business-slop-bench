@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Gemini Flash complete comparison, v15
+
+Collected and directly reviewed all 16 drafts for `google/gemini-3.8-flash` under the unchanged task set and settings. Requested model, returned model and canonical Gateway identity match. Every call finished normally, with no warnings or retries, and every draft fits the requested word limit. The cumulative assistant review now covers 145 drafts across 12 attempted models.
+
+Both default and house pass 51/54 content checks. Default has two failures and one unresolved team-focus claim; house has three failures. Five drafts in each condition are content-ready. Ready-without-edits counts are 1/8 default and 3/8 house. Default contains two em dashes, house none. The change-order house contrast between an estimate and an approved calendar date is necessary scope clarification and is not a style defect. Intentional signature and date fields in approval forms are allowed.
+
+Confirmed problems include an invented October 24, 2023 memo date, calling the knowledge-search pilot fully authorized when only its documents are approved, and broadening Jo's incident-ownership boundary to all pre-acceptance operations tasks. Both results memos give the 15-to-12-minute endpoints but omit the explicit 3-minute or 20% calculation required by the frozen criterion. That rule matches the earlier Sol, Luna, DeepSeek and Qwen decisions. Unnecessary openings and repeated statements account for additional editorial findings. [Scores and exact quoted evidence](reviews/assistant-v10/REPORT.md).
+
+Successful generation charges total $0.0467895. Conservative cumulative accounting is $9.437617 of $20, including retained earlier failure reservations. Output hash, quote, identity and complete review-coverage assertions pass; draft and coverage audits were refreshed. The collection process exited successfully and the global lock is absent. No task-owned processes remain. These unblinded assistant judgments are provisional; remaining model coverage and repeatability validation are unfinished.
+
 ## GLM Flash complete comparison and scoring documentation, v15
 
 Collected all 16 outputs for `zai/glm-5.3-flash` and directly reviewed them against the existing eight briefs, content checks and anti-slop lens. All calls succeeded with normal stop reasons, no warnings and matching requested, returned and canonical model IDs. All drafts are within the word limits. No retries or Jev calls were needed.
