@@ -6,9 +6,10 @@ import { fileURLToPath } from 'node:url';
 import { Budget, MAX_OUTPUT_TOKENS, atomic, hash, prompt, rates, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
 import { securityInstructions, securityCriteria, requirementVerdict } from './requirements.js';
 import { groundingQuestions, groundingDecision } from './grounding.js';
+import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v6';
+const runName = 'pilot-v7';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -23,7 +24,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.6.0', sdk: '7.0.109', judgeBatchSize: 16, groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.7.0', sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -149,9 +150,24 @@ async function grade(id: string, task: Task, text: string, subset?: Set<string>)
     const status = result.answers.status.choice, evidenceId = result.answers.evidence.choice;
     answers[c.id] = { status, evidenceId, ...groundingDecision(text, status, evidenceId), probabilities: result.answers.status.probabilities };
   }
+  const editorialChecks = checks.filter(c => c.evaluation === 'style');
+  for (let offset = 0; offset < editorialChecks.length; offset += 8) {
+    const group = editorialChecks.slice(offset, offset + 8);
+    const state = { audienceAndPurpose: task.brief, deliverable: text };
+    const questions = Object.fromEntries(group.flatMap(c => Object.entries(styleQuestions(c, text)).map(([key, question]) => [`${c.id}_${key}`, question])));
+    const result = await paid(`judge--${id}--editorial-${offset / 8}`, 'typesafe-ai/jev', { state, questions }, 0, () => evaluate({
+      model: 'typesafe-ai/jev', state, questions, maxRetries: 0, abortSignal: AbortSignal.timeout(90000), providerOptions: { gateway: { zeroDataRetention: true } },
+    }));
+    if (result.status !== 'ok') throw new Error('Stored editorial-judge error requires inspection');
+    for (const c of group) {
+      const status = result.answers[`${c.id}_status`].choice;
+      const evidenceId = result.answers[`${c.id}_evidence`].choice;
+      answers[c.id] = { status, evidenceId, ...styleDecision(text, status, evidenceId), probabilities: result.answers[`${c.id}_status`].probabilities };
+    }
+  }
   const calibrated = existsSync(file('calibration')) ? read(`runs/${runName}/calibration.json`).thresholds : undefined;
   const grades = checks.map(c => ({ ...c, probability: answers[c.id].probability, choice: answers[c.id].choice, status: answers[c.id].status, evidence: answers[c.id].evidence, probabilities: answers[c.id].probabilities,
-    verdict: c.evaluation === 'grounding' ? answers[c.id].verdict as 'pass' | 'fail' | 'review' : c.evaluation === 'security-prerequisite' ? requirementVerdict(answers[c.id].choice) : verdict(answers[c.id].probability, c.polarity, calibrated) }));
+    verdict: c.evaluation === 'grounding' || c.evaluation === 'style' ? answers[c.id].verdict as 'pass' | 'fail' | 'review' : c.evaluation === 'security-prerequisite' ? requirementVerdict(answers[c.id].choice) : verdict(answers[c.id].probability, c.polarity, calibrated) }));
   const deterministic = scan(text, task.maxWords);
   const summary = {
     id, taskId: task.id, protocolHash, grades, deterministic,
@@ -208,7 +224,7 @@ function report() {
     };
   })).filter(r => r.n);
   atomic(file('summary'), { protocolHash, budgetAccountedUsd: budget.total, entries });
-  writeFileSync(resolve(runDir, 'REPORT.md'), `# BusinessSlopBench pilot\n\nProvisional Jev grading. Author-proposed control labels have not been validated by a human. One generation per task and condition; no reliability ranking or significance claim. Counts are per completed task, not percentages over missing runs.\n\nBudget accounted across all versions (conservative): $${budget.total.toFixed(4)} / $20. Unknown or failed calls retain full reservations.\n\n| Model | Condition | Completed | Content ready | Content blocked | Content unresolved | Style gate pass | Editorial defects | Review items | Em dashes | Billed generation USD |\n|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n${entries.map(r => `| ${r.model} | ${r.condition} | ${r.n}/8 | ${r.contentReady} | ${r.contentBlocked} | ${r.contentUnresolved} | ${r.styleGatePass} | ${r.editorialDefects} | ${r.unresolved} | ${r.emDashes} | ${r.billedUsd?.toFixed(5) ?? 'unknown'} |`).join('\n')}\n\nRead the individual score JSON and generated Markdown files to assess specific judgments. Judge-only semantic flags have no automatically verified text anchors. Scanner candidates have exact line anchors but are not automatically defects.\n`);
+  writeFileSync(resolve(runDir, 'REPORT.md'), `# BusinessSlopBench pilot\n\nProvisional Jev grading. Author-proposed control labels have not been validated by a human. One generation per task and condition; no reliability ranking or significance claim. Counts are per completed task, not percentages over missing runs.\n\nBudget accounted across all versions (conservative): $${budget.total.toFixed(4)} / $20. Unknown or failed calls retain full reservations.\n\n| Model | Condition | Completed | Content ready | Content blocked | Content unresolved | Style gate pass | Editorial defects | Review items | Em dashes | Billed generation USD |\n|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n${entries.map(r => `| ${r.model} | ${r.condition} | ${r.n}/8 | ${r.contentReady} | ${r.contentBlocked} | ${r.contentUnresolved} | ${r.styleGatePass} | ${r.editorialDefects} | ${r.unresolved} | ${r.emDashes} | ${r.billedUsd?.toFixed(5) ?? 'unknown'} |`).join('\n')}\n\nRead the individual score JSON and generated Markdown files to assess specific judgments. Grounding and editorial flags include verified original paragraph anchors when a passage was selected. Other semantic criteria lack automatic anchors. A verified quotation establishes location, not the correctness of the judgment. Scanner candidates are not automatically defects.\n`);
   console.log(JSON.stringify({ entries, budgetAccountedUsd: budget.total }));
 }
 

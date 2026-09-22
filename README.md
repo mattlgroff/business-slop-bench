@@ -2,7 +2,7 @@
 
 A small TypeScript benchmark for single-call English business writing. It compares 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation and Jev evaluation.
 
-Current work: [v6 grader improvements](IMPROVEMENTS.md). The original smoke comparison is preserved in v4. The CLI now targets v6, where security uses a draft-only choice judge and grounding selects an original paragraph as evidence. `npm run bench -- regrade-v4` reuses saved writer outputs; the full v6 run remains gated pending broader calibration. The historical v4 paths below refer to the original evidence.
+Current work: [v7 grader improvements](IMPROVEMENTS.md). The original smoke comparison is preserved in v4. The CLI targets v7: security uses a draft-only choice judge; grounding and all 29 editorial categories select original paragraphs as evidence. `npm run bench -- regrade-v4` reuses saved writer outputs. The full run remains gated pending broader calibration. Historical v4 paths below refer to the original evidence.
 
 ## Run
 
@@ -36,6 +36,7 @@ Default and house conditions share the same source pack and task wording. Only t
 - Code checks empty responses, whitespace word count, obvious audit/placeholder residue, and literal U+2014 occurrences, with exact offsets and line numbers.
 - Phrase scans preserve candidates. Jev evaluates rhetorical contrasts and all 29 categories from the source anti-slop lens with their exceptions. A matched word is not automatically a defect.
 - Jev answers are probabilities of the question being true. Defect questions invert this into probability of passing. The operating thresholds are fitted only to development controls: the midpoint separating positive and negative pass scores, with an abstention band of 0.05 on either side. Overlapping development labels abort calibration. The actual thresholds are saved in calibration.json; the interval remains unresolved. The band is a policy choice, not a statistical confidence interval. Empty required deliverables fail deterministically. In control summaries, empty-response critical labels use that deterministic failure while retaining the raw Jev answers.
+- Pass, fail and unresolved are separate outcomes, not an overall point score. Unresolved means the judge is uncertain or its status conflicts with its evidence. It is neither an earned point nor a confirmed defect. API failures are ungraded, not unresolved. Passing anti-slop checks does not establish usefulness or excellent writing.
 - `contentReady` requires all critical checks to pass and the deterministic completeness checks to pass. Unresolved criteria prevent a Ready verdict; they do not prove an error. Style gate and editorial defects are reported separately.
 - Editorial counts are failed categories, not unique defect counts. Categories can overlap. Do not turn them into a weighted universal quality score.
 - Jev does not write explanations or verified evidence quotations. Inspect the archived output and question to adjudicate a disputed semantic flag. Scanner matches alone have deterministic text anchors.

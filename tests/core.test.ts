@@ -12,6 +12,11 @@ test('style detector retains exact locations and does not equate candidates with
   assert.equal(scan('  ', 20).nonempty, false);
   assert.equal(scan('one two three', 2).withinWordLimit, false);
   assert.equal(scan('STYLE GATE:\nAudit\n[Your Name]', 20).residue.length, 2);
+  const fullSourceScan = scan("You're right to push back. Here's where it gets interesting.\n2025\u20132026", 30);
+  assert.ok(fullSourceScan.candidates.some(c => /right to push back/.test(c.text)));
+  assert.ok(fullSourceScan.candidates.some(c => /gets interesting/.test(c.text)));
+  assert.equal(fullSourceScan.informationalPunctuation['2013'], 1);
+  assert.equal(fullSourceScan.emDashes.length, 0);
 });
 test('probability polarity and uncertain grades remain explicit', () => {
   assert.equal(verdict(0.95), 'pass'); assert.equal(verdict(0.95, 'defect'), 'fail');

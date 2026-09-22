@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 export const LIMIT_USD = 20;
 export const MAX_OUTPUT_TOKENS = 4096;
 export type Condition = 'default' | 'house';
-export type Check = { id: string; dimension: string; statement: string; severity: 'critical' | 'editorial' | 'style_gate'; polarity?: 'pass' | 'defect'; evaluation?: 'security-prerequisite' | 'grounding' };
+export type Check = { id: string; dimension: string; statement: string; severity: 'critical' | 'editorial' | 'style_gate'; polarity?: 'pass' | 'defect'; evaluation?: 'security-prerequisite' | 'grounding' | 'style' };
 export type Task = { id: string; family: string; brief: string; facts: Record<string, string | number>; maxWords: number; checks: Check[] };
 export type Model = { id: string; reasoning: 'low' | 'none' };
 export const hash = (v: unknown) => createHash('sha256').update(typeof v === 'string' ? v : JSON.stringify(v)).digest('hex');
@@ -24,15 +24,19 @@ The following categories and examples describe writing to avoid. Apply their con
 export function styleChecks(source: string): Check[] {
   const parts = [...source.matchAll(/^### (\d+)\. (.+)\n([\s\S]*?)(?=^### \d+\.|^## Severity)/gm)];
   return parts.map(m => ({
-    id: `style_${m[1]}`, dimension: 'anti_slop', severity: 'editorial', polarity: 'defect',
+    id: `style_${m[1]}`, dimension: 'anti_slop', severity: 'editorial', polarity: 'defect', evaluation: 'style',
     statement: `Does the deliverable contain a supported ${m[2]} defect? Apply these rules: ${m[3].trim()} A keyword match alone is not a defect. Judge audience fit, necessity and information loss. Preserve the stated exceptions.`,
   }));
 }
 export function prompt(task: Task, condition: Condition, source: string) {
   return `${task.brief}\n\nSOURCE PACK (all facts are synthetic):\n${JSON.stringify(task.facts, null, 2)}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum ${task.maxWords} whitespace-separated words, including titles and tables.${condition === 'house' ? '\n\nHOUSE STYLE: Apply the following Zero Defect anti-slop rules to your writing. The references to scans describe the evaluation rules; write the deliverable, not a review report.\n' + styleRules(source) : ''}`;
 }
+const scanSource = readFileSync(new URL('../sources/anti-slop-reviewer.md', import.meta.url), 'utf8');
+const candidateSection = scanSource.slice(scanSource.indexOf('## Claudism candidate scan'), scanSource.indexOf('These searches find candidates'));
+const candidatePatterns = [...candidateSection.matchAll(/^- `([^`]+)`/gm)].map(m => new RegExp(m[1], 'gi'));
+if (!candidatePatterns.length) throw new Error('Source candidate scan is missing');
 const scanPatterns: [string, RegExp][] = [
-  ['claudisms', /\b(?:load[- ]bearing|heavy lifting|doing a lot of the work|the shape of|blast radius|chokepoint|backstop|friction|trade-offs?|worth (?:stating|noting|flagging|remembering|considering)|one (?:caveat|wrinkle|practical note)|honest take|honestly|frankly|here['’]s why (?:that|this) matters|this matters because|the (?:deeper|real|most important) (?:point|thing|issue)|that['’]s not nothing|sit with|keep coming back to|where (?:I|we) landed)\b/gi],
+  ...candidatePatterns.map(regex => ['claudisms', regex] as [string, RegExp]),
   ['negative_parallelism', /\b(?:not (?:just |only |merely |simply )?[^.;!?\n]{1,60} but(?: also)? |less about [^\n]+ and more about |more than [^\n]+, it is |rather than |(?:is|was|are) not [^.;!?\n]{1,60}\. (?:it|they|this) (?:is|are) )/gi],
 ];
 export function scan(text: string, maxWords: number) {
@@ -41,6 +45,7 @@ export function scan(text: string, maxWords: number) {
   return {
     words, withinWordLimit: words <= maxWords, nonempty: words > 0,
     emDashes: [...text.matchAll(/\u2014/g)].map(m => locate(m.index!, m[0])),
+    informationalPunctuation: Object.fromEntries(['2013', '2018', '2019', '201C', '201D'].map(code => [code, [...text].filter(c => c.codePointAt(0) === parseInt(code, 16)).length])),
     residue: [...text.matchAll(/^(?:STYLE GATE|EVALUATOR)\s*:|\[(?:Your Name|Name|insert[^\]\n]*)\]/gmi)].map(m => locate(m.index!, m[0])),
     candidates: scanPatterns.flatMap(([family, regex]) => [...text.matchAll(regex)].map(m => ({ family, ...locate(m.index!, m[0]) }))),
   };

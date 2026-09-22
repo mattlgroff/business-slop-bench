@@ -1,5 +1,26 @@
 # Grader improvement log
 
+## Editorial evidence and unresolved results, v7
+
+All 29 editorial categories now return clean, defect or unclear plus an original paragraph selection. A clean verdict with no defect passage passes. A defect with a verified passage fails. Disagreement remains unresolved. This prevents uncertain allegations from becoming confirmed defects, but can also leave real problems unclassified. These outcomes are not an overall quality score.
+
+The scanner now reads all five Claudism patterns from the frozen source lens instead of a partial hardcoded list. Other punctuation is recorded for inspection, not automatically penalized.
+
+The style comparison used 58 category controls and 12 transfer examples, each repeated twice. With neutral audience descriptions, the old method matched 138/140 labelled judgments with two unresolved; the revised method matched 140/140. These are 70 author-labelled examples, not human gold or 140 independent samples. Four saved drafts were also inspected without expected labels. Their match rate is undefined; the study report's `0/32` diagnostic rows must not be interpreted as zero accuracy. The earlier v1 study is excluded because some context descriptions leaked clean/defect labels. Its inputs and runner were preserved before correction.
+
+| Saved draft | Confirmed readiness problem | Editorial defects | Unresolved checks |
+|---|---|---:|---:|
+| Qwen default | Unsupported prior-discussion claim | 0 | 4 |
+| Qwen house | Missing approval-before-data-access prerequisite | 0 | 0 |
+| Opus default | Unsupported blanket cost assurance; 191 words against 180 limit | 0 | 0 |
+| Opus house | 185 words against 180 limit | 0 | 2 |
+
+Opus default also has three em dashes and fails the style gate. Both house-style drafts have none. Opus house's unresolved checks concern staffing-pressure grounding and a rhetorical question classification. Qwen default's four editorial reviews are clean status judgments paired with selected defect passages. Zero confirmed editorial defects does not prove excellent writing, and this one-brief sample does not establish a model winner.
+
+[Study report](runs/style-judge-study-v2/REPORT.md), [fixtures](data/style-judge-study.json), [regraded outputs](runs/pilot-v7/REPORT.md). No writer outputs were regenerated. Interrupted Jev batches returned 503 and were resumed individually with prior failure reservations preserved. All four regrades finished. Conservative cumulative accounting is $2.0437 of $20, including reserved failed attempts. TypeScript checking and all ten tests passed.
+
+Next evidence needed: broader task coverage, quality/usefulness checks, and judge consistency on natural drafts. The full model comparison remains unfinished.
+
 ## Unsupported assurances and evidence, v6
 
 The grounding judge now distinguishes supported statements, unsupported statements and unresolved interpretations. A second typed question selects an original paragraph as evidence. The code verifies that the paragraph exists at its recorded offset and line. A failure requires both an unsupported judgment and a real passage; disagreements remain unresolved. A real quotation establishes location, not the truth of the allegation.
