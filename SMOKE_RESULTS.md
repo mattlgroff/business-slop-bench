@@ -2,14 +2,14 @@
 
 Built September 22, 2026. The current frozen comparison is pilot-v4. Earlier versions are development diagnostics, not additional benchmark samples.
 
-The TypeScript AI SDK runner, 21-model roster, eight synthetic briefs, two writing conditions, frozen Zero Defect rubric, Jev judging, saved evidence and cumulative $20 guard are implemented. Qwen Flash completed both conditions. Opus 5 completed the default condition; the house condition returned Gateway 429 twice. The broad model run has not started, following the agreed smoke-first sequence.
+The TypeScript AI SDK runner, 21-model roster, eight synthetic briefs, two writing conditions, frozen Zero Defect rubric, Jev judging, saved evidence and cumulative $20 guard are implemented. Qwen Flash completed both conditions. Opus 5 completed both conditions. The house condition succeeded after the user-requested retries and a cooldown; prior 429 failures remain archived. The broad model run has not started, following the agreed smoke-first sequence.
 
 | Model | Condition | Words (limit 180) | Em dashes | Reported generation cost | Evidence |
 |---|---|---:|---:|---:|---|
 | alibaba/qwen3.8-flash | default | 148 | 0 | $0.000620 | [Draft](runs/pilot-v4/alibaba--qwen3.8-flash--pilot-client-email--default.md), [scores](runs/pilot-v4/score--alibaba--qwen3.8-flash--pilot-client-email--default.json) |
 | alibaba/qwen3.8-flash | house | 107 | 0 | $0.001007 | [Draft](runs/pilot-v4/alibaba--qwen3.8-flash--pilot-client-email--house.md), [scores](runs/pilot-v4/score--alibaba--qwen3.8-flash--pilot-client-email--house.json) |
 | anthropic/claude-opus-5 | default | 191 | 3 | $0.011280 | [Draft](runs/pilot-v4/anthropic--claude-opus-5--pilot-client-email--default.md), [scores](runs/pilot-v4/score--anthropic--claude-opus-5--pilot-client-email--default.json) |
-| anthropic/claude-opus-5 | house | Unavailable | Unavailable | Unreconciled | Gateway 429 twice: No access to this model at this time |
+| anthropic/claude-opus-5 | house | 185 | 0 | $0.032925 | [Draft](runs/pilot-v4/anthropic--claude-opus-5--pilot-client-email--house.md), [scores](runs/pilot-v4/score--anthropic--claude-opus-5--pilot-client-email--house.json) |
 
 ## What this establishes
 
@@ -27,9 +27,9 @@ Thresholds were fitted using development labels only: pass probability at least 
 
 The first raw-lens house prompt caused Qwen to emit a review audit. It was replaced with writer-facing rules preserving the source categories and exceptions. Those initial outputs remain in pilot-v1. No outputs were silently replaced.
 
-Jev intermittently returned HTTP 503, including on small requests, so request size was not established as the cause. Fixed batches of 16 make grading resumable. Manual retries preserved prior reservations and reused completed outputs and batches. Those failures are saved separately. The bounded Opus availability retry also failed, so no further calls were made to Opus, Astra or Fable.
+Jev intermittently returned HTTP 503, including on small requests, so request size was not established as the cause. Fixed batches of 16 make grading resumable. Manual retries preserved prior reservations and reused completed outputs and batches. Those failures are saved separately. The initial bounded Opus retry failed. After the user requested another rerun, one immediate attempt failed and the next succeeded after a 30-second cooldown. The same credentials, model and prompt worked. Archived failures preserve only the error name, HTTP status and message, so they cannot establish whether capacity or an account/model rate limit caused the 429. No Astra or Fable calls have been made.
 
-Gateway-reported successful-call charges across development and smoke runs total $0.06501931. Failed-call charges remain unreconciled. Conservative budget accounting is $1.312162922, including retained reservations. The cumulative ceiling remains $20. Optional reporting tags were removed after the first smoke revealed tag-write surcharges. Jev is currently promotional/free on the observed calls; the guard still budgets its listed paid rate.
+Gateway-reported successful-call charges across development and smoke runs total $0.09794431. Failed-call charges remain unreconciled. Conservative budget accounting is $1.94128215, including retained reservations. The cumulative ceiling remains $20. Optional reporting tags were removed after the first smoke revealed tag-write surcharges. Jev is currently promotional/free on the observed calls; the guard still budgets its listed paid rate.
 
 ## Verification and remaining work
 
@@ -37,4 +37,4 @@ TypeScript checking and six focused tests passed. They cover spending persistenc
 
 The runner's numerical criteria currently ask Jev to compare claims with fixed expected facts. They do not constitute a general deterministic arithmetic parser. The corpus includes mathematically checkable totals, but the automated content verdict remains provisional.
 
-The full 336-output screen is unrun. Resolve the Opus Gateway availability issue before continuing the agreed smoke-first sequence. A benchmark claim about model quality also needs human validation of the briefs, style interpretations and grader controls. All raw files stay local; no repository has been published.
+The full 336-output screen is unrun. The Opus availability blocker cleared and the agreed Qwen/Opus smoke sequence is complete. A benchmark claim about model quality also needs human validation of the briefs, style interpretations and grader controls. All raw files stay local; no repository has been published.
