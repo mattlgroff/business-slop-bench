@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-opus-5--pilot-client-email--default": "3356e1f365feab159e6595d5ea2eb2c7601b7216b96459b516e85f11b1ea310e",
+  "anthropic--claude-opus-5--pilot-client-email--house": "6944e61b6cf7f7e4394454bdf0964d58cf7034431a4b2cae0cbb925104588a0e",
+  "anthropic--claude-opus-5--launch-delay-email--default": "aa366d11f6389186406b1dcd3675d5ffc7e6c619efbe0a5311a41620745f9d01",
+  "anthropic--claude-opus-5--launch-delay-email--house": "d7a1d5873cfdc47048471bd173712d941c3d8bfc14009616c760d8bfff5d1e09",
+  "anthropic--claude-opus-5--vendor-decision-memo--default": "d46c48ae486c4ab0c30eaba0fa39d425a7b9bdb0c07fe0a0d1876416d7687514",
+  "anthropic--claude-opus-5--vendor-decision-memo--house": "b6157212f6231d580057a9f3e8086c5a3bf2cd8833553e6a6e427a46d0212340",
+  "anthropic--claude-opus-5--pilot-results-memo--default": "c7c63f599b65263134d1c401113dd5f80975b43c40c76b2897cd405bde2e5201",
+  "anthropic--claude-opus-5--pilot-results-memo--house": "f00ec444e6fee6af57918ad51f6e59196ba8b3bbbb94f50697d3dd8d3d40453d",
+  "anthropic--claude-opus-5--discovery-proposal--default": "8d053665f031a841ddac642b9d53b9294daf115bf5b0755dcb3f8abda13a00aa",
+  "anthropic--claude-opus-5--discovery-proposal--house": "97fdcaad4ebfc058283bda22af900a50afd6e0a24658b22d330230b6401ec2e5",
+  "anthropic--claude-opus-5--change-order--default": "b793309fa4c3d326b9b5270365563670ce7bab5f53bda908d1816cb70f9ada66",
+  "anthropic--claude-opus-5--change-order--house": "d4c5f352fe2785f49c2bd5b1821e215ec07b6c2a6b04bfc0bf047df4f263f1ff",
+  "anthropic--claude-opus-5--ai-strategy-slides--default": "f7d74e8d8f228ec1b06d43f55759596027b06d1c22c966c6a023f895c5a0fcf5",
+  "anthropic--claude-opus-5--ai-strategy-slides--house": "c9d34e7a3bea1b6ab06532bb5950c61ffeb0ad34472a8d6a2dfa9d964142c3cc",
+  "anthropic--claude-opus-5--handoff-slides--default": "217439038bf5321177ee966dbb7f6411921d909496a72cf56ff452b63ebea641",
+  "anthropic--claude-opus-5--handoff-slides--house": "9c4f6cef7ac66238c924e37ab3c07c73d7aaef7adeb3e89d5ed6effe330e7a4f"
+}

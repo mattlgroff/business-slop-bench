@@ -1,0 +1,240 @@
+[
+ {
+  "model": "Opus 5",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Thank you for the discussion on invoice handling.",
+    "Invents a prior discussion absent from the source pack."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "I want to be straightforward:",
+    "Candor script preceding a fact that can be stated directly."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 5",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "propose a start date within a week of their sign-off",
+    "Invents a one-week scheduling commitment the source does not authorize."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "the delay reflects that rigour rather than any slippage in delivery",
+    "Invents a favorable account of review rigour and delivery performance the source does not record; the draft also casts Jordan as the one withholding authorization of a new date."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "I want to give you a clear picture of where the launch stands.",
+    "Announces the update instead of stating the launch position."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 5",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "confirm by October 6",
+    "Invents an October 6 reply deadline and a provisional booking released on the 7th; the draft also vouches for the team's handling of the review, which the source does not record."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "Priya to finalize and execute the Alpha agreement.",
+    "Executing the agreement implies Priya signs; the source says CFO approval precedes signing but does not say who signs."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "The cheaper option is only cheaper if it can be deployed.",
+    "Aphoristic restatement of the preceding sentence, removable without information loss."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 5",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "subject to whatever renewal terms legal negotiates",
+    "Introduces a legal review and renewal negotiation role the source does not describe; the next steps otherwise read as proposals."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "five points below the 92% scaling threshold",
+    "The shortfall against the 92% threshold is 3 points, not 5."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "2",
+    "Acceptance is straightforward:",
+    "Announces the acceptance basis instead of stating it."
+   ],
+   [
+    "4",
+    "the single biggest driver of discovery quality",
+    "Asserts importance without evidence; the dependency itself is the fact."
+   ],
+   [
+    "20",
+    "a clear, evidence-based view of your current state and a practical path forward",
+    "Generic consulting language adds nothing beyond the three listed deliverables."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 5",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Option A Is Ready to Execute",
+    "Invents readiness for the knowledge-search pilot; the deck also states production use is permitted for Option A and that no new data authorization is required, none of which the source records."
+   ]
+  ],
+  "style": [],
+  "negative": [
+   [
+    "It is not rejected on merit \u2014 it is blocked on authorization.",
+    "Negated framing followed by the affirmative reason; the affirmative clause alone carries the point."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 5",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Why credit decisions cannot start next quarter",
+    "Pending legal approval and unauthorized production use do not establish that the pilot cannot start; the deck also asserts no new content approval is needed for Option A."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Opus 5",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "described in the source pack",
+    "Refers to the source pack inside the committee deck; authoring residue."
+   ],
+   [
+    "This pack does not state a rehearsal date",
+    "Refers to the source pack inside the committee deck; authoring residue."
+   ]
+  ]
+ },
+ {
+  "model": "Opus 5",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "| Runbook approved | Met | Lee |",
+    "Assigns runbook ownership to Lee; the source names no runbook owner."
+   ]
+  ],
+  "style": [],
+  "negative": [
+   [
+    "That absence, not a failed test, is why the service sits short of acceptance.",
+    "Negated contrast where the affirmative cause alone carries the point."
+   ]
+  ]
+ }
+]
