@@ -2,6 +2,12 @@
 
 A small TypeScript benchmark for single-call English business writing. It targets 22 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
+## Why a business slop bench
+
+When Matthew posted on X that he needed a business slop bench for SOWs, proposals and slide decks, Dex Horthy (@dexhorthy) replied: "lemme save you some time on that one - if a model wrote it, probably slop. wordcels vindicated etc", quoting Pedram (@pdrmnvd): "pretty wild that the hardest job for even the most frontier models is not shape rotation but writing, wordcels absolutely vindicated."
+
+Probably true, and some are more slop than others. Across the 207 single-call uncapped drafts from 13 models, the reviewer confirmed 62 unsupported factual claims under the grounding criterion, from zero for Astra and Muse to 12 for Qwen Flash. Most are invented commitments: reply and delivery deadlines, readiness or completion claims, prior discussions, payment or scope terms, and ownership the source never assigned. That criterion, with the per-task commitments checks, is the harness around promises: every material claim must trace to the source pack or be labeled a proposal. It catches what no compiler can, but only as one reviewer's provisional judgment on one generation per cell.
+
 Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
 
 Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
