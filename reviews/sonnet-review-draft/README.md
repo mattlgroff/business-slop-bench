@@ -1,10 +1,10 @@
 # Sonnet review in progress
 
-Eight completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
+Nine completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
 
 `python3 reviews/sonnet-review-draft/verify.py` checks unique task/condition pairs, output hashes, successful complete responses and every quoted finding. The default pilot email is 198 words against the 180-word requirement. Semantic findings include a sender commitment to propose a date within five business days and unsupported performance/readiness claims. Requests for the recipient to take an action are distinguished from claims that an obligation already exists.
 
-When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these eight cases or replace earlier complete model results with this partial review.
+When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these nine cases or replace earlier complete model results with this partial review.
 
 The default vendor memo preserves the required costs, recommendation and approval condition, but repeats its rationale. Its word count is verified by the same whitespace rule as the other drafts.
 
@@ -13,3 +13,5 @@ The house vendor memo has no supported editorial finding in this review. Its CFO
 The default readout states the correct three-minute reduction and passes its content checks. Its separate rationale section repeats the result limitations. The scale-versus-follow-up contrast is a permitted decision distinction, not empty negative parallelism.
 
 The house readout passes the frozen content checks and repeats the scaling gate in its closing sentence. Its quality observation is treated as the measured pass rate and threshold comparison, not a causal claim. Random allocation is proposed for the follow-up, not claimed for the original pilot. The easier-tickets versus faster-process contrast explains confounding and is allowed. Mechanical scans are saved in `scans.json`.
+
+The default discovery proposal preserves the fee, deliverables, exclusions and acceptance basis, but makes kickoff payment a new condition for confirming the start date. This is a grounding failure under the previously applied payment/schedule boundary. The purpose paragraph is a throat-clearing finding. Ordinary sponsor-facing thanks and an invitation for questions are not treated as assistant residue.

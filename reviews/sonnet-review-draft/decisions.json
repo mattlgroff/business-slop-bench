@@ -147,6 +147,28 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--pilot-results-memo--house.md",
       "outputSha256": "a4e4aabfbf73f131f3f91e229835aaff299a36b8972cd1d6d01904957c4a0614"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "Upon receipt of signature, named contact, and kickoff payment, we will confirm the start date",
+          "Adds kickoff payment as a prerequisite for confirming the start date. The source requires signature and a named contact before agreeing the date, and places the first payment at kickoff."
+        ]
+      ],
+      "style": [
+        [
+          "2",
+          "This proposal requests sponsor approval to launch a four-week discovery engagement focused exclusively on assessing current-state operations and defining a clear path forward.",
+          "The purpose paragraph announces the proposal and broadly restates its subject before the concrete scope and commercial terms."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--discovery-proposal--default.md",
+      "outputSha256": "d91c749fbff54abf105eb3e408a72cbf5c3bfeca2fc8a3340e151d481e085b45"
     }
   ]
 }
