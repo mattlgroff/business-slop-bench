@@ -28,6 +28,14 @@
     "reasoning": "low"
   },
   {
+    "id": "openai/gpt-6-sol",
+    "reasoning": "low"
+  },
+  {
+    "id": "openai/gpt-6-luna",
+    "reasoning": "low"
+  },
+  {
     "id": "openai/gpt-5.6-sol",
     "reasoning": "low"
   },

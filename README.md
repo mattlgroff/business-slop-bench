@@ -1,6 +1,6 @@
 # BusinessSlopBench
 
-A small TypeScript benchmark for single-call English business writing. It targets 23 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
+A small TypeScript benchmark for single-call English business writing. It targets 25 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
 ## Why a business slop bench
 
