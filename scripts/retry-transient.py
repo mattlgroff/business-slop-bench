@@ -13,7 +13,8 @@ with lock.open('x'):
         failure = json.loads(path.read_text())
         error = failure.get('error', {})
         gateway_timeout = error.get('statusCode') == 500 and error.get('name') == 'GatewayResponseError' and 'operation was aborted due to timeout' in error.get('message', '')
-        assert failure.get('status') == 'error' and (error.get('statusCode') in (429, 502, 503, 504) or gateway_timeout), 'Only inspected transient errors are eligible'
+        headers_timeout = error.get('statusCode') == 408 and error.get('name') == 'GatewayTimeoutError' and 'Headers Timeout Error' in error.get('message', '')
+        assert failure.get('status') == 'error' and (error.get('statusCode') in (429, 502, 503, 504) or gateway_timeout or headers_timeout), 'Only inspected transient errors are eligible'
         name = path.stem
         attempts = list(path.parent.glob(name + '--failed-attempt-*.json'))
         assert len(attempts) < 2, 'Two manual retries already used; diagnose before more spending'
