@@ -6,7 +6,7 @@ Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/as
 
 Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Uncapped results: [five MiniMax drafts and a separate transport timeout](reviews/assistant-v14/REPORT.md). This cohort is not pooled with earlier capped scores.
+Uncapped results: [Muse and Gemini Flash, with MiniMax partial results](reviews/assistant-v15/REPORT.md). This cohort is not pooled with earlier capped scores.
 
 Current collection uses `pilot-v18` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v18` audits saved outputs and verifies their inputs against the frozen task version.
 

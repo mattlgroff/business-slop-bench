@@ -1,0 +1,367 @@
+[
+  {
+    "model": "Muse",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Conclusion: Select Alpha. It is the only vendor satisfying budget and mandatory SSO.",
+        "Repeats the opening recommendation and the immediately preceding eligibility analysis without adding a next action."
+      ]
+    ]
+  },
+  {
+    "model": "Muse",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Alpha costs $72,000 subscription plus $20,000 setup.",
+        "The prose repeats subscription and setup amounts also given in the table; the same duplication occurs for Beta. Retain the SSO analysis while presenting prices once."
+      ]
+    ]
+  },
+  {
+    "model": "Muse",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Baseline: 200 tickets, 15 minutes mean handling time.\nPilot: 100 tickets, 12 minutes mean handling time.",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Handling time averaged 12 minutes in the pilot on 100 tickets, compared with 15 minutes at baseline on 200 tickets.",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Upon signature and named client contact, the start date will be agreed.",
+        "Repeats the start-date prerequisite already stated under client requirements and the immediately preceding signing/contact steps."
+      ]
+    ]
+  },
+  {
+    "model": "Muse",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "This timing is an estimate.",
+        "Repeats the immediately preceding description of the two weeks as estimated."
+      ]
+    ]
+  },
+  {
+    "model": "Muse",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I am writing to propose our pilot to assess invoice handling.",
+        "Announces the proposal instead of starting with the scope and fee."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "assess our invoice handling",
+        "The client-facing email calls the invoice handling ours, making the sender/client relationship unclear; the source describes the client's process."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "Our team remains completely focused on delivering a successful, secure release.",
+        "Current team focus is not supplied; this may be routine reassurance rather than a material status claim, consistently with earlier reviews."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I am writing to update you on our launch position.",
+        "Announces the update before the actual changed timeline."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Our team remains fully prepared to proceed as planned with our scheduled activities.",
+        "Asserts full preparedness across scheduled activities, beyond the supported availability of a staging demo."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "To evaluate Vendor Alpha and Vendor Beta against our year-one constraints and obtain your required approval before signing.",
+        "Purpose preamble delays the decision and repeats the subject and closing approval request."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "Your signature is required to authorize the contract with Alpha.",
+        "The source requires CFO approval but does not specify a signature. This could request written authorization or invent a signing requirement; the source does not resolve which."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Beta fails the mandatory condition for production deployment. Alpha meets all technical requirements, includes SSO, and remains within the authorized budget.",
+        "Repeats the eligibility findings already stated in the vendor evaluation and opening recommendation."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "mean handling time decreased from 15 minutes (across 200 baseline tickets) to 12 minutes (across 100 pilot tickets)",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time decreased from 15 minutes at baseline to 12 minutes in the pilot.",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "27",
+        "Please note that",
+        "Unnecessary reader coaching before the start-date prerequisite."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "27",
+        "Please note that",
+        "Unnecessary reader coaching before the schedule qualification."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Fully funded with a $30,000 investment",
+        "A pilot cost within a budget ceiling does not establish that its funding has been approved. The COO still needs to select the pilot."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "Operational ownership remains in limbo",
+        "Vague metaphor adds no precision to the ownership boundaries and missing rehearsal organizer already stated."
+      ]
+    ]
+  },
+  {
+    "model": "Gemini Flash",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The rollback rehearsal remains unscheduled and unexecuted.",
+        "The source says the rehearsal has not happened and has no accepted organizer; it does not establish whether a tentative date has been scheduled."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "- Jo does not manage incidents under current conditions.\n- Lee remains responsible for defect fixes today.",
+        "Repeats the two ownership rules already stated in the same slide."
+      ]
+    ]
+  }
+]

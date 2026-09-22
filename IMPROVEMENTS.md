@@ -1,5 +1,17 @@
 # Grader improvement log
 
+## Uncapped Muse and Gemini Flash retest, v18
+
+Collected 16 new drafts each for Muse Spark 1.3 and Gemini 3.8 Flash without a harness output-token cap or generation deadline. None was imported from the old capped cohort. All 32 calls completed with matching requested, returned and canonical identities, normal stop reasons, no warnings and no retries. Every draft fits its task word limit.
+
+Muse passes 53/54 checks in both conditions, with 7/8 content-ready drafts in each. Ready-without-edits counts are 4/8 default and 5/8 house. Its only content-check failure is the required reduction calculation in both readouts. Some drafts repeat information; the default strategy slides contain three em dashes, while house outputs contain none. No new grounding failure was found in this review.
+
+Gemini Flash passes 51/54 default and 50/54 house checks. Default has two failures and one unresolved claim; house has three failures and one unresolved claim. Content readiness is 5/8 default and 4/8 house; ready-without-edits is 0/8 and 3/8. Problems include the omitted reduction calculation, an unsupported fully funded claim, unsupported full preparedness, and asserting a rehearsal was unscheduled when only its non-completion is established. Team-focus reassurance and the CFO-signature requirement remain unresolved. Both conditions contain zero em dashes.
+
+Muse is the more promising of these two models in this sample, not an established overall winner. The grades are unblinded assistant judgments on one generation per cell. The previous capped drafts are separate historical evidence; the protocol change prevents treating the two runs as repetitions under identical settings. [Uncapped comparison and quoted findings](reviews/assistant-v15/REPORT.md).
+
+Actual successful generation charges are $0.0953667 for Muse and $0.0428445 for Gemini Flash, $0.1382112 combined. Conservative cumulative accounting is $11.9883244 of $20, including earlier failure reservations. There are now 37 reviewed uncapped drafts and 178 separate historical capped drafts. Frozen hash, identity, input and quote checks pass. The draft audit and uncapped coverage report were refreshed. Both collection commands and the audit process exited successfully; no task-owned processes remain and the global lock is absent. Wider uncapped coverage and repeatability validation remain unfinished.
+
 ## Uncapped writer requests and accurate execution coverage, v17-v18
 
 The user explicitly removed output-token limits. Writer requests now omit `maxOutputTokens`. The model catalog's advertised maximum output capacity is used only to reserve dollars against the existing $20 ceiling; it is never passed as a generation parameter. Historical request hashes remain reconstructible for auditing. Removing the token-limit field changes current request hashes, so old capped outputs cannot be silently imported into the uncapped cohort.
