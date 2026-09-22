@@ -1,0 +1,320 @@
+[
+ {
+  "model": "Qwen Flash",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Thank you for the productive discussion on improving invoice handling.",
+    "Invents a prior discussion absent from the source pack."
+   ]
+  ],
+  "style": [
+   [
+    "23",
+    "ensuring any future rollout is grounded in measured data rather than assumptions.",
+    "Establishing a baseline does not ensure the basis of every future rollout."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [
+   [
+    "C06",
+    "fail",
+    "Jordan,",
+    "Addresses the approval request to Jordan, the engagement lead, rather than Morgan, the authorized client recipient."
+   ],
+   [
+    "grounding",
+    "fail",
+    "Jordan,",
+    "Confuses the sender with the recipient and assigns the client approval request to the wrong person."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "C02",
+    "fail",
+    "No new production date is authorized until the review concludes.",
+    "Explains approval dependency but omits the possibility of remediation."
+   ],
+   [
+    "grounding",
+    "fail",
+    "The review is thorough because it should be.",
+    "Asserts review thoroughness without source evidence."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "The review is thorough because it should be.",
+    "A circular reassurance adds no evidence or useful explanation."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "C02",
+    "fail",
+    "Release requires approval.",
+    "Omits the possibility that the security review may require remediation."
+   ],
+   [
+    "grounding",
+    "fail",
+    "staging will be fully operational and ready for a client demonstration on October 8 using synthetic data.",
+    "A synthetic-data demonstration is possible; full staging operational readiness is not established."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [
+   [
+    "C05",
+    "fail",
+    "Approve the $92,000 contract with Vendor Alpha for year one.",
+    "Requests CFO approval and identifies Priya in the header, but does not communicate approval as a prerequisite to signing."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "Although Beta offers a $22,000 cost savings, it cannot go to production because SSO is unavailable with no committed delivery date. This makes Beta non-viable under the stated constraints regardless of its lower price.",
+    "Repeats the preceding SSO rejection twice; the price difference can be stated without repeating the whole constraint analysis."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "Priya will draft the Alpha contract for your signature upon approval.",
+    "The source grants the CFO approval authority but does not identify the contract signatory. The request may imply an unsupported signing role."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Sam is prepared to run a randomized comparison with identical ticket mixes, which will yield a valid handling-time signal and clarify whether quality regression is caused by the intervention or by ticket-mix differences.",
+    "The source says Sam can run a matched-ticket follow-up; it does not establish a prepared randomized design or guarantee conclusive causal results."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [
+   [
+    "C01",
+    "fail",
+    "Handling time improved from 15 to 12 minutes",
+    "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is an omission, not incorrect arithmetic."
+   ],
+   [
+    "grounding",
+    "fail",
+    "against a required 94% baseline and 92% threshold.",
+    "Incorrectly describes the observed 94% baseline as required; the source specifies only a 92% scaling threshold."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "| Metric | Baseline | Pilot | Gate |",
+    "The closing table repeats all metrics already given in the prose without adding a decision or analysis."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Payment of the initial 50% deposit triggers the kickoff meeting.",
+    "Adds a payment-before-kickoff trigger; the source only specifies payment at kickoff. The separate promise to secure a delivery-schedule spot also lacks support."
+   ]
+  ],
+  "style": [
+   [
+    "20",
+    "The goal is to move from ambiguity to actionable strategy through three core deliverables:",
+    "Generic consulting language adds no concrete objective beyond the listed discovery deliverables."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "We require a named client contact to manage logistics and confirm artifact delivery.",
+    "Assigns artifact-confirmation responsibility to the contact without support; the source assigns acceptance confirmation to the sponsor."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "**Date:** [TBD]",
+    "Unfilled document-preparation date; the separate sponsor signature and date fields are intentional form fields."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "change-order",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "That estimate holds only if sandbox credentials arrive without delay.",
+    "The source starts the estimate after credentials arrive. This sentence may add an unsupported timeliness condition, although the following paragraph correctly says the window has not started without them."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "The fee is fixed at $7,000.",
+    "Immediately repeats the fixed fee already stated in the one-row pricing table."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Cannot deploy safely or legally next quarter.",
+    "Pending approval does not establish that authorization cannot arrive next quarter. Other unsupported assertions include no regulatory risk for knowledge search, an already approved pilot, and unavoidable wasted budget for the alternative."
+   ]
+  ],
+  "style": [
+   [
+    "20",
+    "Strategic Imperative & Constraints",
+    "Inflated strategic-imperative framing adds no information to the concrete budget and capacity constraints."
+   ],
+   [
+    "14",
+    "*   **Hard Reality:** The team can execute only one AI pilot next quarter.",
+    "Nearly every bullet has a bold mini-heading, including routine facts. This repeated formatting and emphatic labeling make a simple four-slide decision harder to scan."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "C01",
+    "fail",
+    "COO selects one AI pilot for next quarter.",
+    "Lists the options and asks for selection, but never recommends the knowledge-search pilot."
+   ],
+   [
+    "grounding",
+    "fail",
+    "*   Status: Ready to launch.",
+    "Approved source documents do not establish complete launch readiness. The credit option also invents a customer-financial-records source and places approval status in an owner field."
+   ]
+  ],
+  "style": [
+   [
+    "15",
+    "*   Owner: Pending legal approval.",
+    "An approval status is not an owner. The rigid option template forces every slide into the same four fields, producing a label that adds no decision value."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "leaving operations ownership undefined for the current state.",
+    "Jo taking ownership after acceptance does not establish that nobody owns current operations. The request to authorize Pat also introduces a committee authorization step absent from the source."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "**Readiness Explanation:** Operational handoff is blocked. The service is not ready for delivery to operations because the mandatory acceptance gate has not been cleared.",
+    "Repeats the immediately preceding blocked-handoff explanation, then repeats it again under Actions Required; similar recap padding recurs on slide 2."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Flash",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "C06",
+    "fail",
+    "**Slide 3: Decision Required**",
+    "Only three slide outlines are present; exactly four were requested."
+   ],
+   [
+    "grounding",
+    "fail",
+    "Jo cannot own it because acceptance has not happened. Lee cannot own it because the role definition covers only defect fixes until acceptance.",
+    "Existing incident and defect responsibilities do not prohibit either person from being assigned rehearsal organization. The source says no one has accepted that role, not that these people are ineligible."
+   ]
+  ],
+  "style": []
+ }
+]

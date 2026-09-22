@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Uncapped Qwen Flash comparison, v19
+
+Completed all 16 Qwen Flash drafts under the unchanged v19 writer configuration and v2 task set, with no output-token cap, harness deadline or retry. Every response has matching requested, returned and canonical model IDs, a normal stop reason, no warnings and a valid word count. No capped output was imported.
+
+Direct assistant review gives default 46/54 content checks and house 41/54, with eight and eleven failures respectively and two unresolved house checks. Neither condition has a ready-without-edits draft in this sample. The default change order passes all content checks but retains an unfilled preparation date. Six default em dashes become zero with house instructions. This is provisional unblinded grading, not a model-wide reliability estimate.
+
+Defects include the wrong email recipient, omitted remediation, unsupported operational readiness, invented follow-up guarantees, a missing recommendation and a three-slide response to a four-slide request. The default readout calculates the three-minute change correctly; the house readout omits it. Both readouts have additional grounding defects, so their failures do not depend solely on the disputed calculation-omission gate. Ambiguous CFO signing and credential-timing claims remain unresolved rather than confirmed failures. [Full scores and evidence](reviews/assistant-v17/REPORT.md).
+
+Successful generation charges total $0.01150225. Conservative cumulative accounting is $12.098313636 of $20. Primary uncapped coverage is now 69 drafts, with eight repeat outputs separate. The builder verifies each output hash, exact quoted evidence, generation identity and coverage; the draft audit independently checks all writer input hashes. The original grades are preserved in the cumulative report. Broad uncapped coverage and stronger reviewer validation remain unfinished.
+
 ## Readout criterion audit
 
 Compared the frozen readout prompt with C01 and the supplied numbers-integrity rubric. C01 requires an explicit 3-minute or 20% reduction, but the brief does not directly request this calculation. All six primary uncapped Muse, Gemini Flash and Luna readouts give correct endpoints and pass every other content check. Their omission should not be presented as incorrect arithmetic or inability to calculate.

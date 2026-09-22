@@ -1,0 +1,18 @@
+{
+  "alibaba--qwen3.8-flash--pilot-client-email--default": "d3390d12198684590b697e26f2fc3e59be8e58faa482843c62b4488997568b84",
+  "alibaba--qwen3.8-flash--pilot-client-email--house": "36503375667f77e10ff5275d6197e3436c110996eb5b9aeecb2146d2fc714643",
+  "alibaba--qwen3.8-flash--launch-delay-email--default": "9504fcaa91a1f76ca808f371a8cae2f10c8b66b00736583ccc14f7d626e4346c",
+  "alibaba--qwen3.8-flash--launch-delay-email--house": "5f2270b521fb19c3c4441854e39c6b1b548da6c338d796f59c1ce4c8458d27de",
+  "alibaba--qwen3.8-flash--vendor-decision-memo--default": "62f0b396c96ba74f105fd1810ad8cff89d2a4b33333f8e72d1bda4d392be0b43",
+  "alibaba--qwen3.8-flash--vendor-decision-memo--house": "1306a6f9ba674823ae36cc4e186cc097f1a86798e26d40925bd50fbfe5e59150",
+  "alibaba--qwen3.8-flash--pilot-results-memo--default": "e9cdef809e44236f92ad6442a8d8eefc3e8552838b8ff5fce1c9232fed4b8022",
+  "alibaba--qwen3.8-flash--pilot-results-memo--house": "89640ee1e18f7c6e3a9709bf90bb8b61b470f3ff8b140e90d943feabbabd1f40",
+  "alibaba--qwen3.8-flash--discovery-proposal--default": "f160969611feec488c1d10a409eecdb7d4c01ebf32758b4d216c767656445d21",
+  "alibaba--qwen3.8-flash--discovery-proposal--house": "183ad6dc0ab700af6d83f5c6b604531ddbe631e4b5b443c8b36820162747502d",
+  "alibaba--qwen3.8-flash--change-order--default": "70e29990d0406145c8b5d5251038e9476f172044ba4fa122624b6b6115a27b15",
+  "alibaba--qwen3.8-flash--change-order--house": "48d66b87a6f60d8c0ed32f4672236b8436af88727add9f104ffdd8c225f29501",
+  "alibaba--qwen3.8-flash--ai-strategy-slides--default": "27a1dfd1db31a46cc08682eb9ab334d1e108eeb62838f13cc74c7d8d0bd74d83",
+  "alibaba--qwen3.8-flash--ai-strategy-slides--house": "d7097ddf9dcd53bf85b04b11bd648ef5ba7202fbea2065233130937c70e1b67b",
+  "alibaba--qwen3.8-flash--handoff-slides--default": "57824629857a87cbd076dc27a6b3c6f5a4e5d51df92652aa898a7636804e1e5d",
+  "alibaba--qwen3.8-flash--handoff-slides--house": "212789fd010174a6082185d024bf7142384be9e08c284709284708af1c99f752"
+}
