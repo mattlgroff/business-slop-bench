@@ -8,7 +8,7 @@ Earlier results with a 4,096-token cap: [Muse compared with the other completed 
 
 Uncapped results: [Muse, Gemini Flash and Luna, with MiniMax partial results](reviews/assistant-v16/REPORT.md). This cohort is not pooled with earlier capped scores.
 
-Current collection uses `pilot-v18` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v18` audits saved outputs and verifies their inputs against the frozen task version.
+Current collection uses `pilot-v19` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v19` audits saved outputs and verifies their inputs against the frozen task version.
 
 ## Run
 
@@ -21,7 +21,7 @@ npm test
 npm run bench -- collect alibaba/qwen3.8-flash
 npm run bench -- collect moonshotai/kimi-k3
 npm run bench -- collect anthropic/claude-opus-5
-npx tsx src/draft-audit.ts pilot-v18
+npx tsx src/draft-audit.ts pilot-v19
 ```
 
 The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. Default path: `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Set `BUSINESS_SLOP_ENV_FILE` to select another file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.
@@ -105,3 +105,13 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 Coverage separates complete drafts, incomplete generations, API failures and unattempted cells. Draft audits recognize reviews of identical imported artifacts only when model/task/condition identity, text hash and writer-input hash match. Imported copies remain excluded from new generation spending.
+
+## Repeated attempts
+
+[Targeted repeatability study](reviews/repeatability-v1/REPORT.md) compares three attempts for two house-style briefs with Muse and Luna. It is separate from primary model coverage and does not select the best answer.
+
+```sh
+npm run bench -- repeat meta/muse-spark-1.3 pilot-results-memo house 2
+```
+
+`repeat` requires an exact model, task, condition and integer sample number of at least 2. It uses the same writer input with a separate saved response ID. It never imports a primary output. Replaying an already-saved sample reuses that response without another charge. Primary coverage and draft audits exclude repeat IDs; the study report accounts for them separately.

@@ -1,0 +1,77 @@
+[
+  {
+    "model": "Muse",
+    "task": "pilot-results-memo",
+    "sample": 2,
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "pilot-results-memo",
+    "sample": 3,
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time was 15 minutes across 200 baseline tickets and 12 minutes across 100 pilot tickets.",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "handoff-slides",
+    "sample": 2,
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Muse",
+    "task": "handoff-slides",
+    "sample": 3,
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "pilot-results-memo",
+    "sample": 2,
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "pilot-results-memo",
+    "sample": 3,
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "handoff-slides",
+    "sample": 2,
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The rehearsal therefore has no assigned organizer.",
+        "Repeats the preceding bullet that no role has accepted responsibility for organizing the rehearsal."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "handoff-slides",
+    "sample": 3,
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Until acceptance, Lee retains ownership of defect fixes.",
+        "Repeats the same ownership rule already stated on the preceding slide."
+      ]
+    ]
+  }
+]

@@ -1,5 +1,17 @@
 # Grader improvement log
 
+## Targeted repeatability diagnostic, v19
+
+Added a repeat command with separate immutable sample IDs, exact task/condition selection and no primary-output imports. It uses unchanged writer prompts and settings. Sample 1 remains the primary collection; explicit sample numbers start at 2. The v18 source snapshot is preserved, and v19 retains no harness output-token cap or generation deadline.
+
+Before dispatch, froze a diagnostic plan for Muse and Luna on house-style pilot readouts and operational handoff slides. The plan selects previously inspected failure/ownership cases, so it is not a random reliability sample. Ran eight new calls, two per model/brief, and retained the four primary outputs for three-attempt comparisons. All new calls succeeded without warnings or retries. Every response has a distinct generation ID, and full writer inputs, input hashes, source/task/model hashes and routing policy match the baseline. All new outputs fit the word limits and have no em dashes.
+
+The readout calculation verdict varies. Muse failed, passed, then failed the explicit-reduction criterion; Luna failed, passed, then passed. Both models passed all handoff content checks in all three attempts. Muse handoffs were ready without edits in all three; Luna handoffs had repetition in all three. The rubric and original grades were not changed. This demonstrates sample sensitivity and does not prove a population-level ranking. [Report, frozen plan and evidence](reviews/repeatability-v1/REPORT.md).
+
+The eight new calls cost $0.03742557. Baseline costs are excluded from that amount. Conservative accounting is $12.085506686 of the unchanged $20 ceiling. Primary uncapped coverage remains 53 drafts, with eight repeat outputs counted separately; 178 older capped drafts remain historical evidence.
+
+Verified idempotent replay of a completed sample: both its entire response file and the budget ledger retained identical hashes. TypeScript checking, 18 TypeScript tests and the Python coverage test pass. The study builder checks all 12 output hashes, exact quoted evidence and generation identities. Every task-owned process exited and the lock is absent. Broad uncapped coverage, stronger judge validation and broader repeatability work remain unfinished; Astra's budget decision is still pending.
+
 ## Uncapped Luna comparison and Astra budget preflight, v18
 
 Luna completed all 16 uncapped drafts with exact requested, returned and canonical model identities, normal stop reasons, no warnings and no retries. Every draft fits the task word limit. Default passes 51/54 checks with two failures and one unresolved claim; house passes 52/54 with one failure and one unresolved claim. Content readiness is 5/8 and 6/8. Ready-without-edits counts are 2/8 and 4/8.

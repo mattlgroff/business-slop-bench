@@ -1,0 +1,94 @@
+[
+  {
+    "model": "Muse",
+    "task": "pilot-results-memo",
+    "contentPasses": [
+      6,
+      7,
+      6
+    ],
+    "contentReady": [
+      false,
+      true,
+      false
+    ],
+    "readyWithoutEdits": [
+      false,
+      true,
+      false
+    ],
+    "changedCriteria": {
+      "C01": [
+        "fail",
+        "pass",
+        "fail"
+      ]
+    }
+  },
+  {
+    "model": "Muse",
+    "task": "handoff-slides",
+    "contentPasses": [
+      7,
+      7,
+      7
+    ],
+    "contentReady": [
+      true,
+      true,
+      true
+    ],
+    "readyWithoutEdits": [
+      true,
+      true,
+      true
+    ],
+    "changedCriteria": {}
+  },
+  {
+    "model": "Luna",
+    "task": "pilot-results-memo",
+    "contentPasses": [
+      6,
+      7,
+      7
+    ],
+    "contentReady": [
+      false,
+      true,
+      true
+    ],
+    "readyWithoutEdits": [
+      false,
+      true,
+      true
+    ],
+    "changedCriteria": {
+      "C01": [
+        "fail",
+        "pass",
+        "pass"
+      ]
+    }
+  },
+  {
+    "model": "Luna",
+    "task": "handoff-slides",
+    "contentPasses": [
+      7,
+      7,
+      7
+    ],
+    "contentReady": [
+      true,
+      true,
+      true
+    ],
+    "readyWithoutEdits": [
+      false,
+      false,
+      false
+    ],
+    "changedCriteria": {}
+  }
+]

@@ -3,13 +3,13 @@ import { readFileSync, existsSync, mkdirSync, openSync, closeSync, unlinkSync, r
 import { resolve } from 'node:path';
 import { parseEnv } from 'node:util';
 import { fileURLToPath } from 'node:url';
-import { Budget, catalogOutputReservation, writerInput, atomic, hash, prompt, rates, selectTasks, selectConditions, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
+import { Budget, catalogOutputReservation, writerInput, generationId, repeatSample, atomic, hash, prompt, rates, selectTasks, selectConditions, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
 import { securityInstructions, securityCriteria, requirementVerdict } from './requirements.js';
 import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v18';
+const runName = 'pilot-v19';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -25,7 +25,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.18.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.19.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -199,8 +199,8 @@ async function calibrate() {
   const summary = { protocolHash, thresholds, labelStatus: 'Author-proposed diagnostic labels; validation previously inspected under v2, not blind human gold', gatePass: validationWrong === 0 && validationCoverage >= 0.75, validationWrong, validationCoverage, matched: rows.filter(r => r.match).length, total: rows.length, wrongConfident: rows.filter(r => !r.match && r.observed !== 'review').length, unresolved: rows.filter(r => r.observed === 'review').length, rows };
   atomic(file('calibration'), summary); console.log(JSON.stringify(summary));
 }
-async function generateOne(model: Model, task: Task, condition: Condition) {
-  const id = `${safeId(model.id)}--${task.id}--${condition}`;
+async function generateOne(model: Model, task: Task, condition: Condition, sample = 1) {
+  const id = generationId(model.id, task.id, condition, sample);
   const input = writerInput(task, condition, source, model.reasoning);
   const outputReservation = catalogOutputReservation(catalog.find(m => m.id === model.id));
   const result = await paid(id, model.id, input, outputReservation, () => generateText({
@@ -234,13 +234,13 @@ function report() {
   console.log(JSON.stringify({ entries, budgetAccountedUsd: budget.total }));
 }
 
-const [command = 'report', arg, taskId, conditionId] = process.argv.slice(2);
+const [command = 'report', arg, taskId, conditionId, sampleArg] = process.argv.slice(2);
 let lock: number | undefined;
 try {
   lock = openSync(resolve(root, 'runs/.lock'), 'wx');
   if (command === 'report') report();
   else {
-    if (!['collect', 'prepare'].includes(command)) throw new Error('Paid Jev grading is paused at user request. Use collect for writer outputs and assistant review for grades.');
+    if (!['collect', 'repeat', 'prepare'].includes(command)) throw new Error('Paid Jev grading is paused at user request. Use collect for writer outputs and assistant review for grades.');
     await init();
     if (command === 'prepare') console.log(JSON.stringify({ protocolHash, models: models.length, tasks: tasks.length, styleCategories: style.length }));
     else if (command === 'regrade-v4') {
@@ -279,6 +279,17 @@ try {
       report();
       if (failures.length) throw new Error(`Incomplete grading for ${failures.length} drafts; inspect saved errors before retrying`);
     }
+    else if (command === 'repeat') {
+      if (!taskId || !conditionId) throw new Error('Repeat requires one explicit task and condition');
+      const model = models.find(m => m.id === arg);
+      if (!model) throw new Error('Specify exact registered model ID');
+      const sample = repeatSample(sampleArg);
+      const [task] = selectTasks(tasks, taskId);
+      const [condition] = selectConditions(conditionId);
+      // Repeats have distinct saved IDs and never import primary outputs.
+      await generateOne(model, task, condition, sample);
+      console.log(JSON.stringify({ model: model.id, task: task.id, condition, sample, grading: 'pending', budgetAccountedUsd: budget.total }));
+    }
     else if (command === 'collect') {
       const model = models.find(m => m.id === arg);
       if (!model) throw new Error('Specify exact registered model ID');
@@ -288,7 +299,7 @@ try {
       for (const task of selectedTasks) for (const condition of selectedConditions) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
         const input = writerInput(task, condition, source, model.reasoning);
-        for (const priorRun of ['pilot-v17', 'pilot-v16', 'pilot-v15', 'pilot-v14', 'pilot-v13', 'pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
+        for (const priorRun of ['pilot-v18', 'pilot-v17', 'pilot-v16', 'pilot-v15', 'pilot-v14', 'pilot-v13', 'pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
           if (existsSync(file(id))) break;
           const priorPath = resolve(root, 'runs', priorRun, id + '.json');
           if (!existsSync(priorPath)) continue;

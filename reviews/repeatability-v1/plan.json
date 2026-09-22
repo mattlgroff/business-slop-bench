@@ -1,0 +1,71 @@
+{
+  "purpose": "Targeted repeatability diagnostic on two previously inspected briefs. Not a random or representative reliability sample.",
+  "samples": [
+    1,
+    2,
+    3
+  ],
+  "newCalls": 8,
+  "selectionReason": "Readout tests repeatability of the explicit reduction omission; handoff tests factual ownership and action routing.",
+  "baselineGrades": "reviews/assistant-v16/grades.json",
+  "taskFile": "data/tasks-v2.json",
+  "taskFileSha256": "3a5f7bd878da02841e5aafbc246b8d6c2a5567ddad7e3d646b8ecb105d209dfe",
+  "noBestOfSelection": true,
+  "noHarnessOutputCap": true,
+  "noHarnessGenerationDeadline": true,
+  "grading": "Direct unblinded assistant review against frozen task checks and style lens.",
+  "cases": [
+    {
+      "model": "Muse",
+      "modelId": "meta/muse-spark-1.3",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "baseline": "runs/pilot-v18/meta--muse-spark-1.3--pilot-results-memo--house.json",
+      "baselineTextSha256": "9007bff4700ec6d0a3a1c574e8a8039d2c9702dd440083fe478804564f90060d",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "repeatPaths": [
+        "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-2.json",
+        "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-3.json"
+      ]
+    },
+    {
+      "model": "Muse",
+      "modelId": "meta/muse-spark-1.3",
+      "task": "handoff-slides",
+      "condition": "house",
+      "baseline": "runs/pilot-v18/meta--muse-spark-1.3--handoff-slides--house.json",
+      "baselineTextSha256": "94a9cf2bacf0214efb2fbcb47de66eea0b570028399e698ea60e3c1a0eb58613",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "repeatPaths": [
+        "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-2.json",
+        "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-3.json"
+      ]
+    },
+    {
+      "model": "Luna",
+      "modelId": "openai/gpt-5.6-luna",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--house.json",
+      "baselineTextSha256": "4967d0ce0c6b4104357c42c58da1e6c5838435a340329fb8bb9eb8f15bba1cd4",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "repeatPaths": [
+        "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-2.json",
+        "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-3.json"
+      ]
+    },
+    {
+      "model": "Luna",
+      "modelId": "openai/gpt-5.6-luna",
+      "task": "handoff-slides",
+      "condition": "house",
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--handoff-slides--house.json",
+      "baselineTextSha256": "10e7a6b861a211900222fd84e5ff4c9f6535fca14fe7944aa1ba39597dba23c4",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "repeatPaths": [
+        "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-2.json",
+        "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-3.json"
+      ]
+    }
+  ]
+}

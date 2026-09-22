@@ -1,0 +1,14 @@
+{
+  "runs/pilot-v18/meta--muse-spark-1.3--pilot-results-memo--house.json": "9007bff4700ec6d0a3a1c574e8a8039d2c9702dd440083fe478804564f90060d",
+  "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-2.json": "43c8314e0538284c2dfb2ad07fb242c83844dcb33c0da614b1766dd950632789",
+  "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-3.json": "9d0a5e9b973f273e4d9f2448ead3331943c90a02f514ce753e8ba07663f1b384",
+  "runs/pilot-v18/meta--muse-spark-1.3--handoff-slides--house.json": "94a9cf2bacf0214efb2fbcb47de66eea0b570028399e698ea60e3c1a0eb58613",
+  "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-2.json": "2c647082476f542ffafa3c1c6116d7cb0d244a6c02d1ae1412cb4ffc8c0cba45",
+  "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-3.json": "f17ef53bc3305d73b27f2ae25bbbda8ff2d77a6c5dc04bb69186bc4a48748059",
+  "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--house.json": "4967d0ce0c6b4104357c42c58da1e6c5838435a340329fb8bb9eb8f15bba1cd4",
+  "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-2.json": "54561424242cbb0b35ab7c3f80841d4e1a09359b95664b89ed33aef202b51cb5",
+  "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-3.json": "869e863336a3ead83235c1d0575edb05d70d3b8653b4f8c0d0f7f88c9cca21c0",
+  "runs/pilot-v18/openai--gpt-5.6-luna--handoff-slides--house.json": "10e7a6b861a211900222fd84e5ff4c9f6535fca14fe7944aa1ba39597dba23c4",
+  "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-2.json": "816eea845d7eaf7fc83a282da4cfecc9be0dafa5ec5889414a8f9991fd4dcc54",
+  "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-3.json": "991c3c09ba3eee84db0f914862e0a519ee3eabaac89263f7ee2d6ae0afa7df05"
+}

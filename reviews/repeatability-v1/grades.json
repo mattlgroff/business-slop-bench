@@ -1,0 +1,980 @@
+{
+  "method": {
+    "purpose": "Targeted repeatability diagnostic on two previously inspected briefs. Not a random or representative reliability sample.",
+    "samples": [
+      1,
+      2,
+      3
+    ],
+    "newCalls": 8,
+    "selectionReason": "Readout tests repeatability of the explicit reduction omission; handoff tests factual ownership and action routing.",
+    "baselineGrades": "reviews/assistant-v16/grades.json",
+    "taskFile": "data/tasks-v2.json",
+    "taskFileSha256": "3a5f7bd878da02841e5aafbc246b8d6c2a5567ddad7e3d646b8ecb105d209dfe",
+    "noBestOfSelection": true,
+    "noHarnessOutputCap": true,
+    "noHarnessGenerationDeadline": true,
+    "grading": "Direct unblinded assistant review against frozen task checks and style lens.",
+    "cases": [
+      {
+        "model": "Muse",
+        "modelId": "meta/muse-spark-1.3",
+        "task": "pilot-results-memo",
+        "condition": "house",
+        "baseline": "runs/pilot-v18/meta--muse-spark-1.3--pilot-results-memo--house.json",
+        "baselineTextSha256": "9007bff4700ec6d0a3a1c574e8a8039d2c9702dd440083fe478804564f90060d",
+        "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+        "repeatPaths": [
+          "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-2.json",
+          "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-3.json"
+        ]
+      },
+      {
+        "model": "Muse",
+        "modelId": "meta/muse-spark-1.3",
+        "task": "handoff-slides",
+        "condition": "house",
+        "baseline": "runs/pilot-v18/meta--muse-spark-1.3--handoff-slides--house.json",
+        "baselineTextSha256": "94a9cf2bacf0214efb2fbcb47de66eea0b570028399e698ea60e3c1a0eb58613",
+        "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+        "repeatPaths": [
+          "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-2.json",
+          "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-3.json"
+        ]
+      },
+      {
+        "model": "Luna",
+        "modelId": "openai/gpt-5.6-luna",
+        "task": "pilot-results-memo",
+        "condition": "house",
+        "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--house.json",
+        "baselineTextSha256": "4967d0ce0c6b4104357c42c58da1e6c5838435a340329fb8bb9eb8f15bba1cd4",
+        "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+        "repeatPaths": [
+          "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-2.json",
+          "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-3.json"
+        ]
+      },
+      {
+        "model": "Luna",
+        "modelId": "openai/gpt-5.6-luna",
+        "task": "handoff-slides",
+        "condition": "house",
+        "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--handoff-slides--house.json",
+        "baselineTextSha256": "10e7a6b861a211900222fd84e5ff4c9f6535fca14fe7944aa1ba39597dba23c4",
+        "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+        "repeatPaths": [
+          "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-2.json",
+          "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-3.json"
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "model": "Muse",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v18/meta--muse-spark-1.3--pilot-results-memo--house.md",
+      "outputSha256": "9007bff4700ec6d0a3a1c574e8a8039d2c9702dd440083fe478804564f90060d",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "gradeOrigin": "assistant-v15, uncapped direct review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "fail",
+          "reason": "Reports endpoints but omits the required explicit 3-minute or 20% reduction.",
+          "evidence": {
+            "quote": "Handling time averaged 12 minutes in the pilot on 100 tickets, compared with 15 minutes at baseline on 200 tickets.",
+            "offset": 68,
+            "line": 5
+          }
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 87,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00882675,
+      "sample": 1,
+      "generationId": "gen_01M34Q63QT1Z900YNKPHWTGYP2"
+    },
+    {
+      "model": "Muse",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-2.md",
+      "outputSha256": "43c8314e0538284c2dfb2ad07fb242c83844dcb33c0da614b1766dd950632789",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 92,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.007216,
+      "sample": 2,
+      "generationId": "gen_01M34R7S3RXN4X2BJDDWHH70B6"
+    },
+    {
+      "model": "Muse",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v19/meta--muse-spark-1.3--pilot-results-memo--house--sample-3.md",
+      "outputSha256": "9d0a5e9b973f273e4d9f2448ead3331943c90a02f514ce753e8ba07663f1b384",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "fail",
+          "reason": "Reports endpoints but omits the required explicit 3-minute or 20% reduction.",
+          "evidence": {
+            "quote": "Mean handling time was 15 minutes across 200 baseline tickets and 12 minutes across 100 pilot tickets.",
+            "offset": 186,
+            "line": 7
+          }
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 107,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00820625,
+      "sample": 3,
+      "generationId": "gen_01M34R9A3969JNKSPPYYHBS4SR"
+    },
+    {
+      "model": "Muse",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v18/meta--muse-spark-1.3--handoff-slides--house.md",
+      "outputSha256": "94a9cf2bacf0214efb2fbcb47de66eea0b570028399e698ea60e3c1a0eb58613",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "gradeOrigin": "assistant-v15, uncapped direct review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 134,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00759175,
+      "sample": 1,
+      "generationId": "gen_01M34Q9Q98PPFEJXFJ2JM0EKZ9"
+    },
+    {
+      "model": "Muse",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-2.md",
+      "outputSha256": "2c647082476f542ffafa3c1c6116d7cb0d244a6c02d1ae1412cb4ffc8c0cba45",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 124,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00878175,
+      "sample": 2,
+      "generationId": "gen_01M34R82RJ1V0G1XYXEJG49ZRJ"
+    },
+    {
+      "model": "Muse",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v19/meta--muse-spark-1.3--handoff-slides--house--sample-3.md",
+      "outputSha256": "f17ef53bc3305d73b27f2ae25bbbda8ff2d77a6c5dc04bb69186bc4a48748059",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 102,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.01145925,
+      "sample": 3,
+      "generationId": "gen_01M34R9NHXS04EBAGRNMCK7D1V"
+    },
+    {
+      "model": "Luna",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--house.md",
+      "outputSha256": "4967d0ce0c6b4104357c42c58da1e6c5838435a340329fb8bb9eb8f15bba1cd4",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "gradeOrigin": "assistant-v16, uncapped direct Luna review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "fail",
+          "reason": "Reports endpoints but omits the required explicit 3-minute or 20% reduction.",
+          "evidence": {
+            "quote": "The pilot reduced mean handling time from 15 minutes at baseline to 12 minutes across 100 tickets.",
+            "offset": 35,
+            "line": 3
+          }
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 151,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the handling-time caveat and failed quality threshold already explained in the two preceding paragraphs.",
+          "evidence": {
+            "quote": "The pilot provides an efficiency signal, but the quality result is below threshold and the evidence is not causal.",
+            "offset": 616,
+            "line": 9
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00101595,
+      "sample": 1,
+      "generationId": "gen_01M34QT399A97F7DABJ84PV2NZ"
+    },
+    {
+      "model": "Luna",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-2.md",
+      "outputSha256": "54561424242cbb0b35ab7c3f80841d4e1a09359b95664b89ed33aef202b51cb5",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 149,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00042354,
+      "sample": 2,
+      "generationId": "gen_01M34R8MDCQW28E36FYDYZ8HYM"
+    },
+    {
+      "model": "Luna",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v19/openai--gpt-5.6-luna--pilot-results-memo--house--sample-3.md",
+      "outputSha256": "869e863336a3ead83235c1d0575edb05d70d3b8653b4f8c0d0f7f88c9cca21c0",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 177,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00044874,
+      "sample": 3,
+      "generationId": "gen_01M34RA8N8J9HP7W3P7KCEMZBH"
+    },
+    {
+      "model": "Luna",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v18/openai--gpt-5.6-luna--handoff-slides--house.md",
+      "outputSha256": "10e7a6b861a211900222fd84e5ff4c9f6535fca14fe7944aa1ba39597dba23c4",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "gradeOrigin": "assistant-v16, uncapped direct Luna review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 167,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the assignment and execution steps from the preceding slide without adding an action or condition.",
+          "evidence": {
+            "quote": "- **Now:** Pat assigns the rehearsal responsibility.\n- **Next:** The assigned owner completes a successful rollback rehearsal.",
+            "offset": 838,
+            "line": 24
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00106605,
+      "sample": 1,
+      "generationId": "gen_01M34QVRC8TV4FT73DR4PFPQ8P"
+    },
+    {
+      "model": "Luna",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-2.md",
+      "outputSha256": "816eea845d7eaf7fc83a282da4cfecc9be0dafa5ec5889414a8f9991fd4dcc54",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 184,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the preceding bullet that no role has accepted responsibility for organizing the rehearsal.",
+          "evidence": {
+            "quote": "The rehearsal therefore has no assigned organizer.",
+            "offset": 480,
+            "line": 15
+          }
+        }
+      ],
+      "contentReady": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00044022,
+      "sample": 2,
+      "generationId": "gen_01M34R93FQB9CG9JEVM1C1KMB2"
+    },
+    {
+      "model": "Luna",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v19/openai--gpt-5.6-luna--handoff-slides--house--sample-3.md",
+      "outputSha256": "991c3c09ba3eee84db0f914862e0a519ee3eabaac89263f7ee2d6ae0afa7df05",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "grades": [
+        {
+          "id": "C01",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 215,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the same ownership rule already stated on the preceding slide.",
+          "evidence": {
+            "quote": "Until acceptance, Lee retains ownership of defect fixes.",
+            "offset": 919,
+            "line": 27
+          }
+        }
+      ],
+      "contentReady": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00044982,
+      "sample": 3,
+      "generationId": "gen_01M34RAP3D81333V5HVH92GSS8"
+    }
+  ],
+  "newGenerationCostUsd": 0.03742557
+}

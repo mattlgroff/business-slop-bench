@@ -145,3 +145,17 @@ export function writerInput(task: Task, condition: Condition, source: string, re
     ...(historicalOutputLimit === undefined ? {} : { maxOutputTokens: historicalOutputLimit }),
   };
 }
+
+export function repeatSample(value?: string): number {
+  const n = Number(value);
+  if (!value || !/^[1-9]\d*$/.test(value) || !Number.isSafeInteger(n) || n < 2) {
+    throw new Error('Repeat sample must be an integer at least 2; sample 1 is the primary collection');
+  }
+  return n;
+}
+
+export function generationId(model: string, task: string, condition: Condition, sample = 1): string {
+  if (!Number.isSafeInteger(sample) || sample < 1) throw new Error('Invalid sample index');
+  const base = `${model.replaceAll('/', '--')}--${task}--${condition}`;
+  return sample === 1 ? base : `${base}--sample-${sample}`;
+}
