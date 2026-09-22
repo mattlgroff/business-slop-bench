@@ -18,7 +18,7 @@ Uncapped results: [MiMo, Astra, Sol 6, Luna 6, Sol 5.6, Terra, Gemini Pro, Opus 
 
 Current collection uses `pilot-v23` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v23` audits saved outputs and verifies their inputs against the frozen task version.
 
-The current report covers 384 reviewed drafts from 24 models. The roster has 25 models and 400 planned primary drafts, plus eight separately tracked repeats. Sonnet 5 collection is in progress with seven-minute spacing. MiMo completed after the Gateway advertised a ZDR route; its earlier routing rejection remains recorded. Run `python3 scripts/coverage.py --cohort uncapped` for current collection counts. The spending ceiling remains $100; the ledger includes retained reservations as well as settled charges.
+The current report covers 384 reviewed drafts from 24 models. The roster has 25 models and 400 planned primary drafts, plus 24 separately tracked repeats. Sonnet 5 collection is in progress with seven-minute spacing. MiMo completed after the Gateway advertised a ZDR route; its earlier routing rejection remains recorded. Run `python3 scripts/coverage.py --cohort uncapped` for current collection counts. The spending ceiling remains $100; the ledger includes retained reservations as well as settled charges.
 
 ## Run
 
@@ -47,6 +47,8 @@ Each model uses `low` reasoning except DeepSeek (`none`, since its catalog does 
 Default and house conditions share the same source pack and task wording. Only the house condition receives the source style guide. Both are graded against the same style rules, but only the house condition tests explicit compliance. Every brief defines the whitespace word-count convention.
 
 ## Current assistant scoring
+
+[Astra full-panel repeat](reviews/repeatability-v2/REPORT.md): all 108 content checks pass again, but house readiness without edits changes from 8/8 to 6/8. The 16 repeats are separate from the primary leaderboard. Two attempts do not establish population reliability.
 
 [Grounding correction](reviews/assistant-v35/REPORT.md): Fable 5 default loses one check for an unsupported sample-adequacy claim, changing to 49/54 checks and 3/8 content-ready drafts. All other scores are unchanged. The correction is retained in the current assistant-v42 cumulative grades.
 

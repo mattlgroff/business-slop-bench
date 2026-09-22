@@ -1,0 +1,2751 @@
+{
+  "method": {
+    "frozenAt": "2026-09-22T20:56:48.196521+00:00",
+    "purpose": "Repeat the entire Astra task panel once to check the strong primary result without selecting favorable tasks or outputs.",
+    "model": "openai/gpt-6-astra",
+    "sample": 2,
+    "run": "pilot-v23",
+    "baseGrades": "reviews/assistant-v42/grades.json",
+    "selection": "All eight v2 briefs, default and house. Every result is retained; no best-of replacement.",
+    "grading": "Same frozen checks and style lens, direct unblinded assistant review. This is a second sample per cell, not a reliability estimate or independent judge validation.",
+    "budget": "Existing shared $100 ceiling; no output-token cap or harness deadline.",
+    "cases": [
+      {
+        "task": "pilot-client-email",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--pilot-client-email--default.md",
+        "baselineOutputSha256": "bdd9358fde9138f4f1b358b26ee051840e80818b5ae14d65833608acbb886f67",
+        "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04"
+      },
+      {
+        "task": "pilot-client-email",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--pilot-client-email--house.md",
+        "baselineOutputSha256": "f89eda1f6c2c4d4cacc91dbc004450f937c9f717aca8acc1114cce7b3c4d2538",
+        "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384"
+      },
+      {
+        "task": "launch-delay-email",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--launch-delay-email--default.md",
+        "baselineOutputSha256": "aa8e0ac4a13bfed728ed54f8781c4814ba4b708e20e000f1862d99119bc8b4ff",
+        "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e"
+      },
+      {
+        "task": "launch-delay-email",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--launch-delay-email--house.md",
+        "baselineOutputSha256": "226f668c1a95b595eab8f52ad53f4813bdba463d54100ad4b14a437d189631e8",
+        "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9"
+      },
+      {
+        "task": "vendor-decision-memo",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--vendor-decision-memo--default.md",
+        "baselineOutputSha256": "3451ec5af699c7ad068b0770213603f1bc9e22224637b5b08677d4d752e6c842",
+        "writerInputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978"
+      },
+      {
+        "task": "vendor-decision-memo",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--vendor-decision-memo--house.md",
+        "baselineOutputSha256": "ac42d36cf418167af0ab216fa9a54eefe8202ceba0acff6f2d6f856d674eb95b",
+        "writerInputHash": "581c9d96c54939a6c87d7fe70d71c586af4a392c4e278db6dbc6a8db52c4d6a6"
+      },
+      {
+        "task": "pilot-results-memo",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--pilot-results-memo--default.md",
+        "baselineOutputSha256": "149fa10b7c0224b75acf4dacaa0e68fb0adb0cfdc41ec66b24ed2fece06385f3",
+        "writerInputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61"
+      },
+      {
+        "task": "pilot-results-memo",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--pilot-results-memo--house.md",
+        "baselineOutputSha256": "22c1db575ee88eabd328b5762d083b899accd7831c4d1c908b6723fdfc6ced57",
+        "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4"
+      },
+      {
+        "task": "discovery-proposal",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--discovery-proposal--default.md",
+        "baselineOutputSha256": "e3083cd2a56a73db68c3b279686d5b43a2c67112fbea7754a6f86e78c39da195",
+        "writerInputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0"
+      },
+      {
+        "task": "discovery-proposal",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--discovery-proposal--house.md",
+        "baselineOutputSha256": "5c8ee5a2eb7931e907d6b1ec8a7eabcee1998fee0c687ca3dbe46c33ba7d6d79",
+        "writerInputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967"
+      },
+      {
+        "task": "change-order",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--change-order--default.md",
+        "baselineOutputSha256": "613bfd82ef7e8d99f4749dec9e22b925abc1171a24dd2cca381b3da6e780b164",
+        "writerInputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2"
+      },
+      {
+        "task": "change-order",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--change-order--house.md",
+        "baselineOutputSha256": "cfd77ce62d0ebecfc079a0609388303e60ec2a167dff2101954b495b63d02079",
+        "writerInputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff"
+      },
+      {
+        "task": "ai-strategy-slides",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--ai-strategy-slides--default.md",
+        "baselineOutputSha256": "675f44c32b5c67d4c0d31673d28a807049da37cab4956ecb8484bdaa99250522",
+        "writerInputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8"
+      },
+      {
+        "task": "ai-strategy-slides",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--ai-strategy-slides--house.md",
+        "baselineOutputSha256": "449fdcf18b72214322d7bcd63c866005ffc23768cee8ac7b178f8da1f644160c",
+        "writerInputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d"
+      },
+      {
+        "task": "handoff-slides",
+        "condition": "default",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--handoff-slides--default.md",
+        "baselineOutputSha256": "3ea472c5319ec56b168ed052611515a9343991e14e5cb5a0872c65860edf9ce6",
+        "writerInputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c"
+      },
+      {
+        "task": "handoff-slides",
+        "condition": "house",
+        "baseline": "runs/pilot-v20/openai--gpt-6-astra--handoff-slides--house.md",
+        "baselineOutputSha256": "6f65d0c1e8a8a4057d25634064782b6012046ecd438c6d74459cd5de8c221ceb",
+        "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "model": "Astra",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--pilot-client-email--default.md",
+      "outputSha256": "bdd9358fde9138f4f1b358b26ee051840e80818b5ae14d65833608acbb886f67",
+      "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 137,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.01062,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X377EEV9A44JS77MCWW4E"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--pilot-client-email--default--sample-2.md",
+      "outputSha256": "7c77c743dbab36197a42f2e876f3430cf45fd74e2a856eae65808fcbffbe6178",
+      "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 125,
+      "maxWords": 180,
+      "emDashes": [
+        {
+          "offset": 396,
+          "line": 7
+        },
+        {
+          "offset": 419,
+          "line": 7
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "28",
+          "reason": "Generic closing restates what approving the scope and fee means without adding a next action.",
+          "evidence": {
+            "quote": "Your approval would give us a clear scope and commercial basis for moving forward while preserving the required security gate.",
+            "offset": 675,
+            "line": 11
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00992,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EGMZXRCT7ZMAKSMGSZJBT"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--pilot-client-email--house.md",
+      "outputSha256": "f89eda1f6c2c4d4cacc91dbc004450f937c9f717aca8acc1114cce7b3c4d2538",
+      "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 118,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0433675,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X3BGQ4GQRZN1E3W7GCHK9"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--pilot-client-email--house--sample-2.md",
+      "outputSha256": "8f58312c1cc05b0214dc2925d0d2997ca6103a5a16e77555dd77ff8eac7a4d4b",
+      "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 126,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "28",
+          "reason": "Generic closing after the explicit approval request adds no action or information.",
+          "evidence": {
+            "quote": "That is the next decision needed to move the proposal forward.",
+            "offset": 696,
+            "line": 11
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0438175,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EGVR505R4671W156S6M24"
+    },
+    {
+      "model": "Astra",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--launch-delay-email--default.md",
+      "outputSha256": "aa8e0ac4a13bfed728ed54f8781c4814ba4b708e20e000f1862d99119bc8b4ff",
+      "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 106,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00873,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X3F6TTQ5F54A86BHFH50A"
+    },
+    {
+      "model": "Astra",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--launch-delay-email--default--sample-2.md",
+      "outputSha256": "a6020891c68ca4bcad462ac8a743df4ebe43b40500c8e6c8eb32a6256e2f42a6",
+      "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 109,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.00888,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EGZVNJTFATW0P7Q9VGZCE"
+    },
+    {
+      "model": "Astra",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--launch-delay-email--house.md",
+      "outputSha256": "226f668c1a95b595eab8f52ad53f4813bdba463d54100ad4b14a437d189631e8",
+      "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 86,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.041205,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X3JQQJ5J0AGKAGYR85TKD"
+    },
+    {
+      "model": "Astra",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--launch-delay-email--house--sample-2.md",
+      "outputSha256": "d1ee3530329f3d45e1283c40a33fb07a39bc8f2c00e70cc17decfd8e701dcd2b",
+      "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 85,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.041155,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EH9RDVFNV1BA4X143759G"
+    },
+    {
+      "model": "Astra",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--vendor-decision-memo--default.md",
+      "outputSha256": "3451ec5af699c7ad068b0770213603f1bc9e22224637b5b08677d4d752e6c842",
+      "writerInputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 194,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0162,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X3NYADBQ06JMGDC0682EH"
+    },
+    {
+      "model": "Astra",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--vendor-decision-memo--default--sample-2.md",
+      "outputSha256": "9c2acb301e53eb40a91c52ea7953d6828f9b7910d1eac0fb35e8ce80f1b17bb9",
+      "writerInputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 207,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the recommendation and mandatory SSO condition already stated above.",
+          "evidence": {
+            "quote": "Alpha is therefore the only option that can meet the stated production requirements within the budget ceiling. SSO must be in place before production.",
+            "offset": 969,
+            "line": 23
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0173,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EHE35YGD35VXSN6SQR48N"
+    },
+    {
+      "model": "Astra",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--vendor-decision-memo--house.md",
+      "outputSha256": "ac42d36cf418167af0ab216fa9a54eefe8202ceba0acff6f2d6f856d674eb95b",
+      "writerInputHash": "581c9d96c54939a6c87d7fe70d71c586af4a392c4e278db6dbc6a8db52c4d6a6",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 161,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.04718,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X3VSFC32F1MA4FXD0WYEC"
+    },
+    {
+      "model": "Astra",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--vendor-decision-memo--house--sample-2.md",
+      "outputSha256": "62273aa776bde89395bd488091a204eb221ac9ea9f5d51e150ff4d6efc8f2e28",
+      "writerInputHash": "581c9d96c54939a6c87d7fe70d71c586af4a392c4e278db6dbc6a8db52c4d6a6",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 179,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the opening recommendation, budget qualification and SSO-versus-price comparison already given above.",
+          "evidence": {
+            "quote": "Alpha is the only vendor that can satisfy all stated requirements within the year-one budget. Its $22,000 premium over Beta buys access to a mandatory capability.",
+            "offset": 741,
+            "line": 18
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.04843,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EHM6CCFB5Q62ET9NJKFNW"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--pilot-results-memo--default.md",
+      "outputSha256": "149fa10b7c0224b75acf4dacaa0e68fb0adb0cfdc41ec66b24ed2fece06385f3",
+      "writerInputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 191,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 417,
+          "line": 6
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0145,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X41AJX469QY7NK65PN506"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--pilot-results-memo--default--sample-2.md",
+      "outputSha256": "87eb28f9eb4ad1e0263ef0da9b7062d92577234ed4e9eb930d36e71953395abc",
+      "writerInputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 193,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 348,
+          "line": 6
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0146,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EHSWJQFHYFXC8QZX04P7Y"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--pilot-results-memo--house.md",
+      "outputSha256": "22c1db575ee88eabd328b5762d083b899accd7831c4d1c908b6723fdfc6ced57",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 149,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0450675,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X46HZPV435GY95W8T64N8"
+    },
+    {
+      "model": "Astra",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--pilot-results-memo--house--sample-2.md",
+      "outputSha256": "b7a87f3f71f54b77e158f52b4e2608c036bd173ed3dd2afd4fc2eb0102f28484",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 150,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0453175,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EHZ4XZVFSADTY3PY66XHB"
+    },
+    {
+      "model": "Astra",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--discovery-proposal--default.md",
+      "outputSha256": "e3083cd2a56a73db68c3b279686d5b43a2c67112fbea7754a6f86e78c39da195",
+      "writerInputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 133,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.01148,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X4B1V0TVKZ0WWHQC1H0P1"
+    },
+    {
+      "model": "Astra",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--discovery-proposal--default--sample-2.md",
+      "outputSha256": "ceac7073d15f18b591b30fa02f72588487556db0f9ab402a2df48b47d6886639",
+      "writerInputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 129,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.01133,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EJ3C1T9N1HSZ1T51KV61D"
+    },
+    {
+      "model": "Astra",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--discovery-proposal--house.md",
+      "outputSha256": "5c8ee5a2eb7931e907d6b1ec8a7eabcee1998fee0c687ca3dbe46c33ba7d6d79",
+      "writerInputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 104,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0428675,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X4J00VNMV6FSDTCRQZ5N5"
+    },
+    {
+      "model": "Astra",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--discovery-proposal--house--sample-2.md",
+      "outputSha256": "b2d91831a618f24ea0e65eedc7aba50a4c524d4be9b6f7e9e0f67ef8c900db9a",
+      "writerInputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 124,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0442175,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EJ79JSTY8DVB6ACWWSP3S"
+    },
+    {
+      "model": "Astra",
+      "task": "change-order",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--change-order--default.md",
+      "outputSha256": "613bfd82ef7e8d99f4749dec9e22b925abc1171a24dd2cca381b3da6e780b164",
+      "writerInputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 184,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Restates the heading and the preceding paragraph without adding information.",
+          "evidence": {
+            "quote": "This change order proposes adding the CRM connector.",
+            "offset": 373,
+            "line": 9
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.01422,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X4P6223JCE16WG8YVXSWB"
+    },
+    {
+      "model": "Astra",
+      "task": "change-order",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--change-order--default--sample-2.md",
+      "outputSha256": "5d20b735bdd6589318200128778909083b0c5046bcf3eb68dd54760c93902cbc",
+      "writerInputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 174,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.01387,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EJBWRPBWCRC86162DKK11"
+    },
+    {
+      "model": "Astra",
+      "task": "change-order",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--change-order--house.md",
+      "outputSha256": "cfd77ce62d0ebecfc079a0609388303e60ec2a167dff2101954b495b63d02079",
+      "writerInputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 144,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.044655,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X4VZRM76CRTW2MDHDBNPR"
+    },
+    {
+      "model": "Astra",
+      "task": "change-order",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--change-order--house--sample-2.md",
+      "outputSha256": "9b025b94a9effafd267353de14b1a8534a0c94c03cbc62053e961718991f8aee",
+      "writerInputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 148,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.045055,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EJHYW21C3MXTMVP4QKJNZ"
+    },
+    {
+      "model": "Astra",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--ai-strategy-slides--default.md",
+      "outputSha256": "675f44c32b5c67d4c0d31673d28a807049da37cab4956ecb8484bdaa99250522",
+      "writerInputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 204,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 12,
+          "line": 1
+        },
+        {
+          "offset": 293,
+          "line": 6
+        },
+        {
+          "offset": 727,
+          "line": 12
+        },
+        {
+          "offset": 1024,
+          "line": 18
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.01655,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X4ZQ6W768X697NMB12ZMH"
+    },
+    {
+      "model": "Astra",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--ai-strategy-slides--default--sample-2.md",
+      "outputSha256": "0054af0a0e2c1365c2a817a1232fd3047ea9b5c9ee223aa52ecec04db7640095",
+      "writerInputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 210,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 12,
+          "line": 1
+        },
+        {
+          "offset": 267,
+          "line": 4
+        },
+        {
+          "offset": 306,
+          "line": 6
+        },
+        {
+          "offset": 763,
+          "line": 12
+        },
+        {
+          "offset": 854,
+          "line": 13
+        },
+        {
+          "offset": 1103,
+          "line": 18
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.01715,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EJYB1XY0JEE4CNQ9GCSP4"
+    },
+    {
+      "model": "Astra",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--ai-strategy-slides--house.md",
+      "outputSha256": "449fdcf18b72214322d7bcd63c866005ffc23768cee8ac7b178f8da1f644160c",
+      "writerInputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 162,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.047205,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X56MPQQH5Z7RXJ93Q6FAJ"
+    },
+    {
+      "model": "Astra",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--ai-strategy-slides--house--sample-2.md",
+      "outputSha256": "7f28826ee2a004654c5b070ec3b92f5ce85c301affd8847b9eca49d7e474cf5b",
+      "writerInputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 164,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.047155,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EK5D1QKXWVWZGA1H45DEY"
+    },
+    {
+      "model": "Astra",
+      "task": "handoff-slides",
+      "condition": "default",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--handoff-slides--default.md",
+      "outputSha256": "3ea472c5319ec56b168ed052611515a9343991e14e5cb5a0872c65860edf9ce6",
+      "writerInputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 265,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 12,
+          "line": 1
+        },
+        {
+          "offset": 359,
+          "line": 6
+        },
+        {
+          "offset": 886,
+          "line": 16
+        },
+        {
+          "offset": 1333,
+          "line": 24
+        },
+        {
+          "offset": 1586,
+          "line": 28
+        },
+        {
+          "offset": 1631,
+          "line": 29
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Slide 4 repeats the acceptance gate from slide 1 and the ownership boundaries from slide 2.",
+          "evidence": {
+            "quote": "- **Ownership transition:** Lee owns defect fixes until acceptance; Jo owns incidents only after acceptance.",
+            "offset": 1723,
+            "line": 31
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.01974,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X5CX8GVSSTK4PNGHESAQC"
+    },
+    {
+      "model": "Astra",
+      "task": "handoff-slides",
+      "condition": "default",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--handoff-slides--default--sample-2.md",
+      "outputSha256": "64ca174262c3b599ad9abe7f282873a9939c140d1948ad304258806cef017d49",
+      "writerInputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 286,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 11,
+          "line": 1
+        },
+        {
+          "offset": 426,
+          "line": 7
+        },
+        {
+          "offset": 932,
+          "line": 16
+        },
+        {
+          "offset": 1417,
+          "line": 22
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [
+        {
+          "quote": "No further action identified in the source pack",
+          "offset": 544,
+          "line": 10,
+          "reason": "Refers to the internal source pack inside the finished committee deck. This is authoring residue under the same rule applied to other models."
+        }
+      ],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Immediately repeats the preceding table rows describing the outstanding rehearsal and unassigned organizer.",
+          "evidence": {
+            "quote": "**Key blocker:** the required rehearsal remains outstanding, with no accepted organizer.",
+            "offset": 831,
+            "line": 14
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.02124,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EKAREZQV9CE6PZQPHS4B5"
+    },
+    {
+      "model": "Astra",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v20/openai--gpt-6-astra--handoff-slides--house.md",
+      "outputSha256": "6f65d0c1e8a8a4057d25634064782b6012046ecd438c6d74459cd5de8c221ceb",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "gradeOrigin": "assistant-v26, uncapped direct Astra review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 177,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0465925,
+      "benchEligible": true,
+      "sample": 1,
+      "generationId": "gen_01M34X5M4GP60VKT0JT8C64K33"
+    },
+    {
+      "model": "Astra",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v23/openai--gpt-6-astra--handoff-slides--house--sample-2.md",
+      "outputSha256": "8539f9bcf5cd9b648f167bc249f2f9c3531c585e97ad6a46807b61cd5e73a040",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "gradeOrigin": "repeatability-v2, direct unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on complete-draft review against the frozen source.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 175,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.0463925,
+      "benchEligible": true,
+      "sample": 2,
+      "generationId": "gen_01M35EKMSH2SNGRDYHV3Z9E12A"
+    }
+  ],
+  "newGenerationCostUsd": 0.47583,
+  "primaryGradesSha256": "6af184f9e3b75ef49c1eabaa948ddfb55bd5356b5527918695da2ef9c0009f49"
+}

@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Astra full-panel repeat
+
+Froze the repeatability-v2 plan before dispatch: all eight v2 briefs in both conditions, one second attempt per cell, every result retained separately. Verified exact writer-input equality with the original Astra outputs before calls. Collected 16 new uncapped drafts with no retries; all have normal stops, no warnings and matching model identities. The 32 baseline/repeat generation IDs are distinct.
+
+Astra passes all 108 content checks again. Default content readiness changes from 8/8 to 7/8 because the new handoff references the internal source pack; ready without edits changes from 4/8 to 3/8. House content readiness remains 8/8, but ready without edits changes from 8/8 to 6/8 because of a generic pilot-email closing and repeated vendor recommendation. Default em dashes change from 11 to 13; house remains zero. [Plan, evidence and comparison](reviews/repeatability-v2/REPORT.md).
+
+New reported charges total $0.47583. The primary leaderboard is unchanged, and there are now 24 separately tracked repeat outputs. The builder verifies exact inputs, output hashes, source/task hashes, selected routing policy, model identity, generation identity and every quoted finding. This is still an unblinded same-reviewer study with two attempts per cell, not independent calibration or a population reliability estimate. Sonnet scheduling was held at a between-call wait to avoid overlapping the shared ledger and resumed by the exit trap; its original collector remains running.
+
 ## MiMo ZDR route refresh and uncapped comparison
 
 The pilot-v19 catalog had no MiMo ZDR route and its request failed. Pilot-v22/v23 snapshots and a fresh Gateway catalog now advertise some ZDR routes. Retried under unchanged v23 settings with ZDR enforced, without adding an exception. All 16 calls completed with matching model identities, normal stops and no warnings. The old rejection and reservation remain intact. [Catalog evidence](reviews/mimo-zdr-refresh/REPORT.md).

@@ -1,0 +1,134 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "28",
+        "Your approval would give us a clear scope and commercial basis for moving forward while preserving the required security gate.",
+        "Generic closing restates what approving the scope and fee means without adding a next action."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "28",
+        "That is the next decision needed to move the proposal forward.",
+        "Generic closing after the explicit approval request adds no action or information."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Alpha is therefore the only option that can meet the stated production requirements within the budget ceiling. SSO must be in place before production.",
+        "Repeats the recommendation and mandatory SSO condition already stated above."
+      ]
+    ]
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Alpha is the only vendor that can satisfy all stated requirements within the year-one budget. Its $22,000 premium over Beta buys access to a mandatory capability.",
+        "Repeats the opening recommendation, budget qualification and SSO-versus-price comparison already given above."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "**Key blocker:** the required rehearsal remains outstanding, with no accepted organizer.",
+        "Immediately repeats the preceding table rows describing the outstanding rehearsal and unassigned organizer."
+      ]
+    ],
+    "placeholders": [
+      [
+        "No further action identified in the source pack",
+        "Refers to the internal source pack inside the finished committee deck. This is authoring residue under the same rule applied to other models."
+      ]
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  }
+]

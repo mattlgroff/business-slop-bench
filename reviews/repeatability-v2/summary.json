@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "default",
+    "sample": 1,
+    "contentPasses": 54,
+    "contentTotal": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 4,
+    "emDashes": 11
+  },
+  {
+    "condition": "default",
+    "sample": 2,
+    "contentPasses": 54,
+    "contentTotal": 54,
+    "contentReady": 7,
+    "readyWithoutEdits": 3,
+    "emDashes": 13
+  },
+  {
+    "condition": "house",
+    "sample": 1,
+    "contentPasses": 54,
+    "contentTotal": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 8,
+    "emDashes": 0
+  },
+  {
+    "condition": "house",
+    "sample": 2,
+    "contentPasses": 54,
+    "contentTotal": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 6,
+    "emDashes": 0
+  }
+]
