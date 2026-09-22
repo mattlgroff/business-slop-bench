@@ -11,7 +11,7 @@
     "contentReady": 7,
     "readyWithoutEdits": 4,
     "generationCostUsd": 0.038165,
-    "benchEligible": true
+    "benchEligible": false
   },
   {
     "model": "Muse",
@@ -25,7 +25,7 @@
     "contentReady": 7,
     "readyWithoutEdits": 5,
     "generationCostUsd": 0.0572017,
-    "benchEligible": true
+    "benchEligible": false
   },
   {
     "model": "Gemini Flash",

@@ -13,7 +13,7 @@
     "lensSha256": "0f9f01829e56e29a5a751e5f040d7a6407d1ccc3520a795863060bf94b3b3ab7",
     "revision": "Adds Opus 5.5, released 2026-09-22, to the uncapped comparison from pilot-v22 (protocol 0.22.0, roster of 23 models) under the $100 ceiling, collected one call every seven minutes on a ZDR route. All earlier uncapped grades are retained; historical capped outputs remain separate.",
     "cohort": "uncapped",
-    "zdrRule": "Since 2026-09-22 a model with no ZDR route fails the bench for business reasons. Rows with benchEligible false are shown for information and are never pooled with eligible models."
+    "zdrRule": "Since 2026-09-22 a model with no ZDR route fails the bench for business reasons. Eligibility is derived for every row from its saved catalog and frozen request policy. Muse, Fable 5 and Fable 5.1 have no ZDR route and are shown for information only. This checks recorded routing requirements, not independent provider retention compliance."
   },
   "rows": [
     {
@@ -89,7 +89,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00434475
+      "originalGenerationCostUsd": 0.00434475,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -164,7 +165,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0044913
+      "originalGenerationCostUsd": 0.0044913,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -232,7 +234,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.004226
+      "originalGenerationCostUsd": 0.004226,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -300,7 +303,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0049548
+      "originalGenerationCostUsd": 0.0049548,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -378,7 +382,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00468625
+      "originalGenerationCostUsd": 0.00468625,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -456,7 +461,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0111455
+      "originalGenerationCostUsd": 0.0111455,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -535,7 +541,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00583975
+      "originalGenerationCostUsd": 0.00583975,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -614,7 +621,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00882675
+      "originalGenerationCostUsd": 0.00882675,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -699,7 +707,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00359675
+      "originalGenerationCostUsd": 0.00359675,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -774,7 +783,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0087555
+      "originalGenerationCostUsd": 0.0087555,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -849,7 +859,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0037575
+      "originalGenerationCostUsd": 0.0037575,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -934,7 +945,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0038233
+      "originalGenerationCostUsd": 0.0038233,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -1022,7 +1034,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00475475
+      "originalGenerationCostUsd": 0.00475475,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -1097,7 +1110,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0076128
+      "originalGenerationCostUsd": 0.0076128,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -1172,7 +1186,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00695925
+      "originalGenerationCostUsd": 0.00695925,
+      "benchEligible": false
     },
     {
       "model": "Muse",
@@ -1247,7 +1262,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00759175
+      "originalGenerationCostUsd": 0.00759175,
+      "benchEligible": false
     },
     {
       "model": "Gemini Flash",
@@ -1332,7 +1348,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00352125
+      "originalGenerationCostUsd": 0.00352125,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1417,7 +1434,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00282
+      "originalGenerationCostUsd": 0.00282,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1499,7 +1517,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00368025
+      "originalGenerationCostUsd": 0.00368025,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1571,7 +1590,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00269025
+      "originalGenerationCostUsd": 0.00269025,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1649,7 +1669,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00511275
+      "originalGenerationCostUsd": 0.00511275,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1731,7 +1752,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0033165
+      "originalGenerationCostUsd": 0.0033165,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1810,7 +1832,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00094875
+      "originalGenerationCostUsd": 0.00094875,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1889,7 +1912,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00295125
+      "originalGenerationCostUsd": 0.00295125,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -1974,7 +1998,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0012525
+      "originalGenerationCostUsd": 0.0012525,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2049,7 +2074,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00297
+      "originalGenerationCostUsd": 0.00297,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2134,7 +2160,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00090525
+      "originalGenerationCostUsd": 0.00090525,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2209,7 +2236,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00312525
+      "originalGenerationCostUsd": 0.00312525,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2288,7 +2316,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00158625
+      "originalGenerationCostUsd": 0.00158625,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2363,7 +2392,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00327
+      "originalGenerationCostUsd": 0.00327,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2448,7 +2478,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00165525
+      "originalGenerationCostUsd": 0.00165525,
+      "benchEligible": true
     },
     {
       "model": "Gemini Flash",
@@ -2537,7 +2568,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.003039
+      "originalGenerationCostUsd": 0.003039,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -2622,7 +2654,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.000233
+      "originalGenerationCostUsd": 0.000233,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -2707,7 +2740,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00090975
+      "originalGenerationCostUsd": 0.00090975,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -2789,7 +2823,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0003356
+      "originalGenerationCostUsd": 0.0003356,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -2861,7 +2896,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0008655
+      "originalGenerationCostUsd": 0.0008655,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -2929,7 +2965,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.000468
+      "originalGenerationCostUsd": 0.000468,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -2997,7 +3034,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0010748
+      "originalGenerationCostUsd": 0.0010748,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3076,7 +3114,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0003758
+      "originalGenerationCostUsd": 0.0003758,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3165,7 +3204,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00101595
+      "originalGenerationCostUsd": 0.00101595,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3250,7 +3290,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.000423
+      "originalGenerationCostUsd": 0.000423,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3325,7 +3366,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00104915
+      "originalGenerationCostUsd": 0.00104915,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3400,7 +3442,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0003304
+      "originalGenerationCostUsd": 0.0003304,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3475,7 +3518,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0010141
+      "originalGenerationCostUsd": 0.0010141,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3581,7 +3625,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0004776
+      "originalGenerationCostUsd": 0.0004776,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3656,7 +3701,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0010907
+      "originalGenerationCostUsd": 0.0010907,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3767,7 +3813,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0004826
+      "originalGenerationCostUsd": 0.0004826,
+      "benchEligible": true
     },
     {
       "model": "Luna",
@@ -3852,7 +3899,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00106605
+      "originalGenerationCostUsd": 0.00106605,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -3946,7 +3994,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00051833
+      "originalGenerationCostUsd": 0.00051833,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4029,7 +4078,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00099713
+      "originalGenerationCostUsd": 0.00099713,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4115,7 +4165,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00030377
+      "originalGenerationCostUsd": 0.00030377,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4191,7 +4242,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00097339
+      "originalGenerationCostUsd": 0.00097339,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4278,7 +4330,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00028425
+      "originalGenerationCostUsd": 0.00028425,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4350,7 +4403,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00066764
+      "originalGenerationCostUsd": 0.00066764,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4429,7 +4483,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00027711
+      "originalGenerationCostUsd": 0.00027711,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4522,7 +4577,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00108115
+      "originalGenerationCostUsd": 0.00108115,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4611,7 +4667,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00070599
+      "originalGenerationCostUsd": 0.00070599,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4690,7 +4747,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00101747
+      "originalGenerationCostUsd": 0.00101747,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4781,7 +4839,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00019452
+      "originalGenerationCostUsd": 0.00019452,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4870,7 +4929,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00095156
+      "originalGenerationCostUsd": 0.00095156,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -4977,7 +5037,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0007395
+      "originalGenerationCostUsd": 0.0007395,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -5070,7 +5131,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.001035
+      "originalGenerationCostUsd": 0.001035,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -5159,7 +5221,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00074078
+      "originalGenerationCostUsd": 0.00074078,
+      "benchEligible": true
     },
     {
       "model": "Qwen Flash",
@@ -5242,7 +5305,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00101466
+      "originalGenerationCostUsd": 0.00101466,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5322,7 +5386,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0001371
+      "originalGenerationCostUsd": 0.0001371,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5401,7 +5466,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00054425
+      "originalGenerationCostUsd": 0.00054425,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5492,7 +5558,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00013425
+      "originalGenerationCostUsd": 0.00013425,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5564,7 +5631,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0005174
+      "originalGenerationCostUsd": 0.0005174,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5655,7 +5723,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00022855
+      "originalGenerationCostUsd": 0.00022855,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5723,7 +5792,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00058105
+      "originalGenerationCostUsd": 0.00058105,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5813,7 +5883,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00014345
+      "originalGenerationCostUsd": 0.00014345,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5888,7 +5959,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00058675
+      "originalGenerationCostUsd": 0.00058675,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -5991,7 +6063,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0002131
+      "originalGenerationCostUsd": 0.0002131,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6074,7 +6147,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00059625
+      "originalGenerationCostUsd": 0.00059625,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6189,7 +6263,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00067735
+      "originalGenerationCostUsd": 0.00067735,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6274,7 +6349,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00057915
+      "originalGenerationCostUsd": 0.00057915,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6388,7 +6464,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00021405
+      "originalGenerationCostUsd": 0.00021405,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6477,7 +6554,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0006112
+      "originalGenerationCostUsd": 0.0006112,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6552,7 +6630,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00012355
+      "originalGenerationCostUsd": 0.00012355,
+      "benchEligible": true
     },
     {
       "model": "GLM Flash",
@@ -6641,7 +6720,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0005787
+      "originalGenerationCostUsd": 0.0005787,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -6735,7 +6815,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0002961
+      "originalGenerationCostUsd": 0.0002961,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -6820,7 +6901,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00071874
+      "originalGenerationCostUsd": 0.00071874,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -6904,7 +6986,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0002877
+      "originalGenerationCostUsd": 0.0002877,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -6976,7 +7059,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0010164
+      "originalGenerationCostUsd": 0.0010164,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7061,7 +7145,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0004107
+      "originalGenerationCostUsd": 0.0004107,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7136,7 +7221,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0012102
+      "originalGenerationCostUsd": 0.0012102,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7221,7 +7307,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0004698
+      "originalGenerationCostUsd": 0.0004698,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7314,7 +7401,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0012321
+      "originalGenerationCostUsd": 0.0012321,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7394,7 +7482,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00020196
+      "originalGenerationCostUsd": 0.00020196,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7479,7 +7568,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0011637
+      "originalGenerationCostUsd": 0.0011637,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7564,7 +7654,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0004341
+      "originalGenerationCostUsd": 0.0004341,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7646,7 +7737,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0011172
+      "originalGenerationCostUsd": 0.0011172,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7748,7 +7840,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0003657
+      "originalGenerationCostUsd": 0.0003657,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7833,7 +7926,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00076956
+      "originalGenerationCostUsd": 0.00076956,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -7927,7 +8021,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0003987
+      "originalGenerationCostUsd": 0.0003987,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Flash",
@@ -8006,7 +8101,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0011394
+      "originalGenerationCostUsd": 0.0011394,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8100,7 +8196,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.005978
+      "originalGenerationCostUsd": 0.005978,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8175,7 +8272,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.012968
+      "originalGenerationCostUsd": 0.012968,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8257,7 +8355,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.002296
+      "originalGenerationCostUsd": 0.002296,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8339,7 +8438,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.013294
+      "originalGenerationCostUsd": 0.013294,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8433,7 +8533,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.004478
+      "originalGenerationCostUsd": 0.004478,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8518,7 +8619,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.009254
+      "originalGenerationCostUsd": 0.009254,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8593,7 +8695,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00285
+      "originalGenerationCostUsd": 0.00285,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8687,7 +8790,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00906
+      "originalGenerationCostUsd": 0.00906,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8781,7 +8885,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.002764
+      "originalGenerationCostUsd": 0.002764,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8856,7 +8961,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.008278
+      "originalGenerationCostUsd": 0.008278,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -8941,7 +9047,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.003314
+      "originalGenerationCostUsd": 0.003314,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -9029,7 +9136,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.008708
+      "originalGenerationCostUsd": 0.008708,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -9123,7 +9231,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.002774
+      "originalGenerationCostUsd": 0.002774,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -9202,7 +9311,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.013838
+      "originalGenerationCostUsd": 0.013838,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -9285,7 +9395,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.002414
+      "originalGenerationCostUsd": 0.002414,
+      "benchEligible": true
     },
     {
       "model": "Qwen Max",
@@ -9360,7 +9471,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.011246
+      "originalGenerationCostUsd": 0.011246,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9448,7 +9560,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00115764
+      "originalGenerationCostUsd": 0.00115764,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9542,7 +9655,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00448668
+      "originalGenerationCostUsd": 0.00448668,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9624,7 +9738,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00104016
+      "originalGenerationCostUsd": 0.00104016,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9696,7 +9811,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00448008
+      "originalGenerationCostUsd": 0.00448008,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9776,7 +9892,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00109824
+      "originalGenerationCostUsd": 0.00109824,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9851,7 +9968,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00452628
+      "originalGenerationCostUsd": 0.00452628,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -9939,7 +10057,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0014586
+      "originalGenerationCostUsd": 0.0014586,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10014,7 +10133,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00474012
+      "originalGenerationCostUsd": 0.00474012,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10099,7 +10219,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0010494
+      "originalGenerationCostUsd": 0.0010494,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10174,7 +10295,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00480612
+      "originalGenerationCostUsd": 0.00480612,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10249,7 +10371,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0010824
+      "originalGenerationCostUsd": 0.0010824,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10334,7 +10457,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00460548
+      "originalGenerationCostUsd": 0.00460548,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10423,7 +10547,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00093588
+      "originalGenerationCostUsd": 0.00093588,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10512,7 +10637,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00486684
+      "originalGenerationCostUsd": 0.00486684,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10599,7 +10725,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00120648
+      "originalGenerationCostUsd": 0.00120648,
+      "benchEligible": true
     },
     {
       "model": "DeepSeek Pro",
@@ -10678,7 +10805,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00489588
+      "originalGenerationCostUsd": 0.00489588,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -10780,7 +10908,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00506475
+      "originalGenerationCostUsd": 0.00506475,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -10865,7 +10994,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.015501
+      "originalGenerationCostUsd": 0.015501,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -10946,7 +11076,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0039546
+      "originalGenerationCostUsd": 0.0039546,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11014,7 +11145,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0146226
+      "originalGenerationCostUsd": 0.0146226,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11097,7 +11229,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0064176
+      "originalGenerationCostUsd": 0.0064176,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11169,7 +11302,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0159135
+      "originalGenerationCostUsd": 0.0159135,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11248,7 +11382,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.009507
+      "originalGenerationCostUsd": 0.009507,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11342,7 +11477,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0162372
+      "originalGenerationCostUsd": 0.0162372,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11453,7 +11589,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.007131
+      "originalGenerationCostUsd": 0.007131,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11528,7 +11665,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.013458
+      "originalGenerationCostUsd": 0.013458,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11626,7 +11764,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0051156
+      "originalGenerationCostUsd": 0.0051156,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11711,7 +11850,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0120852
+      "originalGenerationCostUsd": 0.0120852,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11826,7 +11966,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0096936
+      "originalGenerationCostUsd": 0.0096936,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -11915,7 +12056,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0165585
+      "originalGenerationCostUsd": 0.0165585,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -12017,7 +12159,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.009711
+      "originalGenerationCostUsd": 0.009711,
+      "benchEligible": true
     },
     {
       "model": "Kimi K3",
@@ -12110,7 +12253,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0136026
+      "originalGenerationCostUsd": 0.0136026,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12204,7 +12348,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00420894
+      "originalGenerationCostUsd": 0.00420894,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12283,7 +12428,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00268104
+      "originalGenerationCostUsd": 0.00268104,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12374,7 +12520,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00257148
+      "originalGenerationCostUsd": 0.00257148,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12446,7 +12593,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00311502
+      "originalGenerationCostUsd": 0.00311502,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12531,7 +12679,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00423864
+      "originalGenerationCostUsd": 0.00423864,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12622,7 +12771,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00402954
+      "originalGenerationCostUsd": 0.00402954,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12746,7 +12896,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00307044
+      "originalGenerationCostUsd": 0.00307044,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12825,7 +12976,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00492294
+      "originalGenerationCostUsd": 0.00492294,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12910,7 +13062,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00430524
+      "originalGenerationCostUsd": 0.00430524,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -12989,7 +13142,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00473214
+      "originalGenerationCostUsd": 0.00473214,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -13087,7 +13241,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00085824
+      "originalGenerationCostUsd": 0.00085824,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -13183,7 +13338,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0057549
+      "originalGenerationCostUsd": 0.0057549,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -13314,7 +13470,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00557484
+      "originalGenerationCostUsd": 0.00557484,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -13397,7 +13554,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00396414
+      "originalGenerationCostUsd": 0.00396414,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -13507,7 +13665,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00792594
+      "originalGenerationCostUsd": 0.00792594,
+      "benchEligible": true
     },
     {
       "model": "MiniMax",
@@ -13590,7 +13749,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00296628
+      "originalGenerationCostUsd": 0.00296628,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -13684,7 +13844,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00143148
+      "originalGenerationCostUsd": 0.00143148,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -13763,7 +13924,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00502288
+      "originalGenerationCostUsd": 0.00502288,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -13867,7 +14029,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00142768
+      "originalGenerationCostUsd": 0.00142768,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -13949,7 +14112,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00498388
+      "originalGenerationCostUsd": 0.00498388,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14017,7 +14181,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00185288
+      "originalGenerationCostUsd": 0.00185288,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14099,7 +14264,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00586228
+      "originalGenerationCostUsd": 0.00586228,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14179,7 +14345,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00174732
+      "originalGenerationCostUsd": 0.00174732,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14254,7 +14421,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00497808
+      "originalGenerationCostUsd": 0.00497808,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14339,7 +14507,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0019718
+      "originalGenerationCostUsd": 0.0019718,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14428,7 +14597,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00548628
+      "originalGenerationCostUsd": 0.00548628,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14522,7 +14692,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00192888
+      "originalGenerationCostUsd": 0.00192888,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14607,7 +14778,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00533434
+      "originalGenerationCostUsd": 0.00533434,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14742,7 +14914,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00222928
+      "originalGenerationCostUsd": 0.00222928,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14821,7 +14994,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00571508
+      "originalGenerationCostUsd": 0.00571508,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -14928,7 +15102,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00232966
+      "originalGenerationCostUsd": 0.00232966,
+      "benchEligible": true
     },
     {
       "model": "GLM 5.3",
@@ -15003,7 +15178,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00517208
+      "originalGenerationCostUsd": 0.00517208,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15078,7 +15254,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0016836
+      "originalGenerationCostUsd": 0.0016836,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15163,7 +15340,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0050556
+      "originalGenerationCostUsd": 0.0050556,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15231,7 +15409,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0017184
+      "originalGenerationCostUsd": 0.0017184,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15299,7 +15478,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0081792
+      "originalGenerationCostUsd": 0.0081792,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15382,7 +15562,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0034704
+      "originalGenerationCostUsd": 0.0034704,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15454,7 +15635,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0120444
+      "originalGenerationCostUsd": 0.0120444,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15543,7 +15725,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0021408
+      "originalGenerationCostUsd": 0.0021408,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15622,7 +15805,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0063264
+      "originalGenerationCostUsd": 0.0063264,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15697,7 +15881,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0016248
+      "originalGenerationCostUsd": 0.0016248,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15776,7 +15961,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.004644
+      "originalGenerationCostUsd": 0.004644,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15861,7 +16047,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.001692
+      "originalGenerationCostUsd": 0.001692,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -15936,7 +16123,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00483
+      "originalGenerationCostUsd": 0.00483,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -16032,7 +16220,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0036204
+      "originalGenerationCostUsd": 0.0036204,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -16111,7 +16300,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0072336
+      "originalGenerationCostUsd": 0.0072336,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -16213,7 +16403,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0022656
+      "originalGenerationCostUsd": 0.0022656,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16288,7 +16479,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.01062
+      "originalGenerationCostUsd": 0.01062,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16363,7 +16555,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0433675
+      "originalGenerationCostUsd": 0.0433675,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16431,7 +16624,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.00873
+      "originalGenerationCostUsd": 0.00873,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16499,7 +16693,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.041205
+      "originalGenerationCostUsd": 0.041205,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16567,7 +16762,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0162
+      "originalGenerationCostUsd": 0.0162,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16635,7 +16831,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.04718
+      "originalGenerationCostUsd": 0.04718,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16715,7 +16912,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0145
+      "originalGenerationCostUsd": 0.0145,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16790,7 +16988,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0450675
+      "originalGenerationCostUsd": 0.0450675,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16865,7 +17064,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.01148
+      "originalGenerationCostUsd": 0.01148,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -16940,7 +17140,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0428675
+      "originalGenerationCostUsd": 0.0428675,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -17025,7 +17226,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01422
+      "originalGenerationCostUsd": 0.01422,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -17100,7 +17302,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.044655
+      "originalGenerationCostUsd": 0.044655,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -17192,7 +17395,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01655
+      "originalGenerationCostUsd": 0.01655,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -17267,7 +17471,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.047205
+      "originalGenerationCostUsd": 0.047205,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -17377,7 +17582,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01974
+      "originalGenerationCostUsd": 0.01974,
+      "benchEligible": true
     },
     {
       "model": "Astra",
@@ -17452,7 +17658,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.0465925
+      "originalGenerationCostUsd": 0.0465925,
+      "benchEligible": true
     },
     {
       "model": "Grok",
@@ -17537,7 +17744,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0056988
+      "originalGenerationCostUsd": 0.0056988,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -17635,7 +17843,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01223
+      "originalGenerationCostUsd": 0.01223,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -17714,7 +17923,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.0329
+      "originalGenerationCostUsd": 0.0329,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -17801,7 +18011,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01063
+      "originalGenerationCostUsd": 0.01063,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -17873,7 +18084,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.03265
+      "originalGenerationCostUsd": 0.03265,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -17960,7 +18172,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.019595
+      "originalGenerationCostUsd": 0.019595,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18032,7 +18245,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.039915
+      "originalGenerationCostUsd": 0.039915,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18140,7 +18354,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01895
+      "originalGenerationCostUsd": 0.01895,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18215,7 +18430,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.037245
+      "originalGenerationCostUsd": 0.037245,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18323,7 +18539,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.020495
+      "originalGenerationCostUsd": 0.020495,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18398,7 +18615,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.03324
+      "originalGenerationCostUsd": 0.03324,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18478,7 +18696,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01761
+      "originalGenerationCostUsd": 0.01761,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18553,7 +18772,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.034505
+      "originalGenerationCostUsd": 0.034505,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18672,7 +18892,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.022225
+      "originalGenerationCostUsd": 0.022225,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18751,7 +18972,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.037845
+      "originalGenerationCostUsd": 0.037845,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18860,7 +19082,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.026345
+      "originalGenerationCostUsd": 0.026345,
+      "benchEligible": true
     },
     {
       "model": "Opus 5",
@@ -18946,7 +19169,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.039665
+      "originalGenerationCostUsd": 0.039665,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19049,7 +19273,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00746
+      "originalGenerationCostUsd": 0.00746,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19124,7 +19349,8 @@
       "contentReady": true,
       "styleGatePass": true,
       "readyWithoutEdits": true,
-      "originalGenerationCostUsd": 0.021645
+      "originalGenerationCostUsd": 0.021645,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19215,7 +19441,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.007145
+      "originalGenerationCostUsd": 0.007145,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19287,7 +19514,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.02148
+      "originalGenerationCostUsd": 0.02148,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19376,7 +19604,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01146
+      "originalGenerationCostUsd": 0.01146,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19451,7 +19680,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.02287
+      "originalGenerationCostUsd": 0.02287,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19543,7 +19773,8 @@
       "contentReady": true,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.009615
+      "originalGenerationCostUsd": 0.009615,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19622,7 +19853,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.022875
+      "originalGenerationCostUsd": 0.022875,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19711,7 +19943,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.009145
+      "originalGenerationCostUsd": 0.009145,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19790,7 +20023,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.022555
+      "originalGenerationCostUsd": 0.022555,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19872,7 +20106,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.00976
+      "originalGenerationCostUsd": 0.00976,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -19960,7 +20195,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.023645
+      "originalGenerationCostUsd": 0.023645,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -20078,7 +20314,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.009835
+      "originalGenerationCostUsd": 0.009835,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -20157,7 +20394,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.02282
+      "originalGenerationCostUsd": 0.02282,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -20270,7 +20508,8 @@
       "contentReady": false,
       "styleGatePass": false,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.01156
+      "originalGenerationCostUsd": 0.01156,
+      "benchEligible": true
     },
     {
       "model": "Opus 4.6",
@@ -20349,7 +20588,8 @@
       "contentReady": false,
       "styleGatePass": true,
       "readyWithoutEdits": false,
-      "originalGenerationCostUsd": 0.022445
+      "originalGenerationCostUsd": 0.022445,
+      "benchEligible": true
     },
     {
       "model": "Fable 5.1",

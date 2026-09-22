@@ -6,17 +6,19 @@ A small TypeScript benchmark for single-call English business writing. It target
 
 When Matthew posted on X that he needed a business slop bench for SOWs, proposals and slide decks, Dex Horthy (@dexhorthy) replied: "lemme save you some time on that one - if a model wrote it, probably slop. wordcels vindicated etc", quoting Pedram (@pdrmnvd): "pretty wild that the hardest job for even the most frontier models is not shape rotation but writing, wordcels absolutely vindicated."
 
-Probably true, and some are more slop than others. Across the 207 single-call uncapped drafts from 13 models, the reviewer confirmed 62 unsupported factual claims under the grounding criterion, from zero for Astra and Muse to 12 for Qwen Flash. Most are invented commitments: reply and delivery deadlines, readiness or completion claims, prior discussions, payment or scope terms, and ownership the source never assigned. That criterion, with the per-task commitments checks, is the harness around promises: every material claim must trace to the source pack or be labeled a proposal. It catches what no compiler can, but only as one reviewer's provisional judgment on one generation per cell.
+Probably true, and some are more slop than others. Across the 288 single-call uncapped drafts from 18 models, 93 drafts have a failed grounding check, from zero for Astra and Muse to 12 for Qwen Flash. These count drafts with findings, not individual claims; one draft can contain several unsupported claims. Most are invented commitments: reply and delivery deadlines, readiness or completion claims, prior discussions, payment or scope terms, and ownership the source never assigned. That criterion, with the per-task commitments checks, is the harness around promises: every material claim must trace to the source pack or be labeled a proposal. It catches what no compiler can, but only as one reviewer's provisional judgment on one generation per cell.
 
 Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
 
 Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Uncapped results: [Astra, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v32/REPORT.md). Fable 5 and Fable 5.1 appear in the same report marked non-ZDR and disqualified; their scores are shown for information only. This cohort is not pooled with earlier capped scores.
+Uncapped results: [Astra, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v32/REPORT.md). Muse, Fable 5 and Fable 5.1 appear in the same report marked non-ZDR and disqualified; their writing scores are shown for information only. Eligibility follows the saved catalog and request policy, not a separate audit of provider retention practices. This cohort is not pooled with earlier capped scores.
 
 [Rubric audit](reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
 
-Current collection uses `pilot-v19` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v19` audits saved outputs and verifies their inputs against the frozen task version.
+Current collection uses `pilot-v22` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v22` audits saved outputs and verifies their inputs against the frozen task version.
+
+The uncapped cohort covers 18 of 23 roster models: 288 of 368 planned primary drafts, plus eight separately tracked repeats. Sonnet 5, Sol, Terra, Gemini 3.1 Pro and MiMo remain uncollected in this cohort. The current spending ceiling is $100; the ledger conservatively accounts $26.76, including retained reservations, rather than only billed charges.
 
 ## Run
 
@@ -28,8 +30,8 @@ npm run check
 npm test
 npm run bench -- collect alibaba/qwen3.8-flash
 npm run bench -- collect moonshotai/kimi-k3
-npm run bench -- collect anthropic/claude-opus-5
-npx tsx src/draft-audit.ts pilot-v19
+zsh scripts/paced-collect.sh anthropic/claude-opus-5
+npx tsx src/draft-audit.ts pilot-v22
 ```
 
 The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. Default path: `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Set `BUSINESS_SLOP_ENV_FILE` to select another file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.

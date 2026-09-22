@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Current-report eligibility correction
+
+The latest cumulative builder defaulted missing `benchEligible` fields to true. Inherited Muse rows predated that field, so Muse appeared eligible despite its saved catalog listing no ZDR route. The builder now derives eligibility for every row from that row's saved catalog and frozen Gateway request policy, rejects unknown catalog coverage, and records the evidence. Muse joins Fable 5 and Fable 5.1 as disqualified for ZDR while retaining its writing scores. A semantic digest confirms every writing grade, finding, output hash and readiness result is unchanged. This validates the requested routing policy, not provider retention practices independently.
+
+Refreshed the README from current evidence: 288 primary uncapped drafts across 18 models, 93 drafts with failed grounding checks, five roster models still uncollected, pilot-v22, the $100 ceiling and $26.76 conservative ledger. The Anthropic example now uses the existing paced collector. No paid calls were made for this correction.
+
 ## Opus 5.5 uncapped, v22
 
 Opus 5.5 completed all 16 cells in pilot-v22 under the same seven-minute pacing with no rejections; the collection took 107 minutes and the ledger stands at $26.76 of $100. It scores 52/54 default and 51/54 house. The only default failure is a readiness claim for the knowledge-search pilot in the strategy deck; house repeats that and adds an on-track team claim in the launch update. Both vendor memos are unresolved on who signs. It is the only Anthropic model in this cohort that invents no reply deadline, start date or prior discussion, and its default change order and handoff deck are ready without edits. Content-ready counts are 4 of 8 default and 3 of 8 house, against 1 and 3 for Opus 5. Three default drafts and one house draft exceed their word limits, and three drafts refer to the source pack in the body. [assistant-v32](reviews/assistant-v32/REPORT.md).

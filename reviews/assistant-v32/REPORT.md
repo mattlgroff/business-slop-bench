@@ -6,8 +6,8 @@ Provisional assistant-authored grades, not human gold or independent benchmark v
 
 | Model | Condition | Completed briefs | Content checks | Failed | Unresolved | Content ready | Ready without edits | Generation cost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Muse | default | 8/8 | 53/54 | 1 | 0 | 7/8 | 4/8 | $0.03816 |
-| Muse | house | 8/8 | 53/54 | 1 | 0 | 7/8 | 5/8 | $0.05720 |
+| Muse (non-ZDR, disqualified) | default | 8/8 | 53/54 | 1 | 0 | 7/8 | 4/8 | $0.03816 |
+| Muse (non-ZDR, disqualified) | house | 8/8 | 53/54 | 1 | 0 | 7/8 | 5/8 | $0.05720 |
 | Gemini Flash | default | 8/8 | 51/54 | 2 | 1 | 5/8 | 0/8 | $0.01866 |
 | Gemini Flash | house | 8/8 | 50/54 | 3 | 1 | 4/8 | 3/8 | $0.02418 |
 | Luna | default | 8/8 | 51/54 | 2 | 1 | 5/8 | 2/8 | $0.00313 |
@@ -46,6 +46,8 @@ Provisional assistant-authored grades, not human gold or independent benchmark v
 Content checks overlap and are not independent trials. Unresolved checks receive no credit. Content ready requires every task check, the word limit and no authoring residue; ready without edits additionally requires the style gate and no supported editorial findings. Default style measures fit without the explicit house instructions.
 
 These samples use no harness output-token cap or generation deadline. They are not pooled with the earlier capped cohort. The same briefs, word limits and grading criteria apply. Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax, Grok and Astra are new uncapped generations on each attempted cell; the Grok house handoff deck comes from pilot-v21 after its pilot-v20 request timed out; Opus 5 is a pilot-v21 collection with one pilot-v20 import; Opus 4.6 is a full pilot-v21 collection; Fable 5.1 and Fable 5 are pilot-v21 collections with one pilot-v20 import each on a declared non-ZDR route; Opus 5.5 is a full pilot-v22 collection on a ZDR route; six Kimi K3 outputs and five MiniMax outputs are exact-input imports into pilot-v20, counted once. MiniMax now has full coverage; its earlier partial rows are replaced. The MiniMax cell that timed out in pilot-v18 was generated afresh in pilot-v20; the failed request retains its reservation.
+
+Eligibility is derived from each saved catalog and frozen request policy, including inherited rows. Muse, Fable 5 and Fable 5.1 are non-ZDR and disqualified; their writing scores remain visible. This is a routing-policy check, not independent verification of provider retention. [Eligibility evidence](eligibility-evidence.json) and [unchanged writing-score digest](eligibility-score-integrity.json).
 
 ## New review evidence
 

@@ -49,24 +49,39 @@ assert len(rows)==len(base['rows'])-replaced+len(decisions) and len(hashes)==len
 method=copy.deepcopy(base['method']);method['revision']='Adds Opus 5.5, released 2026-09-22, to the uncapped comparison from pilot-v22 (protocol 0.22.0, roster of 23 models) under the $100 ceiling, collected one call every seven minutes on a ZDR route. All earlier uncapped grades are retained; historical capped outputs remain separate.'
 method['exceptions']=['Provider-native limits still apply; catalog capacity is used only to reserve spending.','Prior capped outcomes and canceled requests are retained as execution evidence and excluded from this writing comparison.']
 method['cohort']='uncapped'
-method['zdrRule']='Since 2026-09-22 a model with no ZDR route fails the bench for business reasons. Rows with benchEligible false are shown for information and are never pooled with eligible models.'
+method['zdrRule']='Since 2026-09-22 a model with no ZDR route fails the bench for business reasons. Eligibility is derived for every row from its saved catalog and frozen request policy. Muse, Fable 5 and Fable 5.1 have no ZDR route and are shown for information only. This checks recorded routing requirements, not independent provider retention compliance.'
 for model,modelid in models:
  for task in tasks:
   for cond in ['default','house']:
    if (model,task['id'],cond) not in content:
     f=root/'runs/pilot-v22'/f"{modelid.replace('/','--')}--{task['id']}--{cond}.json"
     base['ungraded'].append({'model':model,'task':task['id'],'condition':cond,'status':'generation failed' if f.exists() else 'not generated'})
+# Derive eligibility for inherited rows too; missing metadata is not permission.
+eligibility_evidence={}
+for row in rows:
+ record_path=(root/row['path']).with_suffix('.json')
+ record=json.loads(record_path.read_text())
+ protocol=json.loads((record_path.parent/'protocol.json').read_text())
+ catalog=json.loads((record_path.parent/'catalog.json').read_text())['models']
+ catalog_model=next(m for m in catalog if m['id']==record['model'])
+ coverage=catalog_model.get('zdr')
+ assert coverage in ('all','some','none'),'Unknown ZDR coverage requires review'
+ policy=protocol['writerGatewayPolicy']
+ requested=policy['zeroDataRetentionDefault'] and record['model'] not in policy['nonZdrModels']
+ row['benchEligible']=coverage in ('all','some') and requested
+ eligibility_evidence[row['path']]={'catalog':str((record_path.parent/'catalog.json').relative_to(root)),'catalogZdr':coverage,'zdrRequested':requested,'benchEligible':row['benchEligible']}
+(out/'eligibility-evidence.json').write_text(json.dumps(eligibility_evidence,indent=2)+'\n')
 (out/'grades.json').write_text(json.dumps({'method':method,'rows':rows,'ungraded':base['ungraded']},indent=2)+'\n')
 summary=[]
 for model in ['Muse','Gemini Flash','Luna','Qwen Flash','Qwen Max','GLM Flash','GLM 5.3','DeepSeek Flash','DeepSeek Pro','Kimi K3','MiniMax','Grok','Astra','Opus 5','Opus 4.6','Fable 5.1','Fable 5','Opus 5.5']:
  for cond in ['default','house']:
   rs=[r for r in rows if r['model']==model and r['condition']==cond];c={v:sum(r['counts'][v] for r in rs) for v in ['pass','fail','review']}
-  summary.append({'model':model,'condition':cond,'completed':len(rs),'expected':8,**c,'total':sum(c.values()),'contentReady':sum(r['contentReady'] for r in rs),'readyWithoutEdits':sum(r['readyWithoutEdits'] for r in rs),'generationCostUsd':sum(r['originalGenerationCostUsd'] for r in rs),'benchEligible':all(r.get('benchEligible',True) for r in rs)})
+  summary.append({'model':model,'condition':cond,'completed':len(rs),'expected':8,**c,'total':sum(c.values()),'contentReady':sum(r['contentReady'] for r in rs),'readyWithoutEdits':sum(r['readyWithoutEdits'] for r in rs),'generationCostUsd':sum(r['originalGenerationCostUsd'] for r in rs),'benchEligible':bool(rs) and all(r['benchEligible'] for r in rs)})
 (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 lines=['# Uncapped comparison: Opus 5.5 added','',method['status']+'. Same eight corrected briefs and both conditions, one generation per cell. Model identities visible; no Jev calls.','', '## Uncapped results','', '| Model | Condition | Completed briefs | Content checks | Failed | Unresolved | Content ready | Ready without edits | Generation cost |','|---|---|---:|---:|---:|---:|---:|---:|---:|']
 for s in summary:
  if s['completed']:lines.append(f'| {s["model"]}{"" if s["benchEligible"] else " (non-ZDR, disqualified)"} | {s["condition"]} | {s["completed"]}/8 | {s["pass"]}/{s["total"]} | {s["fail"]} | {s["review"]} | {s["contentReady"]}/{s["completed"]} | {s["readyWithoutEdits"]}/{s["completed"]} | ${s["generationCostUsd"]:.5f} |')
-lines+=['','Content checks overlap and are not independent trials. Unresolved checks receive no credit. Content ready requires every task check, the word limit and no authoring residue; ready without edits additionally requires the style gate and no supported editorial findings. Default style measures fit without the explicit house instructions.','', 'These samples use no harness output-token cap or generation deadline. They are not pooled with the earlier capped cohort. The same briefs, word limits and grading criteria apply. Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax, Grok and Astra are new uncapped generations on each attempted cell; the Grok house handoff deck comes from pilot-v21 after its pilot-v20 request timed out; Opus 5 is a pilot-v21 collection with one pilot-v20 import; Opus 4.6 is a full pilot-v21 collection; Fable 5.1 and Fable 5 are pilot-v21 collections with one pilot-v20 import each on a declared non-ZDR route; Opus 5.5 is a full pilot-v22 collection on a ZDR route; six Kimi K3 outputs and five MiniMax outputs are exact-input imports into pilot-v20, counted once. MiniMax now has full coverage; its earlier partial rows are replaced. The MiniMax cell that timed out in pilot-v18 was generated afresh in pilot-v20; the failed request retains its reservation.','', '## New review evidence','']
+lines+=['','Content checks overlap and are not independent trials. Unresolved checks receive no credit. Content ready requires every task check, the word limit and no authoring residue; ready without edits additionally requires the style gate and no supported editorial findings. Default style measures fit without the explicit house instructions.','', 'These samples use no harness output-token cap or generation deadline. They are not pooled with the earlier capped cohort. The same briefs, word limits and grading criteria apply. Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax, Grok and Astra are new uncapped generations on each attempted cell; the Grok house handoff deck comes from pilot-v21 after its pilot-v20 request timed out; Opus 5 is a pilot-v21 collection with one pilot-v20 import; Opus 4.6 is a full pilot-v21 collection; Fable 5.1 and Fable 5 are pilot-v21 collections with one pilot-v20 import each on a declared non-ZDR route; Opus 5.5 is a full pilot-v22 collection on a ZDR route; six Kimi K3 outputs and five MiniMax outputs are exact-input imports into pilot-v20, counted once. MiniMax now has full coverage; its earlier partial rows are replaced. The MiniMax cell that timed out in pilot-v18 was generated afresh in pilot-v20; the failed request retains its reservation.','', 'Eligibility is derived from each saved catalog and frozen request policy, including inherited rows. Muse, Fable 5 and Fable 5.1 are non-ZDR and disqualified; their writing scores remain visible. This is a routing-policy check, not independent verification of provider retention. [Eligibility evidence](eligibility-evidence.json) and [unchanged writing-score digest](eligibility-score-integrity.json).','', '## New review evidence','']
 for r in rows[-len(decisions):]:
  lines+=['### '+r['model']+' / '+r['task']+' / '+r['condition'],'',f'[Draft](../../{r["path"]}): {r["counts"]["pass"]}/{len(r["grades"])} content checks, {r["words"]}/{r["maxWords"]} words, {len(r["emDashes"])} em dashes.','']
  fs=[(g['id']+' '+g['verdict'],g['reason'],g['evidence']) for g in r['grades'] if g['verdict']!='pass']+[('Style '+g['category'],g['reason'],g['evidence']) for g in r['editorialFindings']]
