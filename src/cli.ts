@@ -3,13 +3,13 @@ import { readFileSync, existsSync, mkdirSync, openSync, closeSync, unlinkSync, r
 import { resolve } from 'node:path';
 import { parseEnv } from 'node:util';
 import { fileURLToPath } from 'node:url';
-import { Budget, MAX_OUTPUT_TOKENS, atomic, hash, prompt, rates, selectTasks, selectConditions, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
+import { Budget, catalogOutputReservation, writerInput, atomic, hash, prompt, rates, selectTasks, selectConditions, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
 import { securityInstructions, securityCriteria, requirementVerdict } from './requirements.js';
 import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v16';
+const runName = 'pilot-v18';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -25,12 +25,12 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.16.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.18.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
   threshold: { fit: 'midpoint between min positive and max negative development score; exclude empty controls', abstentionHalfWidth: 0.05, between: 'review' },
-  limits: { totalUsd: 20, maxOutputTokens: MAX_OUTPUT_TOKENS, maxRetries: 0, timeoutMs: 90000 },
+  limits: { totalUsd: 20, maxOutputTokens: null, outputReservation: 'catalog maximum, not sent to provider', maxRetries: 0, timeoutMs: null },
   conditions: ['default', 'house'], judge: 'typesafe-ai/jev', labelStatus: 'author-proposed controls; human validation pending',
 };
 const protocolHash = hash(protocol);
@@ -72,12 +72,12 @@ function errorInfo(e: any) {
   const headers = e.cause?.responseHeaders ?? {};
   return { name: e.name, statusCode: e.statusCode, message: String(e.message).replaceAll(key || 'UNMATCHABLE_KEY', '[REDACTED]').slice(0, 1800), generationId: e.generationId, retryAfter: headers['retry-after'], requestId: headers['x-request-id'] ?? headers['x-vercel-id'] };
 }
-async function paid(id: string, model: string, state: unknown, outputLimit: number, fn: () => Promise<any>) {
+async function paid(id: string, model: string, state: unknown, outputReservation: number, fn: () => Promise<any>) {
   if (existsSync(file(id))) return read(`runs/${runName}/` + id + '.json');
   const rate = rates(catalog.find(x => x.id === model));
   // UTF-8 byte count is deliberately conservative for text tokens; extra space covers transport framing.
   const inputBound = Buffer.byteLength(JSON.stringify(state), 'utf8') + 8192;
-  const reserve = inputBound * rate.input + outputLimit * rate.output + 0.01;
+  const reserve = inputBound * rate.input + outputReservation * rate.output + 0.01;
   const budgetId = runName + '::' + id;
   budget.reserve(budgetId, model, reserve);
   const start = Date.now();
@@ -201,10 +201,11 @@ async function calibrate() {
 }
 async function generateOne(model: Model, task: Task, condition: Condition) {
   const id = `${safeId(model.id)}--${task.id}--${condition}`;
-  const input = prompt(task, condition, source);
-  const result = await paid(id, model.id, { prompt: input, reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS }, MAX_OUTPUT_TOKENS, () => generateText({
-    model: model.id, prompt: input, reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS,
-    maxRetries: 0, abortSignal: AbortSignal.timeout(90000),
+  const input = writerInput(task, condition, source, model.reasoning);
+  const outputReservation = catalogOutputReservation(catalog.find(m => m.id === model.id));
+  const result = await paid(id, model.id, input, outputReservation, () => generateText({
+    model: model.id, ...input,
+    maxRetries: 0,
     providerOptions: { gateway: { zeroDataRetention: !protocol.writerGatewayPolicy.nonZdrModels.includes(model.id) } },
   }));
   if (result.status !== 'ok') throw new Error('Stored generation error requires inspection');
@@ -251,7 +252,7 @@ try {
         const model = models.find(m => m.id === modelId)!;
         const id = `${safeId(modelId)}--${tasks[0].id}--${condition}`;
         const old = read(`runs/pilot-v4/${id}.json`);
-        const input = { prompt: prompt(tasks[0], condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
+        const input = writerInput(tasks[0], condition, source, model.reasoning);
         if (old.status !== 'ok' || old.inputHash !== hash(input)) throw new Error('Saved generation does not match current writer input');
         atomic(file(id), { ...old, protocolHash, importedFrom: `pilot-v4/${id}.json`, originalProtocolHash: old.protocolHash });
         writeFileSync(resolve(runDir, id + '.md'), old.text);
@@ -268,7 +269,7 @@ try {
       for (const model of selected) for (const task of tasks) for (const condition of ['default', 'house'] as const) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
         const old = read(`runs/pilot-v8/${id}.json`);
-        const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
+        const input = writerInput(task, condition, source, model.reasoning);
         if (old.status !== 'ok' || old.inputHash !== hash(input)) throw new Error('Saved generation does not match current writer input');
         atomic(file(id), { ...old, protocolHash, importedFrom: `pilot-v8/${id}.json`, originalProtocolHash: old.originalProtocolHash ?? old.protocolHash });
         writeFileSync(resolve(runDir, id + '.md'), old.text);
@@ -286,8 +287,8 @@ try {
       // Reuse only exact writer inputs; changed briefs get new generations.
       for (const task of selectedTasks) for (const condition of selectedConditions) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
-        const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
-        for (const priorRun of ['pilot-v15', 'pilot-v14', 'pilot-v13', 'pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
+        const input = writerInput(task, condition, source, model.reasoning);
+        for (const priorRun of ['pilot-v17', 'pilot-v16', 'pilot-v15', 'pilot-v14', 'pilot-v13', 'pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
           if (existsSync(file(id))) break;
           const priorPath = resolve(root, 'runs', priorRun, id + '.json');
           if (!existsSync(priorPath)) continue;

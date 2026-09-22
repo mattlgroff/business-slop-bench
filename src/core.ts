@@ -2,7 +2,6 @@ import { createHash } from 'node:crypto';
 import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 
 export const LIMIT_USD = 20;
-export const MAX_OUTPUT_TOKENS = 4096;
 export type Condition = 'default' | 'house';
 export function selectConditions(condition?: string): Condition[] {
   if (condition === undefined) return ['default', 'house'];
@@ -130,4 +129,19 @@ export function rates(model: any) {
   visit(model.pricing);
   if (!inputs.length || !outputs.length) throw new Error(`Missing pricing: ${model.id}`);
   return { input: Math.max(...inputs) * multiplier, output: Math.max(...outputs) * multiplier };
+}
+
+// The catalog ceiling reserves dollars; it is never a generation parameter.
+export function catalogOutputReservation(model: { max_tokens?: number }): number {
+  if (!Number.isSafeInteger(model.max_tokens) || model.max_tokens! <= 0) {
+    throw new Error('Missing valid catalog output maximum; cannot bound spending before an uncapped request');
+  }
+  return model.max_tokens!;
+}
+
+export function writerInput(task: Task, condition: Condition, source: string, reasoning: Model['reasoning'], historicalOutputLimit?: number) {
+  return {
+    prompt: prompt(task, condition, source), reasoning,
+    ...(historicalOutputLimit === undefined ? {} : { maxOutputTokens: historicalOutputLimit }),
+  };
 }

@@ -4,9 +4,9 @@ A small TypeScript benchmark for single-call English business writing. It target
 
 Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
 
-Current results: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Current collection uses `pilot-v16` and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v16` audits saved outputs and verifies their inputs against the frozen task version.
+Current collection uses `pilot-v18` with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v18` audits saved outputs and verifies their inputs against the frozen task version.
 
 ## Run
 
@@ -19,7 +19,7 @@ npm test
 npm run bench -- collect alibaba/qwen3.8-flash
 npm run bench -- collect moonshotai/kimi-k3
 npm run bench -- collect anthropic/claude-opus-5
-npx tsx src/draft-audit.ts pilot-v16
+npx tsx src/draft-audit.ts pilot-v18
 ```
 
 The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. Default path: `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Set `BUSINESS_SLOP_ENV_FILE` to select another file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.
@@ -30,7 +30,7 @@ The historical `pilot` command attempted the full 352-output screen, cheapest ou
 
 The protocol hashes the task set, model settings, rubric source, control set, grader categories and runner code. The first paid command snapshots the catalog. Changes invalidate that run instead of mixing results. Source prompts, response text, token usage, warnings, provider routing, generation IDs, timing and every Jev answer are retained in `runs/pilot-v4/`. Interrupted completed generations are reused for grading; paid requests are never automatically retried. A filesystem lock prevents concurrent CLI processes from competing for the same budget.
 
-Each model uses `low` reasoning except DeepSeek (`none`, since its catalog does not expose `low`). This is a declared economical configuration comparison, not a claim of equal compute. Sampling defaults remain provider-specific. The 4,096-token response cap includes the model's output budget; cap hits and empty responses stop expansion for inspection.
+Each model uses `low` reasoning except DeepSeek (`none`, since its catalog does not expose `low`). This is a declared economical configuration comparison, not a claim of equal compute. Sampling defaults remain provider-specific. Writer requests omit `maxOutputTokens` and the harness generation deadline. Provider-native limits and timeouts still apply. Runs v1-v16 used a 4,096-token cap; those results remain a separate historical cohort. Empty or truncated responses stop expansion and count as incomplete generations, not finished writing samples. Task word limits remain editorial requirements in the briefs.
 
 Default and house conditions share the same source pack and task wording. Only the house condition receives the source style guide. Both are graded against the same style rules, but only the house condition tests explicit compliance. Every brief defines the whitespace word-count convention.
 
@@ -61,9 +61,9 @@ The full source taxonomy is also visible to the writer in the house condition. T
 
 ## Cost controls
 
-The cumulative ceiling is $20 across all run versions, including calibration and generation. The shared ledger is runs/budget.json. Diagnostic v1, v2 and v3 results and source snapshots are retained separately; the corrected comparison is v4. Before dispatch, the ledger reserves a conservative bound using UTF-8 prompt bytes plus framing allowance, the response token cap, and the highest listed input/output rate across regional, premium and long-context tiers, including peak multipliers, plus a $0.01 per-call surcharge allowance. SDK retries are zero; no cross-model fallbacks are configured. Full grading is split into fixed batches of 16 questions after large requests returned HTTP 503 while smaller probes succeeded. Three workers share one synchronous reservation ledger; a failure stops new jobs and lets in-flight calls settle. Same-model Gateway provider routing remains visible in saved metadata.
+The cumulative ceiling is $20 across all run versions, including calibration and generation. The shared ledger is runs/budget.json. Diagnostic v1, v2 and v3 results and source snapshots are retained separately; the corrected comparison is v4. Before dispatch, the ledger reserves a conservative bound using UTF-8 prompt bytes plus framing allowance, the model catalog's advertised maximum output capacity, and the highest listed input/output rate across regional, premium and long-context tiers, including peak multipliers, plus a $0.01 per-call surcharge allowance. The catalog output ceiling reserves dollars only and is never sent as a generation limit. If that worst-case reservation exceeds the remaining budget, the request does not run. SDK retries are zero; no cross-model fallbacks are configured. Full grading is split into fixed batches of 16 questions after large requests returned HTTP 503 while smaller probes succeeded. Three workers share one synchronous reservation ledger; a failure stops new jobs and lets in-flight calls settle. Same-model Gateway provider routing remains visible in saved metadata.
 
-After success the reservation is settled using reported token counts at the conservative rates. When available, Gateway response metadata supplies the total billed cost including surcharges, with generation lookup as a fallback. Optional reporting tags are disabled because they incurred a surcharge in the first smoke test. An unknown or failed call retains its full reservation. Thus accounted cost may exceed actual billing, especially during promotions. A bound violation stops the process. This is an application spending guard based on catalog pricing and provider adherence to token limits, not an independent Gateway account-wide billing limit.
+After success the reservation is settled using reported token counts at the conservative rates. When available, Gateway response metadata supplies the total billed cost including surcharges, with generation lookup as a fallback. Optional reporting tags are disabled because they incurred a surcharge in the first smoke test. An unknown or failed call retains its full reservation. Thus accounted cost may exceed actual billing, especially during promotions. A bound violation stops the process. This is an application spending guard based on catalog pricing and provider adherence to its advertised output capacity, not an independent Gateway account-wide billing limit.
 
 Do not delete or reset the ledger to resume spending. It includes every attempt, including unsuccessful ones. The report distinguishes missing results from completed tasks. No paid calls occur during `report`, `check`, or `test`.
 
@@ -91,3 +91,15 @@ npm run bench -- collect deepseek/deepseek-v4.1-flash vendor-decision-memo defau
 ```
 
 The brief and condition arguments are optional. Omit the condition to collect both conditions for that brief. Unknown brief IDs and conditions fail rather than expanding the run. Existing exact-match outputs are reused.
+
+## Output-policy cohorts
+
+The uncapped writer-input hash omits the old output-limit field, so capped outputs cannot be silently imported into the new cohort. Report coverage separately:
+
+```sh
+python3 scripts/coverage.py --cohort legacy-capped
+python3 scripts/coverage.py --cohort uncapped
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+Coverage separates complete drafts, incomplete generations, API failures and unattempted cells. Draft audits recognize reviews of identical imported artifacts only when model/task/condition identity, text hash and writer-input hash match. Imported copies remain excluded from new generation spending.

@@ -1,5 +1,17 @@
 # Grader improvement log
 
+## Uncapped writer requests and accurate execution coverage, v17-v18
+
+The user explicitly removed output-token limits. Writer requests now omit `maxOutputTokens`. The model catalog's advertised maximum output capacity is used only to reserve dollars against the existing $20 ceiling; it is never passed as a generation parameter. Historical request hashes remain reconstructible for auditing. Removing the token-limit field changes current request hashes, so old capped outputs cannot be silently imported into the uncapped cohort.
+
+The initial MiniMax M3 request in v16 used all 4,096 output tokens for reasoning, returned no text, and ended with `length`. Its reported charge was $0.00498054. An uncapped v17 retry reached the old 90-second harness deadline. The writer deadline was then removed in v18 as well. The canceled request retains its $0.6271438 reservation. Provider-native limits and timeouts still apply. These execution outcomes are not writing-quality scores.
+
+Both v18 pilot emails returned complete drafts. The full MiniMax collection is continuing without harness token or generation-time limits. Review work is in progress and will be reported separately from the historical capped comparisons. The v16 and v17 source snapshots and all request records are preserved.
+
+Fixed two audit problems exposed during this work. An identical imported draft now matches its existing review across run directories only when model/task/condition identity, text hash and writer-input hash match. The v15 audit consequently recognizes all 85 stored complete drafts as reviewed, including its two imported copies, without adding new charges or independent samples. Coverage and draft audits now separate empty or length-truncated API successes from complete drafts while retaining their reported costs. Coverage reports take `--cohort legacy-capped` or `--cohort uncapped`; conflicting completed samples still require an explicit selection policy.
+
+TypeScript checking, 17 TypeScript tests and one Python coverage test pass. New regression checks cover imported-review identity, altered text and inputs, empty and clipped outputs, conflicting samples, cap omission, valid catalog reservations and reproduction of historical input hashes. No Jev calls were made. The writing benchmark and repeatability study remain unfinished.
+
 ## Muse comparison and bounded Fable expansion, v15-v16
 
 Fable 5.1 returned one new house-style launch email, then 429 errors on the default launch and vendor memo requests. The second failure followed a cooldown. The generic No access to this model at this time message does not distinguish capacity from account access. Further Fable requests stopped; both full reservations remain accounted. The successful draft passes 5/6 content checks, is 174/180 words with no em dashes, and invents build readiness plus a reply deadline. Its reported charge was $0.06312. [Fable review](reviews/assistant-v12/REPORT.md) preserves the three available drafts without presenting a full model ranking.

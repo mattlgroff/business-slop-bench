@@ -2,3 +2,4 @@ node_modules/
 runs/
 .env*
 *.tsbuildinfo
+__pycache__/
