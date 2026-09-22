@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Kimi K3 added to the v8 screen
+
+Completed the user-requested Kimi K3 run: sixteen successful generations, the same eight briefs and two conditions, no retries or agent loop. Actual generation cost was $0.168232. Conservative cumulative budget accounting is $2.3122 of $20. The collection process exited successfully and released its lock.
+
+[Editorial observations and mechanical comparison](KIMI_SCREEN.md) show useful default proposal drafts, unsupported assertions in other outputs, and one house-style word-limit failure. Both models avoided em dashes in all house-style samples. The AI strategy brief has an ambiguity between next quarter and this quarter that should be corrected in a new frozen version before scoring temporal consistency. No current prompt or output was rewritten. New Jev grading is still pending.
+
 ## Eight-brief Qwen collection, v8
 
 Collected both conditions for all eight tasks with Qwen Flash. Fourteen new writer calls completed successfully, and the two first-brief drafts were reused only after matching their input hashes. No API retries were needed. Successful new generation charges total $0.009630; conservative cumulative accounting is $2.0545 of $20.

@@ -12,7 +12,6 @@ This is an assistant editorial read of one draft per condition and brief. The re
 | Pilot results | Clear no-scale recommendation; later says failure to meet the quality threshold would mean failure on both speed and quality, which does not follow. | Concise and actionable; promises random allocation in the follow-up although the source only says matched-ticket. |
 | Discovery proposal | Clear offer, but offers email approval as an alternative to signature while subsequently requiring signature. The approval path is inconsistent. | Concise offer, but confuses engagement approval with acceptance of delivered artifacts. |
 | Change order | Explains price and dependencies, but contains unfilled date/author placeholders and adds testing/handover detail that needs scope review. | The strongest proposal in this read: concise, correct fee, explicit approval and credential conditions, and a clear approve/decline action. |
-
 | AI strategy slides | Useful option comparison and correct budget arithmetic; describes knowledge search as low risk without supplied risk evidence. | Omits a specific recommendation and assigns results reporting to the COO instead of Dana. |
 | Handoff slides | Makes the blocker, owner gap and next decision clear; adds unsupported certainty that no further criteria exist. | Clear readiness and responsibility structure; invents Lee as runbook owner in its summary table. |
 
