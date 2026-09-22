@@ -1,0 +1,188 @@
+[
+  {
+    "file": "anthropic--claude-sonnet-5--pilot-client-email--default.md",
+    "words": 198,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 314,
+        "line": 5,
+        "text": "—"
+      },
+      {
+        "offset": 720,
+        "line": 9,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--pilot-client-email--house.md",
+    "words": 167,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--launch-delay-email--default.md",
+    "words": 172,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 474,
+        "line": 11,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 1,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "claudisms",
+        "offset": 463,
+        "line": 11,
+        "text": "One caveat"
+      }
+    ]
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--launch-delay-email--house.md",
+    "words": 133,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 1,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--vendor-decision-memo--default.md",
+    "words": 300,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 1153,
+        "line": 30,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 1,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--vendor-decision-memo--house.md",
+    "words": 189,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--pilot-results-memo--default.md",
+    "words": 285,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 394,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 1005,
+        "line": 12,
+        "text": "—"
+      },
+      {
+        "offset": 1063,
+        "line": 12,
+        "text": "—"
+      },
+      {
+        "offset": 1455,
+        "line": 15,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--pilot-results-memo--house.md",
+    "words": 199,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 474,
+        "line": 7,
+        "text": "rather than "
+      }
+    ]
+  }
+]

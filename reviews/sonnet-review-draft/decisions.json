@@ -132,6 +132,21 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--pilot-results-memo--default.md",
       "outputSha256": "53c37ad82df8f479a37cc8bc20d7b6f58bc0f434f25e026ca8a35381ae5e3ad5"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "content": [],
+      "style": [
+        [
+          "10",
+          "Until quality clears the threshold on a matched sample, scaling is not supported by the current data.",
+          "The closing sentence repeats the no-scale recommendation and quality gate already stated above, after the next decision and owner have been identified."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--pilot-results-memo--house.md",
+      "outputSha256": "a4e4aabfbf73f131f3f91e229835aaff299a36b8972cd1d6d01904957c4a0614"
     }
   ]
 }
