@@ -1,0 +1,35 @@
+[
+  {
+    "model": "anthropic/claude-opus-5",
+    "returnedModel": "anthropic/claude-opus-5",
+    "canonicalSlug": "anthropic/claude-opus-5",
+    "provider": "vertexAnthropic",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "words": 197,
+    "billingUsd": 0.032225,
+    "generationId": "gen_01M34KPCFFXSQ65233P67XMP9F"
+  },
+  {
+    "model": "anthropic/claude-opus-4.6",
+    "returnedModel": "anthropic/claude-opus-4.6",
+    "canonicalSlug": "anthropic/claude-opus-4.6",
+    "provider": "anthropic",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "words": 178,
+    "billingUsd": 0.00796,
+    "generationId": "gen_01M34KR3EXQ8HHHTT9X846XN23"
+  },
+  {
+    "model": "anthropic/claude-opus-4.6",
+    "returnedModel": "anthropic/claude-opus-4.6",
+    "canonicalSlug": "anthropic/claude-opus-4.6",
+    "provider": "anthropic",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "words": 164,
+    "billingUsd": 0.02157,
+    "generationId": "gen_01M34KRBC47T277MA2PMJS7K72"
+  }
+]

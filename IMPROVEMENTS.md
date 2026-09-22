@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Explicit Opus 5 retry and separate Opus 4.6 addition, v14-v15
+
+The user-requested retry of `anthropic/claude-opus-5` succeeded for the previously failed house-style launch email. Requested ID, returned model ID and Gateway canonical slug all match Opus 5; the successful provider was vertexAnthropic. The output has 197 words against the 180-word limit and invents a history of early warnings from Nia's team. Its successful generation charge was $0.032225.
+
+Verified the live catalog entry for `anthropic/claude-opus-4.6` and added it as a distinct requested model, increasing the roster to 22 and the full target to 352 outputs. Both initial-email conditions succeeded through the anthropic provider, with exact 4.6 identity verified in responses. Default is 178 words and misses explicit granted security approval before data access; it also invents prior discussions and delay costs. House is 164 words, explicitly requires clearance, and has an unresolved implication of actual improvement. Its two generation charges total $0.02953.
+
+[Assistant review and identity receipts](reviews/assistant-v7/REPORT.md) preserve the samples separately. No 4.6 output was substituted for Opus 5. Earlier failures retain their reservations; their root cause remains unproven by the generic 429 message. All three new calls succeeded without SDK retries. There are now 81 reviewed drafts. Conservative cumulative accounting is $8.2264 of $20.
+
+Fourteen tests and TypeScript checking pass. Both temporary collection sessions exited and the global lock is absent. Broader Opus coverage and the remaining model comparison are unfinished.
+
 ## Mechanical quarter-placeholder regression, v14
 
 The deterministic scanner now detects `Q[next]` in slide headings, preserving its exact offset and line. The rule is scoped to slide headings and excludes an explicitly backticked inline-code token. It does not treat ordinary bracket notation in prose or intentional signature/date fields as unfinished authoring.
