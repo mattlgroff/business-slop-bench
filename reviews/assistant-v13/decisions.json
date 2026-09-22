@@ -1,0 +1,155 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "The client hopes for 20% shorter handling time.",
+        "Refers to the client in the third person inside an email addressed directly to that client."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "16",
+        "You choose whether to accept the staging demo.",
+        "Repeats the later direct request to confirm the demo decision; removing it loses no information."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "Subject: Year-one vendor selection",
+        "Duplicates the memo title exactly in a short document."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Baseline: 200 tickets, 15 minutes mean handling time.\nPilot: 100 tickets, 12 minutes mean handling time.",
+        "Gives both endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Results support continued evaluation, not scaling. Lower mean handling time in pilot cannot support scaling due to differing mix and non-randomized allocation, quality is below threshold, and no savings measured.",
+        "Repeats the recommendation and all three limitations already explained in the preceding sections."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time was 15 minutes at baseline on 200 tickets and 12 minutes in the pilot on 100 tickets.",
+        "Gives both endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This proposal requests approval for four weeks of discovery.",
+        "Announces what the proposal requests instead of directly asking the sponsor to approve it."
+      ]
+    ]
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Criterion 1: Approved runbook - Met. Runbook is approved.",
+        "The second slide repeats both criterion statuses and the acceptance gate already given on slide one; this line also repeats itself."
+      ]
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "C03",
+        "fail",
+        "Sponsor Pat can assign responsibility for the rehearsal. The committee should name the owner and set the date.",
+        "States Pat's authority but directs the committee to name the owner, rather than requesting Pat to assign the rehearsal organizer as required."
+      ]
+    ],
+    "style": []
+  }
+]

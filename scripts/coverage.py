@@ -6,7 +6,7 @@ models=json.loads((root/'data/models.json').read_text())
 tasks=json.loads((root/'data/tasks-v2.json').read_text())
 task_hash=hashlib.sha256(json.dumps(tasks,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
 runs=[]
-for name in ['pilot-v10','pilot-v11','pilot-v12','pilot-v13','pilot-v14','pilot-v15']:
+for name in ['pilot-v10','pilot-v11','pilot-v12','pilot-v13','pilot-v14','pilot-v15','pilot-v16']:
  p=root/'runs'/name
  if (p/'protocol.json').exists():
   protocol=json.loads((p/'protocol.json').read_text())

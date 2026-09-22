@@ -1,5 +1,17 @@
 # Grader improvement log
 
+## Muse comparison and bounded Fable expansion, v15-v16
+
+Fable 5.1 returned one new house-style launch email, then 429 errors on the default launch and vendor memo requests. The second failure followed a cooldown. The generic No access to this model at this time message does not distinguish capacity from account access. Further Fable requests stopped; both full reservations remain accounted. The successful draft passes 5/6 content checks, is 174/180 words with no em dashes, and invents build readiness plus a reply deadline. Its reported charge was $0.06312. [Fable review](reviews/assistant-v12/REPORT.md) preserves the three available drafts without presenting a full model ranking.
+
+Muse initially returned 400 because no ZDR provider was available. Verified the live catalog, which lists `zdr: none` and `no_training: none`, and the current [Gateway ZDR documentation](https://vercel.com/docs/ai-gateway/security-and-compliance/zdr). Added only `meta/muse-spark-1.3` to the existing explicit non-ZDR exceptions for synthetic benchmark inputs. Preserved the v15 source snapshot and failed request, then froze v16 with unchanged prompts, tasks and model settings. Coverage includes v16 and successful exact-input imports can reuse v15 outputs. No failure reservation was refunded.
+
+All 16 Muse calls succeeded with matching requested, returned and canonical model identities, stop finish reasons, no warnings and no retries. Every draft fits the word limit and none contains an em dash. Default passes 53/54 content checks; house passes 52/54. Content-ready counts are 7/8 and 6/8, while ready-without-edits counts are 4/8 in both conditions. Both readouts omit the required explicit reduction calculation. House handoff directs the committee to name the organizer instead of requesting Pat to assign that responsibility. Remaining editorial findings concern repetition, a redundant title and audience phrasing. [Muse comparison and evidence](reviews/assistant-v13/REPORT.md).
+
+Muse generation charges total $0.1193425. Conservative cumulative accounting is $10.523297 of $20. There are now 178 reviewed drafts across 14 attempted models. Grades remain provisional, unblinded assistant judgments; these samples do not establish run-to-run reliability or an independent ranking.
+
+TypeScript checking and all 14 existing tests pass. Review builders verify complete new-output coverage, frozen hashes, exact evidence quotations and model identities. Draft audits and coverage were refreshed. Every collection session is terminal and the global lock is absent. Broader model coverage and repeatability validation remain unfinished.
+
 ## Qwen Max compared with Qwen Flash, v15
 
 Collected and directly reviewed all 16 drafts for `alibaba/qwen3.8-max-0902` using the unchanged eight briefs and settings. Requested, returned and canonical model identities match. All calls stopped normally with no warnings or retries, and all drafts meet the word limits. There are now 161 reviewed drafts across 13 attempted models.

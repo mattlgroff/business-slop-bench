@@ -1,0 +1,15 @@
+[
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The build itself is ready; the remaining work is Nia's review.",
+        "Invents build readiness and characterizes the review as the only remaining work. The source allows remediation. The end-of-week response deadline is also unsupported."
+      ]
+    ],
+    "style": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "meta--muse-spark-1.3--pilot-client-email--default": "743467d8d3566fe91f000857ba5e0cde42a047c5fe6369d799ce73c27942b32b",
+  "meta--muse-spark-1.3--pilot-client-email--house": "a0e4fb538d450514b9f9cc8b628e30479144dfda2605184f01301b1a1f0712bc",
+  "meta--muse-spark-1.3--launch-delay-email--default": "803268344296ea2e8de37dd17c7542453003dfdeedeada037af2472126cc2473",
+  "meta--muse-spark-1.3--launch-delay-email--house": "a8c03498979b27b0d15345e52c3a04ec2348e1365b0fc726201a22f55a62c8d6",
+  "meta--muse-spark-1.3--vendor-decision-memo--default": "c37ce1d96ba2e6a3ddfdb6fb0159b1baae809db424cfdaca0cd389a1e8cf9daa",
+  "meta--muse-spark-1.3--vendor-decision-memo--house": "38b3a7fb42e74396657fe475c4b468e10c61d5c970556de0b699b8e91bfb5feb",
+  "meta--muse-spark-1.3--pilot-results-memo--default": "0dcc4f0237f4a11f8ceb5077b68a9557791cd11460f5948c4d521c4bef5f9f9d",
+  "meta--muse-spark-1.3--pilot-results-memo--house": "ff6d73d729bb034841eaa46f482731161e0883b0ac5d0d36705e6f588f6eb3f3",
+  "meta--muse-spark-1.3--discovery-proposal--default": "40984c7271c11336cc0950cc62910ba3730da73da738efd64d1e8a801474b257",
+  "meta--muse-spark-1.3--discovery-proposal--house": "e9c1eebc69e3c7aa70dc7d185dd008700f7bfbe9ddc945e02ee86ed55ef09e80",
+  "meta--muse-spark-1.3--change-order--default": "6fd7f1cc0c41e61499305413627515ec7f03c0a301c476d25022186512f73b7e",
+  "meta--muse-spark-1.3--change-order--house": "8ae094f5b9ed874d828777e480a597ce5bef7f4161b984eba3d0a6b96a06c814",
+  "meta--muse-spark-1.3--ai-strategy-slides--default": "210941ca5aa60fad25b15380109a565579df08b2672c3f3cba889ff55d9ecbb3",
+  "meta--muse-spark-1.3--ai-strategy-slides--house": "b0b91b08d2a38d8b17be9bb18e934efbcc375e7630640a15ff369a993796e8fd",
+  "meta--muse-spark-1.3--handoff-slides--default": "f20f17301e54f717eb3ef5311df69e6a69d6a85822390b1b8134296e64eeef35",
+  "meta--muse-spark-1.3--handoff-slides--house": "6afee3759a1503c0a63b96a159f9cf99033056d2e396727ec6be970a914470b3"
+}
