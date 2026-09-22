@@ -1,0 +1,18 @@
+{
+  "moonshotai--kimi-k3--pilot-client-email--default": "71a78444ec4d8c05b74acdf5253e70d9e2ddb6a45d5848dcff364b286396a871",
+  "moonshotai--kimi-k3--pilot-client-email--house": "f1ec00a3eb173507fc1145c928b3cf78279c176eeb56c35ad3196655cac2b13f",
+  "moonshotai--kimi-k3--launch-delay-email--default": "3b93afbb36f084e9625ed088d9cfd5365737e874840010728f7c99ddf3e7d7b0",
+  "moonshotai--kimi-k3--launch-delay-email--house": "cc48478dcb080e0ada167d3aadb984492e2efcaf900025452d7413b023e87348",
+  "moonshotai--kimi-k3--vendor-decision-memo--default": "7e4e34277d85005c32f0ea3853bab4fa3a737ef8c9ed15b375e6ddeca991c8eb",
+  "moonshotai--kimi-k3--vendor-decision-memo--house": "5ec42232c2c2a46717c6aa077d4b677637ab553e04de74afa64ce46851db857c",
+  "moonshotai--kimi-k3--pilot-results-memo--default": "ef440a4354ea9d2db9f2567d2a84a40cd3a607c9a07a00794698bac0c620a2b5",
+  "moonshotai--kimi-k3--pilot-results-memo--house": "acece02273a645a9cb10e6f29b9f58d97da9dc82c10b84e9d30dae1a48905064",
+  "moonshotai--kimi-k3--discovery-proposal--default": "d488abab1b8b127c28fd54ed1fe7411a1fb607cff5e7a99e3567c7014cbfa0a1",
+  "moonshotai--kimi-k3--discovery-proposal--house": "bfef2942b307b23cf96d19276953e61db6c74730dd32a0c5d7deae66f0176c37",
+  "moonshotai--kimi-k3--change-order--default": "40614b6528a11a2ceca9c55c2d59c444971c9f9ba3e0846062f4ec10d5f179f8",
+  "moonshotai--kimi-k3--change-order--house": "922500c2abb50f8565f0c57709bf284df122da045405dd5e1fef96bfab638239",
+  "moonshotai--kimi-k3--ai-strategy-slides--default": "50b15d68877588785dd89016603f227f59d3ac7c1f58e78f6202dd05b2bb51ab",
+  "moonshotai--kimi-k3--ai-strategy-slides--house": "ed205658787ff0a534fe4ba9465653904ef70ed4877176f49e144e1bfe4864f4",
+  "moonshotai--kimi-k3--handoff-slides--default": "726886e64770fa8590a44ec1763bce2e40c61ca2c85c2a02d3dba0ad34d7c9ee",
+  "moonshotai--kimi-k3--handoff-slides--house": "5507f2e2ea0944b2c5dc645262251663b757acdc279ddc1bc0c90d26cc2244d5"
+}

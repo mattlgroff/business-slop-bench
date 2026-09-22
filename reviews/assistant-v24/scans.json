@@ -1,0 +1,364 @@
+[
+  {
+    "file": "zai--glm-5.3--ai-strategy-slides--default.md",
+    "words": 307,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 29,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 174,
+        "line": 4,
+        "text": "—"
+      },
+      {
+        "offset": 382,
+        "line": 10,
+        "text": "—"
+      },
+      {
+        "offset": 551,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 590,
+        "line": 14,
+        "text": "—"
+      },
+      {
+        "offset": 869,
+        "line": 21,
+        "text": "—"
+      },
+      {
+        "offset": 1085,
+        "line": 24,
+        "text": "—"
+      },
+      {
+        "offset": 1443,
+        "line": 30,
+        "text": "—"
+      },
+      {
+        "offset": 1930,
+        "line": 35,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--ai-strategy-slides--house.md",
+    "words": 275,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--change-order--default.md",
+    "words": 276,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 1465,
+        "line": 38,
+        "text": "—"
+      },
+      {
+        "offset": 1542,
+        "line": 39,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--change-order--house.md",
+    "words": 239,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--discovery-proposal--default.md",
+    "words": 270,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--discovery-proposal--house.md",
+    "words": 240,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--handoff-slides--default.md",
+    "words": 352,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 29,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 1789,
+        "line": 30,
+        "text": "—"
+      },
+      {
+        "offset": 2160,
+        "line": 35,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--handoff-slides--house.md",
+    "words": 204,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--launch-delay-email--default.md",
+    "words": 213,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 34,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 288,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 303,
+        "line": 7,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--launch-delay-email--house.md",
+    "words": 184,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--pilot-client-email--default.md",
+    "words": 198,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 34,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 252,
+        "line": 5,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--pilot-client-email--house.md",
+    "words": 187,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--pilot-results-memo--default.md",
+    "words": 247,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 765,
+        "line": 9,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--pilot-results-memo--house.md",
+    "words": 162,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--vendor-decision-memo--default.md",
+    "words": 240,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "zai--glm-5.3--vendor-decision-memo--house.md",
+    "words": 290,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]

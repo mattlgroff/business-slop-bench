@@ -1,0 +1,403 @@
+[
+  {
+    "file": "moonshotai--kimi-k3--ai-strategy-slides--default.md",
+    "words": 230,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 10,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 361,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 753,
+        "line": 14,
+        "text": "—"
+      },
+      {
+        "offset": 1121,
+        "line": 21,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "claudisms",
+        "offset": 458,
+        "line": 8,
+        "text": "friction"
+      }
+    ]
+  },
+  {
+    "file": "moonshotai--kimi-k3--ai-strategy-slides--house.md",
+    "words": 243,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--change-order--default.md",
+    "words": 200,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 24,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 1062,
+        "line": 31,
+        "text": "—"
+      },
+      {
+        "offset": 1220,
+        "line": 32,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--change-order--house.md",
+    "words": 192,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--discovery-proposal--default.md",
+    "words": 277,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 384,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 491,
+        "line": 14,
+        "text": "—"
+      },
+      {
+        "offset": 574,
+        "line": 15,
+        "text": "—"
+      },
+      {
+        "offset": 1453,
+        "line": 49,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--discovery-proposal--house.md",
+    "words": 217,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--handoff-slides--default.md",
+    "words": 206,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 10,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 360,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 694,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 1018,
+        "line": 19,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--handoff-slides--house.md",
+    "words": 226,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--launch-delay-email--default.md",
+    "words": 158,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 171,
+        "line": 5,
+        "text": "—"
+      },
+      {
+        "offset": 186,
+        "line": 5,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--launch-delay-email--house.md",
+    "words": 148,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--pilot-client-email--default.md",
+    "words": 203,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 52,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 330,
+        "line": 9,
+        "text": "—"
+      },
+      {
+        "offset": 703,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 996,
+        "line": 16,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--pilot-client-email--house.md",
+    "words": 223,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 659,
+        "line": 9,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "moonshotai--kimi-k3--pilot-results-memo--default.md",
+    "words": 167,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--pilot-results-memo--house.md",
+    "words": 376,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 801,
+        "line": 16,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "moonshotai--kimi-k3--vendor-decision-memo--default.md",
+    "words": 247,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 1395,
+        "line": 35,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "moonshotai--kimi-k3--vendor-decision-memo--house.md",
+    "words": 200,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "claudisms",
+        "offset": 1119,
+        "line": 26,
+        "text": "trade-off"
+      }
+    ]
+  }
+]

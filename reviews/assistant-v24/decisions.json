@@ -1,0 +1,245 @@
+[
+ {
+  "model": "GLM 5.3",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "29",
+    "I want to be transparent:",
+    "Candor script preceding a fact that can be stated directly; the opening also announces clarity on boundaries. The draft is 198 words against the 180-word limit."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Thanks to the internal review, the pilot proposal is approved on our side",
+    "Invents an internal review and internal approval absent from the source. The draft is also 187 words against the 180-word limit."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team has been executing well under a shifting timeline",
+    "Asserts favorable team performance that the source does not supply."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "I want to give you a clear picture of where we stand and what we need from you.",
+    "Announces the update instead of starting with the changed position. The draft is 213 words against the 180-word limit."
+   ],
+   [
+    "29",
+    "I want to be upfront that",
+    "Candor script preceding the remediation caveat."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Reply with your choice by end of week",
+    "Invents a reply deadline that the source does not authorize."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "I want to be straightforward about the remaining uncertainty:",
+    "Candor script preceding the remediation caveat. The draft is 184 words against the 180-word limit."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "so I can sign before the end of the quarter",
+    "Invents an end-of-quarter signing deadline and assigns the signature to Priya; the memo also says Beta declined to commit, where the source records only no committed date."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "Beta's $22,000 savings would buy a system that cannot go into production use.",
+    "The Why not Beta section repeats the constraint check and cost comparison already given."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "On delivery of the three artifacts and your confirmation, the final 50% ($8,000) becomes payable.",
+    "Makes sponsor confirmation a condition of the second payment; the source specifies payment on delivery."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "the three listed artifacts: the current-state process map, the prioritized backlog, and the implementation recommendation.",
+    "Repeats the three artifacts already listed under Purpose."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Once we receive the signature, the named contact, and the kickoff payment, we will agree a start date",
+    "Adds the kickoff payment as a precondition for agreeing the start date; the source ties payment to kickoff, after the start date. The final payment is also conditioned on confirmation rather than delivery."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "the three listed artifacts: the current-state process map, the prioritized backlog, and the implementation recommendation.",
+    "Repeats the three artifacts already listed under Scope."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "No work on the CRM connector will commence without your written sign-off.",
+    "Repeats the preceding sentence."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Connector work begins only after you approve this change order in writing.",
+    "Repeats the written-approval requirement already stated under Requested work."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "execution can begin immediately",
+    "A named owner does not establish immediate readiness. The deck also asserts no legal barriers and calls Option B unlaunchable this quarter."
+   ]
+  ],
+  "style": [
+   [
+    "28",
+    "Acting now positions us with a low-risk, measurable first step \u2014 and the data to make the next investment decision with confidence",
+    "Empty positive ending without evidence beyond the facts already stated."
+   ],
+   [
+    "14",
+    "**De-risked:** built exclusively on approved internal documents \u2014 no legal barriers",
+    "Bold mini-headings on every bullet of slide 3 and most of slide 4."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "| Legal status | Cleared to run | Legal approval pending; production use not authorized |",
+    "Invents legal clearance for the knowledge-search pilot, a customer-credit-data source and an unassigned owner for Option B; the source supplies none of these."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "14",
+    "**Criteria met:** Runbook is approved. \u2705",
+    "Emoji status markers and bold mini-headings on every bullet in a committee deck."
+   ],
+   [
+    "10",
+    "**Readiness restated:**",
+    "An explicit recap repeats the readiness conclusion already stated on slides 1 and 2. The draft is 352 words against the 350-word limit."
+   ]
+  ]
+ },
+ {
+  "model": "GLM 5.3",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [],
+  "style": []
+ }
+]

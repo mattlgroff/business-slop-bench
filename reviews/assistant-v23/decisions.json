@@ -1,0 +1,290 @@
+[
+ {
+  "model": "MiniMax",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Thanks for our recent conversation.",
+    "Invents a prior conversation and agreed terms. Also commits to a week-one baseline and parallel onboarding absent from the source."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "I'd like to formally propose",
+    "Unnecessary announcement before the actual scope and fee."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Week one establishes current throughput by invoice type",
+    "Invents scheduled work and measurement detail absent from the approved source; the closing also promises a kickoff plan and target start week."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "MiniMax",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team is steady and the delivery work is intact.",
+    "Invents delivery readiness. The next sentence also asserts that the build has not slipped, which the source does not establish."
+   ]
+  ],
+  "style": [
+   [
+    "2",
+    "Quick update on launch readiness as we close out the week.",
+    "Announces the update instead of stating the changed timeline."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The team has shipped verification work, the staging environment, and demo assets on the original schedule",
+    "Invents completed work and on-schedule delivery. The end-of-day response deadline is also absent from the source."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "MiniMax",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "no contractual remedy or delivery protection",
+    "Invents contractual terms for Beta. The source only establishes unavailable SSO and no committed delivery date."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "MiniMax",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "Priya finalizes terms and signs.",
+    "The source grants the CFO approval authority before signing but does not identify the signatory; Priya signing may be an unsupported role assignment."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "Rejecting Beta is a constraint decision, not a cost decision.",
+    "Aphoristic mirrored landing that restates the analysis already given."
+   ],
+   [
+    "10",
+    "The required capability is available on Alpha today.",
+    "Repeats the preceding sentence; the SSO finding is stated four times in one paragraph."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "23",
+    "A matched design isolates the pilot's true effect on handling time and quality under like-for-like conditions.",
+    "A matched design reduces mix confounding; it does not isolate the true effect."
+   ],
+   [
+    "21",
+    "MHT gap",
+    "Unexplained abbreviation in an executive readout."
+   ],
+   [
+    "10",
+    "Hold scaling. Approve the matched-ticket follow-up. Re-decide after matched results land.",
+    "Repeats the bottom line and the next-decision section."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The pilot sits 5 points below threshold and 5 points below baseline.",
+    "The shortfall against the 92% threshold is 3 points, not 5. The follow-up is also described as using randomized allocation, which the source does not establish."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "MiniMax",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Three artifacts will be produced:",
+    "The Deliverables list repeats the three artifacts already named in the Purpose sentence."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "A primary contact who clears access blockers within one business day",
+    "Invents a one-business-day service level for the client contact that the source does not supply."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "MiniMax",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "No work, scheduling, or credential commitment will be initiated without written approval.",
+    "Repeats the written-approval requirement stated in the preceding sentence and in section 5. The draft is also 303 words against the 300-word limit."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "change-order",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "One validation pass against the sandbox before handoff",
+    "Invents scope items, including authentication configuration, refresh cadence and a validation pass, that the source does not include."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "| Proposed fixed fee | $7,000 |",
+    "The table repeats the fee already stated twice in the preceding prose."
+   ]
+  ],
+  "placeholders": [
+   [
+    "From: [Contractor]",
+    "Unfilled sender placeholder in the document header."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "We do not de-risk, fund, or staff a non-compliant path this quarter.",
+    "Pending legal approval is not non-compliance. The deck also asserts low compliance risk and a natural-language search design that the source does not supply."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "The team can run only one pilot next quarter \u2014 discipline matters.",
+    "Aphoristic tag adds nothing to the capacity fact."
+   ],
+   [
+    "5",
+    "Option A converts approved documents into measurable, reusable value.",
+    "Promotional claim without a defined result."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "C03",
+    "fail",
+    "$15,000 headroom remains",
+    "The remaining budget after a $30,000 pilot under a $50,000 ceiling is $20,000."
+   ],
+   [
+    "grounding",
+    "fail",
+    "Option B cannot start",
+    "Pending legal approval and unauthorized production use do not establish that a pilot cannot start."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "MiniMax",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "29",
+    "so the decision is structural, not cosmetic.",
+    "Aphoristic contrast adds no information to the ownership change it follows."
+   ]
+  ]
+ },
+ {
+  "model": "MiniMax",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "C02",
+    "fail",
+    "Pat assigns one named owner for organizing the rollback rehearsal.",
+    "The deck never states that no role currently owns the rehearsal; the gap is omitted rather than invented."
+   ],
+   [
+    "grounding",
+    "fail",
+    "Lee confirms defect fixes hold through the rehearsal.",
+    "Invents a rehearsal step and attendance for Lee and Jo that the source does not assign."
+   ]
+  ],
+  "style": []
+ }
+]

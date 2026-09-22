@@ -1,0 +1,250 @@
+[
+ {
+  "model": "Kimi K3",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "5",
+    "no surprises, no scope creep",
+    "Promotional assurance without a defined comparison; the fixed fee already states the commercial protection. The draft is also 203 words against the 180-word limit."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "23",
+    "the output is a clear answer on whether the 20% target is achievable",
+    "A six-week pilot without a baseline may not produce a clear answer; the claim asserts certainty the source does not support. The draft is also 223 words against the 180-word limit."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The work is progressing well",
+    "Asserts favorable work progress while the source says the review may require remediation and no production date is authorized."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Kimi K3",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Kimi K3",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "**Select Vendor Alpha at a year-one cost of $92,000**",
+    "The recommendation is stated in the summary, again here with the same figures, and a third time in the approval request."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "review",
+    "I will proceed with signing per procurement process.",
+    "The source grants the CFO approval authority before signing but does not identify the signatory; Priya signing may be an unsupported role assignment."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Kimi K3",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [
+   [
+    "C01",
+    "fail",
+    "12 minutes on 100 tickets versus 15 minutes on 200 baseline tickets",
+    "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is an omission, not incorrect arithmetic."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Kimi K3",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Recommendation to the COO: authorize the matched-ticket follow-up.",
+    "Repeats the recommendation already given in the opening section and the next-decision paragraph. The draft is also 376 words against the 300-word limit."
+   ],
+   [
+    "16",
+    "On the stated criteria alone, the pilot does not qualify to expand.",
+    "Restates the preceding sentence; the readout carries repeated claims and a risk section that add length without new decision content."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "triggering the final payment (50%, $8,000)",
+    "Makes acceptance confirmation the trigger for the second payment; the source specifies payment on delivery."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "the three listed artifacts: the process map, the prioritized backlog, and the implementation recommendation.",
+    "Repeats the three artifacts already listed in the scope section."
+   ],
+   [
+    "28",
+    "We look forward to your approval and to beginning discovery.",
+    "Closing pleasantry adds no decision, owner or condition."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Kimi K3",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "No connector work will start without written approval.",
+    "Repeats the preceding sentence."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Without written approval, the team will continue with the original dashboard scope and no connector work will proceed.",
+    "Repeats the written-approval condition stated in the preceding sentence and in the schedule section."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Fund the Authorized Pilot",
+    "Calls the knowledge-search pilot authorized; the source says only that its policy documents are approved. The deck also asserts reduced compliance friction without support."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "reducing compliance friction",
+    "Systems metaphor replaces the literal fact that the documents are already approved."
+   ],
+   [
+    "14",
+    "Cost: **$30,000**, within the **$50,000** quarterly pilot ceiling.",
+    "Bold on nearly every figure and term across all four slides makes routine facts compete for emphasis."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "It is the only option that can start and finish within the quarter on cleared data and within budget.",
+    "The source gives no start or completion conditions for the pilot, and both options fit the budget."
+   ]
+  ],
+  "style": [
+   [
+    "10",
+    "Judge it on the agreed metric: at least 90% accuracy on 100 reviewed questions.",
+    "Repeats the metric, owner and cost already stated on slide 2."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "- Lee: continue defect-fix ownership until acceptance.",
+    "Repeats the ownership boundary already stated on slides 1 and 2."
+   ]
+  ]
+ },
+ {
+  "model": "Kimi K3",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [
+   [
+    "C04",
+    "fail",
+    "Incident ownership transfers from Lee to Jo.",
+    "States that Lee holds incident ownership before acceptance; the source gives Lee defect fixes only, so ownership conflicts with slide 2."
+   ],
+   [
+    "grounding",
+    "fail",
+    "Incident ownership transfers from Lee to Jo.",
+    "Invents pre-acceptance incident ownership for Lee."
+   ]
+  ],
+  "style": [
+   [
+    "29",
+    "The gap is ownership, not capability.",
+    "Aphoristic contrast; capability is not discussed in the source and the sentence adds no information to the stated gap."
+   ]
+  ]
+ }
+]

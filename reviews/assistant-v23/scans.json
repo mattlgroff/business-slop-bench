@@ -1,0 +1,419 @@
+[
+  {
+    "file": "minimax--minimax-m3--ai-strategy-slides--default.md",
+    "words": 277,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 10,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 253,
+        "line": 4,
+        "text": "—"
+      },
+      {
+        "offset": 427,
+        "line": 8,
+        "text": "—"
+      },
+      {
+        "offset": 510,
+        "line": 9,
+        "text": "—"
+      },
+      {
+        "offset": 851,
+        "line": 15,
+        "text": "—"
+      },
+      {
+        "offset": 1242,
+        "line": 20,
+        "text": "—"
+      },
+      {
+        "offset": 1287,
+        "line": 22,
+        "text": "—"
+      },
+      {
+        "offset": 1388,
+        "line": 23,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--ai-strategy-slides--house.md",
+    "words": 159,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--change-order--default.md",
+    "words": 303,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 23,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 1820,
+        "line": 35,
+        "text": "—"
+      },
+      {
+        "offset": 1901,
+        "line": 36,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--change-order--house.md",
+    "words": 210,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--discovery-proposal--default.md",
+    "words": 205,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--discovery-proposal--house.md",
+    "words": 197,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--handoff-slides--default.md",
+    "words": 271,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 10,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 411,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 515,
+        "line": 9,
+        "text": "—"
+      },
+      {
+        "offset": 591,
+        "line": 10,
+        "text": "—"
+      },
+      {
+        "offset": 790,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 1165,
+        "line": 19,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--handoff-slides--house.md",
+    "words": 152,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--launch-delay-email--default.md",
+    "words": 173,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 16,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 402,
+        "line": 9,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--launch-delay-email--house.md",
+    "words": 125,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--pilot-client-email--default.md",
+    "words": 169,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 51,
+        "line": 1,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--pilot-client-email--house.md",
+    "words": 125,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 425,
+        "line": 11,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "minimax--minimax-m3--pilot-results-memo--default.md",
+    "words": 253,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 1197,
+        "line": 22,
+        "text": "—"
+      },
+      {
+        "offset": 1201,
+        "line": 22,
+        "text": "—"
+      },
+      {
+        "offset": 1244,
+        "line": 23,
+        "text": "—"
+      },
+      {
+        "offset": 1334,
+        "line": 25,
+        "text": "—"
+      },
+      {
+        "offset": 1354,
+        "line": 25,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 656,
+        "line": 10,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "minimax--minimax-m3--pilot-results-memo--house.md",
+    "words": 208,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--vendor-decision-memo--default.md",
+    "words": 226,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 14,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 714,
+        "line": 18,
+        "text": "—"
+      },
+      {
+        "offset": 726,
+        "line": 18,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "minimax--minimax-m3--vendor-decision-memo--house.md",
+    "words": 233,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]
