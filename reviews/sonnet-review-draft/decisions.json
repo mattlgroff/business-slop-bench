@@ -244,6 +244,22 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--ai-strategy-slides--default.md",
       "outputSha256": "517886332fdf94b9267e356844757e1928c80bdb356729809960df4394ec36d4"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "Select Option A: it is authorized now",
+          "Approved input documents do not establish authorization of the pilot; COO selection is still required. The draft also rules out Option B going live for the whole quarter, although the source establishes pending legal approval rather than how long approval will take."
+        ]
+      ],
+      "style": [],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--ai-strategy-slides--house.md",
+      "outputSha256": "467daa5ae39be3a90340e0e61cd73ae480d6fcf41e8172d08edaa3cdf25b4bb5"
     }
   ]
 }
