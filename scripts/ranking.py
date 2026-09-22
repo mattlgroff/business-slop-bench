@@ -14,6 +14,14 @@ ignore_zdr = '--ignore-zdr' in sys.argv
 grades = json.loads((root / review / 'grades.json').read_text())
 summary = json.loads((root / review / 'summary.json').read_text())
 catalog = {m['id']: m for m in json.loads((root / run / 'catalog.json').read_text())['models']}
+DISPLAY = {'openai/gpt-6-astra': 'GPT-6 Astra', 'openai/gpt-6-sol': 'GPT-6 Sol', 'openai/gpt-6-luna': 'GPT-6 Luna',
+           'openai/gpt-5.6-sol': 'GPT-5.6 Sol', 'openai/gpt-5.6-terra': 'GPT-5.6 Terra', 'openai/gpt-5.6-luna': 'GPT-5.6 Luna',
+           'anthropic/claude-opus-5.5': 'Claude Opus 5.5', 'anthropic/claude-opus-5': 'Claude Opus 5', 'anthropic/claude-opus-4.6': 'Claude Opus 4.6',
+           'anthropic/claude-sonnet-5': 'Claude Sonnet 5', 'anthropic/claude-fable-5': 'Claude Fable 5', 'anthropic/claude-fable-5.1': 'Claude Fable 5.1',
+           'google/gemini-3.8-flash': 'Gemini 3.8 Flash', 'google/gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'meta/muse-spark-1.3': 'Muse Spark 1.3',
+           'deepseek/deepseek-v4-pro-0813': 'DeepSeek V4 Pro', 'deepseek/deepseek-v4.1-flash': 'DeepSeek V4.1 Flash', 'zai/glm-5.3': 'GLM 5.3', 'zai/glm-5.3-flash': 'GLM 5.3 Flash',
+           'alibaba/qwen3.8-max-0902': 'Qwen 3.8 Max', 'alibaba/qwen3.8-flash': 'Qwen 3.8 Flash', 'moonshotai/kimi-k3': 'Kimi K3', 'minimax/minimax-m3': 'MiniMax M3',
+           'xiaomi/mimo-v2.6-pro': 'MiMo V2.6 Pro', 'spacexai/grok-4.7': 'Grok 4.7'}
 ids = {}
 for r in grades['rows']:
     stem = Path(r['path']).name
@@ -29,7 +37,7 @@ for model, conds in by.items():
     mid = ids[model]
     price = (catalog.get(mid) or {}).get('pricing', {})
     eligible = all(c.get('benchEligible', True) for c in conds.values())
-    models.append({'model': model, 'id': mid, 'eligible': eligible, 'zdr': (catalog.get(mid) or {}).get('zdr'),
+    models.append({'model': DISPLAY.get(mid, model), 'reviewLabel': model, 'id': mid, 'eligible': eligible, 'zdr': (catalog.get(mid) or {}).get('zdr'),
                    'inPerM': float(price['input']) * 1e6 if price else None, 'outPerM': float(price['output']) * 1e6 if price else None,
                    'plain': conds['default'], 'house': conds['house']})
 LABEL = {'plain': 'Plain brief, no house rules', 'house': 'Same brief plus the house anti-slop rules'}
