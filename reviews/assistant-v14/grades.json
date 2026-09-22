@@ -1,0 +1,515 @@
+{
+  "method": {
+    "reviewer": "Assistant in this thread; model identities visible",
+    "status": "Provisional assistant-authored grades, not human gold or independent benchmark validation",
+    "scoring": "Existing per-task content checks, with pass/fail/review kept separate. No credit for review. Every task check has equal weight in the displayed content-check fraction; checks overlap and are not independent. Word limit, placeholders, style gate and editorial polish remain separate.",
+    "styleScope": "Full frozen anti-slop catalog reviewed; supported editorial findings recorded, not one point per category. Necessary factual contrasts are allowed.",
+    "readiness": "Content ready requires all content checks pass, word limit compliance and no placeholders. Ready without edits also requires the style gate and no recorded editorial findings.",
+    "exceptions": [
+      "Provider-native limits still apply; catalog capacity is used only to reserve spending.",
+      "Prior capped outcomes and canceled requests are retained as execution evidence and excluded from this writing comparison."
+    ],
+    "tasksSha256": "3a5f7bd878da02841e5aafbc246b8d6c2a5567ddad7e3d646b8ecb105d209dfe",
+    "lensSha256": "0f9f01829e56e29a5a751e5f040d7a6407d1ccc3520a795863060bf94b3b3ab7",
+    "revision": "First uncapped writer cohort. No maxOutputTokens or harness generation deadline. Historical capped samples remain separate.",
+    "cohort": "uncapped"
+  },
+  "rows": [
+    {
+      "model": "MiniMax",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v18/minimax--minimax-m3--pilot-client-email--default.md",
+      "outputSha256": "991cdae0059dd9be5dc7ed823af76cf2520b064f1afc0129f2d3dfb308f64f88",
+      "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+      "gradeOrigin": "assistant-v14, uncapped direct MiniMax review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents a prior conversation and agreed terms. Also commits to a week-one baseline and parallel onboarding absent from the source.",
+          "evidence": {
+            "quote": "Thanks for our recent conversation.",
+            "offset": 85,
+            "line": 5
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 169,
+      "maxWords": 180,
+      "emDashes": [
+        {
+          "offset": 51,
+          "line": 1
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "2",
+          "reason": "Unnecessary announcement before the actual scope and fee.",
+          "evidence": {
+            "quote": "I'd like to formally propose",
+            "offset": 121,
+            "line": 5
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00420894
+    },
+    {
+      "model": "MiniMax",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v18/minimax--minimax-m3--pilot-client-email--house.md",
+      "outputSha256": "b87cd59c46fbd180106f6c90e5885c4a66123ce9b5d452694a511689a632f5f6",
+      "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384",
+      "gradeOrigin": "assistant-v14, uncapped direct MiniMax review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents scheduled work and measurement detail absent from the approved source.",
+          "evidence": {
+            "quote": "Week one establishes current throughput by invoice type",
+            "offset": 329,
+            "line": 11
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 125,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [
+        {
+          "quote": "a real comparison rather than a directional claim",
+          "offset": 407,
+          "line": 11,
+          "reason": "Uses a vague credibility contrast to promote the pilot, without a necessary factual correction or scope boundary."
+        }
+      ],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00268104
+    },
+    {
+      "model": "MiniMax",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v18/minimax--minimax-m3--launch-delay-email--default.md",
+      "outputSha256": "7854aee2f342965754dce079291af540149a94a59adaf0c1a96e716b589ba693",
+      "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+      "gradeOrigin": "assistant-v14, uncapped direct MiniMax review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents delivery readiness. The next sentence also asserts that the build has not slipped, which the source does not establish.",
+          "evidence": {
+            "quote": "The team is steady and the delivery work is intact.",
+            "offset": 863,
+            "line": 19
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 173,
+      "maxWords": 180,
+      "emDashes": [
+        {
+          "offset": 16,
+          "line": 1
+        },
+        {
+          "offset": 402,
+          "line": 9
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "2",
+          "reason": "Announces the update instead of stating the changed timeline.",
+          "evidence": {
+            "quote": "Quick update on launch readiness as we close out the week.",
+            "offset": 48,
+            "line": 5
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00257148
+    },
+    {
+      "model": "MiniMax",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v18/minimax--minimax-m3--launch-delay-email--house.md",
+      "outputSha256": "46e76ca0f2502001176633db7d798dad511c2dc82da4c1330f3cbf3478dda117",
+      "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9",
+      "gradeOrigin": "assistant-v14, uncapped direct MiniMax review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents completed work and on-schedule delivery. The end-of-day response deadline is also absent from the source.",
+          "evidence": {
+            "quote": "The team has shipped verification work, the staging environment, and demo assets on the original schedule",
+            "offset": 258,
+            "line": 5
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 125,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00311502
+    },
+    {
+      "model": "MiniMax",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v18/minimax--minimax-m3--vendor-decision-memo--default.md",
+      "outputSha256": "fd55d8dc73cc5624b622e0f262c91a776bb313460b4078c19d5fc0ca465f5430",
+      "writerInputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+      "gradeOrigin": "assistant-v14, uncapped direct MiniMax review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "CFO approval before signing and Priya procurement ownership are correctly communicated.",
+          "verdict": "pass",
+          "reason": "Criterion satisfied on full-draft review against the supplied source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Invents contractual terms for Beta. The source only establishes unavailable SSO and no committed delivery date.",
+          "evidence": {
+            "quote": "no contractual remedy or delivery protection",
+            "offset": 1216,
+            "line": 26
+          }
+        }
+      ],
+      "counts": {
+        "pass": 5,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 226,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 14,
+          "line": 1
+        },
+        {
+          "offset": 714,
+          "line": 18
+        },
+        {
+          "offset": 726,
+          "line": 18
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00423864
+    }
+  ],
+  "ungraded": [
+    {
+      "model": "MiniMax",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "status": "generation failed"
+    },
+    {
+      "model": "MiniMax",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "change-order",
+      "condition": "default",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "change-order",
+      "condition": "house",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "handoff-slides",
+      "condition": "default",
+      "status": "not generated"
+    },
+    {
+      "model": "MiniMax",
+      "task": "handoff-slides",
+      "condition": "house",
+      "status": "not generated"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "model": "MiniMax",
+    "condition": "default",
+    "completed": 3,
+    "expected": 8,
+    "pass": 16,
+    "fail": 3,
+    "review": 0,
+    "total": 19,
+    "contentReady": 0,
+    "readyWithoutEdits": 0,
+    "generationCostUsd": 0.01101906
+  },
+  {
+    "model": "MiniMax",
+    "condition": "house",
+    "completed": 2,
+    "expected": 8,
+    "pass": 11,
+    "fail": 2,
+    "review": 0,
+    "total": 13,
+    "contentReady": 0,
+    "readyWithoutEdits": 0,
+    "generationCostUsd": 0.0057960600000000004
+  }
+]

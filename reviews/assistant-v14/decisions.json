@@ -1,0 +1,88 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Thanks for our recent conversation.",
+        "Invents a prior conversation and agreed terms. Also commits to a week-one baseline and parallel onboarding absent from the source."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I'd like to formally propose",
+        "Unnecessary announcement before the actual scope and fee."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Week one establishes current throughput by invoice type",
+        "Invents scheduled work and measurement detail absent from the approved source."
+      ]
+    ],
+    "style": [],
+    "negative": [
+      [
+        "a real comparison rather than a directional claim",
+        "Uses a vague credibility contrast to promote the pilot, without a necessary factual correction or scope boundary."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team is steady and the delivery work is intact.",
+        "Invents delivery readiness. The next sentence also asserts that the build has not slipped, which the source does not establish."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "Quick update on launch readiness as we close out the week.",
+        "Announces the update instead of stating the changed timeline."
+      ]
+    ],
+    "negative": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team has shipped verification work, the staging environment, and demo assets on the original schedule",
+        "Invents completed work and on-schedule delivery. The end-of-day response deadline is also absent from the source."
+      ]
+    ],
+    "style": [],
+    "negative": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "no contractual remedy or delivery protection",
+        "Invents contractual terms for Beta. The source only establishes unavailable SSO and no committed delivery date."
+      ]
+    ],
+    "style": [],
+    "negative": []
+  }
+]
