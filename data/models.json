@@ -16,6 +16,10 @@
     "reasoning": "low"
   },
   {
+    "id": "anthropic/claude-opus-5.5",
+    "reasoning": "low"
+  },
+  {
     "id": "anthropic/claude-sonnet-5",
     "reasoning": "low"
   },
