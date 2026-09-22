@@ -1,10 +1,10 @@
 # Sonnet review in progress
 
-Fourteen completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
+Fifteen completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
 
 `python3 reviews/sonnet-review-draft/verify.py` checks unique task/condition pairs, output hashes, successful complete responses and every quoted finding. The default pilot email is 198 words against the 180-word requirement. Semantic findings include a sender commitment to propose a date within five business days and unsupported performance/readiness claims. Requests for the recipient to take an action are distinguished from claims that an obligation already exists.
 
-When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these fourteen cases or replace earlier complete model results with this partial review.
+When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these fifteen cases or replace earlier complete model results with this partial review.
 
 The default vendor memo preserves the required costs, recommendation and approval condition, but repeats its rationale. Its word count is verified by the same whitespace rule as the other drafts.
 
@@ -25,3 +25,5 @@ The house change order passes all content checks. The credential dependency is r
 The default AI slides preserve the budget, target, four-slide format and selection/reporting roles, but invent existing authorization and readiness for immediate launch. Approved policy documents do not establish low organizational risk. The Q Next title is awkward wording rather than a missing-quarter placeholder. The scan records six em dashes in this draft.
 
 The house AI slides also invent current pilot authorization and extend pending legal approval into a quarter-long prohibition. Their six specific checks pass, but grounding fails. There are no em dashes or supported editorial findings in this review; en dashes are informational. Clean style does not offset unsupported business claims.
+
+The default handoff correctly withholds acceptance and requests an organizer, but invents Lee as the current incident owner and a same-day decision deadline. The forcing-function phrase is mannered wording. These findings distinguish defect-fix responsibility from incident ownership rather than treating all pre-acceptance work as Lee’s.

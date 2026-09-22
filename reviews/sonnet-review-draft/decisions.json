@@ -260,6 +260,34 @@
       "style": [],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--ai-strategy-slides--house.md",
       "outputSha256": "467daa5ae39be3a90340e0e61cd73ae480d6fcf41e8172d08edaa3cdf25b4bb5"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "handoff-slides",
+      "condition": "default",
+      "content": [
+        [
+          "C04",
+          "fail",
+          "incident ownership transfers from Lee to Jo per defined roles",
+          "Invents Lee as the pre-acceptance incident owner. The source assigns Lee defect fixes and assigns Jo incidents only after acceptance."
+        ],
+        [
+          "grounding",
+          "fail",
+          "Decision needed today",
+          "Adds an unsupported same-day decision deadline. The claimed transfer of incident ownership from Lee also invents a current responsibility."
+        ]
+      ],
+      "style": [
+        [
+          "21",
+          "the rehearsal has no forcing function to occur",
+          "Uses an unnatural mechanism metaphor where the concrete gap is simply that no organizer has accepted responsibility."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--handoff-slides--default.md",
+      "outputSha256": "fd02290dc150522791c54699960ebe3414a28aac9b23642be8adf1d45c15815a"
     }
   ]
 }

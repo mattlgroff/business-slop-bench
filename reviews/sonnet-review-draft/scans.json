@@ -325,5 +325,32 @@
     },
     "residue": [],
     "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--handoff-slides--default.md",
+    "words": 234,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 250,
+        "line": 5,
+        "text": "—"
+      },
+      {
+        "offset": 1090,
+        "line": 23,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
   }
 ]
