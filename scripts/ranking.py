@@ -38,7 +38,7 @@ for model, conds in by.items():
 rows.sort(key=lambda r: r['key'], reverse=True)
 out = ['# Uncapped ranking with prices', '', f'Source: {review}/summary.json and {run}/catalog.json. Content checks are out of 54 per condition; unresolved checks earn no credit. '
        'Prices are Gateway list rates per million tokens (base tier; regional and fast tiers cost more). Observed cost is the reported charge for the eight successful drafts in that condition. '
-       'One generation per cell, graded unblinded by the assistant. Disqualified models are listed last and never pooled.', '',
+       'One generation per cell, graded unblinded by the assistant. Disqualified models are listed last and never pooled. A $0 observed cost means the Gateway reported a zero charge at launch; the list price still applies once promotional pricing ends.', '',
        '| Rank | Model | Input $/M | Output $/M | Default checks | Default ready / no-edit | Default cost | House checks | House ready / no-edit | House cost |', '|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|']
 rank = 0
 for r in rows:
@@ -48,6 +48,7 @@ for r in rows:
     else:
         label = '-'
     d, h = r['d'], r['h']
-    out.append(f"| {label} | {r['model']} | {r['inPerM']:.2f} | {r['outPerM']:.2f} | {d['pass']}/54 | {d['contentReady']}/8 / {d['readyWithoutEdits']}/8 | ${d['generationCostUsd']:.4f} | {h['pass']}/54 | {h['contentReady']}/8 / {h['readyWithoutEdits']}/8 | ${h['generationCostUsd']:.4f} |")
+    cost = lambda c: '$0 (launch promo)' if c['generationCostUsd'] == 0 else f"${c['generationCostUsd']:.4f}"
+    out.append(f"| {label} | {r['model']} | {r['inPerM']:.2f} | {r['outPerM']:.2f} | {d['pass']}/54 | {d['contentReady']}/8 / {d['readyWithoutEdits']}/8 | {cost(d)} | {h['pass']}/54 | {h['contentReady']}/8 / {h['readyWithoutEdits']}/8 | {cost(h)} |")
 out += ['', 'Ordering: eligible models first, then house content checks, default content checks, ready-without-edits count, content-ready count. Ties remain ties; a few checks of difference is within single-generation variation.', '']
 print('\n'.join(out))
