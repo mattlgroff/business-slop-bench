@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Luna comparison under unchanged writer settings
+
+Collected all sixteen Luna drafts in v13 without retries or warnings. Successful reported generation cost was $0.01141, close to Qwen's represented sample cost. [Assistant review v6](reviews/assistant-v6/REPORT.md) uses the same task checks, output caps and style lens. It freezes every new output hash and preserves earlier grades.
+
+Luna passes 52/54 default content checks and 51/54 house checks. The confirmed failures are the missing 3-minute/20% reduction in the default results memo and the missing COO selection authority in the house strategy slides. Three grounding judgments remain unresolved: team-focus claims in the two launch updates and the scope of Engineering ownership in the house handoff slides. They are not forced into failures or awarded points.
+
+The default strategy slides contain `Q[next]`, an unfinished authoring marker. The manual review records it as a placeholder and blocks readiness even though the task-specific content checks pass. The current narrow placeholder scanner does not yet recognize that spelling; this is a concrete detector gap for a future revision. Other editorial findings include third-person client references, a source-pack reference and repeated presentation. These are editorial judgments, not factual errors.
+
+Content-ready counts are 5/8 in both conditions. Ready-without-edits counts are 2/8 default and 3/8 house. There are now 78 saved and assistant-reviewed drafts across seven attempted models. The full comparison and repeatability validation remain unfinished. No Jev calls occurred. Conservative cumulative accounting is $7.9193 of $20; collection exited and released its lock.
+
 ## Targeted collection and complete DeepSeek default coverage, v12-v13
 
 Added optional brief and condition selectors to `collect`. Unknown selector values fail without expanding the paid run. Two regression tests cover this behavior. The writer prompts, model settings and task criteria are unchanged. Exact matching earlier outputs are still reused, and prior frozen runner sources are retained.

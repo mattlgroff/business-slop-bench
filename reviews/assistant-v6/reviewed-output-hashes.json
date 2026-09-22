@@ -1,0 +1,18 @@
+{
+  "openai--gpt-5.6-luna--pilot-client-email--default": "526ce03b62417fcff4878063cc468f03b51259dc19c50b6a1d00ad1a51591361",
+  "openai--gpt-5.6-luna--pilot-client-email--house": "824f1d5998a9a28255af3206b65051977885bc714e4f874614d7acf15a00133d",
+  "openai--gpt-5.6-luna--launch-delay-email--default": "31065a9fa009fee36d1aa3c6e6e1c295a5fff043a81fb07440dce8c20fbabf02",
+  "openai--gpt-5.6-luna--launch-delay-email--house": "5b8d255f0bf7d15aa38950090a537755d63d99e4f674db2f7cc1965617cb1780",
+  "openai--gpt-5.6-luna--vendor-decision-memo--default": "a75d3a881324e04218c79a824d730335fe817027fc09995c4ba6477da193afc8",
+  "openai--gpt-5.6-luna--vendor-decision-memo--house": "7452043068c14b3a35b54bf88409b94d7a126b9ef0433b9a142d9f7134b33f15",
+  "openai--gpt-5.6-luna--pilot-results-memo--default": "765a8ce86302bfbbd5f3551d4846c94b21c2ebbf58775d8d8f10e0f72f33fe96",
+  "openai--gpt-5.6-luna--pilot-results-memo--house": "e6b60df746e053d2c00dc89110e70fde3fc9582ed19756e956c129fd9dc13d56",
+  "openai--gpt-5.6-luna--discovery-proposal--default": "2ddfe694f32a29dc9146ac91a50a27bf904a2942cbba4d10fa08860fd5bcfcf5",
+  "openai--gpt-5.6-luna--discovery-proposal--house": "876b358c3a685d9c484277ac71a641f520cbb91411e79696b86b3c164bca8b04",
+  "openai--gpt-5.6-luna--change-order--default": "937b79c06ba7d62f6a94429ef877ab634520f70986dd50220370210c6cdbc89e",
+  "openai--gpt-5.6-luna--change-order--house": "c47e7e6883a980e192fd398bb07d56054cd0d469c72650398ebd37f91365f686",
+  "openai--gpt-5.6-luna--ai-strategy-slides--default": "cc6f0b898ae807c931f04666f878ad04d20a7e6e07cc96774a95d9678ac5e821",
+  "openai--gpt-5.6-luna--ai-strategy-slides--house": "ed9013cfa5bb4f170677ea345818fd0786847c84f0d216f7545f518a50b642e7",
+  "openai--gpt-5.6-luna--handoff-slides--default": "668e2a44388cbaefdfef245b4d919315c445629a1a38db0e60cf544ea12631fe",
+  "openai--gpt-5.6-luna--handoff-slides--house": "53ebfe8759a984252029b06ec1214705110dc1961f709295c881d11be01f1af0"
+}
