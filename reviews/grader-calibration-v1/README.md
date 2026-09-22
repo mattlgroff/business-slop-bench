@@ -15,3 +15,11 @@ The cases cover proposed signing authority, ambiguous signatory wording, unsuppo
 The packet has three proposed passes, five failures and two unresolved cases. Selection was deliberate, based on known grading boundaries. Agreement on these cases cannot estimate general judge accuracy, and the counts should not become a pass gate for a leaderboard. No independent reviewer has submitted labels yet.
 
 `python3 reviews/grader-calibration-v1/build.py` verifies all source-output hashes and exact case membership. Rebuilding is idempotent and refuses changes to existing packet, key or template content. New accepted policy changes require a new packet version. No model calls or primary-score changes are performed.
+
+Before opening the answer key, validate the saved response with:
+
+```sh
+python3 reviews/grader-calibration-v1/validate-response.py path/to/submitted-response.json
+```
+
+The validator requires exactly one response per case, a permitted verdict, a nonempty explanation and an exact nonempty quotation from that case's draft. It reads no answer key and writes no files. It reports the submitted file's SHA-256 so the response can be identified later. Passing validates response structure and quoted text only, not semantic correctness, reviewer independence or agreement. For an omission, quote a relevant passage and explain what is missing in the reason. The untouched response template must fail validation.
