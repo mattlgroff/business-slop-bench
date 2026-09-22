@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-fable-5--pilot-client-email--default": "f3788a8f30745b842fc0fe88aaad1759583e14a428f46dac5ebfc434153985be",
+  "anthropic--claude-fable-5--pilot-client-email--house": "6deca539d811ff8687bdc903778438acafcf9b8b1b85503fc9d4d33a6f820367",
+  "anthropic--claude-fable-5--launch-delay-email--default": "127f72b003c8413a22c4afd37812c47567057626c0e2aa614db2d495d0d8debb",
+  "anthropic--claude-fable-5--launch-delay-email--house": "205ec62eafed318e071455f55d3b99dbd138746047238570fa5c37bf607beda4",
+  "anthropic--claude-fable-5--vendor-decision-memo--default": "1a9dd168c73d175ad120633c8e954d95545d5638619f3ef2a421dd6f13b2abc0",
+  "anthropic--claude-fable-5--vendor-decision-memo--house": "7661bac6095e0863f6f838644cc04c5b625ad0d8e656da68e435e1c5340d5522",
+  "anthropic--claude-fable-5--pilot-results-memo--default": "655bfce1ee7004497033bf3b375c4733d3ba6a93395eadb047a111944316a79e",
+  "anthropic--claude-fable-5--pilot-results-memo--house": "19747dbc1b6de1e03c7d76fcfccdb2d0b0dfe3127b0619a888a761bbf716fbc4",
+  "anthropic--claude-fable-5--discovery-proposal--default": "53de7abedf4d77c1847dc939847b8e636de8caa2b0e29560288696adaf5dd507",
+  "anthropic--claude-fable-5--discovery-proposal--house": "d2979669750d709bf64d9d30dccb44201a17b13758aea2a7e8517cf9b0c963f3",
+  "anthropic--claude-fable-5--change-order--default": "4883a1534840795690351ef398df8f67695de5bf6d5a08d7b11dc2340752bd5b",
+  "anthropic--claude-fable-5--change-order--house": "dff174d6d02b4cca25191f752e1e6265fb5b847e9f25e0376fb6d8c9b80e185f",
+  "anthropic--claude-fable-5--ai-strategy-slides--default": "dfe3d6bb9147db768001548b809deaa8fb01596ffbb936a1d72a47d785dfcb9c",
+  "anthropic--claude-fable-5--ai-strategy-slides--house": "450dde46ecd97567d7777afe93191fe511cedfe3174d6f48a6cb2e8d0ce796c9",
+  "anthropic--claude-fable-5--handoff-slides--default": "63af685fdad6bf69e581c84f7b4bb0d97019c03a0ec007f09934f2ce53c1c938",
+  "anthropic--claude-fable-5--handoff-slides--house": "2a027c90fddb053aa12d0ff4155a7fa7f13a68de44d2a07a3a305e48bab9d313"
+}
