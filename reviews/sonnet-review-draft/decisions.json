@@ -1,0 +1,91 @@
+{
+  "status": "Partial review in progress; not a full-model comparison.",
+  "rows": [
+    {
+      "model": "Sonnet 5",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "content": [],
+      "style": [
+        [
+          "5",
+          "This keeps risk and cost contained",
+          "The fixed fee bounds cost, but the sentence also asserts broad risk containment without a defined basis."
+        ],
+        [
+          "10",
+          "Given the limited scope, fixed cost, and clear exclusion of production work, I believe this is a low-risk way to generate the evidence needed for a larger rollout decision.",
+          "Repeats the scope, fee, exclusion and risk pitch already made above."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--pilot-client-email--default.md",
+      "outputSha256": "19a9199dbdeacf9818b20f4d4e1c9eb8e9003530fb76e8592888d5a0810583eb"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "propose a start date within five business days of clearance.",
+          "Adds a delivery deadline for proposing the start date that the source does not authorize. This is a commitment by the sender, not merely a request to the recipient."
+        ]
+      ],
+      "style": [
+        [
+          "21",
+          "The client is hoping",
+          "Third-person client reference in an email addressed directly to Morgan."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--pilot-client-email--house.md",
+      "outputSha256": "531a2b3d2d04efcf0d935f9d7acae71cc8c00350056b7659366af927444139ec"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "we're using the time productively.",
+          "The source provides no current productivity or performance finding. Calling the delay not a red flag also adds an unsupported assessment."
+        ]
+      ],
+      "style": [
+        [
+          "2",
+          "Quick update on the October 8 launch target.",
+          "Announces the update instead of stating the launch position."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--launch-delay-email--default.md",
+      "outputSha256": "3d3e14f496d6bab35dfbb24c5640ccb9a87c5e4d7ba638b10710dd5013c0bf33"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "The team is ready to move as soon as the review closes.",
+          "The source does not establish team readiness, and remediation may still be needed after the review."
+        ]
+      ],
+      "style": [
+        [
+          "21",
+          "That choice is yours to make.",
+          "Unnecessarily narrates the recipient authority after offering the staging option and before requesting a decision."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--launch-delay-email--house.md",
+      "outputSha256": "9d344eb0d132e717f30f56db37aa8d5b0c534af6ad6245a6a8c17044fef31fb0"
+    }
+  ]
+}

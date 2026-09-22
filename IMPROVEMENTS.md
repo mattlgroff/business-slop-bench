@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Sonnet partial review during paced collection
+
+Reviewed the four completed Sonnet emails while the existing collector waits between calls. Saved explicit provisional decisions with immutable output hashes and verified quotes, separate from the cumulative full-model report. The default pilot email is 198/180 words. Findings include a new five-business-day sender commitment and unsupported team-performance/readiness claims. Recipient action requests are distinguished from asserted existing obligations. [Working review](reviews/sonnet-review-draft/README.md).
+
+The evidence verifier passes for all four saved drafts. No extra model calls were made for grading. Sonnet collection continues through the original execution session; incomplete coverage is not promoted to a full-model score.
+
 ## Model-name-hidden grader calibration packet
 
 Created ten diagnostic cases from the current primary grades and Astra repeat, spanning proposed passes, failures and unresolved claims. The participant packet includes full briefs, facts and drafts but omits model metadata, expected verdicts and prior review explanations. A separate answer key retains source paths, output hashes and proposed labels. Cases exercise the grading boundaries that have caused corrections, rather than claiming to be randomly held out.
