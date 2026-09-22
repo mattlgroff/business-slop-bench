@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, rmSync, readFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { Budget, scan, verdict, rates, styleChecks, prompt, fitThreshold, type Task } from '../src/core.js';
+import { Budget, scan, verdict, rates, selectTasks, selectConditions, styleChecks, prompt, fitThreshold, type Task } from '../src/core.js';
 
 test('style detector retains exact locations and does not equate candidates with defects', () => {
   const s = scan('Hello.\nA load-bearing wall\u2014inspect it.', 20);
@@ -74,4 +74,18 @@ test('quarter correction invalidates only the affected writer prompts', () => {
   const corrected = after.find(t => t.id === 'ai-strategy-slides')!;
   assert.match(corrected.brief, /next quarter/);
   assert.match(corrected.facts.capacity as string, /next quarter/);
+});
+
+test('targeted collection cannot silently expand on an unknown task', () => {
+  const tasks: Task[] = JSON.parse(readFileSync(new URL('../data/tasks-v2.json', import.meta.url), 'utf8'));
+  assert.deepEqual(selectTasks(tasks, 'vendor-decision-memo').map(t => t.id), ['vendor-decision-memo']);
+  assert.equal(selectTasks(tasks).length, 8);
+  assert.throws(() => selectTasks(tasks, 'vendor-decision-typo'), /refusing to expand/);
+});
+
+test('condition selection does not turn a typo into paid requests for both conditions', () => {
+  assert.deepEqual(selectConditions('default'), ['default']);
+  assert.deepEqual(selectConditions('house'), ['house']);
+  assert.deepEqual(selectConditions(), ['default', 'house']);
+  assert.throws(() => selectConditions('defualt'), /refusing to expand/);
 });

@@ -2,9 +2,9 @@
 
 A small TypeScript benchmark for single-call English business writing. It targets 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
-Current results: [six-model first-email comparison and coverage](reviews/assistant-v4/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+Current results: [completed default samples, including DeepSeek Flash](reviews/assistant-v5/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Current collection uses `pilot-v11` and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v11` audits saved outputs and verifies their inputs against the frozen task version.
+Current collection uses `pilot-v13` and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v13` audits saved outputs and verifies their inputs against the frozen task version.
 
 ## Run
 
@@ -17,7 +17,7 @@ npm test
 npm run bench -- collect alibaba/qwen3.8-flash
 npm run bench -- collect moonshotai/kimi-k3
 npm run bench -- collect anthropic/claude-opus-5
-npx tsx src/draft-audit.ts pilot-v11
+npx tsx src/draft-audit.ts pilot-v13
 ```
 
 The CLI reads only `AI_GATEWAY_API_KEY` from the selected dotenv file. It does not execute the file or copy credentials. Default path: `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Set `BUSINESS_SLOP_ENV_FILE` to select another file, or supply `AI_GATEWAY_API_KEY` in the environment. Credential files, dependencies and run output are git-ignored.
@@ -71,3 +71,11 @@ Local build only. No repository has been published and no remote has been config
 After inspecting a 429/502/503/504 result, `python3 scripts/retry-transient.py runs/pilot-v4/<failed-call>.json` archives that failed attempt, retains its entire budget reservation, and permits a new attempt when the original bench command is rerun. There are at most two manual retries per call. Successful generations and judge batches are reused. The retry helper never issues an inference call itself. An availability or permission failure still needs investigation; do not repeatedly retry it.
 
 Fable 5 and 5.1 use a declared non-ZDR route because the catalog and live API reject ZDR for these models. All test packets are synthetic. Other writer models retain the ZDR setting. `python3 scripts/coverage.py` reports generated, failed and unattempted cases across the current task version without assigning quality scores.
+
+Target one cell without touching failed cells elsewhere:
+
+```sh
+npm run bench -- collect deepseek/deepseek-v4.1-flash vendor-decision-memo default
+```
+
+The brief and condition arguments are optional. Omit the condition to collect both conditions for that brief. Unknown brief IDs and conditions fail rather than expanding the run. Existing exact-match outputs are reused.

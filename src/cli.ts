@@ -3,13 +3,13 @@ import { readFileSync, existsSync, mkdirSync, openSync, closeSync, unlinkSync, r
 import { resolve } from 'node:path';
 import { parseEnv } from 'node:util';
 import { fileURLToPath } from 'node:url';
-import { Budget, MAX_OUTPUT_TOKENS, atomic, hash, prompt, rates, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
+import { Budget, MAX_OUTPUT_TOKENS, atomic, hash, prompt, rates, selectTasks, selectConditions, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
 import { securityInstructions, securityCriteria, requirementVerdict } from './requirements.js';
 import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v11';
+const runName = 'pilot-v13';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -25,7 +25,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.11.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.13.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -233,7 +233,7 @@ function report() {
   console.log(JSON.stringify({ entries, budgetAccountedUsd: budget.total }));
 }
 
-const [command = 'report', arg] = process.argv.slice(2);
+const [command = 'report', arg, taskId, conditionId] = process.argv.slice(2);
 let lock: number | undefined;
 try {
   lock = openSync(resolve(root, 'runs/.lock'), 'wx');
@@ -281,11 +281,13 @@ try {
     else if (command === 'collect') {
       const model = models.find(m => m.id === arg);
       if (!model) throw new Error('Specify exact registered model ID');
+      const selectedTasks = selectTasks(tasks, taskId);
+      const selectedConditions = selectConditions(conditionId);
       // Reuse only exact writer inputs; changed briefs get new generations.
-      for (const task of tasks) for (const condition of ['default', 'house'] as const) {
+      for (const task of selectedTasks) for (const condition of selectedConditions) {
         const id = `${safeId(model.id)}--${task.id}--${condition}`;
         const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
-        for (const priorRun of ['pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
+        for (const priorRun of ['pilot-v12', 'pilot-v11', 'pilot-v10', 'pilot-v8', 'pilot-v7', 'pilot-v4']) {
           if (existsSync(file(id))) break;
           const priorPath = resolve(root, 'runs', priorRun, id + '.json');
           if (!existsSync(priorPath)) continue;
@@ -296,7 +298,7 @@ try {
         }
         await generateOne(model, task, condition);
       }
-      console.log(JSON.stringify({ model: model.id, collected: tasks.length * 2, grading: 'pending', budgetAccountedUsd: budget.total }));
+      console.log(JSON.stringify({ model: model.id, collected: selectedTasks.length * selectedConditions.length, conditions: selectedConditions, taskIds: selectedTasks.map(t => t.id), grading: 'pending', budgetAccountedUsd: budget.total }));
     }
     else if (command === 'calibrate') await calibrate();
     else if (command === 'smoke') {

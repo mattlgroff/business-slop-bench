@@ -1,0 +1,8 @@
+{
+  "deepseek--deepseek-v4.1-flash--vendor-decision-memo--default": "cc4faff6f15a83093f4740244ae2f38ab0aae7bdb385678377a4d2cba2bd41b3",
+  "deepseek--deepseek-v4.1-flash--pilot-results-memo--default": "266138fde9111648d21add8b93cd1ac2e3f84f52e6dba3c51f8df102bb3c70a7",
+  "deepseek--deepseek-v4.1-flash--discovery-proposal--default": "11e6a9acb3fbc1c1ac2315b6b1045d42fe90e4a861c49256193a7f796c89a654",
+  "deepseek--deepseek-v4.1-flash--change-order--default": "354f278fac2ac4a444bad88bd94222e051218399e89830e26109aa158b189e47",
+  "deepseek--deepseek-v4.1-flash--ai-strategy-slides--default": "31b163cc39bef2e141fc45b5e1a3be89510c390f3eb47f54c5195857eb7221e0",
+  "deepseek--deepseek-v4.1-flash--handoff-slides--default": "f8a8880112fe35171ebdd7c59997fa9018b590ceb97dddbc4a9f623252799b76"
+}

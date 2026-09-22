@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Targeted collection and complete DeepSeek default coverage, v12-v13
+
+Added optional brief and condition selectors to `collect`. Unknown selector values fail without expanding the paid run. Two regression tests cover this behavior. The writer prompts, model settings and task criteria are unchanged. Exact matching earlier outputs are still reused, and prior frozen runner sources are retained.
+
+DeepSeek's vendor default succeeded; its house request timed out at 90 seconds. The runner then collected the five untouched default briefs without retrying the failed launch-house or vendor-house cells. Default coverage is now complete at eight drafts, while house coverage remains one draft. This separates model output quality from API availability and avoids using missing results as zero scores.
+
+[Assistant review v5](reviews/assistant-v5/REPORT.md) grades the six new default drafts with verified passages and frozen output hashes. DeepSeek default passes 50/54 content checks; 4/8 drafts are content ready, but none is ready without editorial/style edits under the house lens. The eight default generations cost $0.002429 in successful reported charges. A suggested randomized-or-otherwise-defensible follow-up is accepted as a proposal; the required numerical time reduction is still missing and fails its specific check.
+
+The combined audit now has 62 reviewed drafts across the six attempted models. Conservative cumulative accounting is $7.8747 of $20, including failed reservations. Thirteen tests and TypeScript checking pass. Every collection session exited, and the run lock is absent. No Jev calls occurred. The other requested models and incomplete conditions remain outstanding.
+
 ## Fable 5.1 and DeepSeek partial samples, v11
 
 Fable 5.1 rejected the initial ZDR request with a 400 eligibility error. The catalog reports no ZDR support for Fable 5 and 5.1. The new frozen protocol declares a non-ZDR exception for those explicitly requested models and these synthetic test packets. Other writer routes remain unchanged; no private repo content or credential was added to the prompts.

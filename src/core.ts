@@ -4,9 +4,20 @@ import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 export const LIMIT_USD = 20;
 export const MAX_OUTPUT_TOKENS = 4096;
 export type Condition = 'default' | 'house';
+export function selectConditions(condition?: string): Condition[] {
+  if (condition === undefined) return ['default', 'house'];
+  if (condition !== 'default' && condition !== 'house') throw new Error('Unknown condition; refusing to expand collection');
+  return [condition];
+}
 export type Check = { id: string; dimension: string; statement: string; severity: 'critical' | 'editorial' | 'style_gate'; polarity?: 'pass' | 'defect'; evaluation?: 'security-prerequisite' | 'grounding' | 'style' };
 export type Task = { id: string; family: string; brief: string; facts: Record<string, string | number>; maxWords: number; checks: Check[] };
 export type Model = { id: string; reasoning: 'low' | 'none' };
+export function selectTasks(tasks: Task[], taskId?: string): Task[] {
+  if (taskId === undefined) return tasks;
+  const task = tasks.find(t => t.id === taskId);
+  if (!task) throw new Error('Unknown task ID; refusing to expand collection');
+  return [task];
+}
 export const hash = (v: unknown) => createHash('sha256').update(typeof v === 'string' ? v : JSON.stringify(v)).digest('hex');
 export function atomic(path: string, value: unknown) {
   writeFileSync(path + '.tmp', JSON.stringify(value, null, 2) + '\n');
