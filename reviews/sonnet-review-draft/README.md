@@ -1,10 +1,10 @@
-# Sonnet review in progress
+# Sonnet review evidence
 
-Fifteen completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). This is working evidence, not a full-model score. The paced collector remains responsible for producing the remaining drafts.
+Sixteen completed drafts have provisional direct assistant judgments saved in [decisions.json](decisions.json). The collector completed all sixteen calls and exited successfully on 2026-09-22 at 22:33:28 UTC. The cumulative comparison is in [assistant-v43](../assistant-v43/REPORT.md).
 
 `python3 reviews/sonnet-review-draft/verify.py` checks unique task/condition pairs, output hashes, successful complete responses and every quoted finding. The default pilot email is 198 words against the 180-word requirement. Semantic findings include a sender commitment to propose a date within five business days and unsupported performance/readiness claims. Requests for the recipient to take an action are distinguished from claims that an obligation already exists.
 
-When all sixteen drafts are collected and reviewed, carry these judgments into the cumulative report with the same source hashes. Do not infer missing-cell scores from these fifteen cases or replace earlier complete model results with this partial review.
+All sixteen judgments are carried into the cumulative report with their source hashes; earlier model rows remain unchanged.
 
 The default vendor memo preserves the required costs, recommendation and approval condition, but repeats its rationale. Its word count is verified by the same whitespace rule as the other drafts.
 
@@ -27,3 +27,5 @@ The default AI slides preserve the budget, target, four-slide format and selecti
 The house AI slides also invent current pilot authorization and extend pending legal approval into a quarter-long prohibition. Their six specific checks pass, but grounding fails. There are no em dashes or supported editorial findings in this review; en dashes are informational. Clean style does not offset unsupported business claims.
 
 The default handoff correctly withholds acceptance and requests an organizer, but invents Lee as the current incident owner and a same-day decision deadline. The forcing-function phrase is mannered wording. These findings distinguish defect-fix responsibility from incident ownership rather than treating all pre-acceptance work as Lee’s.
+
+The house handoff preserves the stated roles and acceptance gates, but claims the rehearsal is unscheduled without source support. Its recommended vote is explicitly proposed action. No separate editorial finding is recorded.

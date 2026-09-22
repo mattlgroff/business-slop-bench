@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-sonnet-5--pilot-client-email--default": "19a9199dbdeacf9818b20f4d4e1c9eb8e9003530fb76e8592888d5a0810583eb",
+  "anthropic--claude-sonnet-5--pilot-client-email--house": "531a2b3d2d04efcf0d935f9d7acae71cc8c00350056b7659366af927444139ec",
+  "anthropic--claude-sonnet-5--launch-delay-email--default": "3d3e14f496d6bab35dfbb24c5640ccb9a87c5e4d7ba638b10710dd5013c0bf33",
+  "anthropic--claude-sonnet-5--launch-delay-email--house": "9d344eb0d132e717f30f56db37aa8d5b0c534af6ad6245a6a8c17044fef31fb0",
+  "anthropic--claude-sonnet-5--vendor-decision-memo--default": "1cbc243a446c2f0dfc6a26616315ff89a96e6d10912c74188482c282e3953e19",
+  "anthropic--claude-sonnet-5--vendor-decision-memo--house": "b60eb39ff36b206ff52f522d4d5a313cd0e51837f66793f3d5ad0c5f04819789",
+  "anthropic--claude-sonnet-5--pilot-results-memo--default": "53c37ad82df8f479a37cc8bc20d7b6f58bc0f434f25e026ca8a35381ae5e3ad5",
+  "anthropic--claude-sonnet-5--pilot-results-memo--house": "a4e4aabfbf73f131f3f91e229835aaff299a36b8972cd1d6d01904957c4a0614",
+  "anthropic--claude-sonnet-5--discovery-proposal--default": "d91c749fbff54abf105eb3e408a72cbf5c3bfeca2fc8a3340e151d481e085b45",
+  "anthropic--claude-sonnet-5--discovery-proposal--house": "2a6c48868bd104f593cda5b3cb742b9819fe99cb33a44f77b4b9e0f116f0b61a",
+  "anthropic--claude-sonnet-5--change-order--default": "2990e9936d0ca20059243277496962efa523723d40962b2f3c449f32b5191d45",
+  "anthropic--claude-sonnet-5--change-order--house": "f554edd2808e648fc68a4a97f77c233f656fcef5321d9768fec2ba7c630bcac9",
+  "anthropic--claude-sonnet-5--ai-strategy-slides--default": "517886332fdf94b9267e356844757e1928c80bdb356729809960df4394ec36d4",
+  "anthropic--claude-sonnet-5--ai-strategy-slides--house": "467daa5ae39be3a90340e0e61cd73ae480d6fcf41e8172d08edaa3cdf25b4bb5",
+  "anthropic--claude-sonnet-5--handoff-slides--default": "fd02290dc150522791c54699960ebe3414a28aac9b23642be8adf1d45c15815a",
+  "anthropic--claude-sonnet-5--handoff-slides--house": "267c76d9fddd11c7dc49520202c446960b637ca8f1bed1c3c28554f2557a153d"
+}

@@ -1,5 +1,5 @@
 {
-  "status": "Partial review in progress; not a full-model comparison.",
+  "status": "All sixteen Sonnet drafts reviewed; provisional direct assistant judgments.",
   "rows": [
     {
       "model": "Sonnet 5",
@@ -288,6 +288,22 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--handoff-slides--default.md",
       "outputSha256": "fd02290dc150522791c54699960ebe3414a28aac9b23642be8adf1d45c15815a"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "handoff-slides",
+      "condition": "house",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "so it has not been scheduled.",
+          "The source states that the rehearsal has not happened and no organizer has accepted responsibility. It does not establish whether a date has been scheduled or establish that causal explanation."
+        ]
+      ],
+      "style": [],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--handoff-slides--house.md",
+      "outputSha256": "267c76d9fddd11c7dc49520202c446960b637ca8f1bed1c3c28554f2557a153d"
     }
   ]
 }
