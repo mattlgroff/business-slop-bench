@@ -1,0 +1,247 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "C03",
+        "fail",
+        "the pilot itself will establish measured savings",
+        "Promises measured savings although the source has only an aspiration and no baseline or evidence of savings."
+      ],
+      [
+        "grounding",
+        "fail",
+        "the pilot itself will establish measured savings",
+        "Introduces an unsupported outcome commitment. The approved engagement assesses invoice handling; savings are not assured."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I'd like to move us forward on the proposed pilot for invoice handling and ask for your approval on two points.",
+        "Long announcement delays the scope and fee request."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "C02",
+        "fail",
+        "followed by a decision on production rollout",
+        "A later rollout decision does not explicitly exclude production rollout from the pilot scope."
+      ],
+      [
+        "C04",
+        "fail",
+        "Your team needs to grant access to client data first",
+        "Security approval is stated as a kickoff dependency, but the required approval-before-data-access relationship is missing; this sentence instead puts data access first."
+      ],
+      [
+        "grounding",
+        "fail",
+        "I can return a proposed schedule within a few days of clearance.",
+        "Adds an unsupported turnaround commitment. The draft also adds weekly measurement and a this-week response deadline."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "they've kept everything moving despite the security timeline",
+        "Invents favorable team performance, beyond the brief's invitation to convey confidence."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "Quick update on the launch.",
+        "Opening announces the update instead of starting with the changed security timeline."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team has kept every deliverable ahead of this dependency",
+        "Invents the status of every deliverable. The end-of-day Thursday decision deadline is also absent from the source."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "immediate go-live capability",
+        "Available SSO and satisfaction of the listed requirements do not establish immediate production readiness."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Alpha is fully compliant today: SSO is available, and the $92,000 total fits within the $100,000 ceiling with $8,000 of headroom.",
+        "Repeats the same eligibility and arithmetic already shown in the table and constraint evaluation."
+      ]
+    ]
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C05",
+        "review",
+        "Priya to initiate procurement with Alpha pending your approval.",
+        "Identifies Priya and the CFO approval request, but pending approval may mean procurement can start while approval is outstanding. The signing gate is not clear."
+      ]
+    ],
+    "style": [
+      [
+        "13",
+        "The source pack gives no basis for estimating that delay",
+        "Refers to the benchmark source packet inside the finished CFO memo."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Sam's proposed matched-ticket follow-up",
+        "Attributes an existing proposal to Sam. The source only says Sam can run the follow-up; the memo may propose it without inventing prior authorship."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Results support continuing evaluation via the matched-ticket follow-up. They do not support scaling now, given non-randomized allocation, a quality pass rate below threshold, and unmeasured savings.",
+        "Repeats the recommendation and reasons already explained above the next-decision section."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Speed gains that come with lower pass rates would shift rework onto other teams.",
+        "Invents a consequence and destination of rework not established by the supplied pass rates. The closing also assigns rollout approval authority to the COO, whose stated authority covers the follow-up only."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Included: current-state process map, prioritized backlog, implementation recommendation.",
+        "Repeats the complete deliverable list from the opening without adding scope detail."
+      ]
+    ]
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "| Item | Detail |",
+        "The closing summary table repeats scope, price, timing and dependencies already stated immediately above."
+      ]
+    ]
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "authorized scope",
+        "The documents are approved; the pilot scope has not been selected by the COO. The draft also invents a today deadline."
+      ]
+    ],
+    "style": [
+      [
+        "4",
+        "Decision shapes how we validate AI value before broader investment",
+        "Generic significance claim adds no concrete reason or constraint to the decision slide."
+      ]
+    ]
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Decide on credit decisions next quarter, once legal approval lands",
+        "Assumes pending legal approval will arrive by next quarter. The Q3 heading and today selection deadline are also unsupported by the source."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "\u2705 Done",
+        "Status emojis decorate a professional decision table; plain met or not met labels communicate the same information."
+      ]
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "| Approved runbook | Met | Lee |",
+        "Assigns runbook ownership to Lee, although the source assigns Lee only defect fixes until acceptance."
+      ]
+    ],
+    "style": []
+  }
+]

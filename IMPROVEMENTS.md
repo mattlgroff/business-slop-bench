@@ -1,5 +1,17 @@
 # Grader improvement log
 
+## GLM Flash complete comparison and scoring documentation, v15
+
+Collected all 16 outputs for `zai/glm-5.3-flash` and directly reviewed them against the existing eight briefs, content checks and anti-slop lens. All calls succeeded with normal stop reasons, no warnings and matching requested, returned and canonical model IDs. All drafts are within the word limits. No retries or Jev calls were needed.
+
+Default passes 48/54 content checks with six failures; house passes 46/54 with seven failures and one unresolved check. Content-ready counts are 3/8 default and 2/8 house. Ready-without-edits counts are 0/8 and 1/8. Default contains 14 em dashes; house contains none. The two rather-than constructions in the results memos explain causal uncertainty and are necessary factual contrasts, so neither is a style defect.
+
+The dominant issue is unsupported detail: promised measured savings, an invented schedule turnaround, favorable team-performance claims, immediate go-live capability, and unsourced ownership or authorization. The house vendor memo's procurement approval wording is unresolved; that receives no point but is not a confirmed failure. Discovery and change-order content performs better. [Full grades with exact evidence](reviews/assistant-v9/REPORT.md).
+
+Successful charges total $0.0057761 for these 16 outputs. Conservative cumulative accounting is $9.35340 of $20. The cumulative assistant review now covers 129 outputs across 11 attempted models. Grades remain provisional and unblinded, with one output per cell. These results do not establish repeatability or a general model ranking.
+
+README now separates current assistant scoring from archived Jev experiments, correcting text that could imply Jev still supplies current grades. The review builder validates frozen hashes, returned identities, complete decision coverage and quoted evidence. Coverage and draft audits were refreshed. All three collection sessions exited successfully and the global lock is absent. Broad roster coverage and independent or repeated validation remain unfinished.
+
 ## Sol and Terra complete comparisons, v15
 
 Collected and directly reviewed all eight briefs in both conditions for Sol and Terra, adding 32 drafts and bringing the reviewed total to 113. All calls succeeded with the requested model IDs, normal stop reasons, and no retries. No Jev calls were made.

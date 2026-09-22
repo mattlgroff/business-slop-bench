@@ -1,0 +1,18 @@
+{
+  "zai--glm-5.3-flash--pilot-client-email--default": "4c9e92c250f494e6b419ad929786c7cd5df155619289bc91b316672308efc1da",
+  "zai--glm-5.3-flash--pilot-client-email--house": "296f58480883a3315b2a92777ccd722f417a1aa1aa06efccb283a01b6643200a",
+  "zai--glm-5.3-flash--launch-delay-email--default": "d8b9d206289e32e4181bce8ba83e45fd913007270df3ebb7f93158f4eff71a68",
+  "zai--glm-5.3-flash--launch-delay-email--house": "9cb6e1109053c279f1fafedac6bc41a12d501f91cc29b60b53d6c2a9196a4127",
+  "zai--glm-5.3-flash--vendor-decision-memo--default": "3e94e5aea1597f4e54f3470b9cb86240657a74657fdd198cea295b2f8662e6ac",
+  "zai--glm-5.3-flash--vendor-decision-memo--house": "5125a618aa99eb4accaea75a2ae7e2c1f346528a472ae1f4697defcbfd1ecf3f",
+  "zai--glm-5.3-flash--pilot-results-memo--default": "fb428c49b7b4d0d81f38eaac5d79b20ce870be2360f4a71052220046c9c1f183",
+  "zai--glm-5.3-flash--pilot-results-memo--house": "3aa80c12cffc514d8fee2db5abb029d2dc97fc058b1bbb7425682fcc285df7a0",
+  "zai--glm-5.3-flash--discovery-proposal--default": "5c6812b368950f3aa7dc148885c1a5695408e9d9543e8e13cb2acd7f0dbd6812",
+  "zai--glm-5.3-flash--discovery-proposal--house": "0c09e6ad9474ae6d6e547d2e24b1a812b11323976428e2ae0f8a35a285268ba4",
+  "zai--glm-5.3-flash--change-order--default": "a600ec027bbb20deb091af38ccf940511b295135aab1d75cd680ede5c364ac57",
+  "zai--glm-5.3-flash--change-order--house": "8f7a7f6d7cc0deeefbe885d9808adebf5c2afa96e8b156ff0b3285c8600053d4",
+  "zai--glm-5.3-flash--ai-strategy-slides--default": "ad25e0f7cfaf8568cf510799c3f641f3f9cdddf973b19665f427e1cdc4db7058",
+  "zai--glm-5.3-flash--ai-strategy-slides--house": "4d077f2aef501f4a6b9e55eef80e4632b635f1469d7420806d0804c50f987583",
+  "zai--glm-5.3-flash--handoff-slides--default": "3e46725d628771fab2280f3cb10b2acc4f559880c28f95ee94dfa43767de0866",
+  "zai--glm-5.3-flash--handoff-slides--house": "ac79882d77b28b7606020acb21810e3686f24beb879faae738de14a67a883b11"
+}
