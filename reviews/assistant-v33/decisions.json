@@ -1,0 +1,195 @@
+[
+  {
+    "model": "Terra",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I\u2019m writing to propose moving forward",
+        "Announces the proposal instead of stating it directly."
+      ],
+      [
+        "21",
+        "the client\u2019s goal",
+        "Refers to the recipient as a third-person client in an email addressed directly to Morgan."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "the client\u2019s 20% reduction target",
+        "Refers to the recipient as a third-person client in an email addressed directly to Morgan."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "presenting the agreement for CFO signature.",
+        "The source requires CFO approval but does not specify the contract signatory. The memo may assign an unsupported signing role."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Approve Alpha at a year-one cost of **$92,000** ($72,000 annual subscription plus $20,000 one-time setup).",
+        "Repeats the opening recommendation and complete cost breakdown already given in the table; the new signing prerequisite can stand without this recap."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Beta costs $70,000 in year one but cannot meet the mandatory SSO requirement before production. With no committed SSO delivery date, Beta cannot proceed to production under the stated constraints.",
+        "Two successive sentences repeat the same production-ineligibility conclusion. The missing date can be stated in one sentence with the reason."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "12 minutes across 100 tickets, compared with 15 minutes across 200 baseline tickets.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen rubric. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "change-order",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Client receipt of sandbox credentials.",
+        "Reverses the credential handoff in the schedule prerequisite: the client must supply credentials, not receive them. The later dependency paragraph correctly says the client provides them, creating inconsistent directions."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "The proposed change includes delivery of the CRM connector as an addition to the reporting dashboard scope.",
+        "Repeats the immediately preceding requested-change description without adding scope detail."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "Select One Q Next-Quarter AI Pilot",
+        "Stray Q makes the heading awkward; another heading says This Quarter despite the requested next-quarter decision. These are avoidable heading errors."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Knowledge search can proceed with approved internal documents.",
+        "Approved documents do not establish readiness to proceed with the pilot before the COO selection; the source supplies no launch-readiness finding."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Require Dana\u2019s results report before any expansion.",
+        "The fourth slide repeats the Dana reporting prerequisite already stated on the first and third slides."
+      ]
+    ]
+  },
+  {
+    "model": "Terra",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Terra",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Slide 2: Acceptance status",
+        "The entire second slide repeats the acceptance criteria and status already stated on slide 1 without adding evidence or a new action."
+      ]
+    ]
+  }
+]

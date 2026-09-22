@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Terra uncapped, v22
+
+Collected 16 new Terra drafts with unchanged v2 briefs and pilot-v22 settings, no output-token cap or harness deadline, no retries and ZDR requested. All responses have matching requested, returned and canonical identities, normal stop reasons, no warnings and valid word counts.
+
+Terra scores 52/54 checks in each condition. Default has one failure and one unresolved CFO-signing claim; house has two failures. Both conditions have six content-ready drafts and three ready without edits. The default change order reverses the credential handoff. The house strategy deck claims the pilot can proceed, and the house readout omits the explicit reduction. Default calculates the correct three-minute and 20% reduction. Eight default em dashes become zero with house instructions. Remaining editorial defects include third-person client references, repetition and an awkward slide heading. [Evidence and comparison](reviews/assistant-v33/REPORT.md).
+
+The 16 calls cost $0.105832, versus $0.011212 for Luna. Terra has no consistent readiness advantage across both conditions in this small sample. Conservative accounting is $27.179973746 of $100. The cumulative report now contains 304 primary drafts across 19 models; all 288 previous rows are unchanged. Exact-quote, output-hash, model-identity and coverage assertions pass, and the independent draft audit verifies writer inputs. Collection and audit processes exited and the lock is absent. Four roster models, broader repeatability and independent reviewer validation remain unfinished.
+
 ## Current-report eligibility correction
 
 The latest cumulative builder defaulted missing `benchEligible` fields to true. Inherited Muse rows predated that field, so Muse appeared eligible despite its saved catalog listing no ZDR route. The builder now derives eligibility for every row from that row's saved catalog and frozen Gateway request policy, rejects unknown catalog coverage, and records the evidence. Muse joins Fable 5 and Fable 5.1 as disqualified for ZDR while retaining its writing scores. A semantic digest confirms every writing grade, finding, output hash and readiness result is unchanged. This validates the requested routing policy, not provider retention practices independently.

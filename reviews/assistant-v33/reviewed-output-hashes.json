@@ -1,0 +1,18 @@
+{
+  "openai--gpt-5.6-terra--pilot-client-email--default": "7d1e0fc46099fdd8523ccc0b3ff29d6c30f8da0e93c2bb5d86e0624aff884cf2",
+  "openai--gpt-5.6-terra--pilot-client-email--house": "721c4e48bc2b22c1b604a3a9662fad62a0efb8ff9e7c1b27e79706f846f1a21b",
+  "openai--gpt-5.6-terra--launch-delay-email--default": "f04792038699e99032d648a23e30c699e9dd861050831eea5738247f3f8caa30",
+  "openai--gpt-5.6-terra--launch-delay-email--house": "b3bc809b9d9f47769ba422015b0912b5e1941319fe88b0724a4c6c1f841a6998",
+  "openai--gpt-5.6-terra--vendor-decision-memo--default": "b13c2026622d8f2551b92aca14a311d46f7620d94c81a92d7dd431b88b87828a",
+  "openai--gpt-5.6-terra--vendor-decision-memo--house": "9632a1573ed4759aeb72b88a728b0bd73830fd702f82d82480c8ef6320eeb37b",
+  "openai--gpt-5.6-terra--pilot-results-memo--default": "f81aac8e93f225c66fbb49a17bb1e00a74f27e2cdfcc8bb640a045c84b81e1c9",
+  "openai--gpt-5.6-terra--pilot-results-memo--house": "83bd40e610579124eb83901e37189602f7b52ea01a1f2f917029ae5728a62817",
+  "openai--gpt-5.6-terra--discovery-proposal--default": "e01be70e72cfcfa5167f3de71d589b96179fc03134af6896f48524c7b5345c20",
+  "openai--gpt-5.6-terra--discovery-proposal--house": "7935e148072e9e4561264141e3f7da8655674745122ef053592dc27c1ed20ae4",
+  "openai--gpt-5.6-terra--change-order--default": "d92e57d06b2ea29189a2a9cfd29b29be11af031a5207c08fb8d43fc6c962d002",
+  "openai--gpt-5.6-terra--change-order--house": "7c0b71cd5cd65497e12c3a6eb867f5359c906fe1cc1506ac664eb5a44802de07",
+  "openai--gpt-5.6-terra--ai-strategy-slides--default": "e68264cc48953ea5a2e283eb07936b97022639f1101a89c03d395e15afb588bc",
+  "openai--gpt-5.6-terra--ai-strategy-slides--house": "c193d5bea59e28b288e0133b21856391b8ab3ed1e321cbe91cba570eafd34a54",
+  "openai--gpt-5.6-terra--handoff-slides--default": "d5bcfd7d4b03f5c51cb7ef8f0ac6777a69b6b49f83c438034f6aea923493dee5",
+  "openai--gpt-5.6-terra--handoff-slides--house": "affef89c920f87ce647a3a9f6550945ca3dced24d81403f85dac67f23e8996dd"
+}
