@@ -2,7 +2,7 @@
 
 A small TypeScript benchmark for single-call English business writing. It targets 21 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
-Current results: [updated assistant grades, including partial Opus results](reviews/assistant-v2/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+Current results: [assistant comparison of Astra, Kimi and Qwen, plus partial Opus results](reviews/assistant-v3/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
 
 Current collection uses `pilot-v10` and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v10` audits saved outputs and verifies their inputs against the frozen task version.
 

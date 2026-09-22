@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Astra reference sample and assistant grading
+
+Collected all sixteen Astra drafts under the same corrected task set and existing economical settings. Every call completed without retries or warnings. Successful generation cost was $0.47158. No Jev calls occurred.
+
+[Updated comparison](reviews/assistant-v3/REPORT.md) grades Astra against the same 54 content checks per condition. All 108 content checks passed in this observed sample; word limits were met. This is not a claim of general accuracy. Default outputs still fail the em dash gate on three tasks. Editorial findings identify redundant wording in both pilot emails and a source-pack reference in the default handoff slides. Ready-without-edits results are 4/8 default and 7/8 house style.
+
+The report documents why ordinary personal confidence in the launch email is allowed while invented objective claims of team performance fail other models. Intentional signature fields in the change order are also distinguished from unfilled authoring placeholders. Findings use exact verified passages. All Astra output hashes are frozen so rerunning the report builder cannot silently apply old decisions to changed text.
+
+The audit now identifies 51 saved and assistant-reviewed drafts. Earlier grades are carried forward unchanged. Conservative cumulative accounting is $6.4317 of $20, including failed-call reservations from earlier work. This is distinct from billed cost. The collection process exited and the global lock is absent. Remaining model coverage and repeatability validation are unfinished.
+
 ## Corrected quarter wording and partial Opus expansion, v10
 
 Created `data/tasks-v2.json` with one fact correction: AI pilot capacity now refers to next quarter, matching the brief. All other task facts and every grading criterion are unchanged. A focused test verifies that only this task's two writer prompts change. Historical tasks, generations and reports remain intact.
