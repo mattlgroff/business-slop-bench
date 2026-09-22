@@ -53,11 +53,18 @@ const scanPatterns: [string, RegExp][] = [
 export function scan(text: string, maxWords: number) {
   const words = text.trim() ? text.trim().split(/\s+/u).length : 0;
   const locate = (offset: number, match: string) => ({ offset, line: text.slice(0, offset).split('\n').length, text: match });
+  const quarterPlaceholders = [...text.matchAll(/\bQ\[next\]/gi)].filter(m => {
+    const lineStart = text.lastIndexOf('\n', m.index! - 1) + 1;
+    const line = text.slice(lineStart).split('\n')[0];
+    // Scope this rule to slide headings, not ordinary bracket notation in prose/code.
+    const inlineCode = text[m.index! - 1] === '`' && text[m.index! + m[0].length] === '`';
+    return !inlineCode && /^\s*(?:#{1,6}\s*)?(?:\*\*)?Slide\s+\d+\b/i.test(line);
+  }).map(m => locate(m.index!, m[0]));
   return {
     words, withinWordLimit: words <= maxWords, nonempty: words > 0,
     emDashes: [...text.matchAll(/\u2014/g)].map(m => locate(m.index!, m[0])),
     informationalPunctuation: Object.fromEntries(['2013', '2018', '2019', '201C', '201D'].map(code => [code, [...text].filter(c => c.codePointAt(0) === parseInt(code, 16)).length])),
-    residue: [...text.matchAll(/^(?:STYLE GATE|EVALUATOR)\s*:|\[(?:Your Name|Name|insert[^\]\n]*)\]/gmi)].map(m => locate(m.index!, m[0])),
+    residue: [...text.matchAll(/^(?:STYLE GATE|EVALUATOR)\s*:|\[(?:Your Name|Name|insert[^\]\n]*)\]/gmi)].map(m => locate(m.index!, m[0])).concat(quarterPlaceholders).sort((a, b) => a.offset - b.offset),
     candidates: scanPatterns.flatMap(([family, regex]) => [...text.matchAll(regex)].map(m => ({ family, ...locate(m.index!, m[0]) }))),
   };
 }

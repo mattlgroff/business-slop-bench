@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Mechanical quarter-placeholder regression, v14
+
+The deterministic scanner now detects `Q[next]` in slide headings, preserving its exact offset and line. The rule is scoped to slide headings and excludes an explicitly backticked inline-code token. It does not treat ordinary bracket notation in prose or intentional signature/date fields as unfinished authoring.
+
+A before/after rescan verified all 78 reviewed outputs against their saved text hashes. Exactly one residue result changed: Luna's default AI strategy slides, line 1, offset 43. All other detector fields and all other drafts were unchanged. The prior manual grade already blocked that draft for the placeholder, so model scores did not change.
+
+[Regression comparison](runs/quarter-placeholder-regression/comparison.json) preserves the detector hashes and exact new match. `src/rescan-quarter-placeholder.ts` refuses to overwrite a frozen phase with another detector or compare a changed review set. This is a regression check on the observed corpus, not proof of general placeholder-detection accuracy.
+
+Fourteen tests and TypeScript checking pass. No model or judge calls occurred, and the spending ledger was not changed. Historical protocols and the v13 source snapshot are preserved; future collection targets v14 and reuses matching writer inputs. Broader model coverage and repeatability validation remain unfinished.
+
 ## Luna comparison under unchanged writer settings
 
 Collected all sixteen Luna drafts in v13 without retries or warnings. Successful reported generation cost was $0.01141, close to Qwen's represented sample cost. [Assistant review v6](reviews/assistant-v6/REPORT.md) uses the same task checks, output caps and style lens. It freezes every new output hash and preserves earlier grades.

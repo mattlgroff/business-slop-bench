@@ -89,3 +89,11 @@ test('condition selection does not turn a typo into paid requests for both condi
   assert.deepEqual(selectConditions(), ['default', 'house']);
   assert.throws(() => selectConditions('defualt'), /refusing to expand/);
 });
+
+test('unfinished quarter tokens in slide headings are located without flagging intentional fields or notation', () => {
+  const text = '## Slide 1: Select one Q[next] AI pilot\n\nSignature: ______ Date: ______\nUse Q[next] as the queue index.\n## Slide 2: Explain `Q[next]` indexing';
+  const findings = scan(text, 200).residue;
+  assert.deepEqual(findings, [{ text: 'Q[next]', offset: text.indexOf('Q[next]'), line: 1 }]);
+  assert.equal(scan('**Slide 1: Q[NEXT] plan**', 100).residue.length, 1);
+  assert.equal(scan('Slide 1: Next-quarter plan\nSignature: ______', 100).residue.length, 0);
+});
