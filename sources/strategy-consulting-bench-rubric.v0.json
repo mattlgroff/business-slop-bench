@@ -1,0 +1,174 @@
+{
+  "name": "StrategyConsultingBench",
+  "version": "0.1.0",
+  "inspired_by": [
+    "ZeroDefect (mattlgroff/zero-defect) eight lenses",
+    "SlopCodeBench (arXiv:2603.24755) iterative quality erosion idea",
+    "PresentBench binary checklists",
+    "WritingBench instance criteria + judge harness",
+    "Slop Index / Antislop deterministic tells"
+  ],
+  "artifact_types": [
+    "slide_deck_markdown",
+    "executive_readout",
+    "sow_or_proposal",
+    "client_email_or_memo"
+  ],
+  "scoring_philosophy": {
+    "primary_unit": "binary_checklist_item_per_task",
+    "aggregate": "pass_rate_weighted_by_severity_and_severity",
+    "layers": {
+      "deterministic": "Style gate, Claudespeak/slop tell counters, arithmetic recomputation, citation URL hygiene, exact contradiction string pairs when provided",
+      "typed_judge_jev": "Narrow noul/choice/score questions over checklist items once criteria are crisp (promise present?, number grounded?, MECE applicable?)",
+      "llm_as_judge": "Open criteria needing short evidence quotes + repair direction; instance-specific checklists; adjudication when lenses conflict",
+      "human": "Gold labels for seed set; periodic judge calibration"
+    },
+    "recommendation": "Hybrid. Prefer deterministic + binary checklists first; Jev for high-volume typed gates; LLM-as-judge for sparse open defects with required quote anchors. Do not rely on freeform 1-5 professionalism scores alone."
+  },
+  "dimensions": [
+    {
+      "id": "promise_fidelity",
+      "zero_defect_lens": "commitments-reviewer",
+      "label": "Promise / commitment fidelity",
+      "what": "Unauthorized, unconditional, or fabricated guarantees, dates, savings, scope, staffing, SLAs, and implied CTA promises (esp. SOW / proposal).",
+      "must_fail_examples": [
+        "Guarantees outcome without approved authority or conditions",
+        "Invented delivery date, % savings, or headcount not in brief/source pack",
+        "Headline/CTA implies a commitment the body does not authorize"
+      ],
+      "judge_mode": ["deterministic_trap_facts", "jev_noul", "llm_quote_anchored"]
+    },
+    {
+      "id": "evidence_grounding",
+      "zero_defect_lens": "evidence-reviewer",
+      "label": "Evidence grounding",
+      "what": "Material claims must be entailed by the supplied brief, cited source, or marked as assumption. Citation ≠ support.",
+      "must_fail_examples": [
+        "Cites a real URL that does not entail the number or causal claim",
+        "Vague authority (industry experts agree) with no source",
+        "Confidential claim verified via web when packet forbids it"
+      ],
+      "judge_mode": ["source_pack_entailment", "llm_quote_anchored"]
+    },
+    {
+      "id": "numbers_integrity",
+      "zero_defect_lens": "numbers-reviewer",
+      "label": "Numbers integrity",
+      "what": "Arithmetic, units, baselines, forecast vs actual, prose/table agreement.",
+      "must_fail_examples": [
+        "Totals that do not sum",
+        "Schedule weeks that contradict stated dates",
+        "Percent without denominator or baseline"
+      ],
+      "judge_mode": ["deterministic_recompute", "jev_noul"]
+    },
+    {
+      "id": "consistency",
+      "zero_defect_lens": "consistency-reviewer",
+      "label": "Internal consistency",
+      "what": "Contradictions across slides/sections/tables; summary that overstates body; recommendation that does not follow stated criteria.",
+      "must_fail_examples": [
+        "Reversible migration while legacy DB is deleted",
+        "Launch date before required security review completes"
+      ],
+      "judge_mode": ["llm_quote_anchored", "jev_noul"]
+    },
+    {
+      "id": "decision_completeness",
+      "zero_defect_lens": "decision-completeness-reviewer",
+      "label": "Decision readiness",
+      "what": "For the stated audience decision: missing owner, criteria, risks, next step, unresolved dependency, or monitoring measure.",
+      "must_fail_examples": [
+        "Recommend launch with Legal still pending and no decision gate",
+        "Monitor success with no metric, owner, or threshold"
+      ],
+      "judge_mode": ["instance_checklist", "llm_quote_anchored"]
+    },
+    {
+      "id": "language_precision",
+      "zero_defect_lens": "language-precision-reviewer",
+      "label": "Language precision",
+      "what": "Ambiguity that changes obligation, authority, scope, or confidence (will/should/may; hidden actors; undefined terms).",
+      "must_fail_examples": [
+        "We will deliver X when only a pilot is authorized",
+        "Passive voice hiding who pays or owns risk on a material point"
+      ],
+      "judge_mode": ["llm_quote_anchored", "jev_choice"]
+    },
+    {
+      "id": "anti_slop_claudespeak",
+      "zero_defect_lens": "anti-slop-reviewer",
+      "label": "Anti-slop / Claudespeak",
+      "what": "AI-writing residue and consulting-register LLM-ese that reduces professionalism without adding information.",
+      "deterministic_style_gate": [
+        "U+2014 em dash count",
+        "formulaic not-X-but-Y / less-about-more-about patterns"
+      ],
+      "smell_families": [
+        "stock_ai_vocabulary",
+        "claudism_candidates",
+        "cataphoric_teasers",
+        "mannered_prose",
+        "empty_promotional_closers",
+        "dramatic_fragments_and_aphorisms"
+      ],
+      "must_fail_examples": [
+        "Dense robust/next-generation/unlock/landscape filler on a CFO decision slide",
+        "Here's what nobody tells you teasers with no payload",
+        "Opus-class Claudespeak that would fail a partner edit"
+      ],
+      "judge_mode": ["deterministic_tells", "jev_score", "llm_quote_anchored"]
+    },
+    {
+      "id": "mece_accountability",
+      "zero_defect_lens": "mece-reviewer",
+      "label": "MECE accountability (when applicable)",
+      "what": "Overlapping owners, gaps, unclear handoffs for assigned responsibilities. N/A when doc does not assign roles.",
+      "must_fail_examples": [
+        "Two owners of same scoped decision without boundary",
+        "Transition to support with contributors but no accountable owner"
+      ],
+      "judge_mode": ["applicability_gate", "llm_matrix", "jev_noul"]
+    }
+  ],
+  "task_schema": {
+    "id": "string",
+    "artifact_type": "slide_deck_markdown|executive_readout|sow_or_proposal|client_email_or_memo",
+    "audience": "string",
+    "decision": "string",
+    "brief_or_source_pack": "paths or inline facts (trap facts allowed)",
+    "model_output": "markdown artifact under test",
+    "checklist": [
+      {
+        "id": "C001",
+        "dimension": "promise_fidelity",
+        "statement": "Binary pass/fail criterion with expected answer",
+        "expected": true,
+        "severity": "must_fix|should_fix|style_gate",
+        "method": "deterministic|jev|llm_judge|human"
+      }
+    ]
+  },
+  "seed_task_ideas": [
+    {
+      "id": "sow-fake-savings",
+      "focus": "promise_fidelity + numbers",
+      "sketch": "SOW invents 40% cost reduction and wrong subscription total vs brief"
+    },
+    {
+      "id": "deck-claudespeak",
+      "focus": "anti_slop_claudespeak",
+      "sketch": "6-slide AI strategy deck heavy on Claudespeak; partner-grade rewrite is gold"
+    },
+    {
+      "id": "readout-ungrounded-cite",
+      "focus": "evidence_grounding",
+      "sketch": "Executive readout cites real McKinsey URL that does not support the claimed CAGR"
+    },
+    {
+      "id": "proposal-contradiction",
+      "focus": "consistency + decision_completeness",
+      "sketch": "Launch date before security review; Legal pending; monitor with no thresholds"
+    }
+  ]
+}

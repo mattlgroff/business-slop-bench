@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Eight-brief Qwen collection, v8
+
+Collected both conditions for all eight tasks with Qwen Flash. Fourteen new writer calls completed successfully, and the two first-brief drafts were reused only after matching their input hashes. No API retries were needed. Successful new generation charges total $0.009630; conservative cumulative accounting is $2.0545 of $20.
+
+The new `collect` command separates obtaining diagnostic drafts from publishing calibrated scores. It does not unlock the full pilot. A read-only draft audit reports input verification, generation provenance, word counts, em dashes, and ungraded status. Imported generation charges are excluded from new spending. The original user-supplied rubric is now preserved in `sources/strategy-consulting-bench-rubric.v0.json`.
+
+All sixteen Qwen drafts fit their word limits. Six default drafts contain ten em dashes in total; all eight house-style drafts contain none. The broader sample exposes errors that clean style cannot offset: unsupported readiness claims, approval/acceptance confusion, misassigned ownership, and omitted recommendations. The change-order house draft is comparatively strong. [Read the editorial assessment](QWEN_SCREEN.md), which identifies passages and explicitly does not present author opinions as human gold or automated scores.
+
+TypeScript checking and the ten existing tests pass. The collection process exited successfully, and its lock was removed. New task-level Jev grading and broader model comparison remain unfinished.
+
 ## Editorial evidence and unresolved results, v7
 
 All 29 editorial categories now return clean, defect or unclear plus an original paragraph selection. A clean verdict with no defect passage passes. A defect with a verified passage fails. Disagreement remains unresolved. This prevents uncertain allegations from becoming confirmed defects, but can also leave real problems unclassified. These outcomes are not an overall quality score.

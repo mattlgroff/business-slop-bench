@@ -9,7 +9,7 @@ import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v7';
+const runName = 'pilot-v8';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -24,7 +24,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.7.0', sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.8.0', sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -198,7 +198,7 @@ async function calibrate() {
   const summary = { protocolHash, thresholds, labelStatus: 'Author-proposed diagnostic labels; validation previously inspected under v2, not blind human gold', gatePass: validationWrong === 0 && validationCoverage >= 0.75, validationWrong, validationCoverage, matched: rows.filter(r => r.match).length, total: rows.length, wrongConfident: rows.filter(r => !r.match && r.observed !== 'review').length, unresolved: rows.filter(r => r.observed === 'review').length, rows };
   atomic(file('calibration'), summary); console.log(JSON.stringify(summary));
 }
-async function runOne(model: Model, task: Task, condition: Condition) {
+async function generateOne(model: Model, task: Task, condition: Condition) {
   const id = `${safeId(model.id)}--${task.id}--${condition}`;
   const input = prompt(task, condition, source);
   const result = await paid(id, model.id, { prompt: input, reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS }, MAX_OUTPUT_TOKENS, () => generateText({
@@ -208,7 +208,11 @@ async function runOne(model: Model, task: Task, condition: Condition) {
   }));
   if (result.status !== 'ok') throw new Error('Stored generation error requires inspection');
   if (!result.text?.trim() || result.finishReason === 'length') throw new Error('GENERATION_INCOMPLETE: inspect saved output before expanding');
-  return grade(id, task, result.text);
+  return { id, text: result.text };
+}
+async function runOne(model: Model, task: Task, condition: Condition) {
+  const result = await generateOne(model, task, condition);
+  return grade(result.id, task, result.text);
 }
 function report() {
   const scores = readdirSync(runDir).filter(f => f.startsWith('score--') && !f.includes('control--')).map(f => read(`runs/${runName}/` + f));
@@ -252,6 +256,25 @@ try {
         await grade(id, tasks[0], old.text);
       }
       report();
+    }
+    else if (command === 'collect') {
+      const model = models.find(m => m.id === arg);
+      if (!model) throw new Error('Specify exact registered model ID');
+      // Collect diagnostic drafts before claiming that the grader is calibrated.
+      // Saved v7 outputs may be reused only when their writer input is identical.
+      for (const task of tasks) for (const condition of ['default', 'house'] as const) {
+        const id = `${safeId(model.id)}--${task.id}--${condition}`;
+        const priorPath = resolve(root, 'runs/pilot-v7', id + '.json');
+        if (!existsSync(file(id)) && existsSync(priorPath)) {
+          const old = JSON.parse(readFileSync(priorPath, 'utf8'));
+          const input = { prompt: prompt(task, condition, source), reasoning: model.reasoning, maxOutputTokens: MAX_OUTPUT_TOKENS };
+          if (old.status !== 'ok' || old.inputHash !== hash(input)) throw new Error('Saved generation does not match current writer input');
+          atomic(file(id), { ...old, protocolHash, importedFrom: `pilot-v7/${id}.json`, originalProtocolHash: old.originalProtocolHash ?? old.protocolHash });
+          writeFileSync(resolve(runDir, id + '.md'), old.text);
+        }
+        await generateOne(model, task, condition);
+      }
+      console.log(JSON.stringify({ model: model.id, collected: tasks.length * 2, grading: 'pending', budgetAccountedUsd: budget.total }));
     }
     else if (command === 'calibrate') await calibrate();
     else if (command === 'smoke') {
