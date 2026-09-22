@@ -1,0 +1,180 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "with a client hope of achieving a 20% reduction.",
+        "Awkward third-person client reference in an email addressed directly to Morgan."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "The client\u2019s target",
+        "Third-person client reference in an email addressed directly to Morgan."
+      ]
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "The team remains focused and confident in its ability to support the review, address any required remediation, and keep progress moving.",
+        "The source does not report current team focus. This may be general reassurance rather than a material unsupported status claim."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "The team remains focused on completing the release work and responding to any review findings.",
+        "The source does not report current team focus. This may be general reassurance rather than a material unsupported status claim."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Select **Alpha**. The additional cost is necessary to meet the mandatory SSO requirement and enable production.",
+        "Repeats the opening recommendation and the SSO-versus-cost reasoning already stated in the evaluation."
+      ]
+    ]
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time declined from **15 minutes at baseline** to **12 minutes during the pilot**",
+        "Correct endpoints but no explicit 3-minute or 20% reduction, as required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "The pilot suggests a potential handling-time improvement, but it does not establish that the pilot caused the improvement. More importantly, observed quality is below the threshold required for scaling. The evidence therefore does not support immediate expansion.",
+        "The separate rationale paragraph repeats the preceding result caveats and no-scale recommendation."
+      ]
+    ]
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The engagement will be considered accepted when the sponsor confirms delivery of:\n\n- The current-state process map\n- The prioritized backlog\n- The implementation recommendation",
+        "Repeats the entire deliverables list rather than referring to the three artifacts already named."
+      ]
+    ]
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The proposed change fee is $7,000.",
+        "Immediately repeats the fixed fee already stated in the table."
+      ]
+    ]
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "Select One Q Next-Quarter AI Pilot",
+        "Stray Q makes the heading awkward; the next-quarter period is already named."
+      ]
+    ]
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Option A is ready for next-quarter execution",
+        "Approved policy documents do not establish overall pilot readiness. The source provides no readiness-to-execute finding."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Decide on any expansion after Dana reports the results.",
+        "The reporting prerequisite is repeated on slides 1, 3 and 4 without a new decision condition."
+      ]
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Until then, keep the service with Engineering ownership for defect fixes and do not transfer incident ownership to Operations.",
+        "The closing bullet repeats the before/after ownership boundaries already stated in the table and several preceding bullets."
+      ]
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "default",
+    "round": 1,
+    "contentPasses": 51,
+    "contentTotal": 54,
+    "contentReady": 5,
+    "readyWithoutEdits": 2,
+    "emDashes": 8
+  },
+  {
+    "condition": "default",
+    "round": 2,
+    "contentPasses": 52,
+    "contentTotal": 54,
+    "contentReady": 6,
+    "readyWithoutEdits": 1,
+    "emDashes": 8
+  },
+  {
+    "condition": "house",
+    "round": 1,
+    "contentPasses": 52,
+    "contentTotal": 54,
+    "contentReady": 6,
+    "readyWithoutEdits": 4,
+    "emDashes": 0
+  },
+  {
+    "condition": "house",
+    "round": 2,
+    "contentPasses": 52,
+    "contentTotal": 54,
+    "contentReady": 6,
+    "readyWithoutEdits": 3,
+    "emDashes": 0
+  }
+]

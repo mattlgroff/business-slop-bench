@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Luna full-panel repeat
+
+Froze repeatability-v3 before dispatch: one fresh call for every v2 brief/condition. The two house briefs previously sampled use sample ID 4; the other fourteen use ID 2. All sixteen are new calls, not imports or best-of selections. The report uses full-panel round numbers to avoid implying equal numbers of prior attempts per cell.
+
+Luna default improves from 51/54 to 52/54 content checks, while house stays at 52/54. The default strategy defect disappears; house adds the explicit reduction but introduces a readiness-to-execute claim in the strategy deck. Both launch reassurances stay unresolved. Ready without edits changes from 2/8 to 1/8 default and 4/8 to 3/8 house. All drafts fit the word limits; default has eight em dashes and house none. [Plan and evidence](reviews/repeatability-v3/REPORT.md).
+
+New calls cost $0.011698 versus Astra's repeat at $0.475830. Astra retains 54/54 checks in each condition and six house drafts ready without edits versus Luna at three. This is a small fixed-panel comparison, not a general reliability or value ranking. All primary grades are unchanged. Exact inputs, task/lens hashes, selected routing policy, output hashes, distinct generation IDs and evidence anchors are verified. Sonnet scheduling resumed through the exit trap and its original collector remains running. There are now 40 separately tracked repeat outputs.
+
 ## Astra full-panel repeat
 
 Froze the repeatability-v2 plan before dispatch: all eight v2 briefs in both conditions, one second attempt per cell, every result retained separately. Verified exact writer-input equality with the original Astra outputs before calls. Collected 16 new uncapped drafts with no retries; all have normal stops, no warnings and matching model identities. The 32 baseline/repeat generation IDs are distinct.

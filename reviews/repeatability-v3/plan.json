@@ -1,0 +1,140 @@
+{
+  "frozenAt": "2026-09-22T21:02:57.149672+00:00",
+  "purpose": "Fresh full-panel Luna repeat for comparison with the Astra repeat; no best-of selection.",
+  "model": "openai/gpt-5.6-luna",
+  "run": "pilot-v23",
+  "baseGrades": "reviews/assistant-v42/grades.json",
+  "selection": "All eight v2 briefs in both conditions. Sample ID 4 on house readout/handoff avoids reusing earlier samples 2 and 3; every cell gets one new call. Round 2 means this new full-panel round, not the total number of earlier attempts at every cell.",
+  "grading": "Frozen rubric and direct unblinded assistant review; prior targeted samples remain separate and are not overwritten.",
+  "budget": "Existing $100 ceiling; no output-token cap or harness deadline.",
+  "cases": [
+    {
+      "task": "pilot-client-email",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-client-email--default.md",
+      "baselineOutputSha256": "d931d4c7e737d686d76cad947db2d2f85ac81c733fc637ab67bca07ddb2ecefd",
+      "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04"
+    },
+    {
+      "task": "pilot-client-email",
+      "condition": "house",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-client-email--house.md",
+      "baselineOutputSha256": "1b9a1bc561a163506c3a53b9137a235e9c6b0b697ac6ceae582123a268a7ea02",
+      "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384"
+    },
+    {
+      "task": "launch-delay-email",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--launch-delay-email--default.md",
+      "baselineOutputSha256": "20bc862958a177586a3788c0cccf321c3d97693f562753450c1b35922dbd4389",
+      "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e"
+    },
+    {
+      "task": "launch-delay-email",
+      "condition": "house",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--launch-delay-email--house.md",
+      "baselineOutputSha256": "90f5c90642ea198938b073fa94727226cfd5c6f6c5907f2e2062ee432d6cc977",
+      "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9"
+    },
+    {
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--vendor-decision-memo--default.md",
+      "baselineOutputSha256": "e8cdf3b745423ad75b2536c744966763ad3b8b68361b64796964080dabab32a9",
+      "writerInputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978"
+    },
+    {
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--vendor-decision-memo--house.md",
+      "baselineOutputSha256": "4a200fdb1f8312533910a96db5f4a53429623c90f85aac42a299e9cde7e30383",
+      "writerInputHash": "581c9d96c54939a6c87d7fe70d71c586af4a392c4e278db6dbc6a8db52c4d6a6"
+    },
+    {
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--default.md",
+      "baselineOutputSha256": "9fba29ed68998023bbc13901d2f4db7f73ea85e2e9675e29721e53481efbedfc",
+      "writerInputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61"
+    },
+    {
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "sampleId": 4,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--pilot-results-memo--house.md",
+      "baselineOutputSha256": "4967d0ce0c6b4104357c42c58da1e6c5838435a340329fb8bb9eb8f15bba1cd4",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4"
+    },
+    {
+      "task": "discovery-proposal",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--discovery-proposal--default.md",
+      "baselineOutputSha256": "8bd6f4cab6f2fda6aeae3be5166789abd030dc971f31791324bb246f2080e0b7",
+      "writerInputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0"
+    },
+    {
+      "task": "discovery-proposal",
+      "condition": "house",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--discovery-proposal--house.md",
+      "baselineOutputSha256": "ff018be41ad6147a7797f25295f0e06d628d3dc6880553d4693ff95978fad5b6",
+      "writerInputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967"
+    },
+    {
+      "task": "change-order",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--change-order--default.md",
+      "baselineOutputSha256": "57d196a55bff0182edcc2c634b1490c08c862f699a0f986484654a3a5c69ad31",
+      "writerInputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2"
+    },
+    {
+      "task": "change-order",
+      "condition": "house",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--change-order--house.md",
+      "baselineOutputSha256": "b21815234f195bc2fc1110a85befac65e3e595e69f45aee087d2f843290e34be",
+      "writerInputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff"
+    },
+    {
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--ai-strategy-slides--default.md",
+      "baselineOutputSha256": "c5d9651e01cf2eee7913bf915051a96529703f5757432581d52c7462e9ca070d",
+      "writerInputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8"
+    },
+    {
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--ai-strategy-slides--house.md",
+      "baselineOutputSha256": "4f5c1b39b0e72e844a0ed57d225f625eee7083ffc90d5465b342851c92579a91",
+      "writerInputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d"
+    },
+    {
+      "task": "handoff-slides",
+      "condition": "default",
+      "sampleId": 2,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--handoff-slides--default.md",
+      "baselineOutputSha256": "77fb9ca1dfbad21be4e0ab3fb5b82ab29ec5bdfea6f41ec0d0d25ee076546a2e",
+      "writerInputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c"
+    },
+    {
+      "task": "handoff-slides",
+      "condition": "house",
+      "sampleId": 4,
+      "baseline": "runs/pilot-v18/openai--gpt-5.6-luna--handoff-slides--house.md",
+      "baselineOutputSha256": "10e7a6b861a211900222fd84e5ff4c9f6535fca14fe7944aa1ba39597dba23c4",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5"
+    }
+  ]
+}
