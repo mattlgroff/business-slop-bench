@@ -1,0 +1,202 @@
+[
+  {
+    "model": "Luna",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "the client\u2019s goal",
+        "Third-person client reference in an email addressed directly to that client."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "The client hopes to reduce handling time by 20%.",
+        "Third-person client reference in an email addressed directly to that client."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "The team remains focused on completing the required work and moving forward with care.",
+        "Current team focus is not supplied; this may be general reassurance rather than a material factual status claim."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "I\u2019m writing with the latest launch position.",
+        "Unnecessary announcement before the changed timeline."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "The team remains focused on completing the work and supporting the review.",
+        "Current team focus and activity are not supplied. General reassurance is a plausible reading, so this remains unresolved."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time fell from **15 minutes across 200 baseline tickets** to **12 minutes across 100 pilot tickets**.",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The pilot reduced mean handling time from 15 minutes at baseline to 12 minutes across 100 tickets.",
+        "Reports endpoints but omits the required explicit 3-minute or 20% reduction."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "The pilot provides an efficiency signal, but the quality result is below threshold and the evidence is not causal.",
+        "Repeats the handling-time caveat and failed quality threshold already explained in the two preceding paragraphs."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The first 50% payment is due at kickoff, with the remaining 50% due on delivery.",
+        "Repeats payment terms already given in the commercial table without adding information."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Selecting this option would leave the quarter without an authorized production deployment.",
+        "Current pending approval does not establish that authorization will remain unavailable throughout the quarter."
+      ]
+    ],
+    "style": [
+      [
+        "21",
+        "Select One Q Next-Quarter AI Pilot",
+        "The stray Q makes the heading unnatural and adds no meaning to Next-Quarter."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "19",
+        "Assigned responsibility leads the rehearsal.",
+        "Names an abstract responsibility as the actor; the assigned owner or role must lead the rehearsal."
+      ],
+      [
+        "10",
+        "- Lee continues owning defect fixes until acceptance.\n- Jo does not assume incident ownership until acceptance.",
+        "Repeats both ownership rules already stated on the preceding slide."
+      ]
+    ]
+  },
+  {
+    "model": "Luna",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "- **Now:** Pat assigns the rehearsal responsibility.\n- **Next:** The assigned owner completes a successful rollback rehearsal.",
+        "Repeats the assignment and execution steps from the preceding slide without adding an action or condition."
+      ]
+    ]
+  }
+]

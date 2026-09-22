@@ -1,5 +1,15 @@
 # Grader improvement log
 
+## Uncapped Luna comparison and Astra budget preflight, v18
+
+Luna completed all 16 uncapped drafts with exact requested, returned and canonical model identities, normal stop reasons, no warnings and no retries. Every draft fits the task word limit. Default passes 51/54 checks with two failures and one unresolved claim; house passes 52/54 with one failure and one unresolved claim. Content readiness is 5/8 and 6/8. Ready-without-edits counts are 2/8 and 4/8.
+
+Both readouts omit the explicit reduction calculation required by the frozen rubric. The default strategy slides assert that pending approval will leave the whole quarter without authorized deployment, which the source does not establish. Team-focus statements remain unresolved in both launch emails. Editorial findings include third-person client references, repetition, a stray Q in a heading and an abstract responsibility named as the rehearsal's actor. Default has eight em dashes; house has none. The stray Q is an editorial wording defect, not a missing required quarter value.
+
+Successful charges total $0.011212, compared with $0.0953667 for the uncapped Muse sample. This is observed generation cost, not a general pricing claim. Luna is cheaper and has lower readiness in this small unblinded comparison. [Scores and evidence](reviews/assistant-v16/REPORT.md). There are now 53 reviewed uncapped drafts, separate from 178 historical capped drafts. Hash, identity, input and exact-quote checks pass; audits and coverage were refreshed. The collection and audit commands exited; no task-owned processes remain and the lock is absent.
+
+Read-only preflight found Astra requires a $22.35991 reservation under the existing all-tier conservative guard, exceeding the $8.011675604 remaining before Luna. No Astra request was sent. The [Gateway service-tier documentation](https://vercel.com/docs/ai-gateway/models-and-providers/service-tiers) documents standard, flex and priority tiers and billing by the tier actually served. Pricing-route investigation did not change the guard or authorize more spending. The user was asked whether to retain the $20 ceiling or raise it to $40; no answer has been received. The ceiling remains $20. Conservative accounting after Luna is $12.032259716. Broader uncapped coverage and repeatability validation remain unfinished.
+
 ## Uncapped Muse and Gemini Flash retest, v18
 
 Collected 16 new drafts each for Muse Spark 1.3 and Gemini 3.8 Flash without a harness output-token cap or generation deadline. None was imported from the old capped cohort. All 32 calls completed with matching requested, returned and canonical identities, normal stop reasons, no warnings and no retries. Every draft fits its task word limit.
