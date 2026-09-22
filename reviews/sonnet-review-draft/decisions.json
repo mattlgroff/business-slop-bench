@@ -86,6 +86,21 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--launch-delay-email--house.md",
       "outputSha256": "9d344eb0d132e717f30f56db37aa8d5b0c534af6ad6245a6a8c17044fef31fb0"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "content": [],
+      "style": [
+        [
+          "10",
+          "Rationale:\n1. Alpha meets the mandatory SSO requirement now; Beta does not and has no delivery commitment.\n2. Alpha's total year-one cost ($92,000) is within the $100,000 ceiling.\n3. Beta's lower price does not offset the risk of an indefinite production blocker.",
+          "The numbered rationale repeats the cost, SSO and timing analysis already stated immediately above."
+        ]
+      ],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--vendor-decision-memo--default.md",
+      "outputSha256": "1cbc243a446c2f0dfc6a26616315ff89a96e6d10912c74188482c282e3953e19"
     }
   ]
 }
