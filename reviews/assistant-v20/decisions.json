@@ -1,0 +1,248 @@
+[
+ {
+  "model": "Qwen Max",
+  "task": "pilot-client-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Could you confirm approval by end of week?",
+    "Invents a reply deadline; the source authorizes none. Coordinating timing with a client security team is also not supplied."
+   ]
+  ],
+  "style": [
+   [
+    "7",
+    "establishing the baseline we'll need to quantify savings going forward",
+    "Appends an unsupported implication that savings exist to be quantified; the source records no measured savings."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "pilot-client-email",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Qwen Max",
+  "task": "launch-delay-email",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Nia's review is progressing, and the staging environment is ready.",
+    "Invents review progress and staging readiness, then asserts no capability concern while the source says remediation may be required."
+   ]
+  ],
+  "style": [
+   [
+    "15",
+    "**Confidence**",
+    "Four bold section headings divide a 149-word email into a rigid framework that adds no decision value."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "launch-delay-email",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "The work is done and ready",
+    "Asserts completed, ready work while the source says the review may require remediation."
+   ]
+  ],
+  "style": [
+   [
+    "28",
+    "Once Nia gives us a clear date, we will move fast.",
+    "Empty positive ending without an owner, evidence or condition beyond the review itself."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "vendor-decision-memo",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Because SSO is required before production and Beta offers no committed delivery date, choosing Beta introduces an unbounded schedule risk that could delay or block production entirely.",
+    "Restates the SSO evaluation already given in the numbered constraint check."
+   ]
+  ],
+  "placeholders": [
+   [
+    "**Date:** [Current]",
+    "Unfilled document-preparation date in the memo header."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "vendor-decision-memo",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "Alpha meets both constraints: budget and SSO availability.",
+    "Repeats the budget and SSO findings already stated in the Evaluation section."
+   ]
+  ],
+  "placeholders": [
+   [
+    "**Date:** [Current date]",
+    "Unfilled document-preparation date in the memo header."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "pilot-results-memo",
+  "condition": "default",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Qwen Max",
+  "task": "pilot-results-memo",
+  "condition": "house",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "1. The quality result is below the stated threshold by three points.",
+    "The two numbered problems repeat the quality and confounding findings already stated in the preceding section."
+   ],
+   [
+    "29",
+    "Either finding alone would be sufficient to hold. Together they make the case clear.",
+    "Aphoristic mirrored landing that adds no information to the two findings."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "discovery-proposal",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "(current-state process map, prioritized backlog, and implementation recommendation)",
+    "Repeats the three artifacts already listed in the scope table."
+   ],
+   [
+    "28",
+    "We look forward to partnering with you on this engagement.",
+    "Closing pleasantry adds no decision, owner or condition."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "discovery-proposal",
+  "condition": "house",
+  "content": [],
+  "style": []
+ },
+ {
+  "model": "Qwen Max",
+  "task": "change-order",
+  "condition": "default",
+  "content": [],
+  "style": [
+   [
+    "10",
+    "No work will commence without that written approval.",
+    "Repeats the written-approval requirement stated in the preceding sentence; section 4 likewise repeats the credential condition from section 3."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "change-order",
+  "condition": "house",
+  "content": [],
+  "style": [],
+  "placeholders": [
+   [
+    "**Date:** [current date]",
+    "Unfilled document-preparation date."
+   ],
+   [
+    "**From:** [Project Manager]",
+    "Unfilled sender placeholder in the document header."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "ai-strategy-slides",
+  "condition": "default",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "| Production readiness | Pilot-ready | Not authorized for production |",
+    "Approved policy documents do not establish pilot readiness, and the source does not say Option B has no owner. The deck also claims no legal blockers."
+   ]
+  ],
+  "style": [
+   [
+    "23",
+    "Named owner (Dana) ensures accountability.",
+    "A named owner supports accountability; it does not ensure it."
+   ]
+  ]
+ },
+ {
+  "model": "Qwen Max",
+  "task": "ai-strategy-slides",
+  "condition": "house",
+  "content": [
+   [
+    "grounding",
+    "fail",
+    "Option A is ready to start",
+    "Approved documents, an owner and a metric do not establish readiness to start; the source gives no start conditions."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Max",
+  "task": "handoff-slides",
+  "condition": "default",
+  "content": [
+   [
+    "C04",
+    "fail",
+    "Handoff transfers incident ownership from Engineering Lead Lee to Operations Lead Jo.",
+    "States that Lee holds incident ownership before acceptance; the source gives Lee defect fixes only, so ownership conflicts with slide 3."
+   ],
+   [
+    "grounding",
+    "fail",
+    "Handoff transfers incident ownership from Engineering Lead Lee to Operations Lead Jo.",
+    "Invents pre-acceptance incident ownership for Lee, repeated on slide 4."
+   ]
+  ],
+  "style": []
+ },
+ {
+  "model": "Qwen Max",
+  "task": "handoff-slides",
+  "condition": "house",
+  "content": [],
+  "style": []
+ }
+]

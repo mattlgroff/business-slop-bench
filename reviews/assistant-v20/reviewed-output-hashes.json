@@ -1,0 +1,18 @@
+{
+  "alibaba--qwen3.8-max-0902--pilot-client-email--default": "e05b9e2402dbf61d6ff2fbd2c8ce2321cbb47915ed26bd19decc122621577e85",
+  "alibaba--qwen3.8-max-0902--pilot-client-email--house": "ddaf69c57acb61c29f844758ccc3ff81e038ab0ef8edf50fb24e1317a354808b",
+  "alibaba--qwen3.8-max-0902--launch-delay-email--default": "71bd0286f3af13e56e16cd035e5178ecc69f04f9c10dd3b881828aea881f436b",
+  "alibaba--qwen3.8-max-0902--launch-delay-email--house": "e4a7770d9e14a39be3030de28204a9cdf7718acd24054265ff5434fa47c4713c",
+  "alibaba--qwen3.8-max-0902--vendor-decision-memo--default": "a1017ebc6ac37452016fc0a7cef26fed813c865f591d4213e584cd4c31156d09",
+  "alibaba--qwen3.8-max-0902--vendor-decision-memo--house": "8b67ba3b5e2bb4eff23b7ceec9b670685a1bc54d4f70bbbce1a52d5c543a3890",
+  "alibaba--qwen3.8-max-0902--pilot-results-memo--default": "801811d969afed358cb2dd7e5d67563ff7fab8c409511c88005437450935722f",
+  "alibaba--qwen3.8-max-0902--pilot-results-memo--house": "3fcfb5b1c08ad5af68854ea8086e5c0dc56b79c104c2f1c9849e3e2b8c56469c",
+  "alibaba--qwen3.8-max-0902--discovery-proposal--default": "540fa2ea283af5d575bdba88d4d1401886fbb7e5bb35c48a7c0bfeceed748851",
+  "alibaba--qwen3.8-max-0902--discovery-proposal--house": "4fa32d37131de5648637b311f3135c5de30b7b5fe9cad357671216b4562623e4",
+  "alibaba--qwen3.8-max-0902--change-order--default": "1bac0ee1872e0e66d23a74a668418a156d7127bfa5d30075bd8944c27f54fb9a",
+  "alibaba--qwen3.8-max-0902--change-order--house": "1bc7225f340e977747952f4eff0616a60431eb6947c2a5a4a46c97b657dd5cfa",
+  "alibaba--qwen3.8-max-0902--ai-strategy-slides--default": "f24a4b28b0b9f34c3a517ce1b531f916f5fd7362c5a395cbcd8d748c0024838b",
+  "alibaba--qwen3.8-max-0902--ai-strategy-slides--house": "c5ee96ca7607f7ca59bfcd2323e3a9590923aae9f2b6ab48c77190408dae56a6",
+  "alibaba--qwen3.8-max-0902--handoff-slides--default": "8a491593c42df898abedee4fef8532842eb0e0011e11f1095a4d904d01de5349",
+  "alibaba--qwen3.8-max-0902--handoff-slides--house": "19a3f65c99af81019f0ce2bfd4fca192593a500f9ce7245175965efe8271542b"
+}
