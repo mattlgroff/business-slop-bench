@@ -55,7 +55,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -107,7 +108,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -158,7 +160,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -215,7 +218,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -273,7 +277,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -331,7 +336,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -389,7 +395,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   },
@@ -447,7 +454,8 @@
         "id": "grounding",
         "dimension": "evidence",
         "severity": "critical",
-        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees."
+        "statement": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+        "evaluation": "grounding"
       }
     ]
   }

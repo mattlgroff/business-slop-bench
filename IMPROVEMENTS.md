@@ -1,5 +1,29 @@
 # Grader improvement log
 
+## Unsupported assurances and evidence, v6
+
+The grounding judge now distinguishes supported statements, unsupported statements and unresolved interpretations. A second typed question selects an original paragraph as evidence. The code verifies that the paragraph exists at its recorded offset and line. A failure requires both an unsupported judgment and a real passage; disagreements remain unresolved. A real quotation establishes location, not the truth of the allegation.
+
+The frozen comparison covers eight development snippets, 20 separate validation snippets and the four saved drafts, each judged twice. It includes source-authorized staffing holds, authorized dates, and an approved conditional fee credit, so strong commitments can pass when the source supports them. Ordinary requests and proposals also pass. Labels are author-proposed, not human gold.
+
+| Approach | Development matches | Validation matches | Existing drafts | False accepts across all decisions |
+|---|---:|---:|---:|---:|
+| Previous Boolean grounding | 12/16 | 40/40 | 4/8 | 4 |
+| Choice plus original passage | 15/16 | 40/40 | 6/8 | 0 |
+
+The remaining three revised judgments were unresolved, including both repeats of Opus's staffing-pressure sentence. The status judgment and selected passage did not support a definitive failure consistently. This ambiguity is preserved, not forced into the expected label.
+
+The integrated v6 regrade finds:
+
+- Qwen default: unsupported prior-discussion claim, original paragraph P3, line 5.
+- Qwen house: grounding passes; the independently validated missing security prerequisite still fails.
+- Opus default: unsupported blanket cost assurance, paragraph P5, line 9.
+- Opus house: unresolved staffing-pressure wording, paragraph P7, line 13. Its deterministic word-count failure remains.
+
+Links: [fixtures](data/grounding-judge-study.json), [study report](runs/grounding-judge-study-v1/REPORT.md), [updated scores](runs/pilot-v6/REPORT.md). Grounding score JSON files now contain verified paragraph anchors; the report's older generic footnote about semantic flags without anchors applies to the other semantic checks.
+
+Nine tests and TypeScript checking pass. The same four writer outputs were reused, with input hashes verified and import provenance retained. No new generation was purchased. Jev reported zero new billed charges in this pass. Conservative cumulative accounting is approximately $1.9509 of $20. Broader criterion validation and the full model run remain unfinished; the goal remains active.
+
 ## Security prerequisite, v5
 
 The v4 grader incorrectly accepted Qwen's house-style email as explicitly requiring security approval before data access. Its text only promised to submit an access request after the client replied. That is a missing condition, even though the source pack contains the condition.

@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, renameSync } from 'node:fs';
 export const LIMIT_USD = 20;
 export const MAX_OUTPUT_TOKENS = 4096;
 export type Condition = 'default' | 'house';
-export type Check = { id: string; dimension: string; statement: string; severity: 'critical' | 'editorial' | 'style_gate'; polarity?: 'pass' | 'defect'; evaluation?: 'security-prerequisite' };
+export type Check = { id: string; dimension: string; statement: string; severity: 'critical' | 'editorial' | 'style_gate'; polarity?: 'pass' | 'defect'; evaluation?: 'security-prerequisite' | 'grounding' };
 export type Task = { id: string; family: string; brief: string; facts: Record<string, string | number>; maxWords: number; checks: Check[] };
 export type Model = { id: string; reasoning: 'low' | 'none' };
 export const hash = (v: unknown) => createHash('sha256').update(typeof v === 'string' ? v : JSON.stringify(v)).digest('hex');

@@ -5,9 +5,10 @@ import { parseEnv } from 'node:util';
 import { fileURLToPath } from 'node:url';
 import { Budget, MAX_OUTPUT_TOKENS, atomic, hash, prompt, rates, scan, styleChecks, verdict, fitThreshold, type Check, type Task, type Model, type Condition } from './core.js';
 import { securityInstructions, securityCriteria, requirementVerdict } from './requirements.js';
+import { groundingQuestions, groundingDecision } from './grounding.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v5';
+const runName = 'pilot-v6';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -22,7 +23,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.5.0', sdk: '7.0.109', judgeBatchSize: 16, requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.6.0', sdk: '7.0.109', judgeBatchSize: 16, groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -138,9 +139,19 @@ async function grade(id: string, task: Task, text: string, subset?: Set<string>)
     if (result.status !== 'ok') throw new Error('Stored requirement-judge error requires inspection');
     Object.assign(answers, result.answers);
   }
+  for (const c of checks.filter(c => c.evaluation === 'grounding')) {
+    const state = { sourceFacts: task.facts, deliverable: text };
+    const questions = groundingQuestions(text);
+    const result = await paid(`judge--${id}--grounding`, 'typesafe-ai/jev', { state, questions }, 0, () => evaluate({
+      model: 'typesafe-ai/jev', state, questions, maxRetries: 0, abortSignal: AbortSignal.timeout(90000), providerOptions: { gateway: { zeroDataRetention: true } },
+    }));
+    if (result.status !== 'ok') throw new Error('Stored grounding-judge error requires inspection');
+    const status = result.answers.status.choice, evidenceId = result.answers.evidence.choice;
+    answers[c.id] = { status, evidenceId, ...groundingDecision(text, status, evidenceId), probabilities: result.answers.status.probabilities };
+  }
   const calibrated = existsSync(file('calibration')) ? read(`runs/${runName}/calibration.json`).thresholds : undefined;
-  const grades = checks.map(c => ({ ...c, probability: answers[c.id].probability, choice: answers[c.id].choice, probabilities: answers[c.id].probabilities,
-    verdict: c.evaluation ? requirementVerdict(answers[c.id].choice) : verdict(answers[c.id].probability, c.polarity, calibrated) }));
+  const grades = checks.map(c => ({ ...c, probability: answers[c.id].probability, choice: answers[c.id].choice, status: answers[c.id].status, evidence: answers[c.id].evidence, probabilities: answers[c.id].probabilities,
+    verdict: c.evaluation === 'grounding' ? answers[c.id].verdict as 'pass' | 'fail' | 'review' : c.evaluation === 'security-prerequisite' ? requirementVerdict(answers[c.id].choice) : verdict(answers[c.id].probability, c.polarity, calibrated) }));
   const deterministic = scan(text, task.maxWords);
   const summary = {
     id, taskId: task.id, protocolHash, grades, deterministic,
