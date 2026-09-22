@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 
@@ -19,6 +20,20 @@ def classify_records(records):
     return 'unattempted', None
 
 
+def matching_runs(run_root, task_hash, cohort):
+    """Discover numbered runs without pooling different briefs or cap policies."""
+    runs = []
+    for path in run_root.iterdir():
+        match = re.fullmatch(r'pilot-v(\d+)', path.name)
+        if not match or not (path / 'protocol.json').is_file():
+            continue
+        protocol = json.loads((path / 'protocol.json').read_text())
+        run_cohort = 'uncapped' if protocol['limits'].get('maxOutputTokens') is None else 'legacy-capped'
+        if protocol['tasksHash'] == task_hash and run_cohort == cohort:
+            runs.append((int(match[1]), path))
+    return [path for _, path in sorted(runs)]
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cohort', choices=['legacy-capped', 'uncapped'], default='legacy-capped')
@@ -27,15 +42,7 @@ def main():
     models = json.loads((root / 'data/models.json').read_text())
     tasks = json.loads((root / 'data/tasks-v2.json').read_text())
     task_hash = hashlib.sha256(json.dumps(tasks, separators=(',', ':'), ensure_ascii=False).encode()).hexdigest()
-    runs = []
-    for name in ['pilot-v10', 'pilot-v11', 'pilot-v12', 'pilot-v13', 'pilot-v14', 'pilot-v15', 'pilot-v16', 'pilot-v17', 'pilot-v18', 'pilot-v19', 'pilot-v20', 'pilot-v21', 'pilot-v22', 'pilot-v23']:
-        path = root / 'runs' / name
-        if (path / 'protocol.json').exists():
-            protocol = json.loads((path / 'protocol.json').read_text())
-            assert protocol['tasksHash'] == task_hash, 'Different task versions must not be combined'
-            run_cohort = 'uncapped' if protocol['limits'].get('maxOutputTokens') is None else 'legacy-capped'
-            if run_cohort == cohort:
-                runs.append(path)
+    runs = matching_runs(root / 'runs', task_hash, cohort)
     rows = []
     for model in models:
         counts = dict(generated=0, incomplete=0, failed=0, unattempted=0)

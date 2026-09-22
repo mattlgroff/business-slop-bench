@@ -1,5 +1,11 @@
 # Grader improvement log
 
+## Discover coverage runs automatically
+
+Coverage previously required a code edit for each new pilot version. It now discovers numbered run directories, includes only frozen protocols with the current task hash and selected capped/uncapped policy, and orders versions numerically. Different brief versions, backup folders and not-yet-frozen runs are excluded. Existing duplicate-output protection and incomplete-generation classification remain in place.
+
+A focused regression covers future versions 24 and 100, numeric ordering, a different task hash, a capped run, a backup directory and an unfrozen directory. Both Python coverage tests pass. Live uncapped coverage includes the separately running v23 collection; historical capped coverage remains 178. No model request or generation setting changed. The pre-existing collector was left running.
+
 ## Sample-adequacy grounding correction
 
 The Gemini Pro collection attempt exited at the existing lock without making a paid call. A separately started paced collector was running GPT-6 Sol and Luna; it was left untouched. Used the turn to inspect sample-adequacy and follow-up-study claims in the existing readouts.
