@@ -191,6 +191,22 @@
       ],
       "path": "runs/pilot-v23/anthropic--claude-sonnet-5--discovery-proposal--house.md",
       "outputSha256": "2a6c48868bd104f593cda5b3cb742b9819fe99cb33a44f77b4b9e0f116f0b61a"
+    },
+    {
+      "model": "Sonnet 5",
+      "task": "change-order",
+      "condition": "default",
+      "content": [
+        [
+          "grounding",
+          "fail",
+          "Per the governing agreement",
+          "Attributes the approval requirement to a governing agreement whose terms were not supplied. The source establishes the approval rule, but not that contractual provenance."
+        ]
+      ],
+      "style": [],
+      "path": "runs/pilot-v23/anthropic--claude-sonnet-5--change-order--default.md",
+      "outputSha256": "2990e9936d0ca20059243277496962efa523723d40962b2f3c449f32b5191d45"
     }
   ]
 }

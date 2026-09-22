@@ -216,5 +216,28 @@
     },
     "residue": [],
     "candidates": []
+  },
+  {
+    "file": "anthropic--claude-sonnet-5--change-order--default.md",
+    "words": 269,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 3,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 626,
+        "line": 19,
+        "text": "rather than "
+      }
+    ]
   }
 ]
