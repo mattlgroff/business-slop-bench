@@ -1,0 +1,18 @@
+{
+  "xiaomi--mimo-v2.6-pro--pilot-client-email--default": "3958c402b6141d13d9af7363988d38a333f107ac7069362c1116b5b56c8c74da",
+  "xiaomi--mimo-v2.6-pro--pilot-client-email--house": "65b31b9d3f2b7ceea41dba26bb2f0b66fe207bca5d910e5b1c840763fa389fc1",
+  "xiaomi--mimo-v2.6-pro--launch-delay-email--default": "06160dc592aa6c7c4e3ad449a7ca7a3a8bdf1236e38e83f492ebd2255ead3db6",
+  "xiaomi--mimo-v2.6-pro--launch-delay-email--house": "d8d44ef8073d399746c6d877d7bf21c6534d5b3aca3e227543cb2d519d7bc2ab",
+  "xiaomi--mimo-v2.6-pro--vendor-decision-memo--default": "cf66bcd8196df8e755201b106b4c31ccd9915d4b3f10d63a9695c3402633f320",
+  "xiaomi--mimo-v2.6-pro--vendor-decision-memo--house": "728296e770e15aa39aaee22f774db2ec0eca0d44aa1bfc4ce0a81690cb372b44",
+  "xiaomi--mimo-v2.6-pro--pilot-results-memo--default": "23974a79563a5dc6c10545a2af95a27cb9ea52b54a2da1b52138d096e6e5460b",
+  "xiaomi--mimo-v2.6-pro--pilot-results-memo--house": "3c82f7db5fc9a731dc1be4230eaf7afe32fb428c9254af40768f76581db748f8",
+  "xiaomi--mimo-v2.6-pro--discovery-proposal--default": "44a7fa8e51a1b2a59b2f9ff1a01b6013d96b3521b0aa52887d35a938ecc860a0",
+  "xiaomi--mimo-v2.6-pro--discovery-proposal--house": "fe1e1ee440b38d70ee6d829f8fc2179987e086f72162070ac6a1e3b641041d5f",
+  "xiaomi--mimo-v2.6-pro--change-order--default": "786ca9cac16d46b5e1e22ac48ff618ef6290368b244d771e928de0d3fc57c25e",
+  "xiaomi--mimo-v2.6-pro--change-order--house": "e23e378a88be4ecf44f7425d0a2a5ad09e86f7b2057bf602d6c5fce8b19fc582",
+  "xiaomi--mimo-v2.6-pro--ai-strategy-slides--default": "d89e829d646cd4c0b33cfe09f82d9064e5d265d3bb77f062556459af10932974",
+  "xiaomi--mimo-v2.6-pro--ai-strategy-slides--house": "8d53e6fdd2d8c8ff9d543d7b912c31802108fe89972de6d2c0cdfacb6bfd2466",
+  "xiaomi--mimo-v2.6-pro--handoff-slides--default": "ccb38cc2ffecaab6496b5853f10d6b0c1053ad935641e4ae6d216d446fa778a2",
+  "xiaomi--mimo-v2.6-pro--handoff-slides--house": "45141d6d680b4b476762904df08c84ad8974ec78544504ccf9cadd79393eb487"
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "model": "MiMo",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "MiMo",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "records handling times to hold against that target.",
+        "Unnatural phrasing for comparing measurements with the target."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team is executing well.",
+        "The source supplies no team-performance finding. The additional assertion that capability is not a risk also lacks support; personal confidence alone would be permitted by the brief."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "Here's where we stand on launch.",
+        "Announces the update before stating the changed launch position."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "you choose whether to accept the demo.",
+        "Unnecessarily narrates the recipient authority before the direct confirmation request."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The price advantage does not, and cannot, cure this failure.",
+        "Repeats the same mandatory-SSO rejection already stated several times in the analysis and constraint evaluation."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Signing Alpha costs $92,000 in year one and closes procurement on schedule.",
+        "The source supplies no procurement schedule or evidence that signing now meets it. The claim that Beta cannot meet the requirement anywhere within year one also overstates an uncommitted delivery date."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "MiMo",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The pilot showed a lower mean handling time (12 vs. 15 minutes).",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "## What the results do not support",
+        "The section repeats the quality, attribution and financial limitations already given immediately above; the final approval request also repeats the preceding COO decision."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The pilot covered a different ticket mix and allocation was randomized. Ticket mix differed and allocation was not randomized,",
+        "Directly contradicts the source and itself about randomization. The causal conclusion remains appropriately cautious, but the factual statement is wrong."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "If declined, the record stands as is, and scaling is unsupported because quality is below threshold and the handling-time result is confounded by unrandomized allocation across differing ticket mixes.",
+        "Repeats the no-scale rationale already stated several times without adding an action or evidence."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "MiMo",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "| Item | Detail |",
+        "The closing table repeats all six commercial, scope and start terms already stated in the prose; it adds no decision or evidence."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The fee is proposed as a fixed change fee of $7,000 for the requested connector work.",
+        "Immediately repeats the pricing table. The schedule paragraph also repeats the same approval-and-credentials condition."
+      ]
+    ],
+    "placeholders": [
+      [
+        "**Date:** [Date]",
+        "Unfilled preparation date in a finished proposal header. The separate sponsor signature/date fields are intentional form fields."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "MiMo",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "real customer impact is off the table this quarter.",
+        "Pending approval now does not establish that customer impact is impossible for the entire quarter. The one-pilot capacity also does not establish that no other work can start alongside it."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "MiMo",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Q3 decision: which AI pilot runs",
+        "Invents a specific quarter absent from the source pack. It also asserts COO expansion authority, while the source assigns only pilot selection and Dana reporting before expansion."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "MiMo",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "leaving day-to-day service ownership unestablished",
+        "Jo assuming incidents after acceptance does not establish that current service ownership is unassigned."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "(Source: delivery, operations, acceptance)",
+        "Leaks internal source-pack field names as citations in the finished steering-committee deck; similar references recur throughout."
+      ]
+    ]
+  },
+  {
+    "model": "MiMo",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Slide 2: Acceptance criteria",
+        "Repeats both acceptance criteria and statuses already given on slide 1 without adding evidence or an action."
+      ],
+      [
+        "14",
+        "| Criterion | Status |\n| Runbook approved | Met |",
+        "Both intended Markdown tables lack the header separator row, leaving raw pipe-delimited text instead of rendered tables."
+      ]
+    ]
+  }
+]

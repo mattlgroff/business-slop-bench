@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## MiMo ZDR route refresh and uncapped comparison
+
+The pilot-v19 catalog had no MiMo ZDR route and its request failed. Pilot-v22/v23 snapshots and a fresh Gateway catalog now advertise some ZDR routes. Retried under unchanged v23 settings with ZDR enforced, without adding an exception. All 16 calls completed with matching model identities, normal stops and no warnings. The old rejection and reservation remain intact. [Catalog evidence](reviews/mimo-zdr-refresh/REPORT.md).
+
+MiMo scores 50/54 default and 51/54 house, with 3/8 and 5/8 content-ready drafts and 2/8 and 1/8 ready without edits. Its house readout states both randomized and nonrandomized allocation. Other failures include unsupported team performance, procurement scheduling, quarter/approval claims and current service ownership. The default launch email is four words over its limit. Default has 23 em dashes; house has none but retains repetition and malformed tables. Source labels leak into the default handoff, and a preparation-date placeholder remains in the default change order. Sponsor confirmation of delivery remains an allowed final-payment trigger under the prior correction. [Scores and evidence](reviews/assistant-v42/REPORT.md).
+
+Reported successful generation charges total $0.0199726236. All 368 previous rows are unchanged. Hash, quote, identity and independent input checks pass; the reviewed cohort now contains 384 drafts across 24 models. Sonnet scheduling was held only at its between-call wait while MiMo owned the shared ledger; the exit trap resumed it, and the next Sonnet call succeeded. The paced Sonnet collector is intentionally left running to complete its remaining cells.
+
 ## Review saved GPT-6 Sol
 
 Reviewed all 16 previously collected GPT-6 Sol drafts without new generation calls. Scores are 52/54 default and 53/54 house, with six and seven content-ready drafts and 3/8 and 7/8 ready without edits. Both readouts omit the explicit reduction but give correct endpoints. The default launch reassurance remains unresolved. Every draft fits the word limit; default has eight em dashes and two editorial findings, while house has neither. The assess-versus-promise contrasts are permitted factual scope boundaries.

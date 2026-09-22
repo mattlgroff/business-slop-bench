@@ -1,0 +1,393 @@
+[
+  {
+    "file": "xiaomi--mimo-v2.6-pro--pilot-client-email--default.md",
+    "words": 170,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 3,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 469,
+        "line": 7,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--pilot-client-email--house.md",
+    "words": 112,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--launch-delay-email--default.md",
+    "words": 184,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 35,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 357,
+        "line": 7,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--launch-delay-email--house.md",
+    "words": 91,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--vendor-decision-memo--default.md",
+    "words": 262,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 123,
+        "line": 5,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--vendor-decision-memo--house.md",
+    "words": 151,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--pilot-results-memo--default.md",
+    "words": 288,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 244,
+        "line": 9,
+        "text": "—"
+      },
+      {
+        "offset": 289,
+        "line": 10,
+        "text": "—"
+      },
+      {
+        "offset": 360,
+        "line": 12,
+        "text": "—"
+      },
+      {
+        "offset": 371,
+        "line": 12,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 1133,
+        "line": 24,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--pilot-results-memo--house.md",
+    "words": 239,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--discovery-proposal--default.md",
+    "words": 233,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--discovery-proposal--house.md",
+    "words": 234,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--change-order--default.md",
+    "words": 266,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 24,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 125,
+        "line": 5,
+        "text": "—"
+      },
+      {
+        "offset": 1332,
+        "line": 42,
+        "text": "—"
+      },
+      {
+        "offset": 1441,
+        "line": 44,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--change-order--house.md",
+    "words": 132,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--ai-strategy-slides--default.md",
+    "words": 270,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 22,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 368,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 534,
+        "line": 9,
+        "text": "—"
+      },
+      {
+        "offset": 804,
+        "line": 14,
+        "text": "—"
+      },
+      {
+        "offset": 945,
+        "line": 16,
+        "text": "—"
+      },
+      {
+        "offset": 1237,
+        "line": 21,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--ai-strategy-slides--house.md",
+    "words": 154,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--handoff-slides--default.md",
+    "words": 217,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 8,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 337,
+        "line": 6,
+        "text": "—"
+      },
+      {
+        "offset": 428,
+        "line": 9,
+        "text": "—"
+      },
+      {
+        "offset": 453,
+        "line": 10,
+        "text": "—"
+      },
+      {
+        "offset": 616,
+        "line": 13,
+        "text": "—"
+      },
+      {
+        "offset": 966,
+        "line": 17,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "xiaomi--mimo-v2.6-pro--handoff-slides--house.md",
+    "words": 160,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]

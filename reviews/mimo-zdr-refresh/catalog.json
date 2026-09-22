@@ -1,0 +1,75 @@
+{
+  "fetchedAt": "2026-09-22T20:46:14.682591+00:00",
+  "source": "https://ai-gateway.vercel.sh/v1/models",
+  "model": {
+    "id": "xiaomi/mimo-v2.6-pro",
+    "object": "model",
+    "created": 1755815280,
+    "released": 1789948800,
+    "owned_by": "xiaomi",
+    "name": "MiMo V2.6 Pro",
+    "description": "MiMo V2.6 Pro is Xiaomi's flagship multimodal reasoning model for complex software engineering, long-running agent tasks, and professional workflows. It supports text, image, audio, and video inputs with a 1M-token context window and up to 128K tokens of output. Deep thinking, tool calling, JSON mode, and prompt caching support applications that combine large inputs with multi-step reasoning.",
+    "context_window": 1048576,
+    "max_tokens": 131072,
+    "type": "language",
+    "zdr": "some",
+    "no_training": "some",
+    "tags": [
+      "implicit-caching",
+      "reasoning",
+      "structured-output",
+      "tool-use",
+      "vision",
+      "audio-input",
+      "video-input"
+    ],
+    "supported_specifications": [
+      "v2",
+      "v3",
+      "v4"
+    ],
+    "modalities": {
+      "input": [
+        "text",
+        "audio",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "supported_parameters": [
+      "max_tokens",
+      "temperature",
+      "stop",
+      "tools",
+      "tool_choice",
+      "reasoning",
+      "include_reasoning",
+      "response_format",
+      "structured_outputs"
+    ],
+    "temperature": true,
+    "reasoning_options": [
+      {
+        "type": "toggle"
+      },
+      {
+        "type": "effort",
+        "values": [
+          "none",
+          "minimal",
+          "low",
+          "medium",
+          "high"
+        ]
+      }
+    ],
+    "pricing": {
+      "input": "0.000000435",
+      "output": "0.00000087",
+      "input_cache_read": "0.0000000036"
+    }
+  }
+}
