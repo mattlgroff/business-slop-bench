@@ -1,0 +1,300 @@
+[
+  {
+    "file": "openai--gpt-6-luna--pilot-client-email--default.md",
+    "words": 111,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--pilot-client-email--house.md",
+    "words": 108,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--launch-delay-email--default.md",
+    "words": 103,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 2,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--launch-delay-email--house.md",
+    "words": 86,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--vendor-decision-memo--default.md",
+    "words": 142,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--vendor-decision-memo--house.md",
+    "words": 80,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--pilot-results-memo--default.md",
+    "words": 113,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--pilot-results-memo--house.md",
+    "words": 103,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--discovery-proposal--default.md",
+    "words": 131,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--discovery-proposal--house.md",
+    "words": 104,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--change-order--default.md",
+    "words": 118,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--change-order--house.md",
+    "words": 103,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--ai-strategy-slides--default.md",
+    "words": 150,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 12,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 242,
+        "line": 6,
+        "text": "—"
+      },
+      {
+        "offset": 498,
+        "line": 12,
+        "text": "—"
+      },
+      {
+        "offset": 736,
+        "line": 17,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--ai-strategy-slides--house.md",
+    "words": 124,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--handoff-slides--default.md",
+    "words": 166,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 12,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 247,
+        "line": 6,
+        "text": "—"
+      },
+      {
+        "offset": 449,
+        "line": 11,
+        "text": "—"
+      },
+      {
+        "offset": 722,
+        "line": 16,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "openai--gpt-6-luna--handoff-slides--house.md",
+    "words": 149,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]

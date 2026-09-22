@@ -1,0 +1,158 @@
+[
+  {
+    "model": "Luna 6",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The next decision is whether you approve the pilot scope and fee, subject to security clearance.",
+        "Pre-announces the same approval request stated directly in the closing sentence."
+      ]
+    ]
+  },
+  {
+    "model": "Luna 6",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The October 8 launch is no longer a confirmed production date.",
+        "Implies the prior October 8 date was confirmed, while the source says it was tentative. The current no-launch decision is correct."
+      ]
+    ],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The pilot\u2019s mean handling time was 12 minutes, compared with 15 minutes at baseline.",
+        "Correct endpoints, but omits the explicit 3-minute or 20% reduction required by the frozen criterion. This is omission, not incorrect arithmetic."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Authorize Sam to run a matched-ticket follow-up. The COO should decide whether to authorize that test.",
+        "Two adjacent sentences repeat the same authorization decision; name the COO in the first sentence."
+      ]
+    ]
+  },
+  {
+    "model": "Luna 6",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "To proceed, sign the proposal and name a client contact. The start date can then be agreed.",
+        "Repeats the signature, contact and start-date sequence already stated in the immediately preceding section."
+      ]
+    ]
+  },
+  {
+    "model": "Luna 6",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": []
+  },
+  {
+    "model": "Luna 6",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Operations incident ownership has not begun.",
+        "Restates the preceding bullet that Jo owns incidents only after acceptance."
+      ]
+    ]
+  },
+  {
+    "model": "Luna 6",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "### Slide 2: Readiness status",
+        "This slide repeats the runbook and rehearsal status already given in slide 1 without adding evidence or an action."
+      ]
+    ]
+  }
+]

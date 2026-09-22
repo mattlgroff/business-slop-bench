@@ -1,5 +1,13 @@
 # Grader improvement log
 
+## Review saved GPT-6 Luna; start paced Sonnet 5
+
+Reviewed the 16 already-generated GPT-6 Luna drafts without new Luna calls. Both conditions pass 53/54 content checks and have seven content-ready drafts; ready without edits is 3/8 default and 6/8 house. Default incorrectly implies the tentative launch date had been confirmed. House omits the explicit reduction while retaining correct endpoints. All drafts fit their word limits. Eight default em dashes become zero in house; remaining editorial issues are repetition. A factual assess-versus-promise contrast is permitted under the lens.
+
+Luna 6 remains non-ZDR and disqualified; writing scores are informational. The stored records report zero billed charges, which is not a claim that future calls are free. All 336 earlier rows are unchanged, with output hashes, model identity, evidence anchors and writer input verified. [Full report](reviews/assistant-v40/REPORT.md).
+
+Started Sonnet 5 with the existing paced collector, seven minutes between calls, no retries and unchanged uncapped settings. Its first draft completed; the task-owned collector is intentionally left running to finish the remaining cells. It must be monitored through its existing execution session rather than restarted during the pacing waits. No generation settings or budget ceiling changed.
+
 ## Sol 5.6 uncapped, v23
 
 Collected all 16 GPT-5.6 Sol drafts with unchanged v23 settings, v2 briefs, no output-token cap or harness deadline and ZDR requested. Requested, returned and canonical identities match; every response stops normally, has no warning and fits the word limit.
