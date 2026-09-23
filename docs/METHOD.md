@@ -10,15 +10,15 @@ When I posted on X that I needed a business slop bench for SOWs, proposals and s
 
 Probably true, and some are more slop than others. Across the 400 reviewed single-call uncapped drafts from 25 models, 117 drafts have a failed grounding check, from zero for Astra and Muse to 12 for Qwen Flash. These count drafts with findings, not individual claims; one draft can contain several unsupported claims. Most are invented commitments: reply and delivery deadlines, readiness or completion claims, prior discussions, payment or scope terms, and ownership the source never assigned. That criterion, with the per-task commitments checks, is the harness around promises: every material claim must trace to the source pack or be labeled a proposal. It catches what no compiler can, but only as one reviewer's provisional judgment on one generation per cell.
 
-Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
+Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](../reviews/assistant-v7/REPORT.md).
 
-Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). I stopped the Jev retries. These are provisional assistant grades with verified evidence anchors, not human gold.
+Earlier results with a 4,096-token cap: [Muse compared with the other completed models](../reviews/assistant-v13/REPORT.md). I stopped the Jev retries. These are provisional assistant grades with verified evidence anchors, not human gold.
 
-Uncapped results: [Sonnet 5, MiMo, Astra, Sol 6, Luna 6, Sol 5.6, Terra, Gemini Pro, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v43/REPORT.md). Muse, Fable 5, Fable 5.1, Luna 6 and Sol 6 appear in the same report marked non-ZDR and disqualified; their writing scores are shown for information only. Eligibility follows the saved catalog and request policy, not a separate audit of provider retention practices. This cohort is not pooled with earlier capped scores.
+Uncapped results: [Sonnet 5, MiMo, Astra, Sol 6, Luna 6, Sol 5.6, Terra, Gemini Pro, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](../reviews/assistant-v43/REPORT.md). Muse, Fable 5, Fable 5.1, Luna 6 and Sol 6 appear in the same report marked non-ZDR and disqualified; their writing scores are shown for information only. Eligibility follows the saved catalog and request policy, not a separate audit of provider retention practices. This cohort is not pooled with earlier capped scores.
 
-[Current corrected ranking](reviews/assistant-v44/RANKING.md): Grok’s explicit request to authorize a signatory now receives the same passing judgment as Sol’s equivalent request. [Correction and evidence](reviews/assistant-v44/REPORT.md). All other 399 draft judgments are unchanged.
+[Current corrected ranking](../reviews/assistant-v44/RANKING.md): Grok’s explicit request to authorize a signatory now receives the same passing judgment as Sol’s equivalent request. [Correction and evidence](../reviews/assistant-v44/REPORT.md). All other 399 draft judgments are unchanged.
 
-[Rubric audit](reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
+[Rubric audit](../reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
 
 Current collection uses `pilot-v24` (the runner change that removed the hardcoded credential path re-froze the protocol; all saved outputs import unchanged) with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v23` audits saved outputs and verifies their inputs against the frozen task version.
 
@@ -52,17 +52,17 @@ Default and house conditions share the same source pack and task wording. Only t
 
 ## How the grading works
 
-[Coverage against the supplied rubric](reviews/rubric-coverage-v1/REPORT.md): the pilot measures short-brief source fidelity, required decisions and style fit. Citation entailment, complex reconciliation, broader responsibility structures and independent judge calibration remain validation gaps.
+[Coverage against the supplied rubric](../reviews/rubric-coverage-v1/REPORT.md): the pilot measures short-brief source fidelity, required decisions and style fit. Citation entailment, complex reconciliation, broader responsibility structures and independent judge calibration remain validation gaps.
 
-[Grader calibration packet](reviews/grader-calibration-v1/README.md): ten full-context diagnostic cases with model metadata removed and a separate proposed answer key. Independent labels are still pending; this is not a held-out accuracy test.
+[Grader calibration packet](../reviews/grader-calibration-v1/README.md): ten full-context diagnostic cases with model metadata removed and a separate proposed answer key. Independent labels are still pending; this is not a held-out accuracy test.
 
-[Luna full-panel repeat](reviews/repeatability-v3/REPORT.md): house content checks stay at 52/54, but the failing criterion changes and drafts ready without edits drop from 4/8 to 3/8. All 16 calls are fresh; older targeted repeats were not reused.
+[Luna full-panel repeat](../reviews/repeatability-v3/REPORT.md): house content checks stay at 52/54, but the failing criterion changes and drafts ready without edits drop from 4/8 to 3/8. All 16 calls are fresh; older targeted repeats were not reused.
 
-[Astra full-panel repeat](reviews/repeatability-v2/REPORT.md): all 108 content checks pass again, but house readiness without edits changes from 8/8 to 6/8. The 16 repeats are separate from the primary leaderboard. Two attempts do not establish population reliability.
+[Astra full-panel repeat](../reviews/repeatability-v2/REPORT.md): all 108 content checks pass again, but house readiness without edits changes from 8/8 to 6/8. The 16 repeats are separate from the primary leaderboard. Two attempts do not establish population reliability.
 
-[Grounding correction](reviews/assistant-v35/REPORT.md): Fable 5 default loses one check for an unsupported sample-adequacy claim, changing to 49/54 checks and 3/8 content-ready drafts. All other scores are unchanged. The correction is retained in the current assistant-v44 cumulative grades.
+[Grounding correction](../reviews/assistant-v35/REPORT.md): Fable 5 default loses one check for an unsupported sample-adequacy claim, changing to 49/54 checks and 3/8 content-ready drafts. All other scores are unchanged. The correction is retained in the current assistant-v44 cumulative grades.
 
-[Latest grading correction](reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; The correction is retained in the current assistant-v44 cumulative grades.
+[Latest grading correction](../reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; The correction is retained in the current assistant-v44 cumulative grades.
 
 The grading assistant reads each complete draft against its source packet, task-specific checks and the full anti-slop lens. Every check is marked pass, fail or unresolved. Unresolved earns no credit and is reported separately from confirmed failure. API errors are ungraded. Findings include exact quotations with verified offsets and line numbers.
 
@@ -134,7 +134,7 @@ Coverage separates complete drafts, incomplete generations, API failures and una
 
 ## Repeated attempts
 
-[Targeted repeatability study](reviews/repeatability-v1/REPORT.md) compares three attempts for two house-style briefs with Muse and Luna. It is separate from primary model coverage and does not select the best answer.
+[Targeted repeatability study](../reviews/repeatability-v1/REPORT.md) compares three attempts for two house-style briefs with Muse and Luna. It is separate from primary model coverage and does not select the best answer.
 
 ```sh
 npm run bench -- repeat meta/muse-spark-1.3 pilot-results-memo house 2
