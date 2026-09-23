@@ -1,167 +1,93 @@
 # BusinessSlopBench
 
-**Status: a one-person pilot, published as is, looking for someone to turn it into a real benchmark.**
+A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-This repository holds everything: the eight briefs, the anti-slop rubric, the frozen runner, every saved draft from every model, every grading decision with a quoted anchor into the draft, and the spending ledger. It is enough to reproduce or dispute any number in the tables. It is not enough to call the tables a scientific result, for the reasons in the disclaimers at the bottom of this file.
+I built it, ran 25 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-I am asking for someone with the time and the standing to take the concept and do it properly: more briefs, blind grading by people who do not work for a model vendor, repeated generations, published inter-rater agreement. Business writing is where most people meet these models, and there is no benchmark that pressures the labs on it. If you build that, take whatever is useful here. The rubric is CC BY-SA; the rest is MIT.
+## What I found
 
-- [Current ranking, with and without the house rules, with list prices](reviews/assistant-v44/RANKING.md)
-- [Same ranking with the zero-data-retention rule switched off](reviews/assistant-v44/RANKING-ignoring-zdr.md)
-- [Cumulative grades and evidence](reviews/assistant-v44/REPORT.md)
-- [Grader improvement log](IMPROVEMENTS.md), the running record of every rubric decision and correction
+Full tables with list prices per million tokens, with and without the zero-data-retention filter:
 
-A small TypeScript benchmark for single-call English business writing. It targets 25 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus my Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
+- [Ranking](reviews/assistant-v44/RANKING.md)
+- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v44/RANKING-ignoring-zdr.md)
+- [Every grade with its quoted evidence](reviews/assistant-v44/REPORT.md)
 
-## Why a business slop bench
+Plain brief, no instructions about style:
 
-When I posted on X that I needed a business slop bench for SOWs, proposals and slide decks, Dex Horthy (@dexhorthy) replied: "lemme save you some time on that one - if a model wrote it, probably slop. wordcels vindicated etc", quoting Pedram (@pdrmnvd): "pretty wild that the hardest job for even the most frontier models is not shape rotation but writing, wordcels absolutely vindicated."
+| Rank | Model | Checks passed (of 54) | Ready to send as is (of 8) | Input / output $ per M tokens |
+|---:|---|---:|---:|---:|
+| 1 | GPT-6 Astra | 54 | 4 | 10 / 50 |
+| 2 | GPT-5.6 Terra | 52 | 3 | 2 / 12 |
+| 3 | Grok 4.7 | 52 | 3 | 1.20 / 3.60 |
+| 4 | Claude Opus 5.5 | 52 | 2 | 4 / 20 |
+| 8 | GPT-5.6 Luna | 51 | 2 | 0.20 / 1.20 |
+| 18 | Claude Opus 5 | 49 | 0 | 5 / 25 |
+| 20 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
 
-Probably true, and some are more slop than others. Across the 400 reviewed single-call uncapped drafts from 25 models, 117 drafts have a failed grounding check, from zero for Astra and Muse to 12 for Qwen Flash. These count drafts with findings, not individual claims; one draft can contain several unsupported claims. Most are invented commitments: reply and delivery deadlines, readiness or completion claims, prior discussions, payment or scope terms, and ownership the source never assigned. That criterion, with the per-task commitments checks, is the harness around promises: every material claim must trace to the source pack or be labeled a proposal. It catches what no compiler can, but only as one reviewer's provisional judgment on one generation per cell.
+Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti-slop rules:
 
-Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
+| Rank | Model | Checks passed (of 54) | Ready to send as is (of 8) | Input / output $ per M tokens |
+|---:|---|---:|---:|---:|
+| 1 | GPT-6 Astra | 54 | 8 | 10 / 50 |
+| 2 | GPT-5.6 Sol | 53 | 4 | 4 / 20 |
+| 3 | GPT-5.6 Luna | 52 | 4 | 0.20 / 1.20 |
+| 8 | Claude Opus 5.5 | 51 | 3 | 4 / 20 |
+| 14 | Claude Opus 5 | 49 | 3 | 5 / 25 |
+| 20 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
 
-Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). I stopped the Jev retries. These are provisional assistant grades with verified evidence anchors, not human gold.
+Three things stood out.
 
-Uncapped results: [Sonnet 5, MiMo, Astra, Sol 6, Luna 6, Sol 5.6, Terra, Gemini Pro, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v43/REPORT.md). Muse, Fable 5, Fable 5.1, Luna 6 and Sol 6 appear in the same report marked non-ZDR and disqualified; their writing scores are shown for information only. Eligibility follows the saved catalog and request policy, not a separate audit of provider retention practices. This cohort is not pooled with earlier capped scores.
+1. **The best model is very good and expensive.** GPT-6 Astra passed every check in both conditions, and every one of its house-rule drafts could be sent as is. A full repeat run passed every check again. GPT-5.6 Luna gets close for about forty times less per output token.
+2. **Style rules fix the surface, not the substance.** Telling a model what slop sounds like removed every em dash and every editorial finding for almost every model. It did not stop the invented commitments. Across the Anthropic models, 28 of 29 failures were a claim the source never made: "the team is executing well", "confirm by Friday", "ready to launch immediately", "no legal blockers".
+3. **Same price, very different output.** Claude Fable 5.1 costs what Astra costs and invented a prior discussion, a Friday deadline and a ready team on briefs where Astra invented nothing.
 
-[Current corrected ranking](reviews/assistant-v44/RANKING.md): Grok’s explicit request to authorize a signatory now receives the same passing judgment as Sol’s equivalent request. [Correction and evidence](reviews/assistant-v44/REPORT.md). All other 399 draft judgments are unchanged.
+Five models with no zero-data-retention route on the Gateway (Muse Spark 1.3, GPT-6 Sol, GPT-6 Luna, Claude Fable 5 and 5.1) are marked disqualified in the main ranking, because that is a business requirement for me. They score well; the second ranking file shows them ranked with everyone else.
 
-[Rubric audit](reviews/rubric-audit-v1/REPORT.md): all six Muse, Gemini Flash and Luna primary readouts give correct handling-time endpoints but omit a derived reduction that the rubric requires and the brief does not explicitly request. This is an analytical-completeness omission, not incorrect arithmetic. The audit shows its effect separately; official scores remain unchanged. A proposed clearer brief is inactive.
+## How it works
 
-Current collection uses `pilot-v24` (the runner change that removed the hardcoded credential path re-froze the protocol; all saved outputs import unchanged) with no harness output-token cap and `data/tasks-v2.json`. The only brief change aligns the AI strategy capacity statement with next quarter. Exact matching outputs are imported from earlier runs; changed inputs generate new outputs. Historical results remain intact. Paid Jev commands are disabled while assistant grading is in use. `npx tsx src/draft-audit.ts pilot-v23` audits saved outputs and verifies their inputs against the frozen task version.
+Eight synthetic briefs, each with a small source pack of facts. Every model writes each brief once in two conditions: the plain brief, and the plain brief plus the anti-slop rules. Each draft is graded against six or seven factual checks (the fee is right, no invented start date, the right person owns the decision) plus one grounding check: every material claim traces to the source or is labeled a proposal. A draft is **content ready** if it passes every check, fits the word limit and has no residue like a `[Date]` placeholder. It is **ready without edits** if it is also free of em dashes, rhetorical negation and supported slop findings.
 
-The current report covers all 400 primary drafts from 25 models, plus 40 separately tracked repeats. Sonnet 5 completed sixteen uncapped calls with seven-minute spacing and no errors. Its provisional review passes 48/54 content checks in each condition, with 2/8 content-ready drafts in each and 0/8 ready without edits. The house rules remove all sixteen default-condition em dashes but do not eliminate unsupported claims. MiMo completed after the Gateway advertised a ZDR route; its earlier routing rejection remains recorded. Run `python3 scripts/coverage.py --cohort uncapped` for current collection counts. The spending ceiling remains $100; the ledger includes retained reservations as well as settled charges.
+Every verdict quotes the exact line it rests on, and every draft is saved with its request. Open a draft, open its grade, check the quote. The long version, including the frozen protocol, the spending ledger and the retry rules, is in [docs/METHOD.md](docs/METHOD.md). The running record of every rubric decision and correction is in [IMPROVEMENTS.md](IMPROVEMENTS.md).
 
-## Run
+## Why I stopped here
 
-Requires Node 22+, a mounted writable external SSD for this checkout, and the existing Gateway credential. Dependencies and disposable output stay on the SSD.
+I got what I needed for my own decisions, and the next steps are not a one-person job. To be a benchmark the labs would respond to, this needs:
+
+- many more briefs, including long ones and ones that need outside knowledge
+- blind grading by people who do not work for a model vendor, with published agreement between graders
+- several generations per brief, so that a one-check gap means something
+- a rubric that is not one person's taste
+
+If you have the time and the standing to build that, take whatever is useful here. The code is MIT. The rubric is CC BY-SA 4.0. Open an issue or fork it; I will answer questions.
+
+## Reproduce it
+
+Everything in the tables reads saved files and makes no API calls:
 
 ```sh
 npm ci
-npm run check
 npm test
-npm run bench -- collect alibaba/qwen3.8-flash
-npm run bench -- collect moonshotai/kimi-k3
-zsh scripts/paced-collect.sh anthropic/claude-opus-5
-npx tsx src/draft-audit.ts pilot-v23
+python3 scripts/ranking.py reviews/assistant-v44 runs/pilot-v23
+python3 reviews/assistant-v44/build.py
 ```
 
-The CLI needs one credential: `AI_GATEWAY_API_KEY` for the Vercel AI Gateway, read from the environment. Optionally set `BUSINESS_SLOP_ENV_FILE` to a dotenv file that defines it; the CLI reads only that one variable from the file. No other setup is required to reproduce the grading or the rankings, which read saved files and make no API calls.
-
-The historical `pilot` command attempted the full 352-output screen, cheapest output-token rates first. It and the other paid Jev commands are now disabled. It is gated on control diagnostics: no opposite definitive validation judgments and at least 75% validation coverage. Validation labels are author-proposed; the first validation set was inspected during v2 development and is not a blind human gold set. Do not bypass the gate to obtain a leaderboard. Model and task lists are in `data/`; I excluded StepFun. No agents, tools, browsing, exemplars, revision, or best-of selection are used by the writing models.
-
-## What is frozen
-
-The protocol hashes the task set, model settings, rubric source, control set, grader categories and runner code. The first paid command snapshots the catalog. Changes invalidate that run instead of mixing results. Source prompts, response text, token usage, warnings, provider routing, generation IDs, timing and every Jev answer are retained in `runs/pilot-v4/`. Interrupted completed generations are reused for grading; paid requests are never automatically retried. A filesystem lock prevents concurrent CLI processes from competing for the same budget.
-
-Each model uses `low` reasoning except DeepSeek (`none`, since its catalog does not expose `low`). This is a declared economical configuration comparison, not a claim of equal compute. Sampling defaults remain provider-specific. Writer requests omit `maxOutputTokens` and the harness generation deadline. Provider-native limits and timeouts still apply. Runs v1-v16 used a 4,096-token cap; those results remain a separate historical cohort. Empty or truncated responses stop expansion and count as incomplete generations, not finished writing samples. Task word limits remain editorial requirements in the briefs.
-
-Default and house conditions share the same source pack and task wording. Only the house condition receives the source style guide. Both are graded against the same style rules, but only the house condition tests explicit compliance. Every brief defines the whitespace word-count convention.
-
-## How the grading works
-
-[Coverage against the supplied rubric](reviews/rubric-coverage-v1/REPORT.md): the pilot measures short-brief source fidelity, required decisions and style fit. Citation entailment, complex reconciliation, broader responsibility structures and independent judge calibration remain validation gaps.
-
-[Grader calibration packet](reviews/grader-calibration-v1/README.md): ten full-context diagnostic cases with model metadata removed and a separate proposed answer key. Independent labels are still pending; this is not a held-out accuracy test.
-
-[Luna full-panel repeat](reviews/repeatability-v3/REPORT.md): house content checks stay at 52/54, but the failing criterion changes and drafts ready without edits drop from 4/8 to 3/8. All 16 calls are fresh; older targeted repeats were not reused.
-
-[Astra full-panel repeat](reviews/repeatability-v2/REPORT.md): all 108 content checks pass again, but house readiness without edits changes from 8/8 to 6/8. The 16 repeats are separate from the primary leaderboard. Two attempts do not establish population reliability.
-
-[Grounding correction](reviews/assistant-v35/REPORT.md): Fable 5 default loses one check for an unsupported sample-adequacy claim, changing to 49/54 checks and 3/8 content-ready drafts. All other scores are unchanged. The correction is retained in the current assistant-v44 cumulative grades.
-
-[Latest grading correction](reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; The correction is retained in the current assistant-v44 cumulative grades.
-
-The grading assistant reads each complete draft against its source packet, task-specific checks and the full anti-slop lens. Every check is marked pass, fail or unresolved. Unresolved earns no credit and is reported separately from confirmed failure. API errors are ungraded. Findings include exact quotations with verified offsets and line numbers.
-
-`contentReady` requires all critical content checks to pass, the word limit to be met, and no unintended authoring placeholders. `readyWithoutEdits` additionally requires no style-gate violations or supported editorial findings. Mechanical character matches are counted directly; phrase matches are candidates requiring contextual judgment, including the lens's exceptions.
-
-Review builders save the grader's explicit decisions and verify evidence against frozen output hashes. They are not automated semantic graders. Model identities were visible during review, and one generation per task does not establish repeatability. These results are provisional assistant judgments, not human gold or independent validation. Historical Jev scores are not pooled with these grades.
-
-## Historical Jev scoring
-
-The following describes the archived Jev experiments. Jev inference is currently disabled in the CLI.
-
-- Task-specific critical criteria cover facts, commitments, numerical statements, dependencies, decision readiness and accountability.
-- Code checks empty responses, whitespace word count, obvious audit/placeholder residue, and literal U+2014 occurrences, with exact offsets and line numbers.
-- Phrase scans preserve candidates. Jev evaluates rhetorical contrasts and all 29 categories from the source anti-slop lens with their exceptions. A matched word is not automatically a defect.
-- Jev answers are probabilities of the question being true. Defect questions invert this into probability of passing. The operating thresholds are fitted only to development controls: the midpoint separating positive and negative pass scores, with an abstention band of 0.05 on either side. Overlapping development labels abort calibration. The actual thresholds are saved in calibration.json; the interval remains unresolved. The band is a policy choice, not a statistical confidence interval. Empty required deliverables fail deterministically. In control summaries, empty-response critical labels use that deterministic failure while retaining the raw Jev answers.
-- Pass, fail and unresolved are separate outcomes, not an overall point score. Unresolved means the judge is uncertain or its status conflicts with its evidence. It is neither an earned point nor a confirmed defect. API failures are ungraded, not unresolved. Passing anti-slop checks does not establish usefulness or excellent writing.
-- `contentReady` requires all critical checks to pass and the deterministic completeness checks to pass. Unresolved criteria prevent a Ready verdict; they do not prove an error. Style gate and editorial defects are reported separately.
-- Editorial counts are failed categories, not unique defect counts. Categories can overlap. Do not turn them into a weighted universal quality score.
-- Jev does not write explanations or verified evidence quotations. Inspect the archived output and question to adjudicate a disputed semantic flag. Scanner matches alone have deterministic text anchors.
-
-Nineteen authored diagnostic controls exercise clean and broken examples before expansion. Their labels are **author-proposed, not human-validated gold**. Calibration results are development evidence. The initial pilot is one response per task and condition, so it does not establish run-to-run reliability or statistical superiority. Do not infer a best model from one smoke-test brief.
-
-The full source taxonomy is also visible to the writer in the house condition. This intentionally measures instruction-following; it must not be confused with default writing quality. Provider names never enter Jev's state.
-
-## Cost controls
-
-The cumulative ceiling is $100 across all run versions, including calibration and generation; it was $20 until 2026-09-22, when I raised it to $50 for pilot-v20 and then to $100 for pilot-v21. Reservations for requests the Gateway rejected with a sub-second 429 and no generation ID are released to zero by `scripts/release-rejected.py`, which logs each release; every other failed or canceled request keeps its full reservation. The shared ledger is runs/budget.json. Diagnostic v1, v2 and v3 results and source snapshots are retained separately; the corrected comparison is v4. Before dispatch, the ledger reserves a conservative bound using UTF-8 prompt bytes plus framing allowance, the model catalog's advertised maximum output capacity, and the highest listed input/output rate across regional, premium and long-context tiers, including peak multipliers, plus a $0.01 per-call surcharge allowance. The catalog output ceiling reserves dollars only and is never sent as a generation limit. If that worst-case reservation exceeds the remaining budget, the request does not run. SDK retries are zero; no cross-model fallbacks are configured. Full grading is split into fixed batches of 16 questions after large requests returned HTTP 503 while smaller probes succeeded. Three workers share one synchronous reservation ledger; a failure stops new jobs and lets in-flight calls settle. Same-model Gateway provider routing remains visible in saved metadata.
-
-After success the reservation is settled using reported token counts at the conservative rates. When available, Gateway response metadata supplies the total billed cost including surcharges, with generation lookup as a fallback. Optional reporting tags are disabled because they incurred a surcharge in the first smoke test. An unknown or failed call retains its full reservation. Thus accounted cost may exceed actual billing, especially during promotions. A bound violation stops the process. This is an application spending guard based on catalog pricing and provider adherence to its advertised output capacity, not an independent Gateway account-wide billing limit.
-
-Do not delete or reset the ledger to resume spending. It includes every attempt, including unsuccessful ones. The report distinguishes missing results from completed tasks. No paid calls occur during `report`, `check`, or `test`.
-
-## Sources and attribution
-
-The anti-slop rubric is copied from [mattlgroff/zero-defect](https://github.com/mattlgroff/zero-defect). `sources/provenance.json` records its source path, checkout commit and byte hash. The taxonomy carries CC BY-SA 4.0 attribution; copied notices and license information are preserved in `sources/`. It is used as rubric data, without invoking Zero Defect's multi-agent workflow.
-
-- [AI SDK evaluation API](https://ai-sdk.dev/docs/ai-sdk-core/evaluation)
-- [Jev on AI Gateway](https://vercel.com/changelog/typesafe-ai-jev-now-available-on-ai-gateway)
-- [LangChain's narrow Jev judge experiment](https://www.langchain.com/blog/jev-agent-evals-langsmith)
-- [SlopCodeBench](https://arxiv.org/abs/2603.24755), inspiration for measuring quality independently from apparent task completion. This pilot does not test iterative degradation.
-
-Published at [github.com/mattlgroff/business-slop-bench](https://github.com/mattlgroff/business-slop-bench). Run output under `runs/` is committed as evidence; the Gateway credit snapshot and collector logs are not.
-
-## Transient failures
-
-After inspecting a 429/502/503/504 result, `python3 scripts/retry-transient.py runs/pilot-v4/<failed-call>.json` archives that failed attempt, retains its entire budget reservation, and permits a new attempt when the original bench command is rerun. There are at most two manual retries per call. Successful generations and judge batches are reused. The retry helper never issues an inference call itself. An availability or permission failure still needs investigation; do not repeatedly retry it.
-
-Fable 5, Fable 5.1 and Muse Spark 1.3 use declared non-ZDR routes because the catalog and live API reject ZDR for these models. Muse also has no no-training guarantee in the observed catalog. All test packets are synthetic and the style lens is public. Other writer models retain the ZDR setting. Since 2026-09-22 a model with no ZDR route fails the bench for business reasons: the failed request is retained and no further non-ZDR exception is added. MiMo failed on this rule. Whether to retire the earlier Fable and Muse exceptions is an open decision; their results are retained and marked. See [Gateway ZDR routing](https://vercel.com/docs/ai-gateway/security-and-compliance/zdr). `python3 scripts/coverage.py` reports generated, failed and unattempted cases across the current task version without assigning quality scores.
-
-Target one cell without touching failed cells elsewhere:
+Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:
 
 ```sh
-npm run bench -- collect deepseek/deepseek-v4.1-flash vendor-decision-memo default
+npm run bench -- collect openai/gpt-6-astra
+zsh scripts/paced-collect.sh anthropic/claude-opus-5.5
 ```
 
-The brief and condition arguments are optional. Omit the condition to collect both conditions for that brief. Unknown brief IDs and conditions fail rather than expanding the run. Existing exact-match outputs are reused.
+Reasoning effort is `low` for every model. Runs are frozen by hash; a changed brief or runner gets a new run directory rather than mixing results. Spending is capped by a ledger in `runs/budget.json`.
 
-## Output-policy cohorts
+## Read this before quoting a number
 
-The uncapped writer-input hash omits the old output-limit field, so capped outputs cannot be silently imported into the new cohort. Report coverage separately:
+- Each model wrote each brief once per condition. Two full repeats (Astra, Luna) kept the check scores but moved the ready counts by one or two drafts. A gap of one or two checks is within that variation.
+- The grader is an AI assistant that could see the model names. Every verdict is anchored to a quote, so it can be audited. It has not been audited by an independent human.
+- I wrote the briefs, the rubric and the house rules. The house condition measures compliance with my rules.
+- The briefs are short and synthetic. This tests source fidelity in business documents, not long-form writing.
+- Prices are Gateway list rates on the day of the run. GPT-6 Sol and Luna were billed nothing during launch pricing.
 
-```sh
-python3 scripts/coverage.py --cohort legacy-capped
-python3 scripts/coverage.py --cohort uncapped
-python3 -m unittest discover -s tests -p 'test_*.py'
-```
+## Attribution
 
-Coverage separates complete drafts, incomplete generations, API failures and unattempted cells. Draft audits recognize reviews of identical imported artifacts only when model/task/condition identity, text hash and writer-input hash match. Imported copies remain excluded from new generation spending.
-
-## Repeated attempts
-
-[Targeted repeatability study](reviews/repeatability-v1/REPORT.md) compares three attempts for two house-style briefs with Muse and Luna. It is separate from primary model coverage and does not select the best answer.
-
-```sh
-npm run bench -- repeat meta/muse-spark-1.3 pilot-results-memo house 2
-```
-
-`repeat` requires an exact model, task, condition and integer sample number of at least 2. It uses the same writer input with a separate saved response ID. It never imports a primary output. Replaying an already-saved sample reuses that response without another charge. Primary coverage and draft audits exclude repeat IDs; the study report accounts for them separately.
-
-## Disclaimers
-
-Read these before quoting a number.
-
-- **One generation per cell.** Each model wrote each brief once per condition. Two full-panel repeats (Astra, Luna) kept the content scores but moved the ready-without-edits counts by one or two drafts. A gap of one or two checks between models is within that variation.
-- **The grader is an AI assistant, not a person, and it could see the model names.** I had a coding assistant grade every draft against the rubric. Every verdict quotes the exact line it rests on, so it can be audited, but it has not been audited by an independent human.
-- **I wrote the rubric and the house rules, and I ran the bench.** The house condition measures compliance with my style rules, not writing quality in general.
-- **The briefs are synthetic and short.** Eight briefs, six or seven checks each. They test source fidelity and invented commitments in short business documents, not long-form writing, research, or anything requiring outside knowledge.
-- **Reasoning effort was set to `low` for every model** (`none` for DeepSeek). This is a cheap-configuration comparison, not a best-effort one.
-- **Prices are Gateway list rates on the day of the run.** GPT-6 Sol and GPT-6 Luna were billed nothing during launch pricing.
-- **The zero-data-retention rule is a business filter, not a quality judgment.** Models without a ZDR route on the Gateway are marked disqualified; the second ranking file shows them ranked with everyone else.
-- **Provider routing varies.** The same model can be served by different providers behind the Gateway; the saved metadata records which one answered.
-
-None of this means the drafts are wrong about what they show. Open a draft, open its grade, and check the quote. That is the whole method.
+The anti-slop rubric is copied from [mattlgroff/zero-defect](https://github.com/mattlgroff/zero-defect) under CC BY-SA 4.0; see `sources/`. Generation goes through the [Vercel AI Gateway](https://vercel.com/ai-gateway) with the AI SDK. [SlopCodeBench](https://arxiv.org/abs/2603.24755) was the inspiration for grading quality separately from apparent task completion.
