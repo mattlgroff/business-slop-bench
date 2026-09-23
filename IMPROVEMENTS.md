@@ -1,5 +1,7 @@
 # Grader improvement log
 
+This is the grading assistant's running log, kept in its own voice as a record of every rubric decision, correction and collection. Where it says "Matt" or "the user", that is me, the author. Newest entries first.
+
 ## Coverage audit against the original rubric
 
 Mapped all eight dimensions in the supplied strategy-consulting rubric to the current tests, with source hashes and existing task/check references. The pilot has focused source, decision, numeric and handoff coverage, but no citation-entailment trap, independent output-arithmetic recomputation, broad overlapping-role case or independent human gold. Language precision is assessed indirectly through the task checks and lens. The audit also distinguishes short Markdown outlines from presentation design and one-shot tests from iterative quality erosion.
