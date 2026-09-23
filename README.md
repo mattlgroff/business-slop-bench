@@ -11,17 +11,17 @@ I am asking for someone with the time and the standing to take the concept and d
 - [Cumulative grades and evidence](reviews/assistant-v44/REPORT.md)
 - [Grader improvement log](IMPROVEMENTS.md), the running record of every rubric decision and correction
 
-A small TypeScript benchmark for single-call English business writing. It targets 25 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus Matthew Groff's Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
+A small TypeScript benchmark for single-call English business writing. It targets 25 models on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus my Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
 ## Why a business slop bench
 
-When Matthew posted on X that he needed a business slop bench for SOWs, proposals and slide decks, Dex Horthy (@dexhorthy) replied: "lemme save you some time on that one - if a model wrote it, probably slop. wordcels vindicated etc", quoting Pedram (@pdrmnvd): "pretty wild that the hardest job for even the most frontier models is not shape rotation but writing, wordcels absolutely vindicated."
+When I posted on X that I needed a business slop bench for SOWs, proposals and slide decks, Dex Horthy (@dexhorthy) replied: "lemme save you some time on that one - if a model wrote it, probably slop. wordcels vindicated etc", quoting Pedram (@pdrmnvd): "pretty wild that the hardest job for even the most frontier models is not shape rotation but writing, wordcels absolutely vindicated."
 
 Probably true, and some are more slop than others. Across the 400 reviewed single-call uncapped drafts from 25 models, 117 drafts have a failed grounding check, from zero for Astra and Muse to 12 for Qwen Flash. These count drafts with findings, not individual claims; one draft can contain several unsupported claims. Most are invented commitments: reply and delivery deadlines, readiness or completion claims, prior discussions, payment or scope terms, and ownership the source never assigned. That criterion, with the per-task commitments checks, is the harness around promises: every material claim must trace to the source pack or be labeled a proposal. It catches what no compiler can, but only as one reviewer's provisional judgment on one generation per cell.
 
 Opus comparison: [verified Opus 5 retry and separate Opus 4.6 sample](reviews/assistant-v7/REPORT.md).
 
-Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). Jev retries stopped at the user's request. These are provisional assistant grades with verified evidence anchors, not human gold.
+Earlier results with a 4,096-token cap: [Muse compared with the other completed models](reviews/assistant-v13/REPORT.md). I stopped the Jev retries. These are provisional assistant grades with verified evidence anchors, not human gold.
 
 Uncapped results: [Sonnet 5, MiMo, Astra, Sol 6, Luna 6, Sol 5.6, Terra, Gemini Pro, Opus 5.5, Opus 5, Opus 4.6, Muse, Gemini Flash, Luna, Qwen Flash, Qwen Max, GLM Flash, GLM 5.3, DeepSeek Flash, DeepSeek Pro, Kimi K3, MiniMax and Grok](reviews/assistant-v43/REPORT.md). Muse, Fable 5, Fable 5.1, Luna 6 and Sol 6 appear in the same report marked non-ZDR and disqualified; their writing scores are shown for information only. Eligibility follows the saved catalog and request policy, not a separate audit of provider retention practices. This cohort is not pooled with earlier capped scores.
 
@@ -49,7 +49,7 @@ npx tsx src/draft-audit.ts pilot-v23
 
 The CLI needs one credential: `AI_GATEWAY_API_KEY` for the Vercel AI Gateway, read from the environment. Optionally set `BUSINESS_SLOP_ENV_FILE` to a dotenv file that defines it; the CLI reads only that one variable from the file. No other setup is required to reproduce the grading or the rankings, which read saved files and make no API calls.
 
-The historical `pilot` command attempted the full 352-output screen, cheapest output-token rates first. It and the other paid Jev commands are now disabled. It is gated on control diagnostics: no opposite definitive validation judgments and at least 75% validation coverage. Validation labels are author-proposed; the first validation set was inspected during v2 development and is not a blind human gold set. Do not bypass the gate to obtain a leaderboard. Model and task lists are in `data/`; StepFun is excluded as requested. No agents, tools, browsing, exemplars, revision, or best-of selection are used by the writing models.
+The historical `pilot` command attempted the full 352-output screen, cheapest output-token rates first. It and the other paid Jev commands are now disabled. It is gated on control diagnostics: no opposite definitive validation judgments and at least 75% validation coverage. Validation labels are author-proposed; the first validation set was inspected during v2 development and is not a blind human gold set. Do not bypass the gate to obtain a leaderboard. Model and task lists are in `data/`; I excluded StepFun. No agents, tools, browsing, exemplars, revision, or best-of selection are used by the writing models.
 
 ## What is frozen
 
@@ -59,7 +59,7 @@ Each model uses `low` reasoning except DeepSeek (`none`, since its catalog does 
 
 Default and house conditions share the same source pack and task wording. Only the house condition receives the source style guide. Both are graded against the same style rules, but only the house condition tests explicit compliance. Every brief defines the whitespace word-count convention.
 
-## Current assistant scoring
+## How the grading works
 
 [Coverage against the supplied rubric](reviews/rubric-coverage-v1/REPORT.md): the pilot measures short-brief source fidelity, required decisions and style fit. Citation entailment, complex reconciliation, broader responsibility structures and independent judge calibration remain validation gaps.
 
@@ -73,11 +73,11 @@ Default and house conditions share the same source pack and task wording. Only t
 
 [Latest grading correction](reviews/assistant-v34/REPORT.md): four negative-parallelism findings were removed under the existing factual and decision-boundary exceptions. The comparison table and readiness counts are unchanged; The correction is retained in the current assistant-v44 cumulative grades.
 
-The assistant reads each complete draft against its source packet, task-specific checks and the full anti-slop lens. Every check is marked pass, fail or unresolved. Unresolved earns no credit and is reported separately from confirmed failure. API errors are ungraded. Findings include exact quotations with verified offsets and line numbers.
+The grading assistant reads each complete draft against its source packet, task-specific checks and the full anti-slop lens. Every check is marked pass, fail or unresolved. Unresolved earns no credit and is reported separately from confirmed failure. API errors are ungraded. Findings include exact quotations with verified offsets and line numbers.
 
 `contentReady` requires all critical content checks to pass, the word limit to be met, and no unintended authoring placeholders. `readyWithoutEdits` additionally requires no style-gate violations or supported editorial findings. Mechanical character matches are counted directly; phrase matches are candidates requiring contextual judgment, including the lens's exceptions.
 
-Review builders save explicit assistant decisions and verify evidence against frozen output hashes. They are not automated semantic graders. Model identities were visible during review, and one generation per task does not establish repeatability. These results are provisional assistant judgments, not human gold or independent validation. Historical Jev scores are not pooled with these grades.
+Review builders save the grader's explicit decisions and verify evidence against frozen output hashes. They are not automated semantic graders. Model identities were visible during review, and one generation per task does not establish repeatability. These results are provisional assistant judgments, not human gold or independent validation. Historical Jev scores are not pooled with these grades.
 
 ## Historical Jev scoring
 
@@ -98,7 +98,7 @@ The full source taxonomy is also visible to the writer in the house condition. T
 
 ## Cost controls
 
-The cumulative ceiling is $100 across all run versions, including calibration and generation; it was $20 until 2026-09-22, when the user raised it to $50 for pilot-v20 and then to $100 for pilot-v21. Reservations for requests the Gateway rejected with a sub-second 429 and no generation ID are released to zero by `scripts/release-rejected.py`, which logs each release; every other failed or canceled request keeps its full reservation. The shared ledger is runs/budget.json. Diagnostic v1, v2 and v3 results and source snapshots are retained separately; the corrected comparison is v4. Before dispatch, the ledger reserves a conservative bound using UTF-8 prompt bytes plus framing allowance, the model catalog's advertised maximum output capacity, and the highest listed input/output rate across regional, premium and long-context tiers, including peak multipliers, plus a $0.01 per-call surcharge allowance. The catalog output ceiling reserves dollars only and is never sent as a generation limit. If that worst-case reservation exceeds the remaining budget, the request does not run. SDK retries are zero; no cross-model fallbacks are configured. Full grading is split into fixed batches of 16 questions after large requests returned HTTP 503 while smaller probes succeeded. Three workers share one synchronous reservation ledger; a failure stops new jobs and lets in-flight calls settle. Same-model Gateway provider routing remains visible in saved metadata.
+The cumulative ceiling is $100 across all run versions, including calibration and generation; it was $20 until 2026-09-22, when I raised it to $50 for pilot-v20 and then to $100 for pilot-v21. Reservations for requests the Gateway rejected with a sub-second 429 and no generation ID are released to zero by `scripts/release-rejected.py`, which logs each release; every other failed or canceled request keeps its full reservation. The shared ledger is runs/budget.json. Diagnostic v1, v2 and v3 results and source snapshots are retained separately; the corrected comparison is v4. Before dispatch, the ledger reserves a conservative bound using UTF-8 prompt bytes plus framing allowance, the model catalog's advertised maximum output capacity, and the highest listed input/output rate across regional, premium and long-context tiers, including peak multipliers, plus a $0.01 per-call surcharge allowance. The catalog output ceiling reserves dollars only and is never sent as a generation limit. If that worst-case reservation exceeds the remaining budget, the request does not run. SDK retries are zero; no cross-model fallbacks are configured. Full grading is split into fixed batches of 16 questions after large requests returned HTTP 503 while smaller probes succeeded. Three workers share one synchronous reservation ledger; a failure stops new jobs and lets in-flight calls settle. Same-model Gateway provider routing remains visible in saved metadata.
 
 After success the reservation is settled using reported token counts at the conservative rates. When available, Gateway response metadata supplies the total billed cost including surcharges, with generation lookup as a fallback. Optional reporting tags are disabled because they incurred a surcharge in the first smoke test. An unknown or failed call retains its full reservation. Thus accounted cost may exceed actual billing, especially during promotions. A bound violation stops the process. This is an application spending guard based on catalog pricing and provider adherence to its advertised output capacity, not an independent Gateway account-wide billing limit.
 
@@ -156,8 +156,8 @@ npm run bench -- repeat meta/muse-spark-1.3 pilot-results-memo house 2
 Read these before quoting a number.
 
 - **One generation per cell.** Each model wrote each brief once per condition. Two full-panel repeats (Astra, Luna) kept the content scores but moved the ready-without-edits counts by one or two drafts. A gap of one or two checks between models is within that variation.
-- **The grader is an AI assistant, not a person, and it could see the model names.** Grades were written by whichever coding assistant was driving the session at the time. Every verdict quotes the exact line it rests on, so it can be audited, but it has not been audited by an independent human.
-- **The rubric and the house rules were written by the same person who ran the bench.** The house condition measures compliance with one author's style rules, not writing quality in general.
+- **The grader is an AI assistant, not a person, and it could see the model names.** I had a coding assistant grade every draft against the rubric. Every verdict quotes the exact line it rests on, so it can be audited, but it has not been audited by an independent human.
+- **I wrote the rubric and the house rules, and I ran the bench.** The house condition measures compliance with my style rules, not writing quality in general.
 - **The briefs are synthetic and short.** Eight briefs, six or seven checks each. They test source fidelity and invented commitments in short business documents, not long-form writing, research, or anything requiring outside knowledge.
 - **Reasoning effort was set to `low` for every model** (`none` for DeepSeek). This is a cheap-configuration comparison, not a best-effort one.
 - **Prices are Gateway list rates on the day of the run.** GPT-6 Sol and GPT-6 Luna were billed nothing during launch pricing.
