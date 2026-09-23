@@ -28,7 +28,7 @@ atomic(protocolFile, { ...protocol, hash: protocolHash });
 const lockPath = resolve(root, 'runs/.lock');
 const lock = openSync(lockPath, 'wx');
 try {
-  if (!process.env.AI_GATEWAY_API_KEY) process.env.AI_GATEWAY_API_KEY = parseEnv(readFileSync(process.env.BUSINESS_SLOP_ENV_FILE ?? '/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env', 'utf8')).AI_GATEWAY_API_KEY;
+  if (!process.env.AI_GATEWAY_API_KEY) process.env.AI_GATEWAY_API_KEY = parseEnv(readFileSync(process.env.BUSINESS_SLOP_ENV_FILE ?? '.env', 'utf8')).AI_GATEWAY_API_KEY;
   if (!process.env.AI_GATEWAY_API_KEY) throw new Error('Missing Gateway credential');
   const budget = new Budget(resolve(root, 'runs/budget.json'));
   const rows: any[] = [];
