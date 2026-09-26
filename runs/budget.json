@@ -12900,6 +12900,134 @@
       "charged": 0.018623,
       "status": "settled",
       "actualUsd": 0.014516
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--pilot-client-email--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--pilot-client-email--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--launch-delay-email--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--launch-delay-email--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--vendor-decision-memo--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--vendor-decision-memo--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--pilot-results-memo--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--pilot-results-memo--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--discovery-proposal--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--discovery-proposal--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--change-order--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--change-order--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--ai-strategy-slides--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--ai-strategy-slides--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--handoff-slides--default",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v25::stealth--pixel-canary--handoff-slides--house",
+      "model": "stealth/pixel-canary",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
     }
   ]
 }

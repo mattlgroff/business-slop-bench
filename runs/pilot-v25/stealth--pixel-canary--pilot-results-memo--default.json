@@ -1,0 +1,77 @@
+{
+  "id": "stealth--pixel-canary--pilot-results-memo--default",
+  "model": "stealth/pixel-canary",
+  "protocolHash": "cd3a1f0bb53cfeaaec73f1c64246ded90d31777923b9e8cc464a4cd6eb3df83a",
+  "status": "ok",
+  "at": "2026-09-26T00:36:32.227Z",
+  "elapsedMs": 88780,
+  "text": "\n\n# Pilot Readout: Do Not Scale\n\n## Recommendation\n\n**Do not scale.** Quality fails the required threshold and the efficiency result is not attributable to the pilot intervention.\n\n## What the Results Support\n\n| Metric | Baseline | Pilot | Verdict |\n|--------|----------|-------|---------|\n| Mean handling time | 15 min | 12 min | Suggestive, not causal |\n| Quality pass rate | 94% | 89% | Fails 92% threshold |\n| Measured cost savings | — | None | Not demonstrated |\n\nThe 3-minute reduction in handling time is directionally encouraging, but the pilot lacked randomization and the ticket mix differed from baseline. The improvement could reflect easier tickets rather than a real process gain.\n\nQuality is the decisive issue. At 89%, the pilot is 3 points below the 92% scaling floor. Scaling now would expose the operation to a quality gap that is currently unexplained and unmitigated.\n\n## Why Not Scale Yet\n\n1. **Quality below threshold.** 89% < 92%. This is a hard gate.\n2. **No causal claim on speed.** Without randomization or matched comparisons, the handling-time drop is a hypothesis, not a finding.\n3. **No financial proof.** No staffing reductions or cash savings have been measured, so the business case rests entirely on unvalidated efficiency gains.\n\n## Next Decision\n\nSam can run a matched-ticket follow-up that controls for mix and produces a defensible efficiency comparison while isolating the quality gap. This study requires COO authorization.\n\n**Proposed action:** Authorize the matched-ticket follow-up. Revisit the scale decision only if quality clears 92% and the follow-up confirms a genuine handling-time improvement.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 377,
+    "inputTokenDetails": {
+      "noCacheTokens": 377,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 573,
+    "outputTokenDetails": {
+      "textTokens": 378,
+      "reasoningTokens": 195
+    },
+    "totalTokens": 950
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "stealth/pixel-canary",
+        "resolvedProvider": "stealth",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "stealth/pixel-canary",
+        "finalProvider": "stealth",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "stealth/pixel-canary",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "stealth",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790382903999,
+                "endTime": 1790382992258,
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M3DJ64A73M9H698YWRCNRYKP"
+    }
+  },
+  "response": {
+    "id": "aitxt-NSeMwwikHQdpDR49LClxzKN8",
+    "modelId": "stealth/pixel-canary",
+    "timestamp": "2026-09-26T00:36:32.226Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

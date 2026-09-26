@@ -1,0 +1,18 @@
+{
+  "stealth--pixel-canary--pilot-client-email--default": "31358842a39851a8561dd3e5cda59652edbd48c65be4fdfdbb4ff8e0ba84446c",
+  "stealth--pixel-canary--pilot-client-email--house": "2c91f4529e07530c2752d6ce079e7d90ade74c4f5e40eb980e36a14b72e3a5bd",
+  "stealth--pixel-canary--launch-delay-email--default": "ff24d2af8056e06c1be5dfb7cd97849f5604e37a3cefdb59a923a6b01698a2f5",
+  "stealth--pixel-canary--launch-delay-email--house": "d7262b3816aa7650fd115fe78a4a21d71ad3e620870c9f00dca23cb4bd1a03be",
+  "stealth--pixel-canary--vendor-decision-memo--default": "04bcae007465110250314a7f87df61a4bfc509656633f383fb1b285dc39fb9cb",
+  "stealth--pixel-canary--vendor-decision-memo--house": "92f1158bf9b0dac4a71f9becf935df96659856c1b7b6a80ee3c22dbd1f71f7ad",
+  "stealth--pixel-canary--pilot-results-memo--default": "716c16ad060d97ae8039f4cd81708e6ddee32c51b17e85462c34666de83c412f",
+  "stealth--pixel-canary--pilot-results-memo--house": "71b508963bc79c5eb6ae31b9926521f610fad974609b70bd9898c0aa5642a033",
+  "stealth--pixel-canary--discovery-proposal--default": "565593a88234ec3395ff12c7bae1a4a6bde1a031851fdd13ecef21414a686817",
+  "stealth--pixel-canary--discovery-proposal--house": "4f75d4709f350025544e379a22f2ef9fbd93adfa7e31aac6954f0a456c828b41",
+  "stealth--pixel-canary--change-order--default": "21780260748ca850934e87cd62b8b2eb42a542bfb68311623c41c454e8928b83",
+  "stealth--pixel-canary--change-order--house": "33f9602a0ee95c789b05345e9e0ecbb55da2744f5d1e0fac54c2b040c4179649",
+  "stealth--pixel-canary--ai-strategy-slides--default": "c7b1d7ed6fe9e3307a1c03102f2cf548e3cb1a82731a9ec698280b0649946ee0",
+  "stealth--pixel-canary--ai-strategy-slides--house": "b285087c5050979d6474ab9b238facd34f208a5cd4c076664537a161d787f02d",
+  "stealth--pixel-canary--handoff-slides--default": "339953b3fba16deaeef85f9a3bcdbe0eddf351cc77ee7aad41aecbda898a2c93",
+  "stealth--pixel-canary--handoff-slides--house": "3f517d7debcd7c2bccf89e9c50d9d7a13877d1a0ca170d80ade62540d580731c"
+}

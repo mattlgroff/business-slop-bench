@@ -1,0 +1,77 @@
+{
+  "id": "stealth--pixel-canary--change-order--default",
+  "model": "stealth/pixel-canary",
+  "protocolHash": "cd3a1f0bb53cfeaaec73f1c64246ded90d31777923b9e8cc464a4cd6eb3df83a",
+  "status": "ok",
+  "at": "2026-09-26T00:40:32.346Z",
+  "elapsedMs": 43191,
+  "text": "\n\n# Change-Order Proposal: CRM Connector\n\n**To:** Client Sponsor\n**From:** Delivery Team\n**Date:** [TBD]\n\n## Summary\n\nYou requested a CRM connector for the reporting dashboard. This work is not included in the existing signed scope or original fee.\n\n## Requested Work\n\nBuild and integrate a CRM connector into the reporting dashboard.\n\n## Proposed Price\n\n| Item | Detail |\n|------|--------|\n| Effort estimate | 40 hours |\n| Hourly rate | $175/hour |\n| **Fixed change fee** | **$7,000** |\n\nThe fixed fee is proposed so cost is known upfront rather than variable.\n\n## Schedule Effect\n\nThe connector adds two weeks after both written approval and credential receipt. This is an estimate, not an approved calendar date.\n\n## Dependency\n\nWork cannot begin until you provide sandbox credentials.\n\n## Approval & Authority\n\n- Sponsor must approve this change order **in writing** before connector work begins.\n- No connector work will start on verbal agreement alone.\n\n## Decision\n\n**Approved:** ☐ Yes ☐ No\n\nSponsor signature: __________________________\n\nDate: _______________\n\n## What This Means\n\n- **Approve:** Connector work begins after credentials are received; dashboard delivery shifts ~2 weeks.\n- **Decline:** No connector is built; original scope and schedule remain unchanged.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 381,
+    "inputTokenDetails": {
+      "noCacheTokens": 381,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 365,
+    "outputTokenDetails": {
+      "textTokens": 294,
+      "reasoningTokens": 71
+    },
+    "totalTokens": 746
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "stealth/pixel-canary",
+        "resolvedProvider": "stealth",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "stealth/pixel-canary",
+        "finalProvider": "stealth",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "stealth/pixel-canary",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "stealth",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790383189296,
+                "endTime": 1790383232378,
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "33626885e13c44d1c9df0ce078e5024d",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M3DJEV7X2FXF3B0N4KWB9EY1"
+    }
+  },
+  "response": {
+    "id": "aitxt-Q2zgHloxC4JhnWiJhCRuTKQD",
+    "modelId": "stealth/pixel-canary",
+    "timestamp": "2026-09-26T00:40:32.346Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

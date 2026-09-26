@@ -98,5 +98,9 @@
   {
     "id": "spacexai/grok-4.7",
     "reasoning": "low"
+  },
+  {
+    "id": "stealth/pixel-canary",
+    "reasoning": "low"
   }
 ]

@@ -1,0 +1,77 @@
+{
+  "id": "stealth--pixel-canary--handoff-slides--default",
+  "model": "stealth/pixel-canary",
+  "protocolHash": "cd3a1f0bb53cfeaaec73f1c64246ded90d31777923b9e8cc464a4cd6eb3df83a",
+  "status": "ok",
+  "at": "2026-09-26T00:43:42.977Z",
+  "elapsedMs": 18598,
+  "text": "\n\n**Slide 1: Operational Handoff Status**\n\nThe service is not ready for handoff.\n- Lee owns defect fixes until acceptance.\n- Jo owns incidents only after acceptance.\n- Neither transition has occurred.\n\n**Slide 2: Acceptance Criteria**\n\n| Criterion | Status |\n|---|---|\n| Approved runbook | Met |\n| Successful rollback rehearsal | Not met |\n\nAcceptance requires both. Only one is satisfied.\n\n**Slide 3: Ownership Gap**\n\nNo role has accepted responsibility for organizing the rollback rehearsal.\nThis falls between Lee and Jo. Neither boundary assigns it.\n\n**Slide 4: Decision Required**\n\nSponsor Pat must:\n1. Assign responsibility for organizing the rehearsal.\n2. Confirm the rehearsal is successful.\n3. Approve acceptance once both criteria are met.\n\nWithout assignment, rehearsal cannot happen. Without rehearsal, acceptance is blocked. Without acceptance, Jo cannot own incidents.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 363,
+    "inputTokenDetails": {
+      "noCacheTokens": 363,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1264,
+    "outputTokenDetails": {
+      "textTokens": 201,
+      "reasoningTokens": 1063
+    },
+    "totalTokens": 1627
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "stealth/pixel-canary",
+        "resolvedProvider": "stealth",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "stealth/pixel-canary",
+        "finalProvider": "stealth",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "stealth/pixel-canary",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "stealth",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790383404523,
+                "endTime": 1790383423012,
+                "statusCode": 200
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M3DJNDDJ7THYGZQV5BJDD6C2"
+    }
+  },
+  "response": {
+    "id": "aitxt-E7h2eGhryTPkJUEJP1qVEcZx",
+    "modelId": "stealth/pixel-canary",
+    "timestamp": "2026-09-26T00:43:42.977Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -21,7 +21,7 @@ DISPLAY = {'openai/gpt-6-astra': 'GPT-6 Astra', 'openai/gpt-6-sol': 'GPT-6 Sol',
            'google/gemini-3.8-flash': 'Gemini 3.8 Flash', 'google/gemini-3.1-pro-preview': 'Gemini 3.1 Pro', 'meta/muse-spark-1.3': 'Muse Spark 1.3',
            'deepseek/deepseek-v4-pro-0813': 'DeepSeek V4 Pro', 'deepseek/deepseek-v4.1-flash': 'DeepSeek V4.1 Flash', 'zai/glm-5.3': 'GLM 5.3', 'zai/glm-5.3-flash': 'GLM 5.3 Flash',
            'alibaba/qwen3.8-max-0902': 'Qwen 3.8 Max', 'alibaba/qwen3.8-flash': 'Qwen 3.8 Flash', 'moonshotai/kimi-k3': 'Kimi K3', 'minimax/minimax-m3': 'MiniMax M3',
-           'xiaomi/mimo-v2.6-pro': 'MiMo V2.6 Pro', 'spacexai/grok-4.7': 'Grok 4.7'}
+           'xiaomi/mimo-v2.6-pro': 'MiMo V2.6 Pro', 'spacexai/grok-4.7': 'Grok 4.7', 'stealth/pixel-canary': 'Pixel Canary'}
 ids = {}
 for r in grades['rows']:
     stem = Path(r['path']).name

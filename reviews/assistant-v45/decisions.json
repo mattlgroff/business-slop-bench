@@ -1,0 +1,264 @@
+[
+  {
+    "model": "Pixel Canary",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "C04",
+        "fail",
+        "Your approval needed before we access client data.",
+        "The security line substitutes Morgan approval for security approval as the data-access prerequisite. The closing makes the pilot subject to security clearance, but does not explicitly correct the access condition."
+      ],
+      [
+        "grounding",
+        "fail",
+        "Below is the pilot we discussed.",
+        "Invents a prior discussion. The draft also asserts readiness and a need to lock resources for a start date without supplied support."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--pilot-client-email--default.md",
+    "outputSha256": "31358842a39851a8561dd3e5cda59652edbd48c65be4fdfdbb4ff8e0ba84446c"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "No overrun risk regardless of volume encountered.",
+        "A fixed fee does not establish zero overrun risk at any volume. The draft also offers immediate internal setup after Morgan approval, an unapproved start commitment."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--pilot-client-email--house.md",
+    "outputSha256": "2c91f4529e07530c2752d6ce079e7d90ade74c4f5e40eb980e36a14b72e3a5bd"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The delay reflects the thoroughness of the security gate, not a problem with the product itself.",
+        "The source does not establish that the product is problem-free. The draft also claims the staging demo is fully on track and the team is prepared to show an end-to-end product, none of which is established."
+      ]
+    ],
+    "style": [
+      [
+        "2",
+        "Here's where we stand on the launch timeline.",
+        "Announces the update rather than stating the launch position directly."
+      ]
+    ],
+    "path": "runs/pilot-v25/stealth--pixel-canary--launch-delay-email--default.md",
+    "outputSha256": "ff24d2af8056e06c1be5dfb7cd97849f5604e37a3cefdb59a923a6b01698a2f5"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "we will schedule it this week.",
+        "Adds a scheduling deadline for the sender that the source does not authorize. The draft also claims the team is closely tracking the review without source support."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--launch-delay-email--house.md",
+    "outputSha256": "d7262b3816aa7650fd115fe78a4a21d71ad3e620870c9f00dca23cb4bd1a03be"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C05",
+        "fail",
+        "Approve Alpha for year one at $92,000.",
+        "Requests CFO approval and names Priya, but never states that CFO approval must precede signing."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--vendor-decision-memo--default.md",
+    "outputSha256": "04bcae007465110250314a7f87df61a4bfc509656633f383fb1b285dc39fb9cb"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C05",
+        "fail",
+        "I recommend we proceed with Alpha.",
+        "Identifies Priya as procurement owner in the memo header, but never states that CFO approval is required before signing."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Beta's $22,000 savings carry an unbounded production delay.",
+        "The recommendation-rationale section repeats the Beta price, missing SSO and uncommitted timing already stated in the budget and compliance sections."
+      ]
+    ],
+    "path": "runs/pilot-v25/stealth--pixel-canary--vendor-decision-memo--house.md",
+    "outputSha256": "92f1158bf9b0dac4a71f9becf935df96659856c1b7b6a80ee3c22dbd1f71f7ad"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "## Why Not Scale Yet",
+        "The three-item section repeats the preceding quality, causal-evidence and savings limitations without a new decision or implication."
+      ]
+    ],
+    "path": "runs/pilot-v25/stealth--pixel-canary--pilot-results-memo--default.md",
+    "outputSha256": "716c16ad060d97ae8039f4cd81708e6ddee32c51b17e85462c34666de83c412f"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "No staffing or cash savings exist yet.",
+        "The source says no savings or staffing reductions were measured, not that none exist. The follow-up is also presented as able to isolate intervention effects, which matching ticket mix alone cannot guarantee."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "### What the results support",
+        "The bullets repeat the quality, timing and financial limitations stated in the opening paragraph without adding new analysis."
+      ]
+    ],
+    "path": "runs/pilot-v25/stealth--pixel-canary--pilot-results-memo--house.md",
+    "outputSha256": "71b508963bc79c5eb6ae31b9926521f610fad974609b70bd9898c0aa5642a033"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Once all three conditions are met, we agree a start date and mobilize.",
+        "Makes the kickoff payment a condition for agreeing the start date, changing the source sequence. The final next-step sentence names only signature and contact as needed to lock a date, which also conflicts with its three-condition statement."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--discovery-proposal--default.md",
+    "outputSha256": "565593a88234ec3395ff12c7bae1a4a6bde1a031851fdd13ecef21414a686817"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--discovery-proposal--house.md",
+    "outputSha256": "4f75d4709f350025544e379a22f2ef9fbd93adfa7e31aac6954f0a456c828b41"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "## What This Means",
+        "The closing approval/decline bullets repeat the stated scope, schedule and written-approval effects without adding a decision."
+      ]
+    ],
+    "placeholders": [
+      [
+        "[TBD]",
+        "Unfilled document-preparation date in the header; unlike the sponsor signature date field, this is authoring residue."
+      ]
+    ],
+    "path": "runs/pilot-v25/stealth--pixel-canary--change-order--default.md",
+    "outputSha256": "21780260748ca850934e87cd62b8b2eb42a542bfb68311623c41c454e8928b83"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--change-order--house.md",
+    "outputSha256": "33f9602a0ee95c789b05345e9e0ecbb55da2744f5d1e0fac54c2b040c4179649"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Deployable immediately. No legal blockers.",
+        "The source establishes approved input documents, not pilot authorization or immediate readiness and not the absence of legal blockers. The deck also invents this-week and quarter-end deadlines and an unquantified regulatory-risk claim for Option B."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--ai-strategy-slides--default.md",
+    "outputSha256": "c7b1d7ed6fe9e3307a1c03102f2cf548e3cb1a82731a9ec698280b0649946ee0"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Option A is executable now.",
+        "The source does not establish authorization or immediate readiness for the knowledge-search pilot. The draft also claims no unresolved legal blockers and no baseline, neither supplied by the source."
+      ]
+    ],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--ai-strategy-slides--house.md",
+    "outputSha256": "b285087c5050979d6474ab9b238facd34f208a5cd4c076664537a161d787f02d"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "path": "runs/pilot-v25/stealth--pixel-canary--handoff-slides--default.md",
+    "outputSha256": "339953b3fba16deaeef85f9a3bcdbe0eddf351cc77ee7aad41aecbda898a2c93"
+  },
+  {
+    "model": "Pixel Canary",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Without that assignment, the remaining steps have no start.",
+        "Repeats the dependency already stated on Slide 3 and in the preceding decision sequence without adding a decision."
+      ]
+    ],
+    "path": "runs/pilot-v25/stealth--pixel-canary--handoff-slides--house.md",
+    "outputSha256": "3f517d7debcd7c2bccf89e9c50d9d7a13877d1a0ca170d80ade62540d580731c"
+  }
+]

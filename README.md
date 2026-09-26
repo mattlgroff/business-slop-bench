@@ -2,15 +2,15 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 25 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, ran 26 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
 ## What I found
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
 
-- [Ranking](reviews/assistant-v44/RANKING.md)
-- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v44/RANKING-ignoring-zdr.md)
-- [Every grade with its quoted evidence](reviews/assistant-v44/REPORT.md)
+- [Ranking](reviews/assistant-v45/RANKING.md)
+- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v45/RANKING-ignoring-zdr.md)
+- [Every grade with its quoted evidence](reviews/assistant-v45/REPORT.md)
 
 Plain brief, no instructions about style:
 
@@ -41,7 +41,7 @@ Three things stood out.
 2. **Style rules fix the surface, not the substance.** Telling a model what slop sounds like removed every em dash and every editorial finding for almost every model. It did not stop the invented commitments. Across the Anthropic models, 28 of 29 failures were a claim the source never made: "the team is executing well", "confirm by Friday", "ready to launch immediately", "no legal blockers".
 3. **Same price, very different output.** Claude Fable 5.1 costs what Astra costs and invented a prior discussion, a Friday deadline and a ready team on briefs where Astra invented nothing.
 
-Five models with no zero-data-retention route on the Gateway (Muse Spark 1.3, GPT-6 Sol, GPT-6 Luna, Claude Fable 5 and 5.1) are marked disqualified in the main ranking, because that is a business requirement for me. They score well; the second ranking file shows them ranked with everyone else.
+Six models with no zero-data-retention route on the Gateway (Muse Spark 1.3, GPT-6 Sol, GPT-6 Luna, Claude Fable 5 and 5.1, and Pixel Canary) are marked disqualified in the main ranking, because that is a business requirement for me. The second ranking file compares their writing with everyone else. Pixel Canary was explicitly tested on synthetic briefs: 48/54 plain checks and 49/54 with house rules, with 1/8 and 2/8 ready without edits. All sixteen Gateway responses reported $0 charged.
 
 ## How it works
 
@@ -67,8 +67,8 @@ Everything in the tables reads saved files and makes no API calls:
 ```sh
 npm ci
 npm test
-python3 scripts/ranking.py reviews/assistant-v44 runs/pilot-v23
-python3 reviews/assistant-v44/build.py
+python3 scripts/ranking.py reviews/assistant-v45 runs/pilot-v25
+python3 reviews/assistant-v45/build.py
 ```
 
 Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:
