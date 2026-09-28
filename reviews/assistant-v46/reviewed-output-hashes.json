@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-sonnet-5.5--pilot-client-email--default": "a6eb3bca40278eaf2e622b48df3788582cd1b6ca405cbed100e879771faa06d6",
+  "anthropic--claude-sonnet-5.5--pilot-client-email--house": "17f6e7a20e8cb1277060bf31104aa285eb02ff133848a0b6f5ed88956f40bfcf",
+  "anthropic--claude-sonnet-5.5--launch-delay-email--default": "e6e9f2a21af22c0a9d61c38483913d78cf24d489c0b1f0f59fd59494689f5873",
+  "anthropic--claude-sonnet-5.5--launch-delay-email--house": "33e09dfd2325e27a81d556b51c36dbc41c2af4ffc264657f8f374f2921db1ef6",
+  "anthropic--claude-sonnet-5.5--vendor-decision-memo--default": "5d2cae1e1b28c50d8abb151cf497e49c44f8a617cb8a1464ffb7c15ff4976af7",
+  "anthropic--claude-sonnet-5.5--vendor-decision-memo--house": "f13951521351a9fa7241105185b0f9e485be9ce4992035dc3b3c289d683eaddf",
+  "anthropic--claude-sonnet-5.5--pilot-results-memo--default": "d0a7c1fb850679ca81f2e78785eb946282c82fc830edc6b24d625e7db9f43a48",
+  "anthropic--claude-sonnet-5.5--pilot-results-memo--house": "fba6865985f66e490bc5aa5e67afb1b2bc4a3ec52d915ae3e131ca72639a6e26",
+  "anthropic--claude-sonnet-5.5--discovery-proposal--default": "8511afe6fa251f7d3b59be673500f815380a727377caa1978fb313188df0f774",
+  "anthropic--claude-sonnet-5.5--discovery-proposal--house": "1e7eec057ce8d6f145d895660ef1880de206c1e97024f32794a52cc3d4775cee",
+  "anthropic--claude-sonnet-5.5--change-order--default": "f91ef9baef13e61faa34291f9ed2747f0721bc56915ad7f78a3a7ff94aaba11a",
+  "anthropic--claude-sonnet-5.5--change-order--house": "39d680a199e46918905031a39e811a6df98e78fa844fa74b86b35acc9b493855",
+  "anthropic--claude-sonnet-5.5--ai-strategy-slides--default": "e6e1718dfd3b3a9983c77f123ea4e795360bc028714bffce6ae034d844319c2f",
+  "anthropic--claude-sonnet-5.5--ai-strategy-slides--house": "5761eb9d7e3b70d3f8e509cad87fb299ceb542ea0d96c24e4b25f40d3570f1c4",
+  "anthropic--claude-sonnet-5.5--handoff-slides--default": "6f2c400d892eefff011f80c5f62377a010f473c40b7dedfe3b5ee177312d378e",
+  "anthropic--claude-sonnet-5.5--handoff-slides--house": "db96e3e0189258238d980f2873dee781af16731cd02ebb843df362f7941a09be"
+}

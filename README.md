@@ -2,15 +2,17 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 26 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, ran 27 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+
+The latest addition is [Sonnet 5.5 compared with Sonnet 5 and Astra](reviews/assistant-v46/SONNET-COMPARISON.md): 50/54 plain checks and 51/54 with house rules, with 2/8 ready without edits in each condition.
 
 ## What I found
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
 
-- [Ranking](reviews/assistant-v45/RANKING.md)
-- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v45/RANKING-ignoring-zdr.md)
-- [Every grade with its quoted evidence](reviews/assistant-v45/REPORT.md)
+- [Ranking](reviews/assistant-v46/RANKING.md)
+- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v46/RANKING-ignoring-zdr.md)
+- [Every grade with its quoted evidence](reviews/assistant-v46/REPORT.md)
 
 Plain brief, no instructions about style:
 
@@ -21,8 +23,8 @@ Plain brief, no instructions about style:
 | 3 | Grok 4.7 | 52 | 3 | 1.20 / 3.60 |
 | 4 | Claude Opus 5.5 | 52 | 2 | 4 / 20 |
 | 8 | GPT-5.6 Luna | 51 | 2 | 0.20 / 1.20 |
-| 18 | Claude Opus 5 | 49 | 0 | 5 / 25 |
-| 20 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
+| 19 | Claude Opus 5 | 49 | 0 | 5 / 25 |
+| 21 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
 
 Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti-slop rules:
 
@@ -32,8 +34,8 @@ Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti
 | 2 | GPT-5.6 Sol | 53 | 4 | 4 / 20 |
 | 3 | GPT-5.6 Luna | 52 | 4 | 0.20 / 1.20 |
 | 8 | Claude Opus 5.5 | 51 | 3 | 4 / 20 |
-| 14 | Claude Opus 5 | 49 | 3 | 5 / 25 |
-| 20 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
+| 15 | Claude Opus 5 | 49 | 3 | 5 / 25 |
+| 21 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
 
 Three things stood out.
 
@@ -67,8 +69,8 @@ Everything in the tables reads saved files and makes no API calls:
 ```sh
 npm ci
 npm test
-python3 scripts/ranking.py reviews/assistant-v45 runs/pilot-v25
-python3 reviews/assistant-v45/build.py
+python3 scripts/ranking.py reviews/assistant-v45 runs/pilot-v26
+python3 reviews/assistant-v46/build.py
 ```
 
 Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:

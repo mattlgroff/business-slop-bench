@@ -24,6 +24,10 @@
     "reasoning": "low"
   },
   {
+    "id": "anthropic/claude-sonnet-5.5",
+    "reasoning": "low"
+  },
+  {
     "id": "openai/gpt-6-astra",
     "reasoning": "low"
   },

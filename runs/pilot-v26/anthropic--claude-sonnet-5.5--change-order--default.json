@@ -1,0 +1,111 @@
+{
+  "id": "anthropic--claude-sonnet-5.5--change-order--default",
+  "model": "anthropic/claude-sonnet-5.5",
+  "protocolHash": "2e116a576aa74884883f71d96e94dc3052d316320d7d9a235bc4589efacebd02",
+  "status": "ok",
+  "at": "2026-09-28T19:24:45.377Z",
+  "elapsedMs": 4960,
+  "text": "**Change-Order Proposal: CRM Connector**\n\n**To:** Client Sponsor\n**Subject:** Approval request for additional work outside signed scope\n\n**1. Background**\nThe signed scope covers the reporting dashboard. You have asked us to add a CRM connector. This work is not included in the original fee, so it requires a change order.\n\n**2. Requested Work**\nBuild a CRM connector as an addition to the existing dashboard project. Original dashboard scope is unchanged.\n\n**3. Price**\n\n| Item | Detail |\n|---|---|\n| Estimated effort | 40 hours |\n| Rate | $175/hour |\n| **Proposed fixed change fee** | **$7,000** |\n\nThe $7,000 is a fixed fee for this change, in addition to the original fee.\n\n**4. Schedule Effect**\nThe connector adds an estimated two weeks. The clock starts only after both of the following:\n- your written approval, and\n- our receipt of the sandbox credentials.\n\nThis is an estimate, not an approved calendar date. No delivery date is committed until both conditions are met.\n\n**5. Client Dependency**\nYou must provide CRM sandbox credentials. Delay in providing them will delay the connector work and its schedule.\n\n**6. Approval Requirement**\nConnector work will not begin until the sponsor approves this change order in writing.\n\n**7. Decision**\n- **Approve:** Reply in writing confirming the $7,000 fixed fee and the scope above, and send the sandbox credentials. We will then begin the connector work, targeting the estimated two-week duration.\n- **Decline:** The project continues under the original signed scope (reporting dashboard) and original fee, with no connector work performed.\n\n**Sponsor Approval**\n\nName: ______________________\nSignature: __________________\nDate: ______________________\n\n☐ Approved   ☐ Declined",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 309,
+    "inputTokenDetails": {
+      "noCacheTokens": 309,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 601,
+    "outputTokenDetails": {
+      "textTokens": 601,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 910
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 309,
+        "output_tokens": 601,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-sonnet-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "System credentials planned for: anthropic, vertexAnthropic. ZDR requested: all 2 attempts support ZDR. Execution order: anthropic(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-sonnet-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-sonnet-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790623480503,
+                "endTime": 1790623485357,
+                "providerRequestId": "req_011CfWPGaFDU8BMmLQQJ3MNM",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfWPGabnyVGJhf9t4n6k7"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "33626885e13c44d1c9df0ce078e5024d",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.006628",
+      "marketCost": "0.006628",
+      "surchargeCost": "0",
+      "gatewayCost": "0.006628",
+      "inferenceCost": "0.006628",
+      "inputInferenceCost": "0.000618",
+      "outputInferenceCost": "0.00601",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3MQKYMW0D10ZCFVWM3N4EX9"
+    }
+  },
+  "response": {
+    "id": "aitxt-Nz0mZLeN9BrVAr8sITYN65gH",
+    "modelId": "anthropic/claude-sonnet-5.5",
+    "timestamp": "2026-09-28T19:24:45.376Z"
+  },
+  "billing": {
+    "totalCost": 0.006628,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.006628",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": "anthropic--claude-sonnet-5.5--ai-strategy-slides--default",
+  "model": "anthropic/claude-sonnet-5.5",
+  "protocolHash": "2e116a576aa74884883f71d96e94dc3052d316320d7d9a235bc4589efacebd02",
+  "status": "ok",
+  "at": "2026-09-28T19:24:53.376Z",
+  "elapsedMs": 4208,
+  "text": "**Slide 1: Decision Requested: Select One AI Pilot for Next Quarter**\n- The COO selects the pilot; the team can run only one.\n- Budget ceiling: $50,000.\n- Two options: internal knowledge search ($30,000) or automated customer credit decisions ($45,000).\n- Recommendation: approve the internal knowledge search pilot.\n\n**Slide 2: Why Knowledge Search Is the Right Choice**\n- Fits the budget at $30,000, leaving $20,000 under the ceiling.\n- Uses approved internal policy documents, so the inputs are already sanctioned.\n- Has a named IT owner: Dana.\n- Can start next quarter without waiting on outside approvals.\n- Fits the one-pilot capacity limit and puts the team's full focus on a single effort.\n\n**Slide 3: Why Not Automated Credit Decisions Now**\n- Costs $45,000, leaving only $5,000 under the ceiling.\n- Legal approval is pending.\n- Production use is not authorized.\n- Committing most of the budget to a pilot that may not be cleared to go live creates avoidable risk.\n- Because only one pilot can run, choosing it would also block the ready option.\n- Revisit once legal approval is resolved.\n\n**Slide 4: How We Will Measure Success and Govern Expansion**\n- Test: answer accuracy on 100 reviewed questions.\n- Target: at least 90% accuracy.\n- Current status: no result exists yet, so no performance claims are made today.\n- Dana reports results before any expansion.\n- The COO decides on next steps based on those results.\n- Decision needed today: approve the $30,000 knowledge search pilot.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 347,
+    "inputTokenDetails": {
+      "noCacheTokens": 347,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 561,
+    "outputTokenDetails": {
+      "textTokens": 561,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 908
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 347,
+        "output_tokens": 561,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-sonnet-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "System credentials planned for: anthropic, vertexAnthropic. ZDR requested: all 2 attempts support ZDR. Execution order: anthropic(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-sonnet-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-sonnet-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790623489243,
+                "endTime": 1790623493357,
+                "providerRequestId": "req_011CfWPHDcm4CE7qLEScsnvt",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfWPHDzbFcPwEKtjfu7w7"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "3655471e2cbef9f3610e66e5247c0ab9",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.006304",
+      "marketCost": "0.006304",
+      "surchargeCost": "0",
+      "gatewayCost": "0.006304",
+      "inferenceCost": "0.006304",
+      "inputInferenceCost": "0.000694",
+      "outputInferenceCost": "0.00561",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3MQM75TX5BM3JCNNV8F0WA6"
+    }
+  },
+  "response": {
+    "id": "aitxt-CO9X52Dzw4aMGsoIGwx4mSlX",
+    "modelId": "anthropic/claude-sonnet-5.5",
+    "timestamp": "2026-09-28T19:24:53.376Z"
+  },
+  "billing": {
+    "totalCost": 0.006304,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.006304",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

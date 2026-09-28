@@ -1,0 +1,266 @@
+[
+  {
+    "model": "Sonnet 5.5",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "5",
+        "The pilot is a low-risk, fixed-cost way to replace assumptions with evidence",
+        "The fee bounds cost, but broad risk containment is not established. Apply the same editorial boundary as the Sonnet 5 default pilot email."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--pilot-client-email--default.md",
+    "outputSha256": "a6eb3bca40278eaf2e622b48df3788582cd1b6ca405cbed100e879771faa06d6"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--pilot-client-email--house.md",
+    "outputSha256": "17f6e7a20e8cb1277060bf31104aa285eb02ff133848a0b6f5ed88956f40bfcf"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "the team is focused on getting it through.",
+        "Current team focus is not supplied. This can be routine reassurance rather than a material status claim, consistent with other launch reviews."
+      ]
+    ],
+    "style": [
+      [
+        "21",
+        "That decision is yours, and a reply by email is enough.",
+        "Unnecessarily narrates recipient authority and the reply channel after the direct request."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--launch-delay-email--default.md",
+    "outputSha256": "e6e9f2a21af22c0a9d61c38483913d78cf24d489c0b1f0f59fd59494689f5873"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "the team is preparing the demo",
+        "Asserts current preparation activity absent from the source. The source only says a staging demo can happen."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--launch-delay-email--house.md",
+    "outputSha256": "33e09dfd2325e27a81d556b51c36dbc41c2af4ffc264657f8f374f2921db1ef6"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "Priya proceeds to contract signing after approval.",
+        "May imply Priya is the signatory, although the source assigns procurement ownership and CFO approval only. It is not an explicit request to grant signing authority."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "**Rationale**",
+        "This section repeats the price, budget and SSO analysis already given in the table and numbered evaluation."
+      ]
+    ],
+    "placeholders": [
+      [
+        "The source pack does not describe any other costs.",
+        "Internal source-packet reference in the finished memo."
+      ],
+      [
+        "The pack contains no such commitment.",
+        "Internal source-packet reference in the finished memo."
+      ]
+    ],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--vendor-decision-memo--default.md",
+    "outputSha256": "5d2cae1e1b28c50d8abb151cf497e49c44f8a617cb8a1464ffb7c15ff4976af7"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Any year-one cost beyond the quoted subscription and setup would need separate approval",
+        "Invents a separate-approval rule for all additional charges, even those within the remaining budget. The source specifies CFO approval before signing and a budget ceiling."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "the source pack lists no other charges",
+        "Internal source-packet reference in the finished memo."
+      ]
+    ],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--vendor-decision-memo--house.md",
+    "outputSha256": "f13951521351a9fa7241105185b0f9e485be9ce4992035dc3b3c289d683eaddf"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "## What the results do not support",
+        "Repeats the causal, quality and financial limitations just explained in the preceding bullets."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--pilot-results-memo--default.md",
+    "outputSha256": "d0a7c1fb850679ca81f2e78785eb946282c82fc830edc6b24d625e7db9f43a48"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The pilot is a candidate for further testing.",
+        "This paragraph repeats the handling-time signal and quality limitation before the next-decision section; the final no-scale sentence repeats the same gate again."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--pilot-results-memo--house.md",
+    "outputSha256": "fba6865985f66e490bc5aa5e67afb1b2bc4a3ec52d915ae3e131ca72639a6e26"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--discovery-proposal--default.md",
+    "outputSha256": "8511afe6fa251f7d3b59be673500f815380a727377caa1978fb313188df0f774"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "To approve, please sign below and send us the name of your contact.",
+        "Repeats the signature and named-contact actions already specified in the numbered instructions."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--discovery-proposal--house.md",
+    "outputSha256": "1e7eec057ce8d6f145d895660ef1880de206c1e97024f32794a52cc3d4775cee"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--change-order--default.md",
+    "outputSha256": "f91ef9baef13e61faa34291f9ed2747f0721bc56915ad7f78a3a7ff94aaba11a"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--change-order--house.md",
+    "outputSha256": "39d680a199e46918905031a39e811a6df98e78fa844fa74b86b35acc9b493855"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Can start next quarter without waiting on outside approvals.",
+        "Approved input documents do not establish readiness or the absence of other approvals. The draft also adds a decision-needed-today deadline."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--ai-strategy-slides--default.md",
+    "outputSha256": "e6e1718dfd3b3a9983c77f123ea4e795360bc028714bffce6ae034d844319c2f"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [
+      [
+        "in the source pack",
+        "Internal source-packet reference in the finished deck."
+      ]
+    ],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--ai-strategy-slides--house.md",
+    "outputSha256": "5761eb9d7e3b70d3f8e509cad87fb299ceb542ea0d96c24e4b25f40d3570f1c4"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "the rehearsal stays unscheduled",
+        "Assumes the rehearsal is unscheduled. The source says it has not happened and no organizer has accepted responsibility; it does not establish schedule status."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--handoff-slides--default.md",
+    "outputSha256": "6f2c400d892eefff011f80c5f62377a010f473c40b7dedfe3b5ee177312d378e"
+  },
+  {
+    "model": "Sonnet 5.5",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Any incident before then has no operations owner.",
+        "Jo taking incidents only after acceptance does not establish that no other operations owner exists before acceptance. The draft also claims the rehearsal has no date without source support."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--handoff-slides--house.md",
+    "outputSha256": "db96e3e0189258238d980f2873dee781af16731cd02ebb843df362f7941a09be"
+  }
+]

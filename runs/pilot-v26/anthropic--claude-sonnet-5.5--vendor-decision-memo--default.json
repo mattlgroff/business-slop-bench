@@ -1,0 +1,111 @@
+{
+  "id": "anthropic--claude-sonnet-5.5--vendor-decision-memo--default",
+  "model": "anthropic/claude-sonnet-5.5",
+  "protocolHash": "2e116a576aa74884883f71d96e94dc3052d316320d7d9a235bc4589efacebd02",
+  "status": "ok",
+  "at": "2026-09-28T19:24:16.208Z",
+  "elapsedMs": 6006,
+  "text": "**DECISION MEMO**\n\n**To:** CFO\n**From:** Procurement (Priya, owner)\n**Re:** Vendor selection for year one\n**Decision requested:** Approve signing with Alpha\n\n**Recommendation**\nSelect Alpha. It is the only vendor that meets the mandatory SSO requirement and it fits within the year-one budget ceiling.\n\n**Cost comparison (year one)**\n\n| | Alpha | Beta |\n|---|---|---|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| **Year-one total** | **$92,000** | **$70,000** |\n| Budget ceiling | $100,000 | $100,000 |\n| Headroom | $8,000 | $30,000 |\n| SSO available | Yes | No, no committed date |\n| Other requirements | Met | Met |\n\n**Evaluation against constraints**\n\n1. **Budget ($100,000 including setup):** Both vendors are within the ceiling. Alpha leaves $8,000 of headroom, and Beta leaves $30,000.\n2. **SSO mandatory before production:** Alpha satisfies this. Beta does not, and it has offered no committed delivery date. Beta therefore cannot go to production under the stated rule, and we cannot plan around an undated commitment.\n3. **Other requirements:** Both vendors meet them, so they do not differentiate the options.\n\n**Rationale**\nBeta is $22,000 cheaper in year one, but the savings do not matter if the product cannot be used in production. SSO is a gating requirement, not a preference. Choosing Beta would mean paying for a product that cannot launch, with no date for when it could. Alpha's $92,000 total is within budget.\n\n**Risks and considerations**\n- Alpha's headroom is modest ($8,000), so scope changes or added costs beyond the quoted figures could pressure the ceiling. The source pack does not describe any other costs.\n- Beta's price advantage would matter only if it delivered SSO on a committed date. The pack contains no such commitment.\n\n**Next steps**\n1. CFO approves Alpha at $92,000 for year one.\n2. Priya proceeds to contract signing after approval.\n3. Priya should confirm in the contract that SSO is included.\n\n**Approval:** ______________________ (CFO)  Date: __________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 306,
+    "inputTokenDetails": {
+      "noCacheTokens": 306,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 783,
+    "outputTokenDetails": {
+      "textTokens": 783,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 1089
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 306,
+        "output_tokens": 783,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-sonnet-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "System credentials planned for: anthropic, vertexAnthropic. ZDR requested: all 2 attempts support ZDR. Execution order: anthropic(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-sonnet-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-sonnet-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790623450311,
+                "endTime": 1790623456190,
+                "providerRequestId": "req_011CfWPEMD5nQ5QBcTVi4QXy",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfWPEMcPoauUKuT2qATp4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "91f844a73ac144c88cb606f0777aea98",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.008442",
+      "marketCost": "0.008442",
+      "surchargeCost": "0",
+      "gatewayCost": "0.008442",
+      "inferenceCost": "0.008442",
+      "inputInferenceCost": "0.000612",
+      "outputInferenceCost": "0.00783",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3MQK14525AYDZGPHY40DTAD"
+    }
+  },
+  "response": {
+    "id": "aitxt-RPeKzF7ZtpaAXOg3y1rcWdf1",
+    "modelId": "anthropic/claude-sonnet-5.5",
+    "timestamp": "2026-09-28T19:24:16.208Z"
+  },
+  "billing": {
+    "totalCost": 0.008442,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.008442",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

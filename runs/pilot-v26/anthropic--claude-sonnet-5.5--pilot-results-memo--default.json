@@ -1,0 +1,111 @@
+{
+  "id": "anthropic--claude-sonnet-5.5--pilot-results-memo--default",
+  "model": "anthropic/claude-sonnet-5.5",
+  "protocolHash": "2e116a576aa74884883f71d96e94dc3052d316320d7d9a235bc4589efacebd02",
+  "status": "ok",
+  "at": "2026-09-28T19:24:26.450Z",
+  "elapsedMs": 5080,
+  "text": "# Executive Readout: Pilot Scaling Recommendation\n\n## Recommendation\n**Do not scale now.** Authorize a matched-ticket follow-up before any scaling decision.\n\n## What the results support\n| Metric | Baseline | Pilot | Threshold |\n|---|---|---|---|\n| Tickets | 200 | 100 | n/a |\n| Mean handling time | 15 min | 12 min | n/a |\n| Quality pass rate | 94% | 89% | ≥92% |\n\n- **Quality fails the scaling bar.** The pilot's 89% is 3 points below the required 92% and 5 points below baseline. This alone blocks scaling under the stated criteria.\n- **Speed improvement is suggestive, not proven.** Handling time was 3 minutes (20%) lower in the pilot. However, the ticket mix differed and allocation was not randomized, so we cannot attribute the difference to the pilot rather than to easier tickets or other selection effects.\n- **Financial benefit is unmeasured.** No staffing reductions or cash savings have been recorded. Any savings case would be an assumption, not a result.\n- **Sample is modest.** The pilot covered 100 tickets, which adds uncertainty, particularly given the mix difference.\n\n## What the results do not support\n- A claim that the pilot caused faster handling.\n- A claim that quality is acceptable at scale.\n- Any cost-saving or headcount claim.\n\n## Next decision\n**Decision for the COO:** Authorize Sam to run a matched-ticket follow-up, comparing pilot and baseline handling on comparable ticket types.\n\n**Suggested scaling gate for the follow-up:**\n1. Quality pass rate at or above 92%.\n2. Handling-time improvement persisting on matched tickets.\n3. Cash or staffing impact measured, not assumed.\n\nIf quality remains below 92%, the pilot should be revised rather than scaled. If all gates are met, return for a scaling decision.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 292,
+    "inputTokenDetails": {
+      "noCacheTokens": 292,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 653,
+    "outputTokenDetails": {
+      "textTokens": 653,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 945
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 292,
+        "output_tokens": 653,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-sonnet-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "System credentials planned for: anthropic, vertexAnthropic. ZDR requested: all 2 attempts support ZDR. Execution order: anthropic(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-sonnet-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-sonnet-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790623461491,
+                "endTime": 1790623466431,
+                "providerRequestId": "req_011CfWPFB3BTkEUqMbyAX1vL",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfWPFBQFmgtwNARVnPZfT"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.007114",
+      "marketCost": "0.007114",
+      "surchargeCost": "0",
+      "gatewayCost": "0.007114",
+      "inferenceCost": "0.007114",
+      "inputInferenceCost": "0.000584",
+      "outputInferenceCost": "0.00653",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3MQKC20RNVTSHD0M0CTPESG"
+    }
+  },
+  "response": {
+    "id": "aitxt-oP0WIdNHiCtF7dztgcXx7HbK",
+    "modelId": "anthropic/claude-sonnet-5.5",
+    "timestamp": "2026-09-28T19:24:26.449Z"
+  },
+  "billing": {
+    "totalCost": 0.007114,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.007114",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

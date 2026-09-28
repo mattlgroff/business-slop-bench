@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 31.142738885999997,
+  "accountedUsd": 31.347162886,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -13028,6 +13028,134 @@
       "charged": 0,
       "status": "settled",
       "actualUsd": 0
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--pilot-client-email--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4431515,
+      "charged": 0.0050655000000000006,
+      "status": "settled",
+      "actualUsd": 0.004446
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--pilot-client-email--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4794954999999999,
+      "charged": 0.016346,
+      "status": "settled",
+      "actualUsd": 0.012444
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--launch-delay-email--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4429699999999999,
+      "charged": 0.00418,
+      "status": "settled",
+      "actualUsd": 0.003656
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--launch-delay-email--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.479314,
+      "charged": 0.0162415,
+      "status": "settled",
+      "actualUsd": 0.012364
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--vendor-decision-memo--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.44297825,
+      "charged": 0.0094545,
+      "status": "settled",
+      "actualUsd": 0.008442
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--vendor-decision-memo--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4793222499999998,
+      "charged": 0.020328,
+      "status": "settled",
+      "actualUsd": 0.01607
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--pilot-results-memo--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4428462499999999,
+      "charged": 0.007986,
+      "status": "settled",
+      "actualUsd": 0.007114
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--pilot-results-memo--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.47919025,
+      "charged": 0.0194205,
+      "status": "settled",
+      "actualUsd": 0.015252
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--discovery-proposal--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4431405,
+      "charged": 0.007788,
+      "status": "settled",
+      "actualUsd": 0.006922
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--discovery-proposal--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4794844999999999,
+      "charged": 0.0183205,
+      "status": "settled",
+      "actualUsd": 0.01424
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--change-order--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.44311575,
+      "charged": 0.0074607499999999995,
+      "status": "settled",
+      "actualUsd": 0.006628
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--change-order--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.47945975,
+      "charged": 0.01819125,
+      "status": "settled",
+      "actualUsd": 0.014126
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--ai-strategy-slides--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.44333575,
+      "charged": 0.0071252500000000005,
+      "status": "settled",
+      "actualUsd": 0.006304
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--ai-strategy-slides--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4796797499999998,
+      "charged": 0.01969275,
+      "status": "settled",
+      "actualUsd": 0.015472
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--handoff-slides--default",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.44311025,
+      "charged": 0.007535,
+      "status": "settled",
+      "actualUsd": 0.006692
+    },
+    {
+      "id": "pilot-v26::anthropic--claude-sonnet-5.5--handoff-slides--house",
+      "model": "anthropic/claude-sonnet-5.5",
+      "reserve": 1.4794542499999999,
+      "charged": 0.0192885,
+      "status": "settled",
+      "actualUsd": 0.01512
     }
   ]
 }

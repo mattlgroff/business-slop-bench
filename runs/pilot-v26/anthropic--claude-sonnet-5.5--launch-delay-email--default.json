@@ -1,0 +1,111 @@
+{
+  "id": "anthropic--claude-sonnet-5.5--launch-delay-email--default",
+  "model": "anthropic/claude-sonnet-5.5",
+  "protocolHash": "2e116a576aa74884883f71d96e94dc3052d316320d7d9a235bc4589efacebd02",
+  "status": "ok",
+  "at": "2026-09-28T19:24:07.262Z",
+  "elapsedMs": 3494,
+  "text": "**Subject: Launch update and decision needed**\n\nHi Avery,\n\nThe October 8, 2026 launch date was tentative, and it will not hold. The security review now completes October 12 at the earliest, and release requires completed approval. Nia owns that review, and the team is focused on getting it through.\n\nThere is one uncertainty. The review may require remediation, so we have not authorized a new production date. I would rather give you a firm date once the review is complete than a guess now.\n\nThe good news is that a staging demo can still happen October 8 using synthetic data. It would let you see the work on the original timeline, though it would not be a production release.\n\n**Action needed:** Please tell me whether you accept the staging demo on October 8. That decision is yours, and a reply by email is enough. If you accept, we will keep that date on the calendar.\n\nI am confident in the team and in Nia's handling of the review. I will update you as soon as it concludes.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 288,
+    "inputTokenDetails": {
+      "noCacheTokens": 288,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 308,
+    "outputTokenDetails": {
+      "textTokens": 308,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 596
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 288,
+        "output_tokens": 308,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-sonnet-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic"
+        ],
+        "planningReasoning": "System credentials planned for: anthropic, vertexAnthropic. ZDR requested: all 2 attempts support ZDR. Execution order: anthropic(system) → vertexAnthropic(system)",
+        "canonicalSlug": "anthropic/claude-sonnet-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-sonnet-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790623444164,
+                "endTime": 1790623447243,
+                "providerRequestId": "req_011CfWPDu4U7PatxDmhVLK31",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfWPDuXVnkjDyDxW6dzo4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.003656",
+      "marketCost": "0.003656",
+      "surchargeCost": "0",
+      "gatewayCost": "0.003656",
+      "inferenceCost": "0.003656",
+      "inputInferenceCost": "0.000576",
+      "outputInferenceCost": "0.00308",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3MQJTTS8NGGHG4E1CN7SHAS"
+    }
+  },
+  "response": {
+    "id": "aitxt-BJV4oImJibkjxfEDEXXqJLWi",
+    "modelId": "anthropic/claude-sonnet-5.5",
+    "timestamp": "2026-09-28T19:24:07.261Z"
+  },
+  "billing": {
+    "totalCost": 0.003656,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.003656",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}
