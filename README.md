@@ -2,17 +2,17 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 27 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, ran 28 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-The latest addition is [Sonnet 5.5 compared with Sonnet 5 and Astra](reviews/assistant-v46/SONNET-COMPARISON.md): 50/54 plain checks and 51/54 with house rules, with 2/8 ready without edits in each condition.
+The latest addition is [GPT-6.1 Sol](reviews/assistant-v47/REPORT.md): 53/54 plain checks and 54/54 with house rules. It produced 7/8 content-ready drafts in each condition, with 2/8 and 4/8 ready without edits respectively. Both conditions used low reasoning.
 
 ## What I found
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
 
-- [Ranking](reviews/assistant-v46/RANKING.md)
-- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v46/RANKING-ignoring-zdr.md)
-- [Every grade with its quoted evidence](reviews/assistant-v46/REPORT.md)
+- [Ranking](reviews/assistant-v47/RANKING.md)
+- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v47/RANKING-ignoring-zdr.md)
+- [Every grade with its quoted evidence](reviews/assistant-v47/REPORT.md)
 
 Plain brief, no instructions about style:
 
@@ -69,8 +69,8 @@ Everything in the tables reads saved files and makes no API calls:
 ```sh
 npm ci
 npm test
-python3 scripts/ranking.py reviews/assistant-v45 runs/pilot-v26
-python3 reviews/assistant-v46/build.py
+python3 scripts/ranking.py reviews/assistant-v47 runs/pilot-v27
+python3 reviews/assistant-v47/build.py
 ```
 
 Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:

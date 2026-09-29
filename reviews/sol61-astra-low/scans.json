@@ -1,0 +1,320 @@
+[
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--pilot-client-email--default--sample-3.md",
+    "words": 131,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--pilot-client-email--house--sample-3.md",
+    "words": 114,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--launch-delay-email--default--sample-3.md",
+    "words": 106,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--launch-delay-email--house--sample-3.md",
+    "words": 81,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--vendor-decision-memo--default--sample-3.md",
+    "words": 236,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 2,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 1215,
+        "line": 26,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--vendor-decision-memo--house--sample-3.md",
+    "words": 164,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--pilot-results-memo--default--sample-3.md",
+    "words": 199,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 442,
+        "line": 6,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 1051,
+        "line": 12,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--pilot-results-memo--house--sample-3.md",
+    "words": 141,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--discovery-proposal--default--sample-3.md",
+    "words": 141,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--discovery-proposal--house--sample-3.md",
+    "words": 120,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--change-order--default--sample-3.md",
+    "words": 195,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--change-order--house--sample-3.md",
+    "words": 148,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--ai-strategy-slides--default--sample-3.md",
+    "words": 192,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 12,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 306,
+        "line": 6,
+        "text": "—"
+      },
+      {
+        "offset": 682,
+        "line": 12,
+        "text": "—"
+      },
+      {
+        "offset": 1002,
+        "line": 18,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 2,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--ai-strategy-slides--house--sample-3.md",
+    "words": 155,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--handoff-slides--default--sample-3.md",
+    "words": 235,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 12,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 339,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 730,
+        "line": 15,
+        "text": "—"
+      },
+      {
+        "offset": 1133,
+        "line": 21,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "path": "runs/pilot-v27/openai--gpt-6-astra--handoff-slides--house--sample-3.md",
+    "words": 181,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 2,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]

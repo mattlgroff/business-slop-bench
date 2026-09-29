@@ -1,0 +1,76 @@
+{
+  "createdAt": "2026-09-29T18:15:59.331251+00:00",
+  "model": "openai/gpt-6-astra",
+  "reasoning": "low",
+  "sample": 3,
+  "run": "pilot-v27",
+  "comparison": "openai/gpt-6.1-sol primary, pilot-v27",
+  "cases": [
+    {
+      "task": "pilot-client-email",
+      "condition": "default"
+    },
+    {
+      "task": "pilot-client-email",
+      "condition": "house"
+    },
+    {
+      "task": "launch-delay-email",
+      "condition": "default"
+    },
+    {
+      "task": "launch-delay-email",
+      "condition": "house"
+    },
+    {
+      "task": "vendor-decision-memo",
+      "condition": "default"
+    },
+    {
+      "task": "vendor-decision-memo",
+      "condition": "house"
+    },
+    {
+      "task": "pilot-results-memo",
+      "condition": "default"
+    },
+    {
+      "task": "pilot-results-memo",
+      "condition": "house"
+    },
+    {
+      "task": "discovery-proposal",
+      "condition": "default"
+    },
+    {
+      "task": "discovery-proposal",
+      "condition": "house"
+    },
+    {
+      "task": "change-order",
+      "condition": "default"
+    },
+    {
+      "task": "change-order",
+      "condition": "house"
+    },
+    {
+      "task": "ai-strategy-slides",
+      "condition": "default"
+    },
+    {
+      "task": "ai-strategy-slides",
+      "condition": "house"
+    },
+    {
+      "task": "handoff-slides",
+      "condition": "default"
+    },
+    {
+      "task": "handoff-slides",
+      "condition": "house"
+    }
+  ],
+  "selection": "All sixteen fresh Astra outputs, no best-of replacement; preserve prior primary and repeat grades.",
+  "grading": "Unblinded assistant review using frozen v2 briefs and anti-slop rules."
+}

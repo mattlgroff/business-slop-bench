@@ -520,3 +520,10 @@ Qwen's house-style security grade changed from **pass** to **missing**, with the
 `npm run bench -- regrade-v4` regrades the four saved drafts with v5. It marks the inherited Boolean calibration as insufficient for a full v5 pilot, so widening the run remains gated until broader validation is performed. Do not claim that every other criterion was validated by the security study.
 
 Seven focused tests and TypeScript checking pass. Successful Jev calls in this improvement pass reported zero billed cost under the observed promotion. Conservative accounting across all work is about $1.9463 of the $20 ceiling, including old failed-call reservations. The goal remains active: other missing prerequisites, unsupported assurances, style interpretation and judge consistency still need evaluation before a broad model ranking is justified.
+
+
+## September 29: GPT-6.1 Sol and fresh low-reasoning Astra comparison
+
+Added exact Gateway model `openai/gpt-6.1-sol` under pilot-v27, preserving the v2 briefs, anti-slop lens and low-reasoning writer inputs. Sixteen primary Sol outputs completed without caps, retries or truncation. Assistant-v47 preserves all 432 earlier primary judgments and adds 16 provisional reviews. Sol passed 53/54 plain and 54/54 house content checks, with 7/8 content ready in both conditions and 2/8 and 4/8 ready without edits. Reported charge: $0.094556.
+
+At the user's request, Astra was rerun on all sixteen identical inputs at low reasoning as sample 3. The comparison plan was saved before calls. It passed 54/54 in both conditions, with 6/8 and 8/8 content ready and 2/8 and 6/8 ready without edits. Reported charge: $0.471230. Original Astra primary and sample-2 results remain separate. All 32 current generation IDs are distinct, with one provider attempt per response. See [comparison and evidence](reviews/sol61-astra-low/REPORT.md). Judgments remain unblinded and provisional.

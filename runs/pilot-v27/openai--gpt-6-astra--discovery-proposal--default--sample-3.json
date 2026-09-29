@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-6-astra--discovery-proposal--default--sample-3",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "bf47d4789778136394f235dc2662e4d50a0d28889663f43bcb43b844f0921ff1",
+  "status": "ok",
+  "at": "2026-09-29T18:17:01.139Z",
+  "elapsedMs": 5776,
+  "text": "## Proposal: Four-Week Discovery Engagement\n\n### Approval requested\nApprove a four-week discovery engagement for a total fee of **$16,000**, limited to discovery only.\n\n### Scope and deliverables\nThe engagement will deliver three artifacts:\n- A current-state process map\n- A prioritized backlog\n- An implementation recommendation\n\nImplementation, integrations, production support, and guaranteed savings are excluded.\n\n### Commercial offer\nThe fee covers **80 hours at $200 per hour**, totaling **$16,000**. Payment is split:\n- **50% ($8,000) at kickoff**\n- **50% ($8,000) on delivery**\n\n### Client responsibilities and acceptance\nThe client will provide interview access and source documents. Acceptance consists of the sponsor confirming delivery of the three listed artifacts.\n\n### How to proceed\nTo proceed, approve and sign the discovery engagement and name a client contact. The start date will be agreed only after signature and the client contact has been named.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 183,
+    "inputTokenDetails": {
+      "noCacheTokens": 183,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 200,
+    "outputTokenDetails": {
+      "textTokens": 200,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 383
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_072302e10d18794f016abc0097983887d1af4e0db0044bdd7f",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 2 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: openai(system) → azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790705815515,
+                "endTime": 1790705821073,
+                "providerRequestId": "req_1ebb1c209e0441ab9adf885ddf502ea1",
+                "statusCode": 200,
+                "providerResponseId": "resp_072302e10d18794f016abc0097983887d1af4e0db0044bdd7f"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "1f6678da4ec13adeed653147b577e561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.01183",
+      "marketCost": "0.01183",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01183",
+      "inferenceCost": "0.01183",
+      "inputInferenceCost": "0.00183",
+      "outputInferenceCost": "0.01",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3Q64KXE2S3JJ5KE8VPN1AVQ"
+    }
+  },
+  "response": {
+    "id": "aitxt-eedbsqWzYbrTw0heHds4WSMp",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-29T18:17:01.136Z"
+  },
+  "billing": {
+    "totalCost": 0.01183,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01183",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

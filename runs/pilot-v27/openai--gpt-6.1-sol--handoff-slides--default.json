@@ -1,0 +1,100 @@
+{
+  "id": "openai--gpt-6.1-sol--handoff-slides--default",
+  "model": "openai/gpt-6.1-sol",
+  "protocolHash": "bf47d4789778136394f235dc2662e4d50a0d28889663f43bcb43b844f0921ff1",
+  "status": "ok",
+  "at": "2026-09-29T18:13:41.292Z",
+  "elapsedMs": 6417,
+  "text": "## Slide 1 — Readiness Decision\n- **The service is not ready for operational handoff.**\n- Acceptance requires both an approved runbook and a successful rollback rehearsal.\n- The runbook is approved, but the rollback rehearsal has not happened.\n- **Recommended decision:** Defer acceptance until the rehearsal succeeds.\n\n## Slide 2 — Acceptance Criteria and Evidence\n| Criterion | Current status | Required action |\n|---|---|---|\n| Approved runbook | Met: runbook approved | No further action required for this criterion |\n| Successful rollback rehearsal | Not met: rehearsal has not happened | Organize and successfully complete the rehearsal |\n\n- Readiness depends on meeting both criteria; runbook approval alone is insufficient.\n\n## Slide 3 — Ownership Before and After Acceptance\n- **Before acceptance:** Engineering lead Lee owns defect fixes.\n- **After acceptance:** Operations lead Jo owns incidents.\n- **Unresolved responsibility:** No role has accepted responsibility for organizing the rollback rehearsal.\n- **Required action:** Sponsor Pat assigns responsibility for organizing the rehearsal.\n- Do not treat Jo’s post-acceptance incident ownership as ownership of rehearsal organization.\n\n## Slide 4 — Required Actions and Approval Gate\n1. **Pat assigns rehearsal responsibility** to close the ownership gap.\n2. **The assigned owner organizes the rollback rehearsal.**\n3. **Complete the rehearsal successfully** to satisfy the outstanding acceptance criterion.\n4. **Pat approves acceptance once both criteria are met.**\n\n- **Steering committee decision requested:** Defer handoff now and endorse the action sequence above.\n- **Handoff gate:** Approved runbook plus successful rollback rehearsal, followed by Pat’s acceptance approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 339,
+    "outputTokenDetails": {
+      "textTokens": 339,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 508
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_060ff04f7470e305016abbffcf08bc87d194568a70f4c8e15c",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6.1-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → openai(system). ZDR execution order: openai(system)",
+        "canonicalSlug": "openai/gpt-6.1-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6.1-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790705614928,
+                "endTime": 1790705621264,
+                "providerRequestId": "req_ab8c5494cd0849c78fbb81902e907333",
+                "statusCode": 200,
+                "providerResponseId": "resp_060ff04f7470e305016abbffcf08bc87d194568a70f4c8e15c"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.003728",
+      "marketCost": "0.003728",
+      "surchargeCost": "0",
+      "gatewayCost": "0.003728",
+      "inferenceCost": "0.003728",
+      "inputInferenceCost": "0.000338",
+      "outputInferenceCost": "0.00339",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3Q5YG1C89GDTQMV9PJB3E5A"
+    }
+  },
+  "response": {
+    "id": "aitxt-L8qnSsMrciazYcgCzTQv0WC5",
+    "modelId": "openai/gpt-6.1-sol",
+    "timestamp": "2026-09-29T18:13:41.291Z"
+  },
+  "billing": {
+    "totalCost": 0.003728,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.003728",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "model": "Sol 6.1",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Your approval would move the discussion from proposal to planning while keeping data access conditional on the required security approval.",
+        "The final sentence repeats the approval request and security prerequisite without adding a decision or next action."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--pilot-client-email--default.md",
+    "outputSha256": "8ea348be3fcd817a9b07fb32998a4b04cc03cd38576595eb56a689bd3288f536"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "That decision would authorize the assessment without committing you to a production rollout.",
+        "The closing recap repeats the requested pilot authorization and the production-rollout exclusion already stated."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--pilot-client-email--house.md",
+    "outputSha256": "b3e580aaf30733f068cdce4f3b88400ec6e8893ab1b3c2ecd63e7c10aa4c87c1"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "Our focus remains on moving forward without compromising the approval requirement.",
+        "Current team focus is not supplied. This can be routine reassurance instead of a material status claim, matching the existing unresolved boundary for Sonnet 5.5 launch reassurance."
+      ]
+    ],
+    "style": [
+      [
+        "16",
+        "Our focus remains on moving forward without compromising the approval requirement.",
+        "Generic reassurance repeats the security gate and adds no concrete status, action or evidence."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--launch-delay-email--default.md",
+    "outputSha256": "d909a8c4a92ae23794b02f6237b3f464b35868333d3ac04c0e1d5c2ebb4d499d"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--launch-delay-email--house.md",
+    "outputSha256": "44d415419bc9e9b19ba1325b8b1aa4973527d71cfb113a1820173e9f76aab5ba"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Alpha\u2019s $92,000 year-one cost leaves $8,000 below the budget ceiling. Its available SSO makes it the only vendor that satisfies all stated selection requirements.",
+        "This separate recap repeats the recommendation, comparison table and preceding eligibility explanation without adding a next action."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--vendor-decision-memo--default.md",
+    "outputSha256": "5d93d672327d006919844c59aca66eb61d3b58a381256e77ff31b97e531f01bb"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--vendor-decision-memo--house.md",
+    "outputSha256": "00f3b7a43d5ad8ee9534d6527e96c136a831ba661b124e137882b853986e0887"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Revisit scaling after the follow-up provides stronger evidence on handling time and confirms that the quality requirement is met.",
+        "The final sentence repeats the preceding follow-up decision and its two tests."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--pilot-results-memo--default.md",
+    "outputSha256": "e92741876b7c8c51ef556f3186b7542678248935451fe2c5449a12c2e16c3498"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The results support further testing of the observed handling-time improvement. They do not support scaling or claiming cash savings.",
+        "This standalone recap restates the recommendation, causal limitation and absence of savings already explained."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--pilot-results-memo--house.md",
+    "outputSha256": "a25cd8f606253f1bbd1d8de1ca32e93f3af2a4d8f64d6d36bc5ffd503081bf8e"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--discovery-proposal--default.md",
+    "outputSha256": "15456f0b71e3c490f903454ce9e80886450eb3e3c3d6f25771c18bf441361cdb"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--discovery-proposal--house.md",
+    "outputSha256": "0c9101d57e1f8f54628b841ba4fc81d606ee1863d1654bd68898ebcdcaff2d10"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--change-order--default.md",
+    "outputSha256": "19bde2645f3274914dfe5482147860a642aa97e11ce2bb187dc63b7347c34f43"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--change-order--house.md",
+    "outputSha256": "facca4dbdf1a4a9699b46b5e05066368f9b7b936d5309e52a332199fa0273415"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--ai-strategy-slides--default.md",
+    "outputSha256": "214b9713b5ede9999c3710ab8a2074c0430d53b7ea1aae0213ea23f581173ebe"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Proposed next-quarter plan: run the selected knowledge-search pilot and assess performance against the stated target.",
+        "The final bullet repeats the selected pilot and evaluation plan without adding an action beyond the preceding slides."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--ai-strategy-slides--house.md",
+    "outputSha256": "f236f062002a31712bbac7fb557f2d6c4f4471163b65677494d9a1d16cc0838d"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Handoff gate:** Approved runbook plus successful rollback rehearsal, followed by Pat\u2019s acceptance approval.",
+        "The final gate recap repeats the acceptance conditions and Pat approval already presented across the four slides."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--handoff-slides--default.md",
+    "outputSha256": "3978741ecc484d49cda994b8a82090cfec2283d62e37f2ff86b23a4916f8bab2"
+  },
+  {
+    "model": "Sol 6.1",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [
+      [
+        "The source pack does not identify an incident owner before acceptance.",
+        "The steering-committee deliverable refers to the benchmark source pack. State the ownership gap directly without authoring-source commentary."
+      ]
+    ],
+    "path": "runs/pilot-v27/openai--gpt-6.1-sol--handoff-slides--house.md",
+    "outputSha256": "9709971816b9c60c3efda8d9403f1c8080cd99d29390fe791dcb8e74042f2866"
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-6-astra--handoff-slides--default--sample-3",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "bf47d4789778136394f235dc2662e4d50a0d28889663f43bcb43b844f0921ff1",
+  "status": "ok",
+  "at": "2026-09-29T18:17:40.327Z",
+  "elapsedMs": 7346,
+  "text": "### Slide 1 — Readiness Decision\n- **Recommendation: Not ready for operational handoff.**\n- Acceptance requires both an approved runbook and a successful rollback rehearsal.\n- The runbook is approved, but the rollback rehearsal has not happened.\n- **Decision requested:** Keep acceptance pending until the rehearsal succeeds.\n\n### Slide 2 — Acceptance Criteria and Current Status\n| Criterion | Status | Required action |\n|---|---|---|\n| Approved runbook | Met | No further action identified in the source pack |\n| Successful rollback rehearsal | Not met: rehearsal has not happened | Organize, conduct, and successfully complete the rehearsal |\n\n- The approved runbook alone does not satisfy acceptance requirements.\n\n### Slide 3 — Accountability Gap and Required Assignment\n- **Gap:** No role has accepted responsibility for organizing the rollback rehearsal.\n- **Authority:** Sponsor Pat can assign that responsibility.\n- **Action requested:** Pat assigns a rehearsal organizer.\n- **Proposed next steps:** The assigned organizer schedules and coordinates the rehearsal; its outcome is presented for acceptance review.\n\n### Slide 4 — Ownership Boundary and Path to Handoff\n- **Before acceptance:** Engineering lead Lee owns defect fixes.\n- **After acceptance:** Operations lead Jo owns incidents.\n- **Required sequence:**\n  1. Pat assigns responsibility for organizing the rehearsal.\n  2. The rollback rehearsal is successfully completed.\n  3. Pat approves acceptance once the criteria are met.\n- **Committee conclusion:** Maintain the acceptance boundary; proceed to operational handoff only after acceptance approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 169,
+    "inputTokenDetails": {
+      "noCacheTokens": 169,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 315,
+    "outputTokenDetails": {
+      "textTokens": 315,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 484
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0a59235456d5cb79016abc00bd4c0487d183daa1074fd63f09",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 2 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: openai(system) → azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790705853189,
+                "endTime": 1790705860263,
+                "providerRequestId": "req_446c7fb32a3f48ff9ed996a9640b3671",
+                "statusCode": 200,
+                "providerResponseId": "resp_0a59235456d5cb79016abc00bd4c0487d183daa1074fd63f09"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.01744",
+      "marketCost": "0.01744",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01744",
+      "inferenceCost": "0.01744",
+      "inputInferenceCost": "0.00169",
+      "outputInferenceCost": "0.01575",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3Q65RNCKVJ6XQQFJ3R61JDN"
+    }
+  },
+  "response": {
+    "id": "aitxt-Bwlw29sklgHGFp0R6qrq28YN",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-29T18:17:40.325Z"
+  },
+  "billing": {
+    "totalCost": 0.01744,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01744",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

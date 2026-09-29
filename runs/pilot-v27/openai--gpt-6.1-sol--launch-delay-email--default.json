@@ -1,0 +1,100 @@
+{
+  "id": "openai--gpt-6.1-sol--launch-delay-email--default",
+  "model": "openai/gpt-6.1-sol",
+  "protocolHash": "bf47d4789778136394f235dc2662e4d50a0d28889663f43bcb43b844f0921ff1",
+  "status": "ok",
+  "at": "2026-09-29T18:12:44.471Z",
+  "elapsedMs": 3376,
+  "text": "Hi Avery,\n\nThe tentative October 8 production launch is no longer viable: the security review will complete October 12 at the earliest, and release requires completed approval. The review may also require remediation, so no new production launch date is authorized yet.\n\nWe can still hold a staging demo on October 8 using synthetic data. This would be a demo, not a production release.\n\nNia owns the security review, and we’ll keep the production decision tied to its outcome. Our focus remains on moving forward without compromising the approval requirement.\n\nPlease confirm whether you’d like to proceed with the October 8 staging demo.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 178,
+    "inputTokenDetails": {
+      "noCacheTokens": 178,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 134,
+    "outputTokenDetails": {
+      "textTokens": 134,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 312
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0b511e8a314fa71e016abbff9940e487d1972fdb627e03de59",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6.1-sol",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: openai. System credentials planned for: openai. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: openai(BYOK) → openai(system). ZDR execution order: openai(system)",
+        "canonicalSlug": "openai/gpt-6.1-sol",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6.1-sol",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790705561174,
+                "endTime": 1790705564443,
+                "providerRequestId": "req_52067eb2d71e4c77b51b84f9a43fa318",
+                "statusCode": 200,
+                "providerResponseId": "resp_0b511e8a314fa71e016abbff9940e487d1972fdb627e03de59"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.001696",
+      "marketCost": "0.001696",
+      "surchargeCost": "0",
+      "gatewayCost": "0.001696",
+      "inferenceCost": "0.001696",
+      "inputInferenceCost": "0.000356",
+      "outputInferenceCost": "0.00134",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3Q5WVHKZW18Z4SCW7MWPBWQ"
+    }
+  },
+  "response": {
+    "id": "aitxt-ASsv8BHaC9ogBJVpya5WRgV9",
+    "modelId": "openai/gpt-6.1-sol",
+    "timestamp": "2026-09-29T18:12:44.470Z"
+  },
+  "billing": {
+    "totalCost": 0.001696,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.001696",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

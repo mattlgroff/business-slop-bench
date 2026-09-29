@@ -1,0 +1,18 @@
+{
+  "runs/pilot-v27/openai--gpt-6-astra--pilot-client-email--default--sample-3.md": "927c3e27551bb39f87759dd584200c0f3db5fec73df7eab70367a84da9724665",
+  "runs/pilot-v27/openai--gpt-6-astra--pilot-client-email--house--sample-3.md": "aa37fcd6ac3393e76995bd73643826690ad9c158006d868d1a55f15533646405",
+  "runs/pilot-v27/openai--gpt-6-astra--launch-delay-email--default--sample-3.md": "363b44ff472a09d8ab7f5f543452845f1d699f212482710ef22745c99c0a0377",
+  "runs/pilot-v27/openai--gpt-6-astra--launch-delay-email--house--sample-3.md": "f702642c147d94066457df2d1ee8db7c9575a0e0e0c072954bf772ea9933a35b",
+  "runs/pilot-v27/openai--gpt-6-astra--vendor-decision-memo--default--sample-3.md": "5fa017449f641b2841f74198bdd2b48807b4b70a782323488ce38dfef711bc60",
+  "runs/pilot-v27/openai--gpt-6-astra--vendor-decision-memo--house--sample-3.md": "e0f97b2037594d999064093831e18b87529140acdae0180e2c4ce0e446a12b96",
+  "runs/pilot-v27/openai--gpt-6-astra--pilot-results-memo--default--sample-3.md": "80bf71f8b2d5aa4d74732c16e2699abeb752dde6bb1a2959c36da359d8d5d521",
+  "runs/pilot-v27/openai--gpt-6-astra--pilot-results-memo--house--sample-3.md": "d5435be93a175ba0f03d64a184cabac222436d4688ec44dd61128f78e3a91f19",
+  "runs/pilot-v27/openai--gpt-6-astra--discovery-proposal--default--sample-3.md": "3f12f61df60fdfdac67a36fbaf994c8935361baa58bd67d2adc61a881066e34c",
+  "runs/pilot-v27/openai--gpt-6-astra--discovery-proposal--house--sample-3.md": "50da91da4ccd29917b5934e037a424c35d5f2b769e49e8232b5fa9c10692c5e9",
+  "runs/pilot-v27/openai--gpt-6-astra--change-order--default--sample-3.md": "84d70a3634f104c311f27ea0ce4557a560e87e4630ba4ede7705d6d7035cc41f",
+  "runs/pilot-v27/openai--gpt-6-astra--change-order--house--sample-3.md": "96ff10da1abf17937ab7b24a59a5be24e34a119c9e957eaf530482a4151cf942",
+  "runs/pilot-v27/openai--gpt-6-astra--ai-strategy-slides--default--sample-3.md": "399434128f5a3a4b93599e2b0469c6326d902aa13e286a72a4a139f803b0588b",
+  "runs/pilot-v27/openai--gpt-6-astra--ai-strategy-slides--house--sample-3.md": "7df1a2beb7aadd66afec2a6a7d46761213322876cccf2aa6ef25972f77e14f1f",
+  "runs/pilot-v27/openai--gpt-6-astra--handoff-slides--default--sample-3.md": "9beef231453d3ed0be0913f9ad3035aec3c0068b2c1e0e276f290cc127f4d9ab",
+  "runs/pilot-v27/openai--gpt-6-astra--handoff-slides--house--sample-3.md": "222037b822e08549ec33273cf0e266f92600a153101237b2eb27a7b41b464d1a"
+}

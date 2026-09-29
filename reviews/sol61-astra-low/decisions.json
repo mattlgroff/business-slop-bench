@@ -1,0 +1,160 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Your approval would move the proposal forward while keeping data access conditional on security approval and production rollout outside this engagement.",
+        "Closing recap repeats the approval request, security gate and exclusion without a new action."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "16",
+        "That gives us a concrete next step while Nia completes the review.",
+        "Generic progress commentary restates the offered demo and ongoing review without new information."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The decision should therefore prioritize compliance with the stated constraints rather than the lowest price.",
+        "Standalone recap repeats the mandatory-SSO rationale already explained. The contrast itself is a necessary decision boundary, not empty negative parallelism."
+      ]
+    ],
+    "placeholders": [
+      [
+        "based on the source pack",
+        "Internal source-pack reference belongs to the drafting process, not the CFO memo."
+      ]
+    ]
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Revisit the scaling decision using those results, keeping any efficiency gains distinct from measured financial savings.",
+        "Final sentence repeats follow-up-based scaling and the stated absence of measured savings."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "do not treat the observed time reduction as measured cash savings.",
+        "Closing caution repeats the already explicit absence of measured cash savings. Apply the same removable-recap boundary used for Sol."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "This change order proposes adding the requested CRM connector.",
+        "Separate sentence repeats the immediately preceding requested connector scope without adding terms."
+      ]
+    ],
+    "placeholders": []
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [
+      [
+        "No further action identified in the source pack",
+        "Internal source-pack reference is authoring residue in the committee deck."
+      ]
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": []
+  }
+]

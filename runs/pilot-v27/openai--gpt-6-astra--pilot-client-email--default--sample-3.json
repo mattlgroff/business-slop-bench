@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-6-astra--pilot-client-email--default--sample-3",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "bf47d4789778136394f235dc2662e4d50a0d28889663f43bcb43b844f0921ff1",
+  "status": "ok",
+  "at": "2026-09-29T18:16:05.604Z",
+  "elapsedMs": 5955,
+  "text": "Subject: Approval requested: six-week invoice-handling pilot\n\nHi Morgan,\n\nI propose a six-week pilot to assess invoice handling for a fixed fee of $30,000. This focused engagement would provide a bounded way to evaluate the opportunity before considering any broader commitment; production rollout is excluded.\n\nThe pilot would assess invoice handling against your aspiration for 20% shorter handling time. That figure is a target, not a promised outcome: no baseline or measured savings currently exists.\n\nSecurity approval is required before we can access client data, and no start date has been approved.\n\nWould you approve the six-week pilot scope and $30,000 fixed fee, subject to security clearance? Your approval would move the proposal forward while keeping data access conditional on security approval and production rollout outside this engagement.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 187,
+    "inputTokenDetails": {
+      "noCacheTokens": 187,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 168,
+    "outputTokenDetails": {
+      "textTokens": 168,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 355
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_0bcf42a609874ccf016abc005ff0f887d1ad385e43bc5c5a3e",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 2 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: openai(system) → azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790705759842,
+                "endTime": 1790705765541,
+                "providerRequestId": "req_cca5523be27c4202bb3ce8f2717dc10e",
+                "statusCode": 200,
+                "providerResponseId": "resp_0bcf42a609874ccf016abc005ff0f887d1ad385e43bc5c5a3e"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "d1f92735f19577d2b7aa925fe6be8561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.01027",
+      "marketCost": "0.01027",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01027",
+      "inferenceCost": "0.01027",
+      "inputInferenceCost": "0.00187",
+      "outputInferenceCost": "0.0084",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3Q62XH8S6Q5N27VTPM8WBS8"
+    }
+  },
+  "response": {
+    "id": "aitxt-D17PSNvqPdEL9qyPLwvpkQz1",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-29T18:16:05.601Z"
+  },
+  "billing": {
+    "totalCost": 0.01027,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01027",
+    "surchargeCost": "0"
+  },
+  "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

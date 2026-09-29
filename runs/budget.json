@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 31.347162886,
+  "accountedUsd": 33.63039988599999,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -13156,6 +13156,262 @@
       "charged": 0.0192885,
       "status": "settled",
       "actualUsd": 0.01512
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--pilot-client-email--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.334606,
+      "charged": 0.007502,
+      "status": "settled",
+      "actualUsd": 0.002024
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--pilot-client-email--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.479982,
+      "charged": 0.036365999999999996,
+      "status": "settled",
+      "actualUsd": 0.0086335
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--launch-delay-email--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.33388,
+      "charged": 0.00638,
+      "status": "settled",
+      "actualUsd": 0.001696
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--launch-delay-email--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.479256,
+      "charged": 0.035277,
+      "status": "settled",
+      "actualUsd": 0.008311
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--vendor-decision-memo--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.333913,
+      "charged": 0.012441,
+      "status": "settled",
+      "actualUsd": 0.00353
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--vendor-decision-memo--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.479289,
+      "charged": 0.038665000000000005,
+      "status": "settled",
+      "actualUsd": 0.009336
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--pilot-results-memo--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.333385,
+      "charged": 0.01001,
+      "status": "settled",
+      "actualUsd": 0.0028
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--pilot-results-memo--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.478761,
+      "charged": 0.038643,
+      "status": "settled",
+      "actualUsd": 0.0093335
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--discovery-proposal--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.334562,
+      "charged": 0.007854,
+      "status": "settled",
+      "actualUsd": 0.002136
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--discovery-proposal--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.479938,
+      "charged": 0.036817,
+      "status": "settled",
+      "actualUsd": 0.0087735
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--change-order--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.334463,
+      "charged": 0.00979,
+      "status": "settled",
+      "actualUsd": 0.002724
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--change-order--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.479839,
+      "charged": 0.037828999999999995,
+      "status": "settled",
+      "actualUsd": 0.009081
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--ai-strategy-slides--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.335343,
+      "charged": 0.011319000000000001,
+      "status": "settled",
+      "actualUsd": 0.00315
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--ai-strategy-slides--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.480719,
+      "charged": 0.040315000000000004,
+      "status": "settled",
+      "actualUsd": 0.009811
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--handoff-slides--default",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.334441,
+      "charged": 0.013046,
+      "status": "settled",
+      "actualUsd": 0.003728
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6.1-sol--handoff-slides--house",
+      "model": "openai/gpt-6.1-sol",
+      "reserve": 4.479817,
+      "charged": 0.039138,
+      "status": "settled",
+      "actualUsd": 0.0094885
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--pilot-client-email--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.63303,
+      "charged": 0.038005000000000004,
+      "status": "settled",
+      "actualUsd": 0.01027
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--pilot-client-email--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.359910000000003,
+      "charged": 0.18216,
+      "status": "settled",
+      "actualUsd": 0.0432675
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--launch-delay-email--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.629400000000004,
+      "charged": 0.031405,
+      "status": "settled",
+      "actualUsd": 0.00833
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--launch-delay-email--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.35628,
+      "charged": 0.17457,
+      "status": "settled",
+      "actualUsd": 0.041005
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--vendor-decision-memo--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.629565000000003,
+      "charged": 0.06534000000000001,
+      "status": "settled",
+      "actualUsd": 0.0186
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--vendor-decision-memo--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.356445000000004,
+      "charged": 0.196295,
+      "status": "settled",
+      "actualUsd": 0.04758
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--pilot-results-memo--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.626925000000004,
+      "charged": 0.052855,
+      "status": "settled",
+      "actualUsd": 0.01485
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--pilot-results-memo--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.353805,
+      "charged": 0.18612,
+      "status": "settled",
+      "actualUsd": 0.0445175
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--discovery-proposal--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.632810000000003,
+      "charged": 0.043065000000000006,
+      "status": "settled",
+      "actualUsd": 0.01183
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--discovery-proposal--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.359690000000004,
+      "charged": 0.18392,
+      "status": "settled",
+      "actualUsd": 0.0438175
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--change-order--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.632315000000002,
+      "charged": 0.05423,
+      "status": "settled",
+      "actualUsd": 0.01522
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--change-order--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.359195000000003,
+      "charged": 0.188155,
+      "status": "settled",
+      "actualUsd": 0.045105
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--ai-strategy-slides--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.636715000000002,
+      "charged": 0.056925,
+      "status": "settled",
+      "actualUsd": 0.01585
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--ai-strategy-slides--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.363595000000004,
+      "charged": 0.19365500000000002,
+      "status": "settled",
+      "actualUsd": 0.046655
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--handoff-slides--default--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 21.632205000000003,
+      "charged": 0.061270000000000005,
+      "status": "settled",
+      "actualUsd": 0.01744
+    },
+    {
+      "id": "pilot-v27::openai--gpt-6-astra--handoff-slides--house--sample-3",
+      "model": "openai/gpt-6-astra",
+      "reserve": 22.359085000000004,
+      "charged": 0.19387500000000002,
+      "status": "settled",
+      "actualUsd": 0.0468925
     }
   ]
 }

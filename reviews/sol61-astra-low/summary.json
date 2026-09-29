@@ -1,0 +1,46 @@
+[
+  {
+    "model": "Sol 6.1",
+    "condition": "default",
+    "completed": 8,
+    "checks": 53,
+    "total": 54,
+    "contentReady": 7,
+    "readyWithoutEdits": 2,
+    "emDashes": 9,
+    "costUsd": 0.021788000000000002
+  },
+  {
+    "model": "Sol 6.1",
+    "condition": "house",
+    "completed": 8,
+    "checks": 54,
+    "total": 54,
+    "contentReady": 7,
+    "readyWithoutEdits": 4,
+    "emDashes": 0,
+    "costUsd": 0.072768
+  },
+  {
+    "model": "Astra fresh sample 3",
+    "condition": "default",
+    "completed": 8,
+    "checks": 54,
+    "total": 54,
+    "contentReady": 6,
+    "readyWithoutEdits": 2,
+    "emDashes": 9,
+    "costUsd": 0.11239
+  },
+  {
+    "model": "Astra fresh sample 3",
+    "condition": "house",
+    "completed": 8,
+    "checks": 54,
+    "total": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 6,
+    "emDashes": 0,
+    "costUsd": 0.35884
+  }
+]

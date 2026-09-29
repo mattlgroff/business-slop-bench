@@ -1,0 +1,113 @@
+{
+  "id": "openai--gpt-6-astra--vendor-decision-memo--default--sample-3",
+  "model": "openai/gpt-6-astra",
+  "protocolHash": "bf47d4789778136394f235dc2662e4d50a0d28889663f43bcb43b844f0921ff1",
+  "status": "ok",
+  "at": "2026-09-29T18:16:32.593Z",
+  "elapsedMs": 8370,
+  "text": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO  \n**Decision requested:** Approve Alpha for year one, subject to required SSO being in place before production.\n\n## Recommendation\n\nSelect **Alpha**. It is the only vendor that can meet the mandatory SSO requirement based on the source pack, and its $92,000 year-one cost is within the $100,000 budget ceiling.\n\n## Evaluation\n\n| Criterion | Alpha | Beta |\n|---|---|---|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| Total year-one cost | **$92,000** | **$70,000** |\n| Headroom under budget ceiling | $8,000 | $30,000 |\n| Required SSO | Available | Unavailable; no committed delivery date |\n| Other stated requirements | Meets | Meets |\n| Suitability for production | Can satisfy SSO prerequisite | Cannot currently satisfy SSO prerequisite |\n\n## Rationale\n\nAlpha costs $22,000 more than Beta in year one but remains within budget, including setup. Beta’s lower price does not offset its failure to meet a mandatory production requirement. With no committed SSO delivery date, Beta offers no committed path to satisfying that prerequisite.\n\nThe decision should therefore prioritize compliance with the stated constraints rather than the lowest price.\n\n## Approval and Next Steps\n\nApprove Alpha’s $92,000 year-one expenditure. Priya, the procurement owner, should proceed with procurement following CFO approval and ensure required SSO is in place before production. No signing should occur before CFO approval.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 180,
+    "inputTokenDetails": {
+      "noCacheTokens": 180,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 336,
+    "outputTokenDetails": {
+      "textTokens": 336,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 516
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_08fb06ff17eb62d6016abc0078796087d18d0cbbcbafcacb6d",
+      "serviceTier": "default",
+      "reasoningContext": "all_turns"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "openai/gpt-6-astra",
+        "resolvedProvider": "openai",
+        "fallbacksAvailable": [
+          "bedrock",
+          "azure"
+        ],
+        "planningReasoning": "BYOK credentials available for: openai, bedrock. System credentials planned for: openai, bedrock, azure. ZDR requested: 5 attempts → 2 ZDR attempts. Pre-ZDR order: openai(BYOK) → bedrock(BYOK) → openai(system) → bedrock(system) → azure(system). ZDR execution order: openai(system) → azure(system)",
+        "canonicalSlug": "openai/gpt-6-astra",
+        "finalProvider": "openai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "openai/gpt-6-astra",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "openai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1790705784398,
+                "endTime": 1790705792525,
+                "providerRequestId": "req_5649fcf8d82a45f390afb88397d99333",
+                "statusCode": 200,
+                "providerResponseId": "resp_08fb06ff17eb62d6016abc0078796087d18d0cbbcbafcacb6d"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "openai",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          },
+          {
+            "credentialType": "system",
+            "provider": "bedrock",
+            "reason": "zdr_ineligible_model"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "91f844a73ac144c88cb606f0777aea98",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.0186",
+      "marketCost": "0.0186",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0186",
+      "inferenceCost": "0.0186",
+      "inputInferenceCost": "0.0018",
+      "outputInferenceCost": "0.0168",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M3Q63NGBR6KE7ZT0A6XQA191"
+    }
+  },
+  "response": {
+    "id": "aitxt-c67lnSMWh5piIerTNOnvaqWD",
+    "modelId": "openai/gpt-6-astra",
+    "timestamp": "2026-09-29T18:16:32.591Z"
+  },
+  "billing": {
+    "totalCost": 0.0186,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0186",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}
