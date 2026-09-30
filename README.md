@@ -6,6 +6,8 @@ I built it, ran 28 models through it, and I am publishing it as is because I am 
 
 The latest addition is [GPT-6.1 Sol](reviews/assistant-v47/REPORT.md): 53/54 plain checks and 54/54 with house rules. It produced 7/8 content-ready drafts in each condition, with 2/8 and 4/8 ready without edits respectively. Both conditions used low reasoning.
 
+For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which records the current run, grading rules, commands, credentials setup and unresolved work.
+
 ## What I found
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
