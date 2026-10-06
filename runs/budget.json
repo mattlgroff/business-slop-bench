@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 33.63039988599999,
+  "accountedUsd": 34.21946821599999,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -13412,6 +13412,141 @@
       "charged": 0.19387500000000002,
       "status": "settled",
       "actualUsd": 0.0468925
+    },
+    {
+      "id": "pilot-v28::mistral--mistral-large-4--pilot-client-email--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56410024,
+      "charged": 0.56410024,
+      "status": "reserved"
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--pilot-client-email--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56410092,
+      "charged": 0.00049125,
+      "status": "settled",
+      "actualUsd": 0.00049125
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--pilot-client-email--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.5730877999999999,
+      "charged": 0.00231031,
+      "status": "settled",
+      "actualUsd": 0.00231031
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--launch-delay-email--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56405604,
+      "charged": 0.00048304,
+      "status": "settled",
+      "actualUsd": 0.00048304
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--launch-delay-email--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.57304292,
+      "charged": 0.00228538,
+      "status": "settled",
+      "actualUsd": 0.00228538
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--vendor-decision-memo--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56405808,
+      "charged": 0.00081603,
+      "status": "settled",
+      "actualUsd": 0.00081603
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--vendor-decision-memo--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.5730449599999999,
+      "charged": 0.00248879,
+      "status": "settled",
+      "actualUsd": 0.00248879
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--pilot-results-memo--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56402544,
+      "charged": 0.00071712,
+      "status": "settled",
+      "actualUsd": 0.00071712
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--pilot-results-memo--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.57301232,
+      "charged": 0.00265113,
+      "status": "settled",
+      "actualUsd": 0.00265113
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--discovery-proposal--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.5640982,
+      "charged": 0.00078526,
+      "status": "settled",
+      "actualUsd": 0.00078526
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--discovery-proposal--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.57308508,
+      "charged": 0.00247892,
+      "status": "settled",
+      "actualUsd": 0.00247892
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--change-order--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56409208,
+      "charged": 0.00063556,
+      "status": "settled",
+      "actualUsd": 0.00063556
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--change-order--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.57307896,
+      "charged": 0.00235221,
+      "status": "settled",
+      "actualUsd": 0.00235221
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--ai-strategy-slides--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.56414648,
+      "charged": 0.00069018,
+      "status": "settled",
+      "actualUsd": 0.00069018
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--ai-strategy-slides--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.5731333599999999,
+      "charged": 0.00263464,
+      "status": "settled",
+      "actualUsd": 0.00263464
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--handoff-slides--default",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.5640907199999999,
+      "charged": 0.00060504,
+      "status": "settled",
+      "actualUsd": 0.00060504
+    },
+    {
+      "id": "pilot-v29::mistral--mistral-large-4--handoff-slides--house",
+      "model": "mistral/mistral-large-4",
+      "reserve": 0.5730776,
+      "charged": 0.00254323,
+      "status": "settled",
+      "actualUsd": 0.00254323
     }
   ]
 }

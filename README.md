@@ -2,9 +2,9 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 28 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, ran 29 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-The latest addition is [GPT-6.1 Sol](reviews/assistant-v47/REPORT.md): 53/54 plain checks and 54/54 with house rules. It produced 7/8 content-ready drafts in each condition, with 2/8 and 4/8 ready without edits respectively. Both conditions used low reasoning.
+The latest addition is [Mistral Large 4](reviews/assistant-v48/REPORT.md): 46/54 plain checks and 48/54 with house rules, with 0/8 and 1/8 ready without edits. Gateway rejected low reasoning and ignored the successful requests' none setting, so these results use provider-default reasoning.
 
 For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which records the current run, grading rules, commands, credentials setup and unresolved work.
 
@@ -12,32 +12,34 @@ For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which record
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
 
-- [Ranking](reviews/assistant-v47/RANKING.md)
-- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v47/RANKING-ignoring-zdr.md)
-- [Every grade with its quoted evidence](reviews/assistant-v47/REPORT.md)
+- [Ranking](reviews/assistant-v48/RANKING.md)
+- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v48/RANKING-ignoring-zdr.md)
+- [Every grade with its quoted evidence](reviews/assistant-v48/REPORT.md)
 
 Plain brief, no instructions about style:
 
 | Rank | Model | Checks passed (of 54) | Ready to send as is (of 8) | Input / output $ per M tokens |
 |---:|---|---:|---:|---:|
-| 1 | GPT-6 Astra | 54 | 4 | 10 / 50 |
-| 2 | GPT-5.6 Terra | 52 | 3 | 2 / 12 |
-| 3 | Grok 4.7 | 52 | 3 | 1.20 / 3.60 |
-| 4 | Claude Opus 5.5 | 52 | 2 | 4 / 20 |
-| 8 | GPT-5.6 Luna | 51 | 2 | 0.20 / 1.20 |
-| 19 | Claude Opus 5 | 49 | 0 | 5 / 25 |
-| 21 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
+| 1 | GPT-6 Astra | 54 | 4 | 10.00 / 50.00 |
+| 3 | GPT-5.6 Terra | 52 | 3 | 2.00 / 12.00 |
+| 4 | Grok 4.7 | 52 | 3 | 2.00 / 6.00 |
+| 5 | Claude Opus 5.5 | 52 | 2 | 4.00 / 20.00 |
+| 9 | GPT-5.6 Luna | 51 | 2 | 0.20 / 1.20 |
+| 20 | Claude Opus 5 | 49 | 0 | 5.00 / 25.00 |
+| 23 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
+| 22 | Mistral Large 4 (provider-default reasoning) | 46 | 0 | 0.68 / 2.09 |
 
 Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti-slop rules:
 
 | Rank | Model | Checks passed (of 54) | Ready to send as is (of 8) | Input / output $ per M tokens |
 |---:|---|---:|---:|---:|
-| 1 | GPT-6 Astra | 54 | 8 | 10 / 50 |
-| 2 | GPT-5.6 Sol | 53 | 4 | 4 / 20 |
-| 3 | GPT-5.6 Luna | 52 | 4 | 0.20 / 1.20 |
-| 8 | Claude Opus 5.5 | 51 | 3 | 4 / 20 |
-| 15 | Claude Opus 5 | 49 | 3 | 5 / 25 |
-| 21 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
+| 1 | GPT-6 Astra | 54 | 8 | 10.00 / 50.00 |
+| 3 | GPT-5.6 Sol | 53 | 4 | 4.00 / 20.00 |
+| 4 | GPT-5.6 Luna | 52 | 4 | 0.20 / 1.20 |
+| 9 | Claude Opus 5.5 | 51 | 3 | 4.00 / 20.00 |
+| 16 | Claude Opus 5 | 49 | 3 | 5.00 / 25.00 |
+| 23 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
+| 20 | Mistral Large 4 (provider-default reasoning) | 48 | 1 | 0.68 / 2.09 |
 
 Three things stood out.
 
@@ -71,8 +73,8 @@ Everything in the tables reads saved files and makes no API calls:
 ```sh
 npm ci
 npm test
-python3 scripts/ranking.py reviews/assistant-v47 runs/pilot-v27
-python3 reviews/assistant-v47/build.py
+python3 scripts/ranking.py reviews/assistant-v48 runs/pilot-v29
+python3 reviews/assistant-v48/build.py
 ```
 
 Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:
@@ -82,7 +84,7 @@ npm run bench -- collect openai/gpt-6-astra
 zsh scripts/paced-collect.sh anthropic/claude-opus-5.5
 ```
 
-Reasoning effort is `low` for every model. Runs are frozen by hash; a changed brief or runner gets a new run directory rather than mixing results. Spending is capped by a ledger in `runs/budget.json`.
+Reasoning effort is `low` except DeepSeek (`none`) and Mistral Large 4 (provider-default; configuration was ignored). Runs are frozen by hash; a changed brief or runner gets a new run directory rather than mixing results. Spending is capped by a ledger in `runs/budget.json`.
 
 ## Read this before quoting a number
 

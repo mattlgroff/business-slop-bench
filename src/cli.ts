@@ -9,7 +9,7 @@ import { groundingQuestions, groundingDecision } from './grounding.js';
 import { styleQuestions, styleDecision } from './style-judge.js';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const runName = 'pilot-v27';
+const runName = 'pilot-v29';
 const runDir = resolve(root, 'runs', runName);
 mkdirSync(runDir, { recursive: true });
 const read = (name: string) => JSON.parse(readFileSync(resolve(root, name), 'utf8'));
@@ -25,7 +25,7 @@ const negative: Check = {
 };
 const budget = new Budget(resolve(root, 'runs/budget.json'));
 const protocol = {
-  version: '0.27.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3', 'openai/gpt-6-sol', 'openai/gpt-6-luna', 'stealth/pixel-canary'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic. Non-ZDR models are reported as disqualified under the 2026-09-22 ZDR rule.' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
+  version: '0.29.0', taskFile, writerGatewayPolicy: { zeroDataRetentionDefault: true, nonZdrModels: ['anthropic/claude-fable-5', 'anthropic/claude-fable-5.1', 'meta/muse-spark-1.3', 'openai/gpt-6-sol', 'openai/gpt-6-luna', 'stealth/pixel-canary'], reason: 'Explicitly requested models lack ZDR; all benchmark briefs are synthetic. Non-ZDR models are reported as disqualified under the 2026-09-22 ZDR rule.' }, sdk: '7.0.109', judgeBatchSize: 16, styleJudgeHash: hash(readFileSync(resolve(root, 'src/style-judge.ts'), 'utf8')), groundingJudgeHash: hash(readFileSync(resolve(root, 'src/grounding.ts'), 'utf8')), requirementJudge: { securityInstructions, securityCriteria }, sourceHash: hash(source), tasksHash: hash(tasks), modelsHash: hash(models),
   styleChecksHash: hash(style), coreHash: hash(readFileSync(resolve(root, 'src/core.ts'), 'utf8')),
   cliHash: hash(readFileSync(resolve(root, 'src/cli.ts'), 'utf8')),
   controlsHash: hash(read('data/controls.json')),
@@ -49,7 +49,7 @@ function credential() {
   if (!key) throw new Error('AI_GATEWAY_API_KEY missing from selected env file');
   process.env.AI_GATEWAY_API_KEY = key;
 }
-async function init() {
+async function init(requiredModel?: string) {
   freeze();
   const path = resolve(runDir, 'catalog.json');
   if (!existsSync(path)) {
@@ -59,7 +59,7 @@ async function init() {
     atomic(path, { fetchedAt: new Date().toISOString(), models: body.data.filter((m: any) => models.some(x => x.id === m.id) || m.id === 'typesafe-ai/jev') });
   }
   catalog = read(`runs/${runName}/catalog.json`).models;
-  for (const id of [...models.map(x => x.id), 'typesafe-ai/jev']) {
+  for (const id of requiredModel ? [requiredModel] : []) {
     const m = catalog.find(x => x.id === id);
     if (!m) throw new Error(`Missing catalog model ${id}`);
     rates(m);
@@ -242,7 +242,7 @@ try {
   if (command === 'report') report();
   else {
     if (!['collect', 'repeat', 'prepare'].includes(command)) throw new Error('Paid Jev grading is paused at user request. Use collect for writer outputs and assistant review for grades.');
-    await init();
+    await init(command === 'prepare' ? undefined : arg);
     if (command === 'prepare') console.log(JSON.stringify({ protocolHash, models: models.length, tasks: tasks.length, styleCategories: style.length }));
     else if (command === 'regrade-v4') {
       // Keep the original Boolean thresholds fixed so the requirement-method change

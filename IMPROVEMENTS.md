@@ -527,3 +527,12 @@ Seven focused tests and TypeScript checking pass. Successful Jev calls in this i
 Added exact Gateway model `openai/gpt-6.1-sol` under pilot-v27, preserving the v2 briefs, anti-slop lens and low-reasoning writer inputs. Sixteen primary Sol outputs completed without caps, retries or truncation. Assistant-v47 preserves all 432 earlier primary judgments and adds 16 provisional reviews. Sol passed 53/54 plain and 54/54 house content checks, with 7/8 content ready in both conditions and 2/8 and 4/8 ready without edits. Reported charge: $0.094556.
 
 At the user's request, Astra was rerun on all sixteen identical inputs at low reasoning as sample 3. The comparison plan was saved before calls. It passed 54/54 in both conditions, with 6/8 and 8/8 content ready and 2/8 and 6/8 ready without edits. Reported charge: $0.471230. Original Astra primary and sample-2 results remain separate. All 32 current generation IDs are distinct, with one provider attempt per response. See [comparison and evidence](reviews/sol61-astra-low/REPORT.md). Judgments remain unblinded and provisional.
+
+
+## October 6: Mistral Large 4
+
+Added `mistral/mistral-large-4`. Pilot-v28 low reasoning failed with HTTP 400, invalid mistral provider options. All sixteen pilot-v29 calls succeeded with none requested, but every response warned that reasoning configuration is unsupported. The panel is therefore provider-default reasoning, not verified low or disabled reasoning. No output caps, timeouts, or completed-output retries were added. Successful calls cost $0.02496809; the failed-call reservation is retained separately.
+
+Provisional review: default 46/54 checks, one content-ready draft, zero ready without edits; house 48/54, two content-ready drafts, one ready without edits. Seven default and three house em dashes remain. All 448 prior primary judgments are preserved in assistant-v48. All sixteen task and house prompts match Sol exactly except requested reasoning.
+
+A preflight failure found Pixel Canary absent from the live catalog. Collection now validates only the requested model, without requiring retired historical models or the paused Jev judge. Ranking generation reports unavailable live prices without dropping historical results. Original preflight snapshots and the low-reasoning error are preserved. TypeScript and all 19 tests pass. No blog update was made.

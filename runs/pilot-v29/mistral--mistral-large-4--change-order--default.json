@@ -1,0 +1,98 @@
+{
+  "id": "mistral--mistral-large-4--change-order--default",
+  "model": "mistral/mistral-large-4",
+  "protocolHash": "0e7075fa4bbe2ff38deb1586b4bffefd8cb0bfe81145e9b8a242e65ee665d2fe",
+  "status": "ok",
+  "at": "2026-10-06T17:39:40.431Z",
+  "elapsedMs": 3870,
+  "text": "# Change Order Proposal — CRM Connector\n\n**To:** Client Sponsor\n**Re:** Requested addition to reporting dashboard scope\n**Status:** Pending your written approval\n\n---\n\n## Requested Work\n\nYou have requested an additional **CRM connector**, which is **not included** in the original signed scope (reporting dashboard) or fee.\n\n---\n\n## Price\n\n| Item | Amount |\n|---|---|\n| Estimate | 40 hours × $175/hour |\n| **Proposed fixed change fee** | **$7,000** |\n\n---\n\n## Schedule Effect\n\nThe connector adds **two weeks** after **written approval** and **receipt of sandbox credentials**. This is an **estimate**, not an approved calendar date.\n\n---\n\n## Dependency\n\n**Client must provide sandbox credentials** before work can begin.\n\n---\n\n## Authority\n\n**Sponsor must approve in writing before connector work begins.**\n\n---\n\n## Decision\n\n| Option | Action |\n|---|---|\n| **Approve** | Sign below; provide sandbox credentials |\n| **Decline** | No change; original scope proceeds |\n\n---\n\n**Sponsor approval (written):**\n\nName: _______________________\n\nSignature: _______________________\n\nDate: _______________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 197,
+    "inputTokenDetails": {
+      "noCacheTokens": 197
+    },
+    "outputTokens": 240,
+    "outputTokenDetails": {
+      "textTokens": 240
+    },
+    "totalTokens": 437
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "reasoning",
+      "details": "This model does not support reasoning configuration."
+    }
+  ],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "mistral/mistral-large-4",
+        "resolvedProvider": "mistral",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: mistral. System credentials planned for: mistral. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: mistral(BYOK) → mistral(system). ZDR execution order: mistral(system)",
+        "canonicalSlug": "mistral/mistral-large-4",
+        "finalProvider": "mistral",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "mistral/mistral-large-4",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "mistral",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791308376639,
+                "endTime": 1791308380415,
+                "providerRequestId": "01a1124c-aa9d-77ae-a930-ec9377cbadff",
+                "statusCode": 200,
+                "providerResponseId": "d5b2407570d04154b3cbc2dab63f030e"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "mistral",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "33626885e13c44d1c9df0ce078e5024d",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.00063556",
+      "marketCost": "0.00063556",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00063556",
+      "inferenceCost": "0.00063556",
+      "inputInferenceCost": "0.00013396",
+      "outputInferenceCost": "0.0005016",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M494SAGH3C7YXEQ0ZN5C57BH"
+    }
+  },
+  "response": {
+    "id": "aitxt-lUHFIdNUjU7nKbwm0Jgh2Ta2",
+    "modelId": "mistral/mistral-large-4",
+    "timestamp": "2026-10-06T17:39:40.431Z"
+  },
+  "billing": {
+    "totalCost": 0.00063556,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00063556",
+    "surchargeCost": "0"
+  },
+  "inputHash": "85c4f7ac68b31a417bb916c878a1a9fd832592a4b50f10f629ebb5ef383345af",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

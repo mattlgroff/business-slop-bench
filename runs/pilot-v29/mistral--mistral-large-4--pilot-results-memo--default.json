@@ -1,0 +1,98 @@
+{
+  "id": "mistral--mistral-large-4--pilot-results-memo--default",
+  "model": "mistral/mistral-large-4",
+  "protocolHash": "0e7075fa4bbe2ff38deb1586b4bffefd8cb0bfe81145e9b8a242e65ee665d2fe",
+  "status": "ok",
+  "at": "2026-10-06T17:39:20.002Z",
+  "elapsedMs": 4813,
+  "text": "# Executive Readout: Pilot Scaling Decision\n\n## Recommendation\n**Do not scale now. Authorize Sam's matched-ticket follow-up.**\n\n## What the Results Support\n\n| Metric | Baseline | Pilot | Assessment |\n|--------|----------|-------|------------|\n| Mean handling time | 15 min | 12 min | 20% improvement, but confounded |\n| Quality pass rate | 94% | 89% | **Below 92% threshold — fails** |\n| Cash savings | — | None measured | No financial case established |\n\n**Key limitations:** Ticket mix differed between groups; allocation was not randomized. The 3-minute handling time gain cannot be attributed to the intervention with confidence. Quality declined 5 points and missed the required scaling threshold.\n\n## What the Results Do Not Support\n- Causal claim that the pilot caused faster handling\n- Readiness to scale based on quality performance\n- Any ROI or cost-reduction justification\n\n## Next Decision\n**COO to authorize Sam's matched-ticket follow-up.** This addresses both confounds (ticket mix, non-random allocation) and tests whether quality recovers to ≥92% under controlled comparison.\n\n**Decision gate:** Scale only if follow-up shows (1) quality ≥92%, (2) handling time improvement replicated on matched tickets, and (3) measurable cost impact identified.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 194,
+    "inputTokenDetails": {
+      "noCacheTokens": 194
+    },
+    "outputTokens": 280,
+    "outputTokenDetails": {
+      "textTokens": 280
+    },
+    "totalTokens": 474
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "reasoning",
+      "details": "This model does not support reasoning configuration."
+    }
+  ],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "mistral/mistral-large-4",
+        "resolvedProvider": "mistral",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: mistral. System credentials planned for: mistral. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: mistral(BYOK) → mistral(system). ZDR execution order: mistral(system)",
+        "canonicalSlug": "mistral/mistral-large-4",
+        "finalProvider": "mistral",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "mistral/mistral-large-4",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "mistral",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791308355251,
+                "endTime": 1791308359990,
+                "providerRequestId": "01a1124c-570f-7c5b-b34c-c48fd98c53a7",
+                "statusCode": 200,
+                "providerResponseId": "7247b16a152d48b582b2bfc50b86e814"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "mistral",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.00071712",
+      "marketCost": "0.00071712",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00071712",
+      "inferenceCost": "0.00071712",
+      "inputInferenceCost": "0.00013192",
+      "outputInferenceCost": "0.0005852",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M494RNMPZ13F049VGSVVC215"
+    }
+  },
+  "response": {
+    "id": "aitxt-HHTApmsEyMSmcC75sRdHY0FP",
+    "modelId": "mistral/mistral-large-4",
+    "timestamp": "2026-10-06T17:39:20.002Z"
+  },
+  "billing": {
+    "totalCost": 0.00071712,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00071712",
+    "surchargeCost": "0"
+  },
+  "inputHash": "15a9278f13a56894b15c13e1ef5f1325fff404854807d213c1180beb3b57ceb4",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

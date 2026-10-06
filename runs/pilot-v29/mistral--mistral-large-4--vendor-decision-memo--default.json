@@ -1,0 +1,98 @@
+{
+  "id": "mistral--mistral-large-4--vendor-decision-memo--default",
+  "model": "mistral/mistral-large-4",
+  "protocolHash": "0e7075fa4bbe2ff38deb1586b4bffefd8cb0bfe81145e9b8a242e65ee665d2fe",
+  "status": "ok",
+  "at": "2026-10-06T17:39:11.470Z",
+  "elapsedMs": 7657,
+  "text": "**DECISION MEMO: Year-One Vendor Selection**\n\n**To:** CFO\n**From:** Procurement (Priya)\n**Re:** Vendor selection — Alpha vs. Beta\n\n---\n\n**Recommendation: Select Alpha.**\n\n---\n\n**Budget Analysis**\n\n| Vendor | Subscription | Setup | Year-One Total | Under $100K? |\n|--------|-----------|-------|---------------|-------------|\n| Alpha | $72,000 | $20,000 | **$92,000** | Yes ($8,000 headroom) |\n| Beta | $60,000 | $10,000 | **$70,000** | Yes ($30,000 headroom) |\n\nBoth fit the $100,000 ceiling including setup.\n\n---\n\n**Constraint Evaluation**\n\n| Requirement | Alpha | Beta |\n|-------------|-------|------|\n| Budget ≤ $100K | ✓ Pass | ✓ Pass |\n| SSO mandatory before production | ✓ Available | ✗ **Unavailable, no committed date** |\n| Other stated requirements | ✓ Meet | ✓ Meet |\n\n---\n\n**Decision Rationale**\n\nBeta saves $22,000 but fails the mandatory SSO constraint. SSO is required before production; Beta cannot commit to delivery. This creates unacceptable schedule risk: production launch could be indefinitely delayed, negating Beta's cost advantage through operational disruption.\n\nAlpha satisfies all constraints with $8,000 budget headroom. The $22,000 premium buys certainty on a non-negotiable requirement.\n\n---\n\n**Action Requested**\n\nCFO approval to sign with Alpha at $92,000 year-one total.\n\n---\n\n*Word count: 148*",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 195,
+    "inputTokenDetails": {
+      "noCacheTokens": 195
+    },
+    "outputTokens": 327,
+    "outputTokenDetails": {
+      "textTokens": 327
+    },
+    "totalTokens": 522
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "reasoning",
+      "details": "This model does not support reasoning configuration."
+    }
+  ],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "mistral/mistral-large-4",
+        "resolvedProvider": "mistral",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: mistral. System credentials planned for: mistral. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: mistral(BYOK) → mistral(system). ZDR execution order: mistral(system)",
+        "canonicalSlug": "mistral/mistral-large-4",
+        "finalProvider": "mistral",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "mistral/mistral-large-4",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "mistral",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791308343892,
+                "endTime": 1791308351455,
+                "providerRequestId": "01a1124c-2aa5-7855-93ae-8e4fc7890f56",
+                "statusCode": 200,
+                "providerResponseId": "41da2340c96d4c84b268ed0ab80f40b4"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "mistral",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "91f844a73ac144c88cb606f0777aea98",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.00081603",
+      "marketCost": "0.00081603",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00081603",
+      "inferenceCost": "0.00081603",
+      "inputInferenceCost": "0.0001326",
+      "outputInferenceCost": "0.00068343",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M494RAHFRN3V1EP0ZNW2DSP8"
+    }
+  },
+  "response": {
+    "id": "aitxt-9kE0TugxIIOfNnOXHO1UrRzo",
+    "modelId": "mistral/mistral-large-4",
+    "timestamp": "2026-10-06T17:39:11.470Z"
+  },
+  "billing": {
+    "totalCost": 0.00081603,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00081603",
+    "surchargeCost": "0"
+  },
+  "inputHash": "f6ec19e3efeafa0e55467860e14c14af773c4f33477ae5f7cbe482d579cae330",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

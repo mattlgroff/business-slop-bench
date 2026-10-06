@@ -110,5 +110,9 @@
   {
     "id": "openai/gpt-6.1-sol",
     "reasoning": "low"
+  },
+  {
+    "id": "mistral/mistral-large-4",
+    "reasoning": "none"
   }
 ]

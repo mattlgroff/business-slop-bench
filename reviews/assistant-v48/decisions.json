@@ -1,0 +1,325 @@
+[
+  {
+    "model": "Mistral Large 4",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Following our discussions",
+        "Invents prior discussions absent from the source."
+      ]
+    ],
+    "style": [
+      [
+        "15",
+        "**Proposal**",
+        "Three separate bold sections overstructure a short approval email; the scope is also repeated in the opening and bullet list."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--pilot-client-email--default.md",
+    "outputSha256": "5de83b36d9417d36e4687af5e60bcd27e009a3c63988de7d26849d43aba3daea"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "No baseline or measured savings exists yet, so the pilot will establish both.",
+        "Commits the pilot to establishing measured savings, although the source supplies only an assessment scope and an unmeasured aspiration."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--pilot-client-email--house.md",
+    "outputSha256": "8ede73deb6b08ae18c14e3836cbf433b0eadfe779b5ee11da6ccb3495b326b70"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team remains fully committed and on track. This is a sequencing adjustment, not a capability concern.",
+        "Invents current progress and an assurance that capability is not implicated."
+      ]
+    ],
+    "style": [
+      [
+        "7",
+        "This keeps momentum with stakeholders without waiting for final clearance.",
+        "Appends an unsourced stakeholder benefit to the available staging demo."
+      ]
+    ],
+    "placeholders": [
+      [
+        "[date]",
+        "Unfilled response-deadline placeholder in a finished client email."
+      ]
+    ],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--launch-delay-email--default.md",
+    "outputSha256": "45dcbf0cad1b57261ec142e1bf832e5b166cdc5caa4b4db2737938045ae35265"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team is prepared for either path.",
+        "Invents present team readiness; only availability of a possible demo is supplied."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "[date]",
+        "Unfilled response-deadline placeholder in a finished client email."
+      ]
+    ],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--launch-delay-email--house.md",
+    "outputSha256": "16410957ab679ebeb4e9aa2845f4ab6189060fbb5db0a157367fb9e4da071283"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "negating Beta's cost advantage through operational disruption.",
+        "Asserts a financial offset and operational disruption without source evidence for their size or occurrence."
+      ]
+    ],
+    "style": [
+      [
+        "14",
+        "---",
+        "Six thematic separators and two overlapping comparison tables fragment a short decision memo."
+      ]
+    ],
+    "placeholders": [
+      [
+        "*Word count: 148*",
+        "Unrequested and inaccurate word-count note is drafting residue."
+      ]
+    ],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--vendor-decision-memo--default.md",
+    "outputSha256": "5a792bf01615e162515751375393c28fda4e06b9fbb7ed038a17c0a693af41b2"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Priya will execute the contract upon CFO sign-off.",
+        "Assigns contract execution to Priya as a definite commitment; procurement ownership does not establish signing authority."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--vendor-decision-memo--house.md",
+    "outputSha256": "a7037cd1c10b9f696781c9e2b9b89c048e5f95da79fc2f0fe19c37bdd267128f"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "This addresses both confounds (ticket mix, non-random allocation)",
+        "Matching tickets does not establish randomized allocation; the source does not promise that the follow-up resolves both confounds."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "## What the Results Do Not Support",
+        "A separate list restates the causal, quality and financial limitations already explained directly above."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--pilot-results-memo--default.md",
+    "outputSha256": "82c2aa62c67e92088ddc6891201d2115aeb03d4b8781ebd71b97fd6c8c30649f"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--pilot-results-memo--house.md",
+    "outputSha256": "f41960bfc155e58239349d4f94f90f46fc5637647902e093ca6f62d4f24a2b3d"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Sign the agreement and remit the kickoff payment ($8,000).",
+        "Places payment before scheduling kickoff in the prescribed sequence, adding a start prerequisite when payment is due at kickoff."
+      ]
+    ],
+    "style": [
+      [
+        "15",
+        "## Start Conditions",
+        "Eight sections and two tables overstructure a short proposal. Start prerequisites are repeated under How to Proceed."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--discovery-proposal--default.md",
+    "outputSha256": "4a940638d9328e601994f18721bbb2c31254e442651a44422a8d06aabb53fa8c"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "We will schedule kickoff within five business days of receiving signature, contact name, and payment.",
+        "Invents a five-business-day scheduling commitment and makes payment a prerequisite; neither term is supplied."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "[Client name]",
+        "Unfilled client identifier in the finished proposal."
+      ],
+      [
+        "[Date]",
+        "Unfilled proposal date."
+      ]
+    ],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--discovery-proposal--house.md",
+    "outputSha256": "c51a790e0b23dd287d8f3d628a921a2c88507f143a8ff76ad514b3c86c243e74"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "---",
+        "Seven thematic separators and repeated bold emphasis fragment a short change order."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--change-order--default.md",
+    "outputSha256": "dd7a3316dcc2186198595f246cf93036bf605d8d1d818c89ad3d31da992b1d07"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--change-order--house.md",
+    "outputSha256": "4045d25191212cf480fbe1818f8d06460ec9eb20b0fff4abd86fee006aee8a4e"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Only option ready to execute immediately",
+        "Invents immediate execution readiness. Approved source documents and an IT owner do not establish launch readiness."
+      ]
+    ],
+    "style": [
+      [
+        "7",
+        "Higher regulatory and reputational risk",
+        "Introduces an unsupported comparative risk claim without evidence beyond pending legal approval."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--ai-strategy-slides--default.md",
+    "outputSha256": "070bfcb3eae57b44cd6b7c64bdcdb781fadbae7a9386be5cf683b45340c0e186"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "No pending approvals block launch",
+        "Invents a complete approval state. Also treats the credit production restriction as a prohibition on starting any pilot, which the source does not say."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--ai-strategy-slides--house.md",
+    "outputSha256": "1dec4146fba686c0767ac842c65cb9d252760d19734ea39e7886cb8ea0499e60"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Handoff proceeds: Lee completes defect fixes; Jo assumes incident ownership",
+        "Adds completion of all defect fixes to the handoff sequence, beyond the supplied ownership boundary. The sequence also leaves Lee timing ambiguous."
+      ],
+      [
+        "C04",
+        "review",
+        "Handoff proceeds: Lee completes defect fixes; Jo assumes incident ownership",
+        "Earlier text correctly says Lee owns fixes until acceptance, but this post-approval sequence can place completion afterward. The ownership timing is ambiguous rather than a definite reassignment."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--handoff-slides--default.md",
+    "outputSha256": "e4a9dc10c8b921f516675fe8da1988eeb86e6845da0a9df6482cc1d1f0aee0ff"
+  },
+  {
+    "model": "Mistral Large 4",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "| Assign rehearsal organizer | Pat | Not started |",
+        "No accepted rehearsal owner does not establish that Pat has not started assigning one. The table invents action status. The explicitly recommended this-week assignment is treated as a proposal, not an existing deadline."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v29/mistral--mistral-large-4--handoff-slides--house.md",
+    "outputSha256": "478627402e8402900f866657af82e2bed13148c9ead41dff20eb362a1fc88d48"
+  }
+]

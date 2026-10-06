@@ -1,0 +1,18 @@
+{
+  "mistral--mistral-large-4--pilot-client-email--default": "5de83b36d9417d36e4687af5e60bcd27e009a3c63988de7d26849d43aba3daea",
+  "mistral--mistral-large-4--pilot-client-email--house": "8ede73deb6b08ae18c14e3836cbf433b0eadfe779b5ee11da6ccb3495b326b70",
+  "mistral--mistral-large-4--launch-delay-email--default": "45dcbf0cad1b57261ec142e1bf832e5b166cdc5caa4b4db2737938045ae35265",
+  "mistral--mistral-large-4--launch-delay-email--house": "16410957ab679ebeb4e9aa2845f4ab6189060fbb5db0a157367fb9e4da071283",
+  "mistral--mistral-large-4--vendor-decision-memo--default": "5a792bf01615e162515751375393c28fda4e06b9fbb7ed038a17c0a693af41b2",
+  "mistral--mistral-large-4--vendor-decision-memo--house": "a7037cd1c10b9f696781c9e2b9b89c048e5f95da79fc2f0fe19c37bdd267128f",
+  "mistral--mistral-large-4--pilot-results-memo--default": "82c2aa62c67e92088ddc6891201d2115aeb03d4b8781ebd71b97fd6c8c30649f",
+  "mistral--mistral-large-4--pilot-results-memo--house": "f41960bfc155e58239349d4f94f90f46fc5637647902e093ca6f62d4f24a2b3d",
+  "mistral--mistral-large-4--discovery-proposal--default": "4a940638d9328e601994f18721bbb2c31254e442651a44422a8d06aabb53fa8c",
+  "mistral--mistral-large-4--discovery-proposal--house": "c51a790e0b23dd287d8f3d628a921a2c88507f143a8ff76ad514b3c86c243e74",
+  "mistral--mistral-large-4--change-order--default": "dd7a3316dcc2186198595f246cf93036bf605d8d1d818c89ad3d31da992b1d07",
+  "mistral--mistral-large-4--change-order--house": "4045d25191212cf480fbe1818f8d06460ec9eb20b0fff4abd86fee006aee8a4e",
+  "mistral--mistral-large-4--ai-strategy-slides--default": "070bfcb3eae57b44cd6b7c64bdcdb781fadbae7a9386be5cf683b45340c0e186",
+  "mistral--mistral-large-4--ai-strategy-slides--house": "1dec4146fba686c0767ac842c65cb9d252760d19734ea39e7886cb8ea0499e60",
+  "mistral--mistral-large-4--handoff-slides--default": "e4a9dc10c8b921f516675fe8da1988eeb86e6845da0a9df6482cc1d1f0aee0ff",
+  "mistral--mistral-large-4--handoff-slides--house": "478627402e8402900f866657af82e2bed13148c9ead41dff20eb362a1fc88d48"
+}

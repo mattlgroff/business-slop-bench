@@ -1,0 +1,98 @@
+{
+  "id": "mistral--mistral-large-4--handoff-slides--default",
+  "model": "mistral/mistral-large-4",
+  "protocolHash": "0e7075fa4bbe2ff38deb1586b4bffefd8cb0bfe81145e9b8a242e65ee665d2fe",
+  "status": "ok",
+  "at": "2026-10-06T17:40:04.165Z",
+  "elapsedMs": 4978,
+  "text": "**Slide 1: Purpose & Decision Required**\n\nSteering committee decides: Is the service ready for operational handoff?\n\nDecision needed: Approve acceptance, or assign rehearsal ownership and defer.\n\n**Slide 2: Readiness Criteria & Current Status**\n\n| Criterion | Status |\n|-----------|--------|\n| Approved runbook | ✓ Met |\n| Successful rollback rehearsal | ✗ Not met |\n\nReadiness definition: Both criteria must be satisfied before acceptance.\n\n**Slide 3: Gap & Ownership**\n\nGap: No role has accepted responsibility for organizing the rollback rehearsal.\n\nCurrent ownership:\n- Lee (Engineering): defect fixes until acceptance\n- Jo (Operations): incidents only after acceptance\n- Pat (Sponsor): can assign rehearsal responsibility and approve acceptance\n\n**Slide 4: Recommended Actions**\n\n1. Pat assigns rehearsal organization to a named owner\n2. Owner schedules and executes rollback rehearsal\n3. Pat approves acceptance once rehearsal succeeds\n4. Handoff proceeds: Lee completes defect fixes; Jo assumes incident ownership\n\nDecision requested today: Assign rehearsal owner.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 189,
+    "inputTokenDetails": {
+      "noCacheTokens": 189
+    },
+    "outputTokens": 228,
+    "outputTokenDetails": {
+      "textTokens": 228
+    },
+    "totalTokens": 417
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "reasoning",
+      "details": "This model does not support reasoning configuration."
+    }
+  ],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "mistral/mistral-large-4",
+        "resolvedProvider": "mistral",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: mistral. System credentials planned for: mistral. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: mistral(BYOK) → mistral(system). ZDR execution order: mistral(system)",
+        "canonicalSlug": "mistral/mistral-large-4",
+        "finalProvider": "mistral",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "mistral/mistral-large-4",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "mistral",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791308399272,
+                "endTime": 1791308404150,
+                "providerRequestId": "01a1124d-031c-7f61-869d-cbe9bd4df02f",
+                "statusCode": 200,
+                "providerResponseId": "ba69188e6c234c82be5752ed03cae338"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "mistral",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.00060504",
+      "marketCost": "0.00060504",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00060504",
+      "inferenceCost": "0.00060504",
+      "inputInferenceCost": "0.00012852",
+      "outputInferenceCost": "0.00047652",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M494T0KNV5XTFGQKQGCXQ1KY"
+    }
+  },
+  "response": {
+    "id": "aitxt-1AKmQLIFaWnBwB6FxJafflgy",
+    "modelId": "mistral/mistral-large-4",
+    "timestamp": "2026-10-06T17:40:04.164Z"
+  },
+  "billing": {
+    "totalCost": 0.00060504,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00060504",
+    "surchargeCost": "0"
+  },
+  "inputHash": "6b6f60786948db7b4da024fe4bc9a5e2ccdb424ac179a9a208986c595906fcfb",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}

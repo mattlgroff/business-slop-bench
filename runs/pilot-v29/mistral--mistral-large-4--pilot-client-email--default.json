@@ -1,0 +1,98 @@
+{
+  "id": "mistral--mistral-large-4--pilot-client-email--default",
+  "model": "mistral/mistral-large-4",
+  "protocolHash": "0e7075fa4bbe2ff38deb1586b4bffefd8cb0bfe81145e9b8a242e65ee665d2fe",
+  "status": "ok",
+  "at": "2026-10-06T17:38:34.300Z",
+  "elapsedMs": 2685,
+  "text": "**Subject: Pilot Proposal – Invoice Handling Assessment**\n\nHi Morgan,\n\nFollowing our discussions, I'm pleased to propose a six-week pilot to assess invoice handling. Production rollout is excluded from this scope.\n\n**Proposal**\n- **Scope:** Six-week pilot to evaluate invoice handling processes\n- **Fee:** $30,000 fixed fee\n- **Objective:** Work toward your target of 20% shorter handling time (note: no baseline or measured savings currently exists)\n\n**Next Step**\nSecurity approval is required before we can access client data. No start date has been approved yet.\n\n**Decision Requested**\nPlease approve the pilot scope and $30,000 fee, subject to security clearance. Once confirmed, we can coordinate security review and establish a start date.\n\nI'm happy to discuss any questions.\n\nBest,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 203,
+    "inputTokenDetails": {
+      "noCacheTokens": 203
+    },
+    "outputTokens": 169,
+    "outputTokenDetails": {
+      "textTokens": 169
+    },
+    "totalTokens": 372
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "reasoning",
+      "details": "This model does not support reasoning configuration."
+    }
+  ],
+  "providerMetadata": {
+    "gateway": {
+      "routing": {
+        "originalModelId": "mistral/mistral-large-4",
+        "resolvedProvider": "mistral",
+        "fallbacksAvailable": [],
+        "planningReasoning": "BYOK credentials available for: mistral. System credentials planned for: mistral. ZDR requested: 2 attempts → 1 ZDR attempts. Pre-ZDR order: mistral(BYOK) → mistral(system). ZDR execution order: mistral(system)",
+        "canonicalSlug": "mistral/mistral-large-4",
+        "finalProvider": "mistral",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "mistral/mistral-large-4",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "mistral",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791308311713,
+                "endTime": 1791308314269,
+                "providerRequestId": "01a1124b-acfd-755f-8288-96c6d7a95741",
+                "statusCode": 200,
+                "providerResponseId": "091b31413ac24b4698918e2f717f4697"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "mistral",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "d1f92735f19577d2b7aa925fe6be8561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.00049125",
+      "marketCost": "0.00049125",
+      "surchargeCost": "0",
+      "gatewayCost": "0.00049125",
+      "inferenceCost": "0.00049125",
+      "inputInferenceCost": "0.00013804",
+      "outputInferenceCost": "0.00035321",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M494QB3KVPX5N4CJ4SP3NDK2"
+    }
+  },
+  "response": {
+    "id": "aitxt-5JjrTY3vXHKnuaaQBxxTxkCw",
+    "modelId": "mistral/mistral-large-4",
+    "timestamp": "2026-10-06T17:38:34.298Z"
+  },
+  "billing": {
+    "totalCost": 0.00049125,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.00049125",
+    "surchargeCost": "0"
+  },
+  "inputHash": "8f7bdc840b3282cc15ee87854a238c077d895c1ec78a9ce1519ff5abb72b0e3e",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "none"
+  }
+}
