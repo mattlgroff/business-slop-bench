@@ -4,7 +4,7 @@ A small benchmark for the writing most of us actually ask models for at work: th
 
 I built it, ran 29 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-The latest addition is [Mistral Large 4](reviews/assistant-v48/REPORT.md): 46/54 plain checks and 48/54 with house rules, with 0/8 and 1/8 ready without edits. Gateway rejected low reasoning and ignored the successful requests' none setting, so these results use provider-default reasoning.
+The latest addition is [Mistral Large 4](reviews/assistant-v48/MISTRAL-COMPARISON.md): 46/54 plain checks and 48/54 with house rules, with 0/8 and 1/8 ready without edits. Gateway rejected low reasoning and ignored the successful requests' none setting, so these results use provider-default reasoning.
 
 For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which records the current run, grading rules, commands, credentials setup and unresolved work.
 
