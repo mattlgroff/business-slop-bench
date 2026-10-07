@@ -8,6 +8,8 @@ The latest addition is [Claude Haiku 5.5](reviews/assistant-v49/HAIKU-COMPARISON
 
 For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which records the current run, grading rules, commands, credentials setup and unresolved work.
 
+[Astra versus Haiku, Sonnet, Opus and Fable: performance and price](reviews/assistant-v49/CLAUDE-ASTRA-COMPARISON.md). This five-model table ranks writing performance regardless of ZDR eligibility.
+
 ## What I found
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
