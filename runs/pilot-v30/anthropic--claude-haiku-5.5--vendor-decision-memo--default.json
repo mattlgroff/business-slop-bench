@@ -1,0 +1,120 @@
+{
+  "id": "anthropic--claude-haiku-5.5--vendor-decision-memo--default",
+  "model": "anthropic/claude-haiku-5.5",
+  "protocolHash": "4d111c1812a4d98e73791e3680f63d48bbcbe097862fdbfe9b51e6e885422c88",
+  "status": "ok",
+  "at": "2026-10-07T19:24:48.536Z",
+  "elapsedMs": 3604,
+  "text": "**Decision Memo: Year-One Vendor Selection**\n\n**To:** CFO\n**From:** Procurement (Priya)\n**Decision required:** Approve signing with one vendor for year one\n\n**Recommendation:** Approve Alpha at $92,000 year-one cost.\n\n**Evaluation**\n\n| Criterion | Alpha | Beta |\n|---|---|---|\n| Year-one cost (subscription + setup) | $92,000 | $70,000 |\n| Within $100,000 ceiling | Yes ($8,000 headroom) | Yes ($30,000 headroom) |\n| Required SSO | Available | Unavailable, no committed delivery date |\n| SSO mandatory before production | Met | Not met |\n| Other stated requirements | Met | Met |\n\n**Analysis**\n\nBoth vendors fit the $100,000 budget ceiling. Beta costs $22,000 less in year one, but it cannot satisfy the mandatory constraint. SSO is required before production, and Beta has neither an available SSO capability nor a committed delivery date. Because the date is uncommitted, we cannot confirm that Beta would meet the production requirement in year one at any price.\n\nAlpha meets every stated requirement, including SSO, and stays within budget. Its $8,000 headroom is narrow, so any change to scope or pricing would need to be reviewed against the ceiling.\n\n**Decision requested**\n\n1. Approve Alpha at $92,000 year-one cost.\n2. Authorize Priya to proceed with procurement and contract execution, subject to your approval before signing.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 306,
+    "inputTokenDetails": {
+      "noCacheTokens": 306,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 723,
+    "outputTokenDetails": {
+      "textTokens": 516,
+      "reasoningTokens": 207
+    },
+    "totalTokens": 1029
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 306,
+        "output_tokens": 723,
+        "output_tokens_details": {
+          "thinking_tokens": 207
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-haiku-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic",
+          "claudeaws"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic, claudeaws. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system) → claudeaws(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system) → claudeaws(system)",
+        "canonicalSlug": "anthropic/claude-haiku-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-haiku-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791401085035,
+                "endTime": 1791401088557,
+                "providerRequestId": "req_011CfoRZ9gshRNK7wUSGDUok",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfoRZA2TRLMVPP2vqBMMC"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "91f844a73ac144c88cb606f0777aea98",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.0003921",
+      "marketCost": "0.0003921",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0003921",
+      "inferenceCost": "0.0003921",
+      "inputInferenceCost": "0.0000306",
+      "outputInferenceCost": "0.0003615",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4BX6J2BT4YNG7C229790Y0Q"
+    }
+  },
+  "response": {
+    "id": "aitxt-78fxxz7xEx8IffEsIHLV99Fe",
+    "modelId": "anthropic/claude-haiku-5.5",
+    "timestamp": "2026-10-07T19:24:48.536Z"
+  },
+  "billing": {
+    "totalCost": 0.0003921,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0003921",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

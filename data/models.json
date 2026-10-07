@@ -114,5 +114,9 @@
   {
     "id": "mistral/mistral-large-4",
     "reasoning": "none"
+  },
+  {
+    "id": "anthropic/claude-haiku-5.5",
+    "reasoning": "low"
   }
 ]

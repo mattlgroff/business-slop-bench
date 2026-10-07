@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 34.21946821599999,
+  "accountedUsd": 34.28357621599999,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -13547,6 +13547,134 @@
       "charged": 0.00254323,
       "status": "settled",
       "actualUsd": 0.00254323
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--pilot-client-email--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.368287875,
+      "charged": 0.002682625,
+      "status": "settled",
+      "actualUsd": 0.0004798
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--pilot-client-email--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.37737387499999997,
+      "charged": 0.0055,
+      "status": "settled",
+      "actualUsd": 0.0008792
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--launch-delay-email--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3682425,
+      "charged": 0.0009432499999999999,
+      "status": "settled",
+      "actualUsd": 0.0001643
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--launch-delay-email--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3773285,
+      "charged": 0.005476625000000001,
+      "status": "settled",
+      "actualUsd": 0.0008757
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--vendor-decision-memo--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3682445625,
+      "charged": 0.002198625,
+      "status": "settled",
+      "actualUsd": 0.0003921
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--vendor-decision-memo--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.37733056249999997,
+      "charged": 0.00688875,
+      "status": "settled",
+      "actualUsd": 0.001132
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--pilot-results-memo--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3682115625,
+      "charged": 0.00335775,
+      "status": "settled",
+      "actualUsd": 0.0006032
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--pilot-results-memo--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3772975625,
+      "charged": 0.006172375,
+      "status": "settled",
+      "actualUsd": 0.0010021
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--discovery-proposal--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.368285125,
+      "charged": 0.001375,
+      "status": "settled",
+      "actualUsd": 0.0002421
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--discovery-proposal--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.377371125,
+      "charged": 0.005999124999999999,
+      "status": "settled",
+      "actualUsd": 0.00097
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--change-order--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3682789375,
+      "charged": 0.0016094375,
+      "status": "settled",
+      "actualUsd": 0.0002849
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--change-order--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3773649375,
+      "charged": 0.0062445625,
+      "status": "settled",
+      "actualUsd": 0.0010148
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--ai-strategy-slides--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3683339375,
+      "charged": 0.0016108125,
+      "status": "settled",
+      "actualUsd": 0.0002842
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--ai-strategy-slides--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.37741993749999997,
+      "charged": 0.0059434375,
+      "status": "settled",
+      "actualUsd": 0.0009591
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--handoff-slides--default",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.3682775625,
+      "charged": 0.00160875,
+      "status": "settled",
+      "actualUsd": 0.0002846
+    },
+    {
+      "id": "pilot-v30::anthropic--claude-haiku-5.5--handoff-slides--house",
+      "model": "anthropic/claude-haiku-5.5",
+      "reserve": 0.37736356249999997,
+      "charged": 0.006496874999999999,
+      "status": "settled",
+      "actualUsd": 0.0010605
     }
   ]
 }

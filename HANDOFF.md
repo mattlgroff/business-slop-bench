@@ -1,6 +1,8 @@
 # BusinessSlopBench owner handoff
 
-Updated October 6, 2026. Repository: https://github.com/mattlgroff/business-slop-bench.
+Latest run: [Haiku 5.5](reviews/assistant-v49/HAIKU-COMPARISON.md), October 7: low reasoning, 50/54 plain and 49/54 house checks, 2/8 ready without edits in both, $0.0106286 total. Current collector: pilot-v30 / protocol 0.30.0. Earlier run notes below retain their historical context.
+
+Updated October 7, 2026. Repository: https://github.com/mattlgroff/business-slop-bench.
 
 ## Purpose
 
@@ -9,9 +11,9 @@ Compare single-call business writing: factual grounding, unsupported commitments
 ## Start here
 
 - [README](README.md): overview and selected results.
-- [Current primary ranking](reviews/assistant-v48/RANKING.md): 29 models, 464 primary drafts; 23 models eligible under the recorded ZDR rule, six shown separately.
-- [Writing-only ranking](reviews/assistant-v48/RANKING-ignoring-zdr.md): same writing grades with ZDR eligibility ignored.
-- [Current grades and evidence](reviews/assistant-v48/REPORT.md), [decisions for Mistral Large 4](reviews/assistant-v48/decisions.json), and [cumulative grades](reviews/assistant-v48/grades.json).
+- [Current primary ranking](reviews/assistant-v49/RANKING.md): 30 models, 480 primary drafts; 24 models eligible under the recorded ZDR rule, six shown separately.
+- [Writing-only ranking](reviews/assistant-v49/RANKING-ignoring-zdr.md): same writing grades with ZDR eligibility ignored.
+- [Current grades and evidence](reviews/assistant-v49/REPORT.md), [decisions for Mistral Large 4](reviews/assistant-v48/decisions.json), and [cumulative grades](reviews/assistant-v49/grades.json).
 - [Fresh Sol 6.1 versus Astra comparison](reviews/sol61-astra-low/REPORT.md): September 29 paired low-reasoning runs. Astra sample 3 is a repeat, not a replacement for its primary result.
 - [Methods](docs/METHOD.md) and [decision history](IMPROVEMENTS.md).
 - [Published blog](https://www.groff.dev/blog/business-slop-bench). Its source is in the separate `mattlgroff/groffdev` repository.
@@ -20,7 +22,7 @@ The latest addition is Mistral Large 4: 46/54 plain checks, 48/54 house checks; 
 
 ## Current state
 
-The CLI uses `pilot-v29`, protocol version `0.29.0`, AI SDK `7.0.109`, `data/tasks-v2.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
+The CLI uses `pilot-v30`, protocol version `0.30.0`, AI SDK `7.0.109`, `data/tasks-v2.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
 
 | Model / attempt | Condition | Checks | Content ready | Ready without edits |
 |---|---|---:|---:|---:|
@@ -31,7 +33,7 @@ The CLI uses `pilot-v29`, protocol version `0.29.0`, AI SDK `7.0.109`, `data/tas
 
 Sol ranks second in both primary tables under the existing ordering. The primary Astra house result remains 8/8 ready without edits; both full-panel repeats returned 6/8. Do not mix attempts or select the best draft from each. Sol's sixteen drafts cost $0.094556; the fresh Astra sixteen cost $0.471230. These are Gateway-reported charges, distinct from the conservative budget ledger.
 
-The ledger is `runs/budget.json`, with a $100 ceiling and approximately $34.2195 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 464 primary drafts.
+The ledger is `runs/budget.json`, with a $100 ceiling and approximately $34.2836 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 480 primary drafts.
 
 ## Grading contract
 

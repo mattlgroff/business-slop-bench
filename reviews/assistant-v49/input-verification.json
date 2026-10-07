@@ -1,0 +1,114 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "inputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "inputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "inputHash": "581c9d96c54939a6c87d7fe70d71c586af4a392c4e278db6dbc6a8db52c4d6a6",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "inputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "inputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "inputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "inputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+    "matchesSol": true,
+    "providerAttempts": 1
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "inputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+    "matchesSol": true,
+    "providerAttempts": 1
+  }
+]

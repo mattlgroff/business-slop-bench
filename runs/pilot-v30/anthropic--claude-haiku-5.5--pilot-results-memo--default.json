@@ -1,0 +1,120 @@
+{
+  "id": "anthropic--claude-haiku-5.5--pilot-results-memo--default",
+  "model": "anthropic/claude-haiku-5.5",
+  "protocolHash": "4d111c1812a4d98e73791e3680f63d48bbcbe097862fdbfe9b51e6e885422c88",
+  "status": "ok",
+  "at": "2026-10-07T19:24:59.836Z",
+  "elapsedMs": 5007,
+  "text": "# Executive Readout: Pilot Scale Decision\n\n**Recommendation: Do not scale the pilot now.**\n\n## What the Results Support\n\n- **Handling time fell from 15 to 12 minutes**, based on 100 pilot tickets versus 200 baseline tickets. This is encouraging but not attributable to the pilot, because the ticket mix differed and allocation was not randomized.\n- **Quality fell from 94% to 89%**, below the 92% scaling threshold. This fails the gate on its own.\n- **No staffing reductions or cash savings have been measured**, so the financial case is unproven.\n\n## What the Results Do Not Support\n\n- A causal claim that the pilot reduced handling time\n- Any claim of cost savings or released capacity\n- Scaling, given the quality shortfall\n\n| Criterion | Result | Status |\n|---|---|---|\n| Handling time | 15 → 12 min | Not causally established |\n| Quality pass rate | 94% → 89% | Fails (≥92% required) |\n| Cost impact | Not measured | Unproven |\n\n## Next Decision\n\nThe COO decides whether to authorize Sam's matched-ticket follow-up. **Recommended: authorize it.** The follow-up would test the handling-time gain on comparable tickets and examine the quality drop. Revisit scaling only if the follow-up shows quality at or above 92% and a handling-time gain that holds under matched conditions.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 292,
+    "inputTokenDetails": {
+      "noCacheTokens": 292,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 1148,
+    "outputTokenDetails": {
+      "textTokens": 469,
+      "reasoningTokens": 679
+    },
+    "totalTokens": 1440
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "input_tokens": 292,
+        "output_tokens": 1148,
+        "output_tokens_details": {
+          "thinking_tokens": 679
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global"
+      },
+      "stopSequence": null,
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-haiku-5.5",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "bedrock",
+          "vertexAnthropic",
+          "claudeaws"
+        ],
+        "planningReasoning": "BYOK credentials available for: bedrock. BYOK execution order prioritizes bedrock over routing preference anthropic. System credentials planned for: anthropic, bedrock, vertexAnthropic, claudeaws. ZDR requested: 5 attempts → 4 ZDR attempts. Pre-ZDR order: bedrock(BYOK) → anthropic(system) → bedrock(system) → vertexAnthropic(system) → claudeaws(system). ZDR execution order: anthropic(system) → bedrock(system) → vertexAnthropic(system) → claudeaws(system)",
+        "canonicalSlug": "anthropic/claude-haiku-5.5",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-haiku-5.5",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791401094948,
+                "endTime": 1791401099843,
+                "providerRequestId": "req_011CfoRZt259k2avDw1pYtko",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CfoRZtaoVK9QmVAjd3dSt"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "bedrock",
+            "reason": "zdr_not_attested"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.0006032",
+      "marketCost": "0.0006032",
+      "surchargeCost": "0",
+      "gatewayCost": "0.0006032",
+      "inferenceCost": "0.0006032",
+      "inputInferenceCost": "0.0000292",
+      "outputInferenceCost": "0.000574",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4BX6VQKCGSZ9WVBF6DZAQH8"
+    }
+  },
+  "response": {
+    "id": "aitxt-pbJNf42hvg6A9KOyTq230PNl",
+    "modelId": "anthropic/claude-haiku-5.5",
+    "timestamp": "2026-10-07T19:24:59.836Z"
+  },
+  "billing": {
+    "totalCost": 0.0006032,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.0006032",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

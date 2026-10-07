@@ -14,7 +14,7 @@ ignore_zdr = '--ignore-zdr' in sys.argv
 grades = json.loads((root / review / 'grades.json').read_text())
 summary = json.loads((root / review / 'summary.json').read_text())
 catalog = {m['id']: m for m in json.loads((root / run / 'catalog.json').read_text())['models']}
-DISPLAY = {'mistral/mistral-large-4': 'Mistral Large 4 (provider-default reasoning)', 'openai/gpt-6.1-sol': 'GPT-6.1 Sol', 'openai/gpt-6-astra': 'GPT-6 Astra', 'openai/gpt-6-sol': 'GPT-6 Sol', 'openai/gpt-6-luna': 'GPT-6 Luna',
+DISPLAY = {'anthropic/claude-haiku-5.5': 'Claude Haiku 5.5', 'mistral/mistral-large-4': 'Mistral Large 4 (provider-default reasoning)', 'openai/gpt-6.1-sol': 'GPT-6.1 Sol', 'openai/gpt-6-astra': 'GPT-6 Astra', 'openai/gpt-6-sol': 'GPT-6 Sol', 'openai/gpt-6-luna': 'GPT-6 Luna',
            'openai/gpt-5.6-sol': 'GPT-5.6 Sol', 'openai/gpt-5.6-terra': 'GPT-5.6 Terra', 'openai/gpt-5.6-luna': 'GPT-5.6 Luna',
            'anthropic/claude-opus-5.5': 'Claude Opus 5.5', 'anthropic/claude-opus-5': 'Claude Opus 5', 'anthropic/claude-opus-4.6': 'Claude Opus 4.6',
            'anthropic/claude-sonnet-5': 'Claude Sonnet 5', 'anthropic/claude-sonnet-5.5': 'Claude Sonnet 5.5', 'anthropic/claude-fable-5': 'Claude Fable 5', 'anthropic/claude-fable-5.1': 'Claude Fable 5.1',

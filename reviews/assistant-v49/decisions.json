@@ -1,0 +1,264 @@
+[
+  {
+    "model": "Haiku 5.5",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "5",
+        "A fixed fee keeps the cost certain and the decision low-risk.",
+        "The fixed fee bounds the quoted cost but does not establish that the decision is low risk. Same boundary as the Sonnet pilot review."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--pilot-client-email--default.md",
+    "outputSha256": "5af71d84467cd81fe39e5c600198f39813ffc4a3c90ee443adc3173b9947a5d1"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Once you approve, I will start the security request the same day.",
+        "Invents a same-day work commitment. The draft also broadens the data-access approval prerequisite to the entire pilot."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "[date]",
+        "Unfilled decision deadline in a finished client email."
+      ]
+    ],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--pilot-client-email--house.md",
+    "outputSha256": "0f78e8a70ee55992ccbb04e7402c78f708666abc5046ba2d194134e621a83386"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team is working through this carefully, and I am confident in how they are handling the review and keeping the work on track.",
+        "Asserts current handling and on-track progress not supplied in the source. This exceeds a statement of personal confidence alone."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "[date]",
+        "Unfilled response deadline in a finished client email."
+      ]
+    ],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--launch-delay-email--default.md",
+    "outputSha256": "0f8bce0a46404b9a676bd65f505c583e31893368dbbe7a04806b2a4f0607bc63"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "The team has handled this engagement carefully",
+        "Invents an assessment of prior team performance, not just personal confidence. No such history is supplied."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--launch-delay-email--house.md",
+    "outputSha256": "2c80f64d4c6dc2aba57454104ad264ba7e39a6037fb81e6af2cf69cb3b63bfd1"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--vendor-decision-memo--default.md",
+    "outputSha256": "e56d1753b0562f7dfbee9d8890ebe68d7c03ee6def4012193d6f35766d90b054"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [
+      [
+        "the source pack gives no delivery date",
+        "Leaked reference to the benchmark source pack in the CFO deliverable."
+      ]
+    ],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--vendor-decision-memo--house.md",
+    "outputSha256": "80a453b7773a259cd4a3d04b7d50bf437bfc46866782d91596758d4b493c80ac"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Handling time fell from 15 to 12 minutes",
+        "Gives correct endpoints but omits the required derived reduction of 3 minutes or 20%. This is the existing analytical-completeness criterion, not incorrect arithmetic; the earlier rubric audit notes the brief does not explicitly request the calculation."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "## What the Results Do Not Support",
+        "The second list and following table repeat the causal, quality and financial limitations already stated in the first list."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--pilot-results-memo--default.md",
+    "outputSha256": "debdba812f970a545e95970e952cdf9d6b76ff9239db5e786051ac1622d26326"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "| Mean handling time | 15 min | 12 min | None stated |",
+        "Gives correct endpoints but omits the required derived reduction of 3 minutes or 20%. This is the existing analytical-completeness criterion, not incorrect arithmetic; the earlier rubric audit notes the brief does not explicitly request the calculation."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Scaling should be reconsidered only if the matched-ticket follow-up shows both a handling time improvement and a quality pass rate of at least 92%.",
+        "Closing sentence repeats the follow-up tests stated immediately above without adding a decision."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--pilot-results-memo--house.md",
+    "outputSha256": "092637c115dbb3401cc1435e8e3b9dc21861efd820effd2eae31defac36532f8"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "15",
+        "**Purpose**",
+        "Seven separately headed sections fragment a short proposal; the purpose repeats scope and the implementation exclusion."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--discovery-proposal--default.md",
+    "outputSha256": "ee907fe91a861cbcfa8776f9f66717fd3df1f88e3dc26fab42b35c7056803407"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Acceptance triggers the second 50% payment.",
+        "Changes the payment trigger from delivery to sponsor acceptance, adding a commercial condition absent from the source."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--discovery-proposal--house.md",
+    "outputSha256": "b45c8bfa2eb0ef98a32cd1942ffa5b07cc073ea76010022138e46b805fd70606"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--change-order--default.md",
+    "outputSha256": "07b9cafacefe4c2401914e1242ffb398befb0d660a94f79ddd54d4b6025f3181"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--change-order--house.md",
+    "outputSha256": "f64a6a452ba21fa5ff101fffde3c11c2ad9e3c94e1dad27d141821e56f9a711a"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Choose One Q3 AI Pilot",
+        "Invents Q3 when the source only specifies next quarter. The frozen brief deliberately avoids a quarter number."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--ai-strategy-slides--default.md",
+    "outputSha256": "d6a1c1f54d9583f709483dc6c62cb6ebfdf97bb97b0005ae9c25e86c5e3ca418"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Credit decisions cannot go to production next quarter",
+        "Turns a pending approval and current production restriction into a definite next-quarter prohibition, without evidence about when approval could arrive."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--ai-strategy-slides--house.md",
+    "outputSha256": "d7598b314b065d43dca6fe93f11cee5f6153ab98c8986a9035486d059d7a8284"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "incident ownership stays with Engineering.",
+        "Invents pre-acceptance incident ownership. The source assigns Lee defect fixes, not incidents, and does not identify the pre-acceptance incident owner."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--handoff-slides--default.md",
+    "outputSha256": "a911d22a52d024695c27cdfafd9d5d134daf6a0e4c7a59fe2745c273c94414cc"
+  },
+  {
+    "model": "Haiku 5.5",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v30/anthropic--claude-haiku-5.5--handoff-slides--house.md",
+    "outputSha256": "8f0993cef3ea3e7788f96d0beaf41eef029d2722026ee3ffed758443e7e57be9"
+  }
+]

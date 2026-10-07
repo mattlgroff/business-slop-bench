@@ -2,9 +2,9 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 29 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, ran 30 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-The latest addition is [Mistral Large 4](reviews/assistant-v48/MISTRAL-COMPARISON.md): 46/54 plain checks and 48/54 with house rules, with 0/8 and 1/8 ready without edits. Gateway rejected low reasoning and ignored the successful requests' none setting, so these results use provider-default reasoning.
+The latest addition is [Claude Haiku 5.5](reviews/assistant-v49/HAIKU-COMPARISON.md): 50/54 plain checks and 49/54 with house rules, with 2/8 ready without edits in both conditions. All sixteen low-reasoning drafts cost $0.0106286, with zero em dashes.
 
 For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which records the current run, grading rules, commands, credentials setup and unresolved work.
 
@@ -12,9 +12,9 @@ For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which record
 
 Full tables with list prices per million tokens, with and without the zero-data-retention filter:
 
-- [Ranking](reviews/assistant-v48/RANKING.md)
-- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v48/RANKING-ignoring-zdr.md)
-- [Every grade with its quoted evidence](reviews/assistant-v48/REPORT.md)
+- [Ranking](reviews/assistant-v49/RANKING.md)
+- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v49/RANKING-ignoring-zdr.md)
+- [Every grade with its quoted evidence](reviews/assistant-v49/REPORT.md)
 
 Plain brief, no instructions about style:
 
@@ -25,9 +25,10 @@ Plain brief, no instructions about style:
 | 4 | Grok 4.7 | 52 | 3 | 2.00 / 6.00 |
 | 5 | Claude Opus 5.5 | 52 | 2 | 4.00 / 20.00 |
 | 9 | GPT-5.6 Luna | 51 | 2 | 0.20 / 1.20 |
-| 20 | Claude Opus 5 | 49 | 0 | 5.00 / 25.00 |
-| 23 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
-| 22 | Mistral Large 4 (provider-default reasoning) | 46 | 0 | 0.68 / 2.09 |
+| 13 | Claude Haiku 5.5 | 50 | 2 | 0.10 / 0.50 |
+| 21 | Claude Opus 5 | 49 | 0 | 5.00 / 25.00 |
+| 23 | Mistral Large 4 (provider-default reasoning) | 46 | 0 | 0.68 / 2.09 |
+| 24 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
 
 Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti-slop rules:
 
@@ -38,8 +39,9 @@ Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti
 | 4 | GPT-5.6 Luna | 52 | 4 | 0.20 / 1.20 |
 | 9 | Claude Opus 5.5 | 51 | 3 | 4.00 / 20.00 |
 | 16 | Claude Opus 5 | 49 | 3 | 5.00 / 25.00 |
-| 23 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
-| 20 | Mistral Large 4 (provider-default reasoning) | 48 | 1 | 0.68 / 2.09 |
+| 18 | Claude Haiku 5.5 | 49 | 2 | 0.10 / 0.50 |
+| 21 | Mistral Large 4 (provider-default reasoning) | 48 | 1 | 0.68 / 2.09 |
+| 24 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
 
 Three things stood out.
 
@@ -73,7 +75,7 @@ Everything in the tables reads saved files and makes no API calls:
 ```sh
 npm ci
 npm test
-python3 scripts/ranking.py reviews/assistant-v48 runs/pilot-v29
+python3 scripts/ranking.py reviews/assistant-v48 runs/pilot-v30
 python3 reviews/assistant-v48/build.py
 ```
 

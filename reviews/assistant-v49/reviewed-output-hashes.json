@@ -1,0 +1,18 @@
+{
+  "anthropic--claude-haiku-5.5--pilot-client-email--default": "5af71d84467cd81fe39e5c600198f39813ffc4a3c90ee443adc3173b9947a5d1",
+  "anthropic--claude-haiku-5.5--pilot-client-email--house": "0f78e8a70ee55992ccbb04e7402c78f708666abc5046ba2d194134e621a83386",
+  "anthropic--claude-haiku-5.5--launch-delay-email--default": "0f8bce0a46404b9a676bd65f505c583e31893368dbbe7a04806b2a4f0607bc63",
+  "anthropic--claude-haiku-5.5--launch-delay-email--house": "2c80f64d4c6dc2aba57454104ad264ba7e39a6037fb81e6af2cf69cb3b63bfd1",
+  "anthropic--claude-haiku-5.5--vendor-decision-memo--default": "e56d1753b0562f7dfbee9d8890ebe68d7c03ee6def4012193d6f35766d90b054",
+  "anthropic--claude-haiku-5.5--vendor-decision-memo--house": "80a453b7773a259cd4a3d04b7d50bf437bfc46866782d91596758d4b493c80ac",
+  "anthropic--claude-haiku-5.5--pilot-results-memo--default": "debdba812f970a545e95970e952cdf9d6b76ff9239db5e786051ac1622d26326",
+  "anthropic--claude-haiku-5.5--pilot-results-memo--house": "092637c115dbb3401cc1435e8e3b9dc21861efd820effd2eae31defac36532f8",
+  "anthropic--claude-haiku-5.5--discovery-proposal--default": "ee907fe91a861cbcfa8776f9f66717fd3df1f88e3dc26fab42b35c7056803407",
+  "anthropic--claude-haiku-5.5--discovery-proposal--house": "b45c8bfa2eb0ef98a32cd1942ffa5b07cc073ea76010022138e46b805fd70606",
+  "anthropic--claude-haiku-5.5--change-order--default": "07b9cafacefe4c2401914e1242ffb398befb0d660a94f79ddd54d4b6025f3181",
+  "anthropic--claude-haiku-5.5--change-order--house": "f64a6a452ba21fa5ff101fffde3c11c2ad9e3c94e1dad27d141821e56f9a711a",
+  "anthropic--claude-haiku-5.5--ai-strategy-slides--default": "d6a1c1f54d9583f709483dc6c62cb6ebfdf97bb97b0005ae9c25e86c5e3ca418",
+  "anthropic--claude-haiku-5.5--ai-strategy-slides--house": "d7598b314b065d43dca6fe93f11cee5f6153ab98c8986a9035486d059d7a8284",
+  "anthropic--claude-haiku-5.5--handoff-slides--default": "a911d22a52d024695c27cdfafd9d5d134daf6a0e4c7a59fe2745c273c94414cc",
+  "anthropic--claude-haiku-5.5--handoff-slides--house": "8f0993cef3ea3e7788f96d0beaf41eef029d2722026ee3ffed758443e7e57be9"
+}

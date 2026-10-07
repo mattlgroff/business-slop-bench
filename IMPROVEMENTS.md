@@ -536,3 +536,8 @@ Added `mistral/mistral-large-4`. Pilot-v28 low reasoning failed with HTTP 400, i
 Provisional review: default 46/54 checks, one content-ready draft, zero ready without edits; house 48/54, two content-ready drafts, one ready without edits. Seven default and three house em dashes remain. All 448 prior primary judgments are preserved in assistant-v48. All sixteen task and house prompts match Sol exactly except requested reasoning.
 
 A preflight failure found Pixel Canary absent from the live catalog. Collection now validates only the requested model, without requiring retired historical models or the paused Jev judge. Ranking generation reports unavailable live prices without dropping historical results. Original preflight snapshots and the low-reasoning error are preserved. TypeScript and all 19 tests pass. No blog update was made.
+
+
+## October 7: Haiku 5.5
+
+Sixteen fresh low-reasoning calls under pilot-v30, exact model anthropic/claude-haiku-5.5, no warnings, caps or retries. Prompts and input hashes match Sol 6.1; all 464 prior primary grades remain unchanged in assistant-v49. Plain 50/54, house 49/54; 4/8 and 2/8 content ready; 2/8 ready without edits in both. Zero em dashes, no over-limit drafts. Both readouts omit the derived time reduction under the existing criterion; this is not incorrect arithmetic. Total reported cost $0.0106286. TypeScript and 19 tests passed. No blog change. See [comparison](reviews/assistant-v49/HAIKU-COMPARISON.md).
