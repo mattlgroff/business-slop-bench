@@ -1,0 +1,63 @@
+{
+  "status": "Author-proposed boundary examples, not independent human gold or a calibrated judge",
+  "taskFile": "data/tasks-v3.json",
+  "taskId": "vendor-decision-memo",
+  "checkId": "C05",
+  "scope": "Only C05, not full memo grading",
+  "cases": [
+    {
+      "id": "roles-and-order",
+      "text": "Priya will coordinate procurement. After CFO approval, Alex, the sole authorized signatory, signs the contract.",
+      "expected": "pass",
+      "reason": "All roles and the approval prerequisite are explicit."
+    },
+    {
+      "id": "priya-signs",
+      "text": "After CFO approval, Priya will finalize and sign the contract.",
+      "expected": "fail",
+      "reason": "Assigns signing to someone explicitly unauthorized; Alex is absent."
+    },
+    {
+      "id": "approval-delegates",
+      "text": "The CFO should approve Alpha, authorizing Priya to sign.",
+      "expected": "fail",
+      "reason": "Approval does not delegate authority. A proposed assignment cannot replace the stated required process."
+    },
+    {
+      "id": "cfo-signs",
+      "text": "Priya will coordinate procurement and route the contract to the CFO for signature.",
+      "expected": "fail",
+      "reason": "Conflates approval with signing and omits Alex."
+    },
+    {
+      "id": "sign-before-approval",
+      "text": "Priya coordinates procurement. Alex signs now, and the CFO approves afterward.",
+      "expected": "fail",
+      "reason": "Reverses the required order."
+    },
+    {
+      "id": "missing-signer",
+      "text": "Priya owns procurement. After CFO approval, proceed with signing.",
+      "expected": "fail",
+      "reason": "The replacement criterion explicitly requires naming Alex as signatory."
+    },
+    {
+      "id": "missing-owner",
+      "text": "After CFO approval, Alex signs as the sole authorized signatory.",
+      "expected": "fail",
+      "reason": "Omits Priya procurement responsibility."
+    },
+    {
+      "id": "coordination-not-signature",
+      "text": "Priya coordinates procurement and routes the contract to Alex. Only Alex may sign, and only after the CFO approves.",
+      "expected": "pass",
+      "reason": "Routes and signs distinguish procurement coordination from signature."
+    },
+    {
+      "id": "approval-not-complete",
+      "text": "Priya owns procurement. Alex is the only authorized signatory and must wait for CFO approval before signing.",
+      "expected": "pass",
+      "reason": "Does not invent completed approval."
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+[
+  {
+    "model": "Gemini Flash",
+    "condition": "house",
+    "path": "runs/pilot-v18/google--gemini-3.8-flash--vendor-decision-memo--house.md",
+    "outputSha256": "7f1fed2afcbb2ab2762946cc6d9ed6e4ebe5717685e90e574f4a77b247ff5913",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "The source requires CFO approval but does not specify a signature. This could request written authorization or invent a signing requirement; the source does not resolve which.",
+      "evidence": {
+        "quote": "Your signature is required to authorize the contract with Alpha.",
+        "offset": 1060,
+        "line": 20
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Qwen Flash",
+    "condition": "house",
+    "path": "runs/pilot-v19/alibaba--qwen3.8-flash--vendor-decision-memo--house.md",
+    "outputSha256": "1306a6f9ba674823ae36cc4e186cc097f1a86798e26d40925bd50fbfe5e59150",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "The source grants the CFO approval authority but does not identify the contract signatory. The request may imply an unsupported signing role.",
+      "evidence": {
+        "quote": "Priya will draft the Alpha contract for your signature upon approval.",
+        "offset": 619,
+        "line": 21
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "GLM Flash",
+    "condition": "default",
+    "path": "runs/pilot-v19/zai--glm-5.3-flash--vendor-decision-memo--default.md",
+    "outputSha256": "de3d5c754804cb2622e515272f3d05666bdfcc8fa75e09735b835d9aa4b2870a",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Renames Alpha and Beta as Vendor A and Vendor B throughout. The mapping is inferable from the figures but never stated, so whether the CFO can identify the recommended vendor is unresolved. The statement that Priya signs may also imply an unsupported signatory role.",
+      "evidence": {
+        "quote": "**Re:** Vendor A vs. Vendor B, Year One",
+        "offset": 80,
+        "line": 5
+      }
+    },
+    "verdict": "review",
+    "reason": "Renames Alpha and Beta as Vendor A and Vendor B throughout. The mapping is inferable from the figures but never stated, so whether the CFO can identify the recommended vendor is unresolved. The retired signatory inference is excluded."
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "house",
+    "path": "runs/pilot-v20/moonshotai--kimi-k3--vendor-decision-memo--house.md",
+    "outputSha256": "5ec42232c2c2a46717c6aa077d4b677637ab553e04de74afa64ce46851db857c",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "The source grants the CFO approval authority before signing but does not identify the signatory; Priya signing may be an unsupported role assignment.",
+      "evidence": {
+        "quote": "I will proceed with signing per procurement process.",
+        "offset": 1247,
+        "line": 30
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "MiniMax",
+    "condition": "house",
+    "path": "runs/pilot-v20/minimax--minimax-m3--vendor-decision-memo--house.md",
+    "outputSha256": "632aaf8146e1b63e7da93814c28c7c01460dc5e73cbfb70532b6d5c3cb3d6935",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "The source grants the CFO approval authority before signing but does not identify the signatory; Priya signing may be an unsupported role assignment.",
+      "evidence": {
+        "quote": "Priya finalizes terms and signs.",
+        "offset": 1198,
+        "line": 24
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "GLM 5.3",
+    "condition": "house",
+    "path": "runs/pilot-v20/zai--glm-5.3--vendor-decision-memo--house.md",
+    "outputSha256": "bff403d03f5ea4721c8e4b6ca2907be1169d1eea8a73720b533ec80f9e5f3821",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "fail",
+      "reason": "Invents an end-of-quarter signing deadline and assigns the signature to Priya; the memo also says Beta declined to commit, where the source records only no committed date.",
+      "evidence": {
+        "quote": "so I can sign before the end of the quarter",
+        "offset": 1622,
+        "line": 36
+      }
+    },
+    "verdict": "fail",
+    "reason": "Invents an end-of-quarter signing deadline; the memo also says Beta declined to commit, where the source records only no committed date. These independent findings remain. The retired signatory inference is excluded."
+  },
+  {
+    "model": "Opus 5",
+    "condition": "default",
+    "path": "runs/pilot-v21/anthropic--claude-opus-5--vendor-decision-memo--default.md",
+    "outputSha256": "d46c48ae486c4ab0c30eaba0fa39d425a7b9bdb0c07fe0a0d1876416d7687514",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Executing the agreement implies Priya signs; the source says CFO approval precedes signing but does not say who signs.",
+      "evidence": {
+        "quote": "Priya to finalize and execute the Alpha agreement.",
+        "offset": 1739,
+        "line": 38
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Fable 5.1",
+    "condition": "house",
+    "path": "runs/pilot-v21/anthropic--claude-fable-5.1--vendor-decision-memo--house.md",
+    "outputSha256": "dda051204211da016a0392efe43b1c692d03db085f2253a8a2c2c7d42d836d1d",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Implies Priya signs; the source says CFO approval precedes signing but does not say who signs.",
+      "evidence": {
+        "quote": "Priya signs after CFO approval.",
+        "offset": 1597,
+        "line": 38
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Fable 5",
+    "condition": "default",
+    "path": "runs/pilot-v21/anthropic--claude-fable-5--vendor-decision-memo--default.md",
+    "outputSha256": "1a9dd168c73d175ad120633c8e954d95545d5638619f3ef2a421dd6f13b2abc0",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Implies Priya signs; the source says CFO approval precedes signing but does not say who signs.",
+      "evidence": {
+        "quote": "procurement (Priya) will proceed with contract signature",
+        "offset": 1497,
+        "line": 39
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Fable 5",
+    "condition": "house",
+    "path": "runs/pilot-v21/anthropic--claude-fable-5--vendor-decision-memo--house.md",
+    "outputSha256": "7661bac6095e0863f6f838644cc04c5b625ad0d8e656da68e435e1c5340d5522",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Implies the CFO signs; the source says CFO approval precedes signing but does not say who signs.",
+      "evidence": {
+        "quote": "routes the agreement for CFO signature",
+        "offset": 1258,
+        "line": 34
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Opus 5.5",
+    "condition": "default",
+    "path": "runs/pilot-v22/anthropic--claude-opus-5.5--vendor-decision-memo--default.md",
+    "outputSha256": "058e2441060bbac216a8747ccfa16155291c53ef25161d7becad8e1167aab58a",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Implies Priya signs; the source says CFO approval precedes signing but does not say who signs.",
+      "evidence": {
+        "quote": "Priya finalizes the contract and proceeds to signing.",
+        "offset": 1854,
+        "line": 52
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Opus 5.5",
+    "condition": "house",
+    "path": "runs/pilot-v22/anthropic--claude-opus-5.5--vendor-decision-memo--house.md",
+    "outputSha256": "914c5e533bf310cd4167995f988917920fcf287e1e9d1ed13c7eeed7ebf46d46",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "Implies Priya signs; the source says CFO approval precedes signing but does not say who signs.",
+      "evidence": {
+        "quote": "executes the contract",
+        "offset": 1694,
+        "line": 36
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Terra",
+    "condition": "default",
+    "path": "runs/pilot-v22/openai--gpt-5.6-terra--vendor-decision-memo--default.md",
+    "outputSha256": "b13c2026622d8f2551b92aca14a311d46f7620d94c81a92d7dd431b88b87828a",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "The source requires CFO approval but does not specify the contract signatory. The memo may assign an unsupported signing role.",
+      "evidence": {
+        "quote": "presenting the agreement for CFO signature.",
+        "offset": 251,
+        "line": 9
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Gemini Pro",
+    "condition": "default",
+    "path": "runs/pilot-v23/google--gemini-3.1-pro-preview--vendor-decision-memo--default.md",
+    "outputSha256": "07aabd0b7932398bcfa26116523ccdf8474b316094c5771e1194eedb5d4566ab",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "May imply that Priya signs the contract; the source assigns procurement ownership and CFO approval, but not the signatory.",
+      "evidence": {
+        "quote": "As the procurement owner, I require your approval before signing.",
+        "offset": 1416,
+        "line": 25
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Sonnet 5",
+    "condition": "house",
+    "path": "runs/pilot-v23/anthropic--claude-sonnet-5--vendor-decision-memo--house.md",
+    "outputSha256": "b60eb39ff36b206ff52f522d4d5a313cd0e51837f66793f3d5ad0c5f04819789",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "The source identifies CFO approval authority but not the signatory. The next-step wording may propose a signing role or assume it already exists; it is unresolved under the same boundary used for other vendor memos.",
+      "evidence": {
+        "quote": "Priya to issue the Alpha contract for CFO signature.",
+        "offset": 989,
+        "line": 26
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Sonnet 5.5",
+    "condition": "default",
+    "path": "runs/pilot-v26/anthropic--claude-sonnet-5.5--vendor-decision-memo--default.md",
+    "outputSha256": "5d2cae1e1b28c50d8abb151cf497e49c44f8a617cb8a1464ffb7c15ff4976af7",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "May imply Priya is the signatory, although the source assigns procurement ownership and CFO approval only. It is not an explicit request to grant signing authority.",
+      "evidence": {
+        "quote": "Priya proceeds to contract signing after approval.",
+        "offset": 1866,
+        "line": 38
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Mistral Large 4",
+    "condition": "house",
+    "path": "runs/pilot-v29/mistral--mistral-large-4--vendor-decision-memo--house.md",
+    "outputSha256": "a7037cd1c10b9f696781c9e2b9b89c048e5f95da79fc2f0fe19c37bdd267128f",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "fail",
+      "reason": "Assigns contract execution to Priya as a definite commitment; procurement ownership does not establish signing authority.",
+      "evidence": {
+        "quote": "Priya will execute the contract upon CFO sign-off.",
+        "offset": 834,
+        "line": 28
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "condition": "house",
+    "path": "runs/pilot-v31/google--gemini-4-argon--vendor-decision-memo--house.md",
+    "outputSha256": "4de46a7ea59fbbb95875800f1fc23a4414f8de248ab917df0a05021a53ed4371",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "fail",
+      "reason": "The speaker is Priya. Procurement ownership does not establish signing authority; this asserts a definite signing commitment instead of requesting authorization to assign it.",
+      "evidence": {
+        "quote": "I will finalize and sign the contract with Vendor Alpha.",
+        "offset": 1325,
+        "line": 19
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "condition": "house",
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--vendor-decision-memo--house.md",
+    "outputSha256": "de90c32a3b1aa21d191f53743f6f2e0e4bc030ce8f013967358675adb5c22ee8",
+    "previous": {
+      "id": "grounding",
+      "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+      "verdict": "review",
+      "reason": "May assume that Priya is the signatory rather than just procurement owner. The approval request could also be read as proposed authorization; retain as unresolved under the existing signing-authority boundary.",
+      "evidence": {
+        "quote": "Please approve Alpha so Priya can proceed with signing.",
+        "offset": 924,
+        "line": 26
+      }
+    },
+    "verdict": "pass",
+    "reason": "The retired v2 signatory inference is not scored. CFO approval and procurement ownership remain scored by C05; no other grounding defect was recorded on this draft. This does not establish who is authorized to sign."
+  }
+]

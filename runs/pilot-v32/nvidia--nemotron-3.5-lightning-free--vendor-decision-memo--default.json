@@ -1,0 +1,83 @@
+{
+  "id": "nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--default",
+  "model": "nvidia/nemotron-3.5-lightning-free",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:48:04.802Z",
+  "elapsedMs": 7801,
+  "text": "To: CFO  \nFrom: Priya  \nDate: 2025-08-27  \nSubject: Vendor Selection – Year One  \n\nConstraint Evaluation  \nBoth vendors meet non-SSO requirements and fit the $100,000 budget ceiling including setup. Alpha totals $92,000 ($72,000 annual + $20,000 setup); Beta totals $70,000 ($60,000 annual + $10,000 setup). However, SSO is mandatory before production. Alpha provides required SSO immediately; Beta has no committed SSO delivery date.  \n\nRecommendation: Approve Alpha. It is the only vendor satisfying the mandatory SSO prerequisite, eliminating production risk. At $92,000, it remains $8,000 under budget. Beta’s $22,000 savings are offset by non-compliance with a non-negotiable constraint.  \n\nApproval requested before signing.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 216,
+    "inputTokenDetails": {
+      "noCacheTokens": 216,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 2353,
+    "outputTokenDetails": {
+      "textTokens": 221,
+      "reasoningTokens": 2132
+    },
+    "totalTokens": 2569
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "nvidia": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "nvidia/nemotron-3.5-lightning-free",
+        "resolvedProvider": "nvidia",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: nvidia. Total execution order: nvidia(system)",
+        "canonicalSlug": "nvidia/nemotron-3.5-lightning-free",
+        "finalProvider": "nvidia",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "nvidia/nemotron-3.5-lightning-free",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "nvidia",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942477133,
+                "endTime": 1791942484828,
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-3f707049-d830-46db-8db0-da40c6845d83"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "91f844a73ac144c88cb606f0777aea98",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M4W1GH8SW39EV32K4T9TYX6F"
+    }
+  },
+  "response": {
+    "id": "aitxt-WGzVNMSY13p47ccb63HH0qN1",
+    "modelId": "nvidia/nemotron-3.5-lightning-free",
+    "timestamp": "2026-10-14T01:48:04.801Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

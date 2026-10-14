@@ -37,10 +37,12 @@ def matching_runs(run_root, task_hash, cohort):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--cohort', choices=['legacy-capped', 'uncapped'], default='legacy-capped')
-    cohort = parser.parse_args().cohort
+    parser.add_argument('--task-file', choices=['data/tasks-v2.json', 'data/tasks-v3.json'], default='data/tasks-v3.json')
+    args = parser.parse_args()
+    cohort, task_file = args.cohort, args.task_file
     root = Path(__file__).resolve().parents[1]
     models = json.loads((root / 'data/models.json').read_text())
-    tasks = json.loads((root / 'data/tasks-v2.json').read_text())
+    tasks = json.loads((root / task_file).read_text())
     task_hash = hashlib.sha256(json.dumps(tasks, separators=(',', ':'), ensure_ascii=False).encode()).hexdigest()
     runs = matching_runs(root / 'runs', task_hash, cohort)
     rows = []
@@ -57,7 +59,7 @@ def main():
                 if error is not None:
                     errors.append(error)
         rows.append({'model': model['id'], **counts, 'errorCodes': sorted(set(errors))})
-    print(json.dumps({'cohort': cohort, 'taskFile': 'data/tasks-v2.json', 'expectedModels': len(models),
+    print(json.dumps({'cohort': cohort, 'taskFile': task_file, 'expectedModels': len(models),
                       'expectedDrafts': len(models) * len(tasks) * 2, 'models': rows}, indent=2))
 
 

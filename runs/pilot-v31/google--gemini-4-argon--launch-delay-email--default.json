@@ -1,0 +1,152 @@
+{
+  "id": "google--gemini-4-argon--launch-delay-email--default",
+  "model": "google/gemini-4-argon",
+  "protocolHash": "49cc7bf449f76e64cba61920cf787bd8d87cb2ddd969d2677546899ea6f49997",
+  "status": "ok",
+  "at": "2026-10-14T01:45:33.639Z",
+  "elapsedMs": 2948,
+  "text": "Subject: Launch Position Update & Next Steps\n\nHi Avery,\n\nI am writing to share an update on our launch position. While our launch was tentatively scheduled for October 8, 2026, our release requires a completed security review approval. Nia owns the security review, which now completes on October 12 at the earliest. Because the review may require remediation, no new production date is authorized at this time. \n\nPlease be assured that our team remains focused on moving forward effectively. While we await the completed approval, we are ready to hold a staging demo on October 8 using synthetic data. \n\nAs the decision-maker for this step, please let me know if you choose to accept the staging demo for October 8. \n\nBest regards,\n\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 216,
+    "inputTokenDetails": {
+      "noCacheTokens": 216,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 166,
+    "outputTokenDetails": {
+      "textTokens": 166,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 382
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 216,
+        "candidatesTokenCount": 166,
+        "totalTokenCount": 382,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 216
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 166
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 216,
+        "candidatesTokenCount": 166,
+        "totalTokenCount": 382,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 216
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 166
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-4-argon",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-4-argon",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-4-argon",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942330937,
+                "endTime": 1791942333641,
+                "statusCode": 200,
+                "providerResponseId": "u97Oavw0wJmi1A-VgqUY"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.002092",
+      "marketCost": "0.002092",
+      "surchargeCost": "0",
+      "gatewayCost": "0.002092",
+      "inferenceCost": "0.002092",
+      "inputInferenceCost": "0.000432",
+      "outputInferenceCost": "0.00166",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4W1C2FK96B4E23EZG99H7SB"
+    }
+  },
+  "response": {
+    "id": "aitxt-bqhIyTSbA7uEbzjYmmzkB9gA",
+    "modelId": "google/gemini-4-argon",
+    "timestamp": "2026-10-14T01:45:33.635Z"
+  },
+  "billing": {
+    "totalCost": 0.002092,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.002092",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

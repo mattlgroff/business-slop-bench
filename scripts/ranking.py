@@ -1,6 +1,6 @@
 """Rank graded uncapped models with list prices and observed generation cost, one table per condition.
 Usage: python3 scripts/ranking.py <reviewDir> <runDirWithCatalog> [--json out.json] [--ignore-zdr] > <reviewDir>/RANKING.md
---ignore-zdr ranks non-ZDR models alongside the rest (a what-if view; the bench rule still disqualifies them).
+All models are ranked by writing performance. --ignore-zdr is retained as a no-op for older commands.
 Prices are the Gateway catalog base input/output rates per million tokens; cost is the sum of
 reported charges for the eight successful drafts in each condition. One generation per cell.
 """
@@ -10,11 +10,11 @@ root = Path(__file__).resolve().parents[1]
 args = [a for a in sys.argv[1:] if not a.startswith('--')]
 review, run = args[0], args[1]
 json_out = sys.argv[sys.argv.index('--json') + 1] if '--json' in sys.argv else None
-ignore_zdr = '--ignore-zdr' in sys.argv
+ignore_zdr = True  # Compatibility: retention policy no longer affects performance ranking.
 grades = json.loads((root / review / 'grades.json').read_text())
 summary = json.loads((root / review / 'summary.json').read_text())
 catalog = {m['id']: m for m in json.loads((root / run / 'catalog.json').read_text())['models']}
-DISPLAY = {'anthropic/claude-haiku-5.5': 'Claude Haiku 5.5', 'mistral/mistral-large-4': 'Mistral Large 4 (provider-default reasoning)', 'openai/gpt-6.1-sol': 'GPT-6.1 Sol', 'openai/gpt-6-astra': 'GPT-6 Astra', 'openai/gpt-6-sol': 'GPT-6 Sol', 'openai/gpt-6-luna': 'GPT-6 Luna',
+DISPLAY = {'google/gemini-4-argon': 'Gemini 4 Argon', 'meta/muse-wonder-1.0': 'Muse Wonder 1.0', 'nvidia/nemotron-3.5-lightning-free': 'Nemotron 3.5 Lightning Free', 'anthropic/claude-haiku-5.5': 'Claude Haiku 5.5', 'mistral/mistral-large-4': 'Mistral Large 4 (provider-default reasoning)', 'openai/gpt-6.1-sol': 'GPT-6.1 Sol', 'openai/gpt-6-astra': 'GPT-6 Astra', 'openai/gpt-6-sol': 'GPT-6 Sol', 'openai/gpt-6-luna': 'GPT-6 Luna',
            'openai/gpt-5.6-sol': 'GPT-5.6 Sol', 'openai/gpt-5.6-terra': 'GPT-5.6 Terra', 'openai/gpt-5.6-luna': 'GPT-5.6 Luna',
            'anthropic/claude-opus-5.5': 'Claude Opus 5.5', 'anthropic/claude-opus-5': 'Claude Opus 5', 'anthropic/claude-opus-4.6': 'Claude Opus 4.6',
            'anthropic/claude-sonnet-5': 'Claude Sonnet 5', 'anthropic/claude-sonnet-5.5': 'Claude Sonnet 5.5', 'anthropic/claude-fable-5': 'Claude Fable 5', 'anthropic/claude-fable-5.1': 'Claude Fable 5.1',
@@ -43,7 +43,7 @@ for model, conds in by.items():
 LABEL = {'plain': 'Plain brief, no house rules', 'house': 'Same brief plus the house anti-slop rules'}
 QUESTION = {'plain': 'Which models write the least slop unprompted?', 'house': 'Which models perform best once told exactly what slop means?'}
 def table(cond):
-    key = lambda m: (m['eligible'] or ignore_zdr, m[cond]['pass'], m[cond]['readyWithoutEdits'], m[cond]['contentReady'], -m[cond]['fail'])
+    key = lambda m: (m[cond]['pass'], m[cond]['readyWithoutEdits'], m[cond]['contentReady'], -m[cond]['fail'])
     rows = sorted(models, key=key, reverse=True)
     out = [f'## {LABEL[cond]}', '', QUESTION[cond], '',
            '| Rank | Model | Checks passed (of 54) | Failed | Unresolved | Content ready (of 8) | Ready without edits (of 8) | Input $/M | Output $/M | Observed cost, 8 drafts |',
@@ -51,16 +51,14 @@ def table(cond):
     rank = 0
     for m in rows:
         c = m[cond]
-        label = '-'
-        if m['eligible'] or ignore_zdr:
-            rank += 1; label = str(rank)
-        name = m['model'] + ('' if m['eligible'] else (' (non-ZDR)' if ignore_zdr else ' (non-ZDR, disqualified)'))
+        rank += 1
+        label = str(rank)
+        name = m['model']
         cost = '$0 (reported)' if c['generationCostUsd'] == 0 else f"${c['generationCostUsd']:.4f}"
         out.append(f"| {label} | {name} | {c['pass']} | {c['fail']} | {c['review']} | {c['contentReady']} | {c['readyWithoutEdits']} | {format(m['inPerM'], '.2f') if m['inPerM'] is not None else 'unavailable'} | {format(m['outPerM'], '.2f') if m['outPerM'] is not None else 'unavailable'} | {cost} |")
     return out + ['']
-out = ['# Uncapped ranking with prices' + (' (ZDR rule ignored)' if ignore_zdr else ''), '',
-       *(['This is a what-if view: models with no zero-data-retention route are ranked alongside the rest. The bench rule still disqualifies them; the committed ranking is RANKING.md.', ''] if ignore_zdr else []),
-       f'Source: {review}/summary.json and {run}/catalog.json. Eight business briefs, one generation per brief and condition, graded by the assistant unblinded. {('This what-if table includes models disqualified by the recorded ZDR policy; it does not change their bench eligibility.' if ignore_zdr else 'Models disqualified by the recorded ZDR policy are shown for information without a rank.')}', '',
+out = ['# Writing performance ranking with prices', '',
+       f'Source: {review}/summary.json and {run}/catalog.json. Eight business briefs, one generation per brief and condition, graded by the assistant unblinded. Every model is ranked by writing performance. Retention policy does not affect rank.', '',
        'Mistral Large 4 uses provider-default reasoning: low failed, and successful none requests warned that reasoning configuration was ignored. Its writing is shown with that configuration limitation. Unavailable pricing means the model was absent from this catalog snapshot; historical grades remain intact.', '', '## What the columns mean', '',
        '- **Plain brief**: the model gets the task and the source facts only. This measures how much slop it writes unprompted.',
        '- **With house rules**: the same brief plus Matthew Groff\'s Zero Defect anti-slop rules. This measures how well it performs once told exactly what slop means.',
@@ -68,7 +66,9 @@ out = ['# Uncapped ranking with prices' + (' (ZDR rule ignored)' if ignore_zdr e
        '- **Content ready**: the draft passes every check, stays within the word limit and has no authoring residue such as a `[Date]` placeholder or a reference to the source pack. Editorial findings may still require revision.',
        '- **Ready without edits**: content ready, plus zero em dashes, no negative-parallelism rhetoric, and no supported slop finding (throat clearing, puffery, empty closers, repeated summaries). No edit was identified by this provisional review; this is not independent validation.',
        '- **Prices**: Gateway list rates per million tokens, base tier; regional and fast tiers cost more. Observed cost is the reported charge for the eight drafts in that condition; $0 means the stored response reported zero charge; the reason is not inferred from that number.', '',
-       ('Ordering within each table: ' + ('' if ignore_zdr else 'eligible models first, then ') + 'checks passed, ready without edits, content ready, fewer failures. A difference of one or two checks is within what a second generation could change.'), '']
+       ('Ordering within each table: ' + 'checks passed, ready without edits, content ready, fewer failures. A difference of one or two checks is within what a second generation could change.'), '']
+if grades['method'].get('legacyVendorBoundary'):
+    out += ['## Corrected legacy vendor boundary', '', grades['method']['legacyVendorBoundary'], '', 'These are regraded v2 outputs, not results on the replacement v3 authority task. [Correction log](REPORT.md).', '']
 out += ['## Repeat-run evidence', '',
         'The tables show the primary attempt, not a reliability rate. In the separate [Astra full-panel repeat](../repeatability-v2/REPORT.md), all content checks passed again, while house drafts ready without edits changed from 8/8 to 6/8. In the [GPT-5.6 Luna full-panel repeat](../repeatability-v3/REPORT.md), house content checks remained 52/54 but ready-without-edits changed from 4/8 to 3/8. These fixed-panel studies used the same unblinded reviewer. They do not establish general judge accuracy or failure rates, and repeats do not replace primary results.', '']
 out += table('plain') + table('house')

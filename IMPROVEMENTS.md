@@ -541,3 +541,14 @@ A preflight failure found Pixel Canary absent from the live catalog. Collection 
 ## October 7: Haiku 5.5
 
 Sixteen fresh low-reasoning calls under pilot-v30, exact model anthropic/claude-haiku-5.5, no warnings, caps or retries. Prompts and input hashes match Sol 6.1; all 464 prior primary grades remain unchanged in assistant-v49. Plain 50/54, house 49/54; 4/8 and 2/8 content ready; 2/8 ready without edits in both. Zero em dashes, no over-limit drafts. Both readouts omit the derived time reduction under the existing criterion; this is not incorrect arithmetic. Total reported cost $0.0106286. TypeScript and 19 tests passed. No blog change. See [comparison](reviews/assistant-v49/HAIKU-COMPARISON.md).
+
+
+## October 13: Muse Wonder, other requested models, and vendor authority correction
+
+Added Argon (16 pilot-v31 calls), Nemotron and Muse Wonder (32 pilot-v32 calls). All finished normally at requested low reasoning, no retries, output caps or generation deadlines. Successful generation charges were $0.097468 for Argon, $0 for Nemotron, and $0.378520 for Muse. Gemini 3.8 Flash uses its saved primary outputs. Assistant-v50 and v51 retain the original reviews.
+
+The user challenged a signatory inference charged to Muse but passed for similar Astra wording. The v2 brief never named the signatory. Assistant-v52 retires that inference across all 66 vendor memos: 17 grounding verdicts change, two mixed reasons keep their independent findings, all other checks and style findings stay fixed. Muse house becomes 54/54, 8/8 content-ready, 7/8 ready without edits. Astra primary remains 54/54 and 8/8; both repeats remain 6/8 without edits. This is a scope correction, not evidence that a guessed authority was correct.
+
+The active v3 task replaces only the vendor owner fact and C05: Priya coordinates procurement, Alex alone signs, CFO approval precedes signing and cannot delegate it. The future collector uses pilot-v33. No model has been tested on v3, and v2 results cannot stand in for that test. Nine authored boundary examples clarify expected decisions without claiming judge calibration. Coverage accepts an explicit task version and draft audits accept frozen v3 inputs.
+
+The user also removed retention eligibility. All 33 models now rank on writing performance and price; frozen routing metadata remains untouched. See [correction](reviews/assistant-v52/REPORT.md) and [comparison](reviews/assistant-v52/MUSE-COMPARISON.md). TypeScript and 23 tests passed after the scoring correction; final validation includes the version-aware audit tools.

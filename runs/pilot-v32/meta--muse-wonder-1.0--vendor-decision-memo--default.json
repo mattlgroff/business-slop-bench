@@ -1,0 +1,91 @@
+{
+  "id": "meta--muse-wonder-1.0--vendor-decision-memo--default",
+  "model": "meta/muse-wonder-1.0",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:52:24.851Z",
+  "elapsedMs": 7869,
+  "text": "Decision Memo\n\nTo: CFO\nFrom: Priya, Procurement Owner\nSubject: Year-One Vendor Recommendation\n\nRecommendation\nApprove Alpha for year one.\n\nEvaluation Against Stated Constraints\n\n| Vendor | Subscription | Setup | Year-One Total | vs. $100,000 Ceiling | SSO (Mandatory Before Production) | Other Requirements |\n|---|---|---|---|---|---|---|\n| Alpha | $72,000 | $20,000 | $92,000 | $8,000 under | Available | Meets |\n| Beta | $60,000 | $10,000 | $70,000 | $30,000 under | Unavailable, no committed delivery date | Meets |\n\nAnalysis\nAlpha meets all stated constraints. Its $92,000 year-one total, including setup, is within the $100,000 ceiling.\n\nBeta is $22,000 less in year one ($70,000 vs. $92,000), is also within budget, and meets the other stated requirements. However, Beta fails the mandatory SSO constraint. Because SSO is mandatory before production and Beta has no committed delivery date, Beta cannot proceed to production.\n\nDecision Requested\nCFO approval is needed before signing. Recommend approval to sign with Alpha, with Priya to own procurement execution.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 179,
+    "inputTokenDetails": {
+      "noCacheTokens": 179,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1230,
+    "outputTokenDetails": {
+      "textTokens": 306,
+      "reasoningTokens": 924
+    },
+    "totalTokens": 1409
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6acee05856553201a47a4f77",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-wonder-1.0",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. ZDR requested: all 1 attempts support ZDR. Execution order: meta(system)",
+        "canonicalSlug": "meta/muse-wonder-1.0",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-wonder-1.0",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942737072,
+                "endTime": 1791942744840,
+                "providerRequestId": "d68232be-b8a1-4a4f-be2d-fa676542d457",
+                "statusCode": 200,
+                "providerResponseId": "resp_6acee05856553201a47a4f77"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "91f844a73ac144c88cb606f0777aea98",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.025316",
+      "marketCost": "0.025316",
+      "surchargeCost": "0",
+      "gatewayCost": "0.025316",
+      "inferenceCost": "0.025316",
+      "inputInferenceCost": "0.000716",
+      "outputInferenceCost": "0.0246",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4W1RF48VDGM22H1J4SZNM7D"
+    }
+  },
+  "response": {
+    "id": "aitxt-68TgCTFIcDqeKu2kI7IIBH3b",
+    "modelId": "meta/muse-wonder-1.0",
+    "timestamp": "2026-10-14T01:52:24.851Z"
+  },
+  "billing": {
+    "totalCost": 0.025316,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.025316",
+    "surchargeCost": "0"
+  },
+  "inputHash": "36dfaa596218c9c4e7e1333cb9d5463fcfd5f7399ba61ea93b4ad12232061978",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement. CFO approval is needed before signing.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

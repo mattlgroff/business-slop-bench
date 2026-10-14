@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 34.28357621599999,
+  "accountedUsd": 34.837538616,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -13675,6 +13675,390 @@
       "charged": 0.006496874999999999,
       "status": "settled",
       "actualUsd": 0.0010605
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--pilot-client-email--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0429256,
+      "charged": 0.004932,
+      "status": "settled",
+      "actualUsd": 0.00274
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--pilot-client-email--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0905032,
+      "charged": 0.013906799999999999,
+      "status": "settled",
+      "actualUsd": 0.007726
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--launch-delay-email--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.042688000000002,
+      "charged": 0.0037656,
+      "status": "settled",
+      "actualUsd": 0.002092
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--launch-delay-email--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.090265600000002,
+      "charged": 0.0133344,
+      "status": "settled",
+      "actualUsd": 0.007408
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--vendor-decision-memo--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0426988,
+      "charged": 0.0109116,
+      "status": "settled",
+      "actualUsd": 0.006062
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--vendor-decision-memo--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0902764,
+      "charged": 0.0167364,
+      "status": "settled",
+      "actualUsd": 0.009298
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--pilot-results-memo--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.042526000000002,
+      "charged": 0.006372,
+      "status": "settled",
+      "actualUsd": 0.00354
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--pilot-results-memo--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.090103600000003,
+      "charged": 0.0160488,
+      "status": "settled",
+      "actualUsd": 0.008916
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--discovery-proposal--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.042911200000002,
+      "charged": 0.0069804,
+      "status": "settled",
+      "actualUsd": 0.003878
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--discovery-proposal--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.090488800000003,
+      "charged": 0.014983199999999999,
+      "status": "settled",
+      "actualUsd": 0.008324
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--change-order--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0428788,
+      "charged": 0.007455600000000001,
+      "status": "settled",
+      "actualUsd": 0.004142
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--change-order--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0904564,
+      "charged": 0.0145944,
+      "status": "settled",
+      "actualUsd": 0.008108
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--ai-strategy-slides--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0431668,
+      "charged": 0.0081288,
+      "status": "settled",
+      "actualUsd": 0.004516
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--ai-strategy-slides--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.090744400000002,
+      "charged": 0.0164376,
+      "status": "settled",
+      "actualUsd": 0.009132
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--handoff-slides--default",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.0428716,
+      "charged": 0.0064800000000000005,
+      "status": "settled",
+      "actualUsd": 0.0036
+    },
+    {
+      "id": "pilot-v31::google--gemini-4-argon--handoff-slides--house",
+      "model": "google/gemini-4-argon",
+      "reserve": 18.090449200000002,
+      "charged": 0.0143748,
+      "status": "settled",
+      "actualUsd": 0.007986
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--pilot-client-email--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--pilot-client-email--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--launch-delay-email--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--launch-delay-email--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--pilot-results-memo--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--pilot-results-memo--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--discovery-proposal--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--discovery-proposal--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--change-order--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--change-order--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--ai-strategy-slides--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--ai-strategy-slides--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--handoff-slides--default",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::nvidia--nemotron-3.5-lightning-free--handoff-slides--house",
+      "model": "nvidia/nemotron-3.5-lightning-free",
+      "reserve": 0.01,
+      "charged": 0,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--pilot-client-email--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.018104000000005,
+      "charged": 0.024272000000000002,
+      "status": "settled",
+      "actualUsd": 0.024272
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--pilot-client-email--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070968000000004,
+      "charged": 0.024248,
+      "status": "settled",
+      "actualUsd": 0.024248
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--launch-delay-email--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.017840000000003,
+      "charged": 0.017732,
+      "status": "settled",
+      "actualUsd": 0.017732
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--launch-delay-email--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070704000000003,
+      "charged": 0.024608,
+      "status": "settled",
+      "actualUsd": 0.024608
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--vendor-decision-memo--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.017852000000005,
+      "charged": 0.025316,
+      "status": "settled",
+      "actualUsd": 0.025316
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--vendor-decision-memo--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070716000000004,
+      "charged": 0.026472000000000002,
+      "status": "settled",
+      "actualUsd": 0.026472
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--pilot-results-memo--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.017660000000003,
+      "charged": 0.018188000000000003,
+      "status": "settled",
+      "actualUsd": 0.018188
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--pilot-results-memo--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070524000000002,
+      "charged": 0.023424,
+      "status": "settled",
+      "actualUsd": 0.023424
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--discovery-proposal--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.018088000000002,
+      "charged": 0.023592000000000002,
+      "status": "settled",
+      "actualUsd": 0.023592
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--discovery-proposal--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070952000000002,
+      "charged": 0.027588,
+      "status": "settled",
+      "actualUsd": 0.027588
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--change-order--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.018052000000004,
+      "charged": 0.018296000000000003,
+      "status": "settled",
+      "actualUsd": 0.018296
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--change-order--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070916000000004,
+      "charged": 0.023432,
+      "status": "settled",
+      "actualUsd": 0.023432
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--ai-strategy-slides--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.018372000000003,
+      "charged": 0.016780000000000003,
+      "status": "settled",
+      "actualUsd": 0.01678
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--ai-strategy-slides--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.071236000000003,
+      "charged": 0.033656,
+      "status": "settled",
+      "actualUsd": 0.033656
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--handoff-slides--default",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.018044000000003,
+      "charged": 0.0275,
+      "status": "settled",
+      "actualUsd": 0.0275
+    },
+    {
+      "id": "pilot-v32::meta--muse-wonder-1.0--handoff-slides--house",
+      "model": "meta/muse-wonder-1.0",
+      "reserve": 21.070908000000003,
+      "charged": 0.023416,
+      "status": "settled",
+      "actualUsd": 0.023416
     }
   ]
 }

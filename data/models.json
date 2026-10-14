@@ -118,5 +118,17 @@
   {
     "id": "anthropic/claude-haiku-5.5",
     "reasoning": "low"
+  },
+  {
+    "id": "google/gemini-4-argon",
+    "reasoning": "low"
+  },
+  {
+    "id": "nvidia/nemotron-3.5-lightning-free",
+    "reasoning": "low"
+  },
+  {
+    "id": "meta/muse-wonder-1.0",
+    "reasoning": "low"
   }
 ]

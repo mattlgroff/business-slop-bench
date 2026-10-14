@@ -1,0 +1,83 @@
+{
+  "id": "nvidia--nemotron-3.5-lightning-free--handoff-slides--default",
+  "model": "nvidia/nemotron-3.5-lightning-free",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:51:27.754Z",
+  "elapsedMs": 16104,
+  "text": "Slide 1: Service Readiness Assessment\n- Current state: Runbook is approved. Rollback rehearsal has not happened.\n- Acceptance criteria: Approved runbook and successful rollback rehearsal.\n- Readiness status: Not yet ready for operational handoff.\n\nSlide 2: Acceptance Gap & Ownership\n- Gap: No role has accepted responsibility for organizing the rehearsal.\n- Delivery ownership: Engineering lead Lee owns defect fixes until acceptance.\n- Operations ownership: Operations lead Jo owns incidents only after acceptance.\n- Authority: Sponsor Pat can assign responsibility and approve acceptance once criteria are met.\n\nSlide 3: Required Actions\n- Action: Sponsor Pat must assign a role to organize and execute the rollback rehearsal.\n- Prerequisite: Rehearsal must be completed successfully.\n- Trigger: Upon successful rehearsal, acceptance is granted, defect fixes transfer, and incident ownership shifts to Operations.\n\nSlide 4: Steering Committee Decision\n- Decision point: Authorize Sponsor Pat to assign rehearsal responsibility.\n- Outcome if approved: Rehearsal scheduled, executed, acceptance confirmed, service handoff proceeds.\n- Outcome if deferred: Service remains in engineering control; rehearsal gap closes before re-review.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 193,
+    "inputTokenDetails": {
+      "noCacheTokens": 193,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 5070,
+    "outputTokenDetails": {
+      "textTokens": 253,
+      "reasoningTokens": 4817
+    },
+    "totalTokens": 5263
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "nvidia": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "nvidia/nemotron-3.5-lightning-free",
+        "resolvedProvider": "nvidia",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: nvidia. Total execution order: nvidia(system)",
+        "canonicalSlug": "nvidia/nemotron-3.5-lightning-free",
+        "finalProvider": "nvidia",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "nvidia/nemotron-3.5-lightning-free",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "nvidia",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942671755,
+                "endTime": 1791942687741,
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-70d6b049-27e3-41fc-9ab5-6f4315828263"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M4W1PFAAHP9XZ1EHKQCADF02"
+    }
+  },
+  "response": {
+    "id": "aitxt-JJ3dWRUBElCeCKyXxikEOqMS",
+    "modelId": "nvidia/nemotron-3.5-lightning-free",
+    "timestamp": "2026-10-14T01:51:27.754Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

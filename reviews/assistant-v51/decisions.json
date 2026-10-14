@@ -1,0 +1,508 @@
+[
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "scoped exclusively to non-production environments",
+        "Invents an environment restriction; the source excludes production rollout but does not specify the pilot environment."
+      ]
+    ],
+    "style": [
+      [
+        "20",
+        "de-risk the engagement",
+        "Generic risk-reduction claim lacks a specified risk or evidence."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--pilot-client-email--default.md",
+    "outputSha256": "b698237bc214f49f0c96b6a6dc36ac8efaee52b64e50e832c82afbded7d3df68"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "The client hopes to reduce handling time by 20%",
+        "Refers to Morgan as the client in an email directly to Morgan; the third-person source wording is unnatural for the recipient."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--pilot-client-email--house.md",
+    "outputSha256": "4812c19eb549cdafef6b0afb04a6988b7f7b1f57abda778e679f12ffce030d81"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "requires your completed approval for release",
+        "Assigns Avery a release-approval responsibility not supplied; Avery only chooses the demo."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--launch-delay-email--default.md",
+    "outputSha256": "eb207f86dcf9ef9a20fe41d441a9298b6b0b270a34f7e43315f63011fe75f623"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [
+      [
+        "C02",
+        "fail",
+        "Security review now completes October 12 at the earliest; release requires completed approval",
+        "Omits the possibility of remediation that the criterion expressly requires."
+      ],
+      [
+        "grounding",
+        "fail",
+        "The team is prepared.",
+        "Asserts current team preparedness absent from the source."
+      ]
+    ],
+    "style": [
+      [
+        "12",
+        "Avery chooses whether to accept the staging demo",
+        "Describes the addressee in third person instead of writing the client update to Avery."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--launch-delay-email--house.md",
+    "outputSha256": "c8cd78c86a8ee6708d32f310730d9ace59cc28707c021e2af41d3b70f53f0c42"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "eliminating production risk",
+        "Available SSO does not eliminate production risk. The memo also invents a date, 2025-08-27."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--default.md",
+    "outputSha256": "b59fe36e25605f716e69b524c8786bce61d0832a02058245054f9baf21c716f6"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C05",
+        "fail",
+        "CFO approval requested before signing.",
+        "Preserves CFO approval but entirely omits Priya procurement ownership."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--house.md",
+    "outputSha256": "e9fddb81cd88aa5757a5953b56cc60deab836b6ed54a88109bb490b5078c774b"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Handling time improved 17%",
+        "15 to 12 minutes is a 3-minute or 20% reduction, not 17%."
+      ],
+      [
+        "C02",
+        "fail",
+        "Quality fell 5 percentage points below the 92% required scaling threshold.",
+        "89% is three points below 92%; five points is the decline from 94%, not the threshold gap."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--pilot-results-memo--default.md",
+    "outputSha256": "7bff29d0396880c1be452992b1f9b3e2f1874f9dda1b06cc1fe9793d3399b34f"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "The baseline was 200 tickets with a mean handling time of 15 minutes.",
+        "Reports endpoints but omits the required derived 3-minute or 20% reduction."
+      ],
+      [
+        "C02",
+        "fail",
+        "Quality pass rate was 89%, below the 92% threshold required for scaling.",
+        "Omits the baseline 94% quality rate and therefore the required decline from 94% to 89%."
+      ],
+      [
+        "C03",
+        "fail",
+        "The COO must decide whether to authorize it.",
+        "Lists results and an authorization decision without recommending against scaling or resolving quality first."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--pilot-results-memo--house.md",
+    "outputSha256": "1da2cab20e77f8c62cecad9e4b5e68693a3399cb6641de777093cdd945ad7bce"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "the engagement will commence within two weeks.",
+        "Invents a start-time commitment; the source requires agreeing the date after signature and a named contact."
+      ],
+      [
+        "C05",
+        "fail",
+        "the engagement will commence within two weeks.",
+        "Invents a relative start deadline in addition to the supplied prerequisites."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--discovery-proposal--default.md",
+    "outputSha256": "ee54acedcfee5e1ca1cfb084da031eee3562766fb70c69c1c478c00c9a2b4152"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--discovery-proposal--house.md",
+    "outputSha256": "aa9334a3c705af2d7c32385e35bbbff9641caab3fb5d48fa9312e47eeada05cd"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--change-order--default.md",
+    "outputSha256": "aedc4344099a753391e3fe1ccc4c77d7a83fc5b467ffecc306065754aafa532b"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--change-order--house.md",
+    "outputSha256": "96c58b9bf005e92602fb3fe2c3a222ee6abb743270856afca2086366085d694e"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Conflicts with one-pilot capacity constraint",
+        "Selecting the credit pilot alone does not conflict with capacity for one pilot. The constraint prevents running both, not selecting option B."
+      ]
+    ],
+    "style": [],
+    "placeholders": [
+      [
+        "Qnext",
+        "Unfinished quarter notation in the title; the brief requires next quarter without a placeholder."
+      ]
+    ],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--ai-strategy-slides--default.md",
+    "outputSha256": "5a18fcae6c01bac07bff2d409a01ab19df11ee9df2f6e98def543b0682bd53ff"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Pilot authorized",
+        "Invents existing authorization, contradicting the later request for COO authorization. It also adds completion within the quarter and expansion upon hitting accuracy."
+      ],
+      [
+        "C04",
+        "fail",
+        "Dana executes pilot and reports 90% accuracy outcome",
+        "Turns an unachieved target into a definite accuracy outcome to report."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--ai-strategy-slides--house.md",
+    "outputSha256": "997ce859321193f70e4ecae84962608d32542b3b0bfe6fb378f616bae98074b6"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "acceptance is granted, defect fixes transfer",
+        "Makes acceptance automatic and adds transfer of defect fixes without a source-backed recipient or assignment. Pat must approve acceptance once criteria are met."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--handoff-slides--default.md",
+    "outputSha256": "b8dd8df8d4c2cb6204c5bfd4935d132aff30a348c2db35b7937477c2b08da174"
+  },
+  {
+    "model": "Nemotron 3.5 Lightning Free",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "21",
+        "engineering lead lee owns defect fixes until acceptance. operations lead jo owns incidents only after acceptance. sponsor pat",
+        "All-lowercase sentences and uncapitalized personal names are unfinished prose for the steering committee."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/nvidia--nemotron-3.5-lightning-free--handoff-slides--house.md",
+    "outputSha256": "8ef6017e91fbfecc579731bc2c54e6baf7dc69b24c78fbdfe3007043e73ddfef"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "28",
+        "If you approve, the next decision can move forward on that basis.",
+        "Generic positive closing adds no information after the explicit approval request and prerequisites."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--pilot-client-email--default.md",
+    "outputSha256": "9de829caa7c123796d848b77c7c942d72daa5dfe52d776935926e933a16c245c"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--pilot-client-email--house.md",
+    "outputSha256": "b6b8dce8e3d18680a49997a6fd5e9777bf211d16ca3d261460537e49ca62864c"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--launch-delay-email--default.md",
+    "outputSha256": "008bf57ae01c16350a38aaa9e5e05018a1aef334b6b9c8c3d6de966cd16f6d06"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--launch-delay-email--house.md",
+    "outputSha256": "7e3530b0b6267c62ee14b9a100053b894b6064e60a79fe56b3894848f7157851"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--vendor-decision-memo--default.md",
+    "outputSha256": "65cd1a6d609076691ae78721ba16f15f3585d67575adc14d55643279b902f9f8"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "Please approve Alpha so Priya can proceed with signing.",
+        "May assume that Priya is the signatory rather than just procurement owner. The approval request could also be read as proposed authorization; retain as unresolved under the existing signing-authority boundary."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--vendor-decision-memo--house.md",
+    "outputSha256": "de90c32a3b1aa21d191f53743f6f2e0e4bc030ce8f013967358675adb5c22ee8"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--pilot-results-memo--default.md",
+    "outputSha256": "1cbc6ee82a81863f672da1d949fe4d2b34c14e8068a0241b04893678cebf342f"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--pilot-results-memo--house.md",
+    "outputSha256": "34164d5de093031e933ac180547145631f8bcf02e509d7f9f406edfbed7fca17"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "A start date is then agreed. Start date is agreed only after signature and a named client contact.",
+        "Two adjacent sentences repeat the date-agreement step; the second contains the useful prerequisites."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--discovery-proposal--default.md",
+    "outputSha256": "b519f1d56cf28d0c3248c310b63429670ae1628a27fe601972bc5b0753fe55c4"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--discovery-proposal--house.md",
+    "outputSha256": "ab337e4377b97f5d75d98fbcca57147614bf10df5ee2578279b758c448b0c8e5"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This proposal describes the requested work, price, and schedule effect for sponsor approval or decline.",
+        "Document-description preamble delays the actual offer; the sections already state these subjects."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--change-order--default.md",
+    "outputSha256": "46fae5b5ff26847e2a3ef311a0c43c5cf790ca3b51764a6bd393ec24008cf9ac"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--change-order--house.md",
+    "outputSha256": "0ec833cc0b58e1c695764e882bcd73c1a6b5a7bef4d36b010f11df6c1941cee5"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Approved, owned, and ready to evaluate",
+        "The source approves internal policy documents, not the pilot itself; it does not establish current execution readiness."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--ai-strategy-slides--default.md",
+    "outputSha256": "27c939b82896a4fb1a491a62139135bfe14614b16d38fd2341ca8ec222d437b7"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The pilot fits the budget, approved source material, and named ownership available now.",
+        "This fourth bullet repeats the budget, source-material and owner facts given in the preceding three bullets."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--ai-strategy-slides--house.md",
+    "outputSha256": "9d2bb5c2fa052d20159b5f9ef47c7a0a150e171ee3b34b6f363667d790de7bb3"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "| Criterion | Status |",
+        "Table lacks a Markdown header separator, so it will not render as a table in standard Markdown."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--handoff-slides--default.md",
+    "outputSha256": "87e6185d3d58082ef0794e1f9cff5647959cfd244a46661da226f73f72540d42"
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v32/meta--muse-wonder-1.0--handoff-slides--house.md",
+    "outputSha256": "ba1562e82812a4d91b0d2cac29e0476f2e0dc1e88ac3dff27727fc14c61e8d79"
+  }
+]

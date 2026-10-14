@@ -1,0 +1,253 @@
+[
+  {
+    "model": "Gemini 4 Argon",
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Once we have your approval, we can take the next steps toward securing data access and finalizing a start date.",
+        "Generic closing repeats the approval, security and scheduling sequence already stated."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--pilot-client-email--default.md",
+    "outputSha256": "ad915770db9dbfe4806e7557056a69de5ae08712baec4e4bd66f3fd4c3f6f09c"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--pilot-client-email--house.md",
+    "outputSha256": "cb0ce1833d72c7f0b99ba782a37ae9ad77fadebb4cfe56b4317a1d4fdb0514fb"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "our team remains focused on moving forward effectively",
+        "Unsupplied present team focus may be routine reassurance rather than a material status claim; retain the existing unresolved boundary used for Sol and Sonnet."
+      ]
+    ],
+    "style": [
+      [
+        "16",
+        "Please be assured that our team remains focused on moving forward effectively.",
+        "Generic reassurance adds no concrete status, action or evidence."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--launch-delay-email--default.md",
+    "outputSha256": "b1313c14f365367a9c6ac42e94b293b34b01b4ddf7b3617b50e65f0ee9213317"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--launch-delay-email--house.md",
+    "outputSha256": "428fefb51c43a30074b0125c383e5acd4c1b6c2dd83d6855847ea85d143b3929"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "**Analysis**",
+        "The analysis repeats subscription, setup, totals and eligibility already in the table, then the recommendation repeats the same conclusion again."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--vendor-decision-memo--default.md",
+    "outputSha256": "0d60b8616d0f050d3bd9c41c3d451d276be55106e828c3184fec143fe1890580"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "I will finalize and sign the contract with Vendor Alpha.",
+        "The speaker is Priya. Procurement ownership does not establish signing authority; this asserts a definite signing commitment instead of requesting authorization to assign it."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--vendor-decision-memo--house.md",
+    "outputSha256": "4de46a7ea59fbbb95875800f1fc23a4414f8de248ab917df0a05021a53ed4371"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "mean handling time decreased from 15 minutes at baseline to 12 minutes in the pilot",
+        "Correct endpoints but no required derived reduction of 3 minutes or 20%. This is the existing analytical-completeness criterion, not incorrect arithmetic."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--pilot-results-memo--default.md",
+    "outputSha256": "3d363fcdd8cdfdd5e56bbd0d5683ab64866afb5b735c8b81b98a03ec5d9e14e3"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "A matched test will isolate the handling-time effect",
+        "Guarantees causal isolation from matching alone; no randomized or otherwise causally sufficient follow-up design is supplied."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "| Metric | Baseline | Pilot | Scaling threshold |",
+        "The table repeats the immediately preceding numeric paragraphs and savings statement without new analysis."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--pilot-results-memo--house.md",
+    "outputSha256": "d112f1a2e65c54ff8d54562615536e681e6e1a4b3e138bada48f12e12621fdbf"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--discovery-proposal--default.md",
+    "outputSha256": "ec39b996539b7c6fe0372e10f5579149079bc86f55ea7131c44743bb75004027"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This proposal outlines the scope, commercial terms, and approval process for a four-week discovery engagement.",
+        "Opening describes the document instead of making the offer; all information follows in the titled sections."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--discovery-proposal--house.md",
+    "outputSha256": "9efc1507d02c8dcafa268d440b2f8afe996b44d547ffe68cbef500b1248d3f3c"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "| Additional CRM Connector | 40 hours | $175/hour | $7,000 |",
+        "The one-row pricing table repeats every term in the preceding two sentences."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--change-order--default.md",
+    "outputSha256": "5f6ef4c56f004043f933f0b108633911bccc53e1ececa2f2a56a15ee51218756"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--change-order--house.md",
+    "outputSha256": "01b1ea6307f47fba1161c040c9be5932d3bc2193f3a04d2d033dc4badf2f60fd"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "**Actionable Now:**",
+        "Infers immediate pilot readiness from approved source documents; source does not establish all start prerequisites."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--ai-strategy-slides--default.md",
+    "outputSha256": "c637e61856542d0d3b5d726483a981be95978734768bc8cec9ddae4f29172cd4"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "the internal knowledge search option is ready to start within budget.",
+        "Invents start readiness. Budget fit, approved documents and an IT owner do not establish operational readiness."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--ai-strategy-slides--house.md",
+    "outputSha256": "19335ae2b794bd1189a2dfff54c5ecb283561d4cac0234c72f4bb61b84f14747"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "**Operational Impact:**",
+        "Every bullet has a bold mini-label, adding clutter; the operational-impact bullet also repeats ownership boundaries already covered."
+      ]
+    ],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--handoff-slides--default.md",
+    "outputSha256": "fbd4c90eb96199d580a93b2b1f0ccd7afe81b24ee0544d2ffb717fd53f260479"
+  },
+  {
+    "model": "Gemini 4 Argon",
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "the service remains with Engineering.",
+        "May imply broader service or incident ownership than Lee's supplied defect-fix responsibility. Could also be shorthand for that narrow duty, so retain as unresolved."
+      ]
+    ],
+    "style": [],
+    "placeholders": [],
+    "path": "runs/pilot-v31/google--gemini-4-argon--handoff-slides--house.md",
+    "outputSha256": "35034e2331c1c287dc82f5ca7f4301f3740d05a300d18713ca56e29ac2bd6f55"
+  }
+]

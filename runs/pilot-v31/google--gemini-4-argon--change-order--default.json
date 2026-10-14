@@ -1,0 +1,152 @@
+{
+  "id": "google--gemini-4-argon--change-order--default",
+  "model": "google/gemini-4-argon",
+  "protocolHash": "49cc7bf449f76e64cba61920cf787bd8d87cb2ddd969d2677546899ea6f49997",
+  "status": "ok",
+  "at": "2026-10-14T01:46:16.444Z",
+  "elapsedMs": 4390,
+  "text": "**Change-Order Proposal: Additional CRM Connector**\n\n**To:** Client Sponsor  \n**Subject:** Change-Order Proposal for CRM Connector  \n\n**1. Background and Requested Work**  \nThe existing signed scope is for the reporting dashboard. You have requested the addition of a CRM connector. Because this connector is not included in the original fee, this change-order proposal outlines the pricing, dependencies, and schedule impact for your review.\n\n**2. Pricing**  \nThe proposed cost for the additional CRM connector is a fixed change fee of $7,000. This fee is based on an estimate of 40 hours of work at a rate of $175/hour.\n\n| Item | Effort | Rate | Proposed Fixed Fee |\n| :--- | :--- | :--- | :--- |\n| Additional CRM Connector | 40 hours | $175/hour | $7,000 |\n\n**3. Client Dependencies**  \nTo perform this work, the client must provide sandbox credentials. \n\n**4. Schedule Effect**  \nAdding the CRM connector is estimated to add two weeks to the schedule. This two-week period begins after both written approval and sandbox credential receipt. Please note that this timeline is an estimate, not an approved calendar date.\n\n**5. Approval and Next Steps**  \nAs the project sponsor, you must approve this change order in writing before work on the connector begins. Please indicate your decision below to approve or decline this proposal.\n\n* [ ] **Approve:** Proceed with the CRM connector under the terms above.\n* [ ] **Decline:** Do not proceed with the CRM connector.\n\n**Sponsor Signature:** \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_  \n**Date:** \\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 226,
+    "inputTokenDetails": {
+      "noCacheTokens": 226,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 369,
+    "outputTokenDetails": {
+      "textTokens": 369,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 595
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "googleVertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 226,
+        "candidatesTokenCount": 369,
+        "totalTokenCount": 595,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 226
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 369
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "vertex": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 226,
+        "candidatesTokenCount": 369,
+        "totalTokenCount": 595,
+        "trafficType": "ON_DEMAND",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 226
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 369
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-4-argon",
+        "resolvedProvider": "vertex",
+        "fallbacksAvailable": [
+          "google"
+        ],
+        "planningReasoning": "BYOK credentials available for: google. BYOK execution order prioritizes google over routing preference vertex. System credentials planned for: vertex, google. ZDR requested: 3 attempts → 1 ZDR attempts. Pre-ZDR order: google(BYOK) → vertex(system) → google(system). ZDR execution order: vertex(system)",
+        "canonicalSlug": "google/gemini-4-argon",
+        "finalProvider": "vertex",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-4-argon",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "vertex",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942372169,
+                "endTime": 1791942376467,
+                "statusCode": 200,
+                "providerResponseId": "5N7OapfODZuOsbwPtI_iQQ"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "skippedProviderAttempts": [
+          {
+            "credentialType": "byok",
+            "provider": "google",
+            "reason": "zdr_not_attested"
+          },
+          {
+            "credentialType": "system",
+            "provider": "google",
+            "reason": "zdr_not_supported"
+          }
+        ],
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "33626885e13c44d1c9df0ce078e5024d",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.004142",
+      "marketCost": "0.004142",
+      "surchargeCost": "0",
+      "gatewayCost": "0.004142",
+      "inferenceCost": "0.004142",
+      "inputInferenceCost": "0.000452",
+      "outputInferenceCost": "0.00369",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4W1DASBZWDQ7G40N696S0TR"
+    }
+  },
+  "response": {
+    "id": "aitxt-hMHAXMzrpnoYh7D6jG4MqkAb",
+    "modelId": "google/gemini-4-argon",
+    "timestamp": "2026-10-14T01:46:16.443Z"
+  },
+  "billing": {
+    "totalCost": 0.004142,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.004142",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "meta--muse-wonder-1.0--discovery-proposal--default",
+  "model": "meta/muse-wonder-1.0",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:52:46.309Z",
+  "elapsedMs": 7078,
+  "text": "# Proposal: Discovery Engagement — Sponsor Approval\n\n## Scope\nFour weeks of discovery only, delivering:\n\n- Current-state process map\n- Prioritized backlog\n- Implementation recommendation\n\n## Commercial Offer\n- 80 hours at $200/hour\n- Total: $16,000\n- Payment: 50% at kickoff and 50% on delivery\n\n## Excluded\nImplementation, integrations, production support, and guaranteed savings are excluded.\n\n## Client Responsibilities\nClient supplies interview access and source documents.\n\n## Acceptance\nSponsor confirms delivery of the three listed artifacts above.\n\n## How to Proceed\n1. Sponsor signs this proposal.\n2. Client names its client contact.\n3. A start date is then agreed. Start date is agreed only after signature and a named client contact.\n\n**Sponsor signature:** ______________________\n\n**Date:** ______________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 188,
+    "inputTokenDetails": {
+      "noCacheTokens": 188,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1142,
+    "outputTokenDetails": {
+      "textTokens": 227,
+      "reasoningTokens": 915
+    },
+    "totalTokens": 1330
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6acee06e6fbefd4a5f2643f2",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-wonder-1.0",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. ZDR requested: all 1 attempts support ZDR. Execution order: meta(system)",
+        "canonicalSlug": "meta/muse-wonder-1.0",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-wonder-1.0",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942759354,
+                "endTime": 1791942766291,
+                "providerRequestId": "79e03d7d-b6dd-4198-9136-419bd52bb07f",
+                "statusCode": 200,
+                "providerResponseId": "resp_6acee06e6fbefd4a5f2643f2"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "1f6678da4ec13adeed653147b577e561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.023592",
+      "marketCost": "0.023592",
+      "surchargeCost": "0",
+      "gatewayCost": "0.023592",
+      "inferenceCost": "0.023592",
+      "inputInferenceCost": "0.000752",
+      "outputInferenceCost": "0.02284",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4W1S4V8TYCNP5SRWBAKJJY0"
+    }
+  },
+  "response": {
+    "id": "aitxt-fuEs1h1352ic7xNe0vKb98SU",
+    "modelId": "meta/muse-wonder-1.0",
+    "timestamp": "2026-10-14T01:52:46.309Z"
+  },
+  "billing": {
+    "totalCost": 0.023592,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.023592",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

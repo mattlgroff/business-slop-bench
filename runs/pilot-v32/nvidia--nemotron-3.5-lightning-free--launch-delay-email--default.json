@@ -1,0 +1,83 @@
+{
+  "id": "nvidia--nemotron-3.5-lightning-free--launch-delay-email--default",
+  "model": "nvidia/nemotron-3.5-lightning-free",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:47:30.657Z",
+  "elapsedMs": 10144,
+  "text": "Avery,\nThe launch was tentatively scheduled for October 8, 2026, but the security review now completes October 12 at the earliest and requires your completed approval for release. Nia owns the review; it may require remediation, and no new production date is authorized. Despite this, a staging demo can still occur October 8 using synthetic data, and you choose whether to accept it. I remain confident the team will adapt smoothly. Please advise whether to proceed with the staging demo or await final approval.\nBest,\nJordan",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 200,
+    "inputTokenDetails": {
+      "noCacheTokens": 200,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 3104,
+    "outputTokenDetails": {
+      "textTokens": 113,
+      "reasoningTokens": 2991
+    },
+    "totalTokens": 3304
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "nvidia": {},
+    "gateway": {
+      "routing": {
+        "originalModelId": "nvidia/nemotron-3.5-lightning-free",
+        "resolvedProvider": "nvidia",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: nvidia. Total execution order: nvidia(system)",
+        "canonicalSlug": "nvidia/nemotron-3.5-lightning-free",
+        "finalProvider": "nvidia",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "nvidia/nemotron-3.5-lightning-free",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "nvidia",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942440783,
+                "endTime": 1791942450679,
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-214dc260-5e89-4c8e-9b0a-5f603b21122d"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M4W1FDRAV6WEYMQT7YFQKCR5"
+    }
+  },
+  "response": {
+    "id": "aitxt-wmskjzHPkQHrQMqZSATRY24G",
+    "modelId": "nvidia/nemotron-3.5-lightning-free",
+    "timestamp": "2026-10-14T01:47:30.656Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

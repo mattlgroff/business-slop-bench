@@ -1,0 +1,557 @@
+[
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--pilot-client-email--default.md",
+    "words": 125,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 2,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--pilot-client-email--house.md",
+    "words": 70,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--launch-delay-email--default.md",
+    "words": 86,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--launch-delay-email--house.md",
+    "words": 64,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--default.md",
+    "words": 99,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 1,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--vendor-decision-memo--house.md",
+    "words": 81,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--pilot-results-memo--default.md",
+    "words": 126,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--pilot-results-memo--house.md",
+    "words": 69,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--discovery-proposal--default.md",
+    "words": 112,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--discovery-proposal--house.md",
+    "words": 96,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--change-order--default.md",
+    "words": 84,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--change-order--house.md",
+    "words": 84,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--ai-strategy-slides--default.md",
+    "words": 145,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 2,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--ai-strategy-slides--house.md",
+    "words": 124,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--handoff-slides--default.md",
+    "words": 171,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "nvidia--nemotron-3.5-lightning-free--handoff-slides--house.md",
+    "words": 107,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--pilot-client-email--default.md",
+    "words": 138,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--pilot-client-email--house.md",
+    "words": 146,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--launch-delay-email--default.md",
+    "words": 96,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--launch-delay-email--house.md",
+    "words": 114,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--vendor-decision-memo--default.md",
+    "words": 163,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--vendor-decision-memo--house.md",
+    "words": 157,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--pilot-results-memo--default.md",
+    "words": 147,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--pilot-results-memo--house.md",
+    "words": 152,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--discovery-proposal--default.md",
+    "words": 116,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 33,
+        "line": 1,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--discovery-proposal--house.md",
+    "words": 138,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--change-order--default.md",
+    "words": 129,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--change-order--house.md",
+    "words": 122,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--ai-strategy-slides--default.md",
+    "words": 118,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 164,
+        "line": 6,
+        "text": "—"
+      },
+      {
+        "offset": 313,
+        "line": 11,
+        "text": "—"
+      },
+      {
+        "offset": 482,
+        "line": 16,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--ai-strategy-slides--house.md",
+    "words": 179,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--handoff-slides--default.md",
+    "words": 147,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 28,
+        "line": 1,
+        "text": "—"
+      },
+      {
+        "offset": 239,
+        "line": 6,
+        "text": "—"
+      },
+      {
+        "offset": 304,
+        "line": 8,
+        "text": "—"
+      },
+      {
+        "offset": 370,
+        "line": 9,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "meta--muse-wonder-1.0--handoff-slides--house.md",
+    "words": 141,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]

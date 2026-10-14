@@ -1,0 +1,91 @@
+{
+  "id": "meta--muse-wonder-1.0--pilot-results-memo--default",
+  "model": "meta/muse-wonder-1.0",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:52:34.523Z",
+  "elapsedMs": 4209,
+  "text": "Executive Readout: Pilot Scaling Decision\n\n**Recommendation: Do Not Scale Now**\n\n| Metric | Baseline | Pilot |\n|---|---:|---:|\n| Tickets | 200 | 100 |\n| Mean handling time | 15 minutes | 12 minutes |\n| Quality pass rate | 94% | 89% |\n\n**What the results support**\n\n- Mean handling time was observed to be 3 minutes lower in the pilot. However, ticket mix differed and allocation was not randomized, so the results do not support attributing this difference to the pilot.\n- Pilot quality was 89%, below the required scaling threshold of at least 92% and below the 94% baseline. The scaling condition is not met.\n- No staffing reductions or cash savings have been measured, so no cost saving is supported.\n\n**Next decision**\n\nThe COO is to decide whether to authorize Sam to run a matched-ticket follow-up before any scaling decision is revisited.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 177,
+    "inputTokenDetails": {
+      "noCacheTokens": 177,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 874,
+    "outputTokenDetails": {
+      "textTokens": 243,
+      "reasoningTokens": 631
+    },
+    "totalTokens": 1051
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6acee0624eab3e1281124026",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-wonder-1.0",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. ZDR requested: all 1 attempts support ZDR. Execution order: meta(system)",
+        "canonicalSlug": "meta/muse-wonder-1.0",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-wonder-1.0",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942750395,
+                "endTime": 1791942754507,
+                "providerRequestId": "886bbc36-81fd-428c-bcfd-07db7ade8600",
+                "statusCode": 200,
+                "providerResponseId": "resp_6acee0624eab3e1281124026"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.018188",
+      "marketCost": "0.018188",
+      "surchargeCost": "0",
+      "gatewayCost": "0.018188",
+      "inferenceCost": "0.018188",
+      "inputInferenceCost": "0.000708",
+      "outputInferenceCost": "0.01748",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4W1RW4KAQQM5HX509H8YNCY"
+    }
+  },
+  "response": {
+    "id": "aitxt-QFjJKWBHa18OeQKLuH7FGvUA",
+    "modelId": "meta/muse-wonder-1.0",
+    "timestamp": "2026-10-14T01:52:34.522Z"
+  },
+  "billing": {
+    "totalCost": 0.018188,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.018188",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

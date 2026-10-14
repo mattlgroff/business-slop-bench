@@ -1,8 +1,6 @@
 # BusinessSlopBench owner handoff
 
-Latest run: [Haiku 5.5](reviews/assistant-v49/HAIKU-COMPARISON.md), October 7: low reasoning, 50/54 plain and 49/54 house checks, 2/8 ready without edits in both, $0.0106286 total. Current collector: pilot-v30 / protocol 0.30.0. Earlier run notes below retain their historical context.
-
-Updated October 7, 2026. Repository: https://github.com/mattlgroff/business-slop-bench.
+Updated October 13, 2026. Latest review: [assistant-v52](reviews/assistant-v52/REPORT.md), correcting the ambiguous vendor signatory inference across the 33-model v2 panel. Latest generations: Argon in pilot-v31; Nemotron and Muse Wonder in pilot-v32. Future collector: unused pilot-v33 / protocol 0.33.0, explicit-authority v3 tasks. No v3 model runs exist.
 
 ## Purpose
 
@@ -11,18 +9,17 @@ Compare single-call business writing: factual grounding, unsupported commitments
 ## Start here
 
 - [README](README.md): overview and selected results.
-- [Current primary ranking](reviews/assistant-v49/RANKING.md): 30 models, 480 primary drafts; 24 models eligible under the recorded ZDR rule, six shown separately.
-- [Writing-only ranking](reviews/assistant-v49/RANKING-ignoring-zdr.md): same writing grades with ZDR eligibility ignored.
-- [Current grades and evidence](reviews/assistant-v49/REPORT.md), [decisions for Mistral Large 4](reviews/assistant-v48/decisions.json), and [cumulative grades](reviews/assistant-v49/grades.json).
+- [Current primary ranking](reviews/assistant-v52/RANKING.md): 33 models, 528 primary drafts; all models ranked on writing performance.
+- [Current grades and evidence](reviews/assistant-v52/REPORT.md), [decisions for Mistral Large 4](reviews/assistant-v48/decisions.json), and [cumulative grades](reviews/assistant-v52/grades.json).
 - [Fresh Sol 6.1 versus Astra comparison](reviews/sol61-astra-low/REPORT.md): September 29 paired low-reasoning runs. Astra sample 3 is a repeat, not a replacement for its primary result.
 - [Methods](docs/METHOD.md) and [decision history](IMPROVEMENTS.md).
 - [Published blog](https://www.groff.dev/blog/business-slop-bench). Its source is in the separate `mattlgroff/groffdev` repository.
 
-The latest addition is Mistral Large 4: 46/54 plain checks, 48/54 house checks; 1/8 and 2/8 content ready; 0/8 and 1/8 ready without edits. Successful generation charges total $0.02496809. See the current report for the reasoning limitation.
+[Muse versus Astra](reviews/assistant-v52/MUSE-COMPARISON.md): Muse house 54/54, 8/8 content ready, 7/8 without edits, $0.206844. Astra primary house 54/54, 8/8, 8/8; both repeats 6/8 without edits. The original Muse 53/54 and 6/8 reflected a retired ambiguous signatory inference. Seventeen verdicts across the panel are corrected under one boundary. Do not treat these as passes on the replacement v3 authority test.
 
 ## Current state
 
-The CLI uses `pilot-v30`, protocol version `0.30.0`, AI SDK `7.0.109`, `data/tasks-v2.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
+The CLI uses unused `pilot-v33`, protocol version `0.33.0`, AI SDK `7.0.109`, `data/tasks-v3.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
 
 | Model / attempt | Condition | Checks | Content ready | Ready without edits |
 |---|---|---:|---:|---:|
@@ -31,9 +28,9 @@ The CLI uses `pilot-v30`, protocol version `0.30.0`, AI SDK `7.0.109`, `data/tas
 | Astra sample 3 | Default | 54/54 | 6/8 | 2/8 |
 | Astra sample 3 | House | 54/54 | 8/8 | 6/8 |
 
-Sol ranks second in both primary tables under the existing ordering. The primary Astra house result remains 8/8 ready without edits; both full-panel repeats returned 6/8. Do not mix attempts or select the best draft from each. Sol's sixteen drafts cost $0.094556; the fresh Astra sixteen cost $0.471230. These are Gateway-reported charges, distinct from the conservative budget ledger.
+Muse ranks second in the corrected primary house table; Sol is third. The table above retains the original separate repeat study. The primary Astra house result remains 8/8 ready without edits; both full-panel repeats returned 6/8. Do not mix attempts or select the best draft from each. Sol's sixteen drafts cost $0.094556; the fresh Astra sixteen cost $0.471230. These are Gateway-reported charges, distinct from the conservative budget ledger.
 
-The ledger is `runs/budget.json`, with a $100 ceiling and approximately $34.2836 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 480 primary drafts.
+The ledger is `runs/budget.json`, with a $100 ceiling and approximately $34.8375 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 528 primary drafts.
 
 ## Grading contract
 
@@ -55,20 +52,20 @@ Use the existing npm lockfile and Node 22+; a working Node 26 installation was u
 npm ci
 npm run check
 npm test
-python3 scripts/coverage.py --cohort uncapped
-python3 reviews/assistant-v48/build.py
+python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json
+python3 reviews/assistant-v52/build.py
 python3 reviews/sol61-astra-low/build.py
-python3 scripts/ranking.py reviews/assistant-v48 runs/pilot-v29
-npx tsx src/draft-audit.ts pilot-v29
+python3 scripts/ranking.py reviews/assistant-v52 runs/pilot-v32
+npx tsx src/draft-audit.ts pilot-v32
 ```
 
-The builders regenerate saved reports from committed judgments, verifying hashes and quotations. `draft-audit` writes an audit file and covers primary outputs in the named run only; it does not audit repeat IDs. Use the comparison builder for the fresh Astra repeats. Earlier models' primary outputs remain in earlier run directories, referenced by cumulative grades. Coverage discovers compatible runs across those directories. The last code validation passed TypeScript and all 19 tests.
+The builders regenerate saved reports from committed judgments, verifying hashes and quotations. `draft-audit` writes an audit file and covers primary outputs in the named run only; it does not audit repeat IDs. Use the comparison builder for the fresh Astra repeats. Earlier models' primary outputs remain in earlier run directories, referenced by cumulative grades. Coverage discovers compatible runs across those directories. The last code validation passed TypeScript and all 23 tests.
 
 ## Add a model or repeat a run
 
 1. Read the current code and protocol. Check `git status`; preserve unrelated changes. Verify the exact live Gateway ID, supported reasoning, price, and routing policy from `https://ai-gateway.vercel.sh/v1/models`.
 2. For a model addition, update `data/models.json` and advance both `runName` and protocol `version` in `src/cli.ts` to unused values. Any hashed runner/model change requires a new run directory. Do not edit a frozen `protocol.json` to bypass `PROTOCOL_CHANGED`.
-3. Keep tasks, house instructions and reasoning unchanged for a like-for-like comparison. A task or rubric change requires a separately labeled comparison. `data/proposed-tasks-v3.json` is inactive.
+3. Keep tasks, house instructions and reasoning unchanged for a like-for-like comparison. A task or rubric change requires a separately labeled comparison. The old `data/proposed-tasks-v3.json` readout proposal is inactive; the active `data/tasks-v3.json` changes only vendor authority facts and C05. Do not import v2 vendor outputs into a v3 cohort. The current published ranking is corrected v2, not v3.
 4. Supply `AI_GATEWAY_API_KEY` through the environment, or point `BUSINESS_SLOP_ENV_FILE` at a local dotenv file containing that variable. No credential is committed. On Matthew's machine, the existing credential source is `/Users/deathstar/working/elios/elios-insights/apps/api-elios/.env`. Read only the required key at runtime; never print or copy that file into the benchmark.
 5. Smoke-test one brief in both conditions, inspect the saved exact model identity, input, finish reason, warnings and billing, then complete the panel. For an already registered model, the syntax is:
 
@@ -90,7 +87,7 @@ Freeze the full intended repeat panel before calls, run every planned cell, and 
 8. Use `scripts/scan-review.ts`, then perform full semantic review and save a new version's explicit decisions. Preserve prior cumulative rows exactly unless making a documented correction. Verify paired inputs before claiming comparability.
 9. Rebuild reports and rankings, check evidence links and scope, commit and push the authorized work. Publishing a blog update is separate work in `groffdev`; a benchmark push does not deploy the site.
 
-The main ranking retains the existing ZDR eligibility policy. Explicitly requested non-ZDR models have been run on synthetic briefs and appear in the writing-only table. Do not confuse retention eligibility with writing quality or silently change the policy.
+The user removed retention eligibility on October 13. Every model ranks on writing performance and price; future writer calls do not require ZDR. Preserve historical routing metadata without using it as a writing score.
 
 ## Important next work
 

@@ -1,0 +1,2 @@
+Morgan,  
+I propose a six-week pilot to assess invoice handling, excluding production rollout. The fixed fee is $30,000. The client hopes to reduce handling time by 20%, though no baseline or measured savings exists. Security approval is required before accessing client data. No start date has been approved. I ask that you approve the pilot scope and fee, subject to security clearance, so we can confirm the next schedule step.

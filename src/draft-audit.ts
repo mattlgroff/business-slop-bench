@@ -12,7 +12,7 @@ const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
 const models: Model[] = read(resolve(root, 'data/models.json'));
 const protocol = read(resolve(dir, 'protocol.json'));
 const taskFile = protocol.taskFile ?? 'data/tasks.json';
-if (!['data/tasks.json', 'data/tasks-v2.json'].includes(taskFile)) throw new Error('Unknown frozen task file');
+if (!['data/tasks.json', 'data/tasks-v2.json', 'data/tasks-v3.json'].includes(taskFile)) throw new Error('Unknown frozen task file');
 const tasks: Task[] = read(resolve(root, taskFile));
 const source = readFileSync(resolve(root, 'sources/anti-slop-reviewer.md'), 'utf8');
 const reviewRoot = resolve(root, 'reviews');

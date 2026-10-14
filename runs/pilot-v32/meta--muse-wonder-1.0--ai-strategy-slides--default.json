@@ -1,0 +1,91 @@
+{
+  "id": "meta--muse-wonder-1.0--ai-strategy-slides--default",
+  "model": "meta/muse-wonder-1.0",
+  "protocolHash": "af035555a13946ae6a5cfa1192cb0e2d1c7683b9c6af879592b626620a954486",
+  "status": "ok",
+  "at": "2026-10-14T01:53:11.314Z",
+  "elapsedMs": 4992,
+  "text": "### Slide 1: The Decision\n- COO to select one pilot for next quarter\n- Team can run only one pilot\n- Quarterly pilot budget ceiling: $50,000\n\n### Slide 2: Option A — Internal Knowledge Search\n- Cost: $30,000, within budget ceiling\n- Uses approved internal policy documents\n- IT owner: Dana\n\n### Slide 3: Option B — Automated Customer Credit Decisions\n- Cost: $45,000, within budget ceiling\n- Legal approval is pending\n- Production use is not authorized\n\n### Slide 4: Recommendation — Select Option A\n- Approved, owned, and ready to evaluate\n- Evaluate answer accuracy on 100 reviewed questions\n- Target: at least 90%; no current result exists\n- Dana reports results before any expansion",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 210,
+    "inputTokenDetails": {
+      "noCacheTokens": 210,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 797,
+    "outputTokenDetails": {
+      "textTokens": 233,
+      "reasoningTokens": 564
+    },
+    "totalTokens": 1007
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "openai": {
+      "responseId": "resp_6acee08715ac566e7b7f4dc9",
+      "serviceTier": "auto"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "meta/muse-wonder-1.0",
+        "resolvedProvider": "meta",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: meta. ZDR requested: all 1 attempts support ZDR. Execution order: meta(system)",
+        "canonicalSlug": "meta/muse-wonder-1.0",
+        "finalProvider": "meta",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "meta/muse-wonder-1.0",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "meta",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1791942786461,
+                "endTime": 1791942791297,
+                "providerRequestId": "a2aa7d43-3bad-45db-8523-c21eebfea6ef",
+                "statusCode": 200,
+                "providerResponseId": "resp_6acee08715ac566e7b7f4dc9"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "3655471e2cbef9f3610e66e5247c0ab9",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.01678",
+      "marketCost": "0.01678",
+      "surchargeCost": "0",
+      "gatewayCost": "0.01678",
+      "inferenceCost": "0.01678",
+      "inputInferenceCost": "0.00084",
+      "outputInferenceCost": "0.01594",
+      "enabledZeroDataRetention": true,
+      "generationId": "gen_01M4W1SZA87E3CTDA833X48G74"
+    }
+  },
+  "response": {
+    "id": "aitxt-JttwEYhDizIXHaFjlPS8VP3L",
+    "modelId": "meta/muse-wonder-1.0",
+    "timestamp": "2026-10-14T01:53:11.313Z"
+  },
+  "billing": {
+    "totalCost": 0.01678,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.01678",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

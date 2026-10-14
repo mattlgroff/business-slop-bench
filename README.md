@@ -2,56 +2,53 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 30 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, ran 33 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-The latest addition is [Claude Haiku 5.5](reviews/assistant-v49/HAIKU-COMPARISON.md): 50/54 plain checks and 49/54 with house rules, with 2/8 ready without edits in both conditions. All sixteen low-reasoning drafts cost $0.0106286, with zero em dashes.
+The latest addition, **Muse Wonder 1.0**, is close to Astra with the house rules: 54/54 content checks and 7/8 drafts ready without edits. Astra's original house run was 8/8; both full repeats were 6/8. Muse has one attempt per brief. [Comparison, prices and evidence](reviews/assistant-v52/MUSE-COMPARISON.md).
 
-For another agent taking over: start with [HANDOFF.md](HANDOFF.md), which records the current run, grading rules, commands, credentials setup and unresolved work.
+For another agent taking over: start with [HANDOFF.md](HANDOFF.md).
 
-[Astra versus Haiku, Sonnet, Opus and Fable: performance and price](reviews/assistant-v49/CLAUDE-ASTRA-COMPARISON.md). This five-model table ranks writing performance regardless of ZDR eligibility.
+## October 13 grading correction
+
+The vendor brief did not identify who could sign. Some models lost credit for implying a signatory while similar Astra wording passed. That inference is now retired for all models in the historical v2 panel. Seventeen verdicts change; other factual checks and style findings remain. This is a scoring correction, not new writing or proof that any guessed authority was correct. [Full correction](reviews/assistant-v52/REPORT.md).
+
+Future runs use `data/tasks-v3.json`: Priya coordinates procurement, Alex alone signs, and CFO approval must come first. No model has run that replacement yet. Keep future v3 results separate from this corrected v2 panel.
 
 ## What I found
 
-Full tables with list prices per million tokens, with and without the zero-data-retention filter:
+[All 33 models with prices](reviews/assistant-v52/RANKING.md). Retention policy no longer affects performance ranking. [Every current grade](reviews/assistant-v52/grades.json).
 
-- [Ranking](reviews/assistant-v49/RANKING.md)
-- [Ranking with the zero-data-retention rule switched off](reviews/assistant-v49/RANKING-ignoring-zdr.md)
-- [Every grade with its quoted evidence](reviews/assistant-v49/REPORT.md)
+Selected plain-brief results:
 
-Plain brief, no instructions about style:
+| Rank | Model | Checks (of 54) | Content ready | Ready without edits | Input / output $ per M |
+|---:|---|---:|---:|---:|---:|
+| 1 | GPT-6 Astra | 54 | 8/8 | 4/8 | 10.00 / 50.00 |
+| 5 | Muse Wonder 1.0 | 53 | 7/8 | 3/8 | 4.00 / 20.00 |
+| 6 | GPT-6.1 Sol | 53 | 7/8 | 2/8 | 2.00 / 10.00 |
+| 7 | Claude Opus 5.5 | 53 | 4/8 | 2/8 | 4.00 / 20.00 |
+| 14 | Claude Sonnet 5.5 | 51 | 3/8 | 2/8 | 2.00 / 10.00 |
+| 15 | Gemini 4 Argon | 51 | 5/8 | 1/8 | 2.00 / 10.00 |
+| 17 | Gemini 3.8 Flash | 51 | 5/8 | 0/8 | 0.75 / 3.75 |
+| 19 | Claude Fable 5.1 | 51 | 4/8 | 0/8 | 10.00 / 50.00 |
+| 20 | Claude Haiku 5.5 | 50 | 4/8 | 2/8 | 0.10 / 0.50 |
+| 33 | Nemotron 3.5 Lightning Free | 45 | 1/8 | 1/8 | 0.00 / 0.00 |
 
-| Rank | Model | Checks passed (of 54) | Ready to send as is (of 8) | Input / output $ per M tokens |
-|---:|---|---:|---:|---:|
-| 1 | GPT-6 Astra | 54 | 4 | 10.00 / 50.00 |
-| 3 | GPT-5.6 Terra | 52 | 3 | 2.00 / 12.00 |
-| 4 | Grok 4.7 | 52 | 3 | 2.00 / 6.00 |
-| 5 | Claude Opus 5.5 | 52 | 2 | 4.00 / 20.00 |
-| 9 | GPT-5.6 Luna | 51 | 2 | 0.20 / 1.20 |
-| 13 | Claude Haiku 5.5 | 50 | 2 | 0.10 / 0.50 |
-| 21 | Claude Opus 5 | 49 | 0 | 5.00 / 25.00 |
-| 23 | Mistral Large 4 (provider-default reasoning) | 46 | 0 | 0.68 / 2.09 |
-| 24 | Qwen 3.8 Flash | 46 | 0 | 0.15 / 0.47 |
+Selected house-rule results:
 
-Same brief plus my [Zero Defect](https://github.com/mattlgroff/zero-defect) anti-slop rules:
+| Rank | Model | Checks (of 54) | Content ready | Ready without edits | Input / output $ per M |
+|---:|---|---:|---:|---:|---:|
+| 1 | GPT-6 Astra | 54 | 8/8 | 8/8 | 10.00 / 50.00 |
+| 2 | Muse Wonder 1.0 | 54 | 8/8 | 7/8 | 4.00 / 20.00 |
+| 3 | GPT-6.1 Sol | 54 | 7/8 | 4/8 | 2.00 / 10.00 |
+| 12 | Claude Opus 5.5 | 52 | 3/8 | 3/8 | 4.00 / 20.00 |
+| 14 | Gemini 4 Argon | 51 | 5/8 | 4/8 | 2.00 / 10.00 |
+| 15 | Gemini 3.8 Flash | 51 | 5/8 | 3/8 | 0.75 / 3.75 |
+| 18 | Claude Fable 5.1 | 51 | 3/8 | 3/8 | 10.00 / 50.00 |
+| 20 | Claude Sonnet 5.5 | 51 | 4/8 | 2/8 | 2.00 / 10.00 |
+| 27 | Claude Haiku 5.5 | 49 | 2/8 | 2/8 | 0.10 / 0.50 |
+| 31 | Nemotron 3.5 Lightning Free | 46 | 4/8 | 2/8 | 0.00 / 0.00 |
 
-| Rank | Model | Checks passed (of 54) | Ready to send as is (of 8) | Input / output $ per M tokens |
-|---:|---|---:|---:|---:|
-| 1 | GPT-6 Astra | 54 | 8 | 10.00 / 50.00 |
-| 3 | GPT-5.6 Sol | 53 | 4 | 4.00 / 20.00 |
-| 4 | GPT-5.6 Luna | 52 | 4 | 0.20 / 1.20 |
-| 9 | Claude Opus 5.5 | 51 | 3 | 4.00 / 20.00 |
-| 16 | Claude Opus 5 | 49 | 3 | 5.00 / 25.00 |
-| 18 | Claude Haiku 5.5 | 49 | 2 | 0.10 / 0.50 |
-| 21 | Mistral Large 4 (provider-default reasoning) | 48 | 1 | 0.68 / 2.09 |
-| 24 | Qwen 3.8 Flash | 41 | 0 | 0.15 / 0.47 |
-
-Three things stood out.
-
-1. **The best model is very good and expensive.** GPT-6 Astra passed every check in both conditions, and every one of its house-rule drafts could be sent as is. A full repeat run passed every check again. GPT-5.6 Luna gets close for about forty times less per output token.
-2. **Style rules fix the surface, not the substance.** Telling a model what slop sounds like removed every em dash and every editorial finding for almost every model. It did not stop the invented commitments. Across the Anthropic models, 28 of 29 failures were a claim the source never made: "the team is executing well", "confirm by Friday", "ready to launch immediately", "no legal blockers".
-3. **Same price, very different output.** Claude Fable 5.1 costs what Astra costs and invented a prior discussion, a Friday deadline and a ready team on briefs where Astra invented nothing.
-
-Six models with no zero-data-retention route on the Gateway (Muse Spark 1.3, GPT-6 Sol, GPT-6 Luna, Claude Fable 5 and 5.1, and Pixel Canary) are marked disqualified in the main ranking, because that is a business requirement for me. The second ranking file compares their writing with everyone else. Pixel Canary was explicitly tested on synthetic briefs: 48/54 plain checks and 49/54 with house rules, with 1/8 and 2/8 ready without edits. All sixteen Gateway responses reported $0 charged.
+Muse's house run cost $0.206844 versus Astra's $0.358140. Its remaining edit is a repeated summary bullet. With plain prompts, Muse still invented pilot approval, so the house-rule result should not be read as an unqualified reliability claim. These are unblinded assistant judgments on eight short briefs.
 
 ## How it works
 
@@ -77,11 +74,11 @@ Everything in the tables reads saved files and makes no API calls:
 ```sh
 npm ci
 npm test
-python3 scripts/ranking.py reviews/assistant-v48 runs/pilot-v30
-python3 reviews/assistant-v48/build.py
+python3 scripts/ranking.py reviews/assistant-v52 runs/pilot-v32
+python3 reviews/assistant-v52/build.py
 ```
 
-Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:
+New collections use v3 tasks and do not extend the v2 leaderboard. Collecting new drafts needs a Vercel AI Gateway key in `AI_GATEWAY_API_KEY`:
 
 ```sh
 npm run bench -- collect openai/gpt-6-astra
