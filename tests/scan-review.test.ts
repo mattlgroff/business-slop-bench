@@ -10,6 +10,7 @@ test('saved review scans preserve phrase and rhetorical candidates with exact an
   const directory = mkdtempSync(join(tmpdir(), 'businessslop-scan-'));
   const text = 'A load-bearing wall.\nUse facts rather than assumptions.';
   try {
+    writeFileSync(join(directory, 'protocol.json'), JSON.stringify({ taskFile: 'data/tasks-v3.json' }));
     writeFileSync(join(directory, 'test--writer--pilot-client-email--default.json'),
       JSON.stringify({ status: 'ok', text, finishReason: 'stop' }));
     execFileSync(process.execPath, ['--import', 'tsx',

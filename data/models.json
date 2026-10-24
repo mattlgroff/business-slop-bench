@@ -130,5 +130,9 @@
   {
     "id": "meta/muse-wonder-1.0",
     "reasoning": "low"
+  },
+  {
+    "id": "moonshotai/kimi-k3.1-pro",
+    "reasoning": "low"
   }
 ]

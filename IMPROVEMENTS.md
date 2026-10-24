@@ -552,3 +552,14 @@ The user challenged a signatory inference charged to Muse but passed for similar
 The active v3 task replaces only the vendor owner fact and C05: Priya coordinates procurement, Alex alone signs, CFO approval precedes signing and cannot delegate it. The future collector uses pilot-v33. No model has been tested on v3, and v2 results cannot stand in for that test. Nine authored boundary examples clarify expected decisions without claiming judge calibration. Coverage accepts an explicit task version and draft audits accept frozen v3 inputs.
 
 The user also removed retention eligibility. All 33 models now rank on writing performance and price; frozen routing metadata remains untouched. See [correction](reviews/assistant-v52/REPORT.md) and [comparison](reviews/assistant-v52/MUSE-COMPARISON.md). TypeScript and 23 tests passed after the scoring correction; final validation includes the version-aware audit tools.
+
+
+## October 24: Kimi K3.1 Pro, first v3 panel
+
+Added the exact live Gateway ID `moonshotai/kimi-k3.1-pro`, low reasoning, under pilot-v34 / protocol 0.34.0. All sixteen calls completed normally on the first provider attempt with no harness output-token cap or deadline. The provider warned that temperature is fixed; the saved writer inputs request low reasoning and contain no temperature setting. Report this limitation without claiming identical sampling across providers. Recorded charges total $0.1859896; list rates are $2 input and $10 output per million tokens.
+
+Assistant-v53 reads every draft against v3: 54/54 checks and 8/8 content-ready in both conditions; 2/8 ready without edits in each. Both vendor memos correctly identify Priya, Alex and the CFO. House rules remove all eleven plain-condition em dashes, but six house drafts still contain repeated summaries. The discovery proposal and change order are the clean drafts in both conditions.
+
+Historical v2 scores stay untouched. A seven-brief comparison excludes the changed vendor memo for every model and verifies exact saved writer inputs for Astra, Muse Wonder, Sol 6.1, Kimi K3 and Kimi K3.1 Pro. Kimi 3.1 passes 48/48 common checks in both conditions versus Kimi K3's 45/48, while house ready-without-edits remains 2/7 versus Astra 7/7 and Muse 6/7. No global v2/v3 rank is assigned.
+
+Review scans now read each frozen protocol's task file. The scanner fixture includes its protocol, and coverage tests check cohort separation without assuming v3 will remain empty forever. TypeScript and all 23 tests pass. No blog update was requested or made.

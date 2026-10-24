@@ -2,9 +2,11 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, ran 33 models through it, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, tested 34 models across versioned briefs, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
 
-The latest addition, **Muse Wonder 1.0**, is close to Astra with the house rules: 54/54 content checks and 7/8 drafts ready without edits. Astra's original house run was 8/8; both full repeats were 6/8. Muse has one attempt per brief. [Comparison, prices and evidence](reviews/assistant-v52/MUSE-COMPARISON.md).
+**October 24: [Kimi K3.1 Pro](reviews/assistant-v53/REPORT.md)** completed the first v3 panel: 54/54 checks and 8/8 content-ready drafts in both conditions, but only 2/8 ready without edits in each. All sixteen calls cost $0.1859896. It handles the explicit signing roles correctly; repetition remains its main writing defect. The report compares the seven unchanged briefs with Astra, Muse, Sol and Kimi K3. Full v3 totals are separate from the historical v2 ranking below.
+
+In the historical v2 panel, **Muse Wonder 1.0**, is close to Astra with the house rules: 54/54 content checks and 7/8 drafts ready without edits. Astra's original house run was 8/8; both full repeats were 6/8. Muse has one attempt per brief. [Comparison, prices and evidence](reviews/assistant-v52/MUSE-COMPARISON.md).
 
 For another agent taking over: start with [HANDOFF.md](HANDOFF.md).
 
@@ -12,7 +14,7 @@ For another agent taking over: start with [HANDOFF.md](HANDOFF.md).
 
 The vendor brief did not identify who could sign. Some models lost credit for implying a signatory while similar Astra wording passed. That inference is now retired for all models in the historical v2 panel. Seventeen verdicts change; other factual checks and style findings remain. This is a scoring correction, not new writing or proof that any guessed authority was correct. [Full correction](reviews/assistant-v52/REPORT.md).
 
-Future runs use `data/tasks-v3.json`: Priya coordinates procurement, Alex alone signs, and CFO approval must come first. No model has run that replacement yet. Keep future v3 results separate from this corrected v2 panel.
+Future runs use `data/tasks-v3.json`: Priya coordinates procurement, Alex alone signs, and CFO approval must come first. Kimi K3.1 Pro is the first model tested on that replacement. Keep future v3 results separate from this corrected v2 panel.
 
 ## What I found
 

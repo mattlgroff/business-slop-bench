@@ -1,0 +1,102 @@
+{
+  "id": "moonshotai--kimi-k3.1-pro--pilot-client-email--default",
+  "model": "moonshotai/kimi-k3.1-pro",
+  "protocolHash": "22a1a4181be461b88f68b3592c80e47cb378afa49b1caf20fea5e4ef49b74bc5",
+  "status": "ok",
+  "at": "2026-10-24T23:11:50.090Z",
+  "elapsedMs": 13200,
+  "text": "Subject: Decision requested: six-week invoice-handling pilot\n\nHi Morgan,\n\nI’m seeking your approval for a six-week pilot to assess invoice handling, at a fixed fee of $30,000, subject to security clearance.\n\nThe pilot offers a focused way to examine the opportunity behind your goal of 20% shorter handling time without committing to a production rollout, which is explicitly excluded. As there is currently no baseline or measured savings, the pilot provides a practical assessment rather than assuming benefits in advance.\n\nSecurity approval will be required before any access to client data. No start date has been approved; following your decision on scope and fee, we can align on security clearance and scheduling.\n\nCould you please approve the pilot scope and $30,000 fixed fee, subject to security clearance? Your decision will allow us to move into planning while keeping production rollout outside this commitment.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 268,
+    "inputTokenDetails": {
+      "noCacheTokens": 12,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 256
+    },
+    "outputTokens": 743,
+    "outputTokenDetails": {
+      "textTokens": 196,
+      "reasoningTokens": 547
+    },
+    "totalTokens": 1011
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "temperature",
+      "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+    }
+  ],
+  "providerMetadata": {
+    "moonshotai": {
+      "cacheWriteTokens": {
+        "ttl5m": 256,
+        "ttl1h": 0
+      },
+      "responseObject": "chat.completion",
+      "choiceIndex": 0,
+      "messageRole": "assistant"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3.1-pro",
+        "resolvedProvider": "moonshotai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: moonshotai. Total execution order: moonshotai(system)",
+        "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+        "finalProvider": "moonshotai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "moonshotai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1792883497350,
+                "endTime": 1792883510049,
+                "providerRequestId": "43d976ce-d000-11f1-87af-de4dd40143f3",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-6add3b2a1dce9df2e6b5a428"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "d1f92735f19577d2b7aa925fe6be8561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.007966",
+      "marketCost": "0.007966",
+      "surchargeCost": "0",
+      "gatewayCost": "0.007966",
+      "inferenceCost": "0.007966",
+      "inputInferenceCost": "0.000536",
+      "outputInferenceCost": "0.00743",
+      "generationId": "gen_01M5R2Y5YWHVDSKRHHX6M8X484"
+    }
+  },
+  "response": {
+    "id": "aitxt-5fKOqrov8oWncOrD87OdoXlL",
+    "modelId": "moonshotai/kimi-k3.1-pro",
+    "timestamp": "2026-10-24T23:11:50.088Z"
+  },
+  "billing": {
+    "totalCost": 0.007966,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.007966",
+    "surchargeCost": "0"
+  },
+  "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

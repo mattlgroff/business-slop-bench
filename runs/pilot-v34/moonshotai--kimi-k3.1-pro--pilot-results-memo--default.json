@@ -1,0 +1,102 @@
+{
+  "id": "moonshotai--kimi-k3.1-pro--pilot-results-memo--default",
+  "model": "moonshotai/kimi-k3.1-pro",
+  "protocolHash": "22a1a4181be461b88f68b3592c80e47cb378afa49b1caf20fea5e4ef49b74bc5",
+  "status": "ok",
+  "at": "2026-10-24T23:13:27.573Z",
+  "elapsedMs": 14238,
+  "text": "# Executive Readout: Do Not Scale the Pilot Now\n\n## Recommendation\n**Do not authorize scaling.** The pilot provides a preliminary handling-time signal, but it does not meet the required quality threshold or establish cash savings.\n\n## What the Results Support\n- **Observed speed improvement:** Mean handling time was 12 minutes across 100 pilot tickets, versus 15 minutes across 200 baseline tickets—an observed reduction of 3 minutes, or 20%.\n- **No causal conclusion yet:** Ticket mix differed and allocation was not randomized. The results therefore do not establish that the pilot approach caused the improvement or that it will generalize at scale.\n- **Quality is below the scaling gate:** The quality pass rate fell from 94% at baseline to 89% in the pilot. This is 5 percentage points lower and 3 points below the required minimum of 92%.\n- **No demonstrated financial case:** No staffing reductions or cash savings have been measured.\n\nOverall, the evidence supports further evaluation—not a scale-up. Scaling now would proceed despite confounded handling-time results, sub-threshold quality, and unquantified economic benefit.\n\n## Next Decision\nThe **COO should decide whether to authorize Sam’s matched-ticket follow-up. We recommend authorizing it.** The follow-up should provide a better basis for reassessing handling-time performance using matched tickets. Scaling should remain on hold pending that reassessment, with quality measured against the at-least-92% threshold and the absence of measured staffing or cash savings addressed before the next scale decision.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 259,
+    "inputTokenDetails": {
+      "noCacheTokens": 3,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 256
+    },
+    "outputTokens": 785,
+    "outputTokenDetails": {
+      "textTokens": 328,
+      "reasoningTokens": 457
+    },
+    "totalTokens": 1044
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "temperature",
+      "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+    }
+  ],
+  "providerMetadata": {
+    "moonshotai": {
+      "cacheWriteTokens": {
+        "ttl5m": 256,
+        "ttl1h": 0
+      },
+      "responseObject": "chat.completion",
+      "choiceIndex": 0,
+      "messageRole": "assistant"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3.1-pro",
+        "resolvedProvider": "moonshotai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: moonshotai. Total execution order: moonshotai(system)",
+        "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+        "finalProvider": "moonshotai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "moonshotai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1792883593433,
+                "endTime": 1792883607551,
+                "providerRequestId": "7ceb6268-d000-11f1-87af-de4dd40143f3",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-6add3b8a34d3d662425c0997"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.008368",
+      "marketCost": "0.008368",
+      "surchargeCost": "0",
+      "gatewayCost": "0.008368",
+      "inferenceCost": "0.008368",
+      "inputInferenceCost": "0.000518",
+      "outputInferenceCost": "0.00785",
+      "generationId": "gen_01M5R3144PGMC00CX9D2Z9BWDD"
+    }
+  },
+  "response": {
+    "id": "aitxt-A6M95JYuBQEhdrsL3581m7ox",
+    "modelId": "moonshotai/kimi-k3.1-pro",
+    "timestamp": "2026-10-24T23:13:27.572Z"
+  },
+  "billing": {
+    "totalCost": 0.008368,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.008368",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

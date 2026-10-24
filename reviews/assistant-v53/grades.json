@@ -1,0 +1,1475 @@
+{
+  "method": {
+    "status": "Provisional, unblinded assistant judgments, without independent human gold",
+    "taskFile": "data/tasks-v3.json",
+    "run": "pilot-v34",
+    "configuration": "Low reasoning requested; provider reports fixed temperature. No harness output cap or generation deadline. One attempt per cell.",
+    "comparison": "Full v3 totals are separate from historical v2. Only the unchanged seven briefs are compared directly."
+  },
+  "rows": [
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--pilot-client-email--default.md",
+      "outputSha256": "ae515ccca086dcf9b1b6573a95688e8146411fba013b8192b992852c7f0eefcb",
+      "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 146,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the approval/planning next step and rollout exclusion already established above; the request can end before this recap.",
+          "evidence": {
+            "quote": "Your decision will allow us to move into planning while keeping production rollout outside this commitment.",
+            "offset": 817,
+            "line": 11
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.007966,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--pilot-client-email--house.md",
+      "outputSha256": "94d70f719ba827d07d3edf515bc9fc747cc83bbbba55ae312c6e200c57e650c7",
+      "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 140,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the immediately preceding approval request, clearance and scheduling sequence, and earlier production exclusion.",
+          "evidence": {
+            "quote": "Could you reply with your decision? Your approval will allow us to proceed with clearance and scheduling without committing you to production rollout.",
+            "offset": 702,
+            "line": 9
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0145172,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--launch-delay-email--default.md",
+      "outputSha256": "e3992be05844711fadb353e292490e797c97cfea5b329f2e9b30d854aba5f423",
+      "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 135,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the opening security prerequisite and absence of an authorized production date.",
+          "evidence": {
+            "quote": "We will continue to treat release approval as essential and will not assume a new production date while the review outcome remains uncertain.",
+            "offset": 574,
+            "line": 9
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.008884,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--launch-delay-email--house.md",
+      "outputSha256": "bd642f152139ada71e4fdb4a0dded843905d450d03248c0d120dd415120b7747",
+      "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 100,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the release prerequisite already explained in the opening paragraph. The requested confidence statement itself is allowed.",
+          "evidence": {
+            "quote": "We will keep the production release dependent on completed security approval.",
+            "offset": 521,
+            "line": 9
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.012356,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--vendor-decision-memo--default.md",
+      "outputSha256": "57a07525b4eed84e1cbd523a444b12fc04002a1ad8d2293cdaa8ca72b5a5fc0f",
+      "writerInputHash": "6a941ce98d1e3c8a9fccc4391be2dd581d7efa01155bdeca68b9e039439bd2dc",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Explicitly communicates that Priya coordinates procurement, Alex is the sole authorized contract signatory, and CFO approval must precede Alex signing. Does not assign signing authority to Priya, the CFO, or another person, or treat approval as a delegation of authority.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 202,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the opening selection and immediately preceding eligibility analysis before the useful authority instructions.",
+          "evidence": {
+            "quote": "Approve Alpha\u2019s **$92,000 year-one cost** and proceed with contracting. Do not select Beta for year one because it fails the mandatory SSO constraint.",
+            "offset": 860,
+            "line": 23
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.006904,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--vendor-decision-memo--house.md",
+      "outputSha256": "f72932183bfdb6c3d35bf6783aa69b248c920d4725b57898a2ae1eb0df572b1b",
+      "writerInputHash": "9a8afcf2c7451ac89990e8e1eaf718c29db927035d3e6484702f23ac9444566c",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Explicitly communicates that Priya coordinates procurement, Alex is the sole authorized contract signatory, and CFO approval must precede Alex signing. Does not assign signing authority to Priya, the CFO, or another person, or treat approval as a delegation of authority.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 190,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Recaps the opening recommendation and the preceding vendor comparison without adding a condition or decision.",
+          "evidence": {
+            "quote": "For year one, Alpha is the only vendor that satisfies the budget ceiling and has the required SSO available. Reject Beta for this purchase.",
+            "offset": 814,
+            "line": 10
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0152252,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--pilot-results-memo--default.md",
+      "outputSha256": "c197131bc5743d3bd21ef9dc1d1fd86ede04bc804f598df5a20f4914a802ada9",
+      "writerInputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 234,
+      "maxWords": 300,
+      "emDashes": [
+        {
+          "offset": 399,
+          "line": 7
+        },
+        {
+          "offset": 993,
+          "line": 12
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the opening recommendation and all three limitations already explained in the bullets.",
+          "evidence": {
+            "quote": "Overall, the evidence supports further evaluation\u2014not a scale-up. Scaling now would proceed despite confounded handling-time results, sub-threshold quality, and unquantified economic benefit.",
+            "offset": 944,
+            "line": 12
+          }
+        },
+        {
+          "category": "14",
+          "reason": "All four evidence bullets have bold mini-headings that restate their sentence subjects.",
+          "evidence": {
+            "quote": "**Observed speed improvement:**",
+            "offset": 262,
+            "line": 7
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.008368,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--pilot-results-memo--house.md",
+      "outputSha256": "3a4b87d12874023ec4525871f551163f45d7a3bd907a9a7a0647e872ff7b1d16",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 219,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Restates the opening recommendation and prior evidence immediately before another next-decision section.",
+          "evidence": {
+            "quote": "The evidence supports further evaluation through the proposed follow-up. It does not support scaling now, given the quality threshold miss and the limits on interpreting the handling-time result.",
+            "offset": 870,
+            "line": 12
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.01357,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--discovery-proposal--default.md",
+      "outputSha256": "765a667565d4df5d87bb0268902912c063586c41c8ccd34823ac3193453f4c5e",
+      "writerInputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 130,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.004724,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--discovery-proposal--house.md",
+      "outputSha256": "b74c2aa3bf78435612deca8b4590f7e885d0b66051f956e63b4075f604f0f4bd",
+      "writerInputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 166,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.012766,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "change-order",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--change-order--default.md",
+      "outputSha256": "bac815ce19b7c9183e9ebfa21e072d30de066129471e19515b5b82d8408901ba",
+      "writerInputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 173,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.005948,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "change-order",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--change-order--house.md",
+      "outputSha256": "e8640ed9433f5867dedde19f956a96e500d7d1f5686b17e47a4d6bbad5dd1488",
+      "writerInputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 165,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.01236,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--ai-strategy-slides--default.md",
+      "outputSha256": "d6214f22b22e6aa3e938d2f712b3fa845ab70d941b5d56a7e524699b170286bd",
+      "writerInputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 189,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 11,
+          "line": 1
+        },
+        {
+          "offset": 334,
+          "line": 6
+        },
+        {
+          "offset": 628,
+          "line": 12
+        },
+        {
+          "offset": 686,
+          "line": 13
+        },
+        {
+          "offset": 889,
+          "line": 18
+        }
+      ],
+      "negativeParallelismFindings": [
+        {
+          "quote": "Includes a defined success measure rather than an open-ended experiment.",
+          "offset": 475,
+          "line": 9,
+          "reason": "Adds an open-ended-experiment foil not needed to state the defined success measure. The following slide already gives the actual metric."
+        }
+      ],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.00681,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--ai-strategy-slides--house.md",
+      "outputSha256": "00b015a5552a8a972ef8b54915c84e011431333ca3e9c4a5d62f709445815073",
+      "writerInputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 189,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the immediately preceding capacity consequence and the recommended allocation already stated on slide 1.",
+          "evidence": {
+            "quote": "Deferral leaves the slot available for knowledge search.",
+            "offset": 536,
+            "line": 10
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.0272312,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "handoff-slides",
+      "condition": "default",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--handoff-slides--default.md",
+      "outputSha256": "a6f2b8f48752dd0d549d66ac791c858addc8bda4edb9c01e96d1becfc94164bf",
+      "writerInputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 190,
+      "maxWords": 350,
+      "emDashes": [
+        {
+          "offset": 12,
+          "line": 1
+        },
+        {
+          "offset": 265,
+          "line": 6
+        },
+        {
+          "offset": 508,
+          "line": 11
+        },
+        {
+          "offset": 833,
+          "line": 17
+        }
+      ],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": false,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.009164,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v34/moonshotai--kimi-k3.1-pro--handoff-slides--house.md",
+      "outputSha256": "5fb8976c95cb82938f9282a4a7f4bdb2d7cde078fce0317e0c82c621c3bf885e",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "gradeOrigin": "assistant-v53 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 225,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "This fourth bullet restates the ownership gap and incident-transfer condition already given in the preceding bullets.",
+          "evidence": {
+            "quote": "The remaining acceptance activity has no accepted organizer, and incident ownership cannot transfer to Jo before acceptance.",
+            "offset": 535,
+            "line": 10
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.019196,
+      "warnings": [
+        {
+          "type": "unsupported",
+          "feature": "temperature",
+          "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+        }
+      ],
+      "benchEligible": true
+    }
+  ],
+  "ungraded": []
+}

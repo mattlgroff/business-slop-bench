@@ -1,6 +1,8 @@
 # BusinessSlopBench owner handoff
 
-Updated October 13, 2026. Latest review: [assistant-v52](reviews/assistant-v52/REPORT.md), correcting the ambiguous vendor signatory inference across the 33-model v2 panel. Latest generations: Argon in pilot-v31; Nemotron and Muse Wonder in pilot-v32. Future collector: unused pilot-v33 / protocol 0.33.0, explicit-authority v3 tasks. No v3 model runs exist.
+Updated October 24, 2026. Latest run: [Kimi K3.1 Pro on v3](reviews/assistant-v53/REPORT.md), sixteen drafts under pilot-v34 / protocol 0.34.0, low reasoning requested. Provider reports fixed temperature. Scores: 54/54 checks, 8/8 content-ready and 2/8 ready without edits in both conditions; $0.1859896 total. There are 34 registered models, 528 historical v2 primary drafts and 16 v3 primary drafts, plus 56 separate repeats. Never pool the two full-panel cohorts.
+
+The corrected historical v2 ranking remains [assistant-v52](reviews/assistant-v52/RANKING.md). Assistant-v53 is a separate v3 report with a directly comparable seven-brief subset; it does not replace v52 with a fabricated cross-version rank.
 
 ## Purpose
 
@@ -19,7 +21,7 @@ Compare single-call business writing: factual grounding, unsupported commitments
 
 ## Current state
 
-The CLI uses unused `pilot-v33`, protocol version `0.33.0`, AI SDK `7.0.109`, `data/tasks-v3.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
+The CLI uses frozen `pilot-v34`, protocol version `0.34.0`, AI SDK `7.0.109`, `data/tasks-v3.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
 
 | Model / attempt | Condition | Checks | Content ready | Ready without edits |
 |---|---|---:|---:|---:|
@@ -30,7 +32,7 @@ The CLI uses unused `pilot-v33`, protocol version `0.33.0`, AI SDK `7.0.109`, `d
 
 Muse ranks second in the corrected primary house table; Sol is third. The table above retains the original separate repeat study. The primary Astra house result remains 8/8 ready without edits; both full-panel repeats returned 6/8. Do not mix attempts or select the best draft from each. Sol's sixteen drafts cost $0.094556; the fresh Astra sixteen cost $0.471230. These are Gateway-reported charges, distinct from the conservative budget ledger.
 
-The ledger is `runs/budget.json`, with a $100 ceiling and approximately $34.8375 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 528 primary drafts.
+The ledger is `runs/budget.json`, with a $100 ceiling and approximately $35.0249 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 528 primary drafts.
 
 ## Grading contract
 
@@ -53,13 +55,13 @@ npm ci
 npm run check
 npm test
 python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json
-python3 reviews/assistant-v52/build.py
+python3 reviews/assistant-v53/build.py
 python3 reviews/sol61-astra-low/build.py
 python3 scripts/ranking.py reviews/assistant-v52 runs/pilot-v32
-npx tsx src/draft-audit.ts pilot-v32
+npx tsx src/draft-audit.ts pilot-v34
 ```
 
-The builders regenerate saved reports from committed judgments, verifying hashes and quotations. `draft-audit` writes an audit file and covers primary outputs in the named run only; it does not audit repeat IDs. Use the comparison builder for the fresh Astra repeats. Earlier models' primary outputs remain in earlier run directories, referenced by cumulative grades. Coverage discovers compatible runs across those directories. The last code validation passed TypeScript and all 23 tests.
+The builders regenerate saved reports from committed judgments, verifying hashes and quotations. `draft-audit` writes an audit file and covers primary outputs in the named run only; it does not audit repeat IDs. Use the comparison builder for the fresh Astra repeats. `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v3.json` reports the separate v3 coverage. Scans now read the run's frozen task file. Earlier models' primary outputs remain in earlier run directories, referenced by cumulative grades. Coverage discovers compatible runs across those directories. The last code validation passed TypeScript and all 23 tests.
 
 ## Add a model or repeat a run
 

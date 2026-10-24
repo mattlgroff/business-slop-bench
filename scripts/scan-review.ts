@@ -6,7 +6,8 @@ import { scan, type Task } from '../src/core.js';
 const root = resolve(new URL('..', import.meta.url).pathname);
 const [reviewDir, runDir, ...modelIds] = process.argv.slice(2);
 if (!reviewDir || !runDir || !modelIds.length) throw new Error('usage: scan-review.ts <reviewDir> <runDir> <modelId>...');
-const tasks: Task[] = JSON.parse(readFileSync(resolve(root, 'data/tasks-v2.json'), 'utf8'));
+const protocol = JSON.parse(readFileSync(resolve(root, runDir, 'protocol.json'), 'utf8'));
+const tasks: Task[] = JSON.parse(readFileSync(resolve(root, protocol.taskFile ?? 'data/tasks.json'), 'utf8'));
 const rows = [];
 for (const modelId of modelIds) for (const task of tasks) for (const condition of ['default', 'house']) {
   const stem = `${modelId.replaceAll('/', '--')}--${task.id}--${condition}`;

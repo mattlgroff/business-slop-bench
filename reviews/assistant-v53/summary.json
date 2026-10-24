@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Kimi K3.1 Pro",
+    "condition": "default",
+    "completed": 8,
+    "pass": 54,
+    "fail": 0,
+    "review": 0,
+    "total": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.058768
+  },
+  {
+    "model": "Kimi K3.1 Pro",
+    "condition": "house",
+    "completed": 8,
+    "pass": 54,
+    "fail": 0,
+    "review": 0,
+    "total": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.1272216
+  }
+]

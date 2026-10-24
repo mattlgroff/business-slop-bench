@@ -1,0 +1,206 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Your decision will allow us to move into planning while keeping production rollout outside this commitment.",
+        "Repeats the approval/planning next step and rollout exclusion already established above; the request can end before this recap."
+      ]
+    ],
+    "outputSha256": "ae515ccca086dcf9b1b6573a95688e8146411fba013b8192b992852c7f0eefcb",
+    "adjudicationNotes": [
+      "The rather-than wording distinguishes an unmeasured target from a guaranteed result, a necessary factual boundary allowed by the lens."
+    ]
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Could you reply with your decision? Your approval will allow us to proceed with clearance and scheduling without committing you to production rollout.",
+        "Repeats the immediately preceding approval request, clearance and scheduling sequence, and earlier production exclusion."
+      ]
+    ],
+    "outputSha256": "94d70f719ba827d07d3edf515bc9fc747cc83bbbba55ae312c6e200c57e650c7",
+    "adjudicationNotes": [
+      "The rather-than wording distinguishes an unmeasured target from a guaranteed result, a necessary factual boundary allowed by the lens."
+    ]
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "We will continue to treat release approval as essential and will not assume a new production date while the review outcome remains uncertain.",
+        "Repeats the opening security prerequisite and absence of an authorized production date."
+      ]
+    ],
+    "outputSha256": "e3992be05844711fadb353e292490e797c97cfea5b329f2e9b30d854aba5f423"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "We will keep the production release dependent on completed security approval.",
+        "Repeats the release prerequisite already explained in the opening paragraph. The requested confidence statement itself is allowed."
+      ]
+    ],
+    "outputSha256": "bd642f152139ada71e4fdb4a0dded843905d450d03248c0d120dd415120b7747"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Approve Alpha\u2019s **$92,000 year-one cost** and proceed with contracting. Do not select Beta for year one because it fails the mandatory SSO constraint.",
+        "Repeats the opening selection and immediately preceding eligibility analysis before the useful authority instructions."
+      ]
+    ],
+    "outputSha256": "57a07525b4eed84e1cbd523a444b12fc04002a1ad8d2293cdaa8ca72b5a5fc0f"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "For year one, Alpha is the only vendor that satisfies the budget ceiling and has the required SSO available. Reject Beta for this purchase.",
+        "Recaps the opening recommendation and the preceding vendor comparison without adding a condition or decision."
+      ]
+    ],
+    "outputSha256": "f72932183bfdb6c3d35bf6783aa69b248c920d4725b57898a2ae1eb0df572b1b"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Overall, the evidence supports further evaluation\u2014not a scale-up. Scaling now would proceed despite confounded handling-time results, sub-threshold quality, and unquantified economic benefit.",
+        "Repeats the opening recommendation and all three limitations already explained in the bullets."
+      ],
+      [
+        "14",
+        "**Observed speed improvement:**",
+        "All four evidence bullets have bold mini-headings that restate their sentence subjects."
+      ]
+    ],
+    "outputSha256": "c197131bc5743d3bd21ef9dc1d1fd86ede04bc804f598df5a20f4914a802ada9"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The evidence supports further evaluation through the proposed follow-up. It does not support scaling now, given the quality threshold miss and the limits on interpreting the handling-time result.",
+        "Restates the opening recommendation and prior evidence immediately before another next-decision section."
+      ]
+    ],
+    "outputSha256": "3a4b87d12874023ec4525871f551163f45d7a3bd907a9a7a0647e872ff7b1d16"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "outputSha256": "765a667565d4df5d87bb0268902912c063586c41c8ccd34823ac3193453f4c5e",
+    "adjudicationNotes": [
+      "Commercial labels, acceptance terms and intentional sponsor signature/decision fields are functional document structure, not assistant residue."
+    ]
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "outputSha256": "b74c2aa3bf78435612deca8b4590f7e885d0b66051f956e63b4075f604f0f4bd",
+    "adjudicationNotes": [
+      "Commercial labels, acceptance terms and intentional sponsor signature/decision fields are functional document structure, not assistant residue."
+    ]
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "outputSha256": "bac815ce19b7c9183e9ebfa21e072d30de066129471e19515b5b82d8408901ba",
+    "adjudicationNotes": [
+      "Commercial labels, acceptance terms and intentional sponsor signature/decision fields are functional document structure, not assistant residue."
+    ]
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "outputSha256": "e8640ed9433f5867dedde19f956a96e500d7d1f5686b17e47a4d6bbad5dd1488",
+    "adjudicationNotes": [
+      "Commercial labels, acceptance terms and intentional sponsor signature/decision fields are functional document structure, not assistant residue."
+    ]
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "negative": [
+      [
+        "Includes a defined success measure rather than an open-ended experiment.",
+        "Adds an open-ended-experiment foil not needed to state the defined success measure. The following slide already gives the actual metric."
+      ]
+    ],
+    "outputSha256": "d6214f22b22e6aa3e938d2f712b3fa845ab70d941b5d56a7e524699b170286bd"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Deferral leaves the slot available for knowledge search.",
+        "Repeats the immediately preceding capacity consequence and the recommended allocation already stated on slide 1."
+      ]
+    ],
+    "outputSha256": "00b015a5552a8a972ef8b54915c84e011431333ca3e9c4a5d62f709445815073"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "outputSha256": "a6f2b8f48752dd0d549d66ac791c858addc8bda4edb9c01e96d1becfc94164bf",
+    "adjudicationNotes": [
+      "The successful rehearsal is a required action and acceptance condition, not a claim that it has occurred or that success is guaranteed."
+    ]
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "The remaining acceptance activity has no accepted organizer, and incident ownership cannot transfer to Jo before acceptance.",
+        "This fourth bullet restates the ownership gap and incident-transfer condition already given in the preceding bullets."
+      ]
+    ],
+    "outputSha256": "5fb8976c95cb82938f9282a4a7f4bdb2d7cde078fce0317e0c82c621c3bf885e"
+  }
+]

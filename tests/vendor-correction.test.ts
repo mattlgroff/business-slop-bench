@@ -48,11 +48,20 @@ test('v3 exposes explicit signing facts to both writer conditions and changes on
 });
 
 
-test('coverage never credits the old panel as replacement-authority runs', () => {
-  const coverage = (file: string) => JSON.parse(execFileSync('python3', ['scripts/coverage.py', '--cohort', 'uncapped', '--task-file', file], { encoding: 'utf8' }));
-  const legacy = coverage('data/tasks-v2.json');
-  const replacement = coverage('data/tasks-v3.json');
-  assert.equal(legacy.models.reduce((n: number, m: any) => n + m.generated, 0), 528);
-  assert.equal(replacement.models.reduce((n: number, m: any) => n + m.generated, 0), 0);
-  assert.equal(replacement.models.reduce((n: number, m: any) => n + m.unattempted, 0), 528);
+test('coverage keeps legacy and replacement-authority run cohorts separate', () => {
+  const result = JSON.parse(execFileSync('python3', ['-c', `
+import hashlib,json,sys
+from pathlib import Path
+sys.path.insert(0,'scripts')
+from coverage import matching_runs
+result={}
+for version in ['v2','v3']:
+ tasks=json.loads(Path('data/tasks-'+version+'.json').read_text())
+ digest=hashlib.sha256(json.dumps(tasks,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
+ result[version]=[p.name for p in matching_runs(Path('runs'),digest,'uncapped')]
+print(json.dumps(result))
+`], { encoding: 'utf8' }));
+  assert.ok(result.v2.length > 0);
+  assert.ok(result.v2.every((name: string) => !result.v3.includes(name)));
+  assert.ok(!result.v3.includes('pilot-v32'));
 });

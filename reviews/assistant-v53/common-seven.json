@@ -1,0 +1,122 @@
+[
+  {
+    "model": "Astra",
+    "condition": "default",
+    "completed": 7,
+    "pass": 48,
+    "fail": 0,
+    "review": 0,
+    "total": 48,
+    "contentReady": 7,
+    "readyWithoutEdits": 3,
+    "generationCostUsd": 0.09584
+  },
+  {
+    "model": "Astra",
+    "condition": "house",
+    "completed": 7,
+    "pass": 48,
+    "fail": 0,
+    "review": 0,
+    "total": 48,
+    "contentReady": 7,
+    "readyWithoutEdits": 7,
+    "generationCostUsd": 0.31096
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "condition": "default",
+    "completed": 7,
+    "pass": 47,
+    "fail": 1,
+    "review": 0,
+    "total": 48,
+    "contentReady": 6,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.14636
+  },
+  {
+    "model": "Muse Wonder 1.0",
+    "condition": "house",
+    "completed": 7,
+    "pass": 48,
+    "fail": 0,
+    "review": 0,
+    "total": 48,
+    "contentReady": 7,
+    "readyWithoutEdits": 6,
+    "generationCostUsd": 0.180372
+  },
+  {
+    "model": "Sol 6.1",
+    "condition": "default",
+    "completed": 7,
+    "pass": 47,
+    "fail": 0,
+    "review": 1,
+    "total": 48,
+    "contentReady": 6,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.018258
+  },
+  {
+    "model": "Sol 6.1",
+    "condition": "house",
+    "completed": 7,
+    "pass": 48,
+    "fail": 0,
+    "review": 0,
+    "total": 48,
+    "contentReady": 6,
+    "readyWithoutEdits": 3,
+    "generationCostUsd": 0.063432
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "default",
+    "completed": 7,
+    "pass": 45,
+    "fail": 3,
+    "review": 0,
+    "total": 48,
+    "contentReady": 3,
+    "readyWithoutEdits": 0,
+    "generationCostUsd": 0.05017755
+  },
+  {
+    "model": "Kimi K3",
+    "condition": "house",
+    "completed": 7,
+    "pass": 45,
+    "fail": 3,
+    "review": 0,
+    "total": 48,
+    "contentReady": 3,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.10206509999999999
+  },
+  {
+    "model": "Kimi K3.1 Pro",
+    "condition": "default",
+    "completed": 7,
+    "pass": 48,
+    "fail": 0,
+    "review": 0,
+    "total": 48,
+    "contentReady": 7,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.051864
+  },
+  {
+    "model": "Kimi K3.1 Pro",
+    "condition": "house",
+    "completed": 7,
+    "pass": 48,
+    "fail": 0,
+    "review": 0,
+    "total": 48,
+    "contentReady": 7,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.1119964
+  }
+]

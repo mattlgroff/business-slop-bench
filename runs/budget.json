@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 34.837538616,
+  "accountedUsd": 35.02491061600001,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -14059,6 +14059,134 @@
       "charged": 0.023416,
       "status": "settled",
       "actualUsd": 0.023416
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--pilot-client-email--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.514052000000001,
+      "charged": 0.007966,
+      "status": "settled",
+      "actualUsd": 0.007966
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--pilot-client-email--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540484000000001,
+      "charged": 0.014978,
+      "status": "settled",
+      "actualUsd": 0.0145172
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--launch-delay-email--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.51392,
+      "charged": 0.008884000000000001,
+      "status": "settled",
+      "actualUsd": 0.008884
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--launch-delay-email--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540352,
+      "charged": 0.012356,
+      "status": "settled",
+      "actualUsd": 0.012356
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--vendor-decision-memo--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.514348,
+      "charged": 0.006904,
+      "status": "settled",
+      "actualUsd": 0.006904
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--vendor-decision-memo--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.54078,
+      "charged": 0.015686000000000002,
+      "status": "settled",
+      "actualUsd": 0.0152252
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--pilot-results-memo--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.51383,
+      "charged": 0.008368,
+      "status": "settled",
+      "actualUsd": 0.008368
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--pilot-results-memo--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540262,
+      "charged": 0.01357,
+      "status": "settled",
+      "actualUsd": 0.01357
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--discovery-proposal--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.514044,
+      "charged": 0.004724,
+      "status": "settled",
+      "actualUsd": 0.004724
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--discovery-proposal--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540476,
+      "charged": 0.012766,
+      "status": "settled",
+      "actualUsd": 0.012766
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--change-order--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.514026000000001,
+      "charged": 0.005948,
+      "status": "settled",
+      "actualUsd": 0.005948
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--change-order--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540458000000001,
+      "charged": 0.01236,
+      "status": "settled",
+      "actualUsd": 0.01236
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--ai-strategy-slides--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.514186,
+      "charged": 0.00681,
+      "status": "settled",
+      "actualUsd": 0.00681
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--ai-strategy-slides--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540618,
+      "charged": 0.027692,
+      "status": "settled",
+      "actualUsd": 0.0272312
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--handoff-slides--default",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.514022,
+      "charged": 0.009164,
+      "status": "settled",
+      "actualUsd": 0.009164
+    },
+    {
+      "id": "pilot-v34::moonshotai--kimi-k3.1-pro--handoff-slides--house",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "reserve": 10.540454,
+      "charged": 0.019196,
+      "status": "settled",
+      "actualUsd": 0.019196
     }
   ]
 }

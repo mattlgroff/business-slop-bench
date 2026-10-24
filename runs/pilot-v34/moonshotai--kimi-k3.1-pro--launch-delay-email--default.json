@@ -1,0 +1,102 @@
+{
+  "id": "moonshotai--kimi-k3.1-pro--launch-delay-email--default",
+  "model": "moonshotai/kimi-k3.1-pro",
+  "protocolHash": "22a1a4181be461b88f68b3592c80e47cb378afa49b1caf20fea5e4ef49b74bc5",
+  "status": "ok",
+  "at": "2026-10-24T23:12:26.489Z",
+  "elapsedMs": 17506,
+  "text": "**Subject: Launch position and next step**\n\nHi Avery,\n\nThe launch tentatively scheduled for October 8, 2026 cannot proceed as a production release on that date. The security review now completes October 12 at the earliest, and release requires completed approval. Nia owns the review, which may require remediation; no new production date is authorized.\n\nWe can still hold a staging demo on October 8 using synthetic data, without changing the requirement for completed approval before release.\n\nI remain confident in the team and in Nia’s ownership of the security review. We will continue to treat release approval as essential and will not assume a new production date while the review outcome remains uncertain.\n\nPlease confirm whether you accept the October 8 staging demo using synthetic data so we can proceed accordingly.\n\nBest,  \nJordan  \nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 257,
+    "inputTokenDetails": {
+      "noCacheTokens": 1,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 256
+    },
+    "outputTokens": 837,
+    "outputTokenDetails": {
+      "textTokens": 180,
+      "reasoningTokens": 657
+    },
+    "totalTokens": 1094
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "temperature",
+      "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+    }
+  ],
+  "providerMetadata": {
+    "moonshotai": {
+      "cacheWriteTokens": {
+        "ttl5m": 256,
+        "ttl1h": 0
+      },
+      "responseObject": "chat.completion",
+      "choiceIndex": 0,
+      "messageRole": "assistant"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3.1-pro",
+        "resolvedProvider": "moonshotai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: moonshotai. Total execution order: moonshotai(system)",
+        "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+        "finalProvider": "moonshotai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "moonshotai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1792883529206,
+                "endTime": 1792883546434,
+                "providerRequestId": "569a5f19-d000-11f1-8c9e-161e65f828e9",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-6add3b4aac523df370f8cd58"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.008884",
+      "marketCost": "0.008884",
+      "surchargeCost": "0",
+      "gatewayCost": "0.008884",
+      "inferenceCost": "0.008884",
+      "inputInferenceCost": "0.000514",
+      "outputInferenceCost": "0.00837",
+      "generationId": "gen_01M5R2Z5DA4E7SJB2AM66YHT6K"
+    }
+  },
+  "response": {
+    "id": "aitxt-FXucvg84NkN2NNrCCbn5D2Gz",
+    "modelId": "moonshotai/kimi-k3.1-pro",
+    "timestamp": "2026-10-24T23:12:26.486Z"
+  },
+  "billing": {
+    "totalCost": 0.008884,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.008884",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

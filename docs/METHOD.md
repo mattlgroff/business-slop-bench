@@ -2,7 +2,7 @@
 
 Current review: [assistant-v52](../reviews/assistant-v52/REPORT.md), October 13. 33 models and 528 primary v2 drafts. The ambiguous vendor signatory inference is retired uniformly; 17 verdicts change and two mixed reasons retain their verdicts. [Muse Wonder comparison](../reviews/assistant-v52/MUSE-COMPARISON.md).
 
-Future collector: unused pilot-v33 / protocol 0.33.0, `data/tasks-v3.json`. Its replacement authority check names Alex as sole signatory, Priya as procurement coordinator without signing authority, and the CFO as required prior approver. C05 requires those roles explicitly. No v3 run exists; do not pool it with v2. Authored boundary examples are in `data/vendor-authority-controls-v3.json`, not independent human gold. The proposed readout change remains inactive.
+Current collector: frozen pilot-v34 / protocol 0.34.0, `data/tasks-v3.json`. Its replacement authority check names Alex as sole signatory, Priya as procurement coordinator without signing authority, and the CFO as required prior approver. C05 requires those roles explicitly. Kimi K3.1 Pro completed sixteen v3 calls on October 24; do not pool them with v2. [Separate scores and the unchanged seven-brief comparison](../reviews/assistant-v53/REPORT.md). Authored boundary examples are in `data/vendor-authority-controls-v3.json`, not independent human gold. The proposed readout change remains inactive.
 
 The full record of how BusinessSlopBench was built and run: protocol freezing, grading rules, cost controls, retries, cohorts and the archived Jev experiments. The short version is in the [README](../README.md).
 
@@ -24,7 +24,7 @@ Earlier results with a 4,096-token cap: [Muse compared with the other completed 
 
 The 528 primary drafts use the frozen v2 tasks, without a harness output-token cap or generation deadline. There are 56 separately tracked repeat drafts. Argon added sixteen pilot-v31 calls; Nemotron and Muse Wonder added thirty-two pilot-v32 calls. All completed normally with matching v2 prompts, low reasoning and no retries. Paid Jev commands remain disabled.
 
-Use `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json` for the historical panel. The default coverage task is now v3, which correctly reports no generations. `npx tsx src/draft-audit.ts pilot-v32` validates that run against its own frozen task file. The $100 spending ceiling and retained failed-call reservations remain in effect.
+Use `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json` for the historical panel. The default coverage task is v3, which reports the sixteen Kimi K3.1 Pro generations separately. `npx tsx src/draft-audit.ts pilot-v32` validates that run against its own frozen task file. The $100 spending ceiling and retained failed-call reservations remain in effect.
 
 Mistral Large 4: low reasoning failed with HTTP 400. The sixteen successful pilot-v29 calls requested none and warned that reasoning configuration was unsupported. Report these as provider-default reasoning. The failed call retains its budget reservation. Historical models no longer need to appear in the live catalog to collect a new model; unavailable current prices are shown explicitly.
 

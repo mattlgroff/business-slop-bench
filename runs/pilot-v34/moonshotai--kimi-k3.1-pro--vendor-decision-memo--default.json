@@ -1,0 +1,102 @@
+{
+  "id": "moonshotai--kimi-k3.1-pro--vendor-decision-memo--default",
+  "model": "moonshotai/kimi-k3.1-pro",
+  "protocolHash": "22a1a4181be461b88f68b3592c80e47cb378afa49b1caf20fea5e4ef49b74bc5",
+  "status": "ok",
+  "at": "2026-10-24T23:12:51.650Z",
+  "elapsedMs": 13532,
+  "text": "# Decision Memo: Year-One Vendor Selection\n\n**To:** CFO  \n**Decision:** Select **Alpha** for year one.\n\n## Evaluation\n\n| Criterion | Alpha | Beta |\n|---|---:|---:|\n| Annual subscription | $72,000 | $60,000 |\n| One-time setup | $20,000 | $10,000 |\n| **Total year-one cost** | **$92,000** | **$70,000** |\n| Within $100,000 ceiling, including setup | Yes | Yes |\n| Required SSO | Available | Unavailable; no committed delivery date |\n| Other stated requirements | Met | Met |\n\nBoth vendors fit the budget, but cost is not the deciding constraint. SSO is mandatory before production. Alpha satisfies that requirement; Beta does not and has no committed SSO delivery date. Beta’s $22,000 year-one savings therefore do not make it an eligible choice for production.\n\nAlpha leaves **$8,000** beneath the year-one budget ceiling.\n\n## Recommendation and Approval Path\n\nApprove Alpha’s **$92,000 year-one cost** and proceed with contracting. Do not select Beta for year one because it fails the mandatory SSO constraint.\n\nPriya should own procurement and coordinate the contract process, but must not sign. After CFO approval, **Alex, the commercial director and sole authorized contract signatory, should sign**. The CFO’s approval does not delegate signing authority to Priya or anyone else.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 297,
+    "inputTokenDetails": {
+      "noCacheTokens": 41,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 256
+    },
+    "outputTokens": 631,
+    "outputTokenDetails": {
+      "textTokens": 306,
+      "reasoningTokens": 325
+    },
+    "totalTokens": 928
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "temperature",
+      "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+    }
+  ],
+  "providerMetadata": {
+    "moonshotai": {
+      "cacheWriteTokens": {
+        "ttl5m": 256,
+        "ttl1h": 0
+      },
+      "responseObject": "chat.completion",
+      "choiceIndex": 0,
+      "messageRole": "assistant"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3.1-pro",
+        "resolvedProvider": "moonshotai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: moonshotai. Total execution order: moonshotai(system)",
+        "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+        "finalProvider": "moonshotai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "moonshotai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1792883558210,
+                "endTime": 1792883571629,
+                "providerRequestId": "67d2f7b2-d000-11f1-85a1-32035ae47f50",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-6add3b66339eec415648182c"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "no_pin"
+        },
+        "clientSessionId": "13adeb787a304955d873928564c815f0",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.006904",
+      "marketCost": "0.006904",
+      "surchargeCost": "0",
+      "gatewayCost": "0.006904",
+      "inferenceCost": "0.006904",
+      "inputInferenceCost": "0.000594",
+      "outputInferenceCost": "0.00631",
+      "generationId": "gen_01M5R301RMRVM8V0X7JNZX242B"
+    }
+  },
+  "response": {
+    "id": "aitxt-VJ1ISswgSkJVs2erOgpZRo83",
+    "modelId": "moonshotai/kimi-k3.1-pro",
+    "timestamp": "2026-10-24T23:12:51.649Z"
+  },
+  "billing": {
+    "totalCost": 0.006904,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.006904",
+    "surchargeCost": "0"
+  },
+  "inputHash": "6a941ce98d1e3c8a9fccc4391be2dd581d7efa01155bdeca68b9e039439bd2dc",
+  "input": {
+    "prompt": "Write a decision memo for the CFO choosing between the two vendors for year one. Evaluate against the stated constraints and make a specific recommendation.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Year-one budget ceiling is $100,000, including setup.\",\n  \"alpha\": \"$72,000 annual subscription plus $20,000 one-time setup. Required SSO is available.\",\n  \"beta\": \"$60,000 annual subscription plus $10,000 setup. Required SSO is unavailable and has no committed delivery date.\",\n  \"constraints\": \"SSO is mandatory before production. Both vendors meet the other stated requirements.\",\n  \"owner\": \"Priya owns procurement and coordinates the contract process. Priya is not authorized to sign. Alex, the commercial director, is the sole authorized contract signatory. The CFO must approve before Alex signs; that approval does not delegate signing authority to anyone else.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

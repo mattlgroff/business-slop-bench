@@ -1,0 +1,102 @@
+{
+  "id": "moonshotai--kimi-k3.1-pro--handoff-slides--default",
+  "model": "moonshotai/kimi-k3.1-pro",
+  "protocolHash": "22a1a4181be461b88f68b3592c80e47cb378afa49b1caf20fea5e4ef49b74bc5",
+  "status": "ok",
+  "at": "2026-10-24T23:15:38.130Z",
+  "elapsedMs": 15484,
+  "text": "### Slide 1 — Handoff Decision\n- **Decision: The service is not ready for operational handoff.**\n- Acceptance is incomplete: the runbook is approved, but the required rollback rehearsal has not happened.\n- Handoff should proceed only after acceptance.\n\n### Slide 2 — Readiness Against Acceptance Criteria\n- **Approved runbook:** Met.\n- **Successful rollback rehearsal:** Not met; the rehearsal has not occurred.\n- Both criteria are required for acceptance, so acceptance cannot yet be approved.\n\n### Slide 3 — Ownership and Accountability\n- Engineering lead Lee owns defect fixes until acceptance.\n- Operations lead Jo owns incidents only after acceptance.\n- No role has accepted responsibility for organizing the rehearsal.\n- Sponsor Pat can assign that responsibility and approve acceptance once the criteria are met.\n\n### Slide 4 — Required Actions and Committee Direction\n1. Pat assigns responsibility for organizing the rollback rehearsal.\n2. The assigned organizer ensures the rehearsal takes place and is successful.\n3. With the runbook approved and rehearsal successful, Pat approves acceptance.\n4. After acceptance, operational incident ownership passes to Jo.\n- **Committee direction:** Withhold handoff approval pending these actions; Lee retains defect-fix ownership until acceptance.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 252,
+    "inputTokenDetails": {
+      "noCacheTokens": 252,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 866,
+    "outputTokenDetails": {
+      "textTokens": 260,
+      "reasoningTokens": 606
+    },
+    "totalTokens": 1118
+  },
+  "warnings": [
+    {
+      "type": "unsupported",
+      "feature": "temperature",
+      "details": "temperature is fixed by model \"kimi-k3.1-pro\" and has been omitted."
+    }
+  ],
+  "providerMetadata": {
+    "moonshotai": {
+      "cacheWriteTokens": {
+        "ttl5m": 0,
+        "ttl1h": 0
+      },
+      "responseObject": "chat.completion",
+      "choiceIndex": 0,
+      "messageRole": "assistant"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "moonshotai/kimi-k3.1-pro",
+        "resolvedProvider": "moonshotai",
+        "fallbacksAvailable": [],
+        "planningReasoning": "System credentials planned for: moonshotai. Total execution order: moonshotai(system)",
+        "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+        "finalProvider": "moonshotai",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "moonshotai/kimi-k3.1-pro",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "moonshotai",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1792883722742,
+                "endTime": 1792883738025,
+                "providerRequestId": "ca012bd6-d000-11f1-87af-de4dd40143f3",
+                "statusCode": 200,
+                "providerResponseId": "chatcmpl-6add3c0b5068222ffb919faa"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "affinity": {
+          "outcome": "skipped_below_min_prefix"
+        },
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.009164",
+      "marketCost": "0.009164",
+      "surchargeCost": "0",
+      "gatewayCost": "0.009164",
+      "inferenceCost": "0.009164",
+      "inputInferenceCost": "0.000504",
+      "outputInferenceCost": "0.00866",
+      "generationId": "gen_01M5R352DV438W52YT33ENNT8R"
+    }
+  },
+  "response": {
+    "id": "aitxt-DvC80V27x8g8s2MyPsMmElxc",
+    "modelId": "moonshotai/kimi-k3.1-pro",
+    "timestamp": "2026-10-24T23:15:38.129Z"
+  },
+  "billing": {
+    "totalCost": 0.009164,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.009164",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}
