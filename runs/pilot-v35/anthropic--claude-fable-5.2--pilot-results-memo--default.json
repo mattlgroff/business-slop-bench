@@ -1,0 +1,110 @@
+{
+  "id": "anthropic--claude-fable-5.2--pilot-results-memo--default",
+  "model": "anthropic/claude-fable-5.2",
+  "protocolHash": "9ade9cc5e58e7cdd45571e4ab4ca7a0eec4f1deb422645ad079ba0abb99f11e7",
+  "status": "ok",
+  "at": "2026-11-09T19:29:48.331Z",
+  "elapsedMs": 7776,
+  "text": "# Executive Readout: Pilot Scaling Decision\n\n## Recommendation\n\n**Do not scale now.** The pilot missed the required quality threshold, and the speed result is not yet reliable enough to support a scaling decision.\n\n## Results\n\n| Measure | Baseline | Pilot | Read |\n|---|---|---|---|\n| Tickets | 200 | 100 | Smaller pilot sample |\n| Mean handling time | 15 min | 12 min | 3 minutes faster (20%) |\n| Quality pass rate | 94% | 89% | Below 92% threshold |\n| Cash savings | n/a | None measured | Unproven |\n\n## What the results support\n\n- **Handling time was lower in the pilot.** Mean handling time was 12 minutes against 15 at baseline.\n- **Quality fell below the scaling requirement.** The pass rate was 89%, 3 points short of the 92% minimum and 5 points below baseline.\n\n## What the results do not support\n\n- **That the pilot caused the time reduction.** Ticket mix differed between groups and allocation was not randomized, so the difference may reflect the tickets handled, not the pilot itself.\n- **That the pilot caused the quality drop.** The same limitation applies; the decline may be real or an artifact of ticket mix.\n- **Any financial benefit.** No staffing reductions or cash savings have been measured.\n\n## Next decision\n\n**Owner: COO.** Decide whether to authorize Sam to run a matched-ticket follow-up.\n\nWe recommend authorizing it. Comparing like-for-like tickets would show whether the handling time gain holds and whether quality meets the 92% threshold. Scaling should be reconsidered only after those results are in.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 292,
+    "inputTokenDetails": {
+      "noCacheTokens": 292,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 560,
+    "outputTokenDetails": {
+      "textTokens": 560,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 852
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "service_tier": "standard",
+        "input_tokens": 292,
+        "output_tokens": 560,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "stopSequence": null,
+      "serviceTier": "standard",
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.2",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "anthropic/claude-fable-5.2",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.2",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1794252580708,
+                "endTime": 1794252588309,
+                "providerRequestId": "req_011CgsudARsWVP1rGfRoPFf2",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CgsudB1748GZZR3urJhNf",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "c6ba45f6a417c8dbbc9d08f85a038520",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.024736",
+      "marketCost": "0.024736",
+      "surchargeCost": "0",
+      "gatewayCost": "0.024736",
+      "inferenceCost": "0.024736",
+      "inputInferenceCost": "0.002336",
+      "outputInferenceCost": "0.0224",
+      "generationId": "gen_01M70WK9QBY5Q4QP0YXC8A1MKM"
+    }
+  },
+  "response": {
+    "id": "aitxt-Wxc5lOdCWyJIOm7mlyFXEJAL",
+    "modelId": "anthropic/claude-fable-5.2",
+    "timestamp": "2026-11-09T19:29:48.330Z"
+  },
+  "billing": {
+    "totalCost": 0.024736,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.024736",
+    "surchargeCost": "0"
+  },
+  "inputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+  "input": {
+    "prompt": "Write an executive readout recommending whether to scale the pilot now. State what the results support and the next decision.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"baseline\": \"200 tickets, 15 minutes mean handling time.\",\n  \"pilot\": \"100 tickets, 12 minutes mean handling time. Ticket mix differed and allocation was not randomized.\",\n  \"quality\": \"Quality pass rate was 94% at baseline and 89% in the pilot. Required scaling threshold is at least 92%.\",\n  \"costs\": \"No staffing reductions or cash savings have been measured.\",\n  \"next\": \"Sam can run a matched-ticket follow-up. COO decides whether to authorize it.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

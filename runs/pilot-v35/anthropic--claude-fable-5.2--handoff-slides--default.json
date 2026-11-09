@@ -1,0 +1,110 @@
+{
+  "id": "anthropic--claude-fable-5.2--handoff-slides--default",
+  "model": "anthropic/claude-fable-5.2",
+  "protocolHash": "9ade9cc5e58e7cdd45571e4ab4ca7a0eec4f1deb422645ad079ba0abb99f11e7",
+  "status": "ok",
+  "at": "2026-11-09T19:30:47.033Z",
+  "elapsedMs": 7935,
+  "text": "# Slide 1: Readiness Decision\n\n**Headline:** The service is not ready for operational handoff.\n\n- Acceptance requires two things: an approved runbook and a successful rollback rehearsal.\n- The runbook is approved.\n- The rollback rehearsal has not happened.\n- No role has accepted responsibility for organizing the rehearsal.\n\n**Committee takeaway:** One criterion is met, one is open, and the open one has no owner.\n\n# Slide 2: Status Against Acceptance Criteria\n\n| Criterion | Status | Owner |\n|---|---|---|\n| Approved runbook | Met | n/a |\n| Successful rollback rehearsal | Not met; rehearsal not yet held | None assigned |\n\n- Until acceptance, responsibilities stay as they are:\n  - Engineering lead Lee owns defect fixes.\n  - Operations lead Jo does not yet own incidents; that begins only after acceptance.\n\n**Committee takeaway:** Handoff cannot occur until the rehearsal succeeds.\n\n# Slide 3: The Ownership Gap\n\n**Headline:** The rehearsal is blocked by missing ownership.\n\n- Lee's defined responsibility is defect fixes until acceptance.\n- Jo's defined responsibility is incidents after acceptance.\n- Neither role's remit covers organizing the rehearsal, and no one has accepted it.\n- Sponsor Pat has the authority to assign that responsibility.\n\n**Committee takeaway:** Without an assignment from Pat, the remaining criterion has no route to completion.\n\n# Slide 4: Actions Required\n\n| # | Action | Who | Trigger |\n|---|---|---|---|\n| 1 | Assign responsibility for organizing the rollback rehearsal | Sponsor Pat | Now |\n| 2 | Organize and hold the rollback rehearsal | Assigned owner | After action 1 |\n| 3 | Approve acceptance | Sponsor Pat | Once the rehearsal succeeds and both criteria are met |\n| 4 | Take ownership of incidents | Operations lead Jo | On acceptance |\n\n- Lee continues to own defect fixes until action 3 is complete.\n- If the rehearsal is unsuccessful, acceptance stays open and current responsibilities continue.\n\n**Decision requested today:** Confirm the service is not yet ready for handoff, and ask Pat to name a rehearsal owner.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 316,
+    "inputTokenDetails": {
+      "noCacheTokens": 316,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 803,
+    "outputTokenDetails": {
+      "textTokens": 803,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 1119
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "service_tier": "standard",
+        "input_tokens": 316,
+        "output_tokens": 803,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "stopSequence": null,
+      "serviceTier": "standard",
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.2",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "anthropic/claude-fable-5.2",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.2",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1794252639180,
+                "endTime": 1794252647017,
+                "providerRequestId": "req_011CgsuhUPyTeKAMjSesNYds",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CgsuhV4Qt5XyQMHHLBvN5",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "ac3a8b385a0d996900ce83c64fd4aa4e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.034648",
+      "marketCost": "0.034648",
+      "surchargeCost": "0",
+      "gatewayCost": "0.034648",
+      "inferenceCost": "0.034648",
+      "inputInferenceCost": "0.002528",
+      "outputInferenceCost": "0.03212",
+      "generationId": "gen_01M70WN2WTXQW88NXTMGWDXQDA"
+    }
+  },
+  "response": {
+    "id": "aitxt-xm6eSHTHciQj0n2vMBcXAlGI",
+    "modelId": "anthropic/claude-fable-5.2",
+    "timestamp": "2026-11-09T19:30:47.033Z"
+  },
+  "billing": {
+    "totalCost": 0.034648,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.034648",
+    "surchargeCost": "0"
+  },
+  "inputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+  "input": {
+    "prompt": "Write exactly four slide outlines for the steering committee to decide whether the service is ready for operational handoff. Explain readiness and the actions required.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"delivery\": \"Engineering lead Lee owns defect fixes until acceptance.\",\n  \"operations\": \"Operations lead Jo owns incidents only after acceptance.\",\n  \"acceptance\": \"Acceptance requires an approved runbook and a successful rollback rehearsal.\",\n  \"current\": \"Runbook is approved. Rollback rehearsal has not happened.\",\n  \"gap\": \"No role has accepted responsibility for organizing the rehearsal.\",\n  \"authority\": \"Sponsor Pat can assign that responsibility and approve acceptance once criteria are met.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

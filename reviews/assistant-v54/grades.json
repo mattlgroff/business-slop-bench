@@ -1,0 +1,1308 @@
+{
+  "method": {
+    "status": "Provisional, unblinded assistant judgments, without independent human gold",
+    "taskFile": "data/tasks-v3.json",
+    "run": "pilot-v35",
+    "configuration": "Low reasoning requested; always-on adaptive thinking, no temperature setting sent. No harness output cap or generation deadline. One attempt per cell.",
+    "comparison": "Full v3 totals are separate from historical v2. Only the unchanged seven briefs are compared directly."
+  },
+  "rows": [
+    {
+      "model": "Claude Fable 5.2",
+      "task": "pilot-client-email",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--pilot-client-email--default.md",
+      "outputSha256": "4b084e7293e1a6ffc1e5a511afedcb4d6ae7cfdc8dbcbcf442fad026df792520",
+      "writerInputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 172,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.017504,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "pilot-client-email",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--pilot-client-email--house.md",
+      "outputSha256": "54836676163625d0e59bf84fbfb8b3eef2091e508036ff98c53f0a3954aa34dc",
+      "writerInputHash": "bf7173854c3252aa79c8d04a7a44a24eeb06be2abb9f19754f8bb48ae385e384",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "The email states a six-week pilot and a $30,000 fixed fee without conflicting amounts or duration.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Production rollout remains explicitly excluded.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Any mention of 20% is clearly a client aspiration or target, never a measured result, forecast or guarantee.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Security approval is explicitly a prerequisite to client data access.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "The email does not claim an approved start date or unconditional start commitment.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "The email asks Morgan to approve the scope and fee subject to security clearance.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 177,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.052176,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "launch-delay-email",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--launch-delay-email--default.md",
+      "outputSha256": "7d9538a5c22561b31f3a528b6e174679f59b9c2fa83c13001ee17c24f0d9a002",
+      "writerInputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 186,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "2",
+          "reason": "Opening preamble announces the structure instead of stating the launch position; the following headings already identify both subjects.",
+          "evidence": {
+            "quote": "Here is where the launch stands, and one decision I need from you.",
+            "offset": 83,
+            "line": 5
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.015584,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "launch-delay-email",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--launch-delay-email--house.md",
+      "outputSha256": "b8746292f18a0698e170d72581dbf2e115f44a6d83a56f12a78ca4c4fb715958",
+      "writerInputHash": "5577c3c57e9960eb4b90e0c4c7d1fe68e77dd841986fdf85067b1617206c46d9",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "October 8 is not represented as an approved production launch.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The update clearly explains that production release depends on security approval and may require remediation.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "No replacement production launch date is promised.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "The October 8 staging demo using synthetic data is offered and Avery is asked whether to proceed with that demo.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Nia is correctly identified as owning the security review, without assigning Avery that responsibility.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 165,
+      "maxWords": 180,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "16",
+          "reason": "The preceding sentence already says the review may require fixes and the sender cannot give a production date. These adjacent date qualifications can be combined without information loss.",
+          "evidence": {
+            "quote": "No new date has been authorized, and I will not commit to one until Nia's review is complete.",
+            "offset": 388,
+            "line": 7
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.049656,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "vendor-decision-memo",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--vendor-decision-memo--default.md",
+      "outputSha256": "3268fd1ba0f351f3b4261f40580294efdfeba2701b5a6b0a4b179a37234a18a3",
+      "writerInputHash": "6a941ce98d1e3c8a9fccc4391be2dd581d7efa01155bdeca68b9e039439bd2dc",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Explicitly communicates that Priya coordinates procurement, Alex is the sole authorized contract signatory, and CFO approval must precede Alex signing. Does not assign signing authority to Priya, the CFO, or another person, or treat approval as a delegation of authority.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 302,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Restates the recommendation, SSO comparison and budget headroom already established above.",
+          "evidence": {
+            "quote": "**Conclusion.** Beta's savings do not offset a failed mandatory constraint. Cost is a differentiator only between options that qualify, and Beta does not qualify. Alpha meets every stated requirement with $8,000 of headroom.",
+            "offset": 1008,
+            "line": 27
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.03212,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "vendor-decision-memo",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--vendor-decision-memo--house.md",
+      "outputSha256": "ad33fc59e6fcad37311c0c6a9c6b0f2cc9d2a064ea8dfd2ea93f7e68a189be93",
+      "writerInputHash": "9a8afcf2c7451ac89990e8e1eaf718c29db927035d3e6484702f23ac9444566c",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Alpha year-one total is $92,000 and Beta year-one total is $70,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Recommends Alpha as the currently eligible option under the budget and mandatory SSO constraints.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "If the remaining Alpha budget is mentioned it is $8,000; no conflicting calculation appears.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not invent a Beta SSO date or waive the mandatory SSO requirement.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Explicitly communicates that Priya coordinates procurement, Alex is the sole authorized contract signatory, and CFO approval must precede Alex signing. Does not assign signing authority to Priya, the CFO, or another person, or treat approval as a delegation of authority.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 270,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.064312,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "pilot-results-memo",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--pilot-results-memo--default.md",
+      "outputSha256": "b7232ab65b6abce6ef737e8d710a0867129e712e4d5c87e3966fbb03ed8d5e3f",
+      "writerInputHash": "74b1ba8cdc981abe31a58fe55dcbafab7d44387fa362de69da35b5ad85c4db61",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 263,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the handling-time row immediately above without adding interpretation or a decision.",
+          "evidence": {
+            "quote": "**Handling time was lower in the pilot.** Mean handling time was 12 minutes against 15 at baseline.",
+            "offset": 534,
+            "line": 18
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.024736,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "pilot-results-memo",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--pilot-results-memo--house.md",
+      "outputSha256": "051e7aec694155e51a79dfeb239ea7df73befb93b7bcd2667dacad4c539ef2cf",
+      "writerInputHash": "f7d3bf52effe1416d4b72f6a8fde532498903060698eb5adb6b832b87cf3f9f4",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Handling time reduction is reported as 3 minutes or 20%, not 25% or percentage points.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Quality declined from 94% to 89%, which is 5 percentage points if a difference is stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not recommend unrestricted scaling while quality is below 92%; recommends resolving quality first.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Does not attribute the time change definitively to the pilot because mix differed and allocation was not randomized.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not present cash savings or staffing reductions as measured outcomes.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Proposes COO authorization of a matched-ticket follow-up owned by Sam.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 283,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "The three-item recap repeats the causal, quality and financial limitations already explained in the preceding paragraphs.",
+          "evidence": {
+            "quote": "- A claim that the pilot process cuts handling time by 20%.\n- A claim that the pilot meets the quality requirement.\n- Any savings figure.",
+            "offset": 1025,
+            "line": 23
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.061368,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "discovery-proposal",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--discovery-proposal--default.md",
+      "outputSha256": "d4e8963386b26156884f548519e33d6ba58ef87a6a882efd57f753ce9e0cdb80",
+      "writerInputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 284,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.027768,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "discovery-proposal",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--discovery-proposal--house.md",
+      "outputSha256": "9336805215e5c3d1114e6c95b8662a868e81f24c7a4f453a1a50162be1a0fd7c",
+      "writerInputHash": "ac6df8b52afd7061e60a7402ff1401fb763449a4953e838a688912b7dd79f967",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Fee is $16,000 for 80 hours at $200/hour, with $8,000 per payment if installment amounts are stated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Includes all three discovery deliverables.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Does not promise implementation, integrations, production support or guaranteed savings; exclusions are communicated.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Client interview access and source documents are identified as dependencies.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Does not invent a start date and preserves signature and named-contact prerequisites.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Sponsor confirmation of the three artifacts is the acceptance basis.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 262,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.05964,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "change-order",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--change-order--default.md",
+      "outputSha256": "d8f4cd39cff7f4af7ace2a0cf1931c557192d3e3154e4956b609e3ca652685a1",
+      "writerInputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 263,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "An entire Requested work section repeats the immediately preceding description and opening approval request without adding scope detail.",
+          "evidence": {
+            "quote": "Add a CRM connector to the current engagement.",
+            "offset": 546,
+            "line": 16
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.024752,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "change-order",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--change-order--house.md",
+      "outputSha256": "7b7a4f3b8996b6662d958f8c9f6ddc655aa127730f3bbcaf5ad57f0e267811c0",
+      "writerInputHash": "21e6f82c545966d53e65cbf332bbbf0b0eed8f0df321b226ea5e9f38efb31aff",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Change fee is $7,000 with no conflicting hours or rate.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "The CRM connector is presented as additional proposed scope, not already included in the signed dashboard scope.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Written sponsor approval is required before work begins.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Sandbox credential receipt is a dependency.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Two additional weeks are conditional on approval and credentials, without inventing an unconditional delivery date.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "No unsupported claims of CRM compatibility, savings or production reliability are made.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 186,
+      "maxWords": 300,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": true,
+      "originalGenerationCostUsd": 0.052504,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "ai-strategy-slides",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--ai-strategy-slides--default.md",
+      "outputSha256": "6cb92c9f924e7c529be6ef842156f31e894886983de0a0e1ea9474d1cdd9eb89",
+      "writerInputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Approved input documents do not establish current pilot readiness or approval. The following slide also claims Ready now, while the source leaves pilot selection to the COO.",
+          "evidence": {
+            "quote": "Only knowledge search is clear to proceed today",
+            "offset": 694,
+            "line": 20
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 334,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.031616,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "ai-strategy-slides",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--ai-strategy-slides--house.md",
+      "outputSha256": "e8df5a2559f29ab95f29780aa9b2d9b1a5aa5c8f92b53291dfa3cd2eda52161c",
+      "writerInputHash": "605f89a5656a3ee87e32e9cfc79db440efa04c98e746c9b07a12d192bd53f90d",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Recommends the knowledge search pilot within the one-pilot capacity and $50,000 budget.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "Does not imply the credit-decision system is approved for production; legal approval remains pending.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Knowledge-search pilot cost remains $30,000; any stated remaining budget is $20,000.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "At least 90% accuracy on 100 reviewed questions is a future target, not an achieved result.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "COO selection and Dana ownership/reporting before expansion are clear.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "fail",
+          "reason": "Treats approved source documents and a named owner as sufficient for current execution readiness. The source supplies neither start readiness nor pilot approval; the COO still selects the pilot.",
+          "evidence": {
+            "quote": "Option A can start on approved inputs with a named IT owner.",
+            "offset": 230,
+            "line": 5
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 1,
+        "review": 0
+      },
+      "words": 262,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.060488,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "handoff-slides",
+      "condition": "default",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--handoff-slides--default.md",
+      "outputSha256": "b53a956dd4fa77d5060fe1389f4f1f0235d7b19f0810574a4a4760e85a9c762d",
+      "writerInputHash": "92dd84dcae4da6b54e1d3d59073116c526232b141f0fac50f44092e1e657e21c",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        }
+      ],
+      "counts": {
+        "pass": 7,
+        "fail": 0,
+        "review": 0
+      },
+      "words": 338,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "The slide-ending takeaway repeats its four preceding bullets. Similar takeaway blocks after slides 2 and 3 repeat the stated status and ownership gap.",
+          "evidence": {
+            "quote": "**Committee takeaway:** One criterion is met, one is open, and the open one has no owner.",
+            "offset": 326,
+            "line": 10
+          }
+        }
+      ],
+      "contentReady": true,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.034648,
+      "warnings": [],
+      "benchEligible": true
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "task": "handoff-slides",
+      "condition": "house",
+      "path": "runs/pilot-v35/anthropic--claude-fable-5.2--handoff-slides--house.md",
+      "outputSha256": "62d6168547a794c92d21b57b5e2e181b9fb048d116ba1ccc6f43da98884f598c",
+      "writerInputHash": "175c88d70fb3acff36e72e5136e9d34605bb88573ebd7ffd0e69bea4b9705aa5",
+      "gradeOrigin": "assistant-v54 manual unblinded assistant review",
+      "grades": [
+        {
+          "id": "C01",
+          "criterion": "Does not present handoff as ready while the rollback rehearsal is outstanding.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C02",
+          "criterion": "States the missing owner for organizing the rehearsal instead of presenting an invented assignment as existing fact.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C03",
+          "criterion": "Requests Pat to assign the rehearsal owner; a suggested owner may be clearly labeled as a proposal.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C04",
+          "criterion": "Lee owns fixes until acceptance and Jo owns incidents after acceptance, without conflicting ownership.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C05",
+          "criterion": "Approved runbook and successful rollback rehearsal are both acceptance conditions.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "C06",
+          "criterion": "Contains exactly four identifiable slides.",
+          "verdict": "pass",
+          "reason": "Satisfied on full-draft review against the frozen v3 source pack.",
+          "evidence": null
+        },
+        {
+          "id": "grounding",
+          "criterion": "All material factual claims, ownership assignments and delivery commitments are supported by the source pack or clearly labeled as proposals. The writer does not invent prior discussions, approved authority, work deadlines, or unconditional guarantees.",
+          "verdict": "review",
+          "reason": "May broaden Lee defect-fix ownership into overall service or incident ownership before acceptance. The source specifies defect fixes and post-acceptance incidents separately; retain the same unresolved boundary used for Argon.",
+          "evidence": {
+            "quote": "the service stays with engineering",
+            "offset": 1509,
+            "line": 29
+          }
+        }
+      ],
+      "counts": {
+        "pass": 6,
+        "fail": 0,
+        "review": 1
+      },
+      "words": 281,
+      "maxWords": 350,
+      "emDashes": [],
+      "negativeParallelismFindings": [],
+      "placeholderFindings": [],
+      "editorialFindings": [
+        {
+          "category": "10",
+          "reason": "Repeats the immediately preceding two ownership bullets without adding a condition.",
+          "evidence": {
+            "quote": "Both arrangements stay as they are while the rehearsal is outstanding. Lee's defect-fix ownership continues, and Jo's incident ownership has not started.",
+            "offset": 823,
+            "line": 21
+          }
+        }
+      ],
+      "contentReady": false,
+      "styleGatePass": true,
+      "readyWithoutEdits": false,
+      "originalGenerationCostUsd": 0.06464,
+      "warnings": [],
+      "benchEligible": true
+    }
+  ],
+  "ungraded": []
+}

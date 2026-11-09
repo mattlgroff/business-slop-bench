@@ -1,0 +1,110 @@
+{
+  "id": "anthropic--claude-fable-5.2--launch-delay-email--default",
+  "model": "anthropic/claude-fable-5.2",
+  "protocolHash": "9ade9cc5e58e7cdd45571e4ab4ca7a0eec4f1deb422645ad079ba0abb99f11e7",
+  "status": "ok",
+  "at": "2026-11-09T19:29:18.081Z",
+  "elapsedMs": 5044,
+  "text": "**Subject: Launch update and a decision needed on the October 8 demo**\n\nHi Avery,\n\nHere is where the launch stands, and one decision I need from you.\n\n**Where we stand**\nThe tentative October 8, 2026 launch will not go ahead on that date. The security review, which Nia owns, now completes October 12 at the earliest, and we cannot release without completed approval.\n\n**What we don't yet know**\nThe review may require remediation. Until it concludes, no new production date is authorized, and I won't offer one I can't stand behind. I will update you once Nia's review concludes.\n\n**What is still possible**\nWe can still run a staging demo on October 8 using synthetic data. You would see the product working on the original date while the review finishes.\n\n**Decision needed**\nWould you like to accept the staging demo on October 8? This is your call. Please reply to let me know either way so the team can prepare.\n\nThe team is putting security approval ahead of the date, which I believe is the right call for a sound release.\n\nBest regards,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 288,
+    "inputTokenDetails": {
+      "noCacheTokens": 288,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 332,
+    "outputTokenDetails": {
+      "textTokens": 332,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 620
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "service_tier": "standard",
+        "input_tokens": 288,
+        "output_tokens": 332,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "stopSequence": null,
+      "serviceTier": "standard",
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.2",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "anthropic/claude-fable-5.2",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.2",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1794252553212,
+                "endTime": 1794252558034,
+                "providerRequestId": "req_011Cgsub8mMqUKXDrz74qz24",
+                "statusCode": 200,
+                "providerResponseId": "msg_011Cgsub9NpsrtBYsZLqGsdg",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.015584",
+      "marketCost": "0.015584",
+      "surchargeCost": "0",
+      "gatewayCost": "0.015584",
+      "inferenceCost": "0.015584",
+      "inputInferenceCost": "0.002304",
+      "outputInferenceCost": "0.01328",
+      "generationId": "gen_01M70WJEY1KF8N03D67GR6FGKB"
+    }
+  },
+  "response": {
+    "id": "aitxt-cc5mKj3JynAZt6d3Rq8Yj3P1",
+    "modelId": "anthropic/claude-fable-5.2",
+    "timestamp": "2026-11-09T19:29:18.079Z"
+  },
+  "billing": {
+    "totalCost": 0.015584,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.015584",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

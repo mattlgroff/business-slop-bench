@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 35.02491061600001,
+  "accountedUsd": 35.856466616000006,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -14187,6 +14187,134 @@
       "charged": 0.019196,
       "status": "settled",
       "actualUsd": 0.019196
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--pilot-client-email--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.742605999999999,
+      "charged": 0.019954,
+      "status": "settled",
+      "actualUsd": 0.017504
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--pilot-client-email--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.887981999999999,
+      "charged": 0.068024,
+      "status": "settled",
+      "actualUsd": 0.052176
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--launch-delay-email--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.741879999999999,
+      "charged": 0.017776,
+      "status": "settled",
+      "actualUsd": 0.015584
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--launch-delay-email--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.887256,
+      "charged": 0.065186,
+      "status": "settled",
+      "actualUsd": 0.049656
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--vendor-decision-memo--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.744234,
+      "charged": 0.036146,
+      "status": "settled",
+      "actualUsd": 0.03212
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--vendor-decision-memo--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.889609999999999,
+      "charged": 0.081488,
+      "status": "settled",
+      "actualUsd": 0.064312
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--pilot-results-memo--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.741384999999999,
+      "charged": 0.027852,
+      "status": "settled",
+      "actualUsd": 0.024736
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--pilot-results-memo--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.886761,
+      "charged": 0.078078,
+      "status": "settled",
+      "actualUsd": 0.061368
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--discovery-proposal--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.7425619999999995,
+      "charged": 0.03124,
+      "status": "settled",
+      "actualUsd": 0.027768
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--discovery-proposal--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.887937999999999,
+      "charged": 0.07622999999999999,
+      "status": "settled",
+      "actualUsd": 0.05964
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--change-order--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.742463,
+      "charged": 0.027906999999999998,
+      "status": "settled",
+      "actualUsd": 0.024752
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--change-order--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.887839,
+      "charged": 0.068365,
+      "status": "settled",
+      "actualUsd": 0.052504
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--ai-strategy-slides--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.743342999999999,
+      "charged": 0.035541,
+      "status": "settled",
+      "actualUsd": 0.031616
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--ai-strategy-slides--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.888718999999999,
+      "charged": 0.077231,
+      "status": "settled",
+      "actualUsd": 0.060488
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--handoff-slides--default",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.7424409999999995,
+      "charged": 0.038808,
+      "status": "settled",
+      "actualUsd": 0.034648
+    },
+    {
+      "id": "pilot-v35::anthropic--claude-fable-5.2--handoff-slides--house",
+      "model": "anthropic/claude-fable-5.2",
+      "reserve": 5.887816999999999,
+      "charged": 0.08173,
+      "status": "settled",
+      "actualUsd": 0.06464
     }
   ]
 }

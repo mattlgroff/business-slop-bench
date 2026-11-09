@@ -1,0 +1,110 @@
+{
+  "id": "anthropic--claude-fable-5.2--change-order--default",
+  "model": "anthropic/claude-fable-5.2",
+  "protocolHash": "9ade9cc5e58e7cdd45571e4ab4ca7a0eec4f1deb422645ad079ba0abb99f11e7",
+  "status": "ok",
+  "at": "2026-11-09T19:30:17.236Z",
+  "elapsedMs": 7120,
+  "text": "# Change-Order Proposal: CRM Connector\n\n**To:** Client Sponsor\n**Re:** Addition to the reporting dashboard engagement\n\n## Decision requested\n\nPlease approve or decline the addition of a CRM connector for a fixed change fee of $7,000. No connector work will begin without your written approval.\n\n## Background\n\nThe existing signed scope covers the reporting dashboard. You have requested an additional CRM connector. This work is outside the signed scope and is not included in the original fee, so it requires a change order.\n\n## Requested work\n\nAdd a CRM connector to the current engagement.\n\n## Price\n\n| Item | Basis | Amount |\n|---|---|---|\n| CRM connector | 40 hours at $175/hour | $7,000 |\n| **Proposed fixed change fee** | | **$7,000** |\n\nThis fee is in addition to the original fee.\n\n## Schedule effect\n\nThe connector adds an estimated two weeks. That period starts once both of the following are in place:\n\n1. Your written approval\n2. Receipt of sandbox credentials\n\nThis is an estimate, not an approved calendar date. The longer either item takes to arrive, the later the two-week period begins.\n\n## Client dependency\n\nYou must provide sandbox credentials. The connector work depends on them.\n\n## If you decline\n\nThe connector will not be built, the $7,000 fee will not apply, and the signed scope remains the reporting dashboard under the original fee.\n\n## Sponsor decision\n\n☐ **Approved.** Proceed with the CRM connector for a fixed change fee of $7,000 on the terms above.\n\n☐ **Declined.** Do not proceed; the original scope is unchanged.\n\nName: ______________________\n\nSignature: ______________________\n\nDate: ______________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 309,
+    "inputTokenDetails": {
+      "noCacheTokens": 309,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 557,
+    "outputTokenDetails": {
+      "textTokens": 557,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 866
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "service_tier": "standard",
+        "input_tokens": 309,
+        "output_tokens": 557,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "stopSequence": null,
+      "serviceTier": "standard",
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.2",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "anthropic/claude-fable-5.2",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.2",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1794252610237,
+                "endTime": 1794252617208,
+                "providerRequestId": "req_011CgsufLccgivoKa1KLYAax",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CgsufM1BHNVyD3izAAcxh",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "33626885e13c44d1c9df0ce078e5024d",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.024752",
+      "marketCost": "0.024752",
+      "surchargeCost": "0",
+      "gatewayCost": "0.024752",
+      "inferenceCost": "0.024752",
+      "inputInferenceCost": "0.002472",
+      "outputInferenceCost": "0.02228",
+      "generationId": "gen_01M70WM6JYF9F6GQR47FA2VBS5"
+    }
+  },
+  "response": {
+    "id": "aitxt-s6qryR9qTAk2Tvj3sZCbZLoi",
+    "modelId": "anthropic/claude-fable-5.2",
+    "timestamp": "2026-11-09T19:30:17.236Z"
+  },
+  "billing": {
+    "totalCost": 0.024752,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.024752",
+    "surchargeCost": "0"
+  },
+  "inputHash": "1135d7450c51fcff8c2f8830db8a7dcb9e51514f06358a27c1388727362ca1b2",
+  "input": {
+    "prompt": "Draft a change-order proposal for the client sponsor. Explain the requested work, price, and schedule effect so the sponsor can approve or decline.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"original\": \"Existing signed scope is the reporting dashboard.\",\n  \"request\": \"Client requests an additional CRM connector. It is not included in the original fee.\",\n  \"estimate\": \"40 hours at $175/hour, a proposed fixed change fee of $7,000.\",\n  \"dependency\": \"Client must provide sandbox credentials.\",\n  \"schedule\": \"Connector adds two weeks after written approval and credential receipt. This is an estimate, not an approved calendar date.\",\n  \"authority\": \"Sponsor must approve in writing before connector work begins.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 300 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

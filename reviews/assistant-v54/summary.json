@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Claude Fable 5.2",
+    "condition": "default",
+    "completed": 8,
+    "pass": 53,
+    "fail": 1,
+    "review": 0,
+    "total": 54,
+    "contentReady": 5,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.208728
+  },
+  {
+    "model": "Claude Fable 5.2",
+    "condition": "house",
+    "completed": 8,
+    "pass": 52,
+    "fail": 1,
+    "review": 1,
+    "total": 54,
+    "contentReady": 6,
+    "readyWithoutEdits": 4,
+    "generationCostUsd": 0.464784
+  }
+]

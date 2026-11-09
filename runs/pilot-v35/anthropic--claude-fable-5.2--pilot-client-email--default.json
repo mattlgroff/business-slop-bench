@@ -1,0 +1,110 @@
+{
+  "id": "anthropic--claude-fable-5.2--pilot-client-email--default",
+  "model": "anthropic/claude-fable-5.2",
+  "protocolHash": "9ade9cc5e58e7cdd45571e4ab4ca7a0eec4f1deb422645ad079ba0abb99f11e7",
+  "status": "ok",
+  "at": "2026-11-09T19:28:42.428Z",
+  "elapsedMs": 6787,
+  "text": "Subject: Invoice handling pilot: your approval requested\n\nHi Morgan,\n\nI'd like to propose the next step on invoice handling: a six-week pilot, and I'm asking for your approval of its scope and fee.\n\n**What we're proposing**\n- Scope: A six-week pilot to assess invoice handling. Production rollout is excluded.\n- Fee: $30,000, fixed.\n\n**Why a pilot**\nYour team hopes to shorten handling time by 20%. Today there is no baseline and no measured savings, so that figure is a target, not a forecast. The pilot is how we test it: a contained, fixed-cost way to gather evidence before any decision about a wider rollout. Your exposure is capped, and nothing commits you beyond the six weeks.\n\n**Conditions**\n- Security approval is required before we access any client data.\n- No start date has been approved yet.\n\n**Decision requested**\nPlease approve the pilot scope and the $30,000 fixed fee, subject to security clearance. A reply to this email is sufficient.\n\nI'm happy to talk through any questions beforehand.\n\nBest regards,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 318,
+    "inputTokenDetails": {
+      "noCacheTokens": 318,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 374,
+    "outputTokenDetails": {
+      "textTokens": 374,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 692
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "service_tier": "standard",
+        "input_tokens": 318,
+        "output_tokens": 374,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "stopSequence": null,
+      "serviceTier": "standard",
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.2",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [],
+        "canonicalSlug": "anthropic/claude-fable-5.2",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.2",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1794252516165,
+                "endTime": 1794252522391,
+                "providerRequestId": "req_011CgsuYQPNXGhfB6xhFshnk",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CgsuYRBzKpXeeH3tffeTD",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "d1f92735f19577d2b7aa925fe6be8561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.017504",
+      "marketCost": "0.017504",
+      "surchargeCost": "0",
+      "gatewayCost": "0.017504",
+      "inferenceCost": "0.017504",
+      "inputInferenceCost": "0.002544",
+      "outputInferenceCost": "0.01496",
+      "generationId": "gen_01M70WHAATJXC8NFX8Z7J1KVQ6"
+    }
+  },
+  "response": {
+    "id": "aitxt-SyM96F3xvl9IunBQt2EEfi9z",
+    "modelId": "anthropic/claude-fable-5.2",
+    "timestamp": "2026-11-09T19:28:42.426Z"
+  },
+  "billing": {
+    "totalCost": 0.017504,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.017504",
+    "surchargeCost": "0"
+  },
+  "inputHash": "44faba3e559cc31cd7034d53241e9f8d53fcad35899aded3d7279d195dc9bc04",
+  "input": {
+    "prompt": "Write an email to Morgan, the client operations director, proposing the approved pilot and requesting the next decision. Make the proposal persuasive enough to move the discussion forward.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Six-week pilot to assess invoice handling. Production rollout is excluded.\",\n  \"fee\": \"$30,000 fixed fee for the pilot.\",\n  \"target\": \"Client hopes for 20% shorter handling time. No baseline or measured savings exists.\",\n  \"security\": \"Security approval is required before access to client data.\",\n  \"schedule\": \"No start date has been approved.\",\n  \"decision\": \"Ask Morgan to approve the pilot scope and fee, subject to security clearance.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

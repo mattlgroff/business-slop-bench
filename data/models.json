@@ -134,5 +134,9 @@
   {
     "id": "moonshotai/kimi-k3.1-pro",
     "reasoning": "low"
+  },
+  {
+    "id": "anthropic/claude-fable-5.2",
+    "reasoning": "low"
   }
 ]

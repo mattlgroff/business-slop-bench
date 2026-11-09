@@ -1,0 +1,112 @@
+{
+  "id": "anthropic--claude-fable-5.2--ai-strategy-slides--default",
+  "model": "anthropic/claude-fable-5.2",
+  "protocolHash": "9ade9cc5e58e7cdd45571e4ab4ca7a0eec4f1deb422645ad079ba0abb99f11e7",
+  "status": "ok",
+  "at": "2026-11-09T19:30:32.292Z",
+  "elapsedMs": 9355,
+  "text": "# Slide 1: One Pilot, One Decision\n\n- The team can run only one AI pilot next quarter\n- Quarterly pilot budget ceiling: $50,000\n- Two candidates: internal knowledge search or automated customer credit decisions\n- The COO selects the pilot\n- Recommendation: internal knowledge search\n\n# Slide 2: The Options Side by Side\n\n| | Knowledge Search | Automated Credit Decisions |\n|---|---|---|\n| Cost | $30,000 | $45,000 |\n| Budget left under ceiling | $20,000 | $5,000 |\n| Readiness | Uses approved internal policy documents | Legal approval pending |\n| Production status | Not yet evaluated | Production use not authorized |\n| IT owner | Dana | None named |\n\n- Both options fit within the ceiling\n- Only knowledge search is clear to proceed today\n\n# Slide 3: Why Knowledge Search Wins\n\n- **Ready now:** built on internal policy documents that are already approved\n- **Lower spend:** $30,000, which is $15,000 less than the credit option\n- **Clear accountability:** Dana owns the pilot and reports the results\n- **Measurable outcome:** answer accuracy on 100 reviewed questions, with a target of at least 90%\n- **Credit decisions carry an open blocker:** Legal approval is pending and production use is not authorized\n- Choosing the credit option commits the quarter's only pilot slot to work that cannot yet go to production\n\n**Caveat:** no accuracy result exists yet. The 90% figure is a target, and the pilot is how we find out whether it is achievable.\n\n# Slide 4: Decision Requested and Next Steps\n\n**Decision for the COO:** select internal knowledge search as next quarter's pilot at $30,000.\n\nIf approved:\n\n- Dana leads the pilot using approved internal policy documents\n- Accuracy is evaluated on 100 reviewed questions against the 90% target\n- Dana reports results before any expansion\n- No expansion proceeds until those results are reported\n\nAutomated credit decisions:\n\n- Not selected for next quarter\n- Can be reconsidered for a future quarter once Legal approval is resolved",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 347,
+    "inputTokenDetails": {
+      "noCacheTokens": 347,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
+    },
+    "outputTokens": 721,
+    "outputTokenDetails": {
+      "textTokens": 721,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 1068
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "anthropic": {
+      "usage": {
+        "service_tier": "standard",
+        "input_tokens": 347,
+        "output_tokens": 721,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "stopSequence": null,
+      "serviceTier": "standard",
+      "iterations": null,
+      "container": null,
+      "contextManagement": null
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "anthropic/claude-fable-5.2",
+        "resolvedProvider": "anthropic",
+        "fallbacksAvailable": [
+          "vertexAnthropic"
+        ],
+        "canonicalSlug": "anthropic/claude-fable-5.2",
+        "finalProvider": "anthropic",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "anthropic/claude-fable-5.2",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "anthropic",
+                "credentialType": "system",
+                "success": true,
+                "startTime": 1794252623255,
+                "endTime": 1794252632270,
+                "providerRequestId": "req_011CgsugJPhLy9aUpVLKMBxo",
+                "statusCode": 200,
+                "providerResponseId": "msg_011CgsugJry537fbbyAV4wzj",
+                "inferenceEndpoint": {
+                  "slug": "global",
+                  "scope": "global"
+                }
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "3655471e2cbef9f3610e66e5247c0ab9",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0.031616",
+      "marketCost": "0.031616",
+      "surchargeCost": "0",
+      "gatewayCost": "0.031616",
+      "inferenceCost": "0.031616",
+      "inputInferenceCost": "0.002776",
+      "outputInferenceCost": "0.02884",
+      "generationId": "gen_01M70WMK45T327HC2QERP53HAV"
+    }
+  },
+  "response": {
+    "id": "aitxt-qZra2CBsMx1wh2ga8Mjk1liT",
+    "modelId": "anthropic/claude-fable-5.2",
+    "timestamp": "2026-11-09T19:30:32.291Z"
+  },
+  "billing": {
+    "totalCost": 0.031616,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0.031616",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

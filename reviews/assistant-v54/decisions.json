@@ -1,0 +1,225 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "The cost/exposure wording is read in its immediate fixed-fee, six-week pilot context. The source supports a fixed price and exclusion of production rollout. It does not assert the stronger no-overrun-at-any-volume or no-risk claim rejected in earlier reviews. Requests to begin approval planning and conditional scheduling are ordinary proposed next steps."
+    ],
+    "outputSha256": "4b084e7293e1a6ffc1e5a511afedcb4d6ae7cfdc8dbcbcf442fad026df792520"
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "The cost/exposure wording is read in its immediate fixed-fee, six-week pilot context. The source supports a fixed price and exclusion of production rollout. It does not assert the stronger no-overrun-at-any-volume or no-risk claim rejected in earlier reviews. Requests to begin approval planning and conditional scheduling are ordinary proposed next steps."
+    ],
+    "outputSha256": "54836676163625d0e59bf84fbfb8b3eef2091e508036ff98c53f0a3954aa34dc"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "Here is where the launch stands, and one decision I need from you.",
+        "Opening preamble announces the structure instead of stating the launch position; the following headings already identify both subjects."
+      ]
+    ],
+    "adjudicationNotes": [
+      "Routine promise to update the client after the review, without a new deadline, is allowed. The draft exceeds the 180-word limit."
+    ],
+    "outputSha256": "7d9538a5c22561b31f3a528b6e174679f59b9c2fa83c13001ee17c24f0d9a002"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "16",
+        "No new date has been authorized, and I will not commit to one until Nia's review is complete.",
+        "The preceding sentence already says the review may require fixes and the sender cannot give a production date. These adjacent date qualifications can be combined without information loss."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "b8746292f18a0698e170d72581dbf2e115f44a6d83a56f12a78ca4c4fb715958"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "**Conclusion.** Beta's savings do not offset a failed mandatory constraint. Cost is a differentiator only between options that qualify, and Beta does not qualify. Alpha meets every stated requirement with $8,000 of headroom.",
+        "Restates the recommendation, SSO comparison and budget headroom already established above."
+      ]
+    ],
+    "adjudicationNotes": [
+      "All three v3 authority roles and the approval sequence are correct. The draft is 302 words against the 300-word limit."
+    ],
+    "outputSha256": "3268fd1ba0f351f3b4261f40580294efdfeba2701b5a6b0a4b179a37234a18a3"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "All three authority roles and approval-before-signature are explicit. The final request identifies the concrete approval needed; repeating the price there is functional decision wording. Annual subscription comparisons use the supplied rates, not a claim of locked future renewal pricing."
+    ],
+    "outputSha256": "ad33fc59e6fcad37311c0c6a9c6b0f2cc9d2a064ea8dfd2ea93f7e68a189be93"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "**Handling time was lower in the pilot.** Mean handling time was 12 minutes against 15 at baseline.",
+        "Repeats the handling-time row immediately above without adding interpretation or a decision."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The matched-ticket follow-up is a recommendation to observe whether differences persist, not a claim that causal identification is guaranteed."
+    ],
+    "outputSha256": "b7232ab65b6abce6ef737e8d710a0867129e712e4d5c87e3966fbb03ed8d5e3f"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "- A claim that the pilot process cuts handling time by 20%.\n- A claim that the pilot meets the quality requirement.\n- Any savings figure.",
+        "The three-item recap repeats the causal, quality and financial limitations already explained in the preceding paragraphs."
+      ]
+    ],
+    "adjudicationNotes": [
+      "Necessary factual negations distinguish observations from causal effects and are not style-gate violations. A matched-ticket follow-up controls the stated ticket-mix difference; the draft does not promise causal isolation."
+    ],
+    "outputSha256": "051e7aec694155e51a79dfeb239ea7df73befb93b7bcd2667dacad4c539ef2cf"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Commercial labels, acceptance terms and the intentional approval fields are functional proposal structure. Start-date agreement remains conditional on signature and named contact."
+    ],
+    "outputSha256": "d4e8963386b26156884f548519e33d6ba58ef87a6a882efd57f753ce9e0cdb80"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "The proposed sequence repeats payment milestones in operational context; it does not replace the stated 50% kickoff / 50% delivery payment terms. A request to flag unavailable interviewees or documents is allowed."
+    ],
+    "outputSha256": "9336805215e5c3d1114e6c95b8662a868e81f24c7a4f453a1a50162be1a0fd7c"
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Add a CRM connector to the current engagement.",
+        "An entire Requested work section repeats the immediately preceding description and opening approval request without adding scope detail."
+      ]
+    ],
+    "adjudicationNotes": [
+      "Intentional sponsor decision and signature fields are allowed. Declining a proposed change leaves the existing signed scope and fee in place."
+    ],
+    "outputSha256": "d8f4cd39cff7f4af7ace2a0cf1931c557192d3e3154e4956b609e3ca652685a1"
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Approval wording and credential dependencies are functional in the acceptance choices, rather than an empty closing recap."
+    ],
+    "outputSha256": "7b7a4f3b8996b6662d958f8c9f6ddc655aa127730f3bbcaf5ad57f0e267811c0"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Only knowledge search is clear to proceed today",
+        "Approved input documents do not establish current pilot readiness or approval. The following slide also claims Ready now, while the source leaves pilot selection to the COO."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [],
+    "outputSha256": "6cb92c9f924e7c529be6ef842156f31e894886983de0a0e1ea9474d1cdd9eb89"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Option A can start on approved inputs with a named IT owner.",
+        "Treats approved source documents and a named owner as sufficient for current execution readiness. The source supplies neither start readiness nor pilot approval; the COO still selects the pilot."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [
+      "The later request for COO approval does not supply evidence for the earlier unqualified can-start claim."
+    ],
+    "outputSha256": "e8df5a2559f29ab95f29780aa9b2d9b1a5aa5c8f92b53291dfa3cd2eda52161c"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "**Committee takeaway:** One criterion is met, one is open, and the open one has no owner.",
+        "The slide-ending takeaway repeats its four preceding bullets. Similar takeaway blocks after slides 2 and 3 repeat the stated status and ownership gap."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The no-accepted-organizer and Pat-assignment instructions preserve the source gap. Required successful rehearsal is an acceptance condition, not a guaranteed outcome."
+    ],
+    "outputSha256": "b53a956dd4fa77d5060fe1389f4f1f0235d7b19f0810574a4a4760e85a9c762d"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "the service stays with engineering",
+        "May broaden Lee defect-fix ownership into overall service or incident ownership before acceptance. The source specifies defect fixes and post-acceptance incidents separately; retain the same unresolved boundary used for Argon."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Both arrangements stay as they are while the rehearsal is outstanding. Lee's defect-fix ownership continues, and Jo's incident ownership has not started.",
+        "Repeats the immediately preceding two ownership bullets without adding a condition."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "62d6168547a794c92d21b57b5e2e181b9fb048d116ba1ccc6f43da98884f598c"
+  }
+]

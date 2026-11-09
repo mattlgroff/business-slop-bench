@@ -563,3 +563,12 @@ Assistant-v53 reads every draft against v3: 54/54 checks and 8/8 content-ready i
 Historical v2 scores stay untouched. A seven-brief comparison excludes the changed vendor memo for every model and verifies exact saved writer inputs for Astra, Muse Wonder, Sol 6.1, Kimi K3 and Kimi K3.1 Pro. Kimi 3.1 passes 48/48 common checks in both conditions versus Kimi K3's 45/48, while house ready-without-edits remains 2/7 versus Astra 7/7 and Muse 6/7. No global v2/v3 rank is assigned.
 
 Review scans now read each frozen protocol's task file. The scanner fixture includes its protocol, and coverage tests check cohort separation without assuming v3 will remain empty forever. TypeScript and all 23 tests pass. No blog update was requested or made.
+
+
+## November 9: Claude Fable 5.2
+
+Added exact live Gateway ID `anthropic/claude-fable-5.2` under pilot-v35 / protocol 0.35.0, preserving v3 briefs and low reasoning. All sixteen calls finished normally on one provider attempt, without warnings, retries, token caps or generation deadlines. Catalog list rates: $8 input / $40 output per million tokens. Saved charges total $0.673512; the conservative cumulative ledger remains distinct from invoiced cost.
+
+Assistant-v54 records provisional unblinded grades: plain 53/54 checks, 5/8 content-ready, 2/8 ready without edits; house 52/54 checks, 6/8 content-ready, 4/8 ready without edits. No em dashes. The plain launch email is 186/180 words; the plain vendor memo is 302/300. Both vendor answers preserve the explicit signing roles. Both strategy decks infer current pilot readiness from approved documents; the house handoff broadens defect-fix ownership to the service staying with engineering, retained as review under the existing Argon boundary. Fixed-fee wording in the pilot email is interpreted in its immediate stated-scope context, not as elimination of all risk; the exact adjudication notes are saved.
+
+All sixteen v3 inputs match Kimi 3.1 Pro, and the seven unchanged inputs match the saved Astra, Muse, Sol and Fable attempts. House common checks improve over Fable 5.1 from 45/48 to 46/48; sendable drafts remain 3/7. Full historical ranks and outputs remain unchanged. No blog update was requested or made.

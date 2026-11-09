@@ -2,7 +2,9 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, tested 34 models across versioned briefs, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, tested 35 models across versioned briefs, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+
+**November 9: [Claude Fable 5.2](reviews/assistant-v54/REPORT.md)** completed sixteen v3 drafts at low reasoning: 53/54 plain checks and 52/54 house checks, with 2/8 and 4/8 ready without edits. It used zero em dashes, but both strategy decks assumed pilot readiness and the house handoff has an unresolved ownership claim. Cost: $0.673512. On the seven unchanged house briefs, it improves from Fable 5.1's 45/48 to 46/48 checks, while both have 3/7 ready without edits. It does not displace Astra, Muse or Sol on that subset. Full v3 results remain separate from the v2 ranking.
 
 **October 24: [Kimi K3.1 Pro](reviews/assistant-v53/REPORT.md)** completed the first v3 panel: 54/54 checks and 8/8 content-ready drafts in both conditions, but only 2/8 ready without edits in each. All sixteen calls cost $0.1859896. It handles the explicit signing roles correctly; repetition remains its main writing defect. The report compares the seven unchanged briefs with Astra, Muse, Sol and Kimi K3. Full v3 totals are separate from the historical v2 ranking below.
 
