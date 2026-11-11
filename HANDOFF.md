@@ -63,6 +63,10 @@ npx tsx src/draft-audit.ts pilot-v35
 
 The builders regenerate saved reports from committed judgments, verifying hashes and quotations. `draft-audit` writes an audit file and covers primary outputs in the named run only; it does not audit repeat IDs. Use the comparison builder for the fresh Astra repeats. `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v3.json` reports the separate v3 coverage. Scans now read the run's frozen task file. Earlier models' primary outputs remain in earlier run directories, referenced by cumulative grades. Coverage discovers compatible runs across those directories. The last code validation passed TypeScript and all 23 tests.
 
+## Models queued to try
+
+- **Gemini 4 Carbon** (`google/gemini-4-carbon`), requested November 11, 2026. Gateway ID verified that day; supports low reasoning. Listed base rates: $2 input / $10 output per million tokens. Pending collection and review. Use the current v3 briefs in both conditions, low reasoning and no output-token cap. Recheck availability and pricing before collection, register it in a new frozen run, and keep full-panel results separate from v2. No inference calls made when queued.
+
 ## Add a model or repeat a run
 
 1. Read the current code and protocol. Check `git status`; preserve unrelated changes. Verify the exact live Gateway ID, supported reasoning, price, and routing policy from `https://ai-gateway.vercel.sh/v1/models`.
