@@ -1,0 +1,277 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "the ideal, low-risk way",
+        "The source provides pilot scope and fixed fee, not a comparative assessment or a low-risk rating. It also asserts ability to initiate clearance immediately without supplied scheduling evidence."
+      ]
+    ],
+    "style": [
+      [
+        "28",
+        "Once we have your sign-off, we can keep our momentum going and move to the next step.",
+        "Generic momentum ending adds no action beyond the approval request and process already stated."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "8eda3ef995aec549b9766cb76f129c6997232a3358451e9a7e019d2220747457"
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "a contained pilot is the fastest way",
+        "The source gives no comparison establishing that this pilot is the fastest way to test the target. It also asserts immediate review initiation and avoidance of scheduling delays without support."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [
+      "The capped commitment is read within the stated fixed-fee pilot scope, consistent with Fable 5.2. It is not the reason for the grounding failure."
+    ],
+    "outputSha256": "04f6a9036d6d6ef4b3f9264a04c82058347085fea8b95b2733783bc1ddb02aee"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I am writing to share an update on our launch position.",
+        "Announces the email purpose instead of starting with the changed launch position."
+      ],
+      [
+        "7",
+        "Ensuring this approval is finalized reflects our commitment to a secure release.",
+        "Adds a generic statement about commitment to an already stated release prerequisite."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The offer of a staging demo and related readiness are supported by the source saying a synthetic-data demo can happen October 8. No production readiness is asserted."
+    ],
+    "outputSha256": "38167d555d991cf9c08af0b1cc8b276fb19d566ef88d3ad2ca0b8b2c7e11ca40"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Build readiness is explicitly limited to showing the synthetic-data staging demo, which the source permits. Production remains subject to security approval and possible remediation."
+    ],
+    "outputSha256": "9e0e03bd83d0974c01c3fc5b3866514a75d02f6d4a283d2a0cae0f6d5dfc9c55"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "** Evaluation Constraints**",
+        "The space after the opening bold marker prevents standard Markdown emphasis from rendering correctly."
+      ],
+      [
+        "10",
+        "Vendor Alpha\u2019s year-one total cost is $92,000 ($72,000 annual subscription plus $20,000 one-time setup), keeping us $8,000 beneath the $100,000 ceiling.",
+        "Repeats the supplied comparison figures rather than adding analysis; recommendation and constraint statements also recur across sections."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The stated signing roles and sequence satisfy v3. Governance wording refers to the process explicitly supplied in the source."
+    ],
+    "outputSha256": "eff40b47d6bd19b7b1b2754e250ec0ffa0195ebe8f70d31f6fe77169e1ec4d78"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Indefinitely is read as an unknown period with no committed date, not a claim that Beta can never deliver SSO. The signing roles and sequence satisfy v3."
+    ],
+    "outputSha256": "c53afd322c49519718849a92f93987297ce488a060501464cfbbac59f735fb5c"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "mean handling time decreased from 15 minutes at baseline to 12 minutes in the pilot",
+        "Correct endpoints are supplied but the required derived reduction of three minutes or 20% is omitted. This is the existing analytical-completeness criterion, not an arithmetic error."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Because the data is confounded by a non-randomized, differing ticket mix and falls short of quality standards, scaling now introduces unacceptable quality risks without guaranteed efficiency or financial returns.",
+        "Recaps the limitations already detailed in the three preceding bullets without adding a decision."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The proposed controlled follow-up does not claim causal isolation has already been achieved. The rather-than wording is a necessary correction of causal attribution, not rhetorical negative parallelism."
+    ],
+    "outputSha256": "293817916e26169c1de5ad7d3c3f9f74033bc2589953c22cb96e4ad903b171c3"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Authorizing this test will isolate true handling-time changes on comparable work",
+        "Overstates what a matched-ticket follow-up is guaranteed to establish. Matching alone does not guarantee isolation of a true process effect; this follows the existing Argon adjudication boundary."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [
+      "The zero staffing-reductions wording is read with the explicit surrounding statements that financial savings remain unmeasured and cost impact is unknown. It is not treated as a measured zero-savings result."
+    ],
+    "outputSha256": "041325bbf2fd879a0d4b24da1e3c5f92902bfbb9fadb99162b15da6b8423f616"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This proposal outlines a four-week discovery-only engagement.",
+        "Document-description opening delays the direct scope offer."
+      ]
+    ],
+    "adjudicationNotes": [
+      "Sponsor signature and named-contact fields are intentional proposal features, not placeholders requiring removal."
+    ],
+    "outputSha256": "3cca56f485ab062ecf71783f2149e44ad058eeb2adf8539f3acee5a0f6a10b5e"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This proposal outlines a four-week discovery engagement for your approval.",
+        "Document-description preamble repeats the title and the opening scope sentence; start with the offer."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "411ab05e99307f7854b0257103c20f2d5b880aab7b0dfc9d7e6123bdaf006af9"
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "**Summary of Terms**",
+        "The six-row table repeats the scope, price, dependency and schedule already supplied in the immediately preceding sections; it adds no decision or term."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "816f8050834b9426ebb5fd2b123e844e75b4ceacb6490f4a03b3b7fbbe1ad475"
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "This proposal outlines the cost, dependencies, and schedule impact to add the connector.",
+        "Announces what the following headings will cover instead of stating a term or requested action."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The rather-than contrast distinguishes an estimate from an approved date, a necessary factual boundary. Signature and decision fields are intentional."
+    ],
+    "outputSha256": "4026a3169847fcd8f4401c09c309d7bca56195e215b67a0cd635cff264c6db25"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Internal Knowledge Search faces no legal roadblocks",
+        "Approved input documents do not establish absence of legal blockers or execution readiness. The draft also claims Ready to Launch and says execution can begin cleanly without supporting facts."
+      ]
+    ],
+    "style": [
+      [
+        "14",
+        "**Capacity Constraint:**",
+        "Bold mini-headings label nearly every bullet and sub-bullet, including labels that merely repeat the following sentence."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "36d8fa55753b24e58c6a68dc1a22e7b8b44e22d68dcbeb48985ece896658e8fa"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "it is ready to launch under budget",
+        "Being within budget with approved documents does not establish launch readiness. The source leaves selection to the COO and supplies no readiness finding."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [],
+    "outputSha256": "21583ba99c25df72b56275161bbfd668793d70623e98bb4f113e747e4d4ed277"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "14",
+        "**Current Status:**",
+        "Every bullet has a bold mini-heading, repeatedly labeling facts that are clear from the sentence and slide title."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The organizer executes a successful rehearsal as a required action, not a claim of an achieved or guaranteed result. No pre-acceptance incident owner is assigned."
+    ],
+    "outputSha256": "71a7b2f71edbb6f36bce97e5ce883753134524287a2108f3f4f6b951482b8c37"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [
+      [
+        "C04",
+        "fail",
+        "transferring incident ownership from Lee to Jo.",
+        "Assigns Lee incident ownership before acceptance, beyond the supplied defect-fix responsibility. This follows the existing Qwen Max, Kimi K3 and Sonnet 5 ownership boundary."
+      ],
+      [
+        "grounding",
+        "fail",
+        "transferring incident ownership from Lee to Jo.",
+        "The source does not name the pre-acceptance incident owner. A transfer from Lee invents that assignment; only his defect-fix responsibility is supplied."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [
+      "The two failed checks overlap on the same ownership defect; they are not independent errors."
+    ],
+    "outputSha256": "14bb2e61cb8225d9f21d716698caf935b7805a9b41b8312b049bf8453c7f25f3"
+  }
+]

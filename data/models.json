@@ -138,5 +138,9 @@
   {
     "id": "anthropic/claude-fable-5.2",
     "reasoning": "low"
+  },
+  {
+    "id": "google/gemini-4-carbon",
+    "reasoning": "low"
   }
 ]

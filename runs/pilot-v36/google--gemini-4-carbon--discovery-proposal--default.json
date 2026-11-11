@@ -1,0 +1,106 @@
+{
+  "id": "google--gemini-4-carbon--discovery-proposal--default",
+  "model": "google/gemini-4-carbon",
+  "protocolHash": "0c3377f8e2d5f909a93d0f654922c2496382efa956dbf390a9bddb4623bfda0a",
+  "status": "ok",
+  "at": "2026-11-11T20:09:39.572Z",
+  "elapsedMs": 6963,
+  "text": "**Proposal: Discovery Engagement**\n\n**Engagement Scope & Deliverables**\nThis proposal outlines a four-week discovery-only engagement. During this period, we will produce and deliver three core artifacts:\n* Current-state process map\n* Prioritized backlog\n* Implementation recommendation\n\n**Exclusions**\nPlease note that implementation, integrations, production support, and guaranteed savings are excluded from this engagement.\n\n**Client Responsibilities & Acceptance**\nTo support this effort, the client will supply interview access and source documents. Project acceptance occurs when the sponsor confirms delivery of the three listed artifacts.\n\n**Commercial Offer**\nThe engagement requires 80 hours at a rate of $200/hour, for a total fee of $16,000. The payment schedule is structured as follows:\n* **50% ($8,000)** due at kickoff\n* **50% ($8,000)** due on delivery\n\n**How to Proceed**\nTo approve this discovery engagement and move forward, please sign this proposal and provide a named client contact. Once we receive your signature and the named contact, we will mutually agree upon a start date. \n\n**Sponsor Approval**\n\nSignature: ___________________________  \n\nDate: _______________________________  \n\nNamed Client Contact: _________________",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 229,
+    "inputTokenDetails": {
+      "noCacheTokens": 229,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 269,
+    "outputTokenDetails": {
+      "textTokens": 269,
+      "reasoningTokens": 0
+    },
+    "totalTokens": 498
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "google": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "promptTokenCount": 229,
+        "candidatesTokenCount": 269,
+        "totalTokenCount": 498,
+        "serviceTier": "standard",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 229
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 269
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": "standard"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-4-carbon",
+        "resolvedProvider": "google",
+        "fallbacksAvailable": [
+          "vertex"
+        ],
+        "canonicalSlug": "google/gemini-4-carbon",
+        "finalProvider": "google",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-4-carbon",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "google",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1794427772663,
+                "endTime": 1794427779550,
+                "statusCode": 200,
+                "providerResponseId": "fMv0auqRMr2yytMPydyrWA"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "1f6678da4ec13adeed653147b577e561",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0.003148",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M763NQQ5FQP6KEYS9CKV2999"
+    }
+  },
+  "response": {
+    "id": "aitxt-6NC9hm33Xhek8zECnSWvr2Nd",
+    "modelId": "google/gemini-4-carbon",
+    "timestamp": "2026-11-11T20:09:39.571Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "fb24b8bdbba510f0e17ae161c3845641d35596a8b0eb6597c2e31c12468f23a0",
+  "input": {
+    "prompt": "Draft a concise proposal for the client sponsor to approve a discovery engagement. Explain the commercial offer and how the client can proceed.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"scope\": \"Four weeks of discovery only: current-state process map, prioritized backlog, and implementation recommendation.\",\n  \"fee\": \"80 hours at $200/hour. Total $16,000. 50% at kickoff and 50% on delivery.\",\n  \"excluded\": \"Implementation, integrations, production support and guaranteed savings are excluded.\",\n  \"client\": \"Client supplies interview access and source documents.\",\n  \"start\": \"Start date agreed only after signature and named client contact.\",\n  \"acceptance\": \"Sponsor confirms delivery of the three listed artifacts.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

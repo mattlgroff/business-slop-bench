@@ -1,8 +1,8 @@
 # BusinessSlopBench owner handoff
 
-Updated November 9, 2026. Latest run: [Claude Fable 5.2 on v3](reviews/assistant-v54/REPORT.md), sixteen drafts under pilot-v35 / protocol 0.35.0, low reasoning requested. No warnings or retries. Plain: 53/54 checks, 5/8 content-ready, 2/8 ready without edits. House: 52/54 checks, 6/8 content-ready, 4/8 ready without edits. Reported charge: $0.673512. There are 35 registered models, 528 historical v2 primary drafts and 32 v3 primary drafts, plus 56 separate repeats. Never pool the two full-panel cohorts.
+Updated November 11, 2026. Latest run: [Gemini 4 Carbon on v3](reviews/assistant-v55/REPORT.md), sixteen drafts under pilot-v36 / protocol 0.36.0, low reasoning requested. No warnings or retries. Plain: 51/54 checks, 4/8 content-ready, 0/8 ready without edits. House: 49/54 checks, 4/8 content-ready, 2/8 ready without edits. Gateway reports $0 charged, distinct from marketCost and list prices. There are 36 registered models, 528 historical v2 primary drafts and 48 v3 primary drafts, plus 56 separate repeats. Never pool the two full-panel cohorts.
 
-The corrected historical v2 ranking remains [assistant-v52](reviews/assistant-v52/RANKING.md). [Assistant-v53](reviews/assistant-v53/REPORT.md) contains Kimi K3.1 Pro, the first v3 panel. Assistant-v54 adds Fable as a separate review and compares both full v3 panels, plus the unchanged seven briefs against Astra, Muse, Sol and earlier Fable models. No fabricated cross-version rank is assigned.
+The corrected historical v2 ranking remains [assistant-v52](reviews/assistant-v52/RANKING.md). [Assistant-v53](reviews/assistant-v53/REPORT.md) contains Kimi K3.1 Pro; [assistant-v54](reviews/assistant-v54/REPORT.md) adds Fable 5.2. Assistant-v55 adds Carbon as a separate review and compares all three full v3 panels, plus the unchanged seven briefs against Astra, Muse, Sol and earlier Gemini models. No cross-version full-panel rank is assigned.
 
 ## Purpose
 
@@ -21,7 +21,7 @@ Compare single-call business writing: factual grounding, unsupported commitments
 
 ## Current state
 
-The CLI uses frozen `pilot-v35`, protocol version `0.35.0`, AI SDK `7.0.109`, `data/tasks-v3.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
+The CLI uses frozen `pilot-v36`, protocol version `0.36.0`, AI SDK `7.0.109`, `data/tasks-v3.json`, and the frozen `sources/anti-slop-reviewer.md`. There are eight synthetic briefs, with default and house-rule conditions. All models request low reasoning except the two DeepSeek models and Mistral Large 4, which request none. Mistral warns that this setting is ignored; its successful panel is provider-default reasoning. The failed low request is preserved in pilot-v28. No harness output-token cap or generation deadline is applied. The briefs still have word limits; those are evaluation requirements, not API token caps.
 
 | Model / attempt | Condition | Checks | Content ready | Ready without edits |
 |---|---|---:|---:|---:|
@@ -32,7 +32,7 @@ The CLI uses frozen `pilot-v35`, protocol version `0.35.0`, AI SDK `7.0.109`, `d
 
 Muse ranks second in the corrected primary house table; Sol is third. The table above retains the original separate repeat study. The primary Astra house result remains 8/8 ready without edits; both full-panel repeats returned 6/8. Do not mix attempts or select the best draft from each. Sol's sixteen drafts cost $0.094556; the fresh Astra sixteen cost $0.471230. These are Gateway-reported charges, distinct from the conservative budget ledger.
 
-The ledger is `runs/budget.json`, with a $100 ceiling and approximately $35.8565 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 528 primary drafts.
+The ledger is `runs/budget.json`, with a $100 ceiling and approximately $36.0332 accounted at this handoff. Read it before new calls; failed or uncertain requests can retain full reservations. It is not an invoice. There are 56 separately tracked repeat drafts, excluded from the 528 primary drafts.
 
 ## Grading contract
 
@@ -55,17 +55,17 @@ npm ci
 npm run check
 npm test
 python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json
-python3 reviews/assistant-v54/build.py
+python3 reviews/assistant-v55/build.py
 python3 reviews/sol61-astra-low/build.py
 python3 scripts/ranking.py reviews/assistant-v52 runs/pilot-v32
-npx tsx src/draft-audit.ts pilot-v35
+npx tsx src/draft-audit.ts pilot-v36
 ```
 
 The builders regenerate saved reports from committed judgments, verifying hashes and quotations. `draft-audit` writes an audit file and covers primary outputs in the named run only; it does not audit repeat IDs. Use the comparison builder for the fresh Astra repeats. `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v3.json` reports the separate v3 coverage. Scans now read the run's frozen task file. Earlier models' primary outputs remain in earlier run directories, referenced by cumulative grades. Coverage discovers compatible runs across those directories. The last code validation passed TypeScript and all 23 tests.
 
-## Models queued to try
+## Recently completed requests
 
-- **Gemini 4 Carbon** (`google/gemini-4-carbon`), requested November 11, 2026. Gateway ID verified that day; supports low reasoning. Listed base rates: $2 input / $10 output per million tokens. Pending collection and review. Use the current v3 briefs in both conditions, low reasoning and no output-token cap. Recheck availability and pricing before collection, register it in a new frozen run, and keep full-panel results separate from v2. No inference calls made when queued.
+- Gemini 4 Carbon (`google/gemini-4-carbon`), queued and completed November 11, 2026. Sixteen v3 drafts and all grades are saved in assistant-v55. No queued models remain in this handoff.
 
 ## Add a model or repeat a run
 

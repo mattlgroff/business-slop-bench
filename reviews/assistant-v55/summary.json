@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Gemini 4 Carbon",
+    "condition": "default",
+    "completed": 8,
+    "pass": 51,
+    "fail": 3,
+    "review": 0,
+    "total": 54,
+    "contentReady": 4,
+    "readyWithoutEdits": 0,
+    "generationCostUsd": 0
+  },
+  {
+    "model": "Gemini 4 Carbon",
+    "condition": "house",
+    "completed": 8,
+    "pass": 49,
+    "fail": 5,
+    "review": 0,
+    "total": 54,
+    "contentReady": 4,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0
+  }
+]

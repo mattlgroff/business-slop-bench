@@ -2,11 +2,11 @@
 
 Current review: [assistant-v52](../reviews/assistant-v52/REPORT.md), October 13. 33 models and 528 primary v2 drafts. The ambiguous vendor signatory inference is retired uniformly; 17 verdicts change and two mixed reasons retain their verdicts. [Muse Wonder comparison](../reviews/assistant-v52/MUSE-COMPARISON.md).
 
-Current collector: frozen pilot-v35 / protocol 0.35.0, `data/tasks-v3.json`. Its replacement authority check names Alex as sole signatory, Priya as procurement coordinator without signing authority, and the CFO as required prior approver. C05 requires those roles explicitly. Kimi K3.1 Pro completed sixteen v3 calls on October 24 and Claude Fable 5.2 added sixteen on November 9; do not pool them with v2. [Fable results and comparison](../reviews/assistant-v54/REPORT.md). [Separate scores and the unchanged seven-brief comparison](../reviews/assistant-v53/REPORT.md). Authored boundary examples are in `data/vendor-authority-controls-v3.json`, not independent human gold. The proposed readout change remains inactive.
+Current collector: frozen pilot-v36 / protocol 0.36.0, `data/tasks-v3.json`. Its replacement authority check names Alex as sole signatory, Priya as procurement coordinator without signing authority, and the CFO as required prior approver. C05 requires those roles explicitly. Kimi K3.1 Pro completed sixteen v3 calls on October 24, Claude Fable 5.2 added sixteen on November 9, and Gemini 4 Carbon added sixteen on November 11; do not pool them with v2. [Latest Carbon results and comparison](../reviews/assistant-v55/REPORT.md). [Separate scores and the unchanged seven-brief comparison](../reviews/assistant-v53/REPORT.md). Authored boundary examples are in `data/vendor-authority-controls-v3.json`, not independent human gold. The proposed readout change remains inactive.
 
 The full record of how BusinessSlopBench was built and run: protocol freezing, grading rules, cost controls, retries, cohorts and the archived Jev experiments. The short version is in the [README](../README.md).
 
-A small TypeScript benchmark for single-call English business writing. It registers 35 models across two task versions on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus my Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
+A small TypeScript benchmark for single-call English business writing. It registers 36 models across two task versions on eight synthetic briefs in two conditions: ordinary task instructions and the same instructions plus my Zero Defect anti-slop rules. It uses AI SDK 7 through Vercel AI Gateway for generation. Current grading is by the assistant; earlier Jev diagnostics are preserved.
 
 ## Why a business slop bench
 
@@ -24,7 +24,7 @@ Earlier results with a 4,096-token cap: [Muse compared with the other completed 
 
 The 528 primary drafts use the frozen v2 tasks, without a harness output-token cap or generation deadline. There are 56 separately tracked repeat drafts. Argon added sixteen pilot-v31 calls; Nemotron and Muse Wonder added thirty-two pilot-v32 calls. All completed normally with matching v2 prompts, low reasoning and no retries. Paid Jev commands remain disabled.
 
-Use `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json` for the historical panel. The default coverage task is v3, which reports the 32 Kimi K3.1 Pro and Fable 5.2 generations separately. `npx tsx src/draft-audit.ts pilot-v32` validates that run against its own frozen task file. The $100 spending ceiling and retained failed-call reservations remain in effect.
+Use `python3 scripts/coverage.py --cohort uncapped --task-file data/tasks-v2.json` for the historical panel. The default coverage task is v3, which reports the 48 Kimi K3.1 Pro, Fable 5.2 and Gemini 4 Carbon generations separately. `npx tsx src/draft-audit.ts pilot-v32` validates that run against its own frozen task file. The $100 spending ceiling and retained failed-call reservations remain in effect.
 
 Mistral Large 4: low reasoning failed with HTTP 400. The sixteen successful pilot-v29 calls requested none and warned that reasoning configuration was unsupported. Report these as provider-default reasoning. The failed call retains its budget reservation. Historical models no longer need to appear in the live catalog to collect a new model; unavailable current prices are shown explicitly.
 

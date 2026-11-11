@@ -1,0 +1,74 @@
+[
+  {
+    "model": "Kimi K3.1 Pro",
+    "condition": "default",
+    "completed": 8,
+    "pass": 54,
+    "fail": 0,
+    "review": 0,
+    "total": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.058768
+  },
+  {
+    "model": "Kimi K3.1 Pro",
+    "condition": "house",
+    "completed": 8,
+    "pass": 54,
+    "fail": 0,
+    "review": 0,
+    "total": 54,
+    "contentReady": 8,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.1272216
+  },
+  {
+    "model": "Claude Fable 5.2",
+    "condition": "default",
+    "completed": 8,
+    "pass": 53,
+    "fail": 1,
+    "review": 0,
+    "total": 54,
+    "contentReady": 5,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0.208728
+  },
+  {
+    "model": "Claude Fable 5.2",
+    "condition": "house",
+    "completed": 8,
+    "pass": 52,
+    "fail": 1,
+    "review": 1,
+    "total": 54,
+    "contentReady": 6,
+    "readyWithoutEdits": 4,
+    "generationCostUsd": 0.464784
+  },
+  {
+    "model": "Gemini 4 Carbon",
+    "condition": "default",
+    "completed": 8,
+    "pass": 51,
+    "fail": 3,
+    "review": 0,
+    "total": 54,
+    "contentReady": 4,
+    "readyWithoutEdits": 0,
+    "generationCostUsd": 0
+  },
+  {
+    "model": "Gemini 4 Carbon",
+    "condition": "house",
+    "completed": 8,
+    "pass": 49,
+    "fail": 5,
+    "review": 0,
+    "total": 54,
+    "contentReady": 4,
+    "readyWithoutEdits": 2,
+    "generationCostUsd": 0
+  }
+]

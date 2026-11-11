@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 35.856466616000006,
+  "accountedUsd": 36.033183416,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -14315,6 +14315,134 @@
       "charged": 0.08173,
       "status": "settled",
       "actualUsd": 0.06464
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--pilot-client-email--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.0429256,
+      "charged": 0.005184,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--pilot-client-email--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.0905032,
+      "charged": 0.014230799999999998,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--launch-delay-email--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.042688000000002,
+      "charged": 0.0040716,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--launch-delay-email--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.090265600000002,
+      "charged": 0.0133884,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--vendor-decision-memo--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.043458400000002,
+      "charged": 0.0111708,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--vendor-decision-memo--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.091036000000003,
+      "charged": 0.017157600000000002,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--pilot-results-memo--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.042526000000002,
+      "charged": 0.00747,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--pilot-results-memo--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.090103600000003,
+      "charged": 0.0151488,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--discovery-proposal--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.042911200000002,
+      "charged": 0.0056664,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--discovery-proposal--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.090488800000003,
+      "charged": 0.0144792,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--change-order--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.0428788,
+      "charged": 0.0074196,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--change-order--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.0904564,
+      "charged": 0.0145764,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--ai-strategy-slides--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.0431668,
+      "charged": 0.0092628,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--ai-strategy-slides--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.090744400000002,
+      "charged": 0.0159696,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--handoff-slides--default",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.0428716,
+      "charged": 0.0063360000000000005,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v36::google--gemini-4-carbon--handoff-slides--house",
+      "model": "google/gemini-4-carbon",
+      "reserve": 18.090449200000002,
+      "charged": 0.015184799999999998,
+      "status": "settled",
+      "actualUsd": 0
     }
   ]
 }

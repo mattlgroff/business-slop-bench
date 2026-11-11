@@ -1,0 +1,283 @@
+[
+  {
+    "file": "google--gemini-4-carbon--pilot-client-email--default.md",
+    "words": 171,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--pilot-client-email--house.md",
+    "words": 152,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--launch-delay-email--default.md",
+    "words": 139,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 1,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--launch-delay-email--house.md",
+    "words": 124,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--vendor-decision-memo--default.md",
+    "words": 313,
+    "withinWordLimit": false,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 2,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--vendor-decision-memo--house.md",
+    "words": 204,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--pilot-results-memo--default.md",
+    "words": 264,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 980,
+        "line": 18,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "google--gemini-4-carbon--pilot-results-memo--house.md",
+    "words": 185,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--discovery-proposal--default.md",
+    "words": 166,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--discovery-proposal--house.md",
+    "words": 149,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--change-order--default.md",
+    "words": 257,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--change-order--house.md",
+    "words": 164,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": [
+      {
+        "family": "negative_parallelism",
+        "offset": 667,
+        "line": 10,
+        "text": "rather than "
+      }
+    ]
+  },
+  {
+    "file": "google--gemini-4-carbon--ai-strategy-slides--default.md",
+    "words": 291,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [
+      {
+        "offset": 472,
+        "line": 7,
+        "text": "—"
+      },
+      {
+        "offset": 716,
+        "line": 11,
+        "text": "—"
+      }
+    ],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--ai-strategy-slides--house.md",
+    "words": 208,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--handoff-slides--default.md",
+    "words": 214,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  },
+  {
+    "file": "google--gemini-4-carbon--handoff-slides--house.md",
+    "words": 188,
+    "withinWordLimit": true,
+    "nonempty": true,
+    "emDashes": [],
+    "informationalPunctuation": {
+      "2013": 0,
+      "2018": 0,
+      "2019": 0,
+      "201C": 0,
+      "201D": 0
+    },
+    "residue": [],
+    "candidates": []
+  }
+]
