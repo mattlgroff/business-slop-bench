@@ -1,6 +1,6 @@
 {
   "limitUsd": 100,
-  "accountedUsd": 36.033183416,
+  "accountedUsd": 36.35902751600001,
   "entries": [
     {
       "id": "pilot-v1::judge--control--clean",
@@ -14441,6 +14441,134 @@
       "model": "google/gemini-4-carbon",
       "reserve": 18.090449200000002,
       "charged": 0.015184799999999998,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--pilot-client-email--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5346942,
+      "charged": 0.016632,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--pilot-client-email--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5703774,
+      "charged": 0.0238086,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--launch-delay-email--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.534516,
+      "charged": 0.0150687,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--launch-delay-email--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5701992,
+      "charged": 0.0233523,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--vendor-decision-memo--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5350938,
+      "charged": 0.0267246,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--vendor-decision-memo--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.570777,
+      "charged": 0.024397199999999997,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--pilot-results-memo--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5343945,
+      "charged": 0.0154845,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--pilot-results-memo--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5700777,
+      "charged": 0.0220131,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--discovery-proposal--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5346834,
+      "charged": 0.0159138,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--discovery-proposal--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5703666,
+      "charged": 0.0237519,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--change-order--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.534659099999999,
+      "charged": 0.017809199999999997,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--change-order--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5703423,
+      "charged": 0.0185193,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--ai-strategy-slides--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.534875099999999,
+      "charged": 0.019920599999999997,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--ai-strategy-slides--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5705583,
+      "charged": 0.0226017,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--handoff-slides--default",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5346537,
+      "charged": 0.017522999999999997,
+      "status": "settled",
+      "actualUsd": 0
+    },
+    {
+      "id": "pilot-v37::google--gemini-4-hydrogen--handoff-slides--house",
+      "model": "google/gemini-4-hydrogen",
+      "reserve": 13.5703369,
+      "charged": 0.0223236,
       "status": "settled",
       "actualUsd": 0
     }

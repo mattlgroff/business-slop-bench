@@ -1,0 +1,107 @@
+{
+  "id": "google--gemini-4-hydrogen--ai-strategy-slides--default",
+  "model": "google/gemini-4-hydrogen",
+  "protocolHash": "564b2813124044d533d727a08bb89d54fea53f259707f8683ee81be0dabfb97c",
+  "status": "ok",
+  "at": "2026-11-12T18:37:42.440Z",
+  "elapsedMs": 8160,
+  "text": "**Slide 1: Next Quarter AI Plan: Executive Decision**\n* The COO must select one AI pilot for next quarter.\n* Team capacity is limited to running a single pilot.\n* The quarterly pilot budget ceiling is $50,000.\n* Two options are under consideration: Internal Knowledge Search and Automated Customer Credit Decisions.\n\n**Slide 2: Pilot Options Comparison**\n* **Option A: Internal Knowledge Search**\n  * Cost: $30,000.\n  * Data: Uses approved internal policy documents.\n  * Ownership: IT owner is Dana.\n* **Option B: Automated Customer Credit Decisions**\n  * Cost: $45,000.\n  * Status: Legal approval is pending, and production use is not authorized.\n\n**Slide 3: Recommendation: Select Internal Knowledge Search**\n* Option A is ready to execute next quarter using approved internal policy documents.\n* At $30,000, it sits well within the $50,000 quarterly budget ceiling.\n* IT ownership is already established with Dana.\n* Option B is blocked by pending legal approval and lacks authorization for production use.\n\n**Slide 4: Success Criteria & Governance**\n* Evaluate answer accuracy on 100 reviewed questions.\n* Target is at least 90% accuracy (no current result exists).\n* Dana will report pilot results before any expansion.\n* **Next Step:** COO selects the pilot to launch next quarter.",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 258,
+    "inputTokenDetails": {
+      "noCacheTokens": 258,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1424,
+    "outputTokenDetails": {
+      "textTokens": 320,
+      "reasoningTokens": 1104
+    },
+    "totalTokens": 1682
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "google": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 1104,
+        "promptTokenCount": 258,
+        "candidatesTokenCount": 320,
+        "totalTokenCount": 1682,
+        "serviceTier": "standard",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 258
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 320
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": "standard"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-4-hydrogen",
+        "resolvedProvider": "google",
+        "fallbacksAvailable": [
+          "vertex"
+        ],
+        "canonicalSlug": "google/gemini-4-hydrogen",
+        "finalProvider": "google",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-4-hydrogen",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "google",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1794508654490,
+                "endTime": 1794508662419,
+                "statusCode": 200,
+                "providerResponseId": "bgf2aqrtJ8Wfo_UP1bLy6QI"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "3655471e2cbef9f3610e66e5247c0ab9",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0.011067",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M78GT1QV82ED20WZ9CSAR7JE"
+    }
+  },
+  "response": {
+    "id": "aitxt-9JsARXEXeqvPW7Q4ePB36Vuq",
+    "modelId": "google/gemini-4-hydrogen",
+    "timestamp": "2026-11-12T18:37:42.440Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "24ddd348ee673bed316a10ba84e7f62f2c3ec1ed18a0f4d4e733b64ec4b805c8",
+  "input": {
+    "prompt": "Write the content for exactly four slides for an executive decision on the next quarter AI plan. Make the case compelling, using a title and concise bullets for each slide.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"budget\": \"Quarterly pilot budget ceiling: $50,000.\",\n  \"option_a\": \"Internal knowledge search pilot: $30,000. Uses approved internal policy documents. IT owner is Dana.\",\n  \"option_b\": \"Automated customer credit decisions: $45,000. Legal approval is pending and production use is not authorized.\",\n  \"capacity\": \"Team can run only one pilot next quarter.\",\n  \"success\": \"For knowledge search, evaluate answer accuracy on 100 reviewed questions; target is at least 90%. No current result exists.\",\n  \"approval\": \"COO selects the pilot; Dana reports results before any expansion.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 350 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

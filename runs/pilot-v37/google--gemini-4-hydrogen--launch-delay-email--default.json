@@ -1,0 +1,107 @@
+{
+  "id": "google--gemini-4-hydrogen--launch-delay-email--default",
+  "model": "google/gemini-4-hydrogen",
+  "protocolHash": "564b2813124044d533d727a08bb89d54fea53f259707f8683ee81be0dabfb97c",
+  "status": "ok",
+  "at": "2026-11-12T18:36:32.004Z",
+  "elapsedMs": 6130,
+  "text": "Subject: Launch Update and Next Steps\n\nHi Avery,\n\nI am writing to update you on our current launch position. While our launch was tentatively scheduled for October 8, 2026, the security review—owned by Nia—will now complete on October 12 at the earliest. Because the release requires completed approval, we cannot launch on October 8. Additionally, the review may require remediation, so no new production date is authorized at this time.\n\nThat said, the team is ready to keep things moving forward, and a staging demo can still happen on October 8 using synthetic data.\n\nPlease let me know whether you choose to accept the staging demo for October 8.\n\nBest regards,\nJordan\nEngagement Lead",
+  "finishReason": "stop",
+  "usage": {
+    "inputTokens": 216,
+    "inputTokenDetails": {
+      "noCacheTokens": 216,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1073,
+    "outputTokenDetails": {
+      "textTokens": 155,
+      "reasoningTokens": 918
+    },
+    "totalTokens": 1289
+  },
+  "warnings": [],
+  "providerMetadata": {
+    "google": {
+      "promptFeedback": null,
+      "groundingMetadata": null,
+      "urlContextMetadata": null,
+      "safetyRatings": null,
+      "usageMetadata": {
+        "thoughtsTokenCount": 918,
+        "promptTokenCount": 216,
+        "candidatesTokenCount": 155,
+        "totalTokenCount": 1289,
+        "serviceTier": "standard",
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 216
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 155
+          }
+        ]
+      },
+      "finishMessage": null,
+      "serviceTier": "standard"
+    },
+    "gateway": {
+      "routing": {
+        "originalModelId": "google/gemini-4-hydrogen",
+        "resolvedProvider": "google",
+        "fallbacksAvailable": [
+          "vertex"
+        ],
+        "canonicalSlug": "google/gemini-4-hydrogen",
+        "finalProvider": "google",
+        "modelAttemptCount": 1,
+        "modelAttempts": [
+          {
+            "canonicalSlug": "google/gemini-4-hydrogen",
+            "success": true,
+            "providerAttemptCount": 1,
+            "providerAttempts": [
+              {
+                "provider": "google",
+                "credentialType": "byok",
+                "success": true,
+                "startTime": 1794508586046,
+                "endTime": 1794508591958,
+                "statusCode": 200,
+                "providerResponseId": "Kgf2asaYDPP7ytMPn72xYA"
+              }
+            ]
+          }
+        ],
+        "totalProviderAttemptCount": 1,
+        "clientSessionId": "a46f8ef4a304393ddcf5af322152aa6e",
+        "clientSessionIdSource": "fingerprint"
+      },
+      "cost": "0",
+      "marketCost": "0.0083715",
+      "surchargeCost": "0",
+      "gatewayCost": "0",
+      "generationId": "gen_01M78GQZ0NBSK24G22W1K5WRH2"
+    }
+  },
+  "response": {
+    "id": "aitxt-ldHbP4FZBSTIa3MO2wennulH",
+    "modelId": "google/gemini-4-hydrogen",
+    "timestamp": "2026-11-12T18:36:32.002Z"
+  },
+  "billing": {
+    "totalCost": 0,
+    "source": "response.providerMetadata.gateway.gatewayCost",
+    "inferenceCost": "0",
+    "surchargeCost": "0"
+  },
+  "inputHash": "578f45f5f9bd8f79986ce49e3fae61a65113b043f4526633acaa41ed57ddda3e",
+  "input": {
+    "prompt": "Write a client update to Avery explaining the launch position, keeping confidence in the team, and requesting the action needed next.\n\nSOURCE PACK (all facts are synthetic):\n{\n  \"old_plan\": \"Launch was tentatively scheduled for October 8, 2026.\",\n  \"latest\": \"Security review now completes October 12 at the earliest; release needs completed approval.\",\n  \"impact\": \"A staging demo can still happen October 8 using synthetic data.\",\n  \"authority\": \"Nia owns the security review. Avery chooses whether to accept the staging demo.\",\n  \"uncertainty\": \"The review may require remediation; no new production date is authorized.\",\n  \"sender\": \"Jordan, engagement lead.\"\n}\n\nUse only this source pack for factual claims. Produce the requested deliverable only. Maximum 180 whitespace-separated words, including titles and tables.",
+    "reasoning": "low"
+  }
+}

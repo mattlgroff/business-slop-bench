@@ -1,0 +1,207 @@
+[
+  {
+    "task": "pilot-client-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I am pleased to share the proposal for our invoice handling pilot.",
+        "Announces the proposal instead of stating the offer."
+      ]
+    ],
+    "adjudicationNotes": [
+      "The 20% figure is explicitly the client goal; no measured result or guarantee is claimed."
+    ],
+    "outputSha256": "2594db66d4700ddce65674ca6c44dc412d2f95f5e5a47b4717b147245e18a073"
+  },
+  {
+    "task": "pilot-client-email",
+    "condition": "house",
+    "content": [
+      [
+        "grounding",
+        "review",
+        "We are ready to move forward with the six-week pilot",
+        "Could mean readiness to proceed with the approval process for the approved proposal, or assert current delivery readiness. The later security and scheduling conditions do not establish staffing or execution readiness. Withhold credit without calling this a confirmed fabrication."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [],
+    "outputSha256": "b9e273bf86713b2d1a845d43513684f3b819a8e0d024ee90a020c9995279251c"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "2",
+        "I am writing to update you on our current launch position.",
+        "Opening preamble delays the actual launch update."
+      ]
+    ],
+    "adjudicationNotes": [
+      "Readiness is limited by context to the staging demo, which the source explicitly permits."
+    ],
+    "outputSha256": "53681c5c5f598002e1558b3cd02974fad499a13394aebdbdacee7ee0df29cb0a"
+  },
+  {
+    "task": "launch-delay-email",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "The team readiness sentence is scoped to showing progress in the October 8 synthetic-data demo, not production readiness."
+    ],
+    "outputSha256": "026c74f53b269b5d4b30520a35c24e181644f21465689ad9a8e5bf3ce0e146a6"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "The constraint labels organize distinct evaluation criteria. The v3 signing roles and approval sequence are explicit."
+    ],
+    "outputSha256": "54f52d499c7ea88c6dea7c736eb5d43746fa30e6ae1205148a2bbc4e420a55b6"
+  },
+  {
+    "task": "vendor-decision-memo",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Constraint labels are functional evaluation structure. Priya coordinates, Alex is sole signatory, and approval precedes signing without delegation."
+    ],
+    "outputSha256": "28aa238cbe3d1b799d13bae88d76e92c0ccf7e17eea0d538ba1b7ef8a47bfac9"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "default",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time was 12 minutes in the pilot (100 tickets) versus 15 minutes at baseline (200 tickets).",
+        "Correct endpoints but no explicit three-minute or 20% reduction, required by the frozen criterion. This is an analytical-completeness omission, not bad arithmetic."
+      ]
+    ],
+    "style": [
+      [
+        "10",
+        "Taken together, the current results do not support scaling the pilot.",
+        "Restates the opening recommendation after the evidence without adding a decision."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "853df2ac763f93ceb1b1853deb3af909c2093744988f2f647fd960915df63db0"
+  },
+  {
+    "task": "pilot-results-memo",
+    "condition": "house",
+    "content": [
+      [
+        "C01",
+        "fail",
+        "Mean handling time fell from 15 minutes across 200 baseline tickets to 12 minutes across 100 pilot tickets",
+        "Gives correct endpoints but omits the required derived three-minute or 20% reduction. This follows the existing criterion applied to earlier Gemini outputs."
+      ]
+    ],
+    "style": [],
+    "adjudicationNotes": [],
+    "outputSha256": "4bc23818f61057304642dd71cf67400ffcfef655ae9e4203018958fa41071441"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Commercial labels and intentional approval fields are functional document structure. Exclusions, dependencies, amounts and approval prerequisites are correctly preserved."
+    ],
+    "outputSha256": "12e75de10f3894c813fbd2d2b1080fb23f46565909f45f382026ccba0e67002c"
+  },
+  {
+    "task": "discovery-proposal",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Commercial labels and intentional approval fields are functional document structure. Exclusions, dependencies, amounts and approval prerequisites are correctly preserved."
+    ],
+    "outputSha256": "ea20c90da10a6de7fedb5a4804589ce0f719f7c7fc8566b408da73e9840ca60a"
+  },
+  {
+    "task": "change-order",
+    "condition": "default",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Commercial labels and intentional approval fields are functional document structure. Exclusions, dependencies, amounts and approval prerequisites are correctly preserved."
+    ],
+    "outputSha256": "6f1f0061c1de6c635f0823478d10802a74c5f56782f7b2bdb0329ee61ab9fb3e"
+  },
+  {
+    "task": "change-order",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Commercial labels and intentional approval fields are functional document structure. Exclusions, dependencies, amounts and approval prerequisites are correctly preserved."
+    ],
+    "outputSha256": "3c551956a10699e3eb993843c3a83edd06b4af3d82184cb6e9139c1c76139734"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "default",
+    "content": [
+      [
+        "grounding",
+        "fail",
+        "Option A is ready to execute next quarter using approved internal policy documents.",
+        "Approved input documents and a named owner do not establish pilot execution readiness. The source leaves pilot selection to the COO and provides no readiness finding."
+      ]
+    ],
+    "style": [],
+    "outputSha256": "cb850defa8413393864c12da810eb466366b369e1060403f06ea460ad89ae0fd"
+  },
+  {
+    "task": "ai-strategy-slides",
+    "condition": "house",
+    "content": [],
+    "style": [],
+    "adjudicationNotes": [
+      "Recommends the supported option without asserting execution readiness or completed approval. All four slides and the future accuracy target are present."
+    ],
+    "outputSha256": "0f881f833c19852008a84b514e9ee86b66a27fb2843103799e52bf1d587827ae"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "default",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "### Slide 3: Blocker to Acceptance",
+        "This entire slide repeats the incomplete rehearsal, missing organizer, and ownership conditions already supplied on slides 1 and 2."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "0ae78346721a3c0a9133375949d7c2a209c99633e0ac3d06c9ff079725beb8cd"
+  },
+  {
+    "task": "handoff-slides",
+    "condition": "house",
+    "content": [],
+    "style": [
+      [
+        "10",
+        "Until acceptance occurs, Jo does not own incidents.",
+        "Restates the immediately preceding bullet that Jo owns incidents only after acceptance."
+      ]
+    ],
+    "adjudicationNotes": [],
+    "outputSha256": "49edabfb8c468704856a00106df9e08faa248ca328c33c966ef1a9f3601da392"
+  }
+]

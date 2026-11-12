@@ -2,7 +2,9 @@
 
 A small benchmark for the writing most of us actually ask models for at work: the client email, the vendor memo, the pilot readout, the proposal, the change order, the four-slide deck. It measures one thing above all: does the draft say only what the source facts support, or does it invent a deadline, a prior conversation, a readiness claim or an owner that was never there.
 
-I built it, tested 36 models across versioned briefs, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+I built it, tested 37 models across versioned briefs, and I am publishing it as is because I am not going to take it further myself. I am asking someone to.
+
+**November 12: [Gemini 4 Hydrogen](reviews/assistant-v56/REPORT.md)** improves on Carbon: 52/54 checks in both conditions, 6/8 content-ready in both, and 3/8 plain versus 5/8 house drafts ready without edits. The house result loses one check for omitting the explicit derived time reduction and one unresolved readiness claim; its handoff needs one repetition edit. On the seven unchanged house briefs, Hydrogen scores 46/48 and 4/7 ready without edits versus Carbon's 43/48 and 1/7, and Argon's 45/48 and 3/7. Gateway reports $0 charged for these sixteen low-reasoning calls. Full v3 totals remain separate from the historical v2 ranking.
 
 **November 11: [Gemini 4 Carbon](reviews/assistant-v55/REPORT.md)** completed the v3 panel: 51/54 plain checks and 49/54 house checks, with 4/8 content-ready in each and 0/8 and 2/8 ready without edits. The house launch email and vendor memo are clean; other drafts retain unsupported claims, repetition or preambles. Gateway reports $0 charged for these calls, distinct from its listed prices. On the seven unchanged house briefs, Carbon scores 43/48 and 1/7 ready without edits versus Argon and Gemini 3.8 Flash at 45/48 and 3/7. Our leading models remain ahead on that subset.
 
